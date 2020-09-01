@@ -167,6 +167,11 @@ export class dotNetExe {
             const dotnet = tl.tool(dotnetPath);
             dotnet.arg(this.command);
             dotnet.arg(projectFile);
+
+            if (tl.getBoolInput("nobuild")) {
+                dotnet.arg("--no-build");
+            }
+
             dotnet.line(this.arguments);
             try {
                 const result = await dotnet.exec(<tr.IExecOptions>{
