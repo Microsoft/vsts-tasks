@@ -581,4 +581,50 @@ describe('DotNetCoreExe Suite', function () {
         done();
     });
 
+    it('toolinstall command with vsts feed', (done: MochaDone) => {
+        this.timeout(1000);
+
+        let tp = path.join(__dirname, './ToolInstallTests/selectSourceVsts.js')
+        let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+
+        tr.run();
+        assert(tr.invokedToolCount == 1, 'should have run dotnet once');
+        assert(tr.ran('c:\\path\\dotnet.exe tool install MyPackage --global --configfile c:\\agent\\home\\directory\\NuGet\\tempNuGet_.config'), 'it should have run dotnet');
+        assert(tr.stdOutContained('adding package source uri: https://vsts/packagesource'), 'it should have added vsts source to config');
+        assert(tr.stdOutContained('dotnet output'), "should have dotnet output");
+        assert(tr.stdOutContained('Using project scope 98320bea-3915-4ef2-9333-908d3290289c'), "should have used project scope");
+        assert(tr.stdOutContained("Using feed registry url"), "should have used feed url, not session url");
+        assert(tr.succeeded, 'should have succeeded');
+        assert.equal(tr.errorIssues.length, 0, "should have no errors");
+        done();
+    });
+
+    it('toolinstall command uses tool version when provided', (done: MochaDone) => {
+        this.timeout(1000);
+
+        let tp = path.join(__dirname, './ToolInstallTests/withVersion.js')
+        let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+
+        tr.run();
+        assert(tr.invokedToolCount == 1, 'should have run dotnet once');
+        assert(tr.ran('c:\\path\\dotnet.exe tool install MyPackage --version 1.0.0 --global --configfile c:\\agent\\home\\directory\\NuGet\\tempNuGet_.config'), 'it should have run dotnet');
+        assert(tr.succeeded, 'should have succeeded');
+        assert.equal(tr.errorIssues.length, 0, "should have no errors");
+        done();
+    });
+
+    it('toolinstall command uses custom tool install path when provided', (done: MochaDone) => {
+        this.timeout(1000);
+
+        let tp = path.join(__dirname, './ToolInstallTests/withInstallLocation.js')
+        let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+
+        tr.run();
+        assert.equal(tr.invokedToolCount, 1, 'should have run dotnet once');
+        assert(tr.ran('c:\\path\\dotnet.exe tool install MyPackage --tool-path c:\\installpath --configfile c:\\agent\\home\\directory\\NuGet\\tempNuGet_.config'), 'it should have run dotnet');
+        assert(tr.succeeded, 'should have succeeded');
+        assert.equal(tr.errorIssues.length, 0, "should have no errors");
+        done();
+    });
+
 });

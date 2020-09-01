@@ -53,3 +53,9 @@ Options specific to **dotnet restore** command
 
 Options specific to **dotnet test** command
 * **Publish test results\*:** Enabling this option will generate a test results TRX file in $(Agent.TempDirectory) and results will be published to the server. This option appends --logger trx --results-directory $(Agent.TempDirectory) to the command line arguments.
+
+Options specific to **dotnet tool install** command
+* **Feeds to use\*:** You can either select a feed from Azure Artifacts and/or NuGet.org here, or commit a nuget.config file to your source code repository and set its path here.
+* **Tool Package Version\*:** You can specify the version of the tool install
+* **Install Global\*:** Specifies whether to install the tool globally
+* **Install Path\*:** Specifies location to install the tool.

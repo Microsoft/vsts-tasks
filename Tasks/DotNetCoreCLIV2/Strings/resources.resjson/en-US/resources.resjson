@@ -10,6 +10,7 @@
   "loc.group.displayName.packOptions": "Pack options",
   "loc.group.displayName.packAdvanced": "Advanced",
   "loc.group.displayName.generalAdvanced": "Advanced",
+  "loc.group.displayName.toolInstall": "Tool install",
   "loc.input.label.command": "Command",
   "loc.input.help.command": "The dotnet command to run. Select 'Custom' to add arguments or use a command not listed here.",
   "loc.input.label.publishWebProjects": "Publish web projects",
@@ -83,6 +84,14 @@
   "loc.input.help.verbosityPack": "Specifies the amount of detail displayed in the output.",
   "loc.input.label.workingDirectory": "Working directory",
   "loc.input.help.workingDirectory": "Current working directory where the script is run. Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory). The project search pattern is **NOT** relative to working directory.",
+  "loc.input.label.toolPackageName": "Tool Package Name",
+  "loc.input.help.toolPackageName": "Package name of the tool to install.",
+  "loc.input.label.toolPackageVersion": "Tool Package Version",
+  "loc.input.help.toolPackageVersion": "The version of the tool package to install.",
+  "loc.input.label.toolInstallGlobal": "Install Global",
+  "loc.input.help.toolInstallGlobal": "Specifies that the installation is user wide. Can't be combined with the --tool-path option. Omitting both --global and --tool-path specifies a local tool installation.",
+  "loc.input.label.toolInstallPath": "Install Path",
+  "loc.input.help.toolInstallPath": "Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both --global and --tool-path specifies a local tool installation.",
   "loc.messages.BuildIdentityPermissionsHint": "For internal feeds, make sure the build service identity '%s' [%s] has access to the feed.",
   "loc.messages.CouldNotSetCodePaging": "Could not set the code paging of due to following error: %s",
   "loc.messages.Error_AutomaticallyVersionReleases": "Autoversion: Getting version number from build option is not supported in releases",
@@ -135,5 +144,7 @@
   "loc.messages.Warning_SessionCreationFailed": "Could not create provenance session: %s",
   "loc.messages.Warning_UpdatingNuGetVersion": "Updating version of NuGet.exe to %s from %s. Behavior changes or breaking changes might occur as NuGet updates to a new version. If this is not desired, deselect the 'Check for Latest Version' option in the task.",
   "loc.messages.NetCore3Update": "Info: Azure Pipelines hosted agents have been updated to contain .Net Core 3.x (3.1) SDK/Runtime along with 2.1. Unless you have locked down a SDK version for your project(s), 3.x SDK might be picked up which might have breaking behavior as compared to previous versions. \nSome commonly encountered changes are: \nIf you're using `Publish` command with -o or --Output argument, you will see that the output folder is now being created at root directory rather than Project File's directory. To learn about more such changes and troubleshoot, refer here: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/dotnet-core-cli?view=azure-devops#troubleshooting",
-  "loc.messages.DeprecatedDotnet2_2_And_3_0": "Info: .NET Core SDK/runtime 2.2 and 3.0 are now End of Life(EOL) and have been removed from all hosted agents. If you're using these SDK/runtimes on hosted agents, kindly upgrade to newer versions which are not EOL, or else use UseDotNet task to install the required version."
+  "loc.messages.DeprecatedDotnet2_2_And_3_0": "Info: .NET Core SDK/runtime 2.2 and 3.0 are now End of Life(EOL) and have been removed from all hosted agents. If you're using these SDK/runtimes on hosted agents, kindly upgrade to newer versions which are not EOL, or else use UseDotNet task to install the required version.",
+  "loc.messages.ToolInstalledSuccessfully": "Tool was restored successfully",
+  "loc.messages.ToolFailedToInstall": "Tool failed to install"
 }

@@ -18,7 +18,7 @@
   "version": {
     "Major": 2,
     "Minor": 174,
-    "Patch": 0
+    "Patch": 1
   },
   "minimumAgentVersion": "2.115.0",
   "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
@@ -27,7 +27,7 @@
       "name": "restoreAuth",
       "displayName": "ms-resource:loc.group.displayName.restoreAuth",
       "isExpanded": true,
-      "visibleRule": "command = restore"
+      "visibleRule": "command = restore || command = toolinstall"
     },
     {
       "name": "restoreAdvanced",
@@ -64,6 +64,12 @@
       "displayName": "ms-resource:loc.group.displayName.generalAdvanced",
       "isExpanded": false,
       "visibleRule": "command != pack && command != push && command != restore"
+    },
+    {
+      "name": "toolInstall",
+      "displayName": "ms-resource:loc.group.displayName.toolInstall",
+      "isExpanded": true,
+      "visibleRule": "command = toolinstall"
     }
   ],
   "inputs": [
@@ -82,6 +88,7 @@
         "restore": "restore",
         "run": "run",
         "test": "test",
+        "toolinstall": "tool install",
         "custom": "custom"
       },
       "properties": {
@@ -491,7 +498,47 @@
       "helpMarkDown": "ms-resource:loc.input.help.workingDirectory",
       "required": "false",
       "groupName": "generalAdvanced",
-      "visibleRule": "command != restore && command != push && command != pack"
+      "visibleRule": "command != restore && command != push && command != pack && command != toolinstall"
+    },
+    {
+      "name": "toolPackageName",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.toolPackageName",
+      "defaultValue": "",
+      "helpMarkDown": "ms-resource:loc.input.help.toolPackageName",
+      "required": "true",
+      "groupName": "toolInstall",
+      "visibleRule": "command = toolinstall"
+    },
+    {
+      "name": "toolPackageVersion",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.toolPackageVersion",
+      "defaultValue": "",
+      "helpMarkDown": "ms-resource:loc.input.help.toolPackageVersion",
+      "required": "false",
+      "groupName": "toolInstall",
+      "visibleRule": "command = toolinstall"
+    },
+    {
+      "name": "toolInstallGlobal",
+      "type": "boolean",
+      "label": "ms-resource:loc.input.label.toolInstallGlobal",
+      "defaultValue": "false",
+      "helpMarkDown": "ms-resource:loc.input.help.toolInstallGlobal",
+      "required": true,
+      "groupName": "toolInstall",
+      "visibleRule": "command = toolinstall"
+    },
+    {
+      "name": "toolInstallPath",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.toolInstallPath",
+      "defaultValue": "",
+      "helpMarkDown": "ms-resource:loc.input.help.toolInstallPath",
+      "required": false,
+      "groupName": "toolInstall",
+      "visibleRule": "command = toolinstall && toolInstallGlobal = false"
     }
   ],
   "dataSourceBindings": [
@@ -569,6 +616,8 @@
     "Warning_SessionCreationFailed": "ms-resource:loc.messages.Warning_SessionCreationFailed",
     "Warning_UpdatingNuGetVersion": "ms-resource:loc.messages.Warning_UpdatingNuGetVersion",
     "NetCore3Update": "ms-resource:loc.messages.NetCore3Update",
-    "DeprecatedDotnet2_2_And_3_0": "ms-resource:loc.messages.DeprecatedDotnet2_2_And_3_0"
+    "DeprecatedDotnet2_2_And_3_0": "ms-resource:loc.messages.DeprecatedDotnet2_2_And_3_0",
+    "ToolInstalledSuccessfully": "ms-resource:loc.messages.ToolInstalledSuccessfully",
+    "ToolFailedToInstall": "ms-resource:loc.messages.ToolFailedToInstall"
   }
 }

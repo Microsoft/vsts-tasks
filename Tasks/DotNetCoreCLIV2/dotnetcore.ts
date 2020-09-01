@@ -9,6 +9,7 @@ var uuidV4 = require('uuid/v4');
 import * as packCommand from './packcommand';
 import * as pushCommand from './pushcommand';
 import * as restoreCommand from './restorecommand';
+import * as toolInstallCommand from './toolinstallcommand';
 import * as utility from './Common/utility';
 
 let MessagePrinted = false;
@@ -61,6 +62,9 @@ export class dotNetExe {
                     break;
                 case "push":
                     await pushCommand.run();
+                    break;
+                case "toolinstall":
+                    await toolInstallCommand.run();
                     break;
                 default:
                     throw tl.loc("Error_CommandNotRecognized", this.command);
