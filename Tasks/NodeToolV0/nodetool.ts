@@ -224,6 +224,9 @@ function getArch(): string {
     if (arch === 'ia32' || force32bit) {
         arch = 'x86';
     }
+    if (arch === 'arm') {
+        arch = 'armv7l';
+    }
     return arch;
 }
 
