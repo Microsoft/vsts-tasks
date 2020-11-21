@@ -73,4 +73,32 @@ describe('NodeTool Suite', function () {
         }, tr, done);
     });
 
+    it('Installs the right version on linux-armv7l', (done: MochaDone) => {
+        this.timeout(5000);
+
+        let tp: string = path.join(__dirname, 'L0DownloadLinuxArmv7l.js');
+        let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+
+        tr.run();
+
+        runValidations(() => {
+            assert(tr.succeeded, 'NodeTool should have succeeded.');
+            assert(tr.stderr.length === 0, 'NodeTool should not have written to stderr');
+        }, tr, done);
+    });
+
+    it('Installs the right version on linux-arm64', (done: MochaDone) => {
+        this.timeout(5000);
+
+        let tp: string = path.join(__dirname, 'L0DownloadLinuxArm64.js');
+        let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+
+        tr.run();
+
+        runValidations(() => {
+            assert(tr.succeeded, 'NodeTool should have succeeded.');
+            assert(tr.stderr.length === 0, 'NodeTool should not have written to stderr');
+        }, tr, done);
+    });
+
 });

@@ -1,5 +1,6 @@
 import * as taskLib from 'azure-pipelines-task-lib/task';
 import * as toolLib from 'azure-pipelines-tool-lib/tool';
+import * as toolRunner from 'azure-pipelines-task-lib/toolrunner';
 import * as restm from 'typed-rest-client/RestClient';
 import * as os from 'os';
 import * as path from 'path';
@@ -223,6 +224,10 @@ function getArch(): string {
     let arch: string = os.arch();
     if (arch === 'ia32' || force32bit) {
         arch = 'x86';
+    }
+    if (arch === 'arm') {
+        const result: toolRunner.IExecSyncResult = taskLib.execSync('bash', ['uname', '-m']);
+        arch = result.stdout.toString().trim();
     }
     return arch;
 }
