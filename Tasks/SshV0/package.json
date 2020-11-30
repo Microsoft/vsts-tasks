@@ -5,7 +5,7 @@
     "@types/ssh2": "0.5.43",
     "@types/ssh2-sftp-client": "^5.2.0",
     "azure-pipelines-task-lib": "^2.9.3",
-    "ssh2": "0.8.2",
+    "ssh2": "0.8.7",
     "ssh2-sftp-client": "^5.1.2",
     "uuid": "^3.2.1"
   }
