@@ -13,6 +13,7 @@ var deployUtility = require('webdeployment-common-v2/utility.js');
 var msDeployUtility = require('webdeployment-common-v2/msdeployutility.js');
 
 const DEFAULT_RETRY_COUNT = 3;
+const DEPLOY_CMD_SET_PARAMETERS_FILE_ENV_VAR = '_DeploySetParametersFile';
 
 export class PublishProfileWebAppDeploymentProvider implements IWebAppDeploymentProvider{
     private taskParams: TaskParameters;
@@ -54,6 +55,7 @@ export class PublishProfileWebAppDeploymentProvider implements IWebAppDeployment
         var deployCmdFilePath = this.GetDeployCmdFilePath();
 
         await this.SetMsdeployEnvPath();
+        this.OverrideSetParametersFilePath();
         var cmdArgs:string = this.GetDeployScriptCmdArgs(msDeployPublishingProfile);
 
         var retryCountParam = tl.getVariable("appservice.msdeployretrycount");
@@ -101,6 +103,16 @@ export class PublishProfileWebAppDeploymentProvider implements IWebAppDeployment
 
     private async ResetMsdeployEnvPath() {
         process.env.PATH = this.origEnvPath;
+    }
+
+    private OverrideSetParametersFilePath(): void {
+        // Override set parameters file path if SetParametersFile input is provided
+        // The deploy.cmd file uses '_DeploySetParametersFile' environment variable to determine the value of the set parameters file path
+        // If SetParametersFile input is not provided, its value is set as default working directory because it is a FilePath input type.
+        if (!!this.taskParams.SetParametersFile && this.taskParams.SetParametersFile !== tl.getVariable('System.DefaultWorkingDirectory')) {
+            tl.debug(`Set parameters file input provided: ${this.taskParams.SetParametersFile}. Overriding environment variable '${DEPLOY_CMD_SET_PARAMETERS_FILE_ENV_VAR}'`);
+            process.env[DEPLOY_CMD_SET_PARAMETERS_FILE_ENV_VAR] = this.taskParams.SetParametersFile;
+        }
     }
 
     private GetDeployCmdFilePath(): string {

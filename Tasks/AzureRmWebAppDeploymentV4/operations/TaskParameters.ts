@@ -119,6 +119,7 @@ export class TaskParametersUtility {
         taskParameters.PublishProfilePath = tl.getInput('PublishProfilePath', true);
         taskParameters.PublishProfilePassword = tl.getInput('PublishProfilePassword', true);
         taskParameters.Package = new Package(tl.getPathInput('Package', true));
+        taskParameters.SetParametersFile = tl.getPathInput('SetParametersFile', false);
         taskParameters.AdditionalArguments = "-retryAttempts:6 -retryInterval:10000";
     }
 
