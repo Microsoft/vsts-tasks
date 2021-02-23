@@ -108,7 +108,6 @@ class Deployment {
     }
     public updateCommonProperties(mode: string) {
         this.properties["mode"] = mode;
-        this.properties["debugSetting"] = { "detailLevel": "requestContent, responseContent" };
     }
 }
 
