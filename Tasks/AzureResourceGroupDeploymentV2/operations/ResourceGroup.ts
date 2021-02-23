@@ -108,7 +108,6 @@ class Deployment {
     }
     public updateCommonProperties(mode: string) {
         this.properties["mode"] = mode;
-        this.properties["debugSetting"] = { "detailLevel": "requestContent, responseContent" };
     }
 }
 
@@ -170,7 +169,6 @@ export class ResourceGroup {
             tl.error(error.message);
             if (error.details) {
                 tl.error(tl.loc("Details"));
-                
 
                 for (var i = 0; i < error.details.length; i++) {
                     var errorMessage = null;
@@ -189,7 +187,6 @@ export class ResourceGroup {
                     }
                 }
 
-                
             }
         } else {
             tl.error(error);
