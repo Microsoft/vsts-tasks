@@ -21,7 +21,7 @@ def jacocoIncludes = [${includeFilter}]
 subprojects {
     jacocoTestReport {
         doFirst {
-            classDirectories = fileTree(dir: "${classFileDirectory}").exclude(jacocoExcludes).include(jacocoIncludes)
+            classDirectories.setFrom fileTree(dir: "${classFileDirectory}").exclude(jacocoExcludes).include(jacocoIncludes)
         }
 
         reports {
