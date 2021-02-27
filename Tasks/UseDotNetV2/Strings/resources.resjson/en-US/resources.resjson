@@ -95,5 +95,8 @@
   "loc.messages.FailedToReadGlobalJson": "The global.json at path: '%s' has the wrong format. For information about global.json, visit here: https://docs.microsoft.com/en-us/dotnet/core/tools/global-json. Error while trying to read: %s",
   "loc.messages.VersionNumberHasTheWrongFormat": "The version number: %s doesn't have the correct format. Versions can be given in the following formats: 2.x   => Install latest in major version. 2.2.x => Install latest in major and minor version. 2.2.104 => Install exact version. Find the value of `version` for installing SDK/Runtime, from the releases.json. The link to releases.json of that major.minor version can be found in [**releases-index file.**](https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json). Like link to releases.json for 2.2 version is https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/2.2/releases.json",
   "loc.messages.OnlyExplicitVersionAllowed": "Only explicit versions and accepted, such as: 2.2.301. Version: %s is not valid.",
-  "loc.messages.SupportPhaseNotPresentInChannel": "support-phase is not present in the channel with channel-version %s."
+  "loc.messages.SupportPhaseNotPresentInChannel": "support-phase is not present in the channel with channel-version %s.",
+  "loc.messages.Info_UsingToolPath": "ms-resource:loc.messages.Info_UsingToolPath",
+  "loc.messages.Info_UsingVersion": "ms-resource:loc.messages.Info_UsingVersion",
+  "loc.messages.Info_ResolvedToolFromCache": "ms-resource:loc.messages.Info_ResolvedToolFromCache"
 }
