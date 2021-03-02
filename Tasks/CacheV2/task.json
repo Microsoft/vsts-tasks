@@ -9,8 +9,8 @@
     "author": "Microsoft Corporation",
     "version": {
         "Major": 2,
-        "Minor": 0,
-        "Patch": 1
+        "Minor": 175,
+        "Patch": 0
     },
     "groups": [],
     "demands": [],
@@ -47,6 +47,14 @@
             "defaultValue": "",
             "required": false,
             "helpMarkDown": "Additional restore key prefixes that are used if the primary key misses. This can be a newline-delimited list of key prefixes."
+        },
+        {
+            "name": "immutable",
+            "type": "boolean",
+            "label": "Prevent caches from being overwritten",
+            "defaultValue": true,
+            "required": false,
+            "helpMarkDown": "Caches that already exist cannot be overwritten. This setting allows them to be overwritable even with a fixed fingerprint."
         }
     ],
     "instanceNameFormat": "Cache",

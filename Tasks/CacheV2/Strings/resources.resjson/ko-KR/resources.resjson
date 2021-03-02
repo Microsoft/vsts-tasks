@@ -10,5 +10,7 @@
   "loc.input.label.cacheHitVar": "캐시 적중 변수",
   "loc.input.help.cacheHitVar": "캐시가 복원되면(캐시 적중이 발생하면) 'true'로 설정하고 그러지 않으면 'false'로 설정할 변수입니다.",
   "loc.input.label.restoreKeys": "추가 복원 키 접두사",
-  "loc.input.help.restoreKeys": "기본 키 누락 시 사용되는 추가 복원 키 접두사입니다. 새 줄로 구분한 키 접두사 목록일 수 있습니다."
+  "loc.input.help.restoreKeys": "기본 키 누락 시 사용되는 추가 복원 키 접두사입니다. 새 줄로 구분한 키 접두사 목록일 수 있습니다.",
+  "loc.input.label.immutable": "Prevent caches from being overwritten",
+  "loc.input.help.immutable": "Caches that already exist cannot be overwritten. This setting allows them to be overwritable even with a fixed fingerprint."
 }

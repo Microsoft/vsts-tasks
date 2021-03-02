@@ -10,5 +10,7 @@
   "loc.input.label.cacheHitVar": "缓存命中变量",
   "loc.input.help.cacheHitVar": "要在还原缓存(即缓存命中)时设置为 \"true\"、在其他情况下设置为 \"false\" 的变量。",
   "loc.input.label.restoreKeys": "其他还原键前缀",
-  "loc.input.help.restoreKeys": "主键缺失时使用的其他还原键前缀。这可以是以换行符分隔的键前缀列表。"
+  "loc.input.help.restoreKeys": "主键缺失时使用的其他还原键前缀。这可以是以换行符分隔的键前缀列表。",
+  "loc.input.label.immutable": "Prevent caches from being overwritten",
+  "loc.input.help.immutable": "Caches that already exist cannot be overwritten. This setting allows them to be overwritable even with a fixed fingerprint."
 }

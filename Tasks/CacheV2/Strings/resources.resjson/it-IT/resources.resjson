@@ -10,5 +10,7 @@
   "loc.input.label.cacheHitVar": "Cache hit variable",
   "loc.input.help.cacheHitVar": "Variable to set to 'true' when the cache is restored (i.e. a cache hit), otherwise set to 'false'.",
   "loc.input.label.restoreKeys": "Additional restore key prefixes",
-  "loc.input.help.restoreKeys": "Additional restore key prefixes that are used if the primary key misses. This can be a newline-delimited list of key prefixes."
+  "loc.input.help.restoreKeys": "Additional restore key prefixes that are used if the primary key misses. This can be a newline-delimited list of key prefixes.",
+  "loc.input.label.immutable": "Prevent caches from being overwritten",
+  "loc.input.help.immutable": "Caches that already exist cannot be overwritten. This setting allows them to be overwritable even with a fixed fingerprint."
 }

@@ -9,8 +9,8 @@
   "author": "Microsoft Corporation",
   "version": {
     "Major": 2,
-    "Minor": 0,
-    "Patch": 1
+    "Minor": 175,
+    "Patch": 0
   },
   "groups": [],
   "demands": [],
@@ -47,6 +47,14 @@
       "defaultValue": "",
       "required": false,
       "helpMarkDown": "ms-resource:loc.input.help.restoreKeys"
+    },
+    {
+      "name": "immutable",
+      "type": "boolean",
+      "label": "ms-resource:loc.input.label.immutable",
+      "defaultValue": true,
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.immutable"
     }
   ],
   "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
