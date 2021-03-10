@@ -21,6 +21,8 @@ export class GraphManagementClient extends azureServiceClient.ServiceClient {
 
         if (baseUri) {
             this.baseUri = baseUri;
+        } else {
+            this.baseUri = credentials.activeDirectoryResourceId;
         }
 
         if (options.acceptLanguage) {
