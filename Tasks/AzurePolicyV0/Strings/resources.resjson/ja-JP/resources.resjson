@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Azure Policy コンプライアンスの確認",
+  "loc.friendlyName": "Check Azure Policy compliance",
   "loc.helpMarkDown": "",
-  "loc.description": "Azure Policy のセキュリティとコンプライアンスの評価",
-  "loc.instanceNameFormat": "ポリシー コンプライアンスの確認",
-  "loc.input.label.ConnectedServiceName": "Azure サブスクリプション",
-  "loc.input.help.ConnectedServiceName": "ポリシーを適用する Azure Resource Manager のサブスクリプションを選択します。",
-  "loc.input.label.ResourceGroupName": "リソース グループ",
-  "loc.input.help.ResourceGroupName": "リソース グループの名前を指定します。",
-  "loc.input.label.Resources": "リソース名",
-  "loc.input.help.Resources": "ポリシー コンプライアンスを確認する Azure リソースの名前を選択します。"
+  "loc.description": "Security and compliance assessment for Azure Policy",
+  "loc.instanceNameFormat": "Check Policy Compliance",
+  "loc.input.label.ConnectedServiceName": "Azure subscription",
+  "loc.input.help.ConnectedServiceName": "Select the Azure Resource Manager subscription to enforce the policies.",
+  "loc.input.label.ResourceGroupName": "Resource group",
+  "loc.input.help.ResourceGroupName": "Provide name of a resource group.",
+  "loc.input.label.Resources": "Resource name",
+  "loc.input.help.Resources": "Select name of Azure resources for which you want to check the policy compliance."
 }

@@ -10,6 +10,8 @@
   "loc.input.help.KeyVaultName": "提供现有密钥保管库的名称",
   "loc.input.label.SecretsFilter": "密钥筛选器",
   "loc.input.help.SecretsFilter": "用逗号分隔的密钥名称列表或保留 * 以下载所选密钥保管库中的所有密钥。",
+  "loc.input.label.RunAsPreJob": "使机密可用于整个作业",
+  "loc.input.help.RunAsPreJob": "在开始执行作业前运行任务。请将机密公开给作业中的所有任务，而不仅仅是此任务之后的任务。",
   "loc.messages.ClientIdCannotBeEmpty": "clientId 必需是非空字符串。",
   "loc.messages.DomainCannotBeEmpty": "domain 必须为非空字符串。",
   "loc.messages.SecretCannotBeEmpty": "secret 必须是非空字符串。",

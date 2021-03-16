@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "安装 Apple 预配配置文件",
-  "loc.helpMarkDown": "[详细信息](https://go.microsoft.com/fwlink/?LinkID=862068)",
+  "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?LinkID=862068)",
   "loc.description": "将生成所需的 Apple 预配配置文件安装到 macOS 代理计算机上",
   "loc.instanceNameFormat": "安装 apple 预配配置文件",
   "loc.input.label.provisioningProfileLocation": "预配配置文件位置",
@@ -12,5 +12,6 @@
   "loc.input.label.removeProfile": "在生成后删除配置文件",
   "loc.input.help.removeProfile": "选择指定在生成或发布完成后应从代理中删除预配配置文件。",
   "loc.messages.InputProvisioningProfileNotFound": "未在 %s 处找到要安装的预配配置文件。指定预配配置文件的完整文件路径。",
-  "loc.messages.InstallRequiresMac": "安装 Apple 预配配置文件需要 macOS 代理。Apple 不支持在 Windows 或 Linux 上进行安装。"
+  "loc.messages.InstallRequiresMac": "安装 Apple 预配配置文件需要 macOS 代理。Apple 不支持在 Windows 或 Linux 上进行安装。",
+  "loc.messages.InvalidMobileProvisionFileExtension": "预配配置文件应带有 \".mobileprovision\" 或 \".provisionprofile\" 扩展名"
 }

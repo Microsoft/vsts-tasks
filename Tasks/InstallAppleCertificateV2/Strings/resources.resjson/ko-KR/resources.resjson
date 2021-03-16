@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Apple 인증서 설치",
-  "loc.helpMarkDown": "[자세한 정보](https://go.microsoft.com/fwlink/?LinkID=862067)",
+  "loc.helpMarkDown": "[이 작업에 대한 자세한 정보](https://go.microsoft.com/fwlink/?LinkID=862067)",
   "loc.description": "빌드에 필요한 Apple 인증서를 macOS 에이전트 머신에 설치합니다.",
   "loc.instanceNameFormat": "Apple 인증서 설치",
   "loc.releaseNotes": "자체 호스팅 에이전트의 codesign 중단을 수정합니다. 이제 '기본 키 집합' 또는 '사용자 지정 키 집합'을 사용하려면 키 집합 암호가 필요합니다. Microsoft 호스팅 빌드는 '임시 키 집합'을 사용해야 합니다.",

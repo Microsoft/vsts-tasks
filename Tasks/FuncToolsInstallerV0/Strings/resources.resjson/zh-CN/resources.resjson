@@ -4,7 +4,7 @@
   "loc.description": "安装 Azure Func Core 工具",
   "loc.instanceNameFormat": "安装 func 工具 - $(version)",
   "loc.input.label.version": "版本",
-  "loc.input.help.version": "指定要安装的 Azure func 工具的版本。例如:<br><br>2.7.1575<br>v2.7.1575<br>latest",
+  "loc.input.help.version": "指定要安装的 Azure func 工具的版本。例如:<br><br>2.7.1575<br>v2.7.1575<br>最新版本",
   "loc.messages.ErrorFetchingLatestVersion": "从 %s 中提取最新版本信息时出错。错误: %s。正在下载默认的稳定版本: %s。",
   "loc.messages.FindingLatestFuncToolsVersion": "正在查找最新的 func 工具版本…",
   "loc.messages.FuncDownloadFailed": "未能从位置 %s 下载 func 工具。错误为 %s。",

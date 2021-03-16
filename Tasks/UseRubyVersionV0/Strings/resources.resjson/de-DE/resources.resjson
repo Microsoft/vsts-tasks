@@ -1,15 +1,16 @@
 {
-  "loc.friendlyName": "Ruby-Version verwenden",
+  "loc.friendlyName": "Use Ruby version",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=2005989) or [see the Ruby documentation](https://www.ruby-lang.org/)",
-  "loc.description": "Hiermit wird die angegebene Ruby-Version aus dem Toolcache abgerufen und optional zu PATH hinzugefügt.",
-  "loc.instanceNameFormat": "Ruby $(versionSpec) verwenden",
-  "loc.input.label.versionSpec": "Versionsangabe",
-  "loc.input.help.versionSpec": "Versionsbereich oder genaue Ruby-Version, die verwendet werden soll.",
-  "loc.input.label.addToPath": "Zu PATH hinzufügen",
-  "loc.input.help.addToPath": "Stellen Sie die abgerufene Ruby-Version der PATH-Umgebungsvariable voran, um sie in nachfolgenden Aufgaben oder Skripts zur Verfügung zu stellen, ohne die Ausgabevariable zu verwenden.",
-  "loc.messages.ListAvailableVersions": "Verfügbare Versionen:",
-  "loc.messages.PlatformNotRecognized": "Plattform nicht erkannt.",
-  "loc.messages.ToolNotFoundMicrosoftHosted": "Wenn es sich um einen von Microsoft gehosteten Agent handelt, überprüfen Sie unter %s, ob dieses Image parallele Versionen von %s unterstützt.",
-  "loc.messages.ToolNotFoundSelfHosted": "Wenn es sich um einen selbstgehosteten Agent handelt, finden Sie unter %s Informationen zum Konfigurieren paralleler Versionen von %s.",
-  "loc.messages.VersionNotFound": "Die Versionsangabe %s für die Architektur \"%s\" entsprach keiner Version in \"Agent.ToolsDirectory\"."
+  "loc.description": "Use the specified version of Ruby from the tool cache, optionally adding it to the PATH",
+  "loc.instanceNameFormat": "Use Ruby $(versionSpec)",
+  "loc.input.label.versionSpec": "Version spec",
+  "loc.input.help.versionSpec": "Version range or exact version of a Ruby version to use.",
+  "loc.input.label.addToPath": "Add to PATH",
+  "loc.input.help.addToPath": "Prepend the retrieved Ruby version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable.",
+  "loc.messages.ListAvailableVersions": "Available versions:",
+  "loc.messages.PlatformNotRecognized": "Platform not recognized",
+  "loc.messages.ToolNotFoundMicrosoftHosted": "If this is a Microsoft-hosted agent, check that this image supports side-by-side versions of %s at %s.",
+  "loc.messages.ToolNotFoundSelfHosted": "If this is a self-hosted agent, see how to configure side-by-side %s versions at %s.",
+  "loc.messages.VersionNotFound": "Version spec %s for architecture %s did not match any version in Agent.ToolsDirectory.",
+  "loc.messages.ExactVersionNotRecommended": "It is not recommended to specify exact version on Microsoft-Hosted agents. Patch version of Ruby can be replaced by new one on Hosted agents without notice and build stops to work. it is recommended to specify only major or major and minor version (Example: `2` or `2.4`)"
 }

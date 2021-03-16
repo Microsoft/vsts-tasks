@@ -23,7 +23,7 @@
   "loc.input.help.AdditionalArguments": "Argomenti aggiuntivi di robocopy che verranno applicati durante la copia dei file, ad esempio /min:33553332 /l.",
   "loc.messages.WFC_ParameterCannotBeNullorEmpty": "Il parametro '{0}' non può essere Null o vuoto.",
   "loc.messages.WFC_FailedToConnectToPathWithUser": "Non è stato possibile connettersi al percorso {0} con l'utente {1} per la copia.",
-  "loc.messages.WFC_CopyingFailedConsultRobocopyLogsForMoreDetails": "La copia non è riuscita. Per maggiori dettagli, vedere i log di robocopy.",
+  "loc.messages.WFC_CopyingFailedConsultRobocopyLogsForMoreDetails": "La copia non è riuscita. Per altri dettagli, consultare i log di robocopy.",
   "loc.messages.WFC_CopyingRecurivelyFrom0to1MachineSucceed": "La copia ricorsiva da {0} a {1} nel computer {2} è riuscita.",
   "loc.messages.WFC_SourcePathDoesNotExist": "Il percorso di origine '{0}' non esiste.",
   "loc.messages.WFC_RemoteDestinationPathCannotContainEnvironmentVariables": "Il percorso di destinazione remoto '{0}' non può contenere variabili di ambiente.",

@@ -1,12 +1,12 @@
 {
   "loc.friendlyName": "Chef Knife",
-  "loc.helpMarkDown": "[이 작업에 대한 자세한 정보](https://aka.ms/chef-knife-readme)",
-  "loc.description": "Chef 워크스테이션에서 knife 명령을 사용하여 스크립트를 실행합니다.",
-  "loc.instanceNameFormat": "Chef Knife 스크립트: $(ScriptPath)",
-  "loc.input.label.ConnectedServiceName": "Chef 구독",
-  "loc.input.help.ConnectedServiceName": "knife 명령을 실행하기 전에 구성할 Chef 구독",
-  "loc.input.label.ScriptPath": "스크립트 경로",
-  "loc.input.help.ScriptPath": "스크립트의 경로입니다. 정규화된 경로이거나 기본 작업 디렉터리에 대한 상대 경로여야 합니다.",
-  "loc.input.label.ScriptArguments": "스크립트 인수",
-  "loc.input.help.ScriptArguments": "스크립트에 전달할 추가 인수입니다. 서수 매개 변수나 명명된 매개 변수 중 하나일 수 있습니다."
+  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/chef-knife-readme)",
+  "loc.description": "Run scripts with Knife commands on your Chef workstation",
+  "loc.instanceNameFormat": "Chef Knife script: $(ScriptPath)",
+  "loc.input.label.ConnectedServiceName": "Chef Subscription",
+  "loc.input.help.ConnectedServiceName": "Chef subscription to configure before running knife commands",
+  "loc.input.label.ScriptPath": "Script Path",
+  "loc.input.help.ScriptPath": "Path of the script. Should be fully qualified path or relative to the default working directory.",
+  "loc.input.label.ScriptArguments": "Script Arguments",
+  "loc.input.help.ScriptArguments": "Additional parameters to pass to Script.  Can be either ordinal or named parameters."
 }

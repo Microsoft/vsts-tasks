@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Vérifier la conformité à Azure Policy",
+  "loc.friendlyName": "Check Azure Policy compliance",
   "loc.helpMarkDown": "",
-  "loc.description": "Évaluation de sécurité et de conformité pour Azure Policy",
-  "loc.instanceNameFormat": "Vérifier la conformité de la stratégie",
-  "loc.input.label.ConnectedServiceName": "Abonnement Azure",
-  "loc.input.help.ConnectedServiceName": "Sélectionnez l'abonnement Azure Resource Manager approprié pour appliquer les stratégies.",
-  "loc.input.label.ResourceGroupName": "Groupe de ressources",
-  "loc.input.help.ResourceGroupName": "Indiquez le nom d'un groupe de ressources.",
-  "loc.input.label.Resources": "Nom de la ressource",
-  "loc.input.help.Resources": "Sélectionnez le nom des ressources Azure dont vous souhaitez vérifier la conformité à la stratégie."
+  "loc.description": "Security and compliance assessment for Azure Policy",
+  "loc.instanceNameFormat": "Check Policy Compliance",
+  "loc.input.label.ConnectedServiceName": "Azure subscription",
+  "loc.input.help.ConnectedServiceName": "Select the Azure Resource Manager subscription to enforce the policies.",
+  "loc.input.label.ResourceGroupName": "Resource group",
+  "loc.input.help.ResourceGroupName": "Provide name of a resource group.",
+  "loc.input.label.Resources": "Resource name",
+  "loc.input.help.Resources": "Select name of Azure resources for which you want to check the policy compliance."
 }

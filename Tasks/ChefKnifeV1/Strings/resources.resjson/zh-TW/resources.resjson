@@ -1,12 +1,12 @@
 {
   "loc.friendlyName": "Chef Knife",
   "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/chef-knife-readme)",
-  "loc.description": "在您 Chef 工作站上使用 knife 命令執行指令碼",
-  "loc.instanceNameFormat": "Chef Knife 指令碼: $(ScriptPath)",
-  "loc.input.label.ConnectedServiceName": "Chef 訂用帳戶",
-  "loc.input.help.ConnectedServiceName": "執行 knife 命令前用來設定的 Chef 訂用帳戶。",
-  "loc.input.label.ScriptPath": "指令碼路徑",
-  "loc.input.help.ScriptPath": "指令碼的路徑。必須是完整路徑名稱或預設工作目錄的相對路徑。",
-  "loc.input.label.ScriptArguments": "指令碼引數",
-  "loc.input.help.ScriptArguments": "要傳遞至 Script 的額外參數。可以是序數或具名參數。"
+  "loc.description": "Run scripts with Knife commands on your Chef workstation",
+  "loc.instanceNameFormat": "Chef Knife script: $(ScriptPath)",
+  "loc.input.label.ConnectedServiceName": "Chef Subscription",
+  "loc.input.help.ConnectedServiceName": "Chef subscription to configure before running knife commands",
+  "loc.input.label.ScriptPath": "Script Path",
+  "loc.input.help.ScriptPath": "Path of the script. Should be fully qualified path or relative to the default working directory.",
+  "loc.input.label.ScriptArguments": "Script Arguments",
+  "loc.input.help.ScriptArguments": "Additional parameters to pass to Script.  Can be either ordinal or named parameters."
 }

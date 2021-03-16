@@ -1,5 +1,7 @@
 {
-  "loc.messages.LocateJVMBasedOnVersionAndArch": "Java %s %s에 대해 JAVA_HOME 찾기",
-  "loc.messages.UnsupportedJdkWarning": "JDK 9 및 JDK 10은 지원되지 않습니다. 프로젝트 및 파이프라인에서 최신 버전으로 전환하세요. JDK 11을 사용하여 빌드를 시도하는 중...",
-  "loc.messages.FailedToLocateSpecifiedJVM": "지정한 JDK 버전을 찾지 못했습니다. 지정한 JDK 버전이 에이전트에 설치되어 있으며 환경 변수 '%s'이(가) 있고 해당 JDK의 위치로 설정되었는지 확인하거나, [Java Tool Installer](https://docs.microsoft.com/en-us/vsts/build-release/tasks/tool/java-tool-installer) 작업을 사용하여 원하는 JDK를 설치하세요."
+  "loc.messages.SearchingRegistryKeys": "Searching for registry keys for JDK %s",
+  "loc.messages.RegistryKeysFound": "Number of registry keys found: %s",
+  "loc.messages.LocateJVMBasedOnVersionAndArch": "Locate JAVA_HOME for Java %s %s",
+  "loc.messages.UnsupportedJdkWarning": "JDK 9 and JDK 10 are out of support. Please switch to a later version in your project and pipeline. Attempting to build with JDK 11...",
+  "loc.messages.FailedToLocateSpecifiedJVM": "Failed to find the specified JDK version. Please ensure the specified JDK version is installed on the agent and the environment variable '%s' exists and is set to the location of a corresponding JDK or use the [Java Tool Installer](https://docs.microsoft.com/en-us/vsts/build-release/tasks/tool/java-tool-installer) task to install the desired JDK."
 }

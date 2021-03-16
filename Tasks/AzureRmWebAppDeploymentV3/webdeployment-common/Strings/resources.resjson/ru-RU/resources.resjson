@@ -1,13 +1,13 @@
 {
-  "loc.messages.Updatemachinetoenablesecuretlsprotocol": "Компьютер должен использовать протокол TLS 1.2 или более поздней версии. Дополнительные сведения о том, как включить TLS на вашем компьютере: https://aka.ms/enableTlsv2.",
-  "loc.messages.JarPathNotPresent": "Отсутствует путь к jar-файлу Java.",
-  "loc.messages.JSONvariablesubstitutionappliedsuccessfully": "Подстановка переменных JSON успешно применена.",
-  "loc.messages.XMLvariablesubstitutionappliedsuccessfully": "Подстановка переменных XML применена.",
-  "loc.messages.XDTTransformationsappliedsuccessfully": "XML-преобразования успешно применены.",
-  "loc.messages.CannotPerformXdtTransformationOnNonWindowsPlatform": "Невозможно выполнить XML-преобразования на платформе, отличной от Windows.",
-  "loc.messages.XdtTransformationErrorWhileTransforming": "Ошибка XML-преобразования при преобразовании %s с помощью %s.",
-  "loc.messages.JSONParseError": "Не удалось проанализировать JSON-файл: %s. Ошибка: %s",
-  "loc.messages.NOJSONfilematchedwithspecificpattern": "Не найден файл JSON, соответствующий заданному шаблону: %s.",
-  "loc.messages.FailedToApplyTransformation": "Не удается применить преобразование для указанного пакета. Проверьте следующее.",
-  "loc.messages.MissingArgumentsforXMLTransformation": "Неполные или отсутствующие аргументы. Ожидался формат -transform <transform file> -xml <source file> -result <destinamtion file>. Преобразование и исходный файл являются обязательными входными данными."
+  "loc.messages.Updatemachinetoenablesecuretlsprotocol": "Make sure the machine is using TLS 1.2 protocol or higher. Check https://aka.ms/enableTlsv2 for more information on how to enable TLS in your machine.",
+  "loc.messages.JarPathNotPresent": "Java jar path is not present",
+  "loc.messages.JSONvariablesubstitutionappliedsuccessfully": "JSON variable substitution applied successfully.",
+  "loc.messages.XMLvariablesubstitutionappliedsuccessfully": "XML variable substitution applied successfully.",
+  "loc.messages.XDTTransformationsappliedsuccessfully": "XML Transformations applied successfully",
+  "loc.messages.CannotPerformXdtTransformationOnNonWindowsPlatform": "Cannot perform XML transformations on a non-Windows platform.",
+  "loc.messages.XdtTransformationErrorWhileTransforming": "XML transformation error while transforming %s using %s.",
+  "loc.messages.JSONParseError": "Unable to parse JSON file: %s. Error: %s",
+  "loc.messages.NOJSONfilematchedwithspecificpattern": "NO JSON file matched with specific pattern: %s.",
+  "loc.messages.FailedToApplyTransformation": "Unable to apply transformation for the given package. Verify the following.",
+  "loc.messages.MissingArgumentsforXMLTransformation": "Incomplete or missing arguments. Expected format -transform <transform file> -xml <source file> -result <destinamtion file>. Transformation and source file are mandatory inputs."
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Firma per Android",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613717)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?LinkID=613717)",
   "loc.description": "Consente di firmare e allineare i file APK di Android",
   "loc.instanceNameFormat": "Firma e allineamento dei file APK $(files)",
   "loc.releaseNotes": "Questa versione dell'attività usa apksigner invece di jarsigner per firmare gli APK.",
@@ -18,16 +18,23 @@
   "loc.input.help.keystoreAlias": "Immettere l'alias che identifica la coppia di chiavi pubblica/privata da usare nel file dell'archivio chiavi.",
   "loc.input.label.keyPass": "Password della chiave",
   "loc.input.help.keyPass": "Immettere la password chiave per il file dell'archivio chiavi e l'alias. Per crittografare questo valore, usare una nuova variabile con il blocco abilitato nella scheda Variabili.",
+  "loc.input.label.apksignerVersion": "Versione di apksigner",
+  "loc.input.help.apksignerVersion": "Consente di immettere la versione degli strumenti di compilazione di Android SDK da cui cercare l'eseguibile di apksigner.",
   "loc.input.label.apksignerArguments": "Argomenti di apksigner",
-  "loc.input.help.apksignerArguments": "Consente di specificare le eventuali opzioni da passare alla riga di comando di apksigner. Impostazione predefinita: -verbose -sigalg MD5withRSA -digestalg SHA1",
+  "loc.input.help.apksignerArguments": "Consente di specificare le eventuali opzioni da passare alla riga di comando di apksigner. Impostazione predefinita: --verbose",
   "loc.input.label.apksignerLocation": "Percorso di apksigner",
   "loc.input.help.apksignerLocation": "Consente facoltativamente di specificare il percorso dell'eseguibile di apksigner usato durante la firma. Per impostazione predefinita viene usato l'eseguibile di apksigner trovato nella cartella della versione di Android SDK usata per la compilazione dell'applicazione.",
   "loc.input.label.zipalign": "Zipalign",
   "loc.input.help.zipalign": "Consente di scegliere se eseguire zipalign per il pacchetto, in modo da ridurre la quantità di RAM utilizzata da un'app.",
+  "loc.input.label.zipalignVersion": "Versione di Zipalign",
+  "loc.input.help.zipalignVersion": "Consente di immettere la versione degli strumenti di compilazione di Android SDK da cui cercare l'eseguibile di Zipalign.",
   "loc.input.label.zipalignLocation": "Percorso di Zipalign",
   "loc.input.help.zipalignLocation": "Consente facoltativamente di specificare il percorso dell'eseguibile di zipalign usato durante la firma. Per impostazione predefinita viene usato l'eseguibile di zipalign trovato nella cartella della versione di Android SDK usata per la compilazione dell'applicazione.",
   "loc.messages.AndroidHomeNotSet": "La variabile di ambiente ANDROID_HOME non è impostata per l'utente in esecuzione.",
   "loc.messages.CouldNotFindToolInAndroidHome": "Non è stato possibile trovare lo strumento %s in ANDROID_HOME: %s",
   "loc.messages.NoMatchingFiles": "Non sono stati trovati file corrispondenti con il criterio di ricerca: %s",
-  "loc.messages.DeleteKeystoreFileFailed": "Non è stato possibile eliminare il file dell'archivio chiavi scaricato dal server: %s"
+  "loc.messages.DeleteKeystoreFileFailed": "Non è stato possibile eliminare il file dell'archivio chiavi scaricato dal server: %s",
+  "loc.messages.CouldNotFindVersionOfToolInAndroidHome": "Non è stato possibile trovare la versione %s di %s in ANDROID_HOME: %s",
+  "loc.messages.GetLatestToolVersion": "Tentativo di ottenere l'ultima versione installata dello strumento: %s",
+  "loc.messages.GetSpecifiedToolVersion": "Tentativo di ottenere la versione %s di %s"
 }

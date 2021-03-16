@@ -1,15 +1,15 @@
 {
-  "loc.friendlyName": "Dateien löschen",
+  "loc.friendlyName": "Delete files",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=722333)",
-  "loc.description": "Hiermit werden Ordner oder Dateien gelöscht, die einem Muster entsprechen.",
-  "loc.instanceNameFormat": "Dateien aus \"$(SourceFolder)\" löschen",
-  "loc.input.label.SourceFolder": "Quellordner",
+  "loc.description": "Delete folders, or files matching a pattern",
+  "loc.instanceNameFormat": "Delete files from $(SourceFolder)",
+  "loc.input.label.SourceFolder": "Source Folder",
   "loc.input.help.SourceFolder": "The source folder that the deletion(s) will be run from. Empty is the root of the repo. Use [variables](https://go.microsoft.com/fwlink/?LinkID=550988) if files are not in the repo. Example: $(agent.builddirectory)",
-  "loc.input.label.Contents": "Inhalte",
-  "loc.input.help.Contents": "Die zu löschenden Datei-/Ordnerpfade. Mehrere Zeilen von Minimatchmustern werden unterstützt. [Weitere Informationen](https://go.microsoft.com/fwlink/?LinkID=722333)",
+  "loc.input.label.Contents": "Contents",
+  "loc.input.help.Contents": "File/folder paths to delete. Supports multiple lines of minimatch patterns. [More Information](https://go.microsoft.com/fwlink/?LinkID=722333)",
   "loc.input.label.RemoveSourceFolder": "Remove SourceFolder",
   "loc.input.help.RemoveSourceFolder": "Attempt to remove the source folder as well.",
-  "loc.messages.CantDeleteFiles": "Mindestens eine Datei konnte nicht gelöscht werden.",
-  "loc.messages.SkippingSymbolStore": "Der Löschvorgang für die Symbolspeicher-Dateifreigabe wird übersprungen: %s",
-  "loc.messages.NoFiles": "Es sind keine zu löschenden Dateien vorhanden."
+  "loc.messages.CantDeleteFiles": "Couldn't delete one or more files",
+  "loc.messages.SkippingSymbolStore": "Skipping delete for symbol store file share: %s",
+  "loc.messages.NoFiles": "No files to delete."
 }

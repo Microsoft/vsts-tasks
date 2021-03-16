@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Проверить соответствие Политики Azure",
+  "loc.friendlyName": "Check Azure Policy compliance",
   "loc.helpMarkDown": "",
-  "loc.description": "Оценка безопасности и соответствия для Политики Azure",
-  "loc.instanceNameFormat": "Проверить соответствие политикам",
-  "loc.input.label.ConnectedServiceName": "Подписка Azure",
-  "loc.input.help.ConnectedServiceName": "Выберите подписку Azure Resource Manager, к которой необходимо применить политики.",
-  "loc.input.label.ResourceGroupName": "Группа ресурсов",
-  "loc.input.help.ResourceGroupName": "Укажите имя группы ресурсов.",
-  "loc.input.label.Resources": "Имя ресурса",
-  "loc.input.help.Resources": "Выберите имя ресурсов Azure, соответствие политикам которых необходимо проверить."
+  "loc.description": "Security and compliance assessment for Azure Policy",
+  "loc.instanceNameFormat": "Check Policy Compliance",
+  "loc.input.label.ConnectedServiceName": "Azure subscription",
+  "loc.input.help.ConnectedServiceName": "Select the Azure Resource Manager subscription to enforce the policies.",
+  "loc.input.label.ResourceGroupName": "Resource group",
+  "loc.input.help.ResourceGroupName": "Provide name of a resource group.",
+  "loc.input.label.Resources": "Resource name",
+  "loc.input.help.Resources": "Select name of Azure resources for which you want to check the policy compliance."
 }

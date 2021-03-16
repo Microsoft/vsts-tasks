@@ -14,5 +14,6 @@
   "loc.messages.Info_SettingsXmlRead": "설정 파일 %s에 인증을 추가하는 중입니다.",
   "loc.messages.Info_CreatingSettingsXml": "경로 %s에서 새 settings.xml을 만드는 중입니다.",
   "loc.messages.Info_WritingToSettingsXml": "추가한 인증으로 새 settings.xml을 쓰고 있습니다.",
-  "loc.messages.Error_InvalidServiceConnection": "%s에 대한 서비스 연결이 잘못되었습니다."
+  "loc.messages.Error_InvalidServiceConnection": "%s에 대한 서비스 연결이 잘못되었습니다.",
+  "loc.messages.Error_FailedCleanupM2": "사용자 settings.xml 파일에서 자격 증명을 삭제하지 못함: %s"
 }

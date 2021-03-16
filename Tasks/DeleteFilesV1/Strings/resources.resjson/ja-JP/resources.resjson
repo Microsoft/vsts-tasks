@@ -1,15 +1,15 @@
 {
-  "loc.friendlyName": "ファイルの削除",
+  "loc.friendlyName": "Delete files",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=722333)",
-  "loc.description": "パターンに一致するフォルダーまたはファイルを削除します",
-  "loc.instanceNameFormat": "ファイルを $(SourceFolder) から削除する",
-  "loc.input.label.SourceFolder": "ソース フォルダー",
+  "loc.description": "Delete folders, or files matching a pattern",
+  "loc.instanceNameFormat": "Delete files from $(SourceFolder)",
+  "loc.input.label.SourceFolder": "Source Folder",
   "loc.input.help.SourceFolder": "The source folder that the deletion(s) will be run from. Empty is the root of the repo. Use [variables](https://go.microsoft.com/fwlink/?LinkID=550988) if files are not in the repo. Example: $(agent.builddirectory)",
-  "loc.input.label.Contents": "コンテンツ",
-  "loc.input.help.Contents": "削除するファイル/ファルダーのパス。minimatch パターンの複数行をサポートします。[詳細](https://go.microsoft.com/fwlink/?LinkID=722333)",
+  "loc.input.label.Contents": "Contents",
+  "loc.input.help.Contents": "File/folder paths to delete. Supports multiple lines of minimatch patterns. [More Information](https://go.microsoft.com/fwlink/?LinkID=722333)",
   "loc.input.label.RemoveSourceFolder": "Remove SourceFolder",
   "loc.input.help.RemoveSourceFolder": "Attempt to remove the source folder as well.",
-  "loc.messages.CantDeleteFiles": "1 つ以上のファイルを削除できませんでした",
-  "loc.messages.SkippingSymbolStore": "シンボル ストアのファイル共有の削除をスキップしています: %s",
-  "loc.messages.NoFiles": "削除できるファイルはありません。"
+  "loc.messages.CantDeleteFiles": "Couldn't delete one or more files",
+  "loc.messages.SkippingSymbolStore": "Skipping delete for symbol store file share: %s",
+  "loc.messages.NoFiles": "No files to delete."
 }

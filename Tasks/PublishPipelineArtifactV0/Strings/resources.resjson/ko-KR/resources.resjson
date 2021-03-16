@@ -1,10 +1,10 @@
 {
-  "loc.friendlyName": "파이프라인 아티팩트 게시",
-  "loc.helpMarkDown": "로컬 디렉터리 또는 파일을 현재 파이프라인에 대한 명명된 아티팩트로 게시합니다.",
-  "loc.description": "로컬 디렉터리 또는 파일을 현재 파이프라인의 명명된 아티팩트로 게시합니다.",
-  "loc.instanceNameFormat": "파이프라인 아티팩트 게시",
-  "loc.input.label.artifactName": "이 아티팩트의 이름",
-  "loc.input.help.artifactName": "이 아티팩트의 이름입니다.",
-  "loc.input.label.targetPath": "게시할 경로",
-  "loc.input.help.targetPath": "게시할 폴더 또는 파일 경로입니다. 정규화된 경로 또는 리포지토리 루트의 상대 경로일 수 있습니다. 와일드카드는 지원되지 않습니다. [변수](https://go.microsoft.com/fwlink/?LinkID=550988)가 지원됩니다."
+  "loc.friendlyName": "Publish pipeline artifact",
+  "loc.helpMarkDown": "Publish a local directory or file as a named artifact for the current pipeline.",
+  "loc.description": "Publish a local directory or file as a named artifact for the current pipeline",
+  "loc.instanceNameFormat": "Publish Pipeline Artifact",
+  "loc.input.label.artifactName": "The name of this artifact",
+  "loc.input.help.artifactName": "The name of this artifact.",
+  "loc.input.label.targetPath": "Path to publish",
+  "loc.input.help.targetPath": "The folder or file path to publish. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported."
 }

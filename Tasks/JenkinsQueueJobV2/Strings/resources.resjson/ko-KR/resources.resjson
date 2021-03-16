@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Jenkins 작업을 큐에 넣기",
-  "loc.helpMarkDown": "이 작업에서는 [Jenkins](https://jenkins.io/) 서버의 큐에 작업을 넣습니다. 전체 통합 기능을 사용하려면 Jenkins에 [Team Foundation Server 플러그 인](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin)을 설치해야 합니다. [자세한 정보](http://go.microsoft.com/fwlink/?LinkId=816956).",
+  "loc.helpMarkDown": "[이 작업(task)에 대한 자세한 정보](http://go.microsoft.com/fwlink/?LinkId=816956). 이 작업(task)에서는 [Jenkins](https://jenkins.io/) 서버의 큐에 작업(job)을 넣습니다. 전체 통합 기능을 사용하려면 Jenkins에 [Team Foundation Server 플러그 인](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin)을 설치해야 합니다.",
   "loc.description": "작업을 Jenkins 서버의 큐에 넣기",
   "loc.instanceNameFormat": "Jenkins 작업을 큐에 넣기: $(jobName)",
   "loc.group.displayName.advanced": "고급",

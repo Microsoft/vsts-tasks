@@ -6,5 +6,7 @@
   "loc.input.label.secureFile": "安全文件",
   "loc.input.help.secureFile": "要下载到代理计算机的安全文件的文件名或 GUID。将在管道运行后删除该文件。",
   "loc.input.label.retryCount": "重试次数",
-  "loc.input.help.retryCount": "下载失败时重试下载安全文件的次数(可选)。"
+  "loc.input.help.retryCount": "下载失败时重试下载安全文件的次数(可选)。",
+  "loc.input.label.socketTimeout": "套接字超时",
+  "loc.input.help.socketTimeout": "(可选)与下载安全文件请求关联的套接字的超时，以毫秒为单位。"
 }

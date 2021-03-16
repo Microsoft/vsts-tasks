@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Manueller Eingriff",
-  "loc.helpMarkDown": "[Weitere Informationen](https://go.microsoft.com/fwlink/?linkid=870234)",
-  "loc.description": "Hiermit wird die Bereitstellung angehalten und auf einen manuellen Eingriff gewartet.",
-  "loc.instanceNameFormat": "Manueller Eingriff",
-  "loc.input.label.instructions": "Anweisungen",
-  "loc.input.help.instructions": "Diese Anweisungen werden dem Benutzer angezeigt, damit dieser den manuellen Eingriff fortsetzen oder ablehnen kann. Basierend auf diesen Anweisungen kann der Benutzer eine fundierte Entscheidung zu diesem manuellen Eingriff treffen.",
-  "loc.input.label.emailRecipients": "Benutzer benachrichtigen",
-  "loc.input.help.emailRecipients": "Senden Sie eine E-Mail an bestimmte Benutzer (oder Gruppen), um diese über ausstehende manuelle Eingriffe zu informieren. Nur Benutzer mit der Berechtigung zur Bereitstellungsverwaltung können manuelle Eingriffe vornehmen.",
-  "loc.input.label.onTimeout": "Bei Zeitlimit",
-  "loc.input.help.onTimeout": "Lehnen Sie diese manuelle Intervention automatisch ab, oder nehmen Sie sie wieder auf, wenn sie für das angegebene Zeitlimit oder 60 Tage lang (je nachdem, was früher ist) aussteht."
+  "loc.friendlyName": "Manual intervention",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870234)",
+  "loc.description": "Pause deployment and wait for manual intervention",
+  "loc.instanceNameFormat": "Manual Intervention",
+  "loc.input.label.instructions": "Instructions",
+  "loc.input.help.instructions": "These instructions will be shown to the user for resuming or rejecting the manual intervention. Based on these instructions the user will take an informed decision about this manual intervention.",
+  "loc.input.label.emailRecipients": "Notify users",
+  "loc.input.help.emailRecipients": "Send a manual intervention pending email to specific users (or groups). Only users with manage deployment permission can act on a manual intervention.",
+  "loc.input.label.onTimeout": "On timeout",
+  "loc.input.help.onTimeout": "Reject or resume this manual intervention automatically after it is pending for the specified timeout or 60 days, whichever is earlier."
 }

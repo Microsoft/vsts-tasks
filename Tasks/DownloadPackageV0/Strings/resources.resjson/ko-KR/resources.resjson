@@ -13,7 +13,6 @@
   "loc.input.help.downloadPath": "패키지를 다운로드할 에이전트 컴퓨터의 경로입니다.",
   "loc.messages.FailedToGetPackageMetadata": "%s 오류로 인해 패키지 메타데이터를 가져오지 못했습니다.",
   "loc.messages.FailedToDownloadNugetPackage": "%s에서 NuGet 패키지를 다운로드하지 못했습니다. 다음 오류가 발생했습니다. %s",
-  "loc.messages.Info_ResolvedToolFromCache": "Resolved from tool cache: %s",
   "loc.messages.PackageDownloadSuccessful": "패키지를 다운로드했습니다.",
   "loc.messages.CredentialsNotFound": "Azure Artifacts 서비스에 연결할 자격 증명을 확인할 수 없습니다.",
   "loc.messages.StartingDownloadOfPackage": "NuGet 패키지 %s을(를) %s 위치에 다운로드하기 시작합니다.",
@@ -22,5 +21,6 @@
   "loc.messages.ExtractionFailed": "%s 오류로 인해 패키지를 추출하지 못했습니다.",
   "loc.messages.RetryingOperation": "%s에서 오류가 발생하여 다시 시도 중 => 다시 시도 보류 중: %s",
   "loc.messages.OperationFailed": "%s에서 실패했습니다(오류: %s).",
+  "loc.messages.Info_ResolvedToolFromCache": "도구 캐시 %s에서 확인됨",
   "loc.messages.UnsupportedProjectScopedFeeds": "이 버전의 \"패키지 다운로드\" 작업에서는 프로젝트 범위의 피드가 지원되지 않습니다. 버전 1 이상을 사용하세요."
 }

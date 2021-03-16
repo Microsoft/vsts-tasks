@@ -1,7 +1,7 @@
 {
-  "loc.messages.SignIdNotFound": "No se encuentra la identidad de firma de iOS. Compruebe la información de firma y aprovisionamiento proporcionada.",
-  "loc.messages.TempKeychainSetupFailed": "No se pudo agregar la cadena de claves temporal a la ruta de acceso de búsqueda de cadenas de claves.",
-  "loc.messages.ProvProfileDetailsNotFound": "No se encuentran los detalles para aprovisionar el perfil: %s",
-  "loc.messages.ProvProfileUUIDNotFound": "No se encuentra el UUID del perfil de aprovisionamiento: %s",
-  "loc.messages.ProvProfileNameNotFound": "No se encuentra el nombre del perfil de aprovisionamiento: %s"
+  "loc.messages.SignIdNotFound": "Failed to find iOS signing identity. Verify the signing and provisioning information provided.",
+  "loc.messages.TempKeychainSetupFailed": "Failed to add the temporary keychain to the keychains search path.",
+  "loc.messages.ProvProfileDetailsNotFound": "Failed to find the details for provisioning profile: %s",
+  "loc.messages.ProvProfileUUIDNotFound": "Failed to find provisioning profile UUID for provisioning profile: %s",
+  "loc.messages.ProvProfileNameNotFound": "Failed to find provisioning profile name for provisioning profile: %s"
 }

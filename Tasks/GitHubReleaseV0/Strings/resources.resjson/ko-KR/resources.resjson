@@ -41,7 +41,7 @@
   "loc.input.label.changeLogCompareToReleaseTag": "릴리스 태그",
   "loc.input.help.changeLogCompareToReleaseTag": "릴리스 태그에 대한 regex를 지정합니다. 이 태그와 일치하는 릴리스가 변경 로그 계산의 기본으로 사용됩니다.",
   "loc.input.label.changeLogType": "변경 로그 유형",
-  "loc.input.help.changeLogType": "변경 로그는 커밋 기반 또는 문제 기반일 수 있습니다. 문제 기반 변경 로그는 릴리스에 포함된 모든 문제/PR을 나열하지만 커밋 기반 변경 로그는 릴리스에 포함된 모든 커밋을 나열합니다. ",
+  "loc.input.help.changeLogType": "변경 로그는 커밋 기반 또는 문제 기반일 수 있습니다. 문제 기반 변경 로그는 릴리스에 포함된 모든 문제/끌어오기 요청을 나열하지만 커밋 기반 변경 로그는 릴리스에 포함된 모든 커밋을 나열합니다. ",
   "loc.input.label.changeLogLabels": "범주",
   "loc.input.help.changeLogLabels": "문제/PR과 연결된 레이블을 기준으로 변경 내용을 분류하는 데 사용할 수 있습니다. 레이블의 경우 범주 및 문제 상태에 대해 해당 표시 이름을 언급할 수 있습니다. 예: `\"[{ \"label\" : \"bug\", \"displayName\" : \"Bugs\", \"state\" : \"closed\" }]\"`. 변경 내용에 레이블이 여러 개 있는 경우 처음 지정한 레이블이 우선 순위를 갖습니다. 문제/PR의 단순 목록을 보려면 이 필드를 비워 두세요.",
   "loc.messages.GithubApiFailError": "예기치 않은 오류가 발생했습니다.",

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "安装 Apple 证书",
-  "loc.helpMarkDown": "[详细信息](https://go.microsoft.com/fwlink/?LinkID=862067)",
+  "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?LinkID=862067)",
   "loc.description": "将生成所需的 Apple 证书安装到 macOS 代理计算机上",
   "loc.instanceNameFormat": "安装 Apple 证书",
   "loc.releaseNotes": "修复程序 codesign 在自托管代理上挂起。密钥链密码现在需要使用 `Default Keychain` 或 `Custom Keychain`。Microsoft 托管生成应使用 `Temporary Keychain`。",

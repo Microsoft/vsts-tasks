@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "下載管線成品",
-  "loc.helpMarkDown": "從管線將具名成品下載至本機路徑。",
-  "loc.description": "下載與管線建立關聯的成品",
-  "loc.instanceNameFormat": "下載管線成品",
-  "loc.input.label.pipelineId": "要從中下載的特定管線",
-  "loc.input.help.pipelineId": "要從中下載的管線。若留空，則會將目前的管線設為目標。",
-  "loc.input.label.artifactName": "要下載的成品名稱。",
-  "loc.input.help.artifactName": "要下載的成品名稱。成品須為管線成品。",
-  "loc.input.label.targetPath": "下載的目標路徑",
-  "loc.input.help.targetPath": "成品所要下載至的資料夾路徑。此項目可為完整路徑，或與存放庫根相對的路徑。不支援萬用字元。支援[變數](https://go.microsoft.com/fwlink/?LinkID=550988)。若資料夾不存在，會建立資料夾。"
+  "loc.friendlyName": "Download pipeline artifact",
+  "loc.helpMarkDown": "Download named artifact from a pipeline to a local path.",
+  "loc.description": "Downloads an artifact associated with a pipeline",
+  "loc.instanceNameFormat": "Download Pipeline Artifact",
+  "loc.input.label.pipelineId": "The specific pipeline to download from",
+  "loc.input.help.pipelineId": "The pipeline to download from. Target the current pipeline if left blank.",
+  "loc.input.label.artifactName": "The name of artifact to download.",
+  "loc.input.help.artifactName": "The name of artifact to download. The artifact must be a pipeline artifact.",
+  "loc.input.label.targetPath": "Path to download to",
+  "loc.input.help.targetPath": "The folder path to download the artifact to. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported. If the folder doesn't exist it will be created."
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "PowerShell",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613736)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=613736)",
   "loc.description": "在 Linux、macOS 或 Windows 執行 PowerShell 指令碼",
   "loc.instanceNameFormat": "PowerShell 指令碼",
   "loc.releaseNotes": "指令碼工作一致性。已新增 macOS 與 Linux 的支援。",
@@ -16,6 +16,8 @@
   "loc.input.help.errorActionPreference": "在您的指令碼頂端前面加上 `$ErrorActionPreference = 'VALUE'` 一行。",
   "loc.input.label.failOnStderr": "發生標準錯誤的失敗",
   "loc.input.help.failOnStderr": "若此為 true，如果在錯誤管線中寫入任何錯誤，或對標準錯誤資料流寫入任何資料，此工作即會失敗。否則，工作將依據結束代碼來判斷失敗。",
+  "loc.input.label.showWarnings": "將警告顯示為 Azure DevOps 警告",
+  "loc.input.help.showWarnings": "若為 true，且您的指令碼寫入警告，則在管線記錄中也會顯示為警告",
   "loc.input.label.ignoreLASTEXITCODE": "略過 $LASTEXITCODE",
   "loc.input.help.ignoreLASTEXITCODE": "若此為 false，則會將 `if ((Test-Path -LiteralPath variable:\\LASTEXITCODE)) { exit $LASTEXITCODE }` 附加至您指令碼的結尾。如此會讓來自外部命令中的最後一個結束代碼，以 PowerShell 的結束代碼散佈。否則，不會將此行附加至您的指令碼結尾。",
   "loc.input.label.pwsh": "使用 PowerShell Core",

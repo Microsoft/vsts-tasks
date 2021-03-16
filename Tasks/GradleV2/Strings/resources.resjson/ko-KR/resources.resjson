@@ -23,7 +23,7 @@
   "loc.input.label.codeCoverageTool": "코드 검사 도구",
   "loc.input.help.codeCoverageTool": "코드 검사 도구를 선택하세요.",
   "loc.input.label.classFilesDirectories": "클래스 파일 디렉터리",
-  "loc.input.help.classFilesDirectories": "클래스 파일, 보관 파일(JAR, WAR 등)이 포함된 디렉터리의 쉼표로 구분된 목록입니다. 코드 검사는 이러한 디렉터리에 있는 클래스 파일에 대해 보고됩니다. 일반적으로 Gradle 빌드의 기본 클래스 디렉터리인 `build/classes/main` 아래에 있는 클래스가 검색됩니다.",
+  "loc.input.help.classFilesDirectories": "클래스 파일, 보관 파일(JAR, WAR 등)이 포함된 디렉터리의 쉼표로 구분된 목록입니다. 코드 검사는 이러한 디렉터리에 있는 클래스 파일에 대해 보고됩니다. 일반적으로 Gradle 빌드의 기본 클래스 디렉터리인 'build/classes/java/main'(Gradle 4 이상의 경우)에 있는 클래스가 검색됩니다.",
   "loc.input.label.classFilter": "클래스 포함/제외 필터",
   "loc.input.help.classFilter": "코드 검사 수집에서 클래스를 포함하거나 제외할 필터의 쉼표로 구분된 목록입니다(예: +:com.*,+:org.*,-:my.app*.*).",
   "loc.input.label.failIfCoverageEmpty": "코드 검사 결과가 없는 경우 실패",

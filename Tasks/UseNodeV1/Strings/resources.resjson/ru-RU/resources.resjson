@@ -1,13 +1,13 @@
 {
-  "loc.friendlyName": "Использовать экосистему Node.js",
+  "loc.friendlyName": "Use Node.js ecosystem",
   "loc.helpMarkDown": "",
-  "loc.description": "Настройте среду Node.js и добавьте ее в PATH, дополнительно предоставив поддержку прокси",
-  "loc.instanceNameFormat": "Использовать Node $(versionSpec)",
-  "loc.input.label.version": "Версия",
-  "loc.input.help.version": "Спецификация версии для используемой версии. Примеры: 10.x, 10.15.1, >=10.15.0",
-  "loc.input.label.checkLatest": "Проверить наличие последней версии",
-  "loc.input.help.checkLatest": "Всегда проверяет наличие в Интернете актуальной версии, соответствующей спецификатору версии. Обычно задано значение \"false\", кроме случаев, когда имеется определенный сценарий всегда получать актуальную версию. Когда практическая необходимость в этом отсутствует, особенно в случае размещенного пула сборок, может взиматься дополнительная плата за загрузку.",
-  "loc.input.label.force32bit": "Используйте 32-битную версию на агентах x64",
-  "loc.input.help.force32bit": "Установит версию узла x86 независимо от архитектуры процессора агента.",
-  "loc.messages.ToolFailed": "Сбой установки Node: %s"
+  "loc.description": "Set up a Node.js environment and add it to the PATH, additionally providing proxy support",
+  "loc.instanceNameFormat": "Use Node $(versionSpec)",
+  "loc.input.label.version": "Version",
+  "loc.input.help.version": "Version Spec of the version to use.  Examples: 10.x, 10.15.1, >=10.15.0",
+  "loc.input.label.checkLatest": "Check for Latest Version",
+  "loc.input.help.checkLatest": "Always checks online for the latest available version that satisfies the version spec. This is typically false unless you have a specific scenario to always get latest. This will cause it to incur download costs when potentially not necessary, especially with the hosted build pool.",
+  "loc.input.label.force32bit": "Use 32 bit version on x64 agents",
+  "loc.input.help.force32bit": "Installs the x86 version of Node regardless of the CPU architecture of the agent.",
+  "loc.messages.ToolFailed": "Node install failed: %s"
 }

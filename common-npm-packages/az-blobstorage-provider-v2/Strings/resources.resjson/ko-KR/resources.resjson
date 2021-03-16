@@ -1,14 +1,14 @@
 {
-  "loc.messages.CreatedBlobForItem": "항목 {0}에 대한 Blob을 만들었습니다. Blob URI: {1}",
-  "loc.messages.CreatedContainer": "{0} 컨테이너를 만들었습니다.",
-  "loc.messages.ErrorInReadStream": "읽기 스트림 오류: {0}",
-  "loc.messages.ErrorInWriteStream": "쓰기 스트림 오류: {0}",
-  "loc.messages.FailedToCreateBlob": "{0} Blob을 만들지 못했습니다. 오류: {1}",
-  "loc.messages.FailedToCreateContainer": "{0} 컨테이너를 만들지 못했습니다. 오류: {1}",
-  "loc.messages.FailedToListItemInsideContainer": "컨테이너 안에 있는 항목을 나열하지 못했습니다. {0}. 오류: {1}",
-  "loc.messages.SuccessFullyFetchedItemList": "항목 목록을 가져왔습니다.",
-  "loc.messages.UnableToFetchItem": "{0} 항목을 가져올 수 없습니다. 오류: {1}",
-  "loc.messages.UploadingItem": "{0}을(를) 업로드하는 중입니다.",
-  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "연속 토큰이 있습니다. 나머지 파일 목록을 가져오는 중입니다.",
-  "loc.messages.GetArtifactItemsNotSupported": "아티팩트 항목 가져오기가 지원되지 않음, 잘못된 코드 경로"
+  "loc.messages.CreatedBlobForItem": "Created blob for item {0}. Blob uri: {1}",
+  "loc.messages.CreatedContainer": "Created container {0}.",
+  "loc.messages.ErrorInReadStream": "Error in Read stream: {0}",
+  "loc.messages.ErrorInWriteStream": "Error in write stream: {0}",
+  "loc.messages.FailedToCreateBlob": "Failed to create blob {0}. Error: {1}",
+  "loc.messages.FailedToCreateContainer": "Failed to create container {0}. Error: {1}",
+  "loc.messages.FailedToListItemInsideContainer": "Failed to list items inside container: {0}. Error: {1}",
+  "loc.messages.SuccessFullyFetchedItemList": "Successfully fetcted list of items",
+  "loc.messages.UnableToFetchItem": "Unable to fetch item: {0}. Error: {1}",
+  "loc.messages.UploadingItem": "Uploading {0}.",
+  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "Continuation token exists, trying to fetch the list of remaining files.",
+  "loc.messages.GetArtifactItemsNotSupported": "Get artifact items not supported, invalid code path"
 }

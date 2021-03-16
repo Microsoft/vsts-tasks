@@ -1,15 +1,15 @@
 {
-  "loc.friendlyName": "刪除檔案",
+  "loc.friendlyName": "Delete files",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=722333)",
-  "loc.description": "刪除符合模式的資料夾或檔案",
-  "loc.instanceNameFormat": "從 $(SourceFolder) 刪除檔案",
-  "loc.input.label.SourceFolder": "來源資料夾",
+  "loc.description": "Delete folders, or files matching a pattern",
+  "loc.instanceNameFormat": "Delete files from $(SourceFolder)",
+  "loc.input.label.SourceFolder": "Source Folder",
   "loc.input.help.SourceFolder": "The source folder that the deletion(s) will be run from. Empty is the root of the repo. Use [variables](https://go.microsoft.com/fwlink/?LinkID=550988) if files are not in the repo. Example: $(agent.builddirectory)",
-  "loc.input.label.Contents": "內容",
-  "loc.input.help.Contents": "要刪除的檔案/資料夾路徑。支援多行 minimatch 模式。[詳細資訊](https://go.microsoft.com/fwlink/?LinkID=722333)",
+  "loc.input.label.Contents": "Contents",
+  "loc.input.help.Contents": "File/folder paths to delete. Supports multiple lines of minimatch patterns. [More Information](https://go.microsoft.com/fwlink/?LinkID=722333)",
   "loc.input.label.RemoveSourceFolder": "Remove SourceFolder",
   "loc.input.help.RemoveSourceFolder": "Attempt to remove the source folder as well.",
-  "loc.messages.CantDeleteFiles": "無法刪除一或多個檔案",
-  "loc.messages.SkippingSymbolStore": "正在略過刪除符號存放區檔案共用: %s",
-  "loc.messages.NoFiles": "沒有要刪除的檔案。"
+  "loc.messages.CantDeleteFiles": "Couldn't delete one or more files",
+  "loc.messages.SkippingSymbolStore": "Skipping delete for symbol store file share: %s",
+  "loc.messages.NoFiles": "No files to delete."
 }

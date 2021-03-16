@@ -31,6 +31,6 @@
   "loc.input.help.agentLocation": "Consente facoltativamente di specificare il percorso del file vstf_testagent.exe dal percorso di rete o locale. Se non si specifica alcun percorso, il file verrà scaricato automaticamente dall'Area download. Il programma di installazione di Test Agent 2015 Update 3 è disponibile all'indirizzo `https://go.microsoft.com/fwlink/?LinkId=827840`. Il programma di installazione di Test Agent 2017 è disponibile all'indirizzo `https://aka.ms/vs/15/release/vs_TestAgent.exe`. Per informazioni dettagliate sull'utilizzo di programmi di installazione offline, vedere `https://aka.ms/testagentlocation`.",
   "loc.input.label.updateTestAgent": "Aggiorna agente di test",
   "loc.input.help.updateTestAgent": "Se l'agente di test è già distribuito in un computer, questa opzione verifica se è disponibile un aggiornamento per la versione dell'agente.",
-  "loc.messages.InvalidAccessToken": "Non è possibile generare il token di accesso personale per l'utente. Contattare l'amministratore della raccolta di progetti",
+  "loc.messages.InvalidAccessToken": "Non è possibile generare il token di accesso personale per l'utente. Contattare l'amministratore della raccolta del progetto",
   "loc.messages.NotSupportedWithParallel": "L'attività Distribuzione agente di test di Visual Studio non è supportata nel tipo di esecuzione parallela MultiMachine/MultiConfiguration. Per altri dettagli, vedere questo blog https://blogs.msdn.microsoft.com/devops/2017/03/26/vstest-task-dons-a-new-avatar-testing-with-unified-agents-and-phases/"
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "NuGet 복원",
-  "loc.helpMarkDown": "[이 작업에 대한 자세한 정보](https://go.microsoft.com/fwlink/?LinkID=613747) 또는 [NuGet 설명서 참조](https://docs.microsoft.com/nuget/)",
+  "loc.helpMarkDown": "[이 작업에 대한 자세한 정보](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget) 또는 [NuGet 설명서 참조](https://docs.microsoft.com/nuget/)",
   "loc.description": "Visual Studio 빌드 단계를 준비하기 위해 NuGet 패키지를 복원합니다.",
   "loc.instanceNameFormat": "NuGet 복원 $(solution)",
   "loc.group.displayName.advanced": "고급",
@@ -18,7 +18,7 @@
   "loc.input.help.noCache": "-NoCache NuGet.exe 명령줄 인수에 해당",
   "loc.input.label.packagesDirectory": "대상 디렉터리",
   "loc.input.help.packagesDirectory": "-PackagesDirectory NuGet.exe 명령줄 인수와 동일",
-  "loc.input.label.verbosity": "세부 정보 표시",
+  "loc.input.label.verbosity": "자세한 정도",
   "loc.input.help.verbosity": "NuGet의 세부 정보 표시 수준",
   "loc.messages.Warning_NoConfigForNoCredentialProvider": "이 빌드 에이전트의 Azure Pipelines/TFS 프로젝트 컬렉션에 호스트된 NuGet 피드에 연결하려면 빌드 정의를 편집하여 상위 버전의 nuget을 선택하거나 사용할 패키지 소스가 포함된 NuGet.config의 경로를 지정하세요.",
   "loc.messages.Warning_ConflictingNuGetPreference": "NuGet 3.3을 선택했지만 사용자 지정 NuGet 경로를 제공했습니다. 사용자 지정 경로가 우선됩니다. 이 경고를 해결하려면 빌드 작업을 편집하고 [고급]에서 NuGet 버전에 대해 '사용자 지정'을 선택합니다.",

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "安裝 Apple 憑證",
-  "loc.helpMarkDown": "[詳細資訊](https://go.microsoft.com/fwlink/?LinkID=862067)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=862067)",
   "loc.description": "在 macOS 代理程式電腦上執行建置作業必須安裝 Apple 憑證",
   "loc.instanceNameFormat": "安裝 Apple 憑證",
   "loc.releaseNotes": "修正 codesign 在自我裝載代理程式停止回應。現在必須有金鑰鏈密碼，才能使用 [預設金鑰鏈] 或 [自訂金鑰鏈]。Microsoft 裝載的組建應使用 [暫存金鑰鏈]。",

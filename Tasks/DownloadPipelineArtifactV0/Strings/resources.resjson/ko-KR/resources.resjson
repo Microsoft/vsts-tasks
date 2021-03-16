@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "파이프라인 아티팩트 다운로드",
-  "loc.helpMarkDown": "파이프라인의 명명된 아티팩트를 로컬 경로에 다운로드합니다.",
-  "loc.description": "파이프라인에 연결된 아티팩트를 다운로드합니다.",
-  "loc.instanceNameFormat": "파이프라인 아티팩트 다운로드",
-  "loc.input.label.pipelineId": "다운로드할 특정 파이프라인",
-  "loc.input.help.pipelineId": "다운로드할 파이프라인입니다. 비어 있는 경우 현재 파이프라인을 대상으로 합니다.",
-  "loc.input.label.artifactName": "다운로드할 아티팩트의 이름",
-  "loc.input.help.artifactName": "다운로드할 아티팩트의 이름입니다. 아티팩트는 파이프라인 아티팩트여야 합니다.",
-  "loc.input.label.targetPath": "다운로드할 경로",
-  "loc.input.help.targetPath": "아티팩트를 다운로드할 폴더 경로입니다. 정규화된 경로 또는 리포지토리 루트의 상대 경로일 수 있습니다. 와일드카드는 지원되지 않습니다. [변수](https://go.microsoft.com/fwlink/?LinkID=550988)가 지원됩니다. 폴더가 없는 경우 새로 만들어집니다."
+  "loc.friendlyName": "Download pipeline artifact",
+  "loc.helpMarkDown": "Download named artifact from a pipeline to a local path.",
+  "loc.description": "Downloads an artifact associated with a pipeline",
+  "loc.instanceNameFormat": "Download Pipeline Artifact",
+  "loc.input.label.pipelineId": "The specific pipeline to download from",
+  "loc.input.help.pipelineId": "The pipeline to download from. Target the current pipeline if left blank.",
+  "loc.input.label.artifactName": "The name of artifact to download.",
+  "loc.input.help.artifactName": "The name of artifact to download. The artifact must be a pipeline artifact.",
+  "loc.input.label.targetPath": "Path to download to",
+  "loc.input.help.targetPath": "The folder path to download the artifact to. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported. If the folder doesn't exist it will be created."
 }

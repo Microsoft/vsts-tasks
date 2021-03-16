@@ -1,14 +1,14 @@
 {
-  "loc.friendlyName": "Installer für Docker CLI",
+  "loc.friendlyName": "Docker CLI installer",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=851275)",
-  "loc.description": "Hiermit wird die Docker CLI auf dem Agentcomputer installiert.",
-  "loc.instanceNameFormat": "Docker $(dockerVersion) installieren",
-  "loc.input.label.dockerVersion": "Docker-Version",
-  "loc.input.help.dockerVersion": "Geben Sie die zu installierende Docker CLI-Version an.",
-  "loc.input.label.releaseType": "Releasetyp",
-  "loc.input.help.releaseType": "Wählen Sie den zu installierenden Releasetyp aus. Nightly wird unter Windows nicht unterstützt.",
-  "loc.messages.DownloadDockerFailedFromLocation": "Fehler beim Herunterladen von Docker aus Speicherort \"%s\". Fehler: %s",
-  "loc.messages.DockerNotFoundInFolder": "Die ausführbare Docker-Datei wurde nicht im Pfad \"%s\" gefunden.",
-  "loc.messages.DockerDownloadFailed": "Fehler beim Herunterladen von Docker aus Speicherort \"%s\". Fehler: %s",
-  "loc.messages.VerifyDockerInstallation": "Die Docker-Installation wird überprüft..."
+  "loc.description": "Install Docker CLI on agent machine.",
+  "loc.instanceNameFormat": "Install Docker $(dockerVersion)",
+  "loc.input.label.dockerVersion": "Docker Version",
+  "loc.input.help.dockerVersion": "Specify the version of Docker CLI to install",
+  "loc.input.label.releaseType": "Release type",
+  "loc.input.help.releaseType": "Pick the release type to install. Nightly is not supported on Windows",
+  "loc.messages.DownloadDockerFailedFromLocation": "Failed to download docker from location %s. Error %s",
+  "loc.messages.DockerNotFoundInFolder": "Docker executable not found in path %s",
+  "loc.messages.DockerDownloadFailed": "Failed to download Docker from location %s. Error %s",
+  "loc.messages.VerifyDockerInstallation": "Verifying docker installation..."
 }

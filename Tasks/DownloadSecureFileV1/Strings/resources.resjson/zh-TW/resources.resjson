@@ -1,10 +1,12 @@
 {
   "loc.friendlyName": "下載安全檔案",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=862069)",
-  "loc.description": "Download a secure file to the agent machine",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=862069)",
+  "loc.description": "將安全檔案下載至代理程式電腦",
   "loc.instanceNameFormat": "下載安全檔案",
   "loc.input.label.secureFile": "安全檔案",
-  "loc.input.help.secureFile": "The file name or GUID of the secure file to download to the agent machine. The file will be deleted after the pipeline runs.",
-  "loc.input.label.retryCount": "Retry Count",
-  "loc.input.help.retryCount": "Optional number of times to retry downloading a secure file if the download fails."
+  "loc.input.help.secureFile": "要下載至代理程式電腦的安全檔案名稱或 GUID。此檔案會在管線執行後刪除。",
+  "loc.input.label.retryCount": "重試計數",
+  "loc.input.help.retryCount": "下載失敗時選用的安全檔案下載重試次數。",
+  "loc.input.label.socketTimeout": "通訊端逾時",
+  "loc.input.help.socketTimeout": "與下載安全檔案要求建立關聯之通訊端的選用逾時 (以毫秒為單位)。"
 }

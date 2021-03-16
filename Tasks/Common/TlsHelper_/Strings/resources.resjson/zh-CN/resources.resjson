@@ -1,5 +1,5 @@
 {
-  "loc.messages.UnsupportedTLSError": "请确保计算机使用的是 TLS 1.2 协议或更高版本。请访问 https://aka.ms/enableTlsv2 获取有关如何在计算机中启用 TLS 的详细信息。",
-  "loc.messages.TLS12AddedInSession": "会话中已添加 TLS 1.2。",
-  "loc.messages.UnableToAddTls12InSession": "未能在当前会话中添加 TLS 1.2。错误: {0}"
+  "loc.messages.UnsupportedTLSError": "Make sure the machine is using TLS 1.2 protocol or higher. Check https://aka.ms/enableTlsv2 for more information on how to enable TLS in your machine.",
+  "loc.messages.TLS12AddedInSession": "Added TLS 1.2 in session.",
+  "loc.messages.UnableToAddTls12InSession": "Failed to add TLS 1.2 in current session. Error: '{0}'"
 }

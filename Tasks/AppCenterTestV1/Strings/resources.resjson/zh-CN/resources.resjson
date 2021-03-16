@@ -50,7 +50,7 @@
   "loc.input.label.username": "App Center 用户名",
   "loc.input.help.username": "请访问 https://appcenter.ms/settings/profile，获取用户名。",
   "loc.input.label.password": "App Center 密码",
-  "loc.input.help.password": "请访问 https://mobile.azure.com/settings/profile 并设置密码。它可以接受生成/发布管道中定义为 \"$(passwordVariable)\" 的变量。可以将变量类型标记为“机密”来保护它。",
+  "loc.input.help.password": "请访问 https://appcenter.ms/settings/profile 并设置密码。它可以接受生成/发布管道中定义为 \"$(passwordVariable)\" 的变量。可以将变量类型标记为“机密”来保护它。",
   "loc.input.label.appSlug": "应用数据域",
   "loc.input.help.appSlug": "应用数据域的格式为 {username}/{app_identifier}。要查找应用的 {username} 和 {app_identifier}，请在 https://appcenter.ms/apps 上单击其名称，生成的 URL 格式为 https://appcenter.ms/users/{username}/apps/{app_identifier}。",
   "loc.input.label.devices": "设备",

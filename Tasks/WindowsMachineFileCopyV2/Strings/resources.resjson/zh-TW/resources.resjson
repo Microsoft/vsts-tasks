@@ -24,7 +24,7 @@
   "loc.messages.WFC_ParameterCannotBeNullorEmpty": "參數 '{0}' 不得為 null 或空白。",
   "loc.messages.WFC_FailedToConnectToPathWithUser": "無法以使用者 {1} 連線到路徑 {0} 進行複製。",
   "loc.messages.WFC_CopyingFailedConsultRobocopyLogsForMoreDetails": "複製失敗。如需詳細資料，請參閱 robocopy 記錄檔。",
-  "loc.messages.WFC_CopyingRecurivelyFrom0to1MachineSucceed": "在機器 {2} 上從 {0} 至 {1} 遞迴複製成功。",
+  "loc.messages.WFC_CopyingRecurivelyFrom0to1MachineSucceed": "成功從 {0} 遞迴複製到電腦 {2} 上的 {1}。",
   "loc.messages.WFC_SourcePathDoesNotExist": "來源路徑 '{0}' 不存在。",
   "loc.messages.WFC_RemoteDestinationPathCannotContainEnvironmentVariables": "遠端目的地路徑 '{0}' 不可包含環境變數。",
   "loc.messages.WFC_CopyStartedFor0": "{0} 的複製已啟動",

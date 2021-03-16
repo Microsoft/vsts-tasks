@@ -1,13 +1,13 @@
 {
-  "loc.friendlyName": "Рабочие элементы запросов",
-  "loc.helpMarkDown": "[Дополнительные сведения](https://go.microsoft.com/fwlink/?linkid=870238)",
-  "loc.description": "Выполнение запроса рабочего элемента и проверка числа возвращенных элементов",
-  "loc.instanceNameFormat": "Рабочие элементы запросов",
-  "loc.group.displayName.advanced": "Дополнительно",
-  "loc.input.label.queryId": "Запрос",
-  "loc.input.help.queryId": "Выберите сохраненный запрос рабочего элемента, который необходимо выполнить.",
-  "loc.input.label.maxThreshold": "Верхнее пороговое значение",
-  "loc.input.help.maxThreshold": "Максимальное количество соответствующих запросу рабочих элементов.",
-  "loc.input.label.minThreshold": "Нижнее пороговое значение",
-  "loc.input.help.minThreshold": "Минимальное количество соответствующих запросу рабочих элементов."
+  "loc.friendlyName": "Query work items",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870238)",
+  "loc.description": "Execute a work item query and check the number of items returned",
+  "loc.instanceNameFormat": "Query Work Items",
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.queryId": "Query",
+  "loc.input.help.queryId": "Select a saved work item query to execute.",
+  "loc.input.label.maxThreshold": "Upper threshold",
+  "loc.input.help.maxThreshold": "The maximum number of matching workitems from the query.",
+  "loc.input.label.minThreshold": "Lower threshold",
+  "loc.input.help.minThreshold": "The minimum number of matching workitems from the query."
 }

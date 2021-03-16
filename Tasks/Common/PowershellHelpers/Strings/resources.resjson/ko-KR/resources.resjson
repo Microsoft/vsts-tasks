@@ -1,5 +1,5 @@
 {
-  "loc.messages.ActionTimedOut": "다시 시도 최대 횟수를 초과했습니다. 시간 제한이 초과되고 있습니다.",
-  "loc.messages.RetryAfterMessage": "{0}초 후 다시 시도하는 중...",
-  "loc.messages.ActionException": "예외가 발생했습니다. {0}"
+  "loc.messages.ActionTimedOut": "Exceeded max retries. Timing out.",
+  "loc.messages.RetryAfterMessage": "Retrying after {0} second(s)...",
+  "loc.messages.ActionException": "Exception occurred: {0}"
 }

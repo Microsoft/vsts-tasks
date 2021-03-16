@@ -1,9 +1,9 @@
 {
   "loc.friendlyName": "Xcode",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613730) or [see the Xcode documentation](https://developer.apple.com/xcode/)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?LinkID=613730). In alternativa [vedere la documentazione di Xcode](https://developer.apple.com/xcode/)",
   "loc.description": "Consente di compilare, testare o archiviare un'area di lavoro Xcode in macOS. Facoltativamente crea il pacchetto di un'app.",
   "loc.instanceNameFormat": "Xcode $(actions)",
-  "loc.releaseNotes": "This version of the task is compatible with Xcode 8 - 11. Features that were solely to maintain compatibility with Xcode 7 have been removed. This task has better options for using Microsoft-hosted macOS agents.",
+  "loc.releaseNotes": "Questa versione dell'attività è compatibile con Xcode 8-11. Le funzionalità presenti solo per garantire la compatibilità con Xcode 7 sono state rimosse. L'attività include opzioni ottimizzate per l'uso di agenti macOS ospitati da Microsoft.",
   "loc.group.displayName.sign": "Firma e provisioning",
   "loc.group.displayName.package": "Opzioni pacchetto",
   "loc.group.displayName.devices": "Dispositivi e simulatori",
@@ -19,7 +19,7 @@
   "loc.input.label.scheme": "Schema",
   "loc.input.help.scheme": "(Facoltativo) Consente di immettere un nome di schema definito in Xcode. Deve essere uno schema condiviso, per il quale la casella di controllo <strong>Shared </strong> è selezionata in <strong>Managed Schemes</strong> in Xcode. Se si specifica sopra l'opzione <strong>Percorso progetto o area di lavoro</strong> senza specificare uno schema verrà usato automaticamente lo schema condiviso dell'area di lavoro, se questa ne include uno solo.",
   "loc.input.label.xcodeVersion": "Versione di Xcode",
-  "loc.input.help.xcodeVersion": "Consente di specificare la versione di destinazione di Xcode. Selezionare `Predefinita` per usare la versione predefinita di Xcode nel computer agente. Se si seleziona un numero di versione, ad esempio `Xcode 9`, verranno usate le variabili di ambiente impostate nel computer agente per il percorso della versione, ad esempio `XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer`. Selezionare `Specifica il percorso` per specificare un percorso per la directory per sviluppatori Xcode.",
+  "loc.input.help.xcodeVersion": "Specify the target version of Xcode. Select `Default` to use the default version of Xcode on the agent machine. Selecting a version number (e.g. `Xcode 9`) relies on environment variables being set on the agent machine for the version's location (e.g. `XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer`). Select `Specify path` to provide a specific path to the Xcode developer directory.<br/>Note: XCode 12 is installed on macOS-10.15 (or higher)",
   "loc.input.label.xcodeDeveloperDir": "Percorso sviluppatori Xcode",
   "loc.input.help.xcodeDeveloperDir": "(Facoltativo) Consente di immettere un percorso di una directory specifica per sviluppatori Xcode, ad esempio `/Applications/Xcode_9.0.0.app/Contents/Developer`. È utile quando nel computer agente sono installate più versioni di Xcode.",
   "loc.input.label.packageApp": "Crea pacchetto dell'app",
@@ -64,8 +64,12 @@
   "loc.input.help.cwd": "(Facoltativo) Consente di immettere la directory di lavoro in cui eseguire la compilazione. Se non si specifica alcun valore, verrà usata la radice del repository.",
   "loc.input.label.useXcpretty": "Usa xcpretty",
   "loc.input.help.useXcpretty": "Consente di specificare se usare xcpretty per formattare l'output di xcodebuild. Se si abilita questa opzione, xcpretty deve essere installato nel computer agente. Se xcpretty non è installato, viene visualizzato output xcodebuild non elaborato. xcpretty è preinstallato in agenti di compilazione ospitati di Azure Pipelines. Vedere [xcpretty](https://github.com/supermarin/xcpretty) in GitHub.",
+  "loc.input.label.xcprettyArgs": "Argomenti di xcpretty",
+  "loc.input.help.xcprettyArgs": "Argomenti aggiuntivi da passare a xcpretty.",
   "loc.input.label.publishJUnitResults": "Pubblica i risultati dei test in Azure Pipelines",
   "loc.input.help.publishJUnitResults": "Specificare se pubblicare i risultati dei test di JUnit in Azure Pipelines. Per generare i risultati dei test di JUnit, è necessario abilitare xcpretty.",
+  "loc.input.label.testRunTitle": "Titolo dell'esecuzione dei test",
+  "loc.input.help.testRunTitle": "Titolo dell'esecuzione dei test durante la pubblicazione dei risultati dei test JUnit in Azure Pipelines.",
   "loc.messages.SignIdNotFound": "Non è stato possibile trovare l'identità di firma iOS. Verificare che siano state specificate le informazioni su firma e provisioning.",
   "loc.messages.TempKeychainSetupFailed": "Non è stato possibile aggiungere la keychain temporanea al percorso di ricerca delle keychain.",
   "loc.messages.ProvProfileDetailsNotFound": "Non è stato possibile trovare i dettagli per il profilo di provisioning: %s",
@@ -92,5 +96,6 @@
   "loc.messages.OutputDirectoryIgnored": "La directory di output per l'output di compilazione (file binari) è stata ignorata. La specifica di una directory di output è incompatibile con l'azione '%s'.",
   "loc.messages.NoDestinationPlatformWarning": "I test dell'interfaccia utente devono essere eseguiti su un simulatore o un dispositivo connesso. Nell'attività Xcode impostare `Piattaforma di destinazione` su un valore diverso da `Predefinita`.",
   "loc.messages.XcprettyNotInstalled": "xcpretty non è installato nel server di compilazione. Verrà visualizzato l'output non elaborato di xcodebuild. La pubblicazione dei risultati dei test non riuscirà se xcpretty non è installato.",
-  "loc.messages.XcodeRequiresMac": "Per usare Xcode, è richiesto un agente macOS. La compilazione con Xcode in Linux o Windows non è supportata da Apple."
+  "loc.messages.XcodeRequiresMac": "Per usare Xcode, è richiesto un agente macOS. La compilazione con Xcode in Linux o Windows non è supportata da Apple.",
+  "loc.messages.UsingDefaultSimulator": "Uso del simulatore predefinito: %s."
 }

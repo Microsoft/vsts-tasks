@@ -12,7 +12,7 @@
   "loc.input.label.definition": "包",
   "loc.input.help.definition": "如果在列表中没有找到包，可以提供包 ID，可以使用[此处](https://go.microsoft.com/fwlink/?linkid=2086778)的说明找到包 ID。",
   "loc.input.label.version": "版本",
-  "loc.input.help.version": "包版本",
+  "loc.input.help.version": "包的版本。在运行时使用 `latest` 下载包的最新版本。",
   "loc.input.label.files": "文件",
   "loc.input.help.files": "使用[文件匹配模式](https://go.microsoft.com/fwlink/?linkid=2086953)指定要下载的文件。",
   "loc.input.label.extract": "提取包内容",

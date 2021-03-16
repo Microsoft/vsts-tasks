@@ -1,14 +1,14 @@
 {
-  "loc.messages.CreatedBlobForItem": "Blob für Element \"{0}\" erstellt. Blob-URI: {1}",
-  "loc.messages.CreatedContainer": "Container \"{0}\" erstellt.",
-  "loc.messages.ErrorInReadStream": "Fehler im Lesedatenstrom: {0}",
-  "loc.messages.ErrorInWriteStream": "Fehler im Schreibdatenstrom: {0}",
-  "loc.messages.FailedToCreateBlob": "Fehler beim Erstellen des Blobs \"{0}\". Fehler: {1}",
-  "loc.messages.FailedToCreateContainer": "Fehler beim Erstellen des Containers \"{0}\". Fehler: {1}",
-  "loc.messages.FailedToListItemInsideContainer": "Fehler beim Auflisten von Elementen innerhalb des Containers: {0}. Fehler: {1}",
-  "loc.messages.SuccessFullyFetchedItemList": "Die Elementliste wurde erfolgreich abgerufen.",
-  "loc.messages.UnableToFetchItem": "Element konnte nicht abgerufen werden: {0}. Fehler: {1}",
-  "loc.messages.UploadingItem": "\"{0}\" wird hochgeladen.",
-  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "Ein Fortsetzungstoken ist vorhanden. Es wird versucht, die Liste verbleibender Dateien abzurufen.",
-  "loc.messages.GetArtifactItemsNotSupported": "Das Abrufen von Artefaktelementen wird nicht unterstützt, ungültiger Codepfad."
+  "loc.messages.CreatedBlobForItem": "Created blob for item {0}. Blob uri: {1}",
+  "loc.messages.CreatedContainer": "Created container {0}.",
+  "loc.messages.ErrorInReadStream": "Error in Read stream: {0}",
+  "loc.messages.ErrorInWriteStream": "Error in write stream: {0}",
+  "loc.messages.FailedToCreateBlob": "Failed to create blob {0}. Error: {1}",
+  "loc.messages.FailedToCreateContainer": "Failed to create container {0}. Error: {1}",
+  "loc.messages.FailedToListItemInsideContainer": "Failed to list items inside container: {0}. Error: {1}",
+  "loc.messages.SuccessFullyFetchedItemList": "Successfully fetcted list of items",
+  "loc.messages.UnableToFetchItem": "Unable to fetch item: {0}. Error: {1}",
+  "loc.messages.UploadingItem": "Uploading {0}.",
+  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "Continuation token exists, trying to fetch the list of remaining files.",
+  "loc.messages.GetArtifactItemsNotSupported": "Get artifact items not supported, invalid code path"
 }

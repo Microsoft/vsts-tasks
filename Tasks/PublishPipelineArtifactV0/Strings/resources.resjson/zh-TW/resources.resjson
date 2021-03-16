@@ -1,10 +1,10 @@
 {
-  "loc.friendlyName": "發佈管線成品",
-  "loc.helpMarkDown": "將本機目錄或檔案發佈為目前管線的具名成品。",
-  "loc.description": "將本機目錄或檔案發佈為目前管線的具名成品",
-  "loc.instanceNameFormat": "發佈管線成品",
-  "loc.input.label.artifactName": "成品的名稱",
-  "loc.input.help.artifactName": "成品的名稱。",
-  "loc.input.label.targetPath": "要發佈的路徑",
-  "loc.input.help.targetPath": "要發佈的資料夾或檔案路徑。此項目可為完整路徑，或與存放庫根相對的路徑。不支援萬用字元。支援[變數](https://go.microsoft.com/fwlink/?LinkID=550988)。"
+  "loc.friendlyName": "Publish pipeline artifact",
+  "loc.helpMarkDown": "Publish a local directory or file as a named artifact for the current pipeline.",
+  "loc.description": "Publish a local directory or file as a named artifact for the current pipeline",
+  "loc.instanceNameFormat": "Publish Pipeline Artifact",
+  "loc.input.label.artifactName": "The name of this artifact",
+  "loc.input.help.artifactName": "The name of this artifact.",
+  "loc.input.label.targetPath": "Path to publish",
+  "loc.input.help.targetPath": "The folder or file path to publish. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported."
 }

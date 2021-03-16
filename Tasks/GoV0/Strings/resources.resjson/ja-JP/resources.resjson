@@ -1,16 +1,16 @@
 {
   "loc.friendlyName": "Go",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=867582)",
-  "loc.description": "Go アプリケーションを取得、ビルド、テストするか、カスタムの Go コマンドを実行します",
-  "loc.instanceNameFormat": "go $(コマンド)",
-  "loc.group.displayName.advanced": "詳細設定",
-  "loc.input.label.command": "コマンド",
-  "loc.input.help.command": "実行する Go コマンドを選択します。この一覧にないコマンドを使用するには、[カスタム] を選択します。",
-  "loc.input.label.customCommand": "カスタム コマンド",
-  "loc.input.help.customCommand": "実行するカスタム Go コマンド。たとえば、'go version' を実行するには、'version' と入力します。",
-  "loc.input.label.arguments": "引数",
-  "loc.input.help.arguments": "選択したコマンドに対するオプションの引数です。たとえば、'go build' コマンドの build-time 引数。",
-  "loc.input.label.workingDirectory": "作業ディレクトリ",
-  "loc.input.help.workingDirectory": "コマンドが実行される作業ディレクトリです。空の場合は、リポジトリ (ビルドの場合) または成果物 (リリースの場合) のルートが使用され、これは '$(System.DefaultWorkingDirectory)' の値です。",
-  "loc.messages.TaskFailedWithError": "Go タスクは次のエラーで失敗しました: %s"
+  "loc.description": "Get, build, or test a Go application, or run a custom Go command",
+  "loc.instanceNameFormat": "go $(command)",
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.command": "Command",
+  "loc.input.help.command": "Select a Go command to run. Select 'Custom' to use a command not listed here.",
+  "loc.input.label.customCommand": "Custom command",
+  "loc.input.help.customCommand": "A custom Go command to execute. For example, to execute 'go version', enter 'version'.",
+  "loc.input.label.arguments": "Arguments",
+  "loc.input.help.arguments": "Optional arguments to the selected command. For example, build-time arguments for the 'go build' command.",
+  "loc.input.label.workingDirectory": "Working directory",
+  "loc.input.help.workingDirectory": "The working directory where the command will run. When empty, the root of the repository (for builds) or artifacts (for releases) is used, which is the value of '$(System.DefaultWorkingDirectory)'.",
+  "loc.messages.TaskFailedWithError": "The Go task failed with an error: %s"
 }

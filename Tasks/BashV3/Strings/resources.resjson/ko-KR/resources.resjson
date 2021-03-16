@@ -1,11 +1,11 @@
 {
   "loc.friendlyName": "Bash",
-  "loc.helpMarkDown": "[이 작업에 대한 자세한 정보](https://go.microsoft.com/fwlink/?LinkID=613738) 또는 [Bash 설명서 참조](https://www.gnu.org/software/bash/manual/)",
+  "loc.helpMarkDown": "[이 작업에 대한 자세한 정보](https://go.microsoft.com/fwlink/?linkid=2132213) 또는 [Bash 설명서 참조](https://www.gnu.org/software/bash/manual/)",
   "loc.description": "macOS, Linux 또는 Windows에서 Bash 스크립트 실행",
   "loc.instanceNameFormat": "Bash 스크립트",
   "loc.releaseNotes": "스크립트 작업 일관성입니다. 추가로 여러 줄과 Windows를 지원합니다.",
   "loc.group.displayName.advanced": "고급",
-  "loc.input.label.targetType": "형식",
+  "loc.input.label.targetType": "유형",
   "loc.input.help.targetType": "대상 스크립트 유형: 파일 경로 또는 인라인",
   "loc.input.label.filePath": "스크립트 경로",
   "loc.input.help.filePath": "실행할 스크립트의 경로입니다. 정규화된 경로이거나 $(System.DefaultWorkingDirectory)의 상대 경로여야 합니다.",

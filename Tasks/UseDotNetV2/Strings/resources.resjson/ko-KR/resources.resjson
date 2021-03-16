@@ -13,6 +13,8 @@
   "loc.input.help.workingDirectory": "'전역 json 사용'을 사용할 때 global.json 파일을 검색할 경로를 지정합니다. 비워 두면 `system.DefaultWorkingDirectory`가 루트 경로로 간주됩니다.",
   "loc.input.label.version": "버전",
   "loc.input.help.version": "설치할 .NET Core SDK 또는 런타임 버전을 지정합니다.<br/>다음 형식으로 버전을 지정할 수 있습니다.<li>2.x   => 주 버전으로 최신 버전을 설치합니다.</li><li>2.2.x => 주 버전과 부 버전으로 최신 버전을 설치합니다.</li><li>2.2.104 => 정확한 버전을 설치합니다.</li><br/>releases.json에서 SDK/런타임을 설치할 '버전' 값을 찾습니다. 해당 major.minor 버전의 releases.json 링크는 [**releases-index 파일**](https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json)에서 확인할 수 있습니다. 예를 들어 2.2 버전의 releases.json 링크는 https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/2.2/releases.json입니다.",
+  "loc.input.label.vsVersion": "호환되는 Visual Studio 버전",
+  "loc.input.help.vsVersion": ".NET Core SDK를 설치할 호환되는 Visual Studio의 버전을 지정합니다. 16.6.4처럼 주 버전, 부 버전 및 패치 번호가 포함된 전체 VS 버전을 지정합니다. releases.json에서 SDK/런타임을 설치하기 위해 '버전' 값을 찾으세요. 해당 주.부 버전의 releases.json 링크는 [**releases-index 파일**](https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json)에서 찾을 수 있습니다.",
   "loc.input.label.includePreviewVersions": "미리 보기 버전 포함",
   "loc.input.help.includePreviewVersions": "최신 버전을 검색할 때(예: 2.2.x 검색) 미리 보기 버전을 포함하려면 선택합니다. 정확한 버전(예: 3.0.100-preview3-010431)을 지정하는 경우 이 설정은 무시됩니다.",
   "loc.input.label.installationPath": ".NET Core 설치 경로",

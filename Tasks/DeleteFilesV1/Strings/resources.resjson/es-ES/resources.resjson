@@ -1,15 +1,15 @@
 {
-  "loc.friendlyName": "Eliminar archivos",
+  "loc.friendlyName": "Delete files",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=722333)",
-  "loc.description": "Elimina las carpetas o archivos que coinciden con un patrón.",
-  "loc.instanceNameFormat": "Eliminar archivos de $(SourceFolder)",
-  "loc.input.label.SourceFolder": "Carpeta de origen",
+  "loc.description": "Delete folders, or files matching a pattern",
+  "loc.instanceNameFormat": "Delete files from $(SourceFolder)",
+  "loc.input.label.SourceFolder": "Source Folder",
   "loc.input.help.SourceFolder": "The source folder that the deletion(s) will be run from. Empty is the root of the repo. Use [variables](https://go.microsoft.com/fwlink/?LinkID=550988) if files are not in the repo. Example: $(agent.builddirectory)",
-  "loc.input.label.Contents": "Contenido",
-  "loc.input.help.Contents": "Rutas de archivo o carpeta que se eliminarán. Admite varias líneas de patrones de minimatch. [Más información](https://go.microsoft.com/fwlink/?LinkID=722333)",
+  "loc.input.label.Contents": "Contents",
+  "loc.input.help.Contents": "File/folder paths to delete. Supports multiple lines of minimatch patterns. [More Information](https://go.microsoft.com/fwlink/?LinkID=722333)",
   "loc.input.label.RemoveSourceFolder": "Remove SourceFolder",
   "loc.input.help.RemoveSourceFolder": "Attempt to remove the source folder as well.",
-  "loc.messages.CantDeleteFiles": "No se han podido eliminar uno o varios archivos",
-  "loc.messages.SkippingSymbolStore": "Se omitirá la eliminación del recurso compartido de archivos de símbolos: %s",
-  "loc.messages.NoFiles": "No hay archivos que se deban eliminar."
+  "loc.messages.CantDeleteFiles": "Couldn't delete one or more files",
+  "loc.messages.SkippingSymbolStore": "Skipping delete for symbol store file share: %s",
+  "loc.messages.NoFiles": "No files to delete."
 }

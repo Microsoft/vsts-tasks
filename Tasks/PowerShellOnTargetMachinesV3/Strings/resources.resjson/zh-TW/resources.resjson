@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "目標電腦上的 PowerShell",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=873465)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?linkid=873465)",
   "loc.description": "在遠端電腦上執行 PowerShell 指令碼，使用 PSSession 和 Invoke-Command 執行遠端功能。",
   "loc.instanceNameFormat": "在目標電腦上執行 PowerShell",
   "loc.releaseNotes": "請使用 PSSession 和 invoke-command 在目標電腦遠端執行。<br/><br/>* 新增內嵌指令碼執行的支援。<br/><br/>* 支援預設和 Credssp 驗證。<br/><br/>* 新增錯誤處理的選項: ErrorActionPreference、ignoreLASTEXITCODE 和 Fail on Standard Error。",

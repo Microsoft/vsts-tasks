@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure App Service 部署",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/azurermwebdeployreadme)",
+  "loc.helpMarkDown": "[深入了解此工作](https://aka.ms/azurermwebdeployreadme)",
   "loc.description": "使用 Docker、Java、.NET、.NET Core、Node.js、PHP、Python 或 Ruby 對 Azure App Service 部署 Web、行動或 API 應用程式",
   "loc.instanceNameFormat": "Azure App Service 部署: $(WebAppName)",
   "loc.releaseNotes": "3.0 版的新功能: <br/>&nbsp;&nbsp;支援檔案轉換 (XDT) <br/>&nbsp;&nbsp;支援變數替代 (XML、JSON) <br/>如需詳細資訊，請按一下[這裡](https://aka.ms/azurermwebdeployreadme)。",
@@ -11,7 +11,7 @@
   "loc.group.displayName.output": "輸出",
   "loc.input.label.ConnectedServiceName": "Azure 訂用帳戶",
   "loc.input.help.ConnectedServiceName": "選取部署的 Azure Resource Manager 訂用帳戶。",
-  "loc.input.label.WebAppKind": "App 類型",
+  "loc.input.label.WebAppKind": "應用程式類型",
   "loc.input.help.WebAppKind": "選取要部署的 Web 應用程式類型。<br/> 注意: 請為內建平台映像或自訂容器映像部署選取 Linux Web 應用程式。",
   "loc.input.label.WebAppName": "App Service 名稱",
   "loc.input.help.WebAppName": "輸入或選取現有 Azure App Service 的名稱。僅依選取的應用程式類型列出應用程式服務。",
@@ -43,7 +43,7 @@
   "loc.input.help.DockerNamespace": "您的特定登錄或命名空間的全域唯一頂層網域名稱。<br/>注意: 完整映像名稱的格式為: '<b>`<登錄或命名空間`></b>/`<存放庫`>:`<標記`>。例如，'<b>myregistry.azurecr.io</b>/nginx:latest'。",
   "loc.input.label.DockerRepository": "映像",
   "loc.input.help.DockerRepository": "容器映像儲存所在的存放庫名稱。<br/>注意: 完整映像名稱的格式為: '`<登錄或命名空間`>/<b>`<存放庫`></b>:`<標記`>'。例如，'myregistry.azurecr.io/<b>nginx</b>:latest'。",
-  "loc.input.label.DockerImageTag": "標籤",
+  "loc.input.label.DockerImageTag": "標記",
   "loc.input.help.DockerImageTag": "標記是選擇項，這是登錄提供版本給 Docker 映像時所使用的機制。<br/>注意: 完整映像名稱的格式為: '`<registry or namespace`>/`<repository`>:<b>`<tag`></b>'。例如，'myregistry.azurecr.io/nginx:<b>latest</b>'。",
   "loc.input.label.VirtualApplication": "虛擬應用程式",
   "loc.input.help.VirtualApplication": "指定在 Azure 入口網站中設定的虛擬應用程式名稱。若要部署到 App Service 的根目錄，則無須使用此選項。",
@@ -68,7 +68,7 @@
   "loc.input.label.AppSettings": "應用程式設定",
   "loc.input.help.AppSettings": "請使用語法「-索引鍵 值」編輯 Web 應用程式設定。若值包含空格，應將其括以雙引號。<br /> <b>範例</b>: -Port 5000 -RequestTimeout 5000 <br /> -WEBSITE_TIME_ZONE \"Eastern Standard Time\"",
   "loc.input.label.ConfigurationSettings": "組態設定",
-  "loc.input.help.ConfigurationSettings": "請使用語法「-索引鍵 值」編輯 Web 應用程式組態。若值包含空格，應將其括以雙引號。<br />範例 -phpVersion 5.6 -linuxFxVersion: node|6.11",
+  "loc.input.help.ConfigurationSettings": "請使用語法「-索引鍵 值」編輯 Web 應用程式設定。若值包含空格，應將其括以雙引號。<br />範例 -phpVersion 5.6 -linuxFxVersion: node|6.11",
   "loc.input.label.TakeAppOfflineFlag": "將應用程式設為離線",
   "loc.input.help.TakeAppOfflineFlag": "選取此選項可在同步作業開始之前，將 app_offline.htm 檔案置於 App Service 的根目錄中而使此 Azure App Service 離線。此檔案將會在同步作業成功完成後移除。",
   "loc.input.label.UseWebDeploy": "使用 Web Deploy 發佈",
@@ -114,7 +114,7 @@
   "loc.messages.MSDeploygeneratedpackageareonlysupportedforWindowsplatform": "僅 Windows 平台支援 MSDeploy 產生的套件。",
   "loc.messages.UnsupportedinstalledversionfoundforMSDeployversionshouldbeatleast3orabove": "發現對 MSDeploy 安裝了不受支援的版本: %s。版本至少應為 3 (含) 以上",
   "loc.messages.UnabletofindthelocationofMSDeployfromregistryonmachineError": "電腦上的登錄找不到 MS 部署的位置 (錯誤: %s)",
-  "loc.messages.Nopackagefoundwithspecifiedpattern": "No package found with specified pattern: %s<br/>Check if the package mentioned in the task is published as an artifact in the build or a previous stage and downloaded in the current job.",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "找不到具有指定模式的套件: %s<br/>請確認工作中所提及的套件已在組建或上一個階段中發行為成品，並已在目前的作業中下載。",
   "loc.messages.MorethanonepackagematchedwithspecifiedpatternPleaserestrainthesearchpattern": "有多個套件與指定模式相符: %s。請縮小搜尋模式範圍。",
   "loc.messages.Trytodeploywebappagainwithappofflineoptionselected": "請先選取 [讓應用程式成為離線狀態] 選項，然後嘗試再次部署 App Service。",
   "loc.messages.Trytodeploywebappagainwithrenamefileoptionselected": "請先選取 [重新命名鎖定的檔案] 選項，然後嘗試再次部署 App Service。",
@@ -223,5 +223,5 @@
   "loc.messages.ASE_WebDeploySSLIssueRecommendation": "若要在 App Service 中使用憑證，該憑證必須經過信任的憑證授權單位所簽署。若您的 Web 應用程式顯示憑證驗證錯誤，可能是您使用了自我簽署憑證。若要解決這些錯誤，您必須在 Web 部署選項的其他引數中傳遞 -allowUntrusted。",
   "loc.messages.FailedToUpdateApplicationInsightsResource": "無法更新 Application Insights '%s' 資源。錯誤: %s",
   "loc.messages.JarNotSupported": "此版本不支援 jar 部署。請將工作版本變更為處於預覽模式的 '4.*'",
-  "loc.messages.CorrelationIdForARM": "Correlation ID from ARM api call response : %s"
+  "loc.messages.CorrelationIdForARM": "來自 ARM api 呼叫回應的相互關聯識別碼: %s"
 }

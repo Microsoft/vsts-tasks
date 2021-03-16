@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure Key Vault",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=848891)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?linkid=848891)",
   "loc.description": "Scarica i segreti di Azure Key Vault",
   "loc.instanceNameFormat": "Azure Key Vault: $(KeyVaultName)",
   "loc.releaseNotes": "È compatibile con agenti multipiattaforma (Linux, macOS o Windows)",
@@ -10,6 +10,8 @@
   "loc.input.help.KeyVaultName": "Consente di specificare il nome di un insieme di credenziali delle chiavi esistente",
   "loc.input.label.SecretsFilter": "Filtro segreti",
   "loc.input.help.SecretsFilter": "Elenco di nomi di segreto delimitati da virgole. Lasciare impostato su * per scaricare tutti i segreti dal'insieme di credenziali delle chiavi selezionato.",
+  "loc.input.label.RunAsPreJob": "Rendi i segreti disponibili per l'intero processo",
+  "loc.input.help.RunAsPreJob": "Consente di eseguire l'attività prima dell'inizio dell'esecuzione del processo. Espone i segreti a tutte le attività del processo, non solo a quelle che seguono questa attività.",
   "loc.messages.ClientIdCannotBeEmpty": "clientId non deve essere una stringa vuota.",
   "loc.messages.DomainCannotBeEmpty": "domain non deve essere una stringa vuota.",
   "loc.messages.SecretCannotBeEmpty": "secret non deve essere una stringa vuota.",
