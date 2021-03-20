@@ -744,19 +744,20 @@ function Get-AzureSqlDatabaseServerResourceId {
         [Object] [Parameter(Mandatory = $true)] $endpoint,
         [Object] [Parameter(Mandatory = $true)] $accessToken)
 
+    $apiVersion = "2019-06-01-preview"
     $serverType = "Microsoft.Sql/servers"
     $subscriptionId = $endpoint.Data.SubscriptionId.ToLower()
 
-    Write-Verbose "[Azure Rest Call] Get Resource Groups"
+    Write-Verbose "[Azure Rest Call] Get Azure Sql Servers"
     $method = "GET"
-    $uri = "$($endpoint.Url)/subscriptions/$subscriptionId/resources?api-version=$apiVersion"
+    $uri = "$($endpoint.Url)/subscriptions/$subscriptionId/providers/Microsoft.Sql/servers?api-version=$apiVersion"
     $headers = @{Authorization = ("{0} {1}" -f $accessToken.token_type, $accessToken.access_token) }
 
     do {
         Write-Verbose "Fetching Resources from $uri"
         $ResourceDetails = Invoke-RestMethod -Uri $uri -Method $method -Headers $headers -ContentType $script:jsonContentType
         foreach ($resourceDetail in $ResourceDetails.Value) {
-            if ($resourceDetail.name -eq $serverName -and $resourceDetail.type -eq $serverType) {
+            if ($resourceDetail.name -eq $serverName) {
                 return $resourceDetail.id
             }
         }
