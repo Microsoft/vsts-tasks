@@ -1,12 +1,4 @@
 {
-    "common": [
-        {
-            "module": "../Common/webdeployment-common-v2",
-            "type": "node",
-            "dest": "./",
-            "compile" : true
-        }
-    ],
     "externals": {
         "archivePackages": [
             {

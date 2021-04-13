@@ -43,7 +43,7 @@ export class WindowsWebAppZipDeployProviderTests {
             }
         });
 
-        tr.registerMock('webdeployment-common-v2/utility.js', {
+        tr.registerMock('azure-pipelines-tasks-webdeployment-common/utility.js', {
             generateTemporaryFolderForDeployment: function () {
                 return "webAppPkg";
             },
@@ -61,7 +61,7 @@ export class WindowsWebAppZipDeployProviderTests {
             }
         });
         
-        tr.registerMock('webdeployment-common-v2/ziputility.js', {
+        tr.registerMock('azure-pipelines-tasks-webdeployment-common/ziputility.js', {
             archiveFolder: function(A, B){
                 return "webAppPkg.zip";
             }

@@ -8,7 +8,7 @@ import { WindowsWebAppZipDeployProvider } from './WindowsWebAppZipDeployProvider
 import { WindowsWebAppRunFromZipProvider } from './WindowsWebAppRunFromZipProvider';
 import { ContainerWebAppDeploymentProvider } from './ContainerWebAppDeploymentProvider';
 import tl = require('azure-pipelines-task-lib/task');
-import { PackageType } from 'webdeployment-common-v2/packageUtility';
+import { PackageType } from 'azure-pipelines-tasks-webdeployment-common/packageUtility';
 import { WindowsWebAppWarDeployProvider } from './WindowsWebAppWarDeployProvider';
 
 export class DeploymentFactory {

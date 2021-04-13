@@ -8,9 +8,9 @@ import tl = require('azure-pipelines-task-lib/task');
 import fs = require('fs');
 import path = require('path');
 
-var packageUtility = require('webdeployment-common-v2/packageUtility.js');
-var deployUtility = require('webdeployment-common-v2/utility.js');
-var msDeployUtility = require('webdeployment-common-v2/msdeployutility.js');
+var packageUtility = require('azure-pipelines-tasks-webdeployment-common/packageUtility.js');
+var deployUtility = require('azure-pipelines-tasks-webdeployment-common/utility.js');
+var msDeployUtility = require('azure-pipelines-tasks-webdeployment-common/msdeployutility.js');
 
 const DEFAULT_RETRY_COUNT = 3;
 

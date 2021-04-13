@@ -1,5 +1,5 @@
 import path = require('path');
-import * as ParameterParserUtility from 'webdeployment-common-v2/ParameterParserUtility';
+import * as ParameterParserUtility from 'azure-pipelines-tasks-webdeployment-common/ParameterParserUtility';
 
 function validateParameterParserUtility() {
     var paramString = "-port 8080 -Release.ReleaseName Release-1173";

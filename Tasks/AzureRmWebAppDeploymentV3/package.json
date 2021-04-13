@@ -17,18 +17,21 @@
   },
   "homepage": "https://github.com/Microsoft/azure-pipelines-tasks#readme",
   "dependencies": {
-    "@types/mocha": "2.2.48",
-    "@types/node": "6.0.68",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^10.17.0",
     "@types/q": "1.0.7",
     "archiver": "1.2.0",
-    "azure-pipelines-tasks-azure-arm-rest-v2": "1.0.4",
+    "azure-pipelines-tasks-azure-arm-rest-v2": "^2.0.2",
     "decompress-zip": "0.3.0",
     "ltx": "2.8.0",
     "moment": "2.21.0",
     "q": "1.4.1",
     "uuid": "3.1.0",
-    "azure-pipelines-task-lib": "2.9.3",
+    "azure-pipelines-task-lib": "3.1.0",
     "winreg": "1.2.2",
     "xml2js": "0.4.13"
+  },
+  "devDependencies": {
+    "typescript": "4.0.2"
   }
 }

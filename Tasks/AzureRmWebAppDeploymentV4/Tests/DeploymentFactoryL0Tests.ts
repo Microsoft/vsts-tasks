@@ -4,7 +4,7 @@ import { BuiltInLinuxWebAppDeploymentProvider } from '../deploymentProvider/Buil
 import { IWebAppDeploymentProvider } from '../deploymentProvider/IWebAppDeploymentProvider';
 import { TaskParametersUtility, TaskParameters, DeploymentType } from '../operations/TaskParameters';
 import { stringify } from 'querystring';
-import { PackageType } from 'webdeployment-common-v2/packageUtility';
+import { PackageType } from 'azure-pipelines-tasks-webdeployment-common/packageUtility';
 
 export class DeploymentFactoryL0Tests  {
 

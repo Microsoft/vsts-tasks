@@ -2,10 +2,10 @@ import tl = require('azure-pipelines-task-lib/task');
 import fs = require('fs');
 import path = require('path');
 import { TaskParameters } from './TaskParameters';
-import { WebDeployArguments, WebDeployResult } from 'webdeployment-common-v2/msdeployutility';
-import {  executeWebDeploy } from 'webdeployment-common-v2/deployusingmsdeploy';
-import { Package } from 'webdeployment-common-v2/packageUtility';
-import { copySetParamFileIfItExists } from 'webdeployment-common-v2/utility';
+import { WebDeployArguments, WebDeployResult } from 'azure-pipelines-tasks-webdeployment-common/msdeployutility';
+import {  executeWebDeploy } from 'azure-pipelines-tasks-webdeployment-common/deployusingmsdeploy';
+import { Package } from 'azure-pipelines-tasks-webdeployment-common/packageUtility';
+import { copySetParamFileIfItExists } from 'azure-pipelines-tasks-webdeployment-common/utility';
 import { AzureAppServiceUtility } from './AzureAppServiceUtility';
 const DEFAULT_RETRY_COUNT = 3;
 

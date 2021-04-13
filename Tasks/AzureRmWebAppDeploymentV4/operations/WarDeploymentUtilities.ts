@@ -6,7 +6,7 @@ import { AzureAppServiceUtility } from './AzureAppServiceUtility';
 import { TaskParameters } from './TaskParameters';
 import { sleepFor } from 'azure-pipelines-tasks-azure-arm-rest-v2/webClient';
 
-var msDeploy = require('webdeployment-common-v2/deployusingmsdeploy.js');
+var msDeploy = require('azure-pipelines-tasks-webdeployment-common/deployusingmsdeploy.js');
 
 export async function DeployWar(webPackage, taskParams: TaskParameters, msDeployPublishingProfile, kuduService: Kudu, appServiceUtility: AzureAppServiceUtility): Promise<void> {
     // get list of files before deploying to the web app.

@@ -16,7 +16,7 @@ tr.setInput('VirtualApplication', 'virtualApp');
 tr.setInput('AdditionalArguments', 'additionalArguments');
 tr.setInput('WebAppUri', 'someuri');
 
-process.env['TASK_TEST_TRACE'] = 1;
+process.env['TASK_TEST_TRACE'] = "1";
 process.env["ENDPOINT_AUTH_AzureRMSpn"] = "{\"parameters\":{\"serviceprincipalid\":\"spId\",\"serviceprincipalkey\":\"spKey\",\"tenantid\":\"tenant\"},\"scheme\":\"ServicePrincipal\"}";
 process.env["ENDPOINT_AUTH_PARAMETER_AzureRMSpn_SERVICEPRINCIPALID"] = "spId";
 process.env["ENDPOINT_AUTH_PARAMETER_AzureRMSpn_SERVICEPRINCIPALKEY"] = "spKey";
@@ -99,7 +99,7 @@ let a: ma.TaskLibAnswers = <ma.TaskLibAnswers>{
 
 
 import mockTask = require('azure-pipelines-task-lib/mock-task');
-tr.registerMock('webdeployment-common-v2/ziputility.js', {
+tr.registerMock('azure-pipelines-tasks-webdeployment-common/ziputility.js', {
     getArchivedEntries: function(webDeployPkg) {
         return {
             "entries":[
@@ -110,7 +110,7 @@ tr.registerMock('webdeployment-common-v2/ziputility.js', {
     }
 });
 var kuduDeploymentLog = require('azurerest-common/kududeploymentstatusutility.js');
-var msDeployUtility = require('webdeployment-common-v2/msdeployutility.js'); 
+var msDeployUtility = require('azure-pipelines-tasks-webdeployment-common/msdeployutility.js');
 tr.registerMock('./msdeployutility.js', {
     getMSDeployCmdArgs : msDeployUtility.getMSDeployCmdArgs,
     getMSDeployFullPath : function() {

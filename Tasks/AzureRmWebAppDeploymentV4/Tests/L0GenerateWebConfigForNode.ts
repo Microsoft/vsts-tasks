@@ -10,7 +10,7 @@ tr.setInput('Package', 'webAppPkg.zip');
 tr.setInput('UseWebDeploy', 'true');
 tr.setInput('GenerateWebConfig','true');
 tr.setInput('WebConfigParameters','-appType node -Handler iisnode -NodeStartFile server.js');
-process.env['TASK_TEST_TRACE'] = 1;
+process.env['TASK_TEST_TRACE'] = "1";
 process.env["ENDPOINT_AUTH_AzureRMSpn"] = "{\"parameters\":{\"serviceprincipalid\":\"spId\",\"serviceprincipalkey\":\"spKey\",\"tenantid\":\"tenant\"},\"scheme\":\"ServicePrincipal\"}";
 process.env["ENDPOINT_AUTH_PARAMETER_AzureRMSpn_SERVICEPRINCIPALID"] = "spId";
 process.env["ENDPOINT_AUTH_PARAMETER_AzureRMSpn_SERVICEPRINCIPALKEY"] = "spKey";
@@ -20,9 +20,9 @@ process.env["ENDPOINT_DATA_AzureRMSpn_SUBSCRIPTIONID"] =  "sId";
 process.env["AZURE_HTTP_USER_AGENT"] = "TFS_useragent";
 process.env["SYSTEM_DEFAULTWORKINGDIRECTORY"] =  "DefaultWorkingDirectory";
 process.env["BUILD_SOURCEVERSION"] = "46da24f35850f455185b9188b4742359b537076f";
-process.env["BUILD_BUILDID"] = 1,
-process.env["RELEASE_RELEASEID"] = 1;
-process.env["BUILD_BUILDNUMBER"] = 1;
+process.env["BUILD_BUILDID"] = "1",
+process.env["RELEASE_RELEASEID"] = "1";
+process.env["BUILD_BUILDNUMBER"] = "1";
 process.env["RELEASE_RELEASENAME"] = "Release-1";
 process.env["BUILD_REPOSITORY_PROVIDER"] = "TfsGit";
 process.env["BUILD_REPOSITORY_NAME"] = "MyFirstProject";
@@ -101,7 +101,7 @@ let a: ma.TaskLibAnswers = <ma.TaskLibAnswers>{
 }
 
 import mockTask = require('azure-pipelines-task-lib/mock-task');
-tr.registerMock('webdeployment-common-v2/ziputility.js', {
+tr.registerMock('azure-pipelines-tasks-webdeployment-common/ziputility.js', {
     getArchivedEntries: function(webDeployPkg) {
         return {
             "entries":[
@@ -112,7 +112,7 @@ tr.registerMock('webdeployment-common-v2/ziputility.js', {
     }
 });
 var kuduDeploymentLog = require('azurerest-common/kududeploymentstatusutility.js');
-var msDeployUtility = require('webdeployment-common-v2/msdeployutility.js');
+var msDeployUtility = require('azure-pipelines-tasks-webdeployment-common/msdeployutility.js');
 
 tr.registerMock('./msdeployutility.js', {
     getMSDeployCmdArgs : msDeployUtility.getMSDeployCmdArgs,
@@ -201,7 +201,7 @@ tr.registerMock('azurerest-common/azurerestutility.js', {
     }
 });
 
-tr.registerMock('webdeployment-common-v2/ziputility.js', {
+tr.registerMock('azure-pipelines-tasks-webdeployment-common/ziputility.js', {
     getArchivedEntries: function(webDeployPkg) {
         return {
             "entries":[
@@ -212,7 +212,7 @@ tr.registerMock('webdeployment-common-v2/ziputility.js', {
     }
 });
 
-tr.registerMock('webdeployment-common-v2/utility.js', {
+tr.registerMock('azure-pipelines-tasks-webdeployment-common/utility.js', {
     isInputPkgIsFolder: function() {
         return false;    
     },
