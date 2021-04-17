@@ -97,5 +97,6 @@
   "loc.messages.NoDestinationPlatformWarning": "UI tests must be run against a simulator or a connected device. In the Xcode task, set `Destination platform` to a value other than `Default`.",
   "loc.messages.XcprettyNotInstalled": "xcpretty is not installed on the build server. xcodebuild raw output will be shown. Publishing test results will fail if xcpretty is not installed.",
   "loc.messages.XcodeRequiresMac": "Using Xcode requires a macOS agent. Building with Xcode on Linux or Windows is not supported by Apple.",
-  "loc.messages.UsingDefaultSimulator": "Using default simulator: %s."
+  "loc.messages.UsingDefaultSimulator": "Using default simulator: %s.",
+  "loc.messages.NoValidActionSpecified": "Either packageApp must be true or an action specified"
 }

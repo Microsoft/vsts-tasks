@@ -48,7 +48,7 @@
       "type": "string",
       "label": "ms-resource:loc.input.label.actions",
       "defaultValue": "build",
-      "required": true,
+      "required": false,
       "helpMarkDown": "ms-resource:loc.input.help.actions"
     },
     {
@@ -400,6 +400,7 @@
     "NoDestinationPlatformWarning": "ms-resource:loc.messages.NoDestinationPlatformWarning",
     "XcprettyNotInstalled": "ms-resource:loc.messages.XcprettyNotInstalled",
     "XcodeRequiresMac": "ms-resource:loc.messages.XcodeRequiresMac",
-    "UsingDefaultSimulator": "ms-resource:loc.messages.UsingDefaultSimulator"
+    "UsingDefaultSimulator": "ms-resource:loc.messages.UsingDefaultSimulator",
+    "NoValidActionSpecified": "ms-resource:loc.messages.NoValidActionSpecified"
   }
 }

@@ -153,7 +153,7 @@ describe('Xcode L0 Suite', function () {
 
         tr.run();
 
-        assert(tr.stdout.search(/Input required: actions/) > 0, 'Error should be shown if actions are not specified.');
+        assert(tr.stdout.search(/##vso\[task.issue type=error;\]Error: loc_mock_NoValidActionSpecified/) > 0, 'Error should be shown if actions are not specified.');
         assert(tr.failed, 'task should have failed');
         done();
     });
@@ -817,4 +817,23 @@ describe('Xcode L0 Suite', function () {
 
         done();
     });
+
+    it('packageApp without actions', function (done: MochaDone) {
+        this.timeout(parseInt(process.env.TASK_TEST_TIMEOUT) || 20000);
+
+        const tp = path.join(__dirname, 'L0TaskNoActionsRequiredWhenPackaging.js');
+        const tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+
+        tr.run();
+        //export
+        assert(tr.ran('/home/bin/xcodebuild -exportArchive -archivePath /user/build/myscheme.xcarchive'
+            + ' -exportPath /user/build -exportOptionsPlist _XcodeTaskExportOptions.plist'),
+            'xcodebuild exportArchive should have been run to export the IPA from the .xcarchive');
+
+        assert(tr.stderr.length === 0, 'should not have written to stderr');
+        assert(tr.succeeded, 'task should have succeeded');
+        assert(tr.invokedToolCount === 4, 'Should have ran 4 command lines.');
+
+        done();
+    });    
 });

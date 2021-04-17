@@ -125,12 +125,18 @@ async function run() {
         let sdk: string = tl.getInput('sdk', false);
         let configuration: string = tl.getInput('configuration', false);
         let useXcpretty: boolean = tl.getBoolInput('useXcpretty', false);
-        let actions: string[] = tl.getDelimitedInput('actions', ' ', true);
+        let actions: string[] = tl.getDelimitedInput('actions', ' ', false);
         let packageApp: boolean = tl.getBoolInput('packageApp', true);
         let args: string = tl.getInput('args', false);
 
+        let createIPA = packageApp && sdk !== 'iphonesimulator'
+
         telemetryData.actions = actions;
         telemetryData.packageApp = packageApp;
+
+        if (actions.length === 0 && !createIPA) {
+            throw new Error(tl.loc('NoValidActionSpecified'));
+        }
 
         //--------------------------------------------------------
         // Exec Tools
@@ -157,27 +163,6 @@ async function run() {
 
         await xcv.exec();
         tl.debug('xcodeMajorVersion = ' + xcodeMajorVersion);
-
-        // --- Xcode build arguments ---
-        let xcb: ToolRunner = tl.tool(tool);
-        xcb.argIf(sdk, ['-sdk', sdk]);
-        xcb.argIf(configuration, ['-configuration', configuration]);
-        if (ws && tl.filePathSupplied('xcWorkspacePath')) {
-            xcb.argIf(isProject, '-project');
-            xcb.argIf(!isProject, '-workspace');
-            xcb.arg(ws);
-        }
-        xcb.argIf(scheme, ['-scheme', scheme]);
-        // Add a -destination argument for each device and simulator.
-        if (destinations) {
-            destinations.forEach(destination => {
-                xcb.arg(['-destination', destination]);
-            });
-        }
-        xcb.arg(actions);
-        if (args) {
-            xcb.line(args);
-        }
 
         //--------------------------------------------------------
         // iOS signing and provisioning
@@ -232,57 +217,84 @@ async function run() {
             }
         }
 
-        xcb.argIf(xcode_codeSigningAllowed, xcode_codeSigningAllowed);
-        xcb.argIf(xcode_codeSignStyle, xcode_codeSignStyle);
-        xcb.argIf(xcode_codeSignIdentity, xcode_codeSignIdentity);
-        xcb.argIf(xcode_provProfile, xcode_provProfile);
-        xcb.argIf(xcode_provProfileSpecifier, xcode_provProfileSpecifier);
-        xcb.argIf(xcode_devTeam, xcode_devTeam);
+        //--------------------------------------------------------
+        // XCode Non-Packaging Actions
+        //--------------------------------------------------------
 
-        //--- Enable Xcpretty formatting ---
-        if (useXcpretty && !tl.which('xcpretty')) {
-            // user wants to enable xcpretty but it is not installed, fallback to xcodebuild raw output
-            useXcpretty = false;
-            tl.warning(tl.loc("XcprettyNotInstalled"));
-        }
-
-        if (useXcpretty) {
-            let xcPrettyPath: string = tl.which('xcpretty', true);
-            let xcPrettyTool: ToolRunner = tl.tool(xcPrettyPath);
-            xcPrettyTool.arg(['-r', 'junit', '--no-color']);
-            const xcPrettyArgs: string = tl.getInput('xcprettyArgs');
-            if (xcPrettyArgs) {
-                xcPrettyTool.line(xcPrettyArgs);
+        if (actions.length > 0) {
+            // --- Xcode build arguments ---
+            let xcb: ToolRunner = tl.tool(tool);
+            xcb.argIf(sdk, ['-sdk', sdk]);
+            xcb.argIf(configuration, ['-configuration', configuration]);
+            if (ws && tl.filePathSupplied('xcWorkspacePath')) {
+                xcb.argIf(isProject, '-project');
+                xcb.argIf(!isProject, '-workspace');
+                xcb.arg(ws);
+            }
+            xcb.argIf(scheme, ['-scheme', scheme]);
+            // Add a -destination argument for each device and simulator.
+            if (destinations) {
+                destinations.forEach(destination => {
+                    xcb.arg(['-destination', destination]);
+                });
+            }
+            xcb.arg(actions);
+            if (args) {
+                xcb.line(args);
             }
 
-            const logFile: string = utils.getUniqueLogFileName('xcodebuild');
-            xcb.pipeExecOutputToTool(xcPrettyTool, logFile);
-            utils.setTaskState('XCODEBUILD_LOG', logFile);
-        }
+            xcb.argIf(xcode_codeSigningAllowed, xcode_codeSigningAllowed);
+            xcb.argIf(xcode_codeSignStyle, xcode_codeSignStyle);
+            xcb.argIf(xcode_codeSignIdentity, xcode_codeSignIdentity);
+            xcb.argIf(xcode_provProfile, xcode_provProfile);
+            xcb.argIf(xcode_provProfileSpecifier, xcode_provProfileSpecifier);
+            xcb.argIf(xcode_devTeam, xcode_devTeam);
 
-        //--- Xcode Build ---
-        let buildOnlyDeviceErrorFound: boolean;
-        xcb.on('errline', (line: string) => {
-            if (!buildOnlyDeviceErrorFound && line.includes('build only device cannot be used to run this target')) {
-                buildOnlyDeviceErrorFound = true;
+            //--- Enable Xcpretty formatting ---
+            if (useXcpretty && !tl.which('xcpretty')) {
+                // user wants to enable xcpretty but it is not installed, fallback to xcodebuild raw output
+                useXcpretty = false;
+                tl.warning(tl.loc("XcprettyNotInstalled"));
             }
-        });
 
-        try {
-            await xcb.exec();
-        } catch (err) {
-            if (buildOnlyDeviceErrorFound) {
-                // Tell the user they need to change Destination platform to fix this build error.
-                tl.warning(tl.loc('NoDestinationPlatformWarning'));
+            if (useXcpretty) {
+                let xcPrettyPath: string = tl.which('xcpretty', true);
+                let xcPrettyTool: ToolRunner = tl.tool(xcPrettyPath);
+                xcPrettyTool.arg(['-r', 'junit', '--no-color']);
+                const xcPrettyArgs: string = tl.getInput('xcprettyArgs');
+                if (xcPrettyArgs) {
+                    xcPrettyTool.line(xcPrettyArgs);
+                }
+
+                const logFile: string = utils.getUniqueLogFileName('xcodebuild');
+                xcb.pipeExecOutputToTool(xcPrettyTool, logFile);
+                utils.setTaskState('XCODEBUILD_LOG', logFile);
             }
-            throw err;
+
+            //--- Xcode Build ---
+            let buildOnlyDeviceErrorFound: boolean;
+            xcb.on('errline', (line: string) => {
+                if (!buildOnlyDeviceErrorFound && line.includes('build only device cannot be used to run this target')) {
+                    buildOnlyDeviceErrorFound = true;
+                }
+            });
+
+            try {
+                await xcb.exec();
+            } catch (err) {
+                if (buildOnlyDeviceErrorFound) {
+                    // Tell the user they need to change Destination platform to fix this build error.
+                    tl.warning(tl.loc('NoDestinationPlatformWarning'));
+                }
+                throw err;
+            }
         }
 
         //--------------------------------------------------------
         // Package app to generate .ipa
         //--------------------------------------------------------
 
-        if (packageApp && sdk !== 'iphonesimulator') {
+        if (createIPA) {
             // use xcodebuild to create the app package
             if (!scheme) {
                 throw new Error(tl.loc("SchemeRequiredForArchive"));
