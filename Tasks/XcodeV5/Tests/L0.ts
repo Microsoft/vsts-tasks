@@ -835,5 +835,26 @@ describe('Xcode L0 Suite', function () {
         assert(tr.invokedToolCount === 4, 'Should have ran 4 command lines.');
 
         done();
-    });    
+    });
+    
+    it('add archivePath when actions include archive', function (done: MochaDone) {
+        this.timeout(parseInt(process.env.TASK_TEST_TIMEOUT) || 20000);
+
+        let tp = path.join(__dirname, 'L0XcodeAddArchivePathForArchiveAction.js');
+        let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+
+        tr.run();
+
+        //version
+        assert(tr.ran('/home/bin/xcodebuild -version'), 'xcodebuild for version should have been run.');
+
+        //archive
+        assert(tr.ran('/home/bin/xcodebuild -sdk $(SDK) -configuration $(Configuration) ' +
+                '-workspace /user/build/fun.xcodeproj/project.xcworkspace -scheme myscheme archive -archivePath /user/build/myscheme'),
+            'xcodebuild for archiving the ios project/workspace should have been run.');
+        assert(tr.invokedToolCount == 2, 'should have run xcodebuild version and xcodebuild archive');
+        assert(tr.stderr.length == 0, 'should not have written to stderr');
+        assert(tr.succeeded, 'task should have succeeded');
+        done();
+    });
 });

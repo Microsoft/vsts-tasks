@@ -124,8 +124,8 @@
       "defaultValue": "",
       "required": false,
       "helpMarkDown": "ms-resource:loc.input.help.archivePath",
-      "groupName": "package",
-      "visibleRule": "packageApp == true"
+      "groupName": "advanced",
+      "visibleRule": "packageApp == true || actions.includes('archive')"
     },
     {
       "name": "exportPath",

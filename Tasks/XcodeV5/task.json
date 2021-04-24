@@ -124,8 +124,8 @@
             "defaultValue": "",
             "required": false,
             "helpMarkDown": "(Optional) Specify a directory where created archives should be placed.",
-            "groupName": "package",
-            "visibleRule": "packageApp == true"
+            "groupName": "advanced",
+            "visibleRule": "packageApp == true || actions.includes('archive')"
         },
         {
             "name": "exportPath",

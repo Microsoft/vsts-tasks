@@ -250,6 +250,16 @@ async function run() {
             xcb.argIf(xcode_provProfileSpecifier, xcode_provProfileSpecifier);
             xcb.argIf(xcode_devTeam, xcode_devTeam);
 
+            if (actions.includes('archive') && !createIPA) {
+                let archivePath: string = tl.getInput('archivePath');
+                if (archivePath && !archivePath.endsWith('.xcarchive')) {
+                    archivePath = tl.resolve(archivePath, scheme);
+                }
+
+                xcb.argIf(archivePath, ['-archivePath', archivePath]);
+    
+            }
+            
             //--- Enable Xcpretty formatting ---
             if (useXcpretty && !tl.which('xcpretty')) {
                 // user wants to enable xcpretty but it is not installed, fallback to xcodebuild raw output
