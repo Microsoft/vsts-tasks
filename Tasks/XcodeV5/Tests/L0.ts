@@ -857,4 +857,30 @@ describe('Xcode L0 Suite', function () {
         assert(tr.succeeded, 'task should have succeeded');
         done();
     });
+
+    it('export ipa without archiving', function (done: MochaDone) {
+        this.timeout(parseInt(process.env.TASK_TEST_TIMEOUT) || 20000);
+
+        let tp = path.join(__dirname, 'L0ExportOnly.js');
+        let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+
+        tr.run();
+
+        //version
+        assert(tr.ran('/home/bin/xcodebuild -version'), 'xcodebuild for version should have been run.');
+
+        //export prep
+        assert(tr.ran("/usr/libexec/PlistBuddy -c Clear _XcodeTaskExportOptions.plist"),
+            'PlistBuddy Clear should have run. An empty exportOptions plist should be used when there\'s not an embedded provisioning profile.');
+
+        //export        
+        assert(tr.ran('/home/bin/xcodebuild -exportArchive -archivePath /user/build/myscheme.xcarchive'
+            + ' -exportPath /user/build -exportOptionsPlist _XcodeTaskExportOptions.plist'),
+            'xcodebuild exportArchive should have been run to export the IPA from the .xcarchive');
+
+        assert(tr.invokedToolCount == 3, 'should have run xcodebuild version, plistbuddy clear, and xcodebuild exportArchive');
+        assert(tr.stderr.length == 0, 'should not have written to stderr');
+        assert(tr.succeeded, 'task should have succeeded');
+        done();
+    });    
 });

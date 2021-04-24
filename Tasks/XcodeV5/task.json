@@ -358,6 +358,16 @@
             "groupName": "advanced",
             "helpMarkDown": "Title of the test run when publishing JUnit test results to Azure Pipelines.",
             "visibleRule": "publishJUnitResults == true"
+        },
+        {
+            "name": "skipArchiveAction",
+            "type": "boolean",
+            "label": "Skip Archiving",
+            "defaultValue": false,
+            "required": false,
+            "helpMarkDown": "Indicate whether `xcodebuild archive` should be executed before exporting the IPA.",
+            "groupName": "package",
+            "visibleRule": "packageApp == true"
         }
     ],
     "execution": {

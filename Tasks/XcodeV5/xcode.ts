@@ -127,11 +127,13 @@ async function run() {
         let useXcpretty: boolean = tl.getBoolInput('useXcpretty', false);
         let actions: string[] = tl.getDelimitedInput('actions', ' ', false);
         let packageApp: boolean = tl.getBoolInput('packageApp', true);
+        let skipArchiveAction: boolean = tl.getBoolInput('skipArchiveAction', false);
         let args: string = tl.getInput('args', false);
 
         let createIPA = packageApp && sdk !== 'iphonesimulator'
 
         telemetryData.actions = actions;
+        telemetryData.skipArchiveAction = skipArchiveAction;
         telemetryData.packageApp = packageApp;
 
         if (actions.length === 0 && !createIPA) {
@@ -305,25 +307,6 @@ async function run() {
         //--------------------------------------------------------
 
         if (createIPA) {
-            // use xcodebuild to create the app package
-            if (!scheme) {
-                throw new Error(tl.loc("SchemeRequiredForArchive"));
-            }
-            if (!ws || !tl.filePathSupplied('xcWorkspacePath')) {
-                throw new Error(tl.loc("WorkspaceOrProjectRequiredForArchive"));
-            }
-
-            // create archive
-            let xcodeArchive: ToolRunner = tl.tool(tl.which('xcodebuild', true));
-            if (ws && tl.filePathSupplied('xcWorkspacePath')) {
-                xcodeArchive.argIf(isProject, '-project');
-                xcodeArchive.argIf(!isProject, '-workspace');
-                xcodeArchive.arg(ws);
-            }
-            xcodeArchive.argIf(scheme, ['-scheme', scheme]);
-            xcodeArchive.arg('archive'); //archive action
-            xcodeArchive.argIf(sdk, ['-sdk', sdk]);
-            xcodeArchive.argIf(configuration, ['-configuration', configuration]);
             let archivePath: string = tl.getInput('archivePath');
             let archiveFolderRoot: string;
             if (!archivePath.endsWith('.xcarchive')) {
@@ -333,31 +316,53 @@ async function run() {
                 //user specified a file path for archivePath
                 archiveFolderRoot = path.dirname(archivePath);
             }
-            xcodeArchive.arg(['-archivePath', archivePath]);
-            xcodeArchive.argIf(xcode_otherCodeSignFlags, xcode_otherCodeSignFlags);
-            xcodeArchive.argIf(xcode_codeSigningAllowed, xcode_codeSigningAllowed);
-            xcodeArchive.argIf(xcode_codeSignStyle, xcode_codeSignStyle);
-            xcodeArchive.argIf(xcode_codeSignIdentity, xcode_codeSignIdentity);
-            xcodeArchive.argIf(xcode_provProfile, xcode_provProfile);
-            xcodeArchive.argIf(xcode_provProfileSpecifier, xcode_provProfileSpecifier);
-            xcodeArchive.argIf(xcode_devTeam, xcode_devTeam);
-            if (args) {
-                xcodeArchive.line(args);
-            }
 
-            if (useXcpretty) {
-                let xcPrettyTool: ToolRunner = tl.tool(tl.which('xcpretty', true));
-                xcPrettyTool.arg('--no-color');
-                const xcPrettyArgs: string = tl.getInput('xcprettyArgs');
-                if (xcPrettyArgs) {
-                    xcPrettyTool.line(xcPrettyArgs);
+            // use xcodebuild to create the app package
+            if (!skipArchiveAction) {
+                if (!scheme) {
+                    throw new Error(tl.loc("SchemeRequiredForArchive"));
+                }
+                if (!ws || !tl.filePathSupplied('xcWorkspacePath')) {
+                    throw new Error(tl.loc("WorkspaceOrProjectRequiredForArchive"));
                 }
 
-                const logFile: string = utils.getUniqueLogFileName('xcodebuild_archive');
-                xcodeArchive.pipeExecOutputToTool(xcPrettyTool, logFile);
-                utils.setTaskState('XCODEBUILD_ARCHIVE_LOG', logFile);
+                // create archive
+                let xcodeArchive: ToolRunner = tl.tool(tl.which('xcodebuild', true));
+                if (ws && tl.filePathSupplied('xcWorkspacePath')) {
+                    xcodeArchive.argIf(isProject, '-project');
+                    xcodeArchive.argIf(!isProject, '-workspace');
+                    xcodeArchive.arg(ws);
+                }
+                xcodeArchive.argIf(scheme, ['-scheme', scheme]);
+                xcodeArchive.arg('archive'); //archive action
+                xcodeArchive.argIf(sdk, ['-sdk', sdk]);
+                xcodeArchive.argIf(configuration, ['-configuration', configuration]);
+                xcodeArchive.arg(['-archivePath', archivePath]);
+                xcodeArchive.argIf(xcode_otherCodeSignFlags, xcode_otherCodeSignFlags);
+                xcodeArchive.argIf(xcode_codeSigningAllowed, xcode_codeSigningAllowed);
+                xcodeArchive.argIf(xcode_codeSignStyle, xcode_codeSignStyle);
+                xcodeArchive.argIf(xcode_codeSignIdentity, xcode_codeSignIdentity);
+                xcodeArchive.argIf(xcode_provProfile, xcode_provProfile);
+                xcodeArchive.argIf(xcode_provProfileSpecifier, xcode_provProfileSpecifier);
+                xcodeArchive.argIf(xcode_devTeam, xcode_devTeam);
+                if (args) {
+                    xcodeArchive.line(args);
+                }
+
+                if (useXcpretty) {
+                    let xcPrettyTool: ToolRunner = tl.tool(tl.which('xcpretty', true));
+                    xcPrettyTool.arg('--no-color');
+                    const xcPrettyArgs: string = tl.getInput('xcprettyArgs');
+                    if (xcPrettyArgs) {
+                        xcPrettyTool.line(xcPrettyArgs);
+                    }
+
+                    const logFile: string = utils.getUniqueLogFileName('xcodebuild_archive');
+                    xcodeArchive.pipeExecOutputToTool(xcPrettyTool, logFile);
+                    utils.setTaskState('XCODEBUILD_ARCHIVE_LOG', logFile);
+                }
+                await xcodeArchive.exec();
             }
-            await xcodeArchive.exec();
 
             let archiveFolders: string[] = tl.findMatch(archiveFolderRoot, '**/*.xcarchive', { allowBrokenSymbolicLinks: false, followSpecifiedSymbolicLink: false, followSymbolicLinks: false });
             if (archiveFolders && archiveFolders.length > 0) {

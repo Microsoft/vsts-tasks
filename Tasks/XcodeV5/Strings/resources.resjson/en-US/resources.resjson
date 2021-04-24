@@ -70,6 +70,8 @@
   "loc.input.help.publishJUnitResults": "Specify whether to publish JUnit test results to Azure Pipelines. This requires xcpretty to be enabled to generate JUnit test results.",
   "loc.input.label.testRunTitle": "Test run title",
   "loc.input.help.testRunTitle": "Title of the test run when publishing JUnit test results to Azure Pipelines.",
+  "loc.input.label.skipArchiveAction": "Skip Archiving",
+  "loc.input.help.skipArchiveAction": "Indicate whether `xcodebuild archive` should be executed before exporting the IPA.",
   "loc.messages.SignIdNotFound": "Failed to find the iOS signing identity. Verify that signing and provisioning information is provided.",
   "loc.messages.TempKeychainSetupFailed": "Failed to add the temporary keychain to the keychains search path.",
   "loc.messages.ProvProfileDetailsNotFound": "Failed to find details for the provisioning profile: %s",
