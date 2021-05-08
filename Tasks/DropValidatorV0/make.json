@@ -1,0 +1,10 @@
+{
+    "externals": {
+        "files": [
+            {
+                "url": "//nupkgs/Microsoft.DropValidator.0.0.5.nupkg",
+                "dest": "./"
+            }
+        ]
+    }
+}

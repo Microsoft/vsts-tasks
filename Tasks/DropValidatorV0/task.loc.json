@@ -1,0 +1,97 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+  "id": "bae07fbb-2096-488a-ab37-adf7808cc9fe",
+  "name": "DropValidator",
+  "friendlyName": "ms-resource:loc.friendlyName",
+  "description": "ms-resource:loc.description",
+  "helpMarkDown": "ms-resource:loc.helpMarkDown",
+  "category": "Utility",
+  "author": "Microsoft Corporation",
+  "preview": true,
+  "version": {
+    "Major": 0,
+    "Minor": 182,
+    "Patch": 13
+  },
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "minimumAgentVersion": "2.115.0",
+  "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
+  "groups": [
+    {
+      "name": "advancedOptions",
+      "displayName": "ms-resource:loc.group.displayName.advancedOptions",
+      "isExpanded": true
+    }
+  ],
+  "inputs": [
+    {
+      "name": "BuildDropPath",
+      "type": "filePath",
+      "label": "ms-resource:loc.input.label.BuildDropPath",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "ManifestPath",
+      "type": "filePath",
+      "label": "ms-resource:loc.input.label.ManifestPath",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "OutputPath",
+      "type": "filePath",
+      "label": "ms-resource:loc.input.label.OutputPath",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "Verbosity",
+      "type": "pickList",
+      "groupName": "advancedOptions",
+      "options": {
+        "Verbose": "Verbose",
+        "Debug": "Debug",
+        "Information": "Information",
+        "Warning": "Warning",
+        "Error": "Error",
+        "Fatal": "Fatal"
+      },
+      "label": "ms-resource:loc.input.label.Verbosity",
+      "defaultValue": "",
+      "required": false
+    },
+    {
+      "name": "ConfigFilePath",
+      "type": "string",
+      "groupName": "advancedOptions",
+      "label": "ms-resource:loc.input.label.ConfigFilePath",
+      "defaultValue": "",
+      "required": false
+    },
+    {
+      "name": "RootPathFilter",
+      "type": "string",
+      "groupName": "advancedOptions",
+      "label": "ms-resource:loc.input.label.RootPathFilter",
+      "defaultValue": "",
+      "required": false
+    }
+  ],
+  "execution": {
+    "Node10": {
+      "target": "main.js"
+    }
+  },
+  "messages": {
+    "TaskFailed": "ms-resource:loc.messages.TaskFailed",
+    "TaskSucceeded": "ms-resource:loc.messages.TaskSucceeded",
+    "Error_ToolInstallFailed": "ms-resource:loc.messages.Error_ToolInstallFailed",
+    "Debug_FailedTelemetry": "ms-resource:loc.messages.Debug_FailedTelemetry",
+    "Warn_InstallingToolFromLocalRepo": "ms-resource:loc.messages.Warn_InstallingToolFromLocalRepo",
+    "Error_UnableToCreateLocalToolManifest": "ms-resource:loc.messages.Error_UnableToCreateLocalToolManifest"
+  }
+}
