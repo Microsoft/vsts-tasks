@@ -20,6 +20,8 @@ export async function run(): Promise<void> {
     let nobuild = tl.getBoolInput("nobuild");
     let includeSymbols = tl.getBoolInput("includesymbols");
     let includeSource = tl.getBoolInput("includesource");
+    let additionalArguments = tl.getInput("arguments");
+
     let outputDir = undefined;
 
     try {
@@ -126,7 +128,7 @@ export async function run(): Promise<void> {
         const dotnetPath = tl.which("dotnet", true);
 
         for (const file of filesList) {
-            await dotnetPackAsync(dotnetPath, file, outputDir, nobuild, includeSymbols, includeSource, version, props, verbosity);
+            await dotnetPackAsync(dotnetPath, file, outputDir, nobuild, includeSymbols, includeSource, version, props, verbosity, additionalArguments);
         }
     } catch (err) {
         tl.warning(tl.loc('Net5NugetVersionCompat'));
@@ -135,7 +137,7 @@ export async function run(): Promise<void> {
     }
 }
 
-function dotnetPackAsync(dotnetPath: string, packageFile: string, outputDir: string, nobuild: boolean, includeSymbols: boolean, includeSource: boolean, version: string, properties: string[], verbosity: string): Q.Promise<number> {
+function dotnetPackAsync(dotnetPath: string, packageFile: string, outputDir: string, nobuild: boolean, includeSymbols: boolean, includeSource: boolean, version: string, properties: string[], verbosity: string, additionalArguments: string|undefined): Q.Promise<number> {
     let dotnet = tl.tool(dotnetPath);
 
     dotnet.arg("pack");
@@ -175,5 +177,9 @@ function dotnetPackAsync(dotnetPath: string, packageFile: string, outputDir: str
         dotnet.arg(verbosity);
     }
 
+    if (additionalArguments) {
+        dotnet.line(additionalArguments);
+    }
+    
     return dotnet.exec({ cwd: path.dirname(packageFile) } as IExecOptions);
 }

@@ -17,7 +17,7 @@
     "demands": [],
     "version": {
         "Major": 2,
-        "Minor": 181,
+        "Minor": 182,
         "Patch": 0
     },
     "minimumAgentVersion": "2.115.0",
@@ -120,7 +120,7 @@
             "type": "string",
             "label": "Arguments",
             "defaultValue": "",
-            "visibleRule": "command = build || command = publish || command = run || command = test || command = custom",
+            "visibleRule": "command = build || command = publish || command = run || command = test || command = pack || command = custom",
             "required": false,
             "helpMarkDown": "Arguments to the selected command. For example, build configuration, output folder, runtime. The arguments depend on the command selected."
         },
