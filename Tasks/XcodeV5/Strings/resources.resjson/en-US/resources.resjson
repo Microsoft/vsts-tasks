@@ -70,6 +70,8 @@
   "loc.input.help.publishJUnitResults": "Specify whether to publish JUnit test results to Azure Pipelines. This requires xcpretty to be enabled to generate JUnit test results.",
   "loc.input.label.testRunTitle": "Test run title",
   "loc.input.help.testRunTitle": "Title of the test run when publishing JUnit test results to Azure Pipelines.",
+  "loc.input.label.skipArchiveAction": "Skip Archiving",
+  "loc.input.help.skipArchiveAction": "Indicate whether `xcodebuild archive` should be executed before exporting the IPA.",
   "loc.messages.SignIdNotFound": "Failed to find the iOS signing identity. Verify that signing and provisioning information is provided.",
   "loc.messages.TempKeychainSetupFailed": "Failed to add the temporary keychain to the keychains search path.",
   "loc.messages.ProvProfileDetailsNotFound": "Failed to find details for the provisioning profile: %s",
@@ -97,5 +99,6 @@
   "loc.messages.NoDestinationPlatformWarning": "UI tests must be run against a simulator or a connected device. In the Xcode task, set `Destination platform` to a value other than `Default`.",
   "loc.messages.XcprettyNotInstalled": "xcpretty is not installed on the build server. xcodebuild raw output will be shown. Publishing test results will fail if xcpretty is not installed.",
   "loc.messages.XcodeRequiresMac": "Using Xcode requires a macOS agent. Building with Xcode on Linux or Windows is not supported by Apple.",
-  "loc.messages.UsingDefaultSimulator": "Using default simulator: %s."
+  "loc.messages.UsingDefaultSimulator": "Using default simulator: %s.",
+  "loc.messages.NoValidActionSpecified": "Either packageApp must be true or an action specified"
 }

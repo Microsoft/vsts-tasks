@@ -153,7 +153,7 @@ describe('Xcode L0 Suite', function () {
 
         tr.run();
 
-        assert(tr.stdout.search(/Input required: actions/) > 0, 'Error should be shown if actions are not specified.');
+        assert(tr.stdout.search(/##vso\[task.issue type=error;\]Error: loc_mock_NoValidActionSpecified/) > 0, 'Error should be shown if actions are not specified.');
         assert(tr.failed, 'task should have failed');
         done();
     });
@@ -817,4 +817,70 @@ describe('Xcode L0 Suite', function () {
 
         done();
     });
+
+    it('packageApp without actions', function (done: MochaDone) {
+        this.timeout(parseInt(process.env.TASK_TEST_TIMEOUT) || 20000);
+
+        const tp = path.join(__dirname, 'L0TaskNoActionsRequiredWhenPackaging.js');
+        const tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+
+        tr.run();
+        //export
+        assert(tr.ran('/home/bin/xcodebuild -exportArchive -archivePath /user/build/myscheme.xcarchive'
+            + ' -exportPath /user/build -exportOptionsPlist _XcodeTaskExportOptions.plist'),
+            'xcodebuild exportArchive should have been run to export the IPA from the .xcarchive');
+
+        assert(tr.stderr.length === 0, 'should not have written to stderr');
+        assert(tr.succeeded, 'task should have succeeded');
+        assert(tr.invokedToolCount === 4, 'Should have ran 4 command lines.');
+
+        done();
+    });
+    
+    it('add archivePath when actions include archive', function (done: MochaDone) {
+        this.timeout(parseInt(process.env.TASK_TEST_TIMEOUT) || 20000);
+
+        let tp = path.join(__dirname, 'L0XcodeAddArchivePathForArchiveAction.js');
+        let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+
+        tr.run();
+
+        //version
+        assert(tr.ran('/home/bin/xcodebuild -version'), 'xcodebuild for version should have been run.');
+
+        //archive
+        assert(tr.ran('/home/bin/xcodebuild -sdk $(SDK) -configuration $(Configuration) ' +
+                '-workspace /user/build/fun.xcodeproj/project.xcworkspace -scheme myscheme archive -archivePath /user/build/myscheme'),
+            'xcodebuild for archiving the ios project/workspace should have been run.');
+        assert(tr.invokedToolCount == 2, 'should have run xcodebuild version and xcodebuild archive');
+        assert(tr.stderr.length == 0, 'should not have written to stderr');
+        assert(tr.succeeded, 'task should have succeeded');
+        done();
+    });
+
+    it('export ipa without archiving', function (done: MochaDone) {
+        this.timeout(parseInt(process.env.TASK_TEST_TIMEOUT) || 20000);
+
+        let tp = path.join(__dirname, 'L0ExportOnly.js');
+        let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+
+        tr.run();
+
+        //version
+        assert(tr.ran('/home/bin/xcodebuild -version'), 'xcodebuild for version should have been run.');
+
+        //export prep
+        assert(tr.ran("/usr/libexec/PlistBuddy -c Clear _XcodeTaskExportOptions.plist"),
+            'PlistBuddy Clear should have run. An empty exportOptions plist should be used when there\'s not an embedded provisioning profile.');
+
+        //export        
+        assert(tr.ran('/home/bin/xcodebuild -exportArchive -archivePath /user/build/myscheme.xcarchive'
+            + ' -exportPath /user/build -exportOptionsPlist _XcodeTaskExportOptions.plist'),
+            'xcodebuild exportArchive should have been run to export the IPA from the .xcarchive');
+
+        assert(tr.invokedToolCount == 3, 'should have run xcodebuild version, plistbuddy clear, and xcodebuild exportArchive');
+        assert(tr.stderr.length == 0, 'should not have written to stderr');
+        assert(tr.succeeded, 'task should have succeeded');
+        done();
+    });    
 });

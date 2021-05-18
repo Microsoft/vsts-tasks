@@ -125,12 +125,20 @@ async function run() {
         let sdk: string = tl.getInput('sdk', false);
         let configuration: string = tl.getInput('configuration', false);
         let useXcpretty: boolean = tl.getBoolInput('useXcpretty', false);
-        let actions: string[] = tl.getDelimitedInput('actions', ' ', true);
+        let actions: string[] = tl.getDelimitedInput('actions', ' ', false);
         let packageApp: boolean = tl.getBoolInput('packageApp', true);
+        let skipArchiveAction: boolean = tl.getBoolInput('skipArchiveAction', false);
         let args: string = tl.getInput('args', false);
 
+        let createIPA = packageApp && sdk !== 'iphonesimulator'
+
         telemetryData.actions = actions;
+        telemetryData.skipArchiveAction = skipArchiveAction;
         telemetryData.packageApp = packageApp;
+
+        if (actions.length === 0 && !createIPA) {
+            throw new Error(tl.loc('NoValidActionSpecified'));
+        }
 
         //--------------------------------------------------------
         // Exec Tools
@@ -157,27 +165,6 @@ async function run() {
 
         await xcv.exec();
         tl.debug('xcodeMajorVersion = ' + xcodeMajorVersion);
-
-        // --- Xcode build arguments ---
-        let xcb: ToolRunner = tl.tool(tool);
-        xcb.argIf(sdk, ['-sdk', sdk]);
-        xcb.argIf(configuration, ['-configuration', configuration]);
-        if (ws && tl.filePathSupplied('xcWorkspacePath')) {
-            xcb.argIf(isProject, '-project');
-            xcb.argIf(!isProject, '-workspace');
-            xcb.arg(ws);
-        }
-        xcb.argIf(scheme, ['-scheme', scheme]);
-        // Add a -destination argument for each device and simulator.
-        if (destinations) {
-            destinations.forEach(destination => {
-                xcb.arg(['-destination', destination]);
-            });
-        }
-        xcb.arg(actions);
-        if (args) {
-            xcb.line(args);
-        }
 
         //--------------------------------------------------------
         // iOS signing and provisioning
@@ -232,76 +219,94 @@ async function run() {
             }
         }
 
-        xcb.argIf(xcode_codeSigningAllowed, xcode_codeSigningAllowed);
-        xcb.argIf(xcode_codeSignStyle, xcode_codeSignStyle);
-        xcb.argIf(xcode_codeSignIdentity, xcode_codeSignIdentity);
-        xcb.argIf(xcode_provProfile, xcode_provProfile);
-        xcb.argIf(xcode_provProfileSpecifier, xcode_provProfileSpecifier);
-        xcb.argIf(xcode_devTeam, xcode_devTeam);
+        //--------------------------------------------------------
+        // XCode Non-Packaging Actions
+        //--------------------------------------------------------
 
-        //--- Enable Xcpretty formatting ---
-        if (useXcpretty && !tl.which('xcpretty')) {
-            // user wants to enable xcpretty but it is not installed, fallback to xcodebuild raw output
-            useXcpretty = false;
-            tl.warning(tl.loc("XcprettyNotInstalled"));
-        }
-
-        if (useXcpretty) {
-            let xcPrettyPath: string = tl.which('xcpretty', true);
-            let xcPrettyTool: ToolRunner = tl.tool(xcPrettyPath);
-            xcPrettyTool.arg(['-r', 'junit', '--no-color']);
-            const xcPrettyArgs: string = tl.getInput('xcprettyArgs');
-            if (xcPrettyArgs) {
-                xcPrettyTool.line(xcPrettyArgs);
+        if (actions.length > 0) {
+            // --- Xcode build arguments ---
+            let xcb: ToolRunner = tl.tool(tool);
+            xcb.argIf(sdk, ['-sdk', sdk]);
+            xcb.argIf(configuration, ['-configuration', configuration]);
+            if (ws && tl.filePathSupplied('xcWorkspacePath')) {
+                xcb.argIf(isProject, '-project');
+                xcb.argIf(!isProject, '-workspace');
+                xcb.arg(ws);
+            }
+            xcb.argIf(scheme, ['-scheme', scheme]);
+            // Add a -destination argument for each device and simulator.
+            if (destinations) {
+                destinations.forEach(destination => {
+                    xcb.arg(['-destination', destination]);
+                });
+            }
+            xcb.arg(actions);
+            if (args) {
+                xcb.line(args);
             }
 
-            const logFile: string = utils.getUniqueLogFileName('xcodebuild');
-            xcb.pipeExecOutputToTool(xcPrettyTool, logFile);
-            utils.setTaskState('XCODEBUILD_LOG', logFile);
-        }
+            xcb.argIf(xcode_codeSigningAllowed, xcode_codeSigningAllowed);
+            xcb.argIf(xcode_codeSignStyle, xcode_codeSignStyle);
+            xcb.argIf(xcode_codeSignIdentity, xcode_codeSignIdentity);
+            xcb.argIf(xcode_provProfile, xcode_provProfile);
+            xcb.argIf(xcode_provProfileSpecifier, xcode_provProfileSpecifier);
+            xcb.argIf(xcode_devTeam, xcode_devTeam);
 
-        //--- Xcode Build ---
-        let buildOnlyDeviceErrorFound: boolean;
-        xcb.on('errline', (line: string) => {
-            if (!buildOnlyDeviceErrorFound && line.includes('build only device cannot be used to run this target')) {
-                buildOnlyDeviceErrorFound = true;
-            }
-        });
+            if (actions.includes('archive') && !createIPA) {
+                let archivePath: string = tl.getInput('archivePath');
+                if (archivePath && !archivePath.endsWith('.xcarchive')) {
+                    archivePath = tl.resolve(archivePath, scheme);
+                }
 
-        try {
-            await xcb.exec();
-        } catch (err) {
-            if (buildOnlyDeviceErrorFound) {
-                // Tell the user they need to change Destination platform to fix this build error.
-                tl.warning(tl.loc('NoDestinationPlatformWarning'));
+                xcb.argIf(archivePath, ['-archivePath', archivePath]);
+    
             }
-            throw err;
+            
+            //--- Enable Xcpretty formatting ---
+            if (useXcpretty && !tl.which('xcpretty')) {
+                // user wants to enable xcpretty but it is not installed, fallback to xcodebuild raw output
+                useXcpretty = false;
+                tl.warning(tl.loc("XcprettyNotInstalled"));
+            }
+
+            if (useXcpretty) {
+                let xcPrettyPath: string = tl.which('xcpretty', true);
+                let xcPrettyTool: ToolRunner = tl.tool(xcPrettyPath);
+                xcPrettyTool.arg(['-r', 'junit', '--no-color']);
+                const xcPrettyArgs: string = tl.getInput('xcprettyArgs');
+                if (xcPrettyArgs) {
+                    xcPrettyTool.line(xcPrettyArgs);
+                }
+
+                const logFile: string = utils.getUniqueLogFileName('xcodebuild');
+                xcb.pipeExecOutputToTool(xcPrettyTool, logFile);
+                utils.setTaskState('XCODEBUILD_LOG', logFile);
+            }
+
+            //--- Xcode Build ---
+            let buildOnlyDeviceErrorFound: boolean;
+            xcb.on('errline', (line: string) => {
+                if (!buildOnlyDeviceErrorFound && line.includes('build only device cannot be used to run this target')) {
+                    buildOnlyDeviceErrorFound = true;
+                }
+            });
+
+            try {
+                await xcb.exec();
+            } catch (err) {
+                if (buildOnlyDeviceErrorFound) {
+                    // Tell the user they need to change Destination platform to fix this build error.
+                    tl.warning(tl.loc('NoDestinationPlatformWarning'));
+                }
+                throw err;
+            }
         }
 
         //--------------------------------------------------------
         // Package app to generate .ipa
         //--------------------------------------------------------
 
-        if (packageApp && sdk !== 'iphonesimulator') {
-            // use xcodebuild to create the app package
-            if (!scheme) {
-                throw new Error(tl.loc("SchemeRequiredForArchive"));
-            }
-            if (!ws || !tl.filePathSupplied('xcWorkspacePath')) {
-                throw new Error(tl.loc("WorkspaceOrProjectRequiredForArchive"));
-            }
-
-            // create archive
-            let xcodeArchive: ToolRunner = tl.tool(tl.which('xcodebuild', true));
-            if (ws && tl.filePathSupplied('xcWorkspacePath')) {
-                xcodeArchive.argIf(isProject, '-project');
-                xcodeArchive.argIf(!isProject, '-workspace');
-                xcodeArchive.arg(ws);
-            }
-            xcodeArchive.argIf(scheme, ['-scheme', scheme]);
-            xcodeArchive.arg('archive'); //archive action
-            xcodeArchive.argIf(sdk, ['-sdk', sdk]);
-            xcodeArchive.argIf(configuration, ['-configuration', configuration]);
+        if (createIPA) {
             let archivePath: string = tl.getInput('archivePath');
             let archiveFolderRoot: string;
             if (!archivePath.endsWith('.xcarchive')) {
@@ -311,31 +316,53 @@ async function run() {
                 //user specified a file path for archivePath
                 archiveFolderRoot = path.dirname(archivePath);
             }
-            xcodeArchive.arg(['-archivePath', archivePath]);
-            xcodeArchive.argIf(xcode_otherCodeSignFlags, xcode_otherCodeSignFlags);
-            xcodeArchive.argIf(xcode_codeSigningAllowed, xcode_codeSigningAllowed);
-            xcodeArchive.argIf(xcode_codeSignStyle, xcode_codeSignStyle);
-            xcodeArchive.argIf(xcode_codeSignIdentity, xcode_codeSignIdentity);
-            xcodeArchive.argIf(xcode_provProfile, xcode_provProfile);
-            xcodeArchive.argIf(xcode_provProfileSpecifier, xcode_provProfileSpecifier);
-            xcodeArchive.argIf(xcode_devTeam, xcode_devTeam);
-            if (args) {
-                xcodeArchive.line(args);
-            }
 
-            if (useXcpretty) {
-                let xcPrettyTool: ToolRunner = tl.tool(tl.which('xcpretty', true));
-                xcPrettyTool.arg('--no-color');
-                const xcPrettyArgs: string = tl.getInput('xcprettyArgs');
-                if (xcPrettyArgs) {
-                    xcPrettyTool.line(xcPrettyArgs);
+            // use xcodebuild to create the app package
+            if (!skipArchiveAction) {
+                if (!scheme) {
+                    throw new Error(tl.loc("SchemeRequiredForArchive"));
+                }
+                if (!ws || !tl.filePathSupplied('xcWorkspacePath')) {
+                    throw new Error(tl.loc("WorkspaceOrProjectRequiredForArchive"));
                 }
 
-                const logFile: string = utils.getUniqueLogFileName('xcodebuild_archive');
-                xcodeArchive.pipeExecOutputToTool(xcPrettyTool, logFile);
-                utils.setTaskState('XCODEBUILD_ARCHIVE_LOG', logFile);
+                // create archive
+                let xcodeArchive: ToolRunner = tl.tool(tl.which('xcodebuild', true));
+                if (ws && tl.filePathSupplied('xcWorkspacePath')) {
+                    xcodeArchive.argIf(isProject, '-project');
+                    xcodeArchive.argIf(!isProject, '-workspace');
+                    xcodeArchive.arg(ws);
+                }
+                xcodeArchive.argIf(scheme, ['-scheme', scheme]);
+                xcodeArchive.arg('archive'); //archive action
+                xcodeArchive.argIf(sdk, ['-sdk', sdk]);
+                xcodeArchive.argIf(configuration, ['-configuration', configuration]);
+                xcodeArchive.arg(['-archivePath', archivePath]);
+                xcodeArchive.argIf(xcode_otherCodeSignFlags, xcode_otherCodeSignFlags);
+                xcodeArchive.argIf(xcode_codeSigningAllowed, xcode_codeSigningAllowed);
+                xcodeArchive.argIf(xcode_codeSignStyle, xcode_codeSignStyle);
+                xcodeArchive.argIf(xcode_codeSignIdentity, xcode_codeSignIdentity);
+                xcodeArchive.argIf(xcode_provProfile, xcode_provProfile);
+                xcodeArchive.argIf(xcode_provProfileSpecifier, xcode_provProfileSpecifier);
+                xcodeArchive.argIf(xcode_devTeam, xcode_devTeam);
+                if (args) {
+                    xcodeArchive.line(args);
+                }
+
+                if (useXcpretty) {
+                    let xcPrettyTool: ToolRunner = tl.tool(tl.which('xcpretty', true));
+                    xcPrettyTool.arg('--no-color');
+                    const xcPrettyArgs: string = tl.getInput('xcprettyArgs');
+                    if (xcPrettyArgs) {
+                        xcPrettyTool.line(xcPrettyArgs);
+                    }
+
+                    const logFile: string = utils.getUniqueLogFileName('xcodebuild_archive');
+                    xcodeArchive.pipeExecOutputToTool(xcPrettyTool, logFile);
+                    utils.setTaskState('XCODEBUILD_ARCHIVE_LOG', logFile);
+                }
+                await xcodeArchive.exec();
             }
-            await xcodeArchive.exec();
 
             let archiveFolders: string[] = tl.findMatch(archiveFolderRoot, '**/*.xcarchive', { allowBrokenSymbolicLinks: false, followSpecifiedSymbolicLink: false, followSymbolicLinks: false });
             if (archiveFolders && archiveFolders.length > 0) {

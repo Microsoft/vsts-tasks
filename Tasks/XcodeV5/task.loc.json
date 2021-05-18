@@ -12,7 +12,7 @@
   "author": "Microsoft Corporation",
   "version": {
     "Major": 5,
-    "Minor": 185,
+    "Minor": 187,
     "Patch": 0
   },
   "releaseNotes": "ms-resource:loc.releaseNotes",
@@ -48,7 +48,7 @@
       "type": "string",
       "label": "ms-resource:loc.input.label.actions",
       "defaultValue": "build",
-      "required": true,
+      "required": false,
       "helpMarkDown": "ms-resource:loc.input.help.actions"
     },
     {
@@ -124,8 +124,8 @@
       "defaultValue": "",
       "required": false,
       "helpMarkDown": "ms-resource:loc.input.help.archivePath",
-      "groupName": "package",
-      "visibleRule": "packageApp == true"
+      "groupName": "advanced",
+      "visibleRule": "packageApp == true || actions.includes('archive')"
     },
     {
       "name": "exportPath",
@@ -358,6 +358,16 @@
       "groupName": "advanced",
       "helpMarkDown": "ms-resource:loc.input.help.testRunTitle",
       "visibleRule": "publishJUnitResults == true"
+    },
+    {
+      "name": "skipArchiveAction",
+      "type": "boolean",
+      "label": "ms-resource:loc.input.label.skipArchiveAction",
+      "defaultValue": false,
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.skipArchiveAction",
+      "groupName": "package",
+      "visibleRule": "packageApp == true"
     }
   ],
   "execution": {
@@ -400,6 +410,7 @@
     "NoDestinationPlatformWarning": "ms-resource:loc.messages.NoDestinationPlatformWarning",
     "XcprettyNotInstalled": "ms-resource:loc.messages.XcprettyNotInstalled",
     "XcodeRequiresMac": "ms-resource:loc.messages.XcodeRequiresMac",
-    "UsingDefaultSimulator": "ms-resource:loc.messages.UsingDefaultSimulator"
+    "UsingDefaultSimulator": "ms-resource:loc.messages.UsingDefaultSimulator",
+    "NoValidActionSpecified": "ms-resource:loc.messages.NoValidActionSpecified"
   }
 }
