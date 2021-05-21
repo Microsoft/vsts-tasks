@@ -15,6 +15,8 @@
   "loc.input.help.mergeTestResults": "A test run is created for each results file. Check this option to merge results into a single test run. To optimize for better performance, results will be merged into a single run if there are more than 100 result files, irrespective of this option.",
   "loc.input.label.failTaskOnFailedTests": "Fail if there are test failures",
   "loc.input.help.failTaskOnFailedTests": "Fail the task if there are any test failures. Check this option to fail the task if test failures are detected in the result files.",
+  "loc.input.label.failTaskOnMissingResultsFile": "Fail if no result files are found",
+  "loc.input.help.failTaskOnMissingResultsFile": "Fail the task if no result files are found.",
   "loc.input.label.testRunTitle": "Test run title",
   "loc.input.help.testRunTitle": "Provide a name for the Test Run.",
   "loc.input.label.platform": "Build Platform",

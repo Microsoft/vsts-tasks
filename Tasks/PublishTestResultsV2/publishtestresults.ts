@@ -72,6 +72,7 @@ async function run() {
         const testRunTitle = tl.getInput('testRunTitle');
         const publishRunAttachments = tl.getInput('publishRunAttachments');
         const failTaskOnFailedTests = tl.getInput('failTaskOnFailedTests');
+        const failTaskOnMissingResultsFile: boolean = tl.getBoolInput('failTaskOnMissingResultsFile');
         let searchFolder = tl.getInput('searchFolder');
 
         tl.debug('testRunner: ' + testRunner);
@@ -82,6 +83,7 @@ async function run() {
         tl.debug('testRunTitle: ' + testRunTitle);
         tl.debug('publishRunAttachments: ' + publishRunAttachments);
         tl.debug('failTaskOnFailedTests: ' + failTaskOnFailedTests);
+        tl.debug('failTaskOnMissingResultsFile: ' + failTaskOnMissingResultsFile);
 
         if (isNullOrWhitespace(searchFolder)) {
             searchFolder = tl.getVariable('System.DefaultWorkingDirectory');
@@ -107,6 +109,7 @@ async function run() {
 
         ci.addToConsolidatedCi('testRunner', testRunner);
         ci.addToConsolidatedCi('failTaskOnFailedTests', failTaskOnFailedTests);
+        ci.addToConsolidatedCi('failTaskOnMissingResultsFile', failTaskOnMissingResultsFile);
         ci.addToConsolidatedCi('mergeResultsUserPreference', mergeResults);
         ci.addToConsolidatedCi('config', config);
         ci.addToConsolidatedCi('platform', platform);
@@ -121,8 +124,13 @@ async function run() {
         }
 
         if (testResultsFilesCount === 0) {
-            tl.warning('No test result files matching ' + testResultsFiles + ' were found.');
             ci.addToConsolidatedCi('noResultsFileFound', true);
+
+            if (failTaskOnMissingResultsFile) {
+                tl.setResult(tl.TaskResult.Failed, tl.loc('NoMatchingFilesFound', testResultsFiles));
+            } else {
+                tl.warning('No test result files matching ' + testResultsFiles + ' were found.');
+            }
         } else {
             const osType = tl.osType();
             // This variable can be set as build variable to force the task to use command flow
