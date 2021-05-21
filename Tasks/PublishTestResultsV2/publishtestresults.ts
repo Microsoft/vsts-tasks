@@ -129,7 +129,7 @@ async function run() {
             if (failTaskOnMissingResultsFile) {
                 tl.setResult(tl.TaskResult.Failed, tl.loc('NoMatchingFilesFound', testResultsFiles));
             } else {
-                tl.warning('No test result files matching ' + testResultsFiles + ' were found.');
+                tl.warning(tl.loc('NoMatchingFilesFound', testResultsFiles));
             }
         } else {
             const osType = tl.osType();
