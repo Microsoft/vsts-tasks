@@ -29,6 +29,14 @@
       "helpMarkDown": "ms-resource:loc.input.help.versionSpec"
     },
     {
+      "name": "suppressExactVersionWarning",
+      "type": "boolean",
+      "label": "ms-resource:loc.input.label.suppressExactVersionWarning",
+      "required": false,
+      "defaultValue": "false",
+      "helpMarkDown": "ms-resource:loc.input.help.suppressExactVersionWarning"
+    },
+    {
       "name": "addToPath",
       "type": "boolean",
       "label": "ms-resource:loc.input.label.addToPath",

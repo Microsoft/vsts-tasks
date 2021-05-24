@@ -19,7 +19,7 @@ export enum Platform {
 export function isExactVersion(versionSpec: string) {
     const semanticVersion = semver.coerce(versionSpec);
     return semanticVersion && semanticVersion.patch;
-} 
+}
 
 export function getPlatform(): Platform {
     switch (process.platform) {
@@ -32,11 +32,12 @@ export function getPlatform(): Platform {
 
 interface TaskParameters {
     readonly versionSpec: string;
+    readonly suppressExactVersionWarning: boolean;
     readonly addToPath: boolean;
 }
 
 export async function useRubyVersion(parameters: TaskParameters, platform: Platform): Promise<void> {
-    if (isExactVersion(parameters.versionSpec)) {
+    if (!parameters.suppressExactVersionWarning && isExactVersion(parameters.versionSpec)) {
         task.warning(task.loc('ExactVersionNotRecommended'));
     }
     const toolName: string = 'Ruby';

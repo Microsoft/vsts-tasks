@@ -36,6 +36,14 @@
             "helpMarkDown": "Version range or exact version of a Python version to use, using semver's version range syntax. [More information](https://go.microsoft.com/fwlink/?LinkID=2006180)"
         },
         {
+            "name": "suppressExactVersionWarning",
+            "type": "boolean",
+            "label": "ms-resource:loc.input.label.suppressExactVersionWarning",
+            "required": false,
+            "defaultValue": "false",
+            "helpMarkDown": "ms-resource:loc.input.help.suppressExactVersionWarning"
+        },
+        {
             "name": "addToPath",
             "type": "boolean",
             "label": "Add to PATH",

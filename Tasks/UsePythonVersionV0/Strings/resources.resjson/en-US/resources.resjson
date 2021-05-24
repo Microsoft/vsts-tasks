@@ -6,6 +6,8 @@
   "loc.group.displayName.advanced": "Advanced",
   "loc.input.label.versionSpec": "Version spec",
   "loc.input.help.versionSpec": "Version range or exact version of a Python version to use, using semver's version range syntax. [More information](https://go.microsoft.com/fwlink/?LinkID=2006180)",
+  "loc.input.label.suppressExactVersionWarning": "Suppress exact version warning",
+  "loc.input.help.suppressExactVersionWarning": "Suppress the warning about using an exact version.",
   "loc.input.label.addToPath": "Add to PATH",
   "loc.input.help.addToPath": "Whether to prepend the retrieved Python version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable.",
   "loc.input.label.architecture": "Architecture",
