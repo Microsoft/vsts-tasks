@@ -21,7 +21,7 @@
     "@types/mocha": "^5.2.7",
     "@types/uuid": "^8.3.0",
     "@types/q": "^1.5.1",
-    "azure-pipelines-task-lib": "^3.0.6-preview.0",
+    "azure-pipelines-task-lib": "^3.1.2",
     "azure-pipelines-tasks-java-common": "^2.0.0-preview.0"
   },
   "devDependencies": {
