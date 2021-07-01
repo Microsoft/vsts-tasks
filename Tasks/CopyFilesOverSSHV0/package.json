@@ -20,7 +20,7 @@
     "ssh2-sftp-client": "^5.1.2",
     "ssh2": "^0.8.2",
     "minimatch": "^3.0.4",
-    "azure-pipelines-task-lib": "^3.0.6-preview.0",
+    "azure-pipelines-task-lib": "^3.1.2",
     "@types/mocha": "^5.2.7"
   },
   "devDependencies": {
