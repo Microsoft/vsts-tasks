@@ -14,7 +14,7 @@
     "q": "1.4.1",
     "semver": "5.4.1",
     "typed-rest-client": "1.7.3",
-    "utility-common": "file:../../_build/Tasks/Common/utility-common-1.0.2.tgz",
+    "utility-common-v2": "file:../../_build/Tasks/Common/utility-common-v2-2.0.0.tgz",
     "vso-node-api": "6.0.1-preview"
   },
   "devDependencies": {

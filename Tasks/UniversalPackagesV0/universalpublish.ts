@@ -149,7 +149,7 @@ export async function run(artifactToolPath: string): Promise<void> {
             retries++; 
         }
 
-        if (execResult.code === packageAlreadyExistsError) {
+        if (execResult != null && execResult.code === packageAlreadyExistsError) {
             telemetry.logResult("Packaging", "UniversalPackagesCommand", execResult.code);
             throw new Error(tl.loc("Error_UnexpectedErrorArtifactTool",
                 execResult.code,

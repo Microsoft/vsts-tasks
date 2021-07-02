@@ -1,6 +1,6 @@
 {
     "name": "universalpackages",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Download or publish universal packages.",
     "main": "universalmain.js",
     "scripts": {

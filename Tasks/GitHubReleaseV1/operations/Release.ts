@@ -87,7 +87,7 @@ export class Release {
         var stats = fs.statSync(filePath);
 
         let request = new WebRequest();
-        request.uri = util.format(this._uploadReleaseAssetApiUrlFormat, uploadUrl.split('{')[0], fileName);
+        request.uri = util.format(this._uploadReleaseAssetApiUrlFormat, uploadUrl.split('{')[0], encodeURIComponent(fileName));
         request.method = "POST";
         request.headers = {
             "Content-Type": mime.lookup(fileName),
