@@ -178,22 +178,25 @@ async function doWork() {
                     }
 
                     var archivePath = path.join(localPathRoot, "archive");
-                    var tempPath = path.join(localPathRoot, uuidv4());
-                    fsExtra.move(archivePath, tempPath)
-                        .then(() => {
-                            fsExtra.copy(tempPath, localPathRoot)
-                                .then(() => {
-                                    fsExtra.remove(tempPath).catch((error) => {
+                    if (tl.exist(archivePath)) {
+                        var tempPath = path.join(localPathRoot, uuidv4());
+                        
+                        fsExtra.move(archivePath, tempPath)
+                            .then(() => {
+                                fsExtra.copy(tempPath, localPathRoot)
+                                    .then(() => {
+                                        fsExtra.remove(tempPath).catch((error) => {
+                                            throw error;
+                                        });
+                                    })
+                                    .catch((error) => {
                                         throw error;
                                     });
-                                })
-                                .catch((error) => {
-                                    throw error;
-                                });
-                        })
-                        .catch((error) => {
-                            throw error;
-                        });
+                            })
+                            .catch((error) => {
+                                throw error;
+                            });
+                    }
                 }
                 else {
                     await getArtifactsFromUrl(artifactQueryUrl, strictSSL, localPathRoot, itemPattern, handler, variables);
