@@ -3,6 +3,20 @@ import path = require('path');
 import tl = require('azure-pipelines-task-lib/task');
 
 /**
+ * Input task data - including some processed inputs
+ * This data is consistent between retries
+ */
+interface ITaskInputData {
+    contents: string[];
+    cleanTargetFolder: boolean;
+    overWrite: boolean;
+    flattenFolders: boolean;
+    preserveTimestamp: boolean;
+    ignoreMakeDirErrors: boolean;
+    retryCount: number;
+}
+
+/**
  * Shows timestamp change operation results
  * @param fileStats file stats
  * @param err error - null if there is no error
@@ -36,76 +50,68 @@ function makeDirP(targetFolder: string, ignoreErrors: boolean): void {
     }
 }
 
-// we allow broken symlinks - since there could be broken symlinks found in source folder, but filtered by contents pattern
-const findOptions: tl.FindOptions = {
-    allowBrokenSymbolicLinks: true,
-    followSpecifiedSymbolicLink: true,
-    followSymbolicLinks: true
-};
+/**
+ * Main Copy files task logic
+ * @param retryCount count of retries for copying operation
+ */
+function main(inputsData: ITaskInputData) {
+    const {
+        contents,
+        cleanTargetFolder,
+        overWrite,
+        flattenFolders,
+        preserveTimestamp,
+        ignoreMakeDirErrors,
+        retryCount,
+    } = inputsData;
 
-tl.setResourcePath(path.join(__dirname, 'task.json'));
+    let sourceFolder: string = tl.getPathInput('SourceFolder', true, true);
+    const targetFolder: string = tl.getPathInput('TargetFolder', true);
 
-// contents is a multiline input containing glob patterns
-let contents: string[] = tl.getDelimitedInput('Contents', '\n', true);
-let sourceFolder: string = tl.getPathInput('SourceFolder', true, true);
-let targetFolder: string = tl.getPathInput('TargetFolder', true);
-let cleanTargetFolder: boolean = tl.getBoolInput('CleanTargetFolder', false);
-let overWrite: boolean = tl.getBoolInput('OverWrite', false);
-let flattenFolders: boolean = tl.getBoolInput('flattenFolders', false);
-let retryCount: number = parseInt(tl.getInput('retryCount'));
-if (isNaN(retryCount) || retryCount < 0) {
-    retryCount = 0;
-}
-const preserveTimestamp: boolean = tl.getBoolInput('preserveTimestamp', false);
-const ignoreMakeDirErrors: boolean = tl.getBoolInput('ignoreMakeDirErrors', false);
+    sourceFolder = path.normalize(sourceFolder);
 
-// normalize the source folder path. this is important for later in order to accurately
-// determine the relative path of each found file (substring using sourceFolder.length).
-sourceFolder = path.normalize(sourceFolder);
-let allPaths: string[] = tl.find(sourceFolder, findOptions);
-let sourceFolderPattern = sourceFolder.replace('[', '[[]'); // directories can have [] in them, and they have special meanings as a pattern, so escape them
-let matchedPaths: string[] = tl.match(allPaths, contents, sourceFolderPattern); // default match options
-let matchedFiles: string[] = matchedPaths.filter((itemPath: string) => !tl.stats(itemPath).isDirectory()); // filter-out directories
+    let allPaths: string[] = tl.find(sourceFolder, findOptions);
+    let sourceFolderPattern = sourceFolder.replace('[', '[[]'); // directories can have [] in them, and they have special meanings as a pattern, so escape them
+    const matchedPaths: string[] = tl.match(allPaths, contents, sourceFolderPattern); // default match options
+    const matchedFiles: string[] = matchedPaths.filter((itemPath: string) => !tl.stats(itemPath).isDirectory()); // filter-out directories
 
-// copy the files to the target folder
-console.log(tl.loc('FoundNFiles', matchedFiles.length));
+    // copy the files to the target folder
+    console.log(tl.loc('FoundNFiles', matchedFiles.length));
 
-if (matchedFiles.length > 0) {
-    // clean target folder if required
-    if (cleanTargetFolder) {
-        console.log(tl.loc('CleaningTargetFolder', targetFolder));
+    if (matchedFiles.length > 0) {
+        // clean target folder if required
+        if (cleanTargetFolder) {
+            console.log(tl.loc('CleaningTargetFolder', targetFolder));
 
-        // stat the targetFolder path
-        let targetFolderStats: tl.FsStats;
-        try {
-            targetFolderStats = tl.stats(targetFolder);
-        }
-        catch (err) {
-            if (err.code != 'ENOENT') {
-                throw err;
+            // stat the targetFolder path
+            let targetFolderStats: tl.FsStats;
+            try {
+                targetFolderStats = tl.stats(targetFolder);
+            }
+            catch (err) {
+                if (err.code != 'ENOENT') {
+                    throw err;
+                }
+            }
+
+            if (targetFolderStats) {
+                if (targetFolderStats.isDirectory()) {
+                    // delete the child items
+                    fs.readdirSync(targetFolder)
+                        .forEach((item: string) => {
+                            let itemPath = path.join(targetFolder, item);
+                            tl.rmRF(itemPath);
+                        });
+                }
+                else {
+                    // targetFolder is not a directory. delete it.
+                    tl.rmRF(targetFolder);
+                }
             }
         }
 
-        if (targetFolderStats) {
-            if (targetFolderStats.isDirectory()) {
-                // delete the child items
-                fs.readdirSync(targetFolder)
-                    .forEach((item: string) => {
-                        let itemPath = path.join(targetFolder, item);
-                        tl.rmRF(itemPath);
-                    });
-            }
-            else {
-                // targetFolder is not a directory. delete it.
-                tl.rmRF(targetFolder);
-            }
-        }
-    }
-
-    // make sure the target folder exists
-    makeDirP(targetFolder, ignoreMakeDirErrors);
-
-    try {
+        // make sure the target folder exists
+        makeDirP(targetFolder, ignoreMakeDirErrors);
         let createdFolders: { [folder: string]: boolean } = {};
         matchedFiles.forEach((file: string) => {
             let relativePath;
@@ -204,7 +210,57 @@ if (matchedFiles.length > 0) {
             }
         });
     }
-    catch (err) {
-        tl.setResult(tl.TaskResult.Failed, err);
+}
+/**
+ * Executes task logic with specifies amount of retries
+ * @param retryCount count of retries for copying operation
+ */
+function runWithRetries(taskInputData: ITaskInputData) {
+    while (taskInputData.retryCount >= 0) {
+        try {
+            main(taskInputData);
+            break;
+        } catch (e) {
+            let errorMessage = `Error while task execution: ${e}.`;
+            if (taskInputData.retryCount) {
+                errorMessage += ` Remaining attempts: ${taskInputData.retryCount}`;
+                console.log(errorMessage);
+            } else {
+                tl.setResult(tl.TaskResult.Failed, e);
+            }
+        }
+
+        --taskInputData.retryCount;
     }
 }
+
+function readInputsData(): ITaskInputData {
+    const taskInputsData: ITaskInputData = {
+        contents: tl.getDelimitedInput('Contents', '\n', true),
+        cleanTargetFolder: tl.getBoolInput('CleanTargetFolder', false),
+        overWrite: tl.getBoolInput('OverWrite', false),
+        flattenFolders: tl.getBoolInput('flattenFolders', false),
+        preserveTimestamp: tl.getBoolInput('preserveTimestamp', false),
+        ignoreMakeDirErrors: tl.getBoolInput('ignoreMakeDirErrors', false),
+        retryCount: parseInt(tl.getInput('retryCount')),
+    };
+
+    if (isNaN(taskInputsData.retryCount) || taskInputsData.retryCount < 0) {
+        taskInputsData.retryCount = 0;
+    }
+
+    return taskInputsData;
+}
+
+// we allow broken symlinks - since there could be broken symlinks found in source folder, but filtered by contents pattern
+const findOptions: tl.FindOptions = {
+    allowBrokenSymbolicLinks: true,
+    followSpecifiedSymbolicLink: true,
+    followSymbolicLinks: true
+};
+
+tl.setResourcePath(path.join(__dirname, 'task.json'));
+
+const taskInputData: ITaskInputData = readInputsData();
+
+runWithRetries(taskInputData);

@@ -141,7 +141,7 @@ describe('CopyFiles L0 Suite', function () {
         runner.run();
 
         assert(runner.failed, 'should have failed');
-        assert(runner.createdErrorIssue('Unhandled: Input required: SourceFolder'), 'should have created error issue');
+        assert(runner.createdErrorIssue('Error: Input required: SourceFolder'), 'should have created error issue');
         done();
     });
 
@@ -153,7 +153,7 @@ describe('CopyFiles L0 Suite', function () {
         runner.run();
 
         assert(runner.failed, 'should have failed');
-        assert(runner.createdErrorIssue('Unhandled: Input required: TargetFolder'), 'should have created error issue');
+        assert(runner.createdErrorIssue('Error: Input required: TargetFolder'), 'should have created error issue');
         done();
     });
 
@@ -165,9 +165,25 @@ describe('CopyFiles L0 Suite', function () {
         runner.run();
 
         assert(runner.failed, 'should have failed');
-        assert(runner.createdErrorIssue(`Unhandled: Not found ${path.normalize('/srcDir')}`), 'should have created error issue');
+        assert(runner.createdErrorIssue(`Error: Not found ${path.normalize('/srcDir')}`), 'should have created error issue');
         done();
     });
+
+    it('retries and fails if SourceFolder not found, but retryCount is specified', (done: Mocha.Done) => {
+        this.timeout(1000);
+
+        let testPath = path.join(__dirname, 'L0retriesIfSourceFolderNotFoundButRetrySpecified.js');
+        let runner: mocktest.MockTestRunner = new mocktest.MockTestRunner(testPath);
+        runner.run();
+
+        assert(runner.failed, 'should have failed');
+        assert(runner.stdOutContained(`Error while task execution: Error: Not found ${path.normalize('/srcDir')}. Remaining attempts: 3`));
+        assert(runner.stdOutContained(`Error while task execution: Error: Not found ${path.normalize('/srcDir')}. Remaining attempts: 2`));
+        assert(runner.stdOutContained(`Error while task execution: Error: Not found ${path.normalize('/srcDir')}. Remaining attempts: 1`));
+        assert(runner.createdErrorIssue(`Error: Not found ${path.normalize('/srcDir')}`), 'should have created error issue');
+        done();
+    });
+
 
     it('fails if target file is a directory', (done: Mocha.Done) => {
         this.timeout(1000);
