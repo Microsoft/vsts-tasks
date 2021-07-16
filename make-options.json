@@ -73,6 +73,7 @@
         "DotNetCoreInstallerV0",
         "DotNetCoreInstallerV1",
         "DownloadBuildArtifactsV0",
+        "DownloadBuildArtifactsV1",
         "DownloadFileshareArtifactsV0",
         "DownloadGitHubNugetPackageV1",
         "DownloadGitHubNpmPackageV1",

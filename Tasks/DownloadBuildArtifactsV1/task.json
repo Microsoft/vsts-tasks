@@ -1,0 +1,263 @@
+{
+    "id": "a433f589-fce1-4460-9ee6-44a624aeb1fb",
+    "name": "DownloadBuildArtifacts",
+    "friendlyName": "Download build artifacts",
+    "description": "Download files that were saved as artifacts of a completed build",
+    "helpUrl": "https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-build-artifacts",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Microsoft Corporation",
+    "version": {
+        "Major": 1,
+        "Minor": 189,
+        "Patch": 2
+    },
+    "groups": [
+        {
+            "name": "advanced",
+            "displayName": "Advanced",
+            "isExpanded": false
+        }
+    ],
+    "minimumAgentVersion": "2.188.2",
+    "demands": [],
+    "inputs": [
+        {
+            "name": "buildType",
+            "type": "radio",
+            "label": "Download artifacts produced by",
+            "defaultValue": "current",
+            "required": true,
+            "options": {
+                "current": "Current build",
+                "specific": "Specific build"
+            },
+            "helpMarkDown": "Download artifacts produced by the current build, or from a specific build."
+        },
+        {
+            "name": "project",
+            "type": "pickList",
+            "label": "Project",
+            "defaultValue": "",
+            "required": true,
+            "visibleRule": "buildType == specific",
+            "properties": {
+                "EditableOptions": "True",
+                "DisableManageLink": "True"
+            },
+            "helpMarkDown": "The project from which to download the build artifacts"
+        },
+        {
+            "name": "definition",
+            "aliases": [
+                "pipeline"
+            ],
+            "type": "pickList",
+            "label": "Build pipeline",
+            "defaultValue": "",
+            "required": true,
+            "visibleRule": "buildType == specific",
+            "properties": {
+                "EditableOptions": "True",
+                "DisableManageLink": "True",
+                "IsSearchable": "True"
+            },
+            "helpMarkDown": "Select the build pipeline name"
+        },
+        {
+            "name": "specificBuildWithTriggering",
+            "type": "boolean",
+            "label": "When appropriate, download artifacts from the triggering build.",
+            "defaultValue": "false",
+            "required": false,
+            "visibleRule": "buildType == specific",
+            "helpMarkDown": "If checked, this build task will try to download artifacts from the triggering build. If there is no triggering build from the specified pipeline, it will download artifacts from the build specified in the options below."
+        },
+        {
+            "name": "buildVersionToDownload",
+            "type": "pickList",
+            "label": "Build version to download",
+            "defaultValue": "latest",
+            "visibleRule": "buildType == specific",
+            "required": true,
+            "options": {
+                "latest": "Latest",
+                "latestFromBranch": "Latest from specific branch and specified Build Tags",
+                "specific": "Specific version"
+            }
+        },
+        {
+            "name": "allowPartiallySucceededBuilds",
+            "type": "boolean",
+            "label": "Download artifacts even from partially succeeded builds.",
+            "defaultValue": "false",
+            "visibleRule": "buildType == specific && buildVersionToDownload != specific",
+            "required": false,
+            "helpMarkDown": "If checked, this build task will try to download artifacts whether the build is succeeded or partially succeeded."
+        },
+        {
+            "name": "branchName",
+            "type": "string",
+            "label": "Branch name",
+            "defaultValue": "refs/heads/master",
+            "visibleRule": "buildType == specific && buildVersionToDownload == latestFromBranch",
+            "required": true,
+            "helpMarkDown": "Specify to filter on branch/ref name, for example: ```refs/heads/develop```."
+        },
+        {
+            "name": "buildId",
+            "type": "pickList",
+            "label": "Build",
+            "defaultValue": "",
+            "required": true,
+            "visibleRule": "buildType == specific && buildVersionToDownload == specific",
+            "properties": {
+                "EditableOptions": "True",
+                "DisableManageLink": "True"
+            },
+            "helpMarkDown": "The build from which to download the artifacts"
+        },
+        {
+            "name": "tags",
+            "type": "string",
+            "label": "Build Tags",
+            "defaultValue": "",
+            "visibleRule": "buildType == specific && buildVersionToDownload != specific",
+            "required": false,
+            "helpMarkDown": "A comma-delimited list of tags. Only builds with these tags will be returned."
+        },
+        {
+            "name": "downloadType",
+            "type": "radio",
+            "label": "Download type",
+            "defaultValue": "single",
+            "required": true,
+            "options": {
+                "single": "Specific artifact",
+                "specific": "Specific files"
+            },
+            "helpMarkDown": "Download a specific artifact or specific files from the build."
+        },
+        {
+            "name": "artifactName",
+            "type": "pickList",
+            "label": "Artifact name",
+            "defaultValue": "",
+            "required": true,
+            "properties": {
+                "EditableOptions": "True",
+                "DisableManageLink": "True"
+            },
+            "visibleRule": "downloadType == single",
+            "helpMarkDown": "The name of the artifact to download"
+        },
+        {
+            "name": "itemPattern",
+            "type": "multiLine",
+            "label": "Matching pattern",
+            "defaultValue": "**",
+            "required": false,
+            "properties": {
+                "rows": "3",
+                "resizable": "true"
+            },
+            "helpMarkDown": "Specify files to be downloaded as multi line minimatch pattern. [More Information](https://aka.ms/minimatchexamples) <p>The default pattern (\\*\\*) will download all files across all artifacts in the build if \"Specific files\" option is selected. To download all files within artifact drop use drop/**.</p>"
+        },
+        {
+            "name": "downloadPath",
+            "type": "string",
+            "label": "Destination directory",
+            "defaultValue": "$(System.ArtifactsDirectory)",
+            "required": true,
+            "helpMarkDown": "Path on the agent machine where the artifacts will be downloaded"
+        },
+        {
+            "name": "parallelizationLimit",
+            "type": "string",
+            "label": "Parallelization limit",
+            "defaultValue": "8",
+            "groupName": "advanced",
+            "required": false,
+            "helpMarkDown": "Number of files to download simultaneously"
+        },
+        {
+            "name": "checkDownloadedFiles",
+            "type": "boolean",
+            "label": "Check downloaded files",
+            "defaultValue": "false",
+            "groupName": "advanced",
+            "required": false,
+            "helpMarkDown": "If checked, this build task will check that all files are fully downloaded."
+        },
+        {
+            "name": "retryDownloadCount",
+            "type": "string",
+            "label": "Retry count",
+            "defaultValue": "4",
+            "groupName": "advanced",
+            "required": false,
+            "helpMarkDown": "Optional number of times to retry downloading a build artifact if the download fails."
+        }
+    ],
+    "dataSourceBindings": [
+        {
+            "endpointId": "tfs:teamfoundation",
+            "target": "project",
+            "endpointUrl": "{{endpoint.url}}/_apis/projects?$skip={{skip}}&$top=1000",
+            "resultSelector": "jsonpath:$.value[?(@.state=='wellFormed')]",
+            "resultTemplate": "{ \"Value\" : \"{{{id}}}\", \"DisplayValue\" : \"{{{name}}}\" }",
+            "callbackContextTemplate": "{\"skip\": \"{{add skip 1000}}\"}",
+            "callbackRequiredTemplate": "{{isEqualNumber result.count 1000}}",
+            "initialContextTemplate": "{\"skip\": \"0\"}"
+        },
+        {
+            "endpointId": "tfs:teamfoundation",
+            "target": "definition",
+            "endpointUrl": "{{endpoint.url}}/{{project}}/_apis/build/definitions?api-version=3.0-preview&$top=500&continuationToken={{{continuationToken}}}&name=*{{name}}*&queryOrder=2",
+            "resultSelector": "jsonpath:$.value[?(@.quality=='definition')]",
+            "parameters": {
+                "project": "$(project)",
+                "name": "$(searchText)"
+            },
+            "resultTemplate": "{ \"Value\" : \"{{{id}}}\", \"DisplayValue\" : \"{{{name}}}\" }",
+            "callbackContextTemplate": "{\"continuationToken\" : \"{{{headers.x-ms-continuationtoken}}}\"}",
+            "callbackRequiredTemplate": "{{{#headers.x-ms-continuationtoken}}}true{{{/headers.x-ms-continuationtoken}}}",
+            "initialContextTemplate": "{\"continuationToken\" : \"{{{system.utcNow}}}\"}"
+        },
+        {
+            "endpointId": "tfs:teamfoundation",
+            "target": "buildId",
+            "endpointUrl": "{{endpoint.url}}/{{project}}/_apis/build/builds?definitions={{definition}}&resultFilter=succeeded,partiallySucceeded&$top=200",
+            "resultSelector": "jsonpath:$.value[*]",
+            "parameters": {
+                "project": "$(project)",
+                "definition": "$(definition)"
+            },
+            "resultTemplate": "{ \"Value\" : \"{{{id}}}\", \"DisplayValue\" : \"{{{buildNumber}}}\" }"
+        },
+        {
+            "endpointId": "tfs:teamfoundation",
+            "target": "artifactName",
+            "endpointUrl": "{{endpoint.url}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts",
+            "resultSelector": "jsonpath:$.value[*]",
+            "parameters": {
+                "project": "$(project)",
+                "buildId": "$(buildId)"
+            },
+            "resultTemplate": "{ \"Value\" : \"{{{name}}}\", \"DisplayValue\" : \"{{{name}}}\" }"
+        }
+    ],
+    "instanceNameFormat": "Download Build Artifacts",
+    "execution": {
+        "AgentPlugin": {
+            "target": "Agent.Plugins.BuildArtifacts.DownloadBuildArtifactTaskV1_0_0, Agent.Plugins"
+        }
+    },
+    "messages": {},
+    "outputVariables": [
+        {
+            "name": "BuildNumber",
+            "description": "Stores the build number of the build artifact source.<br />Please note that in fact it returns <b>BuildId</b> due to backward compatibility <p>[More Information](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables-devops-services)</p>" 
+        }
+    ]
+}

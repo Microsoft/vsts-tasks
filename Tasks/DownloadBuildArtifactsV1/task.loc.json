@@ -1,0 +1,263 @@
+{
+  "id": "a433f589-fce1-4460-9ee6-44a624aeb1fb",
+  "name": "DownloadBuildArtifacts",
+  "friendlyName": "ms-resource:loc.friendlyName",
+  "description": "ms-resource:loc.description",
+  "helpUrl": "https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-build-artifacts",
+  "helpMarkDown": "ms-resource:loc.helpMarkDown",
+  "category": "Utility",
+  "author": "Microsoft Corporation",
+  "version": {
+    "Major": 1,
+    "Minor": 189,
+    "Patch": 2
+  },
+  "groups": [
+    {
+      "name": "advanced",
+      "displayName": "ms-resource:loc.group.displayName.advanced",
+      "isExpanded": false
+    }
+  ],
+  "minimumAgentVersion": "2.188.2",
+  "demands": [],
+  "inputs": [
+    {
+      "name": "buildType",
+      "type": "radio",
+      "label": "ms-resource:loc.input.label.buildType",
+      "defaultValue": "current",
+      "required": true,
+      "options": {
+        "current": "Current build",
+        "specific": "Specific build"
+      },
+      "helpMarkDown": "ms-resource:loc.input.help.buildType"
+    },
+    {
+      "name": "project",
+      "type": "pickList",
+      "label": "ms-resource:loc.input.label.project",
+      "defaultValue": "",
+      "required": true,
+      "visibleRule": "buildType == specific",
+      "properties": {
+        "EditableOptions": "True",
+        "DisableManageLink": "True"
+      },
+      "helpMarkDown": "ms-resource:loc.input.help.project"
+    },
+    {
+      "name": "definition",
+      "aliases": [
+        "pipeline"
+      ],
+      "type": "pickList",
+      "label": "ms-resource:loc.input.label.definition",
+      "defaultValue": "",
+      "required": true,
+      "visibleRule": "buildType == specific",
+      "properties": {
+        "EditableOptions": "True",
+        "DisableManageLink": "True",
+        "IsSearchable": "True"
+      },
+      "helpMarkDown": "ms-resource:loc.input.help.definition"
+    },
+    {
+      "name": "specificBuildWithTriggering",
+      "type": "boolean",
+      "label": "ms-resource:loc.input.label.specificBuildWithTriggering",
+      "defaultValue": "false",
+      "required": false,
+      "visibleRule": "buildType == specific",
+      "helpMarkDown": "ms-resource:loc.input.help.specificBuildWithTriggering"
+    },
+    {
+      "name": "buildVersionToDownload",
+      "type": "pickList",
+      "label": "ms-resource:loc.input.label.buildVersionToDownload",
+      "defaultValue": "latest",
+      "visibleRule": "buildType == specific",
+      "required": true,
+      "options": {
+        "latest": "Latest",
+        "latestFromBranch": "Latest from specific branch and specified Build Tags",
+        "specific": "Specific version"
+      }
+    },
+    {
+      "name": "allowPartiallySucceededBuilds",
+      "type": "boolean",
+      "label": "ms-resource:loc.input.label.allowPartiallySucceededBuilds",
+      "defaultValue": "false",
+      "visibleRule": "buildType == specific && buildVersionToDownload != specific",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.allowPartiallySucceededBuilds"
+    },
+    {
+      "name": "branchName",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.branchName",
+      "defaultValue": "refs/heads/master",
+      "visibleRule": "buildType == specific && buildVersionToDownload == latestFromBranch",
+      "required": true,
+      "helpMarkDown": "ms-resource:loc.input.help.branchName"
+    },
+    {
+      "name": "buildId",
+      "type": "pickList",
+      "label": "ms-resource:loc.input.label.buildId",
+      "defaultValue": "",
+      "required": true,
+      "visibleRule": "buildType == specific && buildVersionToDownload == specific",
+      "properties": {
+        "EditableOptions": "True",
+        "DisableManageLink": "True"
+      },
+      "helpMarkDown": "ms-resource:loc.input.help.buildId"
+    },
+    {
+      "name": "tags",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.tags",
+      "defaultValue": "",
+      "visibleRule": "buildType == specific && buildVersionToDownload != specific",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.tags"
+    },
+    {
+      "name": "downloadType",
+      "type": "radio",
+      "label": "ms-resource:loc.input.label.downloadType",
+      "defaultValue": "single",
+      "required": true,
+      "options": {
+        "single": "Specific artifact",
+        "specific": "Specific files"
+      },
+      "helpMarkDown": "ms-resource:loc.input.help.downloadType"
+    },
+    {
+      "name": "artifactName",
+      "type": "pickList",
+      "label": "ms-resource:loc.input.label.artifactName",
+      "defaultValue": "",
+      "required": true,
+      "properties": {
+        "EditableOptions": "True",
+        "DisableManageLink": "True"
+      },
+      "visibleRule": "downloadType == single",
+      "helpMarkDown": "ms-resource:loc.input.help.artifactName"
+    },
+    {
+      "name": "itemPattern",
+      "type": "multiLine",
+      "label": "ms-resource:loc.input.label.itemPattern",
+      "defaultValue": "**",
+      "required": false,
+      "properties": {
+        "rows": "3",
+        "resizable": "true"
+      },
+      "helpMarkDown": "ms-resource:loc.input.help.itemPattern"
+    },
+    {
+      "name": "downloadPath",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.downloadPath",
+      "defaultValue": "$(System.ArtifactsDirectory)",
+      "required": true,
+      "helpMarkDown": "ms-resource:loc.input.help.downloadPath"
+    },
+    {
+      "name": "parallelizationLimit",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.parallelizationLimit",
+      "defaultValue": "8",
+      "groupName": "advanced",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.parallelizationLimit"
+    },
+    {
+      "name": "checkDownloadedFiles",
+      "type": "boolean",
+      "label": "ms-resource:loc.input.label.checkDownloadedFiles",
+      "defaultValue": "false",
+      "groupName": "advanced",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.checkDownloadedFiles"
+    },
+    {
+      "name": "retryDownloadCount",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.retryDownloadCount",
+      "defaultValue": "4",
+      "groupName": "advanced",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.retryDownloadCount"
+    }
+  ],
+  "dataSourceBindings": [
+    {
+      "endpointId": "tfs:teamfoundation",
+      "target": "project",
+      "endpointUrl": "{{endpoint.url}}/_apis/projects?$skip={{skip}}&$top=1000",
+      "resultSelector": "jsonpath:$.value[?(@.state=='wellFormed')]",
+      "resultTemplate": "{ \"Value\" : \"{{{id}}}\", \"DisplayValue\" : \"{{{name}}}\" }",
+      "callbackContextTemplate": "{\"skip\": \"{{add skip 1000}}\"}",
+      "callbackRequiredTemplate": "{{isEqualNumber result.count 1000}}",
+      "initialContextTemplate": "{\"skip\": \"0\"}"
+    },
+    {
+      "endpointId": "tfs:teamfoundation",
+      "target": "definition",
+      "endpointUrl": "{{endpoint.url}}/{{project}}/_apis/build/definitions?api-version=3.0-preview&$top=500&continuationToken={{{continuationToken}}}&name=*{{name}}*&queryOrder=2",
+      "resultSelector": "jsonpath:$.value[?(@.quality=='definition')]",
+      "parameters": {
+        "project": "$(project)",
+        "name": "$(searchText)"
+      },
+      "resultTemplate": "{ \"Value\" : \"{{{id}}}\", \"DisplayValue\" : \"{{{name}}}\" }",
+      "callbackContextTemplate": "{\"continuationToken\" : \"{{{headers.x-ms-continuationtoken}}}\"}",
+      "callbackRequiredTemplate": "{{{#headers.x-ms-continuationtoken}}}true{{{/headers.x-ms-continuationtoken}}}",
+      "initialContextTemplate": "{\"continuationToken\" : \"{{{system.utcNow}}}\"}"
+    },
+    {
+      "endpointId": "tfs:teamfoundation",
+      "target": "buildId",
+      "endpointUrl": "{{endpoint.url}}/{{project}}/_apis/build/builds?definitions={{definition}}&resultFilter=succeeded,partiallySucceeded&$top=200",
+      "resultSelector": "jsonpath:$.value[*]",
+      "parameters": {
+        "project": "$(project)",
+        "definition": "$(definition)"
+      },
+      "resultTemplate": "{ \"Value\" : \"{{{id}}}\", \"DisplayValue\" : \"{{{buildNumber}}}\" }"
+    },
+    {
+      "endpointId": "tfs:teamfoundation",
+      "target": "artifactName",
+      "endpointUrl": "{{endpoint.url}}/{{project}}/_apis/build/builds/{{buildId}}/artifacts",
+      "resultSelector": "jsonpath:$.value[*]",
+      "parameters": {
+        "project": "$(project)",
+        "buildId": "$(buildId)"
+      },
+      "resultTemplate": "{ \"Value\" : \"{{{name}}}\", \"DisplayValue\" : \"{{{name}}}\" }"
+    }
+  ],
+  "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
+  "execution": {
+    "AgentPlugin": {
+      "target": "Agent.Plugins.BuildArtifacts.DownloadBuildArtifactTaskV1_0_0, Agent.Plugins"
+    }
+  },
+  "messages": {},
+  "outputVariables": [
+    {
+      "name": "BuildNumber",
+      "description": "Stores the build number of the build artifact source.<br />Please note that in fact it returns <b>BuildId</b> due to backward compatibility <p>[More Information](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables-devops-services)</p>"
+    }
+  ]
+}
