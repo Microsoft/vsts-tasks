@@ -41,7 +41,7 @@ Examples:
 * **Include Preview Versions**: Select if you want preview versions to be included while searching for latest versions, such as while searching 2.2.x. This setting is ignored if you specify an exact version, such as: 3.0.100-preview3-010431
 
 
-* **Path To Install .Net Core**: Specify where .Net Core SDK/Runtime should be installed. In case there was already a differnt version on the specified path, that earlier version wont be deleted.
+* **Path To Install .Net Core**: Specify where .Net Core SDK/Runtime should be installed. In case there was already a different version on the specified path, that earlier version wont be deleted.
 
 
 * **Perform Multi Level Lookup**: This input is only applicable to Windows based agents. This configures the behavior of .Net host process for looking up a suitable shared framework.
