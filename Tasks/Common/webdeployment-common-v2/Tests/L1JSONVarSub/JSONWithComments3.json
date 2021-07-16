@@ -1,0 +1,409 @@
+
+{
+    // JSON Substitution bug fixes 
+    "id": "497D490F-EEA7-4F2B-AB94-48D9C1ACDCB1",
+    "name": "AzureRmWebAppDeployment",
+    "friendlyName": "Azure App Service Deploy",
+    "description": "Update Azure WebApp Services On Windows, Web App On Linux with built-in images or docker containers, ASP.NET, .NET Core, PHP, Python or Node based Web applications, Function Apps, Mobile Apps, Api applications, Web Jobs using Web Deploy / Kudu REST APIs",
+    "helpMarkDown": "[More Information](https://aka.ms/azurermwebdeployreadme)",
+    "category": "Deploy",
+    "Hello": {
+        "World": null
+    },
+    /*
+        To substitute values in nested levels of the file, concatenate the names with a period (.) in hierarchical order.
+
+        A JSON object may contain an array whose values can be referenced by their index. For example, to substitute the first value in the Users array shown above, use the variable name DBAccess.Users.0. To update the value in NewWelcomeMessage, use the variable name FeatureFlags.Preview.1.NewWelcomeMessage.
+
+        Only String substitution is supported for JSON variable substitution.
+
+        Substitution is supported for only UTF-8 and UTF-16 LE encoded files.
+
+        If the file specification you enter does not match any file, the task will fail.
+
+        Variable name matching is case-sensitive.
+    */
+    "dataSourceBindings": [
+        {
+            "target": "WebAppName",
+            "endpointId": "$(ConnectedServiceName)",
+            "dataSourceName": "AzureRMWebAppNamesByType",
+            "parameters": {
+                "WebAppKind": "$(WebAppKind)"
+            }
+        },
+        {
+            "target": "ResourceGroupName",
+            "endpointId": "$(ConnectedServiceName)",
+            "dataSourceName": "AzureRMWebAppResourceGroup",
+            "parameters": {
+                "WebAppName": "$(WebAppName)"
+            }
+        },
+        {
+            "target": "SlotName",
+            "endpointId": "$(ConnectedServiceName)",
+            "dataSourceName": "AzureRMWebAppSlotsId",
+            "parameters": {
+                "WebAppName": "$(WebAppName)",
+                "ResourceGroupName": "$(ResourceGroupName)"
+            },
+            "resultTemplate": "{\"Value\":\"{{{ #extractResource slots}}}\",\"DisplayValue\":\"{{{ #extractResource slots}}}\"}"
+        },
+        {
+            "target": "AzureContainerRegistry",
+            "endpointId": "$(ConnectedServiceName)",
+            "dataSourceName": "AzureRMContainerRegistries",
+            "resultTemplate": "{\"Value\":\"{{{ name }}}\",\"DisplayValue\":\"{{{ name }}}\"}"
+        },
+        {
+            "target": "AzureContainerRegistryLoginServer",
+            "endpointId": "$(ConnectedServiceName)",
+            "dataSourceName": "AzureContainerRegistryLoginServer",
+            "parameters": {
+                "AzureContainerRegistry": "$(AzureContainerRegistry)"
+            },
+            "resultTemplate": "{\"Value\":\"{{{ #stringReplace '.azurecr.io' '' loginServer }}}\",\"DisplayValue\":\"{{{ #stringReplace '.azurecr.io' '' loginServer }}}\"}"
+        },
+        {
+            "target": "AzureContainerRegistryImage",
+            "endpointId": "$(ConnectedServiceName)",
+            "dataSourceName": "AzureContainerRegistryImages",
+            "parameters": {
+                "AzureContainerRegistryLoginServer": "$(AzureContainerRegistryLoginServer)"
+            }
+        },
+        {
+            "target": "AzureContainerRegistryTag",
+            "endpointId": "$(ConnectedServiceName)",
+            "dataSourceName": "AzureContainerRegistryTags",
+            "parameters": {
+                "AzureContainerRegistryLoginServer": "$(AzureContainerRegistryLoginServer)",                
+                "AzureContainerRegistryImage": "$(AzureContainerRegistryImage)"
+            }
+        },
+        {
+            "target": "DockerNamespace",
+            "endpointId": "$(RegistryConnectedServiceName)",
+            "dataSourceName": "Namespaces"
+        },
+        {
+            "target": "DockerRepository",
+            "endpointId": "$(RegistryConnectedServiceName)",
+            "dataSourceName": "Repos",
+            "parameters": {
+                "namespaces": "$(DockerNamespace)"
+            }
+        },
+        {
+            "target": "DockerImageTag",
+            "endpointId": "$(RegistryConnectedServiceName)",
+            "dataSourceName": "Tags",
+            "parameters": {
+                "DockerNamespace": "$(DockerNamespace)",
+                "DockerRepository": "$(DockerRepository)"
+            }
+        },
+        {
+            "target": "PrivateRegistryImage",
+            "endpointId": "$(RegistryConnectedServiceName)",
+            "endpointUrl": "{{endpoint.url}}v2/_catalog",
+            "resultSelector": "jsonpath:$.repositories[*]",
+            "authorizationHeader": "Basic {{ #base64 endpoint.username \":\" endpoint.password }}"     
+        },
+        {
+            "target": "PrivateRegistryTag",
+            "endpointId": "$(RegistryConnectedServiceName)",
+            "endpointUrl": "{{endpoint.url}}v2/$(PrivateRegistryImage)/tags/list",
+            "resultSelector": "jsonpath:$.tags[*]",
+            "authorizationHeader": "Basic {{ #base64 endpoint.username \":\" endpoint.password }}"     
+        }
+    ],
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    /*
+            {
+        "Data": {
+            "DefaultConnection": {
+            "ConnectionString": "Data Source=(LocalDb)\MSDB;AttachDbFilename=aspcore-local.mdf;"
+            },
+            "DebugMode": "enabled",
+            "DBAccess": {
+            "Admininstrators": ["Admin-1", "Admin-2"],
+            "Users": ["Vendor-1", "vendor-3"]
+            },
+            "FeatureFlags": {
+            "Preview": [
+                {
+                "newUI": "AllAccounts"
+                },
+                {
+                "NewWelcomeMessage": "Newusers"
+                }
+            ]
+            }
+        }
+        }
+    */
+    "runsOn": [
+        "Agent"
+    ],
+    // "singleLineComment": "OLD_VALUE"
+    "author": "Microsoft Corporation",
+    /*
+        "messages1": {
+        "Invalidwebapppackageorfolderpathprovided": "Invalid App Service package or folder path provided: %s",
+        "SetParamFilenotfound0": "Set parameters file not found: %s",
+        "XDTTransformationsappliedsuccessfully": "XML Transformations applied successfully",
+        "GotconnectiondetailsforazureRMWebApp0": "Got connection details for Azure App Service:'%s'",
+        "ErrorNoSuchDeployingMethodExists": "Error : No such deploying method exists",
+        "UnabletoretrieveconnectiondetailsforazureRMWebApp": "Unable to retrieve connection details for Azure App Service : %s. Status Code: %s (%s)",
+        "UnabletoretrieveResourceID": "Unable to retrieve connection details for Azure Resource:'%s'. Status Code: %s",
+        "CouldnotfetchaccesstokenforAzureStatusCode": "Could not fetch access token for Azure. Status Code: %s (%s)",
+        "Successfullyupdateddeploymenthistory": "Successfully updated deployment History at %s",
+        "Failedtoupdatedeploymenthistory": "Failed to update deployment history.",
+        "WARNINGCannotupdatedeploymentstatusSCMendpointisnotenabledforthiswebsite": "WARNING : Cannot update deployment status : SCM endpoint is not enabled for this website",
+        "Unabletoretrievewebconfigdetails": "Unable to retrieve App Service configuration details. Status Code: '%s'",
+        "Unabletoretrievewebappsettings": "Unable to retrieve App Service application settings. [Status Code: '%s', Error Message: '%s']",
+        "Unabletoupdatewebappsettings": "Unable to update App service application settings. Status Code: '%s'",
+        "CannotupdatedeploymentstatusuniquedeploymentIdCannotBeRetrieved": "Cannot update deployment status : Unique Deployment ID cannot be retrieved",
+        "PackageDeploymentSuccess": "Successfully deployed web package to App Service.",
+        "PackageDeploymentFailed": "Failed to deploy web package to App Service.",
+        "Runningcommand": "Running command: %s",
+        "Deployingwebapplicationatvirtualpathandphysicalpath": "Deploying web package : %s at virtual path (physical path) : %s (%s)",
+        "Successfullydeployedpackageusingkuduserviceat": "Successfully deployed package %s using kudu service at %s",
+        "Failedtodeploywebapppackageusingkuduservice": "Failed to deploy App Service package using kudu service : %s",
+        "Unabletodeploywebappresponsecode": "Unable to deploy App Service due to error code : %s",
+        "MSDeploygeneratedpackageareonlysupportedforWindowsplatform": "MSDeploy generated packages are only supported for Windows platform.",
+        "UnsupportedinstalledversionfoundforMSDeployversionshouldbeatleast3orabove": "Unsupported installed version: %s found for MSDeploy. version should be at least 3 or above",
+        "UnabletofindthelocationofMSDeployfromregistryonmachineError": "Unable to find the location of MS Deploy from registry on machine (Error : %s)",
+        "Nopackagefoundwithspecifiedpattern": "No package found with specified pattern",
+        "MorethanonepackagematchedwithspecifiedpatternPleaserestrainthesearchpattern": "More than one package matched with specified pattern. Please restrain the search pattern.",
+        "Trytodeploywebappagainwithappofflineoptionselected": "Try to deploy app service again with Take application offline option selected.",
+        "Trytodeploywebappagainwithrenamefileoptionselected": "Try to deploy app service again with Rename locked files option selected.",
+        "NOJSONfilematchedwithspecificpattern": "NO JSON file matched with specific pattern: %s.",
+        "Configfiledoesntexists": "Configuration file %s doesn't exist.",
+        "Failedtowritetoconfigfilewitherror": "Failed to write to config file %s with error : %s",
+        "AppOfflineModeenabled": "App offline mode enabled.",
+        "Failedtoenableappofflinemode": "Failed to enable app offline mode. Status Code: %s (%s)",
+        "AppOflineModedisabled": "App offline mode disabled.",
+        "FailedtodisableAppOfflineMode": "Failed to disable App offline mode. Status Code: %s (%s)",
+        "CannotPerformXdtTransformationOnNonWindowsPlatform": "Cannot perform XML transformations on a non-Windows platform.",
+        "XdtTransformationErrorWhileTransforming": "XML transformation error while transforming %s using %s.",
+        "PublishusingwebdeployoptionsaresupportedonlywhenusingWindowsagent": "Publish using webdeploy options are supported only when using Windows agent",
+        "ResourceDoesntExist": "Resource '%s' doesn't exist. Resource should exist before deployment.",
+        "EncodeNotSupported": "Detected file encoding of the file %s as %s. Variable substitution is not supported with file encoding %s. Supported encodings are UTF-8 and UTF-16 LE.",
+        "UnknownFileEncodeError": "Unable to detect encoding of the file %s (typeCode: %s). Supported encodings are UTF-8 and UTF-16 LE.",
+        "ShortFileBufferError": "File buffer is too short to detect encoding type : %s",
+        "FailedToUpdateAzureRMWebAppConfigDetails": "Failed to update App Service configuration details. Error: %s",
+        "SuccessfullyUpdatedAzureRMWebAppConfigDetails": "Successfully updated App Service configuration details",
+        "RequestedURLforkuduphysicalpath": "Requested URL for kudu physical path : %s",
+        "Physicalpathalreadyexists": "Physical path '%s' already exists",
+        "KuduPhysicalpathCreatedSuccessfully": "Kudu physical path created successfully : %s",
+        "FailedtocreateKuduPhysicalPath": "Failed to create kudu physical path. Error Code: %s",
+        "FailedtocheckphysicalPath": "Failed to check kudu physical path. Error Code: %s",
+        "VirtualApplicationDoesNotExist": "Virtual application doesn't exists : %s",
+        "JSONParseError": "Unable to parse JSON file: %s. Error: %s",
+        "JSONvariablesubstitutionappliedsuccessfully": "JSON variable substitution applied successfully.",
+        "XMLvariablesubstitutionappliedsuccessfully": "XML variable substitution applied successfully.",
+        "failedtoUploadFileToKudu": "Unable to upload file: %s to Kudu (%s). Status Code: %s",
+        "failedtoUploadFileToKuduError": "Unable to upload file: %s to Kudu (%s). Error: %s",
+        "ExecuteScriptOnKudu": "Executing given script on Kudu: %s",
+        "FailedToRunScriptOnKuduError": "Unable to run the script on Kudu: %s. Error: %s",
+        "FailedToRunScriptOnKudu": "Unable to run the script on Kudu: %s. Status Code: %s",
+        "ScriptExecutionOnKuduSuccess": "Successfully executed script on Kudu.",
+        "ScriptExecutionOnKuduFailed": "Executed script returned '%s' as return code. Error: %s",
+        "FailedtoDeleteFileFromKudu": "Unable to delete file: %s from Kudu (%s). Status Code: %s",
+        "FailedtoDeleteFileFromKuduError": "Unable to delete file: %s from Kudu (%s). Error: %s",
+        "ScriptFileNotFound": "Script file '%s' not found.",
+        "InvalidScriptFile": "Invalid script file '%s' provided. Valid extensions are .bat and .cmd for windows and .sh for linux",
+        "RetryForTimeoutIssue": "Script execution failed with timeout issue. Retrying once again.",
+        "stdoutFromScript": "Standard output from script: ",
+        "stderrFromScript": "Standard error from script: ",
+        "WebConfigAlreadyExists": "web.config file already exists. Not generating.",
+        "SuccessfullyGeneratedWebConfig": "Successfully generated web.config file",
+        "FailedToGenerateWebConfig": "Failed to generate web.config. %s",
+        "FailedToGetKuduFileContent": "Unable to get file content: %s . Status code: %s (%s)",
+        "FailedToGetKuduFileContentError": "Unable to get file content: %s. Error: %s",
+        "ScriptStatusTimeout": "Unable to fetch script status due to timeout.",
+        "PollingForFileTimeOut": "Unable to fetch script status due to timeout. You can increase the timeout limit by setting 'appservicedeploy.retrytimeout' variable to number of minutes required.",
+        "InvalidPollOption": "Invalid polling option provided: %s.",
+        "MissingAppTypeWebConfigParameters": "Attribute '-appType' is missing in the Web.config parameters. Valid values for '-appType' are: 'python_Bottle', 'python_Django', 'python_Flask' and 'node'.<br />For example, '-appType python_Bottle' (sans-quotes) in case of Python Bottle framework..",
+        "AutoDetectDjangoSettingsFailed": "Unable to detect DJANGO_SETTINGS_MODULE 'settings.py' file path. Ensure that the 'settings.py' file exists or provide the correct path in Web.config parameter input in the following format '-DJANGO_SETTINGS_MODULE <folder_name>.settings'",
+        "FailedToApplyTransformation": "Unable to apply transformation for the given package. Verify the following.",
+        "FailedToApplyTransformationReason1": "1. Whether the Transformation is already applied for the MSBuild generated package during build. If yes, remove the <DependentUpon> tag for each config in the csproj file and rebuild. ",
+        "FailedToApplyTransformationReason2": "2. Ensure that the config file and transformation files are present in the same folder inside the package.",
+        "AutoParameterizationMessage": "ConnectionString attributes in Web.config is parameterized by default. Note that the transformation has no effect on connectionString attributes as the value is overridden during deployment by 'Parameters.xml or 'SetParameters.xml' files. You can disable the auto-parameterization by setting /p:AutoParameterizationWebConfigConnectionStrings=False during MSBuild package generation.",
+        "UnsupportedAppType": "App type '%s' not supported in Web.config generation. Valid values for '-appType' are: 'python_Bottle', 'python_Django', 'python_Flask' and 'node'",
+        "UnableToFetchAuthorityURL": "Unable to fetch authority url.",
+        "UnableToFetchActiveDirectory": "Unable to fetch active directory resource id.",
+        "SuccessfullyUpdatedRuntimeStackAndStartupCommand": "Successfully updated the Runtime Stack and Startup Command.",
+        "FailedToUpdateRuntimeStackAndStartupCommand": "Failed to update the Runtime Stack and Startup Command. Error: %s.",
+        "SuccessfullyUpdatedWebAppSettings": "Successfully updated the App settings.",
+        "FailedToUpdateAppSettingsInConfigDetails": "Failed to update the App settings. Error: %s.",
+        "UnableToGetAzureRMWebAppMetadata": "Failed to fetch AzureRM WebApp metadata. ErrorCode: %s",
+        "UnableToUpdateAzureRMWebAppMetadata": "Unable to update AzureRM WebApp metadata. Error Code: %s",
+        "Unabletoretrieveazureregistrycredentials": "Unable to retrieve Azure Container Registry credentails.[Status Code: '%s']",
+        "UnableToReadResponseBody": "Unable to read response body. Error: %s",
+        "UnableToUpdateWebAppConfigDetails": "Unable to update WebApp config details. StatusCode: '%s'",
+        "AddingReleaseAnnotation": "Adding release annotation for the Application Insights resource '%s'",
+        "SuccessfullyAddedReleaseAnnotation": "Successfully added release annotation to the Application Insight : %s",
+        "FailedAddingReleaseAnnotation": "Failed to add release annotation. %s"
+    }
+    */
+    "version": {
+        "Major": 3,
+        "Minor": 3,
+        "Patch": 35
+    },
+    /*
+        "MultiLineComment" : {
+            "name": "AzureRmWebAppDeployment",
+        },
+    */
+    "releaseNotes": "What's new in Version 3.0: <br/>&nbsp;&nbsp;Supports File Transformations (XDT) <br/>&nbsp;&nbsp;Supports Variable Substitutions(XML, JSON) <br/>Click [here](https://aka.ms/azurermwebdeployreadme) for more Information.",
+    "minimumAgentVersion": "2.104.1", /* */
+    "groups": [
+        {
+            /*
+                "name": "FileTransformsAndVariableSubstitution,
+                "displayName": "File Transforms & Variable Substitution Options,
+                "isExpanded": false,
+                "visibleRule": "WebAppKind != applinux && WebAppKind != \"\""
+            */
+        },
+        {
+            // "name" : "dsadaflhflk lfhsdflsh asjf (some invalid types)
+            "name": "AdditionalDeploymentOptions",
+            "displayName": "Additional Deployment Options",
+            "isExpanded": false,
+            "visibleRule": "WebAppKind != applinux && WebAppKind != \"\""
+        },
+        {
+            "name": "PostDeploymentAction",
+            "displayName": "Post Deployment Action",
+            "isExpanded": false,
+            "visibleRule": "WebAppKind != \"\""
+        },
+        {
+            "name": "output",
+            "displayName": "Output",
+            "isExpanded": true,
+            "visibleRule": "WebAppKind != \"\""
+        },
+        {
+            "name": "ApplicationSettings",
+            "displayName": "Application Settings",
+            "isExpanded": true,
+            "visibleRule": "WebAppKind = applinux"
+        }
+    ],
+    "messages": {
+        "Invalidwebapppackageorfolderpathprovided": "Invalid App Service package or folder path provided: %s",
+        "SetParamFilenotfound0": "Set parameters file not found: %s",
+        "XDTTransformationsappliedsuccessfully": "XML Transformations applied successfully",
+        "GotconnectiondetailsforazureRMWebApp0": "Got connection details for Azure App Service:'%s'",
+        "ErrorNoSuchDeployingMethodExists": "Error : No such deploying method exists",
+        "UnabletoretrieveconnectiondetailsforazureRMWebApp": "Unable to retrieve connection details for Azure App Service : %s. Status Code: %s (%s)",
+        "UnabletoretrieveResourceID": "Unable to retrieve connection details for Azure Resource:'%s'. Status Code: %s",
+        "CouldnotfetchaccesstokenforAzureStatusCode": "Could not fetch access token for Azure. Status Code: %s (%s)",
+        "Successfullyupdateddeploymenthistory": "Successfully updated deployment History at %s",
+        "Failedtoupdatedeploymenthistory": "Failed to update deployment history.",
+        "WARNINGCannotupdatedeploymentstatusSCMendpointisnotenabledforthiswebsite": "WARNING : Cannot update deployment status : SCM endpoint is not enabled for this website",
+        "Unabletoretrievewebconfigdetails": "Unable to retrieve App Service configuration details. Status Code: '%s'",
+        "Unabletoretrievewebappsettings": "Unable to retrieve App Service application settings. [Status Code: '%s', Error Message: '%s']",
+        "Unabletoupdatewebappsettings": "Unable to update App service application settings. Status Code: '%s'",
+        "CannotupdatedeploymentstatusuniquedeploymentIdCannotBeRetrieved": "Cannot update deployment status : Unique Deployment ID cannot be retrieved",
+        "PackageDeploymentSuccess": "Successfully deployed web package to App Service.",
+        "PackageDeploymentFailed": "Failed to deploy web package to App Service.",
+        "Runningcommand": "Running command: %s",
+        "Deployingwebapplicationatvirtualpathandphysicalpath": "Deploying web package : %s at virtual path (physical path) : %s (%s)",
+        "Successfullydeployedpackageusingkuduserviceat": "Successfully deployed package %s using kudu service at %s",
+        "Failedtodeploywebapppackageusingkuduservice": "Failed to deploy App Service package using kudu service : %s",
+        "Unabletodeploywebappresponsecode": "Unable to deploy App Service due to error code : %s",
+        "MSDeploygeneratedpackageareonlysupportedforWindowsplatform": "MSDeploy generated packages are only supported for Windows platform.",
+        "UnsupportedinstalledversionfoundforMSDeployversionshouldbeatleast3orabove": "Unsupported installed version: %s found for MSDeploy. version should be at least 3 or above",
+        "UnabletofindthelocationofMSDeployfromregistryonmachineError": "Unable to find the location of MS Deploy from registry on machine (Error : %s)",
+        "Nopackagefoundwithspecifiedpattern": "No package found with specified pattern",
+        "MorethanonepackagematchedwithspecifiedpatternPleaserestrainthesearchpattern": "More than one package matched with specified pattern. Please restrain the search pattern.",
+        "Trytodeploywebappagainwithappofflineoptionselected": "Try to deploy app service again with Take application offline option selected.",
+        "Trytodeploywebappagainwithrenamefileoptionselected": "Try to deploy app service again with Rename locked files option selected.",
+        "NOJSONfilematchedwithspecificpattern": "NO JSON file matched with specific pattern: %s.",
+        "Configfiledoesntexists": "Configuration file %s doesn't exist.",
+        "Failedtowritetoconfigfilewitherror": "Failed to write to config file %s with error : %s",
+        "AppOfflineModeenabled": "App offline mode enabled.",
+        "Failedtoenableappofflinemode": "Failed to enable app offline mode. Status Code: %s (%s)",
+        "AppOflineModedisabled": "App offline mode disabled.",
+        "FailedtodisableAppOfflineMode": "Failed to disable App offline mode. Status Code: %s (%s)",
+        "CannotPerformXdtTransformationOnNonWindowsPlatform": "Cannot perform XML transformations on a non-Windows platform.",
+        "XdtTransformationErrorWhileTransforming": "XML transformation error while transforming %s using %s.",
+        "PublishusingwebdeployoptionsaresupportedonlywhenusingWindowsagent": "Publish using webdeploy options are supported only when using Windows agent",
+        "ResourceDoesntExist": "Resource '%s' doesn't exist. Resource should exist before deployment.",
+        "EncodeNotSupported": "Detected file encoding of the file %s as %s. Variable substitution is not supported with file encoding %s. Supported encodings are UTF-8 and UTF-16 LE.",
+        "UnknownFileEncodeError": "Unable to detect encoding of the file %s (typeCode: %s). Supported encodings are UTF-8 and UTF-16 LE.",
+        "ShortFileBufferError": "File buffer is too short to detect encoding type : %s",
+        "FailedToUpdateAzureRMWebAppConfigDetails": "Failed to update App Service configuration details. Error: %s",
+        "SuccessfullyUpdatedAzureRMWebAppConfigDetails": "Successfully updated App Service configuration details",
+        "RequestedURLforkuduphysicalpath": "Requested URL for kudu physical path : %s",
+        "Physicalpathalreadyexists": "Physical path '%s' already exists",
+        "KuduPhysicalpathCreatedSuccessfully": "Kudu physical path created successfully : %s",
+        "FailedtocreateKuduPhysicalPath": "Failed to create kudu physical path. Error Code: %s",
+        "FailedtocheckphysicalPath": "Failed to check kudu physical path. Error Code: %s",
+        "VirtualApplicationDoesNotExist": "Virtual application doesn't exists : %s",
+        "JSONParseError": "Unable to parse JSON file: %s. Error: %s",
+        "JSONvariablesubstitutionappliedsuccessfully": "JSON variable substitution applied successfully.",
+        "XMLvariablesubstitutionappliedsuccessfully": "XML variable substitution applied successfully.",
+        "failedtoUploadFileToKudu": "Unable to upload file: %s to Kudu (%s). Status Code: %s",
+        "failedtoUploadFileToKuduError": "Unable to upload file: %s to Kudu (%s). Error: %s",
+        "ExecuteScriptOnKudu": "Executing given script on Kudu: %s",
+        "FailedToRunScriptOnKuduError": "Unable to run the script on Kudu: %s. Error: %s",
+        "FailedToRunScriptOnKudu": "Unable to run the script on Kudu: %s. Status Code: %s",
+        "ScriptExecutionOnKuduSuccess": "Successfully executed script on Kudu.",
+        "ScriptExecutionOnKuduFailed": "Executed script returned '%s' as return code. Error: %s",
+        "FailedtoDeleteFileFromKudu": "Unable to delete file: %s from Kudu (%s). Status Code: %s",
+        "FailedtoDeleteFileFromKuduError": "Unable to delete file: %s from Kudu (%s). Error: %s",
+        "ScriptFileNotFound": "Script file '%s' not found.",
+        "InvalidScriptFile": "Invalid script file '%s' provided. Valid extensions are .bat and .cmd for windows and .sh for linux",
+        "RetryForTimeoutIssue": "Script execution failed with timeout issue. Retrying once again.",
+        "stdoutFromScript": "Standard output from script: ",
+        "stderrFromScript": "Standard error from script: ",
+        "WebConfigAlreadyExists": "web.config file already exists. Not generating.",
+        "SuccessfullyGeneratedWebConfig": "Successfully generated web.config file",
+        "FailedToGenerateWebConfig": "Failed to generate web.config. %s",
+        "FailedToGetKuduFileContent": "Unable to get file content: %s . Status code: %s (%s)",
+        "FailedToGetKuduFileContentError": "Unable to get file content: %s. Error: %s",
+        "ScriptStatusTimeout": "Unable to fetch script status due to timeout.",
+        "PollingForFileTimeOut": "Unable to fetch script status due to timeout. You can increase the timeout limit by setting 'appservicedeploy.retrytimeout' variable to number of minutes required.",
+        "InvalidPollOption": "Invalid polling option provided: %s.",
+        "MissingAppTypeWebConfigParameters": "Attribute '-appType' is missing in the Web.config parameters. Valid values for '-appType' are: 'python_Bottle', 'python_Django', 'python_Flask' and 'node'.<br />For example, '-appType python_Bottle' (sans-quotes) in case of Python Bottle framework..",
+        "AutoDetectDjangoSettingsFailed": "Unable to detect DJANGO_SETTINGS_MODULE 'settings.py' file path. Ensure that the 'settings.py' file exists or provide the correct path in Web.config parameter input in the following format '-DJANGO_SETTINGS_MODULE <folder_name>.settings'",
+        "FailedToApplyTransformation": "Unable to apply transformation for the given package. Verify the following.",
+        "FailedToApplyTransformationReason1": "1. Whether the Transformation is already applied for the MSBuild generated package during build. If yes, remove the <DependentUpon> tag for each config in the csproj file and rebuild. ",
+        "FailedToApplyTransformationReason2": "2. Ensure that the config file and transformation files are present in the same folder inside the package.",
+        "AutoParameterizationMessage": "ConnectionString attributes in Web.config is parameterized by default. Note that the transformation has no effect on connectionString attributes as the value is overridden during deployment by 'Parameters.xml or 'SetParameters.xml' files. You can disable the auto-parameterization by setting /p:AutoParameterizationWebConfigConnectionStrings=False during MSBuild package generation.",
+        "UnsupportedAppType": "App type '%s' not supported in Web.config generation. Valid values for '-appType' are: 'python_Bottle', 'python_Django', 'python_Flask' and 'node'",
+        "UnableToFetchAuthorityURL": "Unable to fetch authority url.",
+        "UnableToFetchActiveDirectory": "Unable to fetch active directory resource id.",
+        "SuccessfullyUpdatedRuntimeStackAndStartupCommand": "Successfully updated the Runtime Stack and Startup Command.",
+        "FailedToUpdateRuntimeStackAndStartupCommand": "Failed to update the Runtime Stack and Startup Command. Error: %s.",
+        "SuccessfullyUpdatedWebAppSettings": "Successfully updated the App settings.",
+        "FailedToUpdateAppSettingsInConfigDetails": "Failed to update the App settings. Error: %s.",
+        "UnableToGetAzureRMWebAppMetadata": "Failed to fetch AzureRM WebApp metadata. ErrorCode: %s",
+        "UnableToUpdateAzureRMWebAppMetadata": "Unable to update AzureRM WebApp metadata. Error Code: %s",
+        "Unabletoretrieveazureregistrycredentials": "Unable to retrieve Azure Container Registry credentails.[Status Code: '%s']",
+        "UnableToReadResponseBody": "Unable to read response body. Error: %s",
+        "UnableToUpdateWebAppConfigDetails": "Unable to update WebApp config details. StatusCode: '%s'",
+        "AddingReleaseAnnotation": "Adding release annotation for the Application Insights resource '%s'",
+        "SuccessfullyAddedReleaseAnnotation": "Successfully added release annotation to the Application Insight : %s",
+        "FailedAddingReleaseAnnotation": "Failed to add release annotation. %s"
+    }
+    
+}
+/*
+This feature substitutes values in the JSON configuration files. It overrides the values in the specified JSON configuration files 
+(for example, appsettings.json) with the values matching names of release definition and environment variables.
+To substitute variables in specific JSON files, provide newline-separated list of JSON files. File names must be specified relative to the root folder. 
+For example, if your package has this structure:
+*/
