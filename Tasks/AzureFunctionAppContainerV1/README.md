@@ -18,7 +18,7 @@ The following pre-requisites need to be setup in the target machine(s) for the t
 
 The task is used to deploy a Web  project to an existing Azure Web App. The Web App should exist prior to running the task. The Web App can be created from the [Azure portal]
 
-The task can also be used to deply [Azure Functions](https://azure.microsoft.com/en-in/services/functions/) (Containers).
+The task can also be used to deploy [Azure Functions](https://azure.microsoft.com/en-in/services/functions/) (Containers).
 
 ##### Azure Subscription
 
