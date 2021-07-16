@@ -92,7 +92,7 @@ function getCommandArguments(): string {
 }
 
 export function isJsonOrYamlOutputFormatSupported(kubecommand): boolean {
-    var commandsThatDontSupportYamlAndJson: string[] = ["explain", "delete", "cluster-info", "top", "cordon", "uncordon", "drain", "describe", "logs", "attach", "exec", "port-forward", "proxy", "cp", "auth", "completion", "api-versions", "config", "help", "plugin", "rollout"];
+    var commandsThatDontSupportYamlAndJson: string[] = ["explain", "delete", "diff", "cluster-info", "top", "cordon", "uncordon", "drain", "describe", "logs", "attach", "exec", "port-forward", "proxy", "cp", "auth", "completion", "api-versions", "config", "help", "plugin", "rollout"];
 
     if (commandsThatDontSupportYamlAndJson.findIndex(command => command === kubecommand) > -1) {
         return false;

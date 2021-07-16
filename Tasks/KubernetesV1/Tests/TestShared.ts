@@ -37,6 +37,7 @@ export let Commands = {
     apply: "apply",
     create: "create",
     delete: "delete",
+    diff: "diff",
     exec: "exec",
     expose: "expose",
     get: "get",

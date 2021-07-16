@@ -14,7 +14,7 @@
   "version": {
     "Major": 1,
     "Minor": 181,
-    "Patch": 0
+    "Patch": 1
   },
   "demands": [],
   "releaseNotes": "ms-resource:loc.releaseNotes",
@@ -142,6 +142,7 @@
         "apply": "apply",
         "create": "create",
         "delete": "delete",
+        "diff": "diff",
         "exec": "exec",
         "expose": "expose",
         "get": "get",

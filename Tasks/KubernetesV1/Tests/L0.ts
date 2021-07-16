@@ -193,6 +193,23 @@ describe('Kubernetes Suite', function() {
         done();
     });
 
+    it('Runs successfully for kubectl diff using configuration file', (done:Mocha.Done) => {
+        let tp = path.join(__dirname, 'TestSetup.js');
+        let tr : ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+        process.env[shared.TestEnvVars.command] = shared.Commands.diff;
+        process.env[shared.TestEnvVars.useConfigurationFile] = "true";
+        process.env[shared.TestEnvVars.configurationType] = shared.ConfigurationTypes.configuration; 
+        process.env[shared.TestEnvVars.configuration] = shared.formatPath("dir/deployment.yaml");
+        tr.run();
+
+        assert(tr.invokedToolCount == 1, 'should have invoked tool one times. actual: ' + tr.invokedToolCount);
+        assert(tr.stderr.length == 0 || tr.errorIssues.length, 'should not have written to stderr');
+        assert(tr.succeeded, 'task should have succeeded');
+        assert(tr.stdout.indexOf(`[command]kubectl diff -f ${shared.formatPath("dir/deployment.yaml")}`) != -1, "kubectl diff should run");
+        console.log(tr.stderr);
+        done();
+    });
+
     it('Runs successfully for kubectl apply using configuration file', (done:Mocha.Done) => {
         let tp = path.join(__dirname, 'TestSetup.js');
         let tr : ttm.MockTestRunner = new ttm.MockTestRunner(tp);
@@ -627,6 +644,23 @@ describe('Kubernetes Suite', function() {
         done();
     });
 
+    it('Diffs successfully when a configuration is provided inline', (done:Mocha.Done) => {
+        let tp = path.join(__dirname, 'TestSetup.js');
+        let tr : ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+        process.env[shared.TestEnvVars.command] = shared.Commands.diff;
+        process.env[shared.TestEnvVars.useConfigurationFile] = "true";
+        process.env[shared.TestEnvVars.configurationType] = shared.ConfigurationTypes.inline;
+        process.env[shared.TestEnvVars.inline] = "somestring";
+        tr.run();
+
+        assert(tr.succeeded, 'task should have run');
+        assert(tr.invokedToolCount == 1, 'should have been invoked once. actual : ' + tr.invokedToolCount);
+        assert(tr.stderr.length == 0 || tr.errorIssues.length, 'should not have written to stderr');
+        assert(tr.stdout.indexOf(`[command]kubectl diff -f ${shared.formatPath("newUserDir/inlineconfig.yaml")}`) != -1, "kubectl diff should run");
+        console.log(tr.stderr);
+        done();
+    });
+
     it('Runs successfully when a configuration is provided inline', (done:Mocha.Done) => {
         let tp = path.join(__dirname, 'TestSetup.js');
         let tr : ttm.MockTestRunner = new ttm.MockTestRunner(tp);
@@ -640,6 +674,25 @@ describe('Kubernetes Suite', function() {
         assert(tr.invokedToolCount == 1, 'should have been invoked once. actual : ' + tr.invokedToolCount);
         assert(tr.stderr.length == 0 || tr.errorIssues.length, 'should not have written to stderr');
         assert(tr.stdout.indexOf(`[command]kubectl apply -f ${shared.formatPath("newUserDir/inlineconfig.yaml")} -o json`) != -1, "kubectl apply should run");
+        console.log(tr.stderr);
+        done();
+    });
+
+    it('Diff defaults to filepath when both configurations are provided through yaml', (done:Mocha.Done) => {
+        let tp = path.join(__dirname, 'TestSetup.js');
+        let tr : ttm.MockTestRunner = new ttm.MockTestRunner(tp);
+        process.env[shared.TestEnvVars.command] = shared.Commands.diff;
+        process.env[shared.TestEnvVars.useConfigurationFile] = "true";
+        process.env[shared.TestEnvVars.configurationType] = ''; //does not matter during a yaml definition
+        process.env[shared.TestEnvVars.configuration] = shared.formatPath("dir/deployment.yaml"); //dummy value to trigger not default configuration condition
+        process.env[shared.TestEnvVars.inline] = 'sometextforinline';
+        tr.run();
+
+        assert(tr.succeeded, 'task should have succeeded');
+        assert(tr.invokedToolCount == 1, 'should have invoked tool one times. actual: ' + tr.invokedToolCount);
+        assert(tr.stderr.length == 0 || tr.errorIssues.length, 'should not have written to stderr');
+        assert(tr.succeeded, 'task should have succeeded');
+        assert(tr.stdout.indexOf(`[command]kubectl diff -f ${shared.formatPath("dir/deployment.yaml")}`) != -1, "kubectl diff should run");
         console.log(tr.stderr);
         done();
     });

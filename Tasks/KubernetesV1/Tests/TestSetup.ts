@@ -142,10 +142,15 @@ a.exec[`${KubectlPath} get pods -o json`] = {
     "code": 0,
      "stdout": "successfully ran get pods command"
 },
+a.exec[`kubectl diff -f ${ConfigurationFilePath}`] = {
+    "code": 1,
+    "stdout": "successfully diffed the configuration deployment.yaml"
+};
 a.exec[`kubectl apply -f ${ConfigurationFilePath} -o json`] = {
     "code": 0,
     "stdout": "successfully applied the configuration deployment.yaml"
 };
+
 a.exec[`kubectl get pods -o json`] = {
     "code": 0,
     "stdout": "successfully ran get pods command"
@@ -209,6 +214,10 @@ a.exec[`kubectl create secrets my-secret`] = {
 };
 a.exec[`kubectl logs nginx`] = {
     "code": 0
+};
+a.exec[`kubectl diff -f ${InlineConfigTempPath}`] = {
+    "code": 1,
+    "stdout": "successfully diffed the configuration deployment.yaml "
 };
 a.exec[`kubectl apply -f ${InlineConfigTempPath} -o json`] = {
     "code": 0,
