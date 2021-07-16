@@ -14,7 +14,7 @@ The only prerequisite for the task is that .NET Core must be installed on Azure 
 
 ### Parameters of the task
 
-* **Command\*:** The task can be use to run any [dotnet core command](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x).
+* **Command\*:** The task can be used to run any [dotnet core command](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x).
 
 * **Projects\*:** Depending on the version of .NET Core, the task can work with either project.json or a csproj file. You can pass a relative path of the .csproj file(s) from repo root. Wildcards can be used too. For example, **/*.csproj for all .csproj files in all the sub folders.
 
