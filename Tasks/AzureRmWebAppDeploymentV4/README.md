@@ -6,7 +6,7 @@ The Azure App Service Deployment task is used to update different Azure App Serv
 
 The task works for [ASP.NET](https://www.visualstudio.com/en-us/docs/release/examples/azure/azure-web-apps-from-build-and-release-hubs), [ASP.NET Core](https://www.visualstudio.com/en-us/docs/release/examples/azure/aspnet-core10-azure-web-apps), PHP, Java, Python, Go and [Node.js](https://www.visualstudio.com/en-us/docs/release/examples/nodejs/node-to-azure-webapps) based web applications.
 
-The task can be used to deploy different Azure App Services like Function App (Windows/Linux/Containers), Web App on Windows, Web App on Linux, Web App for Containers and apps configured under Azure App Service Environments.
+The task can be used to deploy different Azure App Services like Function App (Windows/Linux/Containers), Web Jobs, Web App on Windows, Web App on Linux, Web App for Containers and apps configured under Azure App Service Environments.
 
 The task is **under development and is available to a limited set of Azure DevOps organizations**. The [video](https://www.youtube.com/watch?v=uQ2qCmaZ_Ag&feature=youtu.be) describes the features that are available in the task currently.
 
