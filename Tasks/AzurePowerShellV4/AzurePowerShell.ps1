@@ -23,6 +23,10 @@ if ($scriptType -eq "FilePath") {
     }
 }
 
+# Convert all places where there are new line feed characters to allow for multi-lined argument list
+#   in the formart that powershell does support
+$scriptArguments = $scriptArguments -replace '`[\r\n]+',''
+
 if ($scriptArguments -match '[\r\n]') {
     throw (Get-VstsLocString -Key InvalidScriptArguments0 -ArgumentList $scriptArguments)
 }
