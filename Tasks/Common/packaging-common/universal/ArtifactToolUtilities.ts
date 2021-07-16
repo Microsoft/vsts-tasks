@@ -162,16 +162,14 @@ export async function getHighestPackageVersionFromFeed(serviceUri: string, acces
 
     const result = await feedConnection.rest.get(data.requestUrl);
     if(result.result != null) {
-        if (!result.result['count']){
-            return "0.0.0";
-        }
-        else{
+        if (result.result['count'] > 0){
             for(var element of result.result['value']) {
                 if (element.name === packageName.toLowerCase()){
                     return element.versions[0].version;
                 }
             };
         }
+        return "0.0.0";
     }
     
     return null;
