@@ -28,4 +28,4 @@ In order to perform operations on the GitHub repository, the task needs a GitHub
 
 * **Item pattern:** Minimatch pattern to filter files to be downloaded from the available release assets. To download all files within release use **.
 
-* **Desitnation directory:** Path on the agent machine where the release assets will be downloaded. 
+* **Destination directory:** Path on the agent machine where the release assets will be downloaded. 
