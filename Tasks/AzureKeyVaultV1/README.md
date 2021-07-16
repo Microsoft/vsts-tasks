@@ -51,7 +51,7 @@ Ensure the Azure endpoint has at least Get and List permissions for Secrets on t
 
 For example, if there is a secret name: connectionString, a task variable `$(connectionString)` is created with the latest fetched value of the respective secret from Azure key vault. And this secret variable would be available to be consumed in subsequent tasks.
 
-If it is a certificate (example: a PFX file) that is fetched from the vault, then the task variable would contain the content of the PFX in string format. To retrieve the PFX file from the task variable, the following sample PowerShell code can be used (after passing the certificate variable as a parameter to the script):
+Certificates are also fetched from the vault as secrets. In this case, the task variable would contain the content of the PFX in base64 string format. To convert the string into a PFX file from the task variable, the following sample PowerShell code can be used (after passing the certificate variable as a parameter to the script):
 
 ```powershell
     # Task parameters: $(PfxSecret)
@@ -61,7 +61,16 @@ If it is a certificate (example: a PFX file) that is fetched from the vault, the
     $certCollection.Import($kvSecretBytes, $null, [System.Security.Cryptography.X509Certificates.X509KeyStorageFlags]::Exportable)
 ```
 
-If the certificate file needs to be stored on the hard disk then it is good practice to encrypt it with a password:
+Here's an example of how you can import the certificate into a local store:
+
+```powershell
+    $CertStore = New-Object System.Security.Cryptography.X509Certificates.X509Store("My","LocalMachine")
+    $CertStore.Open("ReadWrite")
+    $CertStore.AddRange($certCollection)
+    $CertStore.Close()
+```
+
+Alternatively, if the certificate file needs to be stored as a PFX file on the hard disk then it is good practice to encrypt it with a password:
 
 ```powershell
     # Get the file created
