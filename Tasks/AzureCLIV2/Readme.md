@@ -30,7 +30,7 @@ The task is used to run Azure CLI commands on Cross platform agents running Wind
 
 * **Azure Subscription**\*: Select the Azure Subscription where the Azure CLI commands have to be executed. If none exists, then click on the **Manage** link, to navigate to the Services tab in the Administrators panel. In the tab click on **New Service Endpoint** and select **Azure Resource Manager** from the dropdown.
 
-* **Script Type**\*: Select the type of script to be executed on the agent. Task supports four types: Batch / Shell / PowerShell / PowerShell Core scripts, default selection being empty. Select Shell/PowerShell Core script when running on Linux agent or Batch/PowerShell/PowerShell Core script when running on Windows agent. PowerShell Core script can run on cross-platform agents (Linux, macOS, or Windows) 
+* **Script Type**\*: Select the type of script to be executed on the agent. Task supports four types: Batch (batch) / Shell (bash) / PowerShell (ps) / PowerShell Core scripts (pscore), default selection being empty. Select Shell/PowerShell Core script when running on Linux agent or Batch/PowerShell/PowerShell Core script when running on Windows agent. PowerShell Core script can run on cross-platform agents (Linux, macOS, or Windows) 
 
 * **Script Location**\*: Select the mode of providing the script. Task supports two modes: one as a Script Path to a linked artifact and another as an inline script, default selection being the "Script Path"
 
