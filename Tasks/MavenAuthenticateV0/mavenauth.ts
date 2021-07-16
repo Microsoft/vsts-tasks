@@ -25,7 +25,9 @@ async function run(): Promise<void> {
 
         let userM2FolderPath: string = "";
 
-        if (tl.osType().match(/^Win/)) {
+        if (tl.getBoolInput("useAgentTempDir",false)) {
+            userM2FolderPath = path.join(process.env.AGENT_TEMPDIRECTORY, M2FolderName);
+        } else if (tl.osType().match(/^Win/)) {
             userM2FolderPath = path.join(process.env.USERPROFILE, M2FolderName);
         } else {
             userM2FolderPath = path.join(process.env.HOME, M2FolderName);
