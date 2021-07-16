@@ -10,7 +10,7 @@ Please report a problem at [Developer Community Forum](https://developercommunit
 
 ## Pre-requisites for the task
 
-The only prerequisite for the task is that .NET Core must be installed on Azure Pipelines agent machine. In case you want an exact version of .NET Core on the agent then you can use the [.NET Core Tool installer task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/DotNetCoreInstallerV0)
+The only prerequisite for the task is that .NET Core must be installed on Azure Pipelines agent machine. In case you want an exact version of .NET Core on the agent then you can use the [.NET Core Tool installer task](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/UseDotNetV2)
 
 ### Parameters of the task
 
