@@ -7,9 +7,9 @@ param()
 . $PSScriptRoot\..\Utility.ps1
 
 Assert-Throws {
-   Validate-DestinationPath -value "" -environmentName $validEnvironmentName
+    Validate-Remote-Path -value "" -environmentName $validEnvironmentName
 } -Message "WFC_ParameterCannotBeNullorEmpty targetPath"
 
 Assert-Throws {
-    Validate-DestinationPath -value $invalidTargetPath -environmentName $validEnvironmentName
+    Validate-Remote-Path -value $invalidTargetPath -environmentName $validEnvironmentName
 } -Message "WFC_RemoteDestinationPathCannotContainEnvironmentVariables `$env:abc\123"

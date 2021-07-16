@@ -9,9 +9,9 @@ Unregister-Mock Test-Path
 Register-Mock Test-Path { return $false } -ParametersEvaluator { $LiteralPath -eq $invalidSourcePath }
 
 Assert-Throws {
-    Validate-SourcePath -value ""
+    Validate-Local-Path -value ""
 } -MessagePattern "WFC_ParameterCannotBeNullorEmpty sourcePath"
 
 Assert-Throws {
-    Validate-SourcePath -value "$invalidSourcePath"
+    Validate-Local-Path -value "$invalidSourcePath"
 } -MessagePattern "WFC_SourcePathDoesNotExist Invalid"

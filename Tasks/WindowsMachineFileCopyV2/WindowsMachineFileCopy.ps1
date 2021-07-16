@@ -32,8 +32,21 @@ try
 
     $envOperationStatus = 'Passed'
 
-    Validate-SourcePath $sourcePath
-    Validate-DestinationPath $targetPath $machineNames
+    $uncSourcePath = (New-Object System.Uri -ArgumentList $sourcePath).Host
+    $uncTargetPath = (New-Object System.Uri -ArgumentList $targetPath).Host
+
+    # Compare source and target unc root to determine if they're based on the same host.
+    # If so, assume we're copying on the same host and disable local-path validation at this point.
+    if( $uncSourcePath -and $uncTargetPath -and ($uncSourcePath -eq $uncTargetPath))
+    {
+        Validate-Remote-Path $sourcePath $machineNames
+        Validate-Remote-Path $targetPath $machineNames
+    }
+    else 
+    {
+        Validate-Local-Path $sourcePath
+        Validate-Remote-Path $targetPath $machineNames
+    }
 
     $machines = $machineNames.split(',') | ForEach-Object { if ($_ -and $_.trim()) { $_.trim() } }
 

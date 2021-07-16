@@ -17,7 +17,7 @@ function Validate-Null(
     }
 }
 
-function Validate-SourcePath(
+function Validate-Local-Path(
     [string]$value
     )
 {
@@ -29,7 +29,7 @@ function Validate-SourcePath(
     }
 }
 
-function Validate-DestinationPath(
+function Validate-Remote-Path(
     [string]$value,
     [string]$environmentName
     )
