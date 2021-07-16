@@ -139,7 +139,7 @@ To invoke a logging command, simply emit the command via standard output. For ex
             </td>
             <td>
                 <p align="left">
-                    Sets a variable in the variable service of taskcontext. The first task can set a variable, and following tasks in the same phase are able to use the variable. The variable is exposed to the following tasks as an environment variable. When <code>issecret</code> is set to <code>true</code>, the value of the variable will be saved as secret and masked out from log. Secret variables are not passed into tasks as environment variables and must be passed as inputs.<br>
+                    Sets a variable in the variable service of taskcontext. The first task can set a variable, and following tasks in the same phase are able to use the variable. The variable is exposed to the following tasks as an environment variable. When <code>issecret</code> is set to <code>true</code>, the value of the variable will be saved as secret and masked out from log. Secret variables are not passed into tasks as environment variables and must be passed as inputs. You can use URL-encoding for special characters not possible to set otherwise. These are:<br><code>%3B</code> for <code>;</code> (semicolon)<br><code>%0D</code> for <code>\r</code> (carriage return)<br><code>%0A</code> for <code>\n</code> (new-line)<br><code>%5D</code> for <code>]</code> (square bracket closed)<br>
                     <b>Examples:</b> <br>
                     <code>##vso[task.setvariable variable=testvar]testvalue</code><br>
                     <code>##vso[task.setvariable variable=testvar;issecret=true]testvalue</code><br>
