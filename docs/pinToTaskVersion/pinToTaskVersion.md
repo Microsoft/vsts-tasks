@@ -19,6 +19,6 @@ Set-ExecutionPolicy Unrestricted -Scope Process -Force
 5. From a TFS Application Tier, run the installation script against your TFS collection, as follows:
 
 ```powershell
-$taskDir = Tasks\BashV3 # Replace BashV3 with the name of the task you would like to install.
-.docs\pinToTaskVersion\New-TaskInstallScript.ps1 -CollectionUrl http://myserver:8080/tfs/DefaultCollection -taskDir $taskDir
+$taskDir = _build\Tasks\BashV3 # Replace BashV3 with the name of the task you would like to install.
+.\docs\pinToTaskVersion\New-TaskInstallScript.ps1 -CollectionUrl http://myserver:8080/tfs/DefaultCollection -taskDir $taskDir
 ```
