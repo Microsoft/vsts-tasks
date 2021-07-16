@@ -13,7 +13,7 @@
     "author": "Microsoft Corporation",
     "version": {
         "Major": 1,
-        "Minor": 181,
+        "Minor": 185,
         "Patch": 0
     },
     "demands": [],
@@ -226,9 +226,10 @@
             "required": true,
             "options": {
                 "dockerRegistry": "dockerRegistry",
-                "generic": "generic"
+                "generic": "generic",
+                "tls": "tls"
             },
-            "helpMarkDown": "Create/update a generic or docker imagepullsecret. Select dockerRegistry to create/update the imagepullsecret of the selected registry. An imagePullSecret is a way to pass a secret that contains a container registry password to the Kubelet so it can pull a private image on behalf of your Pod.",
+            "helpMarkDown": "Create/update a generic, tls or docker imagepullsecret. Select dockerRegistry to create/update the imagepullsecret of the selected registry. An imagePullSecret is a way to pass a secret that contains a container registry password to the Kubelet so it can pull a private image on behalf of your Pod.",
             "groupName": "secrets"
         },
         {
@@ -243,6 +244,20 @@
             "defaultValue": "",
             "helpMarkDown": "Specify keys and literal values to insert in secret.For example, --from-literal=key1=value1 --from-literal=key2=\"top secret\".",
             "visibleRule": "secretType = generic",
+            "groupName": "secrets"
+        },  
+        {
+            "name": "secretCertificate",
+            "type": "multiLine",
+            "properties": {
+                "resizable": "true",
+                "rows": "2",
+                "editorExtension": "ms.vss-services-azure.kubernetes-parameters-grid"
+            },            
+            "label": "Certificate files",
+            "defaultValue": "",
+            "helpMarkDown": "Specify key and certificate files to insert in secret.For example, --key=path/to/key/file --cert=path/to/cert/file, Reference: https://kubernetes.io/docs/concepts/configuration/secret/#tls-secrets".",
+            "visibleRule": "secretType = tls",
             "groupName": "secrets"
         },
         {

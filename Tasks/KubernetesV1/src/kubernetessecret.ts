@@ -33,6 +33,10 @@ function createSecret(connection: ClusterConnection, secret: string): any {
     {
         return createGenericSecret(connection, secret);
     }
+     else if (typeOfSecret === "TLS")
+    {
+        return createTLSSecret(connection, secret);
+    }
 }
 
 function deleteSecret(connection: ClusterConnection, secret: string): any {
@@ -90,6 +94,24 @@ function createGenericSecret(connection: ClusterConnection, secret: string): any
     if (secretArguments)
     {
         command.line(secretArguments);
+    }
+
+    return connection.execCommand(command);
+}
+
+function createTLSSecret(connection: ClusterConnection, secret: string): any {
+
+    tl.debug(tl.loc('CreatingSecret', secret));
+    var command = connection.createCommand();
+    command.arg(kubernetesCommand.getNameSpace());
+    command.arg("create")
+    command.arg("secret");
+    command.arg("tls");
+    command.arg(secret);
+    var secretCertificate = tl.getInput("secretCertificate", false);
+    if (secretCertificate)
+    {
+        command.line(secretCertificate);
     }
 
     return connection.execCommand(command);
