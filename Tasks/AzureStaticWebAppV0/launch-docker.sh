@@ -2,14 +2,14 @@ workspace="/working_dir"
 
 params=()
 
-[[ ! -z "$SWA_APP_LOCATION" ]] && params+=(-e "INPUT_APP_LOCATION=$SWA_APP_LOCATION")
-[[ ! -z "$SWA_APP_BUILD_COMMAND" ]] && params+=(-e "INPUT_APP_BUILD_COMMAND=$SWA_APP_BUILD_COMMAND")
-[[ ! -z "$SWA_OUTPUT_LOCATION" ]] && params+=(-e "INPUT_OUTPUT_LOCATION=$SWA_OUTPUT_LOCATION")
-[[ ! -z "$SWA_API_LOCATION" ]] && params+=(-e "INPUT_API_LOCATION=$SWA_API_LOCATION")
-[[ ! -z "$SWA_API_BUILD_COMMAND" ]] && params+=(-e "INPUT_API_BUILD_COMMAND=$SWA_API_BUILD_COMMAND")
-[[ ! -z "$SWA_ROUTES_LOCATION" ]] && params+=(-e "INPUT_ROUTES_LOCATION=$SWA_ROUTES_LOCATION")
+envvars=$(( set -o posix ; set ) | grep -E -v '^(PATH|USER|LOGNAME|HOME|SHELL|VSCODE|SSH|BASH|NVM|HOSTNAME|GIT|NODE|PWD|TMPDIR)')
 
-params+=(-e "INPUT_SKIP_APP_BUILD=$SWA_SKIP_APP_BUILD")
+for ev in $envvars
+do
+    if [[ "$ev" == *"="* ]]; then
+        params+=(-e $ev)
+    fi
+done
 
 docker run \
     -e INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN="$SWA_API_TOKEN" \
