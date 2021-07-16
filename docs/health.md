@@ -88,10 +88,7 @@ Per the [Contribution Guidelines](https://github.com/Microsoft/azure-pipelines-t
 |      Task        | Implemented | Platform-complete | Uses TaskLib/SDK | Has L0 Tests | Comments |
 |------------------|------|------|------|----|----------|
 | DeployVisualStudioTestAgent    | | | | | |
-| QuickPerfTest                  | | | | | |
 | RunDistributedTests            | | | | | |
-| RunJMeterLoadTest              | | | | | |
-| RunLoadTest                    | | | | | |
 | SonarQubePostTest              | | | | | |
 | SonarQubePreBuild              | | | | | |
 | XamarinTestCloud               |![Green](res/green.png)|![Green](res/green.png)|![Green](res/green.png)|![Green](res/green.png)| |
