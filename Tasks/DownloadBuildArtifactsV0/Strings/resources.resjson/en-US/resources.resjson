@@ -29,6 +29,8 @@
   "loc.input.help.itemPattern": "Specify files to be downloaded as multi line minimatch pattern. [More Information](https://aka.ms/minimatchexamples) <p>The default pattern (\\*\\*) will download all files across all artifacts in the build if \"Specific files\" option is selected. To download all files within artifact drop use drop/**.</p>",
   "loc.input.label.downloadPath": "Destination directory",
   "loc.input.help.downloadPath": "Path on the agent machine where the artifacts will be downloaded",
+  "loc.input.label.cleanDestinationFolder": "Clean destination folder",
+  "loc.input.help.cleanDestinationFolder": "Delete all existing files in destination folder before artifact download",
   "loc.input.label.parallelizationLimit": "Parallelization limit",
   "loc.input.help.parallelizationLimit": "Number of files to download simultaneously",
   "loc.input.label.checkDownloadedFiles": "Check downloaded files",
@@ -63,5 +65,7 @@
   "loc.messages.IntegrityCheckNotPassed": "Artifact items integrity check failed",
   "loc.messages.IntegrityCheckPassed": "Artifact items integrity check successfully finished",
   "loc.messages.TarExtractionNotSupportedInWindows": "Tar extraction is not supported on Windows",
-  "loc.messages.NoTarsFound": "No tar archives were found to extract"
+  "loc.messages.NoTarsFound": "No tar archives were found to extract",
+  "loc.messages.CleaningDestinationFolder": "Cleaning destination folder: %s",
+  "loc.messages.NoFolderToClean": "Specified cleaning folder was not found. Nothing to clean"
 }

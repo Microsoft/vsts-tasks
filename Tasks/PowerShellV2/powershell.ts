@@ -39,7 +39,7 @@ async function run() {
             input_script = tl.getInput('script', false) || '';
         }
         else {
-            throw new Error(tl.loc('PS_InvalidTargetType', input_targetType));
+            throw new Error(tl.loc('JS_InvalidTargetType', input_targetType));
         }
         const input_runScriptInSeparateScope = tl.getBoolInput('runScriptInSeparateScope');
 

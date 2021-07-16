@@ -9,8 +9,8 @@
   "author": "Microsoft Corporation",
   "version": {
     "Major": 0,
-    "Minor": 188,
-    "Patch": 3
+    "Minor": 190,
+    "Patch": 0
   },
   "groups": [
     {
@@ -171,6 +171,13 @@
       "helpMarkDown": "ms-resource:loc.input.help.downloadPath"
     },
     {
+      "name": "cleanDestinationFolder",
+      "type": "boolean",
+      "label": "ms-resource:loc.input.label.cleanDestinationFolder",
+      "defaultValue": false,
+      "helpMarkDown": "ms-resource:loc.input.help.cleanDestinationFolder"
+    },
+    {
       "name": "parallelizationLimit",
       "type": "string",
       "label": "ms-resource:loc.input.label.parallelizationLimit",
@@ -288,7 +295,9 @@
     "IntegrityCheckNotPassed": "ms-resource:loc.messages.IntegrityCheckNotPassed",
     "IntegrityCheckPassed": "ms-resource:loc.messages.IntegrityCheckPassed",
     "TarExtractionNotSupportedInWindows": "ms-resource:loc.messages.TarExtractionNotSupportedInWindows",
-    "NoTarsFound": "ms-resource:loc.messages.NoTarsFound"
+    "NoTarsFound": "ms-resource:loc.messages.NoTarsFound",
+    "CleaningDestinationFolder": "ms-resource:loc.messages.CleaningDestinationFolder",
+    "NoFolderToClean": "ms-resource:loc.messages.NoFolderToClean"
   },
   "outputVariables": [
     {

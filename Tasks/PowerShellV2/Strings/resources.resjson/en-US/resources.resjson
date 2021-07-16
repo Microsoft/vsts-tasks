@@ -32,9 +32,11 @@
   "loc.messages.JS_InvalidErrorActionPreference": "Invalid ErrorActionPreference '%s'. The value must be one of: 'Stop', 'Continue', or 'SilentlyContinue'",
   "loc.messages.JS_InvalidFilePath": "Invalid file path '%s'. A path to a .ps1 file is required.",
   "loc.messages.JS_Stderr": "PowerShell wrote one or more lines to the standard error stream.",
+  "loc.messages.JS_InvalidTargetType": "Invalid target type '%s'. The value must be one of: 'filepath' or 'inline'",
   "loc.messages.PS_ExitCode": "PowerShell exited with code '{0}'.",
   "loc.messages.PS_FormattedCommand": "Formatted command: {0}",
   "loc.messages.PS_InvalidErrorActionPreference": "Invalid ErrorActionPreference '{0}'. The value must be one of: 'Stop', 'Continue', or 'SilentlyContinue'",
   "loc.messages.PS_InvalidFilePath": "Invalid file path '{0}'. A path to a .ps1 file is required.",
-  "loc.messages.PS_UnableToDetermineExitCode": "Unexpected exception. Unable to determine the exit code from powershell."
+  "loc.messages.PS_UnableToDetermineExitCode": "Unexpected exception. Unable to determine the exit code from powershell.",
+  "loc.messages.PS_InvalidTargetType": "Invalid target type '{0}'. The value must be one of: 'filepath' or 'inline'"
 }

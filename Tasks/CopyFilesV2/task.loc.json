@@ -16,7 +16,7 @@
   "author": "Microsoft Corporation",
   "version": {
     "Major": 2,
-    "Minor": 189,
+    "Minor": 190,
     "Patch": 0
   },
   "releaseNotes": "ms-resource:loc.releaseNotes",
@@ -97,6 +97,15 @@
       "defaultValue": "0",
       "required": false,
       "helpMarkDown": "ms-resource:loc.input.help.retryCount",
+      "groupName": "advanced"
+    },
+    {
+      "name": "delayBetweenRetries",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.delayBetweenRetries",
+      "defaultValue": "1000",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.delayBetweenRetries",
       "groupName": "advanced"
     },
     {

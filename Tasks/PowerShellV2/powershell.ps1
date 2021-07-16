@@ -37,8 +37,11 @@ try {
 
         $input_arguments = Get-VstsInput -Name 'arguments'
     }
-    else {
+    elseif("$input_targetType".ToUpperInvariant() -eq "INLINE") {
         $input_script = Get-VstsInput -Name 'script'
+    }
+    else {
+        Write-Error (Get-VstsLocString -Key 'PS_InvalidTargetType' -ArgumentList $input_targetType)
     }
     $input_runScriptInSeparateScope = Get-VstsInput -Name 'runScriptInSeparateScope' -AsBool
 

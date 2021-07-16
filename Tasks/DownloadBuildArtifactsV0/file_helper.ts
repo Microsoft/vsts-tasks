@@ -1,4 +1,4 @@
-import { Stats, statSync as getFile } from 'fs';
+import { Stats, statSync as getFile, readdirSync } from 'fs';
 import * as path from 'path';
 
 import * as tl from 'azure-pipelines-task-lib/task';
@@ -100,5 +100,41 @@ function extractTar(tarArchivePath: string, extractedFilesDir: string): void {
 
     if (tarExecResult.error || tarExecResult.code !== 0) {
         throw new Error(`Couldn't extract artifact files from a tar archive: ${tarExecResult.error}`);
+    }
+}
+
+/**
+ * Removes content from specified folder path
+ * @param  {string} folderToClean - path to the folder to clean up content
+ * @throws File system exeptions
+ * @returns void
+ */
+export function cleanUpFolder(folderToClean: string): void {
+    console.log(tl.loc('CleaningDestinationFolder', folderToClean));
+
+    // stat the specified folder path
+    let destinationFolderStats: tl.FsStats;
+    try {
+        destinationFolderStats = tl.stats(folderToClean);
+    } catch (err) {
+        if (err.code != 'ENOENT') {
+            throw err;
+        } else {
+            tl.warning(tl.loc('NoFolderToClean'));
+        }
+    }
+
+    if (destinationFolderStats) {
+        if (destinationFolderStats.isDirectory()) {
+            // delete the child items
+            readdirSync(folderToClean)
+                .forEach((item: string) => {
+                    let itemPath = path.join(folderToClean, item);
+                    tl.rmRF(itemPath);
+                });
+        } else {
+            // specified folder is not a directory. delete it.
+            tl.rmRF(folderToClean);
+        }
     }
 }
