@@ -69,7 +69,8 @@ To substitute JSON variables that are nested or hierarchical, specify them using
     #enableXmlTransform: # Optional
     #xmlTransformationRules: '-transform **\*.Release.config -xml **\*.config-transform **\*.$(Release.EnvironmentName).config -xml **\*.config' # Optional
     #fileType: # Optional. Options: xml, json
-    #targetFiles: # Optional
+    #xmlTargetFiles: # Optional
+    #jsonTargetFiles: # Optional
 ```
 
 ### Arguments
