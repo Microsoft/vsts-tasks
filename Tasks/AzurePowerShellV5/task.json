@@ -75,7 +75,7 @@
             "type": "multiLine",
             "label": "Inline Script",
             "required": false,
-            "defaultValue": "# You can write your azure powershell scripts inline here. \n# You can also pass predefined and custom variables to this script using arguments",
+            "defaultValue": "# You can write your azure powershell scripts inline here. \n# You can not pass predefined and custom variables to this script using arguments",
             "helpMarkDown": "Enter the script to execute.",
             "visibleRule": "ScriptType = InlineScript",
             "properties": {
