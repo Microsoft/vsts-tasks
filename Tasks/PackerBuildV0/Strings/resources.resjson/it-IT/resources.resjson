@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Crea immagine di macchina virtuale",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=845329)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?linkid=845329)",
   "loc.description": "Crea un'immagine di macchina virtuale con Packer. È possibile usare questa immagine per la distribuzione di set di scalabilità di macchine virtuali di Azure",
   "loc.instanceNameFormat": "Crea immagine non modificabile",
   "loc.releaseNotes": "- È compatibile con agenti multipiattaforma (Linux, macOS o Windows)\n- Supporta la creazione di immagini per Windows e Linux. È possibile usare queste immagini per distribuire set di scalabilità di macchine virtuali di Azure.",
@@ -39,7 +39,7 @@
   "loc.input.help.additionalBuilderParameters": "In modalità modello Packer generato automaticamente l'attività crea un modello Packer con un compilatore di Azure. Questo compilatore viene usato per generare un'immagine del computer. È possibile aggiungere le chiavi nel compilatore di Azure per personalizzare il modello Packer generato. Ad esempio, impostare ssh_tty=true nel caso si usi un'immagine di base di CentOS ed è necessario avere un tty per eseguire sudo.<br/>Per visualizzare/modificare i parametri aggiuntivi in una griglia, fare clic su \"…\" accanto alla casella di testo.",
   "loc.input.label.skipTempFileCleanupDuringVMDeprovision": "Ignora pulizia dei file temporanei durante il deprovisioning",
   "loc.input.help.skipTempFileCleanupDuringVMDeprovision": "Durante il deprovisioning della macchina virtuale, consente di ignorare la pulizia dei file temporanei caricati nella macchina virtuale. Vedere [qui](https://www.packer.io/docs/builders/azure.html#skip_clean)",
-  "loc.input.label.imageUri": "URL dell'immagine",
+  "loc.input.label.imageUri": "URL immagine",
   "loc.input.help.imageUri": "Consente di specificare un nome per la variabile di output in cui verrà archiviato l'URL dell'immagine generata del computer.",
   "loc.messages.OSTypeNotSupported": "Questo tipo di sistema operativo non è supportato per la creazione dell'immagine: %s. Usare Windows o Linux.",
   "loc.messages.CopyTemplateToTempFailed": "Non è stato possibile copiare il modello predefinito dall'origine %s alla posizione temporanea %s",

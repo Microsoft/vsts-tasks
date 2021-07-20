@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure IoT Edge",
-  "loc.helpMarkDown": "Per informazioni, vedere la [documentazione](https://aka.ms/azure-iot-edge-ci-cd-docs)",
+  "loc.helpMarkDown": "Visitare la [documentazione] (https://docs.microsoft.com/en-us/azure/iot-edge/how-to-continuous-integration-continuous-deployment) per informazioni",
   "loc.description": "Compila e distribuisce un'immagine Azure IoT Edge",
   "loc.instanceNameFormat": "Azure IoT Edge - $(action)",
   "loc.group.displayName.advanced_push": "Avanzate",
@@ -37,10 +37,10 @@
   "loc.input.help.defaultPlatform": "Nel file **.template.json** è possibile non specificare la piattaforma dei moduli. Per questi moduli verrà usata la **piattaforma predefinita**.",
   "loc.input.label.fillRegistryCredential": "Aggiungi credenziali del registro al manifesto della distribuzione",
   "loc.input.help.fillRegistryCredential": "Consente di aggiungere le credenziali del registro per il push delle immagini Docker al manifesto della distribuzione",
-  "loc.input.label.deploymentManifestOutputPath": "Output path",
-  "loc.input.help.deploymentManifestOutputPath": "The output path of generated deployment manifest",
-  "loc.input.label.validateGeneratedDeploymentManifest": "Validate the schema of generated deployment manifest",
-  "loc.input.help.validateGeneratedDeploymentManifest": "Fail this step if the generated deployment manifest does not pass schema validation. You can search `Azure IoT Edge deployment` in [JSON Schema Store](http://schemastore.org/json/) to find latest schema.",
+  "loc.input.label.deploymentManifestOutputPath": "Percorso di output",
+  "loc.input.help.deploymentManifestOutputPath": "Percorso di output del manifesto della distribuzione generato",
+  "loc.input.label.validateGeneratedDeploymentManifest": "Convalida lo schema del manifesto della distribuzione generato",
+  "loc.input.help.validateGeneratedDeploymentManifest": "Non esegue questo passaggio se il manifesto della distribuzione generato non supera la convalida dello schema. Per trovare lo schema più recente, è possibile cercare `Azure IoT Edge deployment` nell'[archivio schemi JSON](http://schemastore.org/json/).",
   "loc.input.label.bypassModules": "Modulo/i di bypass",
   "loc.input.help.bypassModules": "Selezionare i moduli che **NON** è necessario compilare o di cui non eseguire il push nel file .template.json. Specificare i nomi di modulo e separarli con la virgola.\n Esempio: se sono presenti due moduli **ModuloEsempio1,ModuloEsempio2** nel file .template.json e si vuole solo compilare o eseguire il push di **ModuloEsempio1**, è necessario impostare i moduli di bypass come **ModuloEsempio2**. Lasciare vuoto se si vogliono compilare tutti i moduli nel file .template.json.",
   "loc.messages.BuildingModules": "Compilazione delle immagini del modulo...",
@@ -61,7 +61,7 @@
   "loc.messages.DependencyInstallSuccess": "%s è stato installato con la versione: %s",
   "loc.messages.DependencyInstallFail": "L'installazione di %s non è riuscita. Vedere l'errore dettagliato nella modalità di debug",
   "loc.messages.TemplateFileInvalid": "Il percorso del file modello non è valido: %s",
-  "loc.messages.InvalidContainerRegistry": "Failed to fetch container registry authentication token, please check you container registry setting in build task. The username for container registry is %s",
+  "loc.messages.InvalidContainerRegistry": "Non è stato possibile recuperare il token di autenticazione del registro contenitori. Verificare l'impostazione del registro contenitori nell'attività di compilazione. Il nome utente del registro contenitori è %s",
   "loc.messages.DeploymentFileNotFound": "Non è possibile trovare il file di distribuzione. Verificare che il percorso del file di distribuzione sia impostato correttamente nell'attività.",
   "loc.messages.ValidDeploymentFileNotFound": "Non è possibile trovare un file di distribuzione valido. Verificare che il percorso del file di distribuzione sia impostato correttamente nell'attività.",
   "loc.messages.AzureSdkNotFound": "Azure SDK non trovato",
@@ -71,6 +71,6 @@
   "loc.messages.CheckModuleImageExistenceError": "%s non esiste oppure le credenziali non sono impostate correttamente. Errore: %s",
   "loc.messages.StartGenerateDeploymentManifest": "Avvia generazione del manifesto della distribuzione...",
   "loc.messages.FinishGenerateDeploymentManifest": "La generazione del manifesto della distribuzione è stata completata.",
-  "loc.messages.LoginRegistrySucess": "Successfully logged in to registry %s",
-  "loc.messages.SkipSettingEnvironmentVariableForSecret": "Environment variable %s already exist. Skip setting environment varialbe for secret: %s."
+  "loc.messages.LoginRegistrySucess": "L'accesso al registro %s è riuscito",
+  "loc.messages.SkipSettingEnvironmentVariableForSecret": "La variabile di ambiente %s esiste già. Non impostare la variabile di ambiente per il segreto: %s."
 }

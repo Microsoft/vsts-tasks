@@ -1,13 +1,13 @@
 {
   "loc.friendlyName": "Node.js 工具安裝程式",
-  "loc.helpMarkDown": "[Learn more about this task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/node-js) or [see the Node documentation](https://nodejs.org/docs/latest/api/documentation.html)",
+  "loc.helpMarkDown": "[深入了解此工作](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/node-js)或[參閱 Node 文件](https://nodejs.org/docs/latest/api/documentation.html)",
   "loc.description": "尋找或下載並快取指定版本規格的 Node.js，然後將其新增到 PATH。",
   "loc.instanceNameFormat": "使用 Node $(versionSpec)",
   "loc.input.label.versionSpec": "版本指定",
   "loc.input.help.versionSpec": "要取得之版本的版本規格。例如: 6.x、4.x、6.10.0、>=6.10.0",
   "loc.input.label.checkLatest": "檢查最新版本",
   "loc.input.help.checkLatest": "一律檢查網路上有無最新的版本符合版本規格。除非特定的情況必須取得最新版本，否則不建議執行此動作。若非必要，這可能會衍生下載費用，特別是對託管的組建集區。",
-  "loc.input.label.force32bit": "在 x64 代理上使用 32 位元版本。",
-  "loc.input.help.force32bit": "將安裝 x86 版本的節點,而不考慮代理的 CPU 體系結構。",
+  "loc.input.label.force32bit": "在 x64 代理程式上使用 32 位元版本",
+  "loc.input.help.force32bit": "無論代理程式的 CPU 結構為何，皆安裝 x86 版的節點。",
   "loc.messages.ToolFailed": "工具安裝失敗: %s"
 }

@@ -1,10 +1,10 @@
 {
   "loc.friendlyName": "發佈組建成品",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708390)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=708390)",
   "loc.description": "將組建成品發佈至 Azure Pipelines 或 Windows 檔案共用",
-  "loc.instanceNameFormat": "發佈成品: $(ArtifactName)",
+  "loc.instanceNameFormat": "發行成品: $(ArtifactName)",
   "loc.group.displayName.advanced": "進階",
-  "loc.input.label.PathtoPublish": "要發佈的路徑",
+  "loc.input.label.PathtoPublish": "要發行的路徑",
   "loc.input.help.PathtoPublish": "要發佈的資料夾或檔案路徑。可為完整路徑或與存放庫根路徑相關的路徑。不支援萬用字元。支援[變數](https://go.microsoft.com/fwlink/?LinkID=550988)。範例: $(Build.ArtifactStagingDirectory)",
   "loc.input.label.ArtifactName": "成品名稱",
   "loc.input.help.ArtifactName": "要在發佈位置建立的成品名稱。",
@@ -16,10 +16,13 @@
   "loc.input.help.Parallel": "選取是否要使用多重執行緒平行複製檔案，以追求更高的輸送量。若此設定未啟用，則只會使用一個執行緒。",
   "loc.input.label.ParallelCount": "平行計數",
   "loc.input.help.ParallelCount": "輸入平行處理的程度或使用的執行緒數量，以執行複製。該值必須至少為 1 且不大於 128。",
-  "loc.input.label.FileCopyOptions": "File copy options",
-  "loc.input.help.FileCopyOptions": "Pass additional options to the Robocopy command.",
+  "loc.input.label.FileCopyOptions": "檔案複製選項",
+  "loc.input.help.FileCopyOptions": "將其他選項傳遞給 Robocopy 命令。",
+  "loc.input.label.StoreAsTar": "在上傳前先 tar 成品",
+  "loc.input.help.StoreAsTar": "在上傳前，請先將發行路徑中的所有檔案新增至 tar 封存。這可讓您保留 UNIX 檔案權限。使用 DownloadBuildArtifacts 工作的 `extractTars` 選項，自動解壓縮下載的項目。",
   "loc.messages.ErrorFileShareLinux": "不支援將成品從 Linux 或 macOS 代理程式發佈到檔案共用。請將成品類型變更為 `Azure Pipelines` 或使用 Windows 代理程式。",
   "loc.messages.ErrorHostTypeNotSupported": "此工作必須在組建中執行才能將成品發佈至 Azure Pipelines。",
-  "loc.messages.PublishBuildArtifactsFailed": "發佈組建成品失敗，錯誤: %s",
-  "loc.messages.UnexpectedParallelCount": "不支援的平行計數 '%s'。請輸入介於 1 到 128 之間的數字。"
+  "loc.messages.PublishBuildArtifactsFailed": "發行組建成品失敗，錯誤: %s",
+  "loc.messages.UnexpectedParallelCount": "不支援的平行計數 '%s'。請輸入介於 1 到 128 之間的數字。",
+  "loc.messages.TarExtractionNotSupportedInWindows": "Windows 不支援 tar 解壓縮"
 }

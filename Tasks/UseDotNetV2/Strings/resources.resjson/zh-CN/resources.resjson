@@ -13,6 +13,8 @@
   "loc.input.help.workingDirectory": "指定在使用 `Use global json` 时应从其中搜索 global.json 文件的路径。如果为空，则 `system.DefaultWorkingDirectory` 将被视为根路径。",
   "loc.input.label.version": "版本",
   "loc.input.help.version": "指定要安装的 .NET Core SDK 或运行时的版本。<br/>可按以下格式提供版本<li>2.x   => 安装最新主要版本。</li><li>2.2.x => 安装最新主要版本和次要版本</li><li>2.2.104 => 安装确切版本</li><br/>从 releases.json 中查找 `version` 的值，以安装 SDK/运行时。指向该 major.minor 版本的 releases.json 的链接可在[版本索引文件****](https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json)中找到。例如指向 releases.json 2.2 版本的链接为 https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/2.2/releases.json",
+  "loc.input.label.vsVersion": "兼容 Visual Studio 版本",
+  "loc.input.help.vsVersion": "指定要安装 .NET Core SDK 的兼容 Visual Studio 的版本。请指定完整的 VS 版本(如 16.6.4)，其中包含主要版本、次要版本和补丁号。从 releases.json 查找用于安装 SDK/运行时的“版本”值。在 [releases-index 文件](https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json)中可以找到该 major.minor 版本的 releases.json 的链接 ",
   "loc.input.label.includePreviewVersions": "包括预览版本",
   "loc.input.help.includePreviewVersions": "选择在搜索最新版本时(例如在搜索 2.2.x 时)，是否希望包括预览版本。如果指定了确切版本(例如 3.0.100-preview3-010431)，则忽略此设置",
   "loc.input.label.installationPath": "安装 .Net Core 的路径",

@@ -1,13 +1,13 @@
 {
-  "loc.messages.Updatemachinetoenablesecuretlsprotocol": "マシンで TLS 1.2 プロトコル以上を使用していることを確認します。お使いのマシンで TLS を有効にする方法について詳しくは、https://aka.ms/enableTlsv2 をご確認ください。",
-  "loc.messages.JarPathNotPresent": "Java jar パスが存在しません",
-  "loc.messages.JSONvariablesubstitutionappliedsuccessfully": "JSON 変数置換が正常に適用されました。",
-  "loc.messages.XMLvariablesubstitutionappliedsuccessfully": "XML 変数の置換が正常に適用されました。",
-  "loc.messages.XDTTransformationsappliedsuccessfully": "XML 変換が正常に適用されました",
-  "loc.messages.CannotPerformXdtTransformationOnNonWindowsPlatform": "非 Windows プラットフォームでは XML 変換を実行できません。",
-  "loc.messages.XdtTransformationErrorWhileTransforming": "%s の %s による変換中に XML 変換エラーが発生しました。",
-  "loc.messages.JSONParseError": "JSON ファイルを解析できません: %s。エラー: %s",
-  "loc.messages.NOJSONfilematchedwithspecificpattern": "指定のパターンと一致する JSON ファイルはありません: %s。",
-  "loc.messages.FailedToApplyTransformation": "指定されたパッケージに変換を適用することはできません。次の点をご確認ください。",
-  "loc.messages.MissingArgumentsforXMLTransformation": "引数が不完全であるか、見つかりません。-transform <transform file> -xml <source file> -result <destinamtion file> の形式である必要があります。変換ファイルとソース ファイルは必須の入力です。"
+  "loc.messages.Updatemachinetoenablesecuretlsprotocol": "Make sure the machine is using TLS 1.2 protocol or higher. Check https://aka.ms/enableTlsv2 for more information on how to enable TLS in your machine.",
+  "loc.messages.JarPathNotPresent": "Java jar path is not present",
+  "loc.messages.JSONvariablesubstitutionappliedsuccessfully": "JSON variable substitution applied successfully.",
+  "loc.messages.XMLvariablesubstitutionappliedsuccessfully": "XML variable substitution applied successfully.",
+  "loc.messages.XDTTransformationsappliedsuccessfully": "XML Transformations applied successfully",
+  "loc.messages.CannotPerformXdtTransformationOnNonWindowsPlatform": "Cannot perform XML transformations on a non-Windows platform.",
+  "loc.messages.XdtTransformationErrorWhileTransforming": "XML transformation error while transforming %s using %s.",
+  "loc.messages.JSONParseError": "Unable to parse JSON file: %s. Error: %s",
+  "loc.messages.NOJSONfilematchedwithspecificpattern": "NO JSON file matched with specific pattern: %s.",
+  "loc.messages.FailedToApplyTransformation": "Unable to apply transformation for the given package. Verify the following.",
+  "loc.messages.MissingArgumentsforXMLTransformation": "Incomplete or missing arguments. Expected format -transform <transform file> -xml <source file> -result <destinamtion file>. Transformation and source file are mandatory inputs."
 }

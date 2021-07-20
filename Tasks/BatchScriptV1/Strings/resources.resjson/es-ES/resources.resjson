@@ -1,11 +1,11 @@
 {
   "loc.friendlyName": "Script por lotes",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613733).\n\nPlease note: this task is not compatible with Windows containers. If you need to run a batch script on a Windows container, use the [CmdLine task](https://go.microsoft.com/fwlink/?LinkID=613735) instead.",
+  "loc.helpMarkDown": "[Obtener más información acerca de esta tarea](https://go.microsoft.com/fwlink/?LinkID=613733).\n\nTenga en cuenta que esta tarea no es compatible con los contenedores Windows. Si tiene que ejecutar un script por lotes en un contenedor Windows, use la [tarea CmdLine](https://go.microsoft.com/fwlink/?LinkID=613735) en su lugar.",
   "loc.description": "Ejecute un script por lotes o un comando de Windows y, opcionalmente, permítale cambiar el entorno",
   "loc.instanceNameFormat": "Run script $(filename)",
   "loc.group.displayName.advanced": "Avanzado",
   "loc.input.label.filename": "Ruta de acceso",
-  "loc.input.help.filename": "Ruta de acceso del script cmd o bat que se va a ejecutar. Debe ser una ruta de acceso completa o relativa al directorio de trabajo predeterminado.",
+  "loc.input.help.filename": "Ruta del script cmd o bat a ejecutar. Debe ser una ruta de acceso absoluta o relativa al directorio de trabajo por defecto (tenga en cuenta que el directorio de trabajo podría diferir del 'workingFolder' que pudiera especificarse para esta tarea).",
   "loc.input.label.arguments": "Argumentos",
   "loc.input.help.arguments": "Argumentos pasados al script cmd o bat",
   "loc.input.label.modifyEnvironment": "Modificar entorno",

@@ -3,10 +3,13 @@
   "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?LinkID=613719)",
   "loc.description": "使用 CMake 跨平台生成系统生成",
   "loc.instanceNameFormat": "CMake $(cmakeArgs)",
+  "loc.group.displayName.advanced": "高级",
   "loc.input.label.cwd": "工作目录",
   "loc.input.help.cwd": "cmake 运行时的当前工作目录。",
   "loc.input.label.cmakeArgs": "参数",
   "loc.input.help.cmakeArgs": "传递给 cmake 的参数",
+  "loc.input.label.runInsideShell": "在 shell 中运行 cmake 命令",
+  "loc.input.help.runInsideShell": "CMake 参数的处理方式与在特定于 OS 的 shell 中的相同。它可用于处理参数字符串中的环境变量。",
   "loc.messages.CMakeReturnCode": "CMake 已退出，返回代码为: %d",
   "loc.messages.CMakeFailed": "CMake 失败，出现错误: %s"
 }

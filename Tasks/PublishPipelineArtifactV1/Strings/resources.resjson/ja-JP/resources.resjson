@@ -1,18 +1,18 @@
 {
-  "loc.friendlyName": "パイプライン成果物の公開",
+  "loc.friendlyName": "Publish pipeline artifact",
   "loc.helpMarkDown": "Publish (upload) a file or directory as a named artifact for the current run. Published artifacts can be downloaded in other jobs, stages, or pipelines using the \"Download pipeline artifact\" task.",
   "loc.description": "Publish (upload) a file or directory as a named artifact for the current run",
-  "loc.instanceNameFormat": "パイプライン成果物を公開します",
+  "loc.instanceNameFormat": "Publish Pipeline Artifact",
   "loc.input.label.path": "File or directory path",
   "loc.input.help.path": "The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include [variables](https://go.microsoft.com/fwlink/?LinkID=550988), but wildcards are not supported.",
-  "loc.input.label.artifactName": "成果物名",
+  "loc.input.label.artifactName": "Artifact name",
   "loc.input.help.artifactName": "Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.",
-  "loc.input.label.artifactType": "成果物の発行場所",
+  "loc.input.label.artifactType": "Artifact publish location",
   "loc.input.help.artifactType": "Choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent.",
   "loc.input.label.fileSharePath": "File share path",
-  "loc.input.help.fileSharePath": "成果物ファイルのコピー先であるファイル共有です。これには変数を含めることができます。例: \\\\\\\\my\\\\share\\\\$(Build.DefinitionName)\\\\$(Build.BuildNumber)。Linux または macOS エージェントから成果物をファイル共有に公開することはサポートされていません。",
-  "loc.input.label.parallel": "並列コピー",
-  "loc.input.help.parallel": "スループット向上を期待して複数のスレッドを使って並列でファイルをコピーするかどうかを選択します。この設定が無効の場合は、1 つのスレッドが使用されます。",
-  "loc.input.label.parallelCount": "並列数",
-  "loc.input.help.parallelCount": "コピーを実行するための並列処理の程度、つまり使用するスレッド数を入力します。この値は 1 以上 128 以下でなければなりません。"
+  "loc.input.help.fileSharePath": "The file share to which the artifact files will be copied. This can include variables. Example: \\\\\\\\my\\\\share\\\\$(Build.DefinitionName)\\\\$(Build.BuildNumber). Publishing artifacts from a Linux or macOS agent to a file share is not supported.",
+  "loc.input.label.parallel": "Parallel copy",
+  "loc.input.help.parallel": "Select whether to copy files in parallel using multiple threads for greater potential throughput. If this setting is not enabled, one thread will be used.",
+  "loc.input.label.parallelCount": "Parallel count",
+  "loc.input.help.parallelCount": "Enter the degree of parallelism, or number of threads used, to perform the copy. The value must be at least 1 and not greater than 128."
 }

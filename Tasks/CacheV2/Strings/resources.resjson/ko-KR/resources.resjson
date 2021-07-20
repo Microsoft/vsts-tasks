@@ -1,14 +1,14 @@
 {
-  "loc.friendlyName": "캐시",
-  "loc.helpMarkDown": "파이프라인 실행 간에 파일을 캐시하여 종속성과 같은 빌드 성능을 향상시킵니다.",
-  "loc.description": "실행 간 캐시 파일",
-  "loc.instanceNameFormat": "캐시",
-  "loc.input.label.key": "키",
-  "loc.input.help.key": "캐시의 키(고유 식별자)입니다. '|'을 사용하여 분할할 수 있는 문자열이어야 합니다. 파일 경로는 절대 경로이거나 $(System.DefaultWorkingDirectory)에 상대적일 수 있습니다.",
-  "loc.input.label.path": "경로",
-  "loc.input.help.path": "캐시할 폴더의 경로입니다. 정규화된 경로이거나 $(System.DefaultWorkingDirectory)에 상대적인 경로일 수 있습니다. 와일드카드는 지원되지 않습니다. [변수](https://go.microsoft.com/fwlink/?LinkID=550988)가 지원됩니다.",
-  "loc.input.label.cacheHitVar": "캐시 적중 변수",
-  "loc.input.help.cacheHitVar": "캐시가 복원되면(캐시 적중이 발생하면) 'true'로 설정하고 그러지 않으면 'false'로 설정할 변수입니다.",
-  "loc.input.label.restoreKeys": "추가 복원 키 접두사",
-  "loc.input.help.restoreKeys": "기본 키 누락 시 사용되는 추가 복원 키 접두사입니다. 새 줄로 구분한 키 접두사 목록일 수 있습니다."
+  "loc.friendlyName": "Cache",
+  "loc.helpMarkDown": "Improve build performance by caching files, like dependencies, between pipeline runs.",
+  "loc.description": "Cache files between runs",
+  "loc.instanceNameFormat": "Cache",
+  "loc.input.label.key": "Key",
+  "loc.input.help.key": "Key (unique identifier) for the cache. This should be a string that can be segmented using '|'. File paths can be absolute or relative to $(System.DefaultWorkingDirectory).",
+  "loc.input.label.path": "Path",
+  "loc.input.help.path": "Path of the folder to cache. Can be fully-qualified or relative to $(System.DefaultWorkingDirectory). Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported.",
+  "loc.input.label.cacheHitVar": "Cache hit variable",
+  "loc.input.help.cacheHitVar": "Variable to set to 'true' when the cache is restored (i.e. a cache hit), otherwise set to 'false'.",
+  "loc.input.label.restoreKeys": "Additional restore key prefixes",
+  "loc.input.help.restoreKeys": "Additional restore key prefixes that are used if the primary key misses. This can be a newline-delimited list of key prefixes."
 }

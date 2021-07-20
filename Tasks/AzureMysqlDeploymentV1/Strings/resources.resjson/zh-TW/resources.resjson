@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "適用於 MySQL 的 Azure 資料庫部署",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/mysqlazuredeployreadme)",
+  "loc.helpMarkDown": "[深入了解此工作](https://aka.ms/mysqlazuredeployreadme)",
   "loc.description": "執行您的指令碼，並對適用於 MySQL 的 Azure 資料庫進行變更",
   "loc.instanceNameFormat": "執行 Azure MySQL: $(TaskNameSelector)",
   "loc.group.displayName.target": "DB 詳細資料",
@@ -11,17 +11,17 @@
   "loc.input.label.ServerName": "主機名稱",
   "loc.input.help.ServerName": "「適用於 MySQL 的 Azure 資料庫」的伺服器名稱。範例: fabrikam.mysql.database.azure.com。當您使用 MySQL Workbench 進行連線時，其會與為 'Parameters' 中 'Hostname' 使用的值相同",
   "loc.input.label.DatabaseName": "資料庫名稱",
-  "loc.input.help.DatabaseName": "資料庫的名稱，如果您已經有一個名稱，則必須在其上執行以下指令碼，此外指令碼本身也可用於建立資料庫。",
+  "loc.input.help.DatabaseName": "下列指令碼必須執行對象的資料庫名稱 (如已有資料庫); 若無，則指令碼本身可用以建立資料庫。",
   "loc.input.label.SqlUsername": "伺服器管理員登入",
   "loc.input.help.SqlUsername": "適用於 MySQL 的 Azure 資料庫伺服器支援原生 MySQL 驗證。您可使用伺服器的系統管理員登入對伺服器進行連線與驗證。例如: bbo1@fabrikam。當您使用 MySQL Workbench 連線時，這與在 'Parameters' 中為 'Username' 使用的值相同。",
   "loc.input.label.SqlPassword": "密碼",
   "loc.input.help.SqlPassword": "適用於 MySQL 的 Azure 資料庫系統管理員密碼。若您忘記密碼，可從 [Azure 入口網站](https://docs.microsoft.com/zh-tw/azure/mysql/howto-create-manage-server-portal) 變更。<br>其可在管線中以變數定義。例如: $(password)。<br>您也可將變數類型標示為 'secret' 予以保護。",
   "loc.input.label.TaskNameSelector": "類型",
-  "loc.input.help.TaskNameSelector": "請在指令檔與內嵌指令碼選項中擇一。",
+  "loc.input.help.TaskNameSelector": "在 [指令檔] 和 [內嵌指令碼] 兩個選項中擇一選取。",
   "loc.input.label.SqlFile": "MySQL 指令碼",
   "loc.input.help.SqlFile": "自動化代理程式或自動化代理程式可存取之 UNC 路徑上的指令檔完整路徑，例如 \\\\\\\\BudgetIT\\DeployBuilds\\script.sql。此外，$(agent.releaseDirectory) 等預先定義的系統變數，以及包含 SQL 陳述式的檔案也可在此使用。",
   "loc.input.label.SqlInline": "內嵌 MySQL 指令碼",
-  "loc.input.help.SqlInline": "輸入要在上方所選資料庫執行的 MySQL 指令碼。",
+  "loc.input.help.SqlInline": "輸入要對以上所選資料庫執行的 MySQL 指令碼。",
   "loc.input.label.SqlAdditionalArguments": "其他 MySQL 引數",
   "loc.input.help.SqlAdditionalArguments": "MySQL 簡易 SQL 殼層支援的其他選項。在適用於 MySQL 的 Azure 資料庫上執行指定檔案時，將會套用這些選項。<br>範例: 您可以將預設定位字元分隔輸出格式變更為 HTML 或甚至 XML 格式。如果您因結果集太大但記憶體不足而發生問題，請使用 --quick 選項。",
   "loc.input.label.IpDetectionMethod": "使用下列項目指定防火牆規則:",
@@ -63,5 +63,6 @@
   "loc.messages.CouldNotFetchAccessTokenforMSIDueToMSINotConfiguredProperlyStatusCode": "無法擷取受控服務主體的存取權杖。請設定虛擬機器的受控服務識別 (MSI)。請參閱 'https://aka.ms/azure-msi-docs'。將角色指派至建立的 MSI 身分識別。請參閱 'https://aka.ms/assign-role-msi'。狀態碼: %s。狀態訊息: %s",
   "loc.messages.CouldNotFetchAccessTokenforMSIStatusCode": "無法擷取受控服務主體的存取權杖。狀態碼: %s。狀態訊息: %s",
   "loc.messages.NotAbleToCreateFirewallRule": "將防火牆規則新增至 Azure mysql 伺服器時得到錯誤。錯誤: %s",
-  "loc.messages.ExpiredServicePrincipal": "無法擷取 Azure 的存取權杖。請驗證使用的服務主體是否有效且未過期。"
+  "loc.messages.ExpiredServicePrincipal": "無法擷取 Azure 的存取權杖。請驗證使用的服務主體是否有效且未過期。",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "找不到具指定模式的套件"
 }

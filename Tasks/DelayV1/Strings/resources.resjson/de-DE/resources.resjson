@@ -1,8 +1,8 @@
 {
-  "loc.friendlyName": "Verzögerung",
-  "loc.helpMarkDown": "[Weitere Informationen](https://go.microsoft.com/fwlink/?linkid=870239)",
-  "loc.description": "Hiermit wird die weitere Ausführung eines Workflows um eine bestimmte Zeit verzögert.",
-  "loc.instanceNameFormat": "Um $(delayForMinutes) Minuten verzögern",
-  "loc.input.label.delayForMinutes": "Verzögerungszeit (in Minuten)",
-  "loc.input.help.delayForMinutes": "Hiermit wird die Ausführung des Workflows für die angegebene Anzahl von Minuten verzögert. Der Wert 0 bedeutet, dass die Workflowausführung ohne Verzögerung gestartet wird."
+  "loc.friendlyName": "Delay",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870239)",
+  "loc.description": "Delay further execution of a workflow by a fixed time",
+  "loc.instanceNameFormat": "Delay by $(delayForMinutes) minutes",
+  "loc.input.label.delayForMinutes": "Delay Time (minutes)",
+  "loc.input.help.delayForMinutes": "Delay the execution of the workflow by specified time in minutes. 0 value means that workflow execution will start without delay."
 }

@@ -1,10 +1,10 @@
 {
-  "loc.friendlyName": "发布管道工件",
-  "loc.helpMarkDown": "将本地目录或文件作为当前管道的命名项目进行发布。",
-  "loc.description": "将本地目录或文件作为当前管道的已命名项目进行发布",
-  "loc.instanceNameFormat": "发布管道工件",
-  "loc.input.label.artifactName": "此项目的名称",
-  "loc.input.help.artifactName": "此项目的名称。",
-  "loc.input.label.targetPath": "要发布的路径",
-  "loc.input.help.targetPath": "要发布的文件夹或文件路径。这可以是完全限定的路径或相对于存储库根路径的路径。不支持通配符。支持 [变量](https://go.microsoft.com/fwlink/?LinkID=550988)。"
+  "loc.friendlyName": "Publish pipeline artifact",
+  "loc.helpMarkDown": "Publish a local directory or file as a named artifact for the current pipeline.",
+  "loc.description": "Publish a local directory or file as a named artifact for the current pipeline",
+  "loc.instanceNameFormat": "Publish Pipeline Artifact",
+  "loc.input.label.artifactName": "The name of this artifact",
+  "loc.input.help.artifactName": "The name of this artifact.",
+  "loc.input.label.targetPath": "Path to publish",
+  "loc.input.help.targetPath": "The folder or file path to publish. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported."
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Installa certificato Apple",
-  "loc.helpMarkDown": "[Altre informazioni](https://go.microsoft.com/fwlink/?LinkID=862067)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?LinkID=862067)",
   "loc.description": "Installa un certificato Apple necessario per compilare in un computer agente macOS",
   "loc.instanceNameFormat": "Installa un certificato Apple",
   "loc.releaseNotes": "Correzione del problema di blocco della firma del codice in un agente self-hosted. Per usare `Keychain predefinito` o `Keychain personalizzato` è necessaria una password del keychain. Con le compilazioni ospitate da Microsoft è necessario usare `Keychain temporaneo`.",

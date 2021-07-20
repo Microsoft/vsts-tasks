@@ -13,7 +13,6 @@
   "loc.input.help.downloadPath": "Percorso nel computer agente in cui verrà scaricato il pacchetto",
   "loc.messages.FailedToGetPackageMetadata": "Non è stato possibile ottenere i metadati del pacchetto. Errore: %s",
   "loc.messages.FailedToDownloadNugetPackage": "Non è stato possibile scaricare il pacchetto NuGet da %s. Errore restituito: %s",
-  "loc.messages.Info_ResolvedToolFromCache": "Resolved from tool cache: %s",
   "loc.messages.PackageDownloadSuccessful": "Download del pacchetto completato",
   "loc.messages.CredentialsNotFound": "Non è stato possibile determinare le credenziali per la connessione al servizio Azure Artifacts.",
   "loc.messages.StartingDownloadOfPackage": "Avvio del download del pacchetto NuGet %s nel percorso %s",
@@ -22,5 +21,6 @@
   "loc.messages.ExtractionFailed": "Non è stato possibile estrarre il pacchetto. Errore: %s",
   "loc.messages.RetryingOperation": "Errore in %s. Verranno eseguiti nuovi tentativi => Tentativi in sospeso: %s",
   "loc.messages.OperationFailed": "Operazione non riuscita in %s. Errore: %s",
+  "loc.messages.Info_ResolvedToolFromCache": "Risoluzione dalla cache dello strumento: %s",
   "loc.messages.UnsupportedProjectScopedFeeds": "I feed con ambito progetto non sono supportati da questa versione dell'attività \"Scarica pacchetto\". Usare la versione 1 o successiva."
 }

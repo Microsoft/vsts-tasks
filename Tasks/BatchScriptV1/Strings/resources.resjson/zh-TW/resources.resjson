@@ -1,11 +1,11 @@
 {
   "loc.friendlyName": "批次指令碼",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613733).\n\nPlease note: this task is not compatible with Windows containers. If you need to run a batch script on a Windows container, use the [CmdLine task](https://go.microsoft.com/fwlink/?LinkID=613735) instead.",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=613733)。\n\n請注意: 此工作與 Windows 容器不相容。如必須在 Windows 容器上執行批次指令碼，請改用 [CmdLine 工作](https://go.microsoft.com/fwlink/?LinkID=613735)。",
   "loc.description": "執行 Windows 命令或批次指令碼，並選擇性地允許其變更環境",
   "loc.instanceNameFormat": "執行指令碼 $(filename)",
   "loc.group.displayName.advanced": "進階",
   "loc.input.label.filename": "路徑",
-  "loc.input.help.filename": "要執行的 cmd 路徑或 bat 指令碼路徑。必須是完整路徑或預設工作目錄的相對路徑。",
+  "loc.input.help.filename": "要執行之 cmd 或 bat 指令碼的路徑。應為完整路徑或預設工作目錄的相對路徑 (請注意，工作目錄可能與此工作指定的 'workingFolder' 不同)。",
   "loc.input.label.arguments": "引數",
   "loc.input.help.arguments": "傳遞至 cmd 或 bat 指令碼的引數",
   "loc.input.label.modifyEnvironment": "修改環境",

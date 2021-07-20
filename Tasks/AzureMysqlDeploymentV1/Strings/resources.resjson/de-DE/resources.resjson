@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure Database for MySQL-Bereitstellung",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/mysqlazuredeployreadme)",
+  "loc.helpMarkDown": "[Weitere Informationen zu dieser Aufgabe](https://aka.ms/mysqlazuredeployreadme)",
   "loc.description": "Hiermit werden Skripts ausgeführt und Änderungen an Ihrer Azure Database for MySQL-Instanz vorgenommen.",
   "loc.instanceNameFormat": "Azure MySQL ausführen: $(TaskNameSelector)",
   "loc.group.displayName.target": "DB-Details",
@@ -11,13 +11,13 @@
   "loc.input.label.ServerName": "Hostname",
   "loc.input.help.ServerName": "Der Servername von Azure Database for MySQL. Beispiel: fabrikam.mysql.database.azure.com. Beim Herstellen einer Verbindung mit MySQL Workbench ist dies der gleiche Wert, der unter \"Parameter\" für \"Hostname\" verwendet wird.",
   "loc.input.label.DatabaseName": "Datenbankname",
-  "loc.input.help.DatabaseName": "Der Name der Datenbank (wenn bereits vorhanden), für die das Skript unten ausgeführt werden muss. Andernfalls kann das Skript selbst zum Erstellen der Datenbank verwendet werden.",
+  "loc.input.help.DatabaseName": "Der Name der Datenbank (falls bereits vorhanden), für die das unten aufgeführte Skript ausgeführt werden soll. Andernfalls kann das Skript selbst zum Erstellen der Datenbank verwendet werden.",
   "loc.input.label.SqlUsername": "Serveradministratoranmeldung",
   "loc.input.help.SqlUsername": "Azure-Datenbank für MySQL-Server unterstützt native MySQL-Authentifizierung. Sie können mit der Administratoranmeldung des Servers eine Verbindung mit einem Server herstellen und sich authentifizieren. Beispiel: bbo1@fabrikam. Beim Herstellen einer Verbindung mit MySQL Workbench ist dies der gleiche Wert, der für \"Username\" in \"Parameters\" verwendet wird.",
   "loc.input.label.SqlPassword": "Kennwort",
   "loc.input.help.SqlPassword": "Das Administratorkennwort für Azure Database for MySQL. Wenn Sie das Kennwort vergessen haben, können Sie das Kennwort im [Azure-Portal](https://docs.microsoft.com/de-de/azure/mysql/howto-create-manage-server-portal) ändern.<br>Es kann als Variable in der Definition definiert werden. Beispiel: $(password).<br>Darüber hinaus können Sie den Variablentyp als \"secret\" markieren, um die Variable abzusichern.",
   "loc.input.label.TaskNameSelector": "Typ",
-  "loc.input.help.TaskNameSelector": "Wählen Sie eine der Optionen zwischen Skriptdatei und Inlineskript aus.",
+  "loc.input.help.TaskNameSelector": "Treffen Sie eine Auswahl zwischen \"Skriptdatei\" und \"Inlineskript\".",
   "loc.input.label.SqlFile": "MySQL-Skript",
   "loc.input.help.SqlFile": "Der vollständige Pfad der Skriptdatei für den Automations-Agent oder ein UNC-Pfad, auf den der Automations-Agent zugreifen kann, z. B. \\\\\\\\\\\\\\\\BudgetIT\\\\DeployBuilds\\\\script.sql. Hier können auch vordefinierte Systemvariablen wie $(agent.releaseDirectory) verwendet werden. Eine Datei mit SQL-Anweisungen kann hier ebenfalls verwendet werden.",
   "loc.input.label.SqlInline": "MySQL-Inlineskript",
@@ -63,5 +63,6 @@
   "loc.messages.CouldNotFetchAccessTokenforMSIDueToMSINotConfiguredProperlyStatusCode": "Für den verwalteten Dienstprinzipal konnte kein Zugriffstoken abgerufen werden. Konfigurieren Sie die verwaltete Dienstidentität (MSI) für die VM, siehe https://aka.ms/azure-msi-docs. Weisen Sie der erstellten MSI-Identität eine Rolle zu, siehe https://aka.ms/assign-role-msi. Statuscode: %s. Statusmeldung: %s",
   "loc.messages.CouldNotFetchAccessTokenforMSIStatusCode": "Ein Zugriffstoken für den verwalteten Dienstprinzipal konnte nicht abgerufen werden. Statuscode: %s. Statusmeldung: %s",
   "loc.messages.NotAbleToCreateFirewallRule": "Fehler beim Hinzufügen der Firewallregel zum Azure MySQL-Server. Fehler: %s",
-  "loc.messages.ExpiredServicePrincipal": "Das Zugriffstoken für Azure konnte nicht abgerufen werden. Stellen Sie sicher, dass der verwendete Dienstprinzipal gültig und nicht abgelaufen ist."
+  "loc.messages.ExpiredServicePrincipal": "Das Zugriffstoken für Azure konnte nicht abgerufen werden. Stellen Sie sicher, dass der verwendete Dienstprinzipal gültig und nicht abgelaufen ist.",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "Keine Paketdatei mit dem angegebenen Muster gefunden."
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "PowerShell in computer di destinazione",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=873465)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?linkid=873465)",
   "loc.description": "Consente di eseguire script PowerShell in computer remoti usando PSSession e Invoke-Command per la comunicazione remota",
   "loc.instanceNameFormat": "Esegui PowerShell in computer di destinazione",
   "loc.releaseNotes": "Uso di PSSession e di Session Option per eseguire operazioni da remoto sui computer di destinazione.<br/><br/>* Aggiunta del supporto per l'esecuzione di script inline.<br/><br/>* Supporto dell'autenticazione predefinita e CredSSP.<br/><br/>* Aggiunta delle opzioni per la gestione degli errori: ErrorActionPreference, ignoreLASTEXITCODE e Interrompi in caso di STDERR.",

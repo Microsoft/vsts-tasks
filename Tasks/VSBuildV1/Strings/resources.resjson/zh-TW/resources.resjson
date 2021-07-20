@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Visual Studio 組建",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613727)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=613727)",
   "loc.description": "使用 MSBuild 建置並設定 Visual Studio 版本屬性",
   "loc.instanceNameFormat": "建置方案 $(solution)",
   "loc.group.displayName.advanced": "進階",
@@ -28,6 +28,8 @@
   "loc.input.help.createLogFile": "選擇性地建立記錄檔 (僅限 Windows)。",
   "loc.input.label.logFileVerbosity": "記錄檔詳細程度",
   "loc.input.help.logFileVerbosity": "選擇性記錄檔詳細程度。",
+  "loc.input.label.enableDefaultLogger": "啟用預設記錄器",
+  "loc.input.help.enableDefaultLogger": "若為 true - 啟用 msbuild 的預設記錄器",
   "loc.messages.MSBuildLocationDeprecated0": "已取代 MSBuild 位置參數。忽略值 '{0}'",
   "loc.messages.MSBuildVersionDeprecated0": "已取代 MSBuild 版本參數。忽略值 '{0}'。",
   "loc.messages.UnexpectedVSVersion0": "未預期的 Visual Studio 版本 '{0}'。",

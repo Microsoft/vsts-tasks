@@ -1,14 +1,14 @@
 {
-  "loc.friendlyName": "コード カバレッジ結果の公開",
+  "loc.friendlyName": "Publish code coverage results",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=626485)",
   "loc.description": "Publish any of the code coverage results from a build",
-  "loc.instanceNameFormat": "コード カバレッジ結果の公開",
+  "loc.instanceNameFormat": "Publish code coverage results",
   "loc.input.label.summaryFileLocation": "Path to summary files",
   "loc.input.help.summaryFileLocation": "Paths to summary files containing code coverage statistics, such as line, method, and class coverage. Multiple summary files will be merged into a single report. Supports multiple lines of minimatch patterns. [More information](https://aka.ms/minimatchexamples)",
-  "loc.input.label.pathToSources": "ソース ファイルへのパス",
-  "loc.input.help.pathToSources": "カバレッジ XML レポートにソース ファイルへの絶対パスが含まれていない場合は、ソース ファイルへのパスが必要です。例: JaCoCo レポートでは絶対パスは使用されず、Java アプリの JaCoCo カバレッジを公開する場合、パターンは `$(System.DefaultWorkingDirectory)/MyApp/src/main/java/` のようになります。<br />この入力は、テストが Docker コンテナーで実行されている場合にも必要です。この入力は、ホスト上のソース ファイルへの絶対パスを指している必要があります。例: `$(System.DefaultWorkingDirectory)/MyApp/`",
+  "loc.input.label.pathToSources": "Path to Source files",
+  "loc.input.help.pathToSources": "Path to source files is required when coverage XML reports do not contain absolute path to source files. For e.g., JaCoCo reports do not use absolute paths and when publishing JaCoCo coverage for Java apps, the pattern would be similar to `$(System.DefaultWorkingDirectory)/MyApp/src/main/java/`.<br />This input is also needed if tests are run in a docker container. This input should point to absolute path to source files on the host. For e.g., `$(System.DefaultWorkingDirectory)/MyApp/`",
   "loc.input.label.failIfCoverageEmpty": "Fail if code coverage results are missing",
-  "loc.input.help.failIfCoverageEmpty": "コード カバレッジが発行する結果を生成しないと、タスクは失敗します。",
-  "loc.messages.FoundNMatchesForPattern": "%s 件の結果がパターン %s に一致するものとして見つかりました",
-  "loc.messages.NoCodeCoverage": "発行するコード カバレッジの結果が見つかりませんでした。"
+  "loc.input.help.failIfCoverageEmpty": "Fail the task if code coverage did not produce any results to publish.",
+  "loc.messages.FoundNMatchesForPattern": "Found %s result(s) matching pattern: %s",
+  "loc.messages.NoCodeCoverage": "No code coverage results were found to publish."
 }

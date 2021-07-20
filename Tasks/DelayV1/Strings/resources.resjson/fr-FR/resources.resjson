@@ -1,8 +1,8 @@
 {
-  "loc.friendlyName": "Délai",
-  "loc.helpMarkDown": "[Plus d'informations](https://go.microsoft.com/fwlink/?linkid=870239)",
-  "loc.description": "Retardez davantage l'exécution d'un workflow selon un délai fixe",
-  "loc.instanceNameFormat": "Retarder de $(delayForMinutes) minutes",
-  "loc.input.label.delayForMinutes": "Délai (minutes)",
-  "loc.input.help.delayForMinutes": "Retardez l'exécution du workflow selon un délai spécifique en minutes. La valeur 0 indique que l'exécution du workflow doit démarrer sans délai."
+  "loc.friendlyName": "Delay",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870239)",
+  "loc.description": "Delay further execution of a workflow by a fixed time",
+  "loc.instanceNameFormat": "Delay by $(delayForMinutes) minutes",
+  "loc.input.label.delayForMinutes": "Delay Time (minutes)",
+  "loc.input.help.delayForMinutes": "Delay the execution of the workflow by specified time in minutes. 0 value means that workflow execution will start without delay."
 }

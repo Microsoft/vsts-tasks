@@ -8,7 +8,7 @@
   "loc.input.help.credsType": "Consente di usare la connessione al servizio FTP o di immettere le credenziali di connessione.",
   "loc.input.label.serverEndpoint": "Connessione al servizio FTP",
   "loc.input.help.serverEndpoint": "Consente di selezionare la connessione al servizio per il server FTP. Per crearne una, fare clic sul collegamento Gestisci e creare una nuova connessione al servizio generica, immettere l'URL del server FTP per l'URL del server, ad esempio <b>`ftp://server.example.com`</b>, nonché le credenziali richieste.<p>Le connessioni sicure verranno sempre stabilite indipendentemente dal protocollo specificato (<b>`ftp://`</b> o <b>`ftps://`</b>) se il server di destinazione supporta FTPS. Per consentire solo le connessioni sicure, usare il protocollo <b>`ftps://`</b>, ad esempio <b>`ftps://server.example.com`</b>. Se si specifica <b>`ftps://`</b>, le connessioni a server che non supportano FTPS non riusciranno.",
-  "loc.input.label.serverUrl": "URL server",
+  "loc.input.label.serverUrl": "URL del server",
   "loc.input.label.username": "Nome utente",
   "loc.input.label.password": "Password",
   "loc.input.label.rootFolder": "Cartella radice",

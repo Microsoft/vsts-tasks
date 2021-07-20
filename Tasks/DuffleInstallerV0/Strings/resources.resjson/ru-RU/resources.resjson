@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Установщик средств Duffle",
+  "loc.friendlyName": "Duffle tool installer",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=851275)",
-  "loc.description": "Установка указанной версии Duffle для установки пакетов CNAB и управления ими",
-  "loc.instanceNameFormat": "Установить Duffle $(version)",
-  "loc.input.label.version": "Версия",
-  "loc.input.help.version": "Укажите версию Duffle, которую нужно установить.",
-  "loc.input.label.checkLatestVersion": "Проверить наличие последней версии",
-  "loc.input.help.checkLatestVersion": "Всегда проверяет наличие в Интернете последней доступной версии (stable.txt), соответствующей спецификатору версии. Обычно этот параметр имеет значение \"false\", кроме случаев, когда необходимо всегда получать последнюю доступную версию. Это может привести к излишним затратам за скачивание, особенно в случае размещенного пула сборок.",
-  "loc.messages.DownloadDuffleFailed": "Не удается скачать клиент Duffle версии %s. Проверьте правильность версии: https://github.com/deislabs/duffle/releases",
-  "loc.messages.DownloadStableVersionFailed": "Не удается скачать файл стабильной версии Duffle из %s. Возврат к %s"
+  "loc.description": "Install a specified version of Duffle for installing and managing CNAB bundles",
+  "loc.instanceNameFormat": "Install Duffle $(version)",
+  "loc.input.label.version": "Version",
+  "loc.input.help.version": "Specify the version of Duffle to install.",
+  "loc.input.label.checkLatestVersion": "Check for latest version",
+  "loc.input.help.checkLatestVersion": "Always checks online for the latest available version (stable.txt) that satisfies the version spec. This is typically false unless you have a specific scenario to always get latest. This will cause it to incur download costs when potentially not necessary, especially with the hosted build pool.",
+  "loc.messages.DownloadDuffleFailed": "Can not download the Duffle client of version %s. Check if the version is correct https://github.com/deislabs/duffle/releases",
+  "loc.messages.DownloadStableVersionFailed": "Can not download Duffle stable version file from %s. Falling back to %s"
 }

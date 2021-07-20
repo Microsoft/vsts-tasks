@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "开放策略代理安装程序",
-  "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?linkid=851275)",
-  "loc.description": "在代理计算机上安装开放策略代理",
-  "loc.instanceNameFormat": "安装 opa $(opaVersion)",
-  "loc.input.label.opaVersion": "OPA 版本规范",
-  "loc.input.help.opaVersion": "指定要安装的开放策略代理的版本",
-  "loc.messages.DownloadOpaFailedFromLocation": "未能从位置 %s 下载 opa。错误为 %s",
-  "loc.messages.OpaLatestNotKnown": "无法从 %s 获取 OpenPolicyAgent 的最新信息。错误为 %s。将使用默认 OpenPolicyAgent 版本 %s。",
-  "loc.messages.NotAValidSemverVersion": "未指定正确格式的版本。示例: 1.8.2、v1.8.2、2.8.2、v2.8.2。",
-  "loc.messages.VerifyOpaInstallation": "正在安装 opa 安装…"
+  "loc.friendlyName": "Open Policy Agent Installer",
+  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=851275)",
+  "loc.description": "Install Open Policy Agent on agent machine",
+  "loc.instanceNameFormat": "Install opa $(opaVersion)",
+  "loc.input.label.opaVersion": "OPA Version Spec",
+  "loc.input.help.opaVersion": "Specify the version of open policy agent to install",
+  "loc.messages.DownloadOpaFailedFromLocation": "Failed to download opa from location %s. Error %s",
+  "loc.messages.OpaLatestNotKnown": "Cannot get the latest OpenPolicyAgent info from %s. Error %s. Using default OpenPolicyAgent version %s.",
+  "loc.messages.NotAValidSemverVersion": "Version not specified in correct format. E.g: 1.8.2, v1.8.2, 2.8.2, v2.8.2.",
+  "loc.messages.VerifyOpaInstallation": "Verifying opa installation..."
 }

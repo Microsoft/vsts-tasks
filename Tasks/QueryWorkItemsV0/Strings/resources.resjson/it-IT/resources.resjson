@@ -1,13 +1,13 @@
 {
-  "loc.friendlyName": "Esegui query su elementi di lavoro",
-  "loc.helpMarkDown": "[Altre informazioni](https://go.microsoft.com/fwlink/?linkid=870238)",
-  "loc.description": "Esegue una query elemento di lavoro e verifica il numero di elementi restituiti",
-  "loc.instanceNameFormat": "Esegui query su elementi di lavoro",
-  "loc.group.displayName.advanced": "Avanzate",
+  "loc.friendlyName": "Query work items",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870238)",
+  "loc.description": "Execute a work item query and check the number of items returned",
+  "loc.instanceNameFormat": "Query Work Items",
+  "loc.group.displayName.advanced": "Advanced",
   "loc.input.label.queryId": "Query",
-  "loc.input.help.queryId": "Consente di selezionare una query elemento di lavoro salvata da eseguire.",
-  "loc.input.label.maxThreshold": "Soglia massima",
-  "loc.input.help.maxThreshold": "Numero massimo di elementi di lavoro corrispondenti restituiti dalla query.",
-  "loc.input.label.minThreshold": "Soglia minima",
-  "loc.input.help.minThreshold": "Numero minimo di elementi di lavoro corrispondenti restituiti dalla query."
+  "loc.input.help.queryId": "Select a saved work item query to execute.",
+  "loc.input.label.maxThreshold": "Upper threshold",
+  "loc.input.help.maxThreshold": "The maximum number of matching workitems from the query.",
+  "loc.input.label.minThreshold": "Lower threshold",
+  "loc.input.help.minThreshold": "The minimum number of matching workitems from the query."
 }

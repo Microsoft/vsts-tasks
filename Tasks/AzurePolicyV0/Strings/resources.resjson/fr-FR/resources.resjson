@@ -2,7 +2,7 @@
   "loc.friendlyName": "Vérifier la conformité à Azure Policy",
   "loc.helpMarkDown": "",
   "loc.description": "Évaluation de sécurité et de conformité pour Azure Policy",
-  "loc.instanceNameFormat": "Vérifier la conformité de la stratégie",
+  "loc.instanceNameFormat": "Vérifier la conformité à la stratégie",
   "loc.input.label.ConnectedServiceName": "Abonnement Azure",
   "loc.input.help.ConnectedServiceName": "Sélectionnez l'abonnement Azure Resource Manager approprié pour appliquer les stratégies.",
   "loc.input.label.ResourceGroupName": "Groupe de ressources",

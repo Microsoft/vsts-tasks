@@ -1,7 +1,7 @@
 {
   "loc.friendlyName": "Gestione servizio app di Azure",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=831573)",
-  "loc.description": "Start, stop, restart, slot swap, slot delete, install site extensions or enable continuous monitoring for an Azure App Service",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?linkid=831573)",
+  "loc.description": "Esegue avvio, arresto, riavvio, scambio di slot, eliminazione di slot, installazione delle estensioni del sito o abilita il monitoraggio continuo per un'istanza di Servizio app di Azure",
   "loc.instanceNameFormat": "$(Action): $(WebAppName)",
   "loc.group.displayName.AdvancedSettings": "Impostazioni avanzate",
   "loc.input.label.ConnectedServiceName": "Sottoscrizione di Azure",
@@ -172,6 +172,6 @@
   "loc.messages.CouldNotFetchAccessTokenforMSIStatusCode": "Non è stato possibile recuperare il token di accesso per l'entità servizio gestita. Codice di stato: %s. Messaggio di stato: %s",
   "loc.messages.ASE_SSLIssueRecommendation": "Per usare un certificato nel servizio app, il certificato deve essere firmato da un'autorità di certificazione attendibile. Se l'app Web restituisce errori di convalida del certificato, è possibile che si stia usando un certificato autofirmato. Per risolvere tali errori, è necessario impostare una variabile denominata `VSTS_ARM_REST_IGNORE_SSL_ERRORS` sul valore `true` nella pipeline di compilazione o versione.",
   "loc.messages.ExpiredServicePrincipal": "Non è stato possibile recuperare il token di accesso per Azure. Verificare che l'entità servizio usata sia valida e non sia scaduta.",
-  "loc.messages.SwapWithPreviewNotsupported": "Swap with preview isn't supported for Linux webapps and Container webapps.",
-  "loc.messages.InvalidActionForPublishProfileEndpoint": "Invalid Action selected to use with publish profile endpoint!. Supported actions are 'Start/Stop all continuous webjobs' & 'Install Extensions'"
+  "loc.messages.SwapWithPreviewNotsupported": "Lo scambio con anteprima non è supportato per le app Web Linux e di contenitori.",
+  "loc.messages.InvalidActionForPublishProfileEndpoint": "È stata selezionata un'azione non valida per l'uso con l'endpoint del profilo di pubblicazione. Le azioni supportate sono 'Avvia/Arresta tutti i processi Web continui' e 'Installa estensioni'"
 }

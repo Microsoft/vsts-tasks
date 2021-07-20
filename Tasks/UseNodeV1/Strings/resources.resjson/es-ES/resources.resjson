@@ -7,7 +7,7 @@
   "loc.input.help.version": "Especificación de la versión que se va a usar. Ejemplos: 10.x, 10.15.1 >=10.15.0",
   "loc.input.label.checkLatest": "Comprobar la última versión",
   "loc.input.help.checkLatest": "Comprueba siempre en línea la última versión disponible que cumple la especificación de versión. Este valor suele ser false a menos que tenga un escenario específico que deba obtener siempre la última versión. Esto dará lugar a costos de descarga, cuando puede que no sea necesario, especialmente con el grupo de compilación hospedado.",
-  "loc.input.label.force32bit": "Usar la versión de 32 bits en agentes x64",
-  "loc.input.help.force32bit": "Instalará la versión x86 de Node independientemente de la arquitectura de CPU del agente.",
+  "loc.input.label.force32bit": "Usar la versión de 32 bits en agentes x64",
+  "loc.input.help.force32bit": "Instala la versión x86 de Node, independientemente de la arquitectura de CPU del agente.",
   "loc.messages.ToolFailed": "No se pudo instalar el nodo: %s"
 }

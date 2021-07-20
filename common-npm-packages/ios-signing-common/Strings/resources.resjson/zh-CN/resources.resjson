@@ -1,7 +1,7 @@
 {
-  "loc.messages.SignIdNotFound": "未找到 iOS 签名标识。请确认已提供了签名和预配信息。",
-  "loc.messages.TempKeychainSetupFailed": "未能将临时密钥链添加到密钥链搜索路径。",
-  "loc.messages.ProvProfileDetailsNotFound": "未找到预配配置文件 %s 的详细信息",
-  "loc.messages.ProvProfileUUIDNotFound": "未找到预配配置文件 %s 的预配配置文件 UUID。",
-  "loc.messages.ProvProfileNameNotFound": "找不到预配配置文件的预配配置文件名: %s"
+  "loc.messages.SignIdNotFound": "Failed to find iOS signing identity. Verify the signing and provisioning information provided.",
+  "loc.messages.TempKeychainSetupFailed": "Failed to add the temporary keychain to the keychains search path.",
+  "loc.messages.ProvProfileDetailsNotFound": "Failed to find the details for provisioning profile: %s",
+  "loc.messages.ProvProfileUUIDNotFound": "Failed to find provisioning profile UUID for provisioning profile: %s",
+  "loc.messages.ProvProfileNameNotFound": "Failed to find provisioning profile name for provisioning profile: %s"
 }

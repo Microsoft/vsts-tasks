@@ -1,14 +1,14 @@
 {
-  "loc.messages.CreatedBlobForItem": "Blob créé pour l'élément {0}. URI de blob : {1}",
-  "loc.messages.CreatedContainer": "Conteneur {0} créé.",
-  "loc.messages.ErrorInReadStream": "Erreur de lecture du flux : {0}",
-  "loc.messages.ErrorInWriteStream": "Erreur d'écriture du flux : {0}",
-  "loc.messages.FailedToCreateBlob": "Échec de la création du blob {0}. Erreur : {1}",
-  "loc.messages.FailedToCreateContainer": "Échec de la création du conteneur {0}. Erreur : {1}",
-  "loc.messages.FailedToListItemInsideContainer": "Échec du listage des éléments présents dans le conteneur : {0}. Erreur : {1}",
-  "loc.messages.SuccessFullyFetchedItemList": "Récupération (fetch) réussie de la liste des éléments",
-  "loc.messages.UnableToFetchItem": "Impossible de récupérer (fetch) l'élément : {0}. Erreur : {1}",
-  "loc.messages.UploadingItem": "Chargement de {0}.",
-  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "Un jeton de continuation existe. Tentative de récupération (fetch) de la liste des fichiers restants.",
-  "loc.messages.GetArtifactItemsNotSupported": "Obtention des éléments d'artefact non prise en charge, chemin de code non valide"
+  "loc.messages.CreatedBlobForItem": "Created blob for item {0}. Blob uri: {1}",
+  "loc.messages.CreatedContainer": "Created container {0}.",
+  "loc.messages.ErrorInReadStream": "Error in Read stream: {0}",
+  "loc.messages.ErrorInWriteStream": "Error in write stream: {0}",
+  "loc.messages.FailedToCreateBlob": "Failed to create blob {0}. Error: {1}",
+  "loc.messages.FailedToCreateContainer": "Failed to create container {0}. Error: {1}",
+  "loc.messages.FailedToListItemInsideContainer": "Failed to list items inside container: {0}. Error: {1}",
+  "loc.messages.SuccessFullyFetchedItemList": "Successfully fetcted list of items",
+  "loc.messages.UnableToFetchItem": "Unable to fetch item: {0}. Error: {1}",
+  "loc.messages.UploadingItem": "Uploading {0}.",
+  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "Continuation token exists, trying to fetch the list of remaining files.",
+  "loc.messages.GetArtifactItemsNotSupported": "Get artifact items not supported, invalid code path"
 }

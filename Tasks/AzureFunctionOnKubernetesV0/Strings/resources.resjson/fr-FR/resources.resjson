@@ -4,11 +4,11 @@
   "loc.description": "Deploy Azure function to Kubernetes cluster.",
   "loc.instanceNameFormat": "Func on K8s - deploy",
   "loc.group.displayName.serviceConnections": "Service Connections",
-  "loc.group.displayName.commands": "Commandes",
-  "loc.input.label.dockerRegistryServiceConnection": "Connexion de service de registre Docker",
+  "loc.group.displayName.commands": "Commands",
+  "loc.input.label.dockerRegistryServiceConnection": "Docker registry service connection",
   "loc.input.help.dockerRegistryServiceConnection": "Select a Docker registry service connection.",
   "loc.input.label.kubernetesServiceConnection": "Kubernetes service connection",
-  "loc.input.help.kubernetesServiceConnection": "Sélectionnez une connexion au service Kubernetes.",
+  "loc.input.help.kubernetesServiceConnection": "Select a Kubernetes service connection.",
   "loc.input.label.namespace": "Kubernetes namespace",
   "loc.input.help.namespace": "Kubernetes namespace",
   "loc.input.label.secretName": "Secret Name",
@@ -26,8 +26,10 @@
   "loc.messages.AllContainersNotInReadyState": "All the containers are not in a ready state.",
   "loc.messages.CouldNotDeterminePodStatus": "Could not determine the pod's status due to the error: %s",
   "loc.messages.CouldNotDetermineServiceStatus": "Could not determine the service %s status due to the error: %s",
-  "loc.messages.FileContentSynced": "Synchronisation effectuée du contenu du fichier sur le disque. Le contenu est %s.",
-  "loc.messages.NoDataWrittenOnFile": "Aucune donnée n'a été écrite dans le fichier %s",
+  "loc.messages.FileContentSynced": "Synced the file content to the disk. The content is %s.",
+  "loc.messages.KubectlClientVersion": "Kubectl Client Version",
+  "loc.messages.KubectlServerVersion": "Kubectl Server Version",
+  "loc.messages.NoDataWrittenOnFile": "No data was written into the file %s",
   "loc.messages.ServiceExternalIP": "service %s external IP is %s",
-  "loc.messages.WritingDockerConfigToTempFile": "Écriture de la configuration Docker dans le fichier temporaire. Chemin de fichier : %s. Configuration Docker : %s"
+  "loc.messages.WritingDockerConfigToTempFile": "Writing Docker config to temp file. File path: %s, Docker config: %s"
 }

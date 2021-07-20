@@ -1,15 +1,15 @@
 {
-  "loc.messages.AZ_AzureRMProfileModuleNotFound": "モジュール 'AzureRM.Profile' が見つかりません。'AzureRM' モジュールが完全にインストールされていない可能性があります。管理者特権のセッションから次の PowerShell コマンドを実行すると、問題が解決する場合があります。Import-Module AzureRM ; Install-AzureRM",
-  "loc.messages.AZ_CertificateAuthNotSupported": "証明書に基づく認証はサポートされていません。Azure PowerShell モジュールが見つかりません。",
-  "loc.messages.AZ_CredentialsError": "配置に使用した Azure 資格情報にエラーがありました。",
-  "loc.messages.AZ_ModuleNotFound": "バージョン '{0}' のモジュール '{1}' が見つかりませんでした。モジュールを最近インストールした場合は、Azure Pipelines のタスク エージェントを再起動後にもう一度お試しください。",
-  "loc.messages.AZ_RequiresMinVersion0": "必要な最小バージョン ({0}) の Azure PowerShell モジュールがインストールされていません。",
-  "loc.messages.AZ_ServicePrincipalError": "配置に使用したサービス プリンシパルにエラーがありました。",
-  "loc.messages.AZ_ServicePrincipalAuthNotSupportedAzureVersion0": "バージョン '{0}' の Azure モジュールでは、サービス プリンシパル認証はサポートされていません。",
-  "loc.messages.AZ_UnsupportedAuthScheme0": "'{0}' は Azure エンドポイントではサポートされていない認証スキームです。",
-  "loc.messages.AZ_AvailableModules": "利用可能な {0} モジュールの一覧:",
-  "loc.messages.AZ_InvalidARMEndpoint": "指定した AzureRM エンドポイントは無効です。",
-  "loc.messages.AZ_MsiAccessNotConfiguredProperlyFailure": "マネージド ID のアクセス トークンをフェッチできませんでした。仮想マシンのマネージド ID を構成してください 'https://aka.ms/azure-msi-docs'。状態コード: '{0}'、エラー メッセージ: {1}",
-  "loc.messages.AZ_MsiAccessTokenFetchFailure": "マネージド ID のアクセス トークンをフェッチできませんでした。状態コード: '{0}'、エラー メッセージ: {1}",
-  "loc.messages.AZ_MsiFailure": "マネージド ID のアクセス トークンをフェッチできませんでした。{0}"
+  "loc.messages.AZ_AzureRMProfileModuleNotFound": "Module 'AzureRM.Profile' not found. The 'AzureRM' module may not be fully installed. Running the  following PowerShell commands from an elevated session may resolve the issue: Import-Module AzureRM ; Install-AzureRM",
+  "loc.messages.AZ_CertificateAuthNotSupported": "Certificate based authentication is not supported. Azure PowerShell module is not found.",
+  "loc.messages.AZ_CredentialsError": "There was an error with the Azure credentials used for the deployment.",
+  "loc.messages.AZ_ModuleNotFound": "Could not find the modules: '{1}' with Version: '{0}'. If the module was recently installed, retry after restarting the Azure Pipelines task agent.",
+  "loc.messages.AZ_RequiresMinVersion0": "The required minimum version ({0}) of the Azure PowerShell module is not installed.",
+  "loc.messages.AZ_ServicePrincipalError": "There was an error with the service principal used for the deployment.",
+  "loc.messages.AZ_ServicePrincipalAuthNotSupportedAzureVersion0": "Service principal authentication is not supported in version '{0}' of the Azure module.",
+  "loc.messages.AZ_UnsupportedAuthScheme0": "Unsupported authentication scheme '{0}' for Azure endpoint.",
+  "loc.messages.AZ_AvailableModules": "The list of available {0} modules:",
+  "loc.messages.AZ_InvalidARMEndpoint": "Specified AzureRM endpoint is invalid.",
+  "loc.messages.AZ_MsiAccessNotConfiguredProperlyFailure": "Could not fetch access token for Managed Identity. Please configure Managed Identity for virtual machine 'https://aka.ms/azure-msi-docs'. Status code: '{0}', Error message: {1}",
+  "loc.messages.AZ_MsiAccessTokenFetchFailure": "Could not fetch access token for Managed Identity. Status code: '{0}', Error message: {1}",
+  "loc.messages.AZ_MsiFailure": "Could not fetch access token for Managed Identity. {0}"
 }

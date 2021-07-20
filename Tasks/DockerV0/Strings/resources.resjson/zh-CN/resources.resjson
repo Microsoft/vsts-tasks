@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Docker",
-  "loc.helpMarkDown": "[更多信息](https://go.microsoft.com/fwlink/?linkid=848006)",
+  "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?linkid=848006)",
   "loc.description": "生成、标记、推送或运行 Docker 映像，或者运行 Docker 命令",
   "loc.instanceNameFormat": "$(action)",
   "loc.group.displayName.advanced": "高级选项",

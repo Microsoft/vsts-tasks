@@ -1,13 +1,13 @@
 {
-  "loc.friendlyName": "작업 항목 쿼리",
-  "loc.helpMarkDown": "[자세한 정보](https://go.microsoft.com/fwlink/?linkid=870238)",
-  "loc.description": "작업 항목 쿼리를 실행하고 반환되는 항목 수를 확인합니다.",
-  "loc.instanceNameFormat": "작업 항목 쿼리",
-  "loc.group.displayName.advanced": "고급",
-  "loc.input.label.queryId": "쿼리",
-  "loc.input.help.queryId": "실행할 저장된 작업 항목 쿼리를 선택합니다.",
-  "loc.input.label.maxThreshold": "상한 임계값",
-  "loc.input.help.maxThreshold": "쿼리에서 일치하는 작업 항목의 최대 수입니다.",
-  "loc.input.label.minThreshold": "하한 임계값",
-  "loc.input.help.minThreshold": "쿼리에서 일치하는 작업 항목의 최소 수입니다."
+  "loc.friendlyName": "Query work items",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870238)",
+  "loc.description": "Execute a work item query and check the number of items returned",
+  "loc.instanceNameFormat": "Query Work Items",
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.queryId": "Query",
+  "loc.input.help.queryId": "Select a saved work item query to execute.",
+  "loc.input.label.maxThreshold": "Upper threshold",
+  "loc.input.help.maxThreshold": "The maximum number of matching workitems from the query.",
+  "loc.input.label.minThreshold": "Lower threshold",
+  "loc.input.help.minThreshold": "The minimum number of matching workitems from the query."
 }

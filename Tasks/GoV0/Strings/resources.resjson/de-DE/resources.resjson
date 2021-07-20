@@ -1,16 +1,16 @@
 {
   "loc.friendlyName": "Go",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=867582)",
-  "loc.description": "Hiermit wird eine Go-Anwendung abgerufen, erstellt oder getestet oder ein benutzerdefinierter Go-Befehl ausgeführt.",
-  "loc.instanceNameFormat": "go $(Befehl)",
-  "loc.group.displayName.advanced": "Erweitert",
-  "loc.input.label.command": "Befehl",
-  "loc.input.help.command": "Wählen Sie einen Go-Befehl für die Ausführung aus. Wählen Sie \"Benutzerdefiniert\", um einen Befehl zu verwenden, der hier nicht aufgeführt ist.",
-  "loc.input.label.customCommand": "Benutzerdefinierter Befehl",
-  "loc.input.help.customCommand": "Ein benutzerdefinierter Go-Befehl, der ausgeführt werden soll. Geben Sie beispielsweise zur Ausführung von \"go version\" den Befehl \"version\" ein.",
-  "loc.input.label.arguments": "Argumente",
-  "loc.input.help.arguments": "Optionale Argumente für den ausgewählten Befehl. Es kann sich z. B. um Argumente zur Buildzeit für den Befehl \"go build\" handeln.",
-  "loc.input.label.workingDirectory": "Arbeitsverzeichnis",
-  "loc.input.help.workingDirectory": "Das Arbeitsverzeichnis, in dem der Befehl ausgeführt wird. Falls leer, wird der Stamm des Repositorys (für Builds) oder der Artefakte (für Releases) verwendet, dieser entspricht dem Wert von \"$(System.DefaultWorkingDirectory)\".",
-  "loc.messages.TaskFailedWithError": "Fehler bei Go-Aufgabe: %s"
+  "loc.description": "Get, build, or test a Go application, or run a custom Go command",
+  "loc.instanceNameFormat": "go $(command)",
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.command": "Command",
+  "loc.input.help.command": "Select a Go command to run. Select 'Custom' to use a command not listed here.",
+  "loc.input.label.customCommand": "Custom command",
+  "loc.input.help.customCommand": "A custom Go command to execute. For example, to execute 'go version', enter 'version'.",
+  "loc.input.label.arguments": "Arguments",
+  "loc.input.help.arguments": "Optional arguments to the selected command. For example, build-time arguments for the 'go build' command.",
+  "loc.input.label.workingDirectory": "Working directory",
+  "loc.input.help.workingDirectory": "The working directory where the command will run. When empty, the root of the repository (for builds) or artifacts (for releases) is used, which is the value of '$(System.DefaultWorkingDirectory)'.",
+  "loc.messages.TaskFailedWithError": "The Go task failed with an error: %s"
 }

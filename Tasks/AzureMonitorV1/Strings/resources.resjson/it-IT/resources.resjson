@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Esegui query su avvisi di Monitoraggio di Azure",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=870240)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?linkid=870240)",
   "loc.description": "Consente di osservare le regole di Monitoraggio di Azure configurate per gli avvisi attivi",
   "loc.instanceNameFormat": "Esegui query su avvisi di Monitoraggio di Azure",
   "loc.releaseNotes": "Novità della versione 1.0:<br/>&nbsp;È stato aggiunto il supporto per gli avvisi unificati di Monitoraggio di Azure per le query.",
@@ -9,7 +9,7 @@
   "loc.input.help.connectedServiceNameARM": "Consente di selezionare una sottoscrizione di Azure Resource Manager di cui eseguire il monitoraggio.",
   "loc.input.label.ResourceGroupName": "Gruppo di risorse",
   "loc.input.help.ResourceGroupName": "Consente di specificare il nome di un gruppo di risorse di cui eseguire il monitoraggio.",
-  "loc.input.label.filterType": "Tipo filtro",
+  "loc.input.label.filterType": "Tipo di filtro",
   "loc.input.help.filterType": "Filtra in base a una risorsa o a una regola di avviso specifica. Il valore predefinito è Nessuna.",
   "loc.input.label.resource": "Risorsa",
   "loc.input.help.resource": "Selezionare la risorsa di Azure di cui eseguire il monitoraggio.",

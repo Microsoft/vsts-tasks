@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Programma di installazione dell'interfaccia della riga di comando di Docker",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=851275)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?linkid=851275)",
   "loc.description": "Installa l'interfaccia della riga di comando di Docker nel computer agente.",
   "loc.instanceNameFormat": "Installa Docker $(dockerVersion)",
   "loc.input.label.dockerVersion": "Versione Docker",

@@ -20,7 +20,7 @@
   "loc.input.help.multicontainerConfigFile": "Docker-Compose 파일의 경로입니다. 정규화된 경로이거나 기본 작업 디렉터리의 상대 경로여야 합니다.",
   "loc.input.label.containerCommand": "시작 명령 ",
   "loc.input.help.containerCommand": "시작 명령을 입력합니다. 예: <br/>dotnet exec filename.dll<br/>dotnet filename.dll",
-  "loc.input.label.appSettings": "응용 프로그램 설정",
+  "loc.input.label.appSettings": "앱 설정",
   "loc.input.help.appSettings": "구문 -key 값 다음에 오는 웹앱 응용 프로그램 설정을 편집합니다. 공백이 포함되는 값은 큰따옴표로 묶어야 합니다.<br /> <b>예</b> : -Port 5000 -RequestTimeout 5000 <br /> -WEBSITE_TIME_ZONE \"Eastern Standard Time\"",
   "loc.input.label.configurationStrings": "구성 설정",
   "loc.input.help.configurationStrings": "구문 -key 값 다음에 오는 웹앱 구성 설정을 편집합니다. 공백이 포함되는 값은 큰따옴표로 묶어야 합니다.<br /> 예 : -phpVersion 5.6 -linuxFxVersion: node|6.11",

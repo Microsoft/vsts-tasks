@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Jenkins 队列作业",
-  "loc.helpMarkDown": "此任务在 [Jenkins](https://jenkins.io/)服务器上排列作业。完全集成功能要求在 Jenkins 上安装 [Team Foundation Server 插件](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin)。[详细信息](http://go.microsoft.com/fwlink/?LinkId=816956)。",
+  "loc.helpMarkDown": "[详细了解此任务](http://go.microsoft.com/fwlink/?LinkId=816956)。此任务在 [Jenkins](https://jenkins.io/)服务器上排列作业。完全集成功能要求在 Jenkins 上安装 [Team Foundation Server 插件](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin)。",
   "loc.description": "在 Jenkins 服务器上排列作业",
   "loc.instanceNameFormat": "排列 Jenkins 作业: $(jobName)",
   "loc.group.displayName.advanced": "高级",
@@ -21,7 +21,7 @@
   "loc.input.label.jobParameters": "作业参数",
   "loc.input.help.jobParameters": "以 \"<parameterName>=<parameterValue>\"<b></b> 的形式指定作业参数(每行一个)<p>若要将参数设置为空值(用于替代默认值)，可以不使用参数值。例如，指定 \"<parameterName>=\"<b></b><p>支持使用变量。例如，若要将 \"commitId\"<b></b> 参数值设置为生成的 Git commit ID，请使用: \"commitId=$(Build.SourceVersion)\"<b></b>。请参阅 [有关变量的文档](https://go.microsoft.com/fwlink/?linkid=875288)了解更多详细信息。<p>支持的 Jenkins 参数类型包括: <ul>\"Boolean\"<li></li>、\"Choice\"<li></li>、\"Password\"<li></li>、\"String\"<li></li></ul>",
   "loc.messages.FailedToGenerateSummary": "未能生成版本摘要。",
-  "loc.messages.succeeded": "已成功",
+  "loc.messages.succeeded": "成功",
   "loc.messages.unstable": "不稳定",
   "loc.messages.failed": "失败",
   "loc.messages.notbuilt": "未生成",

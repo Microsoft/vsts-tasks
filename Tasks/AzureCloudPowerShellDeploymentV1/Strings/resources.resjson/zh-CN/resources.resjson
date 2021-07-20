@@ -17,7 +17,7 @@
   "loc.input.label.ServiceName": "服务名称",
   "loc.input.help.ServiceName": "选择或输入现有的云服务名称。",
   "loc.input.label.ServiceLocation": "服务位置",
-  "loc.input.help.ServiceLocation": "为新服务部署选择区域。可能的选项有 **美国东部**、**美国东部 2**、**美国中部**、**美国中南部**、**美国西部**、**北欧**、**西欧** 和其他选项。",
+  "loc.input.help.ServiceLocation": "为新服务部署选择区域。可能的选项有 **美国东部**、**美国东部 2**、**美国中部**、**美国中南部**、**美国西部**、**欧洲北部**、**欧洲西部** 和其他选项。",
   "loc.input.label.CsPkg": "CsPkg",
   "loc.input.help.CsPkg": "默认项目目录下 CsPkg 的路径。",
   "loc.input.label.CsCfg": "CsCfg",

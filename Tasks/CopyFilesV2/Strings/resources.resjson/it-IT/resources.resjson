@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Copia file",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708389)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?LinkID=708389)",
   "loc.description": "Copia i file da una cartella di origine a una cartella di destinazione usando criteri corrispondenti a percorsi di file (non percorsi di cartella)",
   "loc.instanceNameFormat": "Copia file in: $(TargetFolder)",
   "loc.releaseNotes": "Coerenza dei criteri di corrispondenza.",
@@ -19,6 +19,8 @@
   "loc.input.help.flattenFolders": "Rende flat la struttura di cartelle e copia tutti i file nella cartella di destinazione specificata.",
   "loc.input.label.preserveTimestamp": "Mantieni timestamp di destinazione",
   "loc.input.help.preserveTimestamp": "Quando si usa il file di origine iniziale, mantiene il timestamp del file di destinazione.",
+  "loc.input.label.retryCount": "Numero di tentativi eseguiti per copiare il file",
+  "loc.input.help.retryCount": "Specificare il numero di tentativi eseguiti per copiare il file. Ciò potrebbe aiutare a risolvere i problemi intermittenti, ad esempio nei percorsi di destinazione UNC su un host remoto.",
   "loc.messages.FoundNFiles": "sono stati trovati %d file",
   "loc.messages.CleaningTargetFolder": "Pulizia della cartella di destinazione: %s",
   "loc.messages.FileAlreadyExistAt": "Il file %s esiste già in %s",

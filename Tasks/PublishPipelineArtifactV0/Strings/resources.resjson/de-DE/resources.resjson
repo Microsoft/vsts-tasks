@@ -1,10 +1,10 @@
 {
-  "loc.friendlyName": "Pipelineartefakt veröffentlichen",
-  "loc.helpMarkDown": "Veröffentlichen Sie ein lokales Verzeichnis oder eine Datei als ein benanntes Artefakt für die aktuelle Pipeline.",
-  "loc.description": "Hiermit wird ein lokales Verzeichnis oder eine Datei als benanntes Artefakt für die aktuelle Pipeline veröffentlicht.",
-  "loc.instanceNameFormat": "Pipelineartefakt veröffentlichen",
-  "loc.input.label.artifactName": "Der Name dieses Artefakts.",
-  "loc.input.help.artifactName": "Der Name dieses Artefakts.",
-  "loc.input.label.targetPath": "Pfad für Veröffentlichung",
-  "loc.input.help.targetPath": "Der Ordner- oder Dateipfad für die Veröffentlichung. Es kann sich um einen vollqualifizierten Pfad oder um einen Pfad relativ zum Stamm des Repositorys handeln. Platzhalter werden nicht unterstützt, [Variablen](https://go.microsoft.com/fwlink/?LinkID=550988) werden unterstützt."
+  "loc.friendlyName": "Publish pipeline artifact",
+  "loc.helpMarkDown": "Publish a local directory or file as a named artifact for the current pipeline.",
+  "loc.description": "Publish a local directory or file as a named artifact for the current pipeline",
+  "loc.instanceNameFormat": "Publish Pipeline Artifact",
+  "loc.input.label.artifactName": "The name of this artifact",
+  "loc.input.help.artifactName": "The name of this artifact.",
+  "loc.input.label.targetPath": "Path to publish",
+  "loc.input.help.targetPath": "The folder or file path to publish. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported."
 }

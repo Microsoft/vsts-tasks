@@ -5,7 +5,7 @@
   "loc.instanceNameFormat": "스크립트 $(filename) 실행",
   "loc.group.displayName.advanced": "고급",
   "loc.input.label.filename": "경로",
-  "loc.input.help.filename": "실행할 cmd 또는 bat 스크립트의 경로입니다. 정규화된 경로이거나 기본 작업 디렉터리에 대한 상대 경로여야 합니다.",
+  "loc.input.help.filename": "실행할 cmd 또는 bat 스크립트의 경로입니다. 정규화된 경로이거나 기본 작업 디렉터리에 대해 상대적이여야 합니다(작업 디렉터리는 이 작업에 대해 지정할 수 있는 'workingFolder'와 다를 수 있습니다).",
   "loc.input.label.arguments": "인수",
   "loc.input.help.arguments": "인수를 cmd 또는 bat 스크립트에 전달했습니다.",
   "loc.input.label.modifyEnvironment": "환경 수정",

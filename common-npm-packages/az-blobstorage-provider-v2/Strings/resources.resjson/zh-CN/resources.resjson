@@ -1,14 +1,14 @@
 {
-  "loc.messages.CreatedBlobForItem": "已为项 {0} 创建 blob。Blob URI: {1}",
-  "loc.messages.CreatedContainer": "已创建容器 {0}。",
-  "loc.messages.ErrorInReadStream": "读取流中出错: {0}",
-  "loc.messages.ErrorInWriteStream": "写入流中出错: {0}",
-  "loc.messages.FailedToCreateBlob": "未能创建 blob {0}。错误: {1}",
-  "loc.messages.FailedToCreateContainer": "未能创建容器 {0}。错误: {1}",
-  "loc.messages.FailedToListItemInsideContainer": "未能在容器中列出项: {0}。错误: {1}",
-  "loc.messages.SuccessFullyFetchedItemList": "已成功提取项列表",
-  "loc.messages.UnableToFetchItem": "无法提取项: {0}。错误: {1}",
-  "loc.messages.UploadingItem": "正在上载 {0}。",
-  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "继续标记存在，正在尝试提取剩余文件列表。",
-  "loc.messages.GetArtifactItemsNotSupported": "获取不受支持的项目项、无效的代码路径"
+  "loc.messages.CreatedBlobForItem": "Created blob for item {0}. Blob uri: {1}",
+  "loc.messages.CreatedContainer": "Created container {0}.",
+  "loc.messages.ErrorInReadStream": "Error in Read stream: {0}",
+  "loc.messages.ErrorInWriteStream": "Error in write stream: {0}",
+  "loc.messages.FailedToCreateBlob": "Failed to create blob {0}. Error: {1}",
+  "loc.messages.FailedToCreateContainer": "Failed to create container {0}. Error: {1}",
+  "loc.messages.FailedToListItemInsideContainer": "Failed to list items inside container: {0}. Error: {1}",
+  "loc.messages.SuccessFullyFetchedItemList": "Successfully fetcted list of items",
+  "loc.messages.UnableToFetchItem": "Unable to fetch item: {0}. Error: {1}",
+  "loc.messages.UploadingItem": "Uploading {0}.",
+  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "Continuation token exists, trying to fetch the list of remaining files.",
+  "loc.messages.GetArtifactItemsNotSupported": "Get artifact items not supported, invalid code path"
 }

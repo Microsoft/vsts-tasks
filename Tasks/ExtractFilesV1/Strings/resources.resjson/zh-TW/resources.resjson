@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "解壓縮檔案",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkId=800269)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkId=800269)",
   "loc.description": "解壓縮各種封存檔與壓縮檔，例如 .7z、.rar、.tar.gz 及 .zip",
   "loc.instanceNameFormat": "解壓縮檔案 $(message)",
   "loc.input.label.archiveFilePatterns": "封存檔樣式",
@@ -9,6 +9,10 @@
   "loc.input.help.destinationFolder": "用以解壓縮後之封存檔的目的資料夾。若檔案不在存放庫中，請使用 [變數](https://go.microsoft.com/fwlink/?LinkID=550988)。例如: $(agent.builddirectory)",
   "loc.input.label.cleanDestinationFolder": "清理目的地資料後再解壓縮",
   "loc.input.help.cleanDestinationFolder": "選取此選項可先清理目的地目錄，然後再將封存檔內容解壓縮到其中。",
+  "loc.input.label.overwriteExistingFiles": "覆寫現有的檔案",
+  "loc.input.help.overwriteExistingFiles": "選取此選項可覆寫目的地目錄中的現有檔案。",
+  "loc.input.label.pathToSevenZipTool": "7z 公用程式的路徑",
+  "loc.input.help.pathToSevenZipTool": "您可以指定 7z 公用程式的自訂路徑。例如，在 Windows 上為 \"C:\\7z\\7z.exe\"，在 MacOS/Ubuntu 上為 \"/usr/local/bin/7z\"。",
   "loc.messages.ExtractDirFailedinFindFiles": "因為指定的封存 %s 為目錄，所以解壓縮失敗。",
   "loc.messages.ExtractNotFileFailed": "因為指定的封存 %s 不是檔案，所以無法予以解壓縮。",
   "loc.messages.ExtractNotAccessibleFile": "因為無法存取指定的封存 %s，所以無法予以解壓縮: %s",
@@ -28,8 +32,9 @@
   "loc.messages.DecompressedTempTar": "已將暫存 tar 從 %s 解壓縮至 %s",
   "loc.messages.RemoveTempDir": "正在移除暫存資料夾: %s",
   "loc.messages.ExtractFailedCannotCreate": "因為無法建立暫存位置，所以檔案 %s 解壓縮失敗: %s",
+  "loc.messages.NoFilesFound": "使用指定的檔案模式找不到任何封存",
   "loc.messages.FoundFiles": "找到 %d 個可解壓縮的檔案:",
-  "loc.messages.CleanDestDir": "正於解壓縮前清理目的地資料夾: %s",
+  "loc.messages.CleanDestDir": "正於擷取前清理目的地資料夾: %s",
   "loc.messages.CreateDestDir": "正在建立目的地資料夾: %s",
   "loc.messages.SucceedMsg": "已成功解壓縮所有檔案。"
 }

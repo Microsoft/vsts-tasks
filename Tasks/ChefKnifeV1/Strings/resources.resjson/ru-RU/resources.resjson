@@ -1,12 +1,12 @@
 {
   "loc.friendlyName": "Chef Knife",
   "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/chef-knife-readme)",
-  "loc.description": "Выполнение скриптов с помощью команд Knife на рабочей станции Chef",
-  "loc.instanceNameFormat": "Сценарий Knife Chef: $(ScriptPath)",
-  "loc.input.label.ConnectedServiceName": "Подписка Chef",
-  "loc.input.help.ConnectedServiceName": "Подписка Chef, которую нужно настроить перед выполнением команд knife",
-  "loc.input.label.ScriptPath": "Путь к скрипту",
-  "loc.input.help.ScriptPath": "Путь к сценарию. Это должен быть полный путь или путь относительно рабочего каталога по умолчанию.",
-  "loc.input.label.ScriptArguments": "Аргументы скрипта",
-  "loc.input.help.ScriptArguments": "Дополнительные параметры для передачи в сценарий. Могут быть как порядковыми, так и именованными."
+  "loc.description": "Run scripts with Knife commands on your Chef workstation",
+  "loc.instanceNameFormat": "Chef Knife script: $(ScriptPath)",
+  "loc.input.label.ConnectedServiceName": "Chef Subscription",
+  "loc.input.help.ConnectedServiceName": "Chef subscription to configure before running knife commands",
+  "loc.input.label.ScriptPath": "Script Path",
+  "loc.input.help.ScriptPath": "Path of the script. Should be fully qualified path or relative to the default working directory.",
+  "loc.input.label.ScriptArguments": "Script Arguments",
+  "loc.input.help.ScriptArguments": "Additional parameters to pass to Script.  Can be either ordinal or named parameters."
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Publier des artefacts de build",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708390)",
+  "loc.helpMarkDown": "[En savoir plus sur cette tâche](https://go.microsoft.com/fwlink/?LinkID=708390)",
   "loc.description": "Publier des artefacts de build sur Azure Pipelines ou un partage de fichiers Windows",
   "loc.instanceNameFormat": "Publier l'artefact : $(ArtifactName)",
   "loc.group.displayName.advanced": "Avancé",
@@ -16,10 +16,13 @@
   "loc.input.help.Parallel": "Choisissez s'il est nécessaire de copier les fichiers en parallèle à l'aide de plusieurs threads pour un meilleur débit potentiel. Si ce paramètre n'est pas activé, un seul thread est utilisé.",
   "loc.input.label.ParallelCount": "Nombre parallèle",
   "loc.input.help.ParallelCount": "Entrez le degré de parallélisme ou le nombre de threads utilisés pour effectuer la copie. La valeur doit être au moins égal à 1 et inférieur à 128.",
-  "loc.input.label.FileCopyOptions": "File copy options",
-  "loc.input.help.FileCopyOptions": "Pass additional options to the Robocopy command.",
+  "loc.input.label.FileCopyOptions": "Options de copie de fichiers",
+  "loc.input.help.FileCopyOptions": "Passez des options supplémentaires à la commande Robocopy.",
+  "loc.input.label.StoreAsTar": "Envoyer l’artefacts avant de le charger",
+  "loc.input.help.StoreAsTar": "Ajoutez tous les fichiers du chemin de publication dans une archive archive archive avant de les charger. Cela vous permet de conserver les autorisations de fichier UNIX. Utilisez l’option « extractTars » de la tâche DownloadBuildArtifacts pour extraire automatiquement les éléments téléchargés.",
   "loc.messages.ErrorFileShareLinux": "La publication d'artefacts d'un agent Linux ou macOS vers un partage de fichiers n'est pas prise en charge. Changez le type d'artefact en 'Azure Pipelines', ou utilisez un agent Windows.",
   "loc.messages.ErrorHostTypeNotSupported": "Cette tâche doit s'exécuter dans une build pour permettre la publication d'artefacts sur Azure Pipelines.",
   "loc.messages.PublishBuildArtifactsFailed": "Échec de la publication des artefacts de build. Erreur : %s",
-  "loc.messages.UnexpectedParallelCount": "Nombre parallèle '%s' non pris en charge. Entrez un nombre compris entre 1 et 128."
+  "loc.messages.UnexpectedParallelCount": "Nombre parallèle '%s' non pris en charge. Entrez un nombre compris entre 1 et 128.",
+  "loc.messages.TarExtractionNotSupportedInWindows": "L’extraction par extraction d’extraction n’est pas prise en charge sur Windows"
 }

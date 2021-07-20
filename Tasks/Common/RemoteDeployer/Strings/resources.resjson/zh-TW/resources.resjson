@@ -1,12 +1,12 @@
 {
-  "loc.messages.RemoteDeployer_ConnectedMachines": "已為機器建立 PSSession:'{0}'",
-  "loc.messages.RemoteDeployer_NotConnectedMachines": "無法為機器建立 PSSession:'{0}:{1}'",
-  "loc.messages.RemoteDeployer_ScriptJobFailed": "遠端指令碼作業執行失敗。ComputerName: '{0}'，訊息: '{1}'",
-  "loc.messages.RemoteDeployer_NonZeroExitCode": "ComputerName: '{0}' 非零的結束代碼: '{1}'",
-  "loc.messages.RemoteDeployer_ScriptExecutionSucceeded": "ComputerName: '{0}' 的指令碼執行成功",
-  "loc.messages.RemoteDeployer_UnknownStatus": "未知的遠端指令碼作業執行狀態: '{0}'",
-  "loc.messages.RemoteDeployer_UnableToGetRemoteJobResults": "無法取得遠端指令碼作業結果",
-  "loc.messages.PS_TM_UnableToCreatePSSession": "無法建立 pssession。錯誤: '{0}'",
-  "loc.messages.RemoteDeployer_JobResultEvaluationFailure": "至少有一個遠端作業失敗。如需詳細資料，請參閱記錄檔。ErrorCodes: '{0}'",
-  "loc.messages.RemoteDeployer_UnableToUploadTargetMachineLogs": "無法上傳目標電腦記錄檔。SourceFolder: '{0}'。錯誤: '{1}'"
+  "loc.messages.RemoteDeployer_ConnectedMachines": "PSSession created for Machines:'{0}'",
+  "loc.messages.RemoteDeployer_NotConnectedMachines": "PSSession could not be created for Machine:'{0}:{1}'",
+  "loc.messages.RemoteDeployer_ScriptJobFailed": "Execution of remote script job failed. ComputerName: '{0}', Message: '{1}'",
+  "loc.messages.RemoteDeployer_NonZeroExitCode": "Non-Zero exit code: '{1}' for ComputerName: '{0}'",
+  "loc.messages.RemoteDeployer_ScriptExecutionSucceeded": "Script execution succeeded for ComputerName: '{0}'",
+  "loc.messages.RemoteDeployer_UnknownStatus": "Unknown remote script job execution status: '{0}'",
+  "loc.messages.RemoteDeployer_UnableToGetRemoteJobResults": "Unable to get remote script job results",
+  "loc.messages.PS_TM_UnableToCreatePSSession": "Unable to create pssession. Error: '{0}'",
+  "loc.messages.RemoteDeployer_JobResultEvaluationFailure": "Atleast one remote job failed. Consult logs for more details. ErrorCodes(s): '{0}'",
+  "loc.messages.RemoteDeployer_UnableToUploadTargetMachineLogs": "Unable to upload target machine logs files. SourceFolder: '{0}'. Error: '{1}'"
 }

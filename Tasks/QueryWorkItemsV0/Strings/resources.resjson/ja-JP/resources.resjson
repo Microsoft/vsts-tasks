@@ -1,13 +1,13 @@
 {
-  "loc.friendlyName": "作業項目のクエリ",
-  "loc.helpMarkDown": "[詳細](https://go.microsoft.com/fwlink/?linkid=870238)",
-  "loc.description": "作業項目クエリを実行し、返される項目数を確認します",
-  "loc.instanceNameFormat": "作業項目のクエリ",
-  "loc.group.displayName.advanced": "詳細設定",
-  "loc.input.label.queryId": "クエリ",
-  "loc.input.help.queryId": "実行する保存済みの作業項目クエリを選択します。",
-  "loc.input.label.maxThreshold": "上限しきい値",
-  "loc.input.help.maxThreshold": "クエリに基づいて一致する作業項目の最大数。",
-  "loc.input.label.minThreshold": "下限しきい値",
-  "loc.input.help.minThreshold": "クエリに基づいて一致する作業項目の最小数。"
+  "loc.friendlyName": "Query work items",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870238)",
+  "loc.description": "Execute a work item query and check the number of items returned",
+  "loc.instanceNameFormat": "Query Work Items",
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.queryId": "Query",
+  "loc.input.help.queryId": "Select a saved work item query to execute.",
+  "loc.input.label.maxThreshold": "Upper threshold",
+  "loc.input.help.maxThreshold": "The maximum number of matching workitems from the query.",
+  "loc.input.label.minThreshold": "Lower threshold",
+  "loc.input.help.minThreshold": "The minimum number of matching workitems from the query."
 }

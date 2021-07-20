@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure IoT Edge",
-  "loc.helpMarkDown": "Pour obtenir de l'aide, consultez la [documentation](https://aka.ms/azure-iot-edge-ci-cd-docs)",
+  "loc.helpMarkDown": "Consultez la [documentation](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-continuous-integration-continuous-deployment) pour obtenir de l’aide.",
   "loc.description": "Générer et déployer une image Azure IoT Edge",
   "loc.instanceNameFormat": "Azure IoT Edge - $(action)",
   "loc.group.displayName.advanced_push": "Avancé",
@@ -37,10 +37,10 @@
   "loc.input.help.defaultPlatform": "Dans le fichier **.template.json**, vous pouvez laisser la plateforme de modules non spécifiée. Pour ces modules, la plateforme **par défaut** est utilisée.",
   "loc.input.label.fillRegistryCredential": "Ajouter les informations d'identification du registre au manifeste de déploiement",
   "loc.input.help.fillRegistryCredential": "Ajouter les informations d'identification de registre pour l'envoi (push) d'images Docker au manifeste de déploiement",
-  "loc.input.label.deploymentManifestOutputPath": "Output path",
-  "loc.input.help.deploymentManifestOutputPath": "The output path of generated deployment manifest",
-  "loc.input.label.validateGeneratedDeploymentManifest": "Validate the schema of generated deployment manifest",
-  "loc.input.help.validateGeneratedDeploymentManifest": "Fail this step if the generated deployment manifest does not pass schema validation. You can search `Azure IoT Edge deployment` in [JSON Schema Store](http://schemastore.org/json/) to find latest schema.",
+  "loc.input.label.deploymentManifestOutputPath": "Chemin de sortie",
+  "loc.input.help.deploymentManifestOutputPath": "Chemin de sortie du manifeste de déploiement généré",
+  "loc.input.label.validateGeneratedDeploymentManifest": "Valider le schéma du manifeste de déploiement généré",
+  "loc.input.help.validateGeneratedDeploymentManifest": "Échec de cette étape si le manifeste de déploiement généré ne réussit pas la validation de schéma. Vous pouvez rechercher 'Azure IoT Edge deployment' dans le [magasin de schémas JSON](http://schemastore.org/json/) pour trouver le dernier schéma.",
   "loc.input.label.bypassModules": "Ignorer le ou les modules",
   "loc.input.help.bypassModules": "Sélectionnez le ou les modules que vous **N'AVEZ PAS** besoin de générer (ou d'envoyer) dans le fichier .template.json. Spécifiez les noms de modules en les séparant par des virgules.\n Exemple : Si vous avez 2 modules **ExempleModule1,ExempleModule2** dans votre fichier .template.json, et si vous souhaitez simplement générer ou envoyer (push) **ExempleModule1**, définissez **ExempleModule2** en tant que module à ignorer. N'indiquez rien si vous souhaitez générer tous les modules dans le fichier .template.json.",
   "loc.messages.BuildingModules": "Génération des images de module...",
@@ -61,7 +61,7 @@
   "loc.messages.DependencyInstallSuccess": "%s installé avec la version %s",
   "loc.messages.DependencyInstallFail": "Échec de l'installation de %s. Consultez l'erreur détaillée en mode débogage",
   "loc.messages.TemplateFileInvalid": "Le chemin du fichier de modèle est non valide : %s",
-  "loc.messages.InvalidContainerRegistry": "Failed to fetch container registry authentication token, please check you container registry setting in build task. The username for container registry is %s",
+  "loc.messages.InvalidContainerRegistry": "Échec de la récupération (fetch) du jeton d'authentification du registre de conteneurs. Vérifiez le paramètre du registre de conteneurs dans la tâche de build. Le nom d'utilisateur du registre de conteneurs est %s",
   "loc.messages.DeploymentFileNotFound": "Le fichier de déploiement est introuvable. Vérifiez que le chemin du fichier de déploiement est correctement défini dans la tâche.",
   "loc.messages.ValidDeploymentFileNotFound": "Impossible de localiser un fichier de déploiement valide. Vérifiez que le chemin du fichier de déploiement est correctement défini dans la tâche.",
   "loc.messages.AzureSdkNotFound": "Kit Azure SDK introuvable",
@@ -71,6 +71,6 @@
   "loc.messages.CheckModuleImageExistenceError": "%s n'existe pas, ou les informations d'identification ne sont pas définies correctement. Erreur : %s",
   "loc.messages.StartGenerateDeploymentManifest": "Début de la génération du manifeste de déploiement...",
   "loc.messages.FinishGenerateDeploymentManifest": "Fin de la génération du manifeste de déploiement.",
-  "loc.messages.LoginRegistrySucess": "Successfully logged in to registry %s",
-  "loc.messages.SkipSettingEnvironmentVariableForSecret": "Environment variable %s already exist. Skip setting environment varialbe for secret: %s."
+  "loc.messages.LoginRegistrySucess": "Connexion réussie au registre %s",
+  "loc.messages.SkipSettingEnvironmentVariableForSecret": "La variable d'environnement %s existe déjà. La définition de variable d'environnement est ignorée pour le secret %s."
 }

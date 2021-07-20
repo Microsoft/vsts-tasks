@@ -1,15 +1,16 @@
 {
-  "loc.friendlyName": "Ruby バージョンの使用",
+  "loc.friendlyName": "Use Ruby version",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=2005989) or [see the Ruby documentation](https://www.ruby-lang.org/)",
-  "loc.description": "ツール キャッシュから Ruby の指定されたバージョンを使用し、必要に応じて PATH に追加します",
-  "loc.instanceNameFormat": "Ruby $(versionSpec) を使用する",
-  "loc.input.label.versionSpec": "バージョンの仕様",
-  "loc.input.help.versionSpec": "使用する Ruby バージョンのバージョン範囲または正確なバージョン。",
-  "loc.input.label.addToPath": "PATH に追加",
-  "loc.input.help.addToPath": "取得した Ruby バージョンを PATH 環境変数の先頭に追加して、後続のタスクまたはスクリプトで出力変数を使うことなく利用できるようにします。",
-  "loc.messages.ListAvailableVersions": "使用可能なバージョン:",
-  "loc.messages.PlatformNotRecognized": "プラットフォームが認識されません",
-  "loc.messages.ToolNotFoundMicrosoftHosted": "これが Microsoft によってホストされているエージェントの場合、このイメージが %s の side-by-side バージョンを %s でサポートしているかをご確認ください。",
-  "loc.messages.ToolNotFoundSelfHosted": "これがセルフホストテッド エージェントの場合、side-by-side の %s バージョンを %s で構成する方法をご確認ください。",
-  "loc.messages.VersionNotFound": "バージョン仕様 %s (アーキテクチャ %s) が Agent.ToolsDirectory 内のどのバージョンにも一致しませんでした。"
+  "loc.description": "Use the specified version of Ruby from the tool cache, optionally adding it to the PATH",
+  "loc.instanceNameFormat": "Use Ruby $(versionSpec)",
+  "loc.input.label.versionSpec": "Version spec",
+  "loc.input.help.versionSpec": "Version range or exact version of a Ruby version to use.",
+  "loc.input.label.addToPath": "Add to PATH",
+  "loc.input.help.addToPath": "Prepend the retrieved Ruby version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable.",
+  "loc.messages.ListAvailableVersions": "Available versions:",
+  "loc.messages.PlatformNotRecognized": "Platform not recognized",
+  "loc.messages.ToolNotFoundMicrosoftHosted": "If this is a Microsoft-hosted agent, check that this image supports side-by-side versions of %s at %s.",
+  "loc.messages.ToolNotFoundSelfHosted": "If this is a self-hosted agent, see how to configure side-by-side %s versions at %s.",
+  "loc.messages.VersionNotFound": "Version spec %s for architecture %s did not match any version in Agent.ToolsDirectory.",
+  "loc.messages.ExactVersionNotRecommended": "It is not recommended to specify exact version on Microsoft-Hosted agents. Patch version of Ruby can be replaced by new one on Hosted agents without notice and build stops to work. it is recommended to specify only major or major and minor version (Example: `2` or `2.4`)"
 }

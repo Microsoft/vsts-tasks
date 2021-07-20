@@ -16,5 +16,6 @@
   "loc.messages.PyPyNotFound": "在 Agent.ToolsDirectory 中找不到 PyPy%d 的安装。",
   "loc.messages.ToolNotFoundMicrosoftHosted": "如果这是 Microsoft 托管的代理，请检查此映像是否支持 %s 并行版本(位于 %s)。",
   "loc.messages.ToolNotFoundSelfHosted": "如果这是自托管代理，请查看如何配置 %s 并行版本(位于 %s)。",
-  "loc.messages.VersionNotFound": "版本规范 %s（针对体系结构 %s)与 Agent.ToolsDirectory 中的任何版本均不匹配。"
+  "loc.messages.VersionNotFound": "体系结构 %s 的版本规范 %s 与 Agent.ToolsDirectory 中的任何版本都不匹配。",
+  "loc.messages.ExactVersionNotRecommended": "不建议在 Microsoft 托管代理上指定确切版本。在托管代理上，Python 的补丁版本可能会在没有通知的情况下被新版本替换，并且内部版本会失效。建议仅指定主要版本或主要和次要版本(例如: `3` 或 `3.6`) "
 }

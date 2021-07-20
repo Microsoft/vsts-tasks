@@ -1,9 +1,9 @@
 {
   "loc.friendlyName": "Xcode",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613730) or [see the Xcode documentation](https://developer.apple.com/xcode/)",
+  "loc.helpMarkDown": "[См. дополнительные сведения об этой задаче](https://go.microsoft.com/fwlink/?LinkID=613730) или [документацию по Xcode](https://developer.apple.com/xcode/)",
   "loc.description": "Вы можете собирать, тестировать и архивировать рабочие области Xcode в macOS. При необходимости создавайте пакеты приложений.",
   "loc.instanceNameFormat": "Xcode $(actions)",
-  "loc.releaseNotes": "This version of the task is compatible with Xcode 8 - 11. Features that were solely to maintain compatibility with Xcode 7 have been removed. This task has better options for using Microsoft-hosted macOS agents.",
+  "loc.releaseNotes": "Эта версия задачи совместима с Xcode версий 8–11. Функции, которые были предназначены исключительно для обеспечения совместимости с Xcode 7, были удалены. Задача имеет более удобные параметры для использования агентов macOS, размещенных на серверах Майкрософт.",
   "loc.group.displayName.sign": "Подписывание и подготовка",
   "loc.group.displayName.package": "Параметры пакета",
   "loc.group.displayName.devices": "Устройства и симуляторы",
@@ -19,7 +19,7 @@
   "loc.input.label.scheme": "Схема",
   "loc.input.help.scheme": "(Необязательно) Введите имя схемы, определенной в Xcode. Это должна быть общая схема, для которой в разделе <strong>Управляемые схемы</strong> в Xcode должен стоять флажок <strong>Общая</strong>. Если указать <strong>Путь к рабочей области или проекту</strong> выше без определения схемы и в рабочей области есть одна общая схема, она будет использована автоматически.",
   "loc.input.label.xcodeVersion": "Версия Xcode",
-  "loc.input.help.xcodeVersion": "Укажите целевую версию Xcode. Выберите \"По умолчанию\", чтобы использовать версию Xcode по умолчанию на компьютере агента. При указании номера версии (например, \"Xcode 9\") расположение этой версии определяется с помощью переменных среды на компьютере агента (например, \"XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer\"). Выберите команду \"Указать путь\", чтобы указать путь к определенному каталогу для разработчиков Xcode.",
+  "loc.input.help.xcodeVersion": "Укажите целевую версию Xcode. Выберите \"По умолчанию\", чтобы использовать версию Xcode по умолчанию на компьютере агента. Номер версии (например, \"Xcode 9\") указывается в зависимости от переменных среды, заданных на компьютере агента для расположения версии (например, \"XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer\"). Выберите команду \"Указать путь\", чтобы указать путь к определенному каталогу для разработчиков Xcode.<br/>Примечание. Версия Xcode 12 устанавливается на macOS-10.15 (или более поздней версии)",
   "loc.input.label.xcodeDeveloperDir": "Путь к папке для разработчиков Xcode",
   "loc.input.help.xcodeDeveloperDir": "(Необязательно) Введите путь к указанному каталогу для разработчиков Xcode (например, \"/Applications/Xcode_9.0.0.app/Contents/Developer/\"). Это удобно, если на компьютере агента установлено несколько версий Xcode.",
   "loc.input.label.packageApp": "Создать пакет приложения",
@@ -64,8 +64,12 @@
   "loc.input.help.cwd": "(Необязательно) Укажите рабочий каталог, в котором будет вестись сборка. Если значение не указано, будет использоваться корневой каталог хранилища.",
   "loc.input.label.useXcpretty": "Использовать xcpretty",
   "loc.input.help.useXcpretty": "Укажите, следует ли использовать xcpretty для форматирования выходных данных xcodebuild. Для этого средство xcpretty должно быть установлено на компьютере агента. Если средство xcpretty не установлено, выводятся необработанные выходные данные xcodebuild. Средство xcpretty предустановлено в размещенных агентах сборки Azure Pipelines. См. страницу [xcpretty](https://github.com/supermarin/xcpretty) в GitHub.",
+  "loc.input.label.xcprettyArgs": "Аргументы xcpretty",
+  "loc.input.help.xcprettyArgs": "Дополнительные аргументы для передачи команде xcpretty.",
   "loc.input.label.publishJUnitResults": "Опубликовать результаты тестов в Azure Pipelines",
   "loc.input.help.publishJUnitResults": "Укажите, следует ли публиковать результаты теста JUnit в Azure Pipelines. Для создания результатов теста JUnit требуется включить xcpretty.",
+  "loc.input.label.testRunTitle": "Название тестового запуска",
+  "loc.input.help.testRunTitle": "Название тестового запуска при публикации результатов теста JUnit в Azure Pipelines.",
   "loc.messages.SignIdNotFound": "Не удалось найти удостоверение подписывания для iOS. Убедитесь, что указаны необходимые данные для подписывания и подготовки.",
   "loc.messages.TempKeychainSetupFailed": "Не удалось добавить временную цепочку ключей в путь поиска цепочек ключей.",
   "loc.messages.ProvProfileDetailsNotFound": "Не удалось найти сведения о профиле подготовки: %s",
@@ -92,5 +96,6 @@
   "loc.messages.OutputDirectoryIgnored": "Выходной каталог для выходных данных сборки (двоичных файлов) игнорируется. Выходной каталог не может быть указан для действия \"%s\".",
   "loc.messages.NoDestinationPlatformWarning": "Тесты пользовательского интерфейса должны запускаться в симуляторе или на подключенном устройстве. В задаче Xcode присвойте параметру \"Платформа назначения\" значение, отличное от \"По умолчанию\".",
   "loc.messages.XcprettyNotInstalled": "Средство xcpretty не установлено на сервере сборки. Будут выведены необработанные выходные данные xcodebuild. Если средство xcpretty не установлено, опубликовать результаты тестов не удастся.",
-  "loc.messages.XcodeRequiresMac": "Для использования Xcode требуется агент macOS. Сборка с Xcode в Linux или Windows не поддерживается Apple."
+  "loc.messages.XcodeRequiresMac": "Для использования Xcode требуется агент macOS. Сборка с Xcode в Linux или Windows не поддерживается Apple.",
+  "loc.messages.UsingDefaultSimulator": "Используется симулятор по умолчанию: %s."
 }

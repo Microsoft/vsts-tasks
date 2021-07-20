@@ -23,7 +23,7 @@
   "loc.input.label.FailOnStandardError": "因标准错误失败",
   "loc.input.help.FailOnStandardError": "如果为 true，当有错误被写入错误管道或有数据被写入标准错误流时，此任务将失败。",
   "loc.input.label.TargetAzurePs": "Azure PowerShell 版本",
-  "loc.input.help.TargetAzurePs": "对于托管代理，受支持的 Azure PowerShell 版本为: 2.1.0、3.8.0、4.2.1、5.1.1 和 6.7.0(托管的 VS2017 队列)、3.6.0(托管队列)。\n若要在代理上选择最新的可用版本，选择“最新安装的版本”。\n\n对于专用代理，可以使用“指定版本”指定 Azure PowerShell 的首选版本",
+  "loc.input.help.TargetAzurePs": "对于托管代理，受支持的 Azure PowerShell 版本为: 2.1.0、3.8.0、4.2.1、5.1.1 和 6.7.0(托管的 VS2017 队列)。\n若要在代理上选择最新的可用版本，选择“最新安装的版本”。\n\n对于专用代理，可以使用“指定版本”指定 Azure PowerShell 的首选版本",
   "loc.input.label.CustomTargetAzurePs": "首选 Azure PowerShell 版本",
   "loc.input.help.CustomTargetAzurePs": "首选 Azure PowerShell 版本需为正确的语义版本，例如 1.2.3。不支持 2.\\*、2.3.\\* 等正则表达式。托管 VS2017 池当前支持 Azure 模块版本: 2.1.0、3.8.0、4.2.1、5.1.1 和 AzureRM 模块版本: 2.1.0、3.8.0、4.2.1、5.1.1、6.7.0",
   "loc.messages.InvalidScriptArguments0": "脚本参数“{0}”无效。不允许换行。",

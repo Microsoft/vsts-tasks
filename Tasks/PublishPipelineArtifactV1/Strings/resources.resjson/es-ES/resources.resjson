@@ -1,18 +1,18 @@
 {
-  "loc.friendlyName": "Publicar artefacto de canalización",
+  "loc.friendlyName": "Publish pipeline artifact",
   "loc.helpMarkDown": "Publish (upload) a file or directory as a named artifact for the current run. Published artifacts can be downloaded in other jobs, stages, or pipelines using the \"Download pipeline artifact\" task.",
   "loc.description": "Publish (upload) a file or directory as a named artifact for the current run",
-  "loc.instanceNameFormat": "Publicar artefacto de canalización",
+  "loc.instanceNameFormat": "Publish Pipeline Artifact",
   "loc.input.label.path": "File or directory path",
   "loc.input.help.path": "The path of the file or directory to publish. Can be absolute or relative to the default working directory. Can include [variables](https://go.microsoft.com/fwlink/?LinkID=550988), but wildcards are not supported.",
-  "loc.input.label.artifactName": "Nombre del artefacto",
+  "loc.input.label.artifactName": "Artifact name",
   "loc.input.help.artifactName": "Name of the artifact to publish. If not set, defaults to a unique ID scoped to the job.",
-  "loc.input.label.artifactType": "Ubicación de publicación de artefactos",
+  "loc.input.label.artifactType": "Artifact publish location",
   "loc.input.help.artifactType": "Choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent.",
   "loc.input.label.fileSharePath": "File share path",
-  "loc.input.help.fileSharePath": "El recurso compartido de archivos en el que se copiarán los archivos de artefacto. Puede incluir variables. Ejemplo: \\\\\\\\my\\\\share\\\\$(Build.DefinitionName)\\\\$(Build.BuildNumber). No se admite la publicación de artefactos de un agente de Linux o macOS en un recurso compartido de archivos.",
-  "loc.input.label.parallel": "Copia en paralelo",
-  "loc.input.help.parallel": "Seleccione si quiere copiar los archivos en paralelo con varios subprocesos para obtener un mayor rendimiento potencial. Si esta configuración no está habilitada, se usará un subproceso.",
-  "loc.input.label.parallelCount": "Recuento de elementos en paralelo",
-  "loc.input.help.parallelCount": "Especifique el grado de paralelismo o el número de subprocesos usados para realizar la copia. Debe ser un valor entre 1 y 128."
+  "loc.input.help.fileSharePath": "The file share to which the artifact files will be copied. This can include variables. Example: \\\\\\\\my\\\\share\\\\$(Build.DefinitionName)\\\\$(Build.BuildNumber). Publishing artifacts from a Linux or macOS agent to a file share is not supported.",
+  "loc.input.label.parallel": "Parallel copy",
+  "loc.input.help.parallel": "Select whether to copy files in parallel using multiple threads for greater potential throughput. If this setting is not enabled, one thread will be used.",
+  "loc.input.label.parallelCount": "Parallel count",
+  "loc.input.help.parallelCount": "Enter the degree of parallelism, or number of threads used, to perform the copy. The value must be at least 1 and not greater than 128."
 }

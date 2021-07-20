@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "パイプライン成果物のダウンロード",
-  "loc.helpMarkDown": "パイプラインからローカル パスに、名前付き成果物をダウンロードします。",
-  "loc.description": "パイプラインに関連付けられている成果物をダウンロードします",
-  "loc.instanceNameFormat": "パイプライン成果物をダウンロードします",
-  "loc.input.label.pipelineId": "ダウンロード元の特定のパイプライン",
-  "loc.input.help.pipelineId": "ダウンロード元のパイプラインです。空白の場合は、現在のパイプラインがターゲットになります。",
-  "loc.input.label.artifactName": "ダウンロードする成果物の名前。",
-  "loc.input.help.artifactName": "ダウンロードする成果物の名前です。成果物は、パイプライン成果物である必要があります。",
-  "loc.input.label.targetPath": "ダウンロード先のパス",
-  "loc.input.help.targetPath": "成果物をダウンロードするフォルダーのパスです。これは、完全修飾パスまたはリポジトリのルートからの相対パスです。ワイルドカードはサポートされていません。[変数](https://go.microsoft.com/fwlink/?LinkID=550988) はサポートされています。フォルダーが存在しない場合は作成されます。"
+  "loc.friendlyName": "Download pipeline artifact",
+  "loc.helpMarkDown": "Download named artifact from a pipeline to a local path.",
+  "loc.description": "Downloads an artifact associated with a pipeline",
+  "loc.instanceNameFormat": "Download Pipeline Artifact",
+  "loc.input.label.pipelineId": "The specific pipeline to download from",
+  "loc.input.help.pipelineId": "The pipeline to download from. Target the current pipeline if left blank.",
+  "loc.input.label.artifactName": "The name of artifact to download.",
+  "loc.input.help.artifactName": "The name of artifact to download. The artifact must be a pipeline artifact.",
+  "loc.input.label.targetPath": "Path to download to",
+  "loc.input.help.targetPath": "The folder path to download the artifact to. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported. If the folder doesn't exist it will be created."
 }
