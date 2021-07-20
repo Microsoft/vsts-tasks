@@ -1,12 +1,12 @@
 {
-  "loc.messages.RemoteDeployer_ConnectedMachines": "次のマシンの PSSession が作成されました: '{0}'",
-  "loc.messages.RemoteDeployer_NotConnectedMachines": "次のマシンの PSSession を作成できませんでした: '{0}:{1}'",
-  "loc.messages.RemoteDeployer_ScriptJobFailed": "リモート スクリプト ジョブの実行が失敗しました。コンピューター名: '{0}'、メッセージ: '{1}'",
-  "loc.messages.RemoteDeployer_NonZeroExitCode": "コンピューター名: '{0}' の非ゼロの終了コード: '{1}' ",
-  "loc.messages.RemoteDeployer_ScriptExecutionSucceeded": "次のコンピューター名に対するスクリプトの実行が成功しました: '{0}'",
-  "loc.messages.RemoteDeployer_UnknownStatus": "不明なリモート スクリプト ジョブの実行状態: '{0}'",
-  "loc.messages.RemoteDeployer_UnableToGetRemoteJobResults": "リモート スクリプト ジョブの結果を取得できません",
-  "loc.messages.PS_TM_UnableToCreatePSSession": "pssession を作成できません。エラー: '{0}'",
-  "loc.messages.RemoteDeployer_JobResultEvaluationFailure": "少なくとも 1 つのリモート ジョブが失敗しました。詳細については、ログを参照してください。ErrorCode: '{0}'",
-  "loc.messages.RemoteDeployer_UnableToUploadTargetMachineLogs": "対象のマシンのログ ファイルをアップロードできません。SourceFolder: '{0}'。エラー: '{1}'"
+  "loc.messages.RemoteDeployer_ConnectedMachines": "PSSession created for Machines:'{0}'",
+  "loc.messages.RemoteDeployer_NotConnectedMachines": "PSSession could not be created for Machine:'{0}:{1}'",
+  "loc.messages.RemoteDeployer_ScriptJobFailed": "Execution of remote script job failed. ComputerName: '{0}', Message: '{1}'",
+  "loc.messages.RemoteDeployer_NonZeroExitCode": "Non-Zero exit code: '{1}' for ComputerName: '{0}'",
+  "loc.messages.RemoteDeployer_ScriptExecutionSucceeded": "Script execution succeeded for ComputerName: '{0}'",
+  "loc.messages.RemoteDeployer_UnknownStatus": "Unknown remote script job execution status: '{0}'",
+  "loc.messages.RemoteDeployer_UnableToGetRemoteJobResults": "Unable to get remote script job results",
+  "loc.messages.PS_TM_UnableToCreatePSSession": "Unable to create pssession. Error: '{0}'",
+  "loc.messages.RemoteDeployer_JobResultEvaluationFailure": "Atleast one remote job failed. Consult logs for more details. ErrorCodes(s): '{0}'",
+  "loc.messages.RemoteDeployer_UnableToUploadTargetMachineLogs": "Unable to upload target machine logs files. SourceFolder: '{0}'. Error: '{1}'"
 }

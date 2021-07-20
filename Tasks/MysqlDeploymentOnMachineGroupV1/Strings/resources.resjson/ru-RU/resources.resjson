@@ -1,18 +1,18 @@
 {
   "loc.friendlyName": "Развертывание базы данных MySQL",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/mysql-deployment-on-machine-group)",
+  "loc.helpMarkDown": "[См. дополнительные сведения об этой задаче](https://aka.ms/mysql-deployment-on-machine-group)",
   "loc.description": "Запуск скриптов и внесение изменений в базу данных MySQL",
   "loc.instanceNameFormat": "Развертывание с помощью: $(TaskNameSelector)",
   "loc.input.label.TaskNameSelector": "Развертывание MySQL с помощью",
-  "loc.input.help.TaskNameSelector": "Выберите один из вариантов между файлом сценария и встроенным сценарием.",
+  "loc.input.help.TaskNameSelector": "Выберите один из вариантов: \"Файл скрипта\" или \"Встроенный скрипт\".",
   "loc.input.label.SqlFile": "Скрипт MySQL",
   "loc.input.help.SqlFile": "Полный путь к файлу скрипта на компьютере агента автоматизации или UNC-путь, доступный для агента автоматизации, например \\\\\\\\BudgetIT\\DeployBuilds\\script.sql. Кроме того, здесь можно использовать предопределенные системные переменные, например $(agent.releaseDirectory). Здесь можно использовать файл, содержащий инструкции SQL.​",
   "loc.input.label.SqlInline": "Встроенный скрипт MySQL",
-  "loc.input.help.SqlInline": "Введите сценарий MySQL для выполнения в базе данных, выбранной выше.",
+  "loc.input.help.SqlInline": "Введите скрипт MySQL для выполнения в базе данных, выбранной выше.",
   "loc.input.label.ServerName": "Имя узла",
   "loc.input.help.ServerName": "Имя сервера \"База данных для MySQL\". Пример: localhost. При подключении с помощью MySQL Workbench это то же значение, которое используется как \"Имя узла\" в разделе \"Параметры\"",
   "loc.input.label.DatabaseName": "Имя базы данных",
-  "loc.input.help.DatabaseName": "Имя базы данных (при наличии), в которой требуется выполнить указанный ниже сценарий; в противном случае сам сценарий можно использовать для создания базы данных.",
+  "loc.input.help.DatabaseName": "Имя базы данных (при наличии), в которой требуется выполнить указанный ниже скрипт. В противном случае сам скрипт можно использовать для создания базы данных.",
   "loc.input.label.SqlUsername": "Имя пользователя MySQL",
   "loc.input.help.SqlUsername": "При подключении с помощью MySQL Workbench это то же значение, которое используется как \"Имя пользователя\" в разделе \"Параметры\".",
   "loc.input.label.SqlPassword": "Пароль",
@@ -31,5 +31,6 @@
   "loc.messages.CallbackCannotBeNull": "Обратный вызов не может иметь значение NULL.",
   "loc.messages.UnableToCreateDatabaseException": "Не удается создать базу данных.",
   "loc.messages.WindowMysqlClientMissingError": "Клиент MySQL отсутствует на компьютере агента Windows. Установите его, запустив файл скрипта https://aka.ms/window-mysqlcli-installer установщика клиента MySQL на компьютере агента.",
-  "loc.messages.LinuxMysqlClientMissingError": "Клиент MySQL отсутствует на компьютере агента Linux. Установите его, выполнив команду sudo apt-get install mysql-client."
+  "loc.messages.LinuxMysqlClientMissingError": "Клиент MySQL отсутствует на компьютере агента Linux. Установите его, выполнив команду sudo apt-get install mysql-client.",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "Пакет с указанным шаблоном не найден"
 }

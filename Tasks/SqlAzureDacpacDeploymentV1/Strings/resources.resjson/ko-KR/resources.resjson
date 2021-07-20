@@ -12,7 +12,7 @@
   "loc.input.label.ConnectedServiceNameARM": "Azure 구독",
   "loc.input.help.ConnectedServiceNameARM": "SQL 파일을 배포할 대상 Azure Resource Manager 구독",
   "loc.input.label.AuthenticationType": "인증 형식",
-  "loc.input.help.AuthenticationType": "Azure SQL Server 데이터베이스에 연결하는 옵션을 지정합니다. 사용할 수 있는 옵션은 Azure SQL Server 데이터베이스 정보, SQL Server 연결 문자열, AAD 인증 암호 또는 통합입니다. SQL Server 인증의 경우 SQL Server의 사용자 자격 증명을 사용하고, AD 인증의 경우 SQL Server에 구성된 AD 사용자의 자격 증명을 사용합니다.",
+  "loc.input.help.AuthenticationType": "Azure SQL Server 데이터베이스에 연결하는 옵션을 지정합니다. 옵션은 Azure SQL Server 데이터베이스 세부 정보, SQL Server 연결 문자열, AAD 인증 암호 또는 통합을 제공하거나 서비스 주체를 사용하는 것입니다. SQL Server 인증의 경우 SQL Server의 사용자 자격 증명을 사용하고, AD 인증의 경우 SQL Server에 구성된 AD 사용자의 자격 증명을 사용합니다.",
   "loc.input.label.ServerName": "Azure SQL Server",
   "loc.input.help.ServerName": "Azure SQL Server 이름입니다(예: Fabrikam.database.windows.net,1433 또는 Fabrikam.database.windows.net).",
   "loc.input.label.DatabaseName": "데이터베이스",
@@ -77,5 +77,6 @@
   "loc.messages.SAD_BacpacFilePath": "BACPAC 파일 경로:",
   "loc.messages.SAD_PublishProfilePath": "게시 프로필 경로:",
   "loc.messages.SAD_DriftReportWarning": "데이터베이스에 대한 드리프트 보고서를 생성하는 중 데이터베이스가 데이터 계층 애플리케이션으로 등록되었는지 확인하세요.",
-  "loc.messages.SAD_InvokeSQLCmdNotSupportingConnectionString": "가져온 Invoke-Sqlcmd는 connectionString을 지원하지 않습니다. SQLServer PS 모듈을 설치하세요."
+  "loc.messages.SAD_InvokeSQLCmdNotSupportingConnectionString": "가져온 Invoke-Sqlcmd는 connectionString을 지원하지 않습니다. SQLServer PS 모듈을 설치하세요.",
+  "loc.messages.SAD_NoServerSpecified": "서버를 지정하지 않았습니다. 원본 또는 대상 서버를 지정하세요."
 }

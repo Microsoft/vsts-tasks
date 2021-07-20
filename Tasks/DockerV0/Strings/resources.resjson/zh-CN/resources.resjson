@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Docker",
-  "loc.helpMarkDown": "[更多信息](https://go.microsoft.com/fwlink/?linkid=848006)",
+  "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?linkid=848006)",
   "loc.description": "生成、标记、推送或运行 Docker 映像，或者运行 Docker 命令",
   "loc.instanceNameFormat": "$(action)",
   "loc.group.displayName.advanced": "高级选项",
@@ -16,6 +16,8 @@
   "loc.input.help.action": "选择 Docker 操作。",
   "loc.input.label.dockerFile": "Docker 文件",
   "loc.input.help.dockerFile": "Dockerfile 路径。",
+  "loc.input.label.addBaseImageData": "将基本映像元数据添加到映像",
+  "loc.input.help.addBaseImageData": "默认情况下，将添加基本映像数据(如基本映像名称和摘要)，这有助于提升可跟踪性。可以使用此输入选择退出此默认行为。",
   "loc.input.label.buildArguments": "生成参数",
   "loc.input.help.buildArguments": "Docker 文件的生成-时间变量。在新的一行指定每个名称=值对。",
   "loc.input.label.defaultContext": "使用默认的生成上下文",

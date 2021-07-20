@@ -1,12 +1,15 @@
 {
   "loc.friendlyName": "CMake",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613719)",
-  "loc.description": "Générer avec le système de build multiplateforme CMake",
+  "loc.description": "Build with the CMake cross-platform build system",
   "loc.instanceNameFormat": "CMake $(cmakeArgs)",
-  "loc.input.label.cwd": "Répertoire de travail",
-  "loc.input.help.cwd": "Répertoire de travail actuel pendant l'exécution de cmake.",
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.cwd": "Working Directory",
+  "loc.input.help.cwd": "Current working directory when cmake is run.",
   "loc.input.label.cmakeArgs": "Arguments",
-  "loc.input.help.cmakeArgs": "Arguments passés à cmake",
-  "loc.messages.CMakeReturnCode": "Sortie de CMake. Code de retour : %d",
-  "loc.messages.CMakeFailed": "Échec de CMake. Erreur : %s"
+  "loc.input.help.cmakeArgs": "Arguments passed to cmake",
+  "loc.input.label.runInsideShell": "Run cmake command inside shell",
+  "loc.input.help.runInsideShell": "CMake arguments will be handled like they would be inside of an OS specific shell. It can be used to handle environment variables inside of argument strings.",
+  "loc.messages.CMakeReturnCode": "CMake exited with return code: %d",
+  "loc.messages.CMakeFailed": "CMake failed with error: %s"
 }

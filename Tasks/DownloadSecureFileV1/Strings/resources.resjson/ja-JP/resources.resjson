@@ -1,10 +1,12 @@
 {
-  "loc.friendlyName": "セキュア ファイルのダウンロード",
+  "loc.friendlyName": "Download secure file",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=862069)",
   "loc.description": "Download a secure file to the agent machine",
-  "loc.instanceNameFormat": "セキュア ファイルのダウンロード",
-  "loc.input.label.secureFile": "セキュア ファイル",
+  "loc.instanceNameFormat": "Download secure file",
+  "loc.input.label.secureFile": "Secure File",
   "loc.input.help.secureFile": "The file name or GUID of the secure file to download to the agent machine. The file will be deleted after the pipeline runs.",
   "loc.input.label.retryCount": "Retry Count",
-  "loc.input.help.retryCount": "Optional number of times to retry downloading a secure file if the download fails."
+  "loc.input.help.retryCount": "Optional number of times to retry downloading a secure file if the download fails.",
+  "loc.input.label.socketTimeout": "Socket Timeout",
+  "loc.input.help.socketTimeout": "Optional timeout for a socket associated with downloading secure file request in ms."
 }

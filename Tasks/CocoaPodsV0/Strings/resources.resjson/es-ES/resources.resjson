@@ -1,16 +1,16 @@
 {
   "loc.friendlyName": "CocoaPods",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613745)",
-  "loc.description": "Instala dependencias de CocoaPods para proyectos Swift y Objective-C de Cocoa.",
-  "loc.instanceNameFormat": "instalación de pod",
-  "loc.group.displayName.advanced": "Avanzado",
-  "loc.input.label.cwd": "Directorio de trabajo",
-  "loc.input.help.cwd": "Especifique el directorio de trabajo en el cual ejecutar esta tarea. Si se deja en blanco, se usará el directorio de repositorio.",
-  "loc.input.label.forceRepoUpdate": "Forzar actualización del repositorio",
-  "loc.input.help.forceRepoUpdate": "Al seleccionar esta opción, se fuerza la ejecución de \"pod repo update\" antes de instalar.",
-  "loc.input.label.projectDirectory": "Directorio del proyecto",
-  "loc.input.help.projectDirectory": "Opcionalmente, puede especificar la ruta de acceso a la raíz del directorio del proyecto. Si se deja en blanco, se usará el proyecto especificado en el archivo Podfile. Si no se especifica ningún proyecto, se buscará un proyecto Xcode. Si se encuentra más de un proyecto Xcode, se producirá un error.",
-  "loc.messages.PodReturnCode": "El comando \"pod\" se cerró con el código de devolución: %d",
-  "loc.messages.PodFailed": "Error en el comando \"pod\": %s",
-  "loc.messages.CocoaPodsNotFound": "No se encontró el comando \"pod\". Instale Cocoapods en la máquina del agente (https://cocoapods.org)."
+  "loc.description": "Install CocoaPods dependencies for Swift and Objective-C Cocoa projects",
+  "loc.instanceNameFormat": "pod install",
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.cwd": "Working directory",
+  "loc.input.help.cwd": "Specify the working directory in which to execute this task. If left empty, the repository directory will be used.",
+  "loc.input.label.forceRepoUpdate": "Force repo update",
+  "loc.input.help.forceRepoUpdate": "Selecting this option will force running 'pod repo update' before install.",
+  "loc.input.label.projectDirectory": "Project directory",
+  "loc.input.help.projectDirectory": "Optionally specify the path to the root of the project directory. If left empty, the project specified in the Podfile will be used. If no project is specified, then a search for an Xcode project will be made. If more than one Xcode project is found, an error will occur.",
+  "loc.messages.PodReturnCode": "The 'pod' command exited with return code: %d",
+  "loc.messages.PodFailed": "The 'pod' command failed with error: %s",
+  "loc.messages.CocoaPodsNotFound": "The 'pod' command was not found. Please install CocoaPods on the agent machine (https://cocoapods.org/)."
 }

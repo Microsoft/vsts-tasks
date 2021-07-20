@@ -19,6 +19,8 @@
   "loc.input.help.flattenFolders": "平展文件夹结构并将所有文件复制到指定的目标文件夹。",
   "loc.input.label.preserveTimestamp": "保留目标时间戳",
   "loc.input.help.preserveTimestamp": "使用原始源文件，保留目标文件时间戳。",
+  "loc.input.label.retryCount": "复制该文件的重试计数",
+  "loc.input.help.retryCount": "指定复制该文件的重试计数。它可以帮助解决间歇性问题，例如远程主机上的 UNC 目标路径的问题。",
   "loc.messages.FoundNFiles": "已找到 %d 个文件",
   "loc.messages.CleaningTargetFolder": "正在清理目标文件夹: %s",
   "loc.messages.FileAlreadyExistAt": "文件 %s 已存在于 %s",

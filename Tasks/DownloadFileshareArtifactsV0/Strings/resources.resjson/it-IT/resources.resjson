@@ -4,7 +4,7 @@
   "loc.description": "Consente di scaricare gli artefatti da una condivisione file, ad esempio \\\\condivisione\\drop",
   "loc.instanceNameFormat": "Scarica gli artefatti da una condivisione file",
   "loc.group.displayName.advanced": "Avanzate",
-  "loc.input.label.filesharePath": "Percorso condivisione file",
+  "loc.input.label.filesharePath": "Percorso della condivisione file",
   "loc.input.help.filesharePath": "Percorso della condivisione file, ad esempio \\\\server\\cartella",
   "loc.input.label.artifactName": "Nome dell'artefatto",
   "loc.input.help.artifactName": "Nome dell'artefatto da scaricare, ad esempio drop",

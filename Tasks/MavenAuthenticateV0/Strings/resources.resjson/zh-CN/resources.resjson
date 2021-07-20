@@ -14,5 +14,6 @@
   "loc.messages.Info_SettingsXmlRead": "正在向设置文件 %s 添加身份验证。",
   "loc.messages.Info_CreatingSettingsXml": "正在路径 %s 上创建新的 settings.xml。",
   "loc.messages.Info_WritingToSettingsXml": "正在使用已添加的身份验证编写新的 settings.xml。",
-  "loc.messages.Error_InvalidServiceConnection": "%s 的服务连接无效。"
+  "loc.messages.Error_InvalidServiceConnection": "%s 的服务连接无效。",
+  "loc.messages.Error_FailedCleanupM2": "未能从用户 settings.xml 文件中删除凭据: %s"
 }

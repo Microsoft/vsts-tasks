@@ -1,14 +1,14 @@
 {
-  "loc.messages.CreatedBlobForItem": "Создан BLOB-объект для элемента {0}. Код URI BLOB-объекта: {1}",
-  "loc.messages.CreatedContainer": "Создан контейнер {0}.",
-  "loc.messages.ErrorInReadStream": "Ошибка в потоке чтения: {0}",
-  "loc.messages.ErrorInWriteStream": "Ошибка в потоке записи: {0}",
-  "loc.messages.FailedToCreateBlob": "Не удалось создать BLOB-объект {0}. Ошибка: {1}",
-  "loc.messages.FailedToCreateContainer": "Не удалось создать контейнер {0}. Ошибка: {1}",
-  "loc.messages.FailedToListItemInsideContainer": "Не удалось получить список элементов внутри контейнера: {0}. Ошибка: {1}",
-  "loc.messages.SuccessFullyFetchedItemList": "Список элементов успешно получен",
-  "loc.messages.UnableToFetchItem": "Не удается получить элемент: {0}. Ошибка: {1}",
-  "loc.messages.UploadingItem": "Отправляется {0}.",
-  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "Существует токен продолжения. Выполняется попытка получить список остальных файлов.",
-  "loc.messages.GetArtifactItemsNotSupported": "Получение элементов артефактов не поддерживается; недопустимый путь к коду"
+  "loc.messages.CreatedBlobForItem": "Created blob for item {0}. Blob uri: {1}",
+  "loc.messages.CreatedContainer": "Created container {0}.",
+  "loc.messages.ErrorInReadStream": "Error in Read stream: {0}",
+  "loc.messages.ErrorInWriteStream": "Error in write stream: {0}",
+  "loc.messages.FailedToCreateBlob": "Failed to create blob {0}. Error: {1}",
+  "loc.messages.FailedToCreateContainer": "Failed to create container {0}. Error: {1}",
+  "loc.messages.FailedToListItemInsideContainer": "Failed to list items inside container: {0}. Error: {1}",
+  "loc.messages.SuccessFullyFetchedItemList": "Successfully fetcted list of items",
+  "loc.messages.UnableToFetchItem": "Unable to fetch item: {0}. Error: {1}",
+  "loc.messages.UploadingItem": "Uploading {0}.",
+  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "Continuation token exists, trying to fetch the list of remaining files.",
+  "loc.messages.GetArtifactItemsNotSupported": "Get artifact items not supported, invalid code path"
 }

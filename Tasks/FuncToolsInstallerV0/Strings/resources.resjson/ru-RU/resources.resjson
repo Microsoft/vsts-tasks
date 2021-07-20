@@ -3,7 +3,7 @@
   "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/func-tools-installer)",
   "loc.description": "Install Azure Func Core Tools",
   "loc.instanceNameFormat": "Install func tools - $(version)",
-  "loc.input.label.version": "Версия",
+  "loc.input.label.version": "Version",
   "loc.input.help.version": "Specify the version of Azure func tools to install. Ex:<br><br>2.7.1575<br>v2.7.1575<br>latest",
   "loc.messages.ErrorFetchingLatestVersion": "An error occured while fetching the latest version info from %s. Error: %s. Downloading default stable version: %s.",
   "loc.messages.FindingLatestFuncToolsVersion": "Finding latest func tools version...",

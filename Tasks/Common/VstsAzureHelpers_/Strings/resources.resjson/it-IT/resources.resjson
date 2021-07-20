@@ -1,15 +1,15 @@
 {
-  "loc.messages.AZ_AzureRMProfileModuleNotFound": "Il modulo 'AzureRM.Profile' non è stato trovato. È possibile che il modulo 'AzureRM' non sia completamente installato. Per risolvere il problema, provare a eseguire i comandi di PowerShell seguenti da una sessione con privilegi elevati: Import-Module AzureRM; Install-AzureRM",
-  "loc.messages.AZ_CertificateAuthNotSupported": "L'autenticazione basata su certificato non è supportata. Il modulo Azure PowerShell non è stato trovato.",
-  "loc.messages.AZ_CredentialsError": "Si è verificato un errore con le credenziali di Azure usate per la distribuzione.",
-  "loc.messages.AZ_ModuleNotFound": "Non è stato possibile trovare i moduli '{1}' con versione '{0}'. Se il modulo è stato installato di recente, riprovare dopo aver riavviato l'agente delle attività Azure Pipelines.",
-  "loc.messages.AZ_RequiresMinVersion0": "La versione minima richiesta ({0}) del modulo Azure PowerShell non è installata.",
-  "loc.messages.AZ_ServicePrincipalError": "Si è verificato un errore con l'entità servizio usata per la distribuzione.",
-  "loc.messages.AZ_ServicePrincipalAuthNotSupportedAzureVersion0": "L'autenticazione basata su entità servizio non è supportata nella versione '{0}' del modulo Azure.",
-  "loc.messages.AZ_UnsupportedAuthScheme0": "Lo schema di autenticazione '{0}' non è supportato per l'endpoint di Azure.",
-  "loc.messages.AZ_AvailableModules": "Elenco dei moduli {0} disponibili:",
-  "loc.messages.AZ_InvalidARMEndpoint": "L'endpoint di AzureRm specificato non è valido.",
-  "loc.messages.AZ_MsiAccessNotConfiguredProperlyFailure": "Non è stato possibile recuperare il token di accesso per l'identità gestita. Configurare l'identità gestita per la macchina virtuale 'https://aka.ms/azure-msi-docs'. Codice di stato: '{0}'. Messaggio di errore: {1}",
-  "loc.messages.AZ_MsiAccessTokenFetchFailure": "Non è stato possibile recuperare il token di accesso per l'identità gestita. Codice di stato: '{0}'. Messaggio di errore: {1}",
-  "loc.messages.AZ_MsiFailure": "Non è stato possibile recuperare il token di accesso per l'identità gestita. {0}"
+  "loc.messages.AZ_AzureRMProfileModuleNotFound": "Module 'AzureRM.Profile' not found. The 'AzureRM' module may not be fully installed. Running the  following PowerShell commands from an elevated session may resolve the issue: Import-Module AzureRM ; Install-AzureRM",
+  "loc.messages.AZ_CertificateAuthNotSupported": "Certificate based authentication is not supported. Azure PowerShell module is not found.",
+  "loc.messages.AZ_CredentialsError": "There was an error with the Azure credentials used for the deployment.",
+  "loc.messages.AZ_ModuleNotFound": "Could not find the modules: '{1}' with Version: '{0}'. If the module was recently installed, retry after restarting the Azure Pipelines task agent.",
+  "loc.messages.AZ_RequiresMinVersion0": "The required minimum version ({0}) of the Azure PowerShell module is not installed.",
+  "loc.messages.AZ_ServicePrincipalError": "There was an error with the service principal used for the deployment.",
+  "loc.messages.AZ_ServicePrincipalAuthNotSupportedAzureVersion0": "Service principal authentication is not supported in version '{0}' of the Azure module.",
+  "loc.messages.AZ_UnsupportedAuthScheme0": "Unsupported authentication scheme '{0}' for Azure endpoint.",
+  "loc.messages.AZ_AvailableModules": "The list of available {0} modules:",
+  "loc.messages.AZ_InvalidARMEndpoint": "Specified AzureRM endpoint is invalid.",
+  "loc.messages.AZ_MsiAccessNotConfiguredProperlyFailure": "Could not fetch access token for Managed Identity. Please configure Managed Identity for virtual machine 'https://aka.ms/azure-msi-docs'. Status code: '{0}', Error message: {1}",
+  "loc.messages.AZ_MsiAccessTokenFetchFailure": "Could not fetch access token for Managed Identity. Status code: '{0}', Error message: {1}",
+  "loc.messages.AZ_MsiFailure": "Could not fetch access token for Managed Identity. {0}"
 }

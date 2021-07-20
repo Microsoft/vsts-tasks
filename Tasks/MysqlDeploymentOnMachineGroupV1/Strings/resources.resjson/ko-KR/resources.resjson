@@ -4,7 +4,7 @@
   "loc.description": "스크립트를 실행하고 MySQL 데이터베이스를 변경합니다.",
   "loc.instanceNameFormat": "$(TaskNameSelector)을(를) 사용하여 배포",
   "loc.input.label.TaskNameSelector": "다음을 사용하여 MySQL 배포",
-  "loc.input.help.TaskNameSelector": "[스크립트 파일]과 [인라인 스크립트] 사이에 있는 옵션 중 하나를 선택합니다.",
+  "loc.input.help.TaskNameSelector": "스크립트 파일과 인라인 스크립트 옵션 중 하나를 선택합니다.",
   "loc.input.label.SqlFile": "MySQL 스크립트",
   "loc.input.help.SqlFile": "자동화 에이전트 또는 자동화 에이전트가 액세스할 수 있는 UNC 경로에 있는 스크립트 파일의 전체 경로입니다(예: \\\\\\\\BudgetIT\\DeployBuilds\\script.sql). $(agent.releaseDirectory) 등의 미리 정의된 시스템 변수를 여기서 사용할 수도 있습니다. SQL 문이 포함된 파일을 여기서 사용할 수 있습니다.",
   "loc.input.label.SqlInline": "인라인 MySQL 스크립트",
@@ -12,7 +12,7 @@
   "loc.input.label.ServerName": "호스트 이름",
   "loc.input.help.ServerName": "'Database for MySQL'의 서버 이름입니다. 예: localhost. MySQL Workbench를 사용하여 연결하는 경우 '매개 변수'의 'Hostname'에 사용되는 값과 같습니다.",
   "loc.input.label.DatabaseName": "데이터베이스 이름",
-  "loc.input.help.DatabaseName": "아래 스크립트를 실행해야 하는 데이터베이스의 이름입니다(이미 있는 경우). 데이터베이스가 없는 경우 스크립트 자체를 사용하여 데이터베이스를 만들 수 있습니다.",
+  "loc.input.help.DatabaseName": "아래 스크립트를 실행해야 하는 데이터베이스 이름입니다(이미 있는 경우). 데이터베이스가 없는 경우 스크립트 자체를 사용하여 데이터베이스를 만들 수 있습니다.",
   "loc.input.label.SqlUsername": "MySQL 사용자 이름",
   "loc.input.help.SqlUsername": "MySQL Workbench를 사용하여 연결하는 경우 '매개 변수'의 'Username'에 사용되는 값과 같습니다.",
   "loc.input.label.SqlPassword": "암호",
@@ -31,5 +31,6 @@
   "loc.messages.CallbackCannotBeNull": "콜백은 null일 수 없습니다.",
   "loc.messages.UnableToCreateDatabaseException": "데이터베이스를 만들 수 없습니다.",
   "loc.messages.WindowMysqlClientMissingError": "MySQL 클라이언트가 Windows 에이전트 머신에 없습니다. 에이전트 머신에서 MySQL 클라이언트 설치 관리자 'https://aka.ms/window-mysqlcli-installer' 스크립트 파일을 실행하여 설치하세요.",
-  "loc.messages.LinuxMysqlClientMissingError": "MySQL 클라이언트가 Linux 에이전트 머신에 없습니다. 'sudo apt-get install mysql-client'를 실행하여 설치하세요."
+  "loc.messages.LinuxMysqlClientMissingError": "MySQL 클라이언트가 Linux 에이전트 머신에 없습니다. 'sudo apt-get install mysql-client'를 실행하여 설치하세요.",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "지정된 패턴의 패키지를 찾을 수 없습니다"
 }

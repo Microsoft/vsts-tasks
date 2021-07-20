@@ -1,5 +1,5 @@
 {
-  "loc.messages.InvalidBuildFile": "生成文件无效或不受支持",
-  "loc.messages.FileNotFound": "文件或文件夹不存在: %s",
-  "loc.messages.FailedToAppendCC": "无法追加代码覆盖率数据: %s"
+  "loc.messages.InvalidBuildFile": "Invalid or unsupported build file",
+  "loc.messages.FileNotFound": "File or folder doesn't exist: %s",
+  "loc.messages.FailedToAppendCC": "Unable to append code coverage data: %s"
 }

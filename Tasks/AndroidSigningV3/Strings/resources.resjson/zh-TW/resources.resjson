@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Android 簽署",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613717)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=613717)",
   "loc.description": "簽署並對齊 Android APK 檔案",
   "loc.instanceNameFormat": "簽署並對齊 APK 檔 $(files)",
   "loc.releaseNotes": "此版本的工作使用 apksigner 而非 jarsigner 來簽署 APK。",
@@ -18,16 +18,23 @@
   "loc.input.help.keystoreAlias": "請輸入可以識別要在金鑰儲存區檔案中使用之公用/私密金鑰組的別名。",
   "loc.input.label.keyPass": "金鑰密碼",
   "loc.input.help.keyPass": "請輸入別名與金鑰儲存區檔案的金鑰密碼。請使用新的變數，並在 [變數] 索引標籤上啟用其鎖定，以加密此變數。",
+  "loc.input.label.apksignerVersion": "apksigner 版本",
+  "loc.input.help.apksignerVersion": "輸入 Android SDK 的建置工具版本，從中尋找 apksigner 可執行檔。",
   "loc.input.label.apksignerArguments": "apksigner 引數",
-  "loc.input.help.apksignerArguments": "提供要傳遞至 apksigner 命令列的任何選項。預設為: -verbose -sigalg MD5withRSA -digestalg SHA1",
+  "loc.input.help.apksignerArguments": "提供要傳遞至 apksigner 命令列的任何選項。預設值為: --verbose",
   "loc.input.label.apksignerLocation": "apksigner 位置",
   "loc.input.help.apksignerLocation": "選擇性地指定在登入期間所使用的 apksigner 可執行檔位置。這會預設為在您應用程式對其建置的 Android SDK 版本資料夾中找到的 apksigner。",
   "loc.input.label.zipalign": "Zipalign",
   "loc.input.help.zipalign": "若想要為套件進行 zipalign 則加以選取。如此可減少應用程式所使用的 RAM 量。",
+  "loc.input.label.zipalignVersion": "Zipalign 版本",
+  "loc.input.help.zipalignVersion": "輸入 Android SDK 的建置工具版本，從中尋找 zipalign 可執行檔。",
   "loc.input.label.zipalignLocation": "Zipalign 位置",
   "loc.input.help.zipalignLocation": "選擇性地指定登入期間所使用之 zipalign 可執行檔的位置。預設為您應用程式建置目標的 Android SDK 版本資料夾中所找到的 zipalign。",
   "loc.messages.AndroidHomeNotSet": "未對正在執行中的使用者設定 ANDROID_HOME 環境變數。",
   "loc.messages.CouldNotFindToolInAndroidHome": "在 ANDROID_HOME %s 內找不到工具 %s",
   "loc.messages.NoMatchingFiles": "使用下列搜尋模式找不到任何相符的檔案: %s",
-  "loc.messages.DeleteKeystoreFileFailed": "無法刪除從伺服器 %s 下載的金鑰儲存區檔案"
+  "loc.messages.DeleteKeystoreFileFailed": "無法刪除從伺服器 %s 下載的金鑰儲存區檔案",
+  "loc.messages.CouldNotFindVersionOfToolInAndroidHome": "找不到 %s 版本 (%s 的版本)，尋找位置為 ANDROID_HOME: %s",
+  "loc.messages.GetLatestToolVersion": "正在嘗試取得最新安裝的工具版本: %s",
+  "loc.messages.GetSpecifiedToolVersion": "正在嘗試取得版本 %s (%s 的版本)"
 }

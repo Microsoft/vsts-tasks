@@ -31,6 +31,12 @@
   "loc.input.help.downloadPath": "Chemin de l'emplacement de téléchargement des artefacts sur la machine agent",
   "loc.input.label.parallelizationLimit": "Limite de parallélisation",
   "loc.input.help.parallelizationLimit": "Nombre de fichiers à télécharger simultanément",
+  "loc.input.label.checkDownloadedFiles": "Vérifier les fichiers téléchargés",
+  "loc.input.help.checkDownloadedFiles": "Si cette vérification est vérifiée, cette tâche de build vérifie que tous les fichiers sont entièrement téléchargés.",
+  "loc.input.label.retryDownloadCount": "Nombre de nouvelles tentatives",
+  "loc.input.help.retryDownloadCount": "Nombre facultatif de fois pour réessayer de télécharger un artefacts de build en cas d’échec du téléchargement.",
+  "loc.input.label.extractTars": "Extraire tous les fichiers stockés dans des archives archivées",
+  "loc.input.help.extractTars": "Activez cette option pour extraire tous les fichiers téléchargés dont l’extension est .extension. Cela est utile, car vous devez packer vos fichiers d’artefacts dans une collection si vous voulez conserver les autorisations de fichier Unix. L’activation de l’option « StoreAsTar » dans la tâche PublishBuildArtifacts stocke automatiquement les artefacts en tant que fichiers .body.",
   "loc.messages.DownloadArtifacts": "Téléchargement de l'artefact %s à partir de %s",
   "loc.messages.DownloadingArtifactsForBuild": "Téléchargement d'artefacts pour la build : %s",
   "loc.messages.LinkedArtifactCount": "Nombre d'artefacts liés : %s",
@@ -51,5 +57,11 @@
   "loc.messages.DownloadingContainerResource": "Téléchargement d'éléments à partir de la ressource conteneur %s",
   "loc.messages.DefinitionNameMatchFound": "Nom de définition %s résolu en ID %d",
   "loc.messages.InvalidBuildDefinitionName": "Le nom de définition %s ne correspond pas à une définition valide",
-  "loc.messages.UnresolvedDefinitionId": "Impossible de résoudre l'ID de définition de build"
+  "loc.messages.UnresolvedDefinitionId": "Impossible de résoudre l'ID de définition de build",
+  "loc.messages.BeginArtifactItemsIntegrityCheck": "Démarrage de la vérification de l’intégrité des éléments d’artefacts",
+  "loc.messages.CorruptedArtifactItemsList": "Les éléments suivants ne sont pas vérifiés l’intégrité :",
+  "loc.messages.IntegrityCheckNotPassed": "Échec de la vérification de l’intégrité des objets d’artefacts",
+  "loc.messages.IntegrityCheckPassed": "Vérification de l’intégrité des objets d’artefacts terminée",
+  "loc.messages.TarExtractionNotSupportedInWindows": "L’extraction par extraction d’extraction n’est pas prise en charge sur Windows",
+  "loc.messages.NoTarsFound": "Aucune archive archivée n’a été trouvée pour extraire"
 }

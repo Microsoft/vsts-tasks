@@ -16,5 +16,6 @@
   "loc.messages.PyPyNotFound": "Agent.ToolsDirectory에서 PyPy%d 설치를 찾을 수 없습니다.",
   "loc.messages.ToolNotFoundMicrosoftHosted": "Microsoft 호스팅 에이전트인 경우 이 이미지가 병렬 %s 버전을 %s에서 지원하는지 확인하세요.",
   "loc.messages.ToolNotFoundSelfHosted": "자체 호스팅 에이전트인 경우 병렬 %s 버전을 %s에서 구성하는 방법을 참조하세요.",
-  "loc.messages.VersionNotFound": "버전 사양 %s(%s 아키텍처)과(와) 일치하는 버전이 Agent.ToolsDirectory에 없습니다."
+  "loc.messages.VersionNotFound": "버전 사양 %s(%s 아키텍처)과(와) 일치하는 버전이 Agent.ToolsDirectory에 없습니다.",
+  "loc.messages.ExactVersionNotRecommended": "Specifying an exact version is not recommended on Microsoft-Hosted agents. Patch versions of Python can be replaced by new ones on Hosted agents without notice, which will cause builds to fail unexpectedly. It is recommended to specify only major or major and minor version (Example: `3` or `3.6`)"
 }

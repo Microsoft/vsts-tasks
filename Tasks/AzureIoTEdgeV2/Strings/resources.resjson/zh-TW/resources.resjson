@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure IoT Edge",
-  "loc.helpMarkDown": "如需說明，請瀏覽 [文件](https://aka.ms/azure-iot-edge-ci-cd-docs)",
+  "loc.helpMarkDown": "如需協助，請前往 [文件](https://docs.microsoft.com/zh-tw/azure/iot-edge/how-to-continuous-integration-continuous-deployment)",
   "loc.description": "建置並部署 Azure IoT Edge 映像",
   "loc.instanceNameFormat": "Azure IoT Edge - $(action)",
   "loc.group.displayName.advanced_push": "進階",
@@ -37,10 +37,10 @@
   "loc.input.help.defaultPlatform": "在 [.template.json]**** 中，您可以將模組平台保留為未指定。針對這些模組，將會使用 [預設平台]****。",
   "loc.input.label.fillRegistryCredential": "將登錄認證新增到部署資訊清單",
   "loc.input.help.fillRegistryCredential": "新增用來將 docker 映像推送到部署資訊清單的登錄認證",
-  "loc.input.label.deploymentManifestOutputPath": "Output path",
-  "loc.input.help.deploymentManifestOutputPath": "The output path of generated deployment manifest",
-  "loc.input.label.validateGeneratedDeploymentManifest": "Validate the schema of generated deployment manifest",
-  "loc.input.help.validateGeneratedDeploymentManifest": "Fail this step if the generated deployment manifest does not pass schema validation. You can search `Azure IoT Edge deployment` in [JSON Schema Store](http://schemastore.org/json/) to find latest schema.",
+  "loc.input.label.deploymentManifestOutputPath": "輸出路徑",
+  "loc.input.help.deploymentManifestOutputPath": "所產生部署資訊清單的輸出路徑",
+  "loc.input.label.validateGeneratedDeploymentManifest": "驗證所產生部署資訊清單的結構描述",
+  "loc.input.help.validateGeneratedDeploymentManifest": "如果產生的部署資訊清單未通過結構描述驗證，此步驟就會失敗。您可以在 [JSON 結構描述存放區](http://schemastore.org/json/)中搜尋 `Azure IoT Edge deployment` (Azure IoT Edge 部署)，以尋找最新的結構描述。",
   "loc.input.label.bypassModules": "略過模組",
   "loc.input.help.bypassModules": "選取的您**不**需要在 .template.json 中建置 (或推送) 的模組，請指定模組名稱，並使用逗號分隔。\n 例如: 如果您在 .template.json 中有 2 個模組 **SampleModule1,SampleModule2**，並且只想要建置或推送 **SampleModule1**，則請將略過模組設定為 **SampleModule2**。若要在 .template.json 中建置所有模組，請保留空白。",
   "loc.messages.BuildingModules": "正在建置模組映像...",
@@ -61,7 +61,7 @@
   "loc.messages.DependencyInstallSuccess": "%s 已安裝。版本: %s",
   "loc.messages.DependencyInstallFail": "%s 安裝失敗，請在偵錯模式中查看詳細錯誤",
   "loc.messages.TemplateFileInvalid": "範本檔案的路徑無效: %s",
-  "loc.messages.InvalidContainerRegistry": "Failed to fetch container registry authentication token, please check you container registry setting in build task. The username for container registry is %s",
+  "loc.messages.InvalidContainerRegistry": "無法擷取容器登錄驗證權杖，請檢查您建置工作中的容器登錄設定。容器登錄的使用者名稱為 %s",
   "loc.messages.DeploymentFileNotFound": "找不到部署檔案。請確定已在工作中正確設定部署檔案的路徑。",
   "loc.messages.ValidDeploymentFileNotFound": "找不到有效的部署檔案。請確定已在工作中正確設定部署檔案的路徑。",
   "loc.messages.AzureSdkNotFound": "找不到 Azure SDK",
@@ -71,6 +71,6 @@
   "loc.messages.CheckModuleImageExistenceError": "%s 不存在，或是未正確設定認證。錯誤: %s",
   "loc.messages.StartGenerateDeploymentManifest": "開始產生部署資訊清單...",
   "loc.messages.FinishGenerateDeploymentManifest": "已完成部署資訊清單的產生。",
-  "loc.messages.LoginRegistrySucess": "Successfully logged in to registry %s",
-  "loc.messages.SkipSettingEnvironmentVariableForSecret": "Environment variable %s already exist. Skip setting environment varialbe for secret: %s."
+  "loc.messages.LoginRegistrySucess": "已成功登入登錄 %s",
+  "loc.messages.SkipSettingEnvironmentVariableForSecret": "環境變數 %s 已存在。請跳過為祕密 %s 設定環境變數的作業。"
 }

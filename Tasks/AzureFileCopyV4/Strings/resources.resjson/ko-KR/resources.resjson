@@ -3,7 +3,7 @@
   "loc.helpMarkDown": "[이 작업에 대한 자세한 정보](https://aka.ms/azurefilecopyreadme)",
   "loc.description": "Azure Blob Storage 또는 가상 머신에 파일을 복사합니다.",
   "loc.instanceNameFormat": "$(Destination) 파일 복사",
-  "loc.releaseNotes": "버전 4.0의 새로운 기능: <br/>&nbsp;&nbsp; AzCopy.exe 버전 10.3.3 지원",
+  "loc.releaseNotes": "버전 4.0의 새로운 기능: <br/>&nbsp;&nbsp; AzCopy.exe 버전 10.8.0 지원",
   "loc.input.label.SourcePath": "소스",
   "loc.input.help.SourcePath": "소스 폴더, 로컬 머신의 파일 또는 UNC 공유에 대한 절대 경로입니다. 식은 단일 폴더 또는 파일을 반환해야 합니다. 와일드카드 기호(*)는 파일 경로 또는 파일 이름의 모든 위치에서 지원됩니다.",
   "loc.input.label.ConnectedServiceNameARM": "Azure 구독",
@@ -87,7 +87,7 @@
   "loc.messages.AFC_AzCopyBlobUploadNonZeroExitCode": "Blob Storage에 파일을 업로드하는 중 AzCopy.exe가 0이 아닌 종료 코드로 종료되었습니다.",
   "loc.messages.AFC_PreexecutionJob_UnableToGetStorageKey": "스토리지 계정 키를 페치할 수 없습니다. 오류: '{0}'",
   "loc.messages.AFC_UninstallWinRMCustomScriptExtension": "WinRM 사용자 지정 스크립트를 수동으로 제거하고 배포를 다시 시도하세요.",
-  "loc.messages.ExpiredServicePrincipal": "Could not fetch access token for Azure. Verify if the Service Principal used is valid and not expired.",
+  "loc.messages.ExpiredServicePrincipal": "Azure의 액세스 토큰을 페치할 수 없습니다. 사용한 서비스 주체가 유효하고 만료되지 않았는지 확인하세요.",
   "loc.messages.UnsupportedAuthScheme": "엔드포인트에 대해 인증 체계 '{0}'은(는) 지원되지 않습니다.",
   "loc.messages.ServicePrincipalError": "배포에 사용되는 서비스 사용자에 오류가 발생했습니다."
 }

@@ -28,6 +28,8 @@
   "loc.input.help.createLogFile": "选择创建一个日志文件(仅限 Windows)。",
   "loc.input.label.logFileVerbosity": "日志文件详细程度",
   "loc.input.help.logFileVerbosity": "可选日志文件详细程度。",
+  "loc.input.label.enableDefaultLogger": "启用默认记录器",
+  "loc.input.help.enableDefaultLogger": "如果为 true - 启用 msbuild 的默认记录器",
   "loc.messages.MSBuildLocationDeprecated0": "已弃用 MSBuild 位置参数。将忽略值“{0}”",
   "loc.messages.MSBuildVersionDeprecated0": "已弃用 MSBuild 版本参数。将忽略值“{0}”。",
   "loc.messages.UnexpectedVSVersion0": "意外的 Visual Studio 版本“{0}”。",

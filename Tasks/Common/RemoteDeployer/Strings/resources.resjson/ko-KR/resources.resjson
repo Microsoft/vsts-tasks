@@ -1,12 +1,12 @@
 {
-  "loc.messages.RemoteDeployer_ConnectedMachines": "머신 '{0}'에 PSSession이 만들어졌습니다.",
-  "loc.messages.RemoteDeployer_NotConnectedMachines": "머신 '{0}:{1}'에 PSSession을 만들지 못했습니다.",
-  "loc.messages.RemoteDeployer_ScriptJobFailed": "원격 스크립트 작업을 실행하지 못했습니다. ComputerName: '{0}', 메시지: '{1}'",
-  "loc.messages.RemoteDeployer_NonZeroExitCode": "ComputerName '{0}'의 0이 아닌 종료 코드 '{1}'",
-  "loc.messages.RemoteDeployer_ScriptExecutionSucceeded": "ComputerName '{0}'의 스크립트 실행에 성공했습니다.",
-  "loc.messages.RemoteDeployer_UnknownStatus": "알 수 없는 원격 스크립트 작업 실행 상태: '{0}'",
-  "loc.messages.RemoteDeployer_UnableToGetRemoteJobResults": "원격 스크립트 작업 결과를 가져올 수 없습니다.",
-  "loc.messages.PS_TM_UnableToCreatePSSession": "PSSession을 만들 수 없습니다. 오류: '{0}'",
-  "loc.messages.RemoteDeployer_JobResultEvaluationFailure": "적어도 하나의 원격 작업이 실패했습니다. 자세한 내용은 로그를 참조하세요. ErrorCodes(s): '{0}'",
-  "loc.messages.RemoteDeployer_UnableToUploadTargetMachineLogs": "대상 머신 로그 파일을 업로드할 수 없습니다. SourceFolder: '{0}'. 오류: '{1}'"
+  "loc.messages.RemoteDeployer_ConnectedMachines": "PSSession created for Machines:'{0}'",
+  "loc.messages.RemoteDeployer_NotConnectedMachines": "PSSession could not be created for Machine:'{0}:{1}'",
+  "loc.messages.RemoteDeployer_ScriptJobFailed": "Execution of remote script job failed. ComputerName: '{0}', Message: '{1}'",
+  "loc.messages.RemoteDeployer_NonZeroExitCode": "Non-Zero exit code: '{1}' for ComputerName: '{0}'",
+  "loc.messages.RemoteDeployer_ScriptExecutionSucceeded": "Script execution succeeded for ComputerName: '{0}'",
+  "loc.messages.RemoteDeployer_UnknownStatus": "Unknown remote script job execution status: '{0}'",
+  "loc.messages.RemoteDeployer_UnableToGetRemoteJobResults": "Unable to get remote script job results",
+  "loc.messages.PS_TM_UnableToCreatePSSession": "Unable to create pssession. Error: '{0}'",
+  "loc.messages.RemoteDeployer_JobResultEvaluationFailure": "Atleast one remote job failed. Consult logs for more details. ErrorCodes(s): '{0}'",
+  "loc.messages.RemoteDeployer_UnableToUploadTargetMachineLogs": "Unable to upload target machine logs files. SourceFolder: '{0}'. Error: '{1}'"
 }

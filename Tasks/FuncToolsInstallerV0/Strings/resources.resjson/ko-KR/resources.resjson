@@ -4,7 +4,7 @@
   "loc.description": "Azure Func 핵심 도구 설치",
   "loc.instanceNameFormat": "함수 도구 $(version) 설치",
   "loc.input.label.version": "버전",
-  "loc.input.help.version": "설치할 Azure 함수 도구 버전을 지정하세요(예: <br><br>2.7.1575<br>v2.7.1575<br>최신).",
+  "loc.input.help.version": "설치할 Azure Functions Core Tools 버전을 지정하세요(예: <br><br>2.7.1575<br>v2.7.1575<br>최신).",
   "loc.messages.ErrorFetchingLatestVersion": "%s에서 최신 버전 정보를 가져오는 동안 오류가 발생했습니다. 오류: %s. 안정적인 기본 버전 %s을(를) 다운로드하는 중입니다.",
   "loc.messages.FindingLatestFuncToolsVersion": "최신 함수 도구 버전을 찾는 중...",
   "loc.messages.FuncDownloadFailed": "%s 위치에서 함수 도구를 다운로드하지 못했습니다. 오류 %s",

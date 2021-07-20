@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Bash",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613738) or [see the Bash documentation](https://www.gnu.org/software/bash/manual/)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?linkid=2132213). In alternativa, [vedere la documentazione di Bash](https://www.gnu.org/software/bash/manual/)",
   "loc.description": "Consente di eseguire uno script Bash in macOS, Linux o Windows",
   "loc.instanceNameFormat": "Script Bash",
   "loc.releaseNotes": "Coerenza delle attività per gli script. Aggiunta del supporto per più righe e del supporto per Windows.",

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "安裝 Apple 佈建設定檔",
-  "loc.helpMarkDown": "[詳細資訊](https://go.microsoft.com/fwlink/?LinkID=862068)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=862068)",
   "loc.description": "在 macOS 代理程式電腦上執行建置作業必須安裝 Apple 佈建設定檔",
   "loc.instanceNameFormat": "安裝 Apple 佈建設定檔",
   "loc.input.label.provisioningProfileLocation": "佈建設定檔位置",
@@ -12,5 +12,6 @@
   "loc.input.label.removeProfile": "在建置後移除設定檔",
   "loc.input.help.removeProfile": "選取此選項可指定在建置或發行完成之後，從代理程式刪除佈建設定檔。",
   "loc.messages.InputProvisioningProfileNotFound": "無法在 %s 找到要安裝的佈建設定檔。請指定完整的佈建設定檔檔案路徑。",
-  "loc.messages.InstallRequiresMac": "必須有 macOS 代理程式才能安裝 Apple 佈建設定檔。Apple 不支援在 Windows 或 Linux 上安裝。"
+  "loc.messages.InstallRequiresMac": "必須有 macOS 代理程式才能安裝 Apple 佈建設定檔。Apple 不支援在 Windows 或 Linux 上安裝。",
+  "loc.messages.InvalidMobileProvisionFileExtension": "佈建設定檔的副檔名應為 '.mobileprovision' 或 '.provisionprofile'"
 }

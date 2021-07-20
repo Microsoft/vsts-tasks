@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Distribuzione set di scalabilità di macchine virtuali di Azure",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=852117)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?linkid=852117)",
   "loc.description": "Distribuisce l'immagine del set di scalabilità di macchine virtuali",
   "loc.instanceNameFormat": "Set di scalabilità di macchine virtuali di Azure $(vmssName): $(action)",
   "loc.releaseNotes": "- Aggiorna il set di scalabilità di macchine virtuali di Azure con un'immagine di macchina virtuale personalizzata.",
@@ -25,7 +25,7 @@
   "loc.input.label.customScriptArguments": "Argomenti",
   "loc.input.help.customScriptArguments": "Lo script personalizzato verrà richiamato con gli argomenti passati. È possibile usare variabili di compilazione/versione per semplificare l'uso dei segreti.",
   "loc.input.label.customScriptsStorageAccount": "Account di archiviazione di Azure in cui verranno caricati gli script personalizzati",
-  "loc.input.help.customScriptsStorageAccount": "L'estensione per script personalizzati scarica ed esegue gli script forniti dall'utente in ogni macchina virtuale del set di scalabilità di macchine virtuali. Tali script verranno archiviati nell'account di archiviazione specificato qui. Specificare un account di archiviazione di ARM preesistente.",
+  "loc.input.help.customScriptsStorageAccount": "L'estensione per script personalizzati scarica ed esegue gli script forniti dall'utente in ogni macchina virtuale del set di scalabilità di macchine virtuali. Tali script verranno archiviati nell'account di archiviazione specificato qui. Specificare un account di archiviazione ARM preesistente.",
   "loc.input.label.skipArchivingCustomScripts": "Ignorare archiviazione degli script personalizzati",
   "loc.input.help.skipArchivingCustomScripts": "Per impostazione predefinita, questa attività crea un archivio compresso di directory contenente script personalizzati, ottimizzando prestazioni e affidabilità durante il caricamento nell'archiviazione di Azure. Se non è selezionata, l'archiviazione non verrà eseguita e tutti i file verranno caricati singolarmente.",
   "loc.messages.InvalidAction": "Questa azione non è definita. Verificarla con l'autore dell'attività.",

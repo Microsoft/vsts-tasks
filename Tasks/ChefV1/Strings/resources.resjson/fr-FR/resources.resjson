@@ -1,14 +1,14 @@
 {
   "loc.friendlyName": "Chef",
   "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/chef-readme)",
-  "loc.description": "Déployer dans des environnements Chef en modifiant les attributs d'environnement",
-  "loc.instanceNameFormat": "Déployer dans un environnement chef en modifiant les attributs d'environnement de l'abonnement Chef $(ChefServer)",
-  "loc.input.label.connectedServiceName": "Connexion de service Chef",
-  "loc.input.help.connectedServiceName": "Nom de la connexion de service de l'abonnement Chef.",
-  "loc.input.label.Environment": "Environnement",
-  "loc.input.help.Environment": "Nom de l'environnement Chef à utiliser pour le déploiement. Les attributs de cet environnement seront modifiés.",
-  "loc.input.label.Attributes": "Attributs d'environnement",
-  "loc.input.help.Attributes": "Spécifiez la valeur du ou des attributs du nœud terminal à mettre à jour. Exemple : { \"default_attributes.connectionString\" : \"$(connectionString)\", \"override_attributes.buildLocation\" : \"https://sample.blob.core.windows.net/build\" }. La tâche échoue si le nœud terminal n'existe pas.",
-  "loc.input.label.chefWaitTime": "Durée d'attente",
-  "loc.input.help.chefWaitTime": "Durée d'attente (en minutes) avant la fin de la tâche. Valeur par défaut : 30 minutes"
+  "loc.description": "Deploy to Chef environments by editing environment attributes",
+  "loc.instanceNameFormat": "Deploy to chef by editing environment attributes of Chef subscription $(ChefServer)",
+  "loc.input.label.connectedServiceName": "Chef Service Connection",
+  "loc.input.help.connectedServiceName": "Name of the Chef subscription service connection.",
+  "loc.input.label.Environment": "Environment",
+  "loc.input.help.Environment": "Name of the Chef Environment to be used for Deployment. The attributes of that environment will be edited.",
+  "loc.input.label.Attributes": "Environment Attributes",
+  "loc.input.help.Attributes": "Specify the value of the leaf node attribute(s) to be updated. Example. { \"default_attributes.connectionString\" : \"$(connectionString)\", \"override_attributes.buildLocation\" : \"https://sample.blob.core.windows.net/build\" }. Task fails if the leaf node does not exist.",
+  "loc.input.label.chefWaitTime": "Wait Time",
+  "loc.input.help.chefWaitTime": "The amount of time (in minutes) to wait for this task to complete. Default value: 30 minutes"
 }

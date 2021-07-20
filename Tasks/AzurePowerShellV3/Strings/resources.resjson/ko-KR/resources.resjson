@@ -23,7 +23,7 @@
   "loc.input.label.FailOnStandardError": "표준 오류 시 실패",
   "loc.input.help.FailOnStandardError": "이 값이 true이면 오류 파이프라인에 오류가 작성되거나 표준 오류 스트림에 데이터가 작성될 경우 이 작업은 실패하게 됩니다.",
   "loc.input.label.TargetAzurePs": "Azure PowerShell 버전",
-  "loc.input.help.TargetAzurePs": "호스트된 에이전트의 경우 지원되는 Azure PowerShell 버전은 2.1.0, 3.8.0, 4.2.1, 5.1.1 및 6.7.0(Hosted VS2017 Queue), 3.6.0(Hosted Queue)입니다.\n에이전트에서 사용 가능한 최신 버전을 선택하려면 \"설치된 최신 버전\"을 선택합니다.\n\n사용자 에이전트의 경우 \"버전 지정\"을 사용하여 기본 Azure PowerShell 버전을 지정할 수 있습니다.",
+  "loc.input.help.TargetAzurePs": "호스트된 에이전트의 경우 지원되는 Azure PowerShell 버전은 2.1.0, 3.8.0, 4.2.1, 5.1.1 및 6.7.0(Hosted VS2017 Queue)입니다.\n에이전트에서 사용 가능한 최신 버전을 선택하려면 \"설치된 최신 버전\"을 선택합니다.\n\n프라이빗 에이전트의 경우 \"버전 지정\"을 사용하여 Azure PowerShell의 기본 버전을 지정할 수 있습니다.",
   "loc.input.label.CustomTargetAzurePs": "기본 Azure PowerShell 버전",
   "loc.input.help.CustomTargetAzurePs": "기본 Azure PowerShell 버전은 올바른 의미 체계 버전(예: 1.2.3)이어야 합니다. 2.\\*,2.3.\\*와 같은 Regex는 지원되지 않습니다. 호스트된 VS2017 풀은 현재, Azure 모듈 버전 2.1.0, 3.8.0, 4.2.1, 5.1.1 및 AzureRM 모듈 버전 2.1.0, 3.8.0, 4.2.1, 5.1.1, 6.7.0을 지원합니다.",
   "loc.messages.InvalidScriptArguments0": "스크립트 인수 '{0}'이(가) 잘못되었습니다. 줄 바꿈은 허용되지 않습니다.",

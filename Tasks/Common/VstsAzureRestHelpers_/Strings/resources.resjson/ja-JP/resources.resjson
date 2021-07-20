@@ -1,13 +1,13 @@
 {
-  "loc.messages.AZ_UnsupportedAuthScheme0": "'{0}' は Azure エンドポイントではサポートされていない認証スキームです。",
-  "loc.messages.AZ_SpnAccessTokenFetchFailure": "テナント ID {0} のトークンをフェッチできません。",
-  "loc.messages.AZ_UserAccessTokenFetchFailure": "指定のユーザーのトークンをフェッチできません。",
-  "loc.messages.AZ_NoValidResourceIdFound": "serverName {0}、serverType {1} のリソースがサブスクリプション {2} にありません。正しい serverName/serverType を指定してからやり直してください。",
-  "loc.messages.AZ_UnableToFetchLoadbalancerDetails": "ロード バランサーの詳細をフェッチできません",
-  "loc.messages.AZ_UnableToFetchPublicIPAddressesDetails": "パブリック IP アドレスの詳細をフェッチできません",
-  "loc.messages.AZ_UnableToFetchNetworkInterfacesDetails": "ネットワーク インターフェイスの詳細をフェッチできません",
-  "loc.messages.AZ_MsiAccessNotConfiguredProperlyFailure": "マネージド サービス プリンシパルのアクセス トークンをフェッチできませんでした。仮想マシンのマネージド サービス ID (MSI) を構成してください 'https://aka.ms/azure-msi-docs'。状態コード: {0}、ステータス メッセージ: {1}",
-  "loc.messages.AZ_MsiAccessTokenFetchFailure": "マネージド サービス プリンシパルのアクセス トークンをフェッチできませんでした。状態コード: {0}、ステータス メッセージ: {1}",
-  "loc.messages.AZ_SPNCertificateAccessTokenFetchFailure": "サービス プリンシパル ID {0} のクライアント証明書を使用してアクセス トークンを取得できませんでした。{1}",
-  "loc.messages.AZ_SPNCertificateAccessTokenFetchFailureTokenNull": "サービス プリンシパル ID {0} のクライアント証明書を使用してアクセス トークンを取得できませんでした。tokenResult が null です。"
+  "loc.messages.AZ_UnsupportedAuthScheme0": "Unsupported authentication scheme '{0}' for Azure endpoint.",
+  "loc.messages.AZ_SpnAccessTokenFetchFailure": "Not able to fetch token for tenant Id {0}.",
+  "loc.messages.AZ_UserAccessTokenFetchFailure": "Not able to fetch token for given User.",
+  "loc.messages.AZ_NoValidResourceIdFound": "No resource found with serverName {0}, serverType {1} in subscription {2}. Specify the correct serverName/serverType and try again.",
+  "loc.messages.AZ_UnableToFetchLoadbalancerDetails": "Unable to fetch load balancer details",
+  "loc.messages.AZ_UnableToFetchPublicIPAddressesDetails": "Unable to fetch public IP Addresses details",
+  "loc.messages.AZ_UnableToFetchNetworkInterfacesDetails": "Unable to fetch network interfaces details",
+  "loc.messages.AZ_MsiAccessNotConfiguredProperlyFailure": "Could not fetch access token for Managed Service Principal. Please configure Managed Service Identity (MSI) for virtual machine 'https://aka.ms/azure-msi-docs'. Status code: {0}, status message: {1}",
+  "loc.messages.AZ_MsiAccessTokenFetchFailure": "Could not fetch access token for Managed Service Principal. Status code: {0}, status message: {1}",
+  "loc.messages.AZ_SPNCertificateAccessTokenFetchFailure": "Failed to obtain access token using client certificate for service principal id: {0}. {1}",
+  "loc.messages.AZ_SPNCertificateAccessTokenFetchFailureTokenNull": "Failed to obtain access token using client certificate for service principal id: {0}, tokenResult is null."
 }

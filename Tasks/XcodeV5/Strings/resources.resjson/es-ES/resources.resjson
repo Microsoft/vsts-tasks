@@ -1,9 +1,9 @@
 {
-  "loc.friendlyName": "Xcode",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613730) or [see the Xcode documentation](https://developer.apple.com/xcode/)",
+  "loc.friendlyName": "XCode",
+  "loc.helpMarkDown": "[Obtener más información acerca de esta tarea](https://go.microsoft.com/fwlink/?LinkID=613730) o [consultar la documentación de Xcode](https://developer.apple.com/xcode/)",
   "loc.description": "Compile, pruebe o archive un área de trabajo de Xcode en macOS. Opcionalmente, puede empaquetar una aplicación.",
   "loc.instanceNameFormat": "Xcode $(actions)",
-  "loc.releaseNotes": "This version of the task is compatible with Xcode 8 - 11. Features that were solely to maintain compatibility with Xcode 7 have been removed. This task has better options for using Microsoft-hosted macOS agents.",
+  "loc.releaseNotes": "Esta versión de la tarea es compatible con Xcode 8 a 11. Las características que servían exclusivamente para mantener la compatibilidad con Xcode 7 se han eliminado. Esta tarea cuenta con opciones mejoradas para usar agentes de macOS hospedados por Microsoft.",
   "loc.group.displayName.sign": "Firma y aprovisionamiento",
   "loc.group.displayName.package": "Opciones del paquete",
   "loc.group.displayName.devices": "Dispositivos y simuladores",
@@ -19,7 +19,7 @@
   "loc.input.label.scheme": "Esquema",
   "loc.input.help.scheme": "(Opcional) Escriba un nombre de esquema definido en Xcode. Debe ser un esquema compartido, con la casilla <strong>Compartido</strong> habilitada en <strong>Esquemas compartidos</strong> en Xcode. Si especifica una <strong>Ruta de acceso de área de trabajo o proyecto</strong> anteriormente sin especificar un esquema y el área de trabajo tiene un solo esquema compartido, se utilizará automáticamente.",
   "loc.input.label.xcodeVersion": "Versión de Xcode",
-  "loc.input.help.xcodeVersion": "Especifique la versión de destino de Xcode. Seleccione \"Predeterminado\" para utilizar la versión predeterminada de Xcode en el equipo del agente. Al seleccionar un número de versión (por ejemplo, \"Xcode 9\") se toman como base las variables de entorno que se están definiendo en el equipo del agente para la ubicación de la versión (por ejemplo, \"XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer\"). Seleccione \"Especificar la ruta de acceso\" para proporcionar una ruta de acceso específica al directorio de desarrollador de Xcode.",
+  "loc.input.help.xcodeVersion": "Especifique la versión de destino de Xcode. Seleccione \"Predeterminado\" para utilizar la versión predeterminada de Xcode en el equipo del agente. Al seleccionar un número de versión (por ejemplo: \"Xcode 9\") se toman como base las variables de entorno que se están definiendo en el equipo del agente para la ubicación de la versión (por ejemplo: \"XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer\"). Seleccione \"Especificar la ruta de acceso\" para proporcionar una ruta específica al directorio de desarrolladores de Xcode.<br/>Nota: XCode 12 se instala en macOS-10.15 (o superior)",
   "loc.input.label.xcodeDeveloperDir": "Ruta de acceso de desarrollador de Xcode",
   "loc.input.help.xcodeDeveloperDir": "(Opcional) Escriba una ruta de acceso a un directorio específico de desarrollador de Xcode (por ejemplo, \"/Applications/Xcode_9.0.0.app/Contents/Developer\"). Esto resulta útil cuando se instalan varias versiones de Xcode en el equipo del agente.",
   "loc.input.label.packageApp": "Crear paquete de aplicación",
@@ -64,8 +64,12 @@
   "loc.input.help.cwd": "(Opcional) Especifique el directorio de trabajo en el que se va a ejecutar la compilación. Si no se especifica ningún valor, se usará la raíz del repositorio.",
   "loc.input.label.useXcpretty": "Usar xcpretty",
   "loc.input.help.useXcpretty": "Especifique si se va a usar xcpretty para formatear la salida de xcodebuild. Para habilitar esta opción, xcpretty debe estar instalado en la máquina del agente. Si no lo está, se muestra la salida de xcodebuild sin formato. xcpretty está preinstalado en los agentes de compilación hospedados de Azure Pipelines. Consulte [xcpretty](https://github.com/supermarin/xcpretty) en GitHub.",
+  "loc.input.label.xcprettyArgs": "Argumentos de xcpretty",
+  "loc.input.help.xcprettyArgs": "Argumentos adicionales que se pasan a xcpretty.",
   "loc.input.label.publishJUnitResults": "Publicar resultados de pruebas en Azure Pipelines",
   "loc.input.help.publishJUnitResults": "Especifique si los resultados de pruebas JUnit se van a publicar en Azure Pipelines. Para generar estos resultados de pruebas, es necesario que xcpretty esté habilitado.",
+  "loc.input.label.testRunTitle": "Título de la serie de pruebas",
+  "loc.input.help.testRunTitle": "Título de la serie de pruebas cuando se publican los resultados de pruebas de JUnit en Azure Pipelines.",
   "loc.messages.SignIdNotFound": "No se encuentra la identidad de firma de iOS. Compruebe que la información de firma y aprovisionamiento se ha proporcionado.",
   "loc.messages.TempKeychainSetupFailed": "No se pudo agregar la cadena de claves temporal a la ruta de acceso de búsqueda de cadenas de claves.",
   "loc.messages.ProvProfileDetailsNotFound": "No se encuentran los detalles del perfil de aprovisionamiento: %s",
@@ -92,5 +96,6 @@
   "loc.messages.OutputDirectoryIgnored": "El directorio de salida para la salida de compilación (binarios) se ha omitido. La especificación de un directorio de salida es incompatible con la acción \"%s\".",
   "loc.messages.NoDestinationPlatformWarning": "Las pruebas de IU deben ejecutarse en un simulador o un dispositivo conectado. En la tarea de Xcode, establezca \"Plataforma de destino\" en un valor distinto de \"Predeterminado\".",
   "loc.messages.XcprettyNotInstalled": "xcpretty no está instalado en el servidor de compilación. Se mostrará la salida sin formato de xcodebuild. Si xcpretty no está instalado, los resultados de pruebas no se podrán publicar.",
-  "loc.messages.XcodeRequiresMac": "El uso de Xcode requiere un agente de macOS. Apple no admite la compilación con Xcode en Linux o Windows."
+  "loc.messages.XcodeRequiresMac": "El uso de Xcode requiere un agente de macOS. Apple no admite la compilación con Xcode en Linux o Windows.",
+  "loc.messages.UsingDefaultSimulator": "Usando el simulador predeterminado: %s."
 }

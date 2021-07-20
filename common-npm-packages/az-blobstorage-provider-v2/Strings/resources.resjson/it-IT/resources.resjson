@@ -1,14 +1,14 @@
 {
-  "loc.messages.CreatedBlobForItem": "Il BLOB per l'elemento {0} è stato creato. URI del BLOB: {1}",
-  "loc.messages.CreatedContainer": "Il contenitore {0} è stato creato.",
-  "loc.messages.ErrorInReadStream": "Si è verificato un errore durante la lettura del flusso: {0}",
-  "loc.messages.ErrorInWriteStream": "Si è verificato un errore durante la scrittura del flusso: {0}",
-  "loc.messages.FailedToCreateBlob": "Non è stato possibile creare il BLOB {0}. Errore: {1}",
-  "loc.messages.FailedToCreateContainer": "Non è stato possibile creare il contenitore {0}. Errore: {1}",
-  "loc.messages.FailedToListItemInsideContainer": "Non è stato possibile elencare gli elementi all'interno del contenitore: {0}. Errore: {1}",
-  "loc.messages.SuccessFullyFetchedItemList": "L'elenco di elementi è stato recuperato",
-  "loc.messages.UnableToFetchItem": "Non è possibile recuperare l'elemento: {0}. Errore: {1}",
-  "loc.messages.UploadingItem": "Upload di {0}.",
-  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "Il token di continuazione è esistente. Verrà effettuato un tentativo di recupero dell'elenco dei file rimanenti.",
-  "loc.messages.GetArtifactItemsNotSupported": "Il recupero degli elementi di artefatto non è supportato. Il percorso del codice non è valido"
+  "loc.messages.CreatedBlobForItem": "Created blob for item {0}. Blob uri: {1}",
+  "loc.messages.CreatedContainer": "Created container {0}.",
+  "loc.messages.ErrorInReadStream": "Error in Read stream: {0}",
+  "loc.messages.ErrorInWriteStream": "Error in write stream: {0}",
+  "loc.messages.FailedToCreateBlob": "Failed to create blob {0}. Error: {1}",
+  "loc.messages.FailedToCreateContainer": "Failed to create container {0}. Error: {1}",
+  "loc.messages.FailedToListItemInsideContainer": "Failed to list items inside container: {0}. Error: {1}",
+  "loc.messages.SuccessFullyFetchedItemList": "Successfully fetcted list of items",
+  "loc.messages.UnableToFetchItem": "Unable to fetch item: {0}. Error: {1}",
+  "loc.messages.UploadingItem": "Uploading {0}.",
+  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "Continuation token exists, trying to fetch the list of remaining files.",
+  "loc.messages.GetArtifactItemsNotSupported": "Get artifact items not supported, invalid code path"
 }

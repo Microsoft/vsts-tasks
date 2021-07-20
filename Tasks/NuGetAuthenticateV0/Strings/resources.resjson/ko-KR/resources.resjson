@@ -1,10 +1,10 @@
 {
-  "loc.friendlyName": "NuGet 인증",
-  "loc.helpMarkDown": "[이 작업에 대한 자세한 정보](https://aka.ms/NuGetAuthenticateTask)",
-  "loc.description": "Azure Artifacts 및 기타 NuGet 리포지토리를 사용하여 인증하도록 NuGet 도구를 구성합니다. NuGet >= 4.8.5385, dotnet >= 2.1.400 또는 MSBuild >= 15.8.166.59604가 필요합니다.",
-  "loc.instanceNameFormat": "NuGet 인증",
-  "loc.input.label.nuGetServiceConnections": "이 조직 외부 피드에 대한 서비스 연결 자격 증명",
-  "loc.input.help.nuGetServiceConnections": "이 조직/컬렉션 외부 피드에 대한 쉼표로 구분된 NuGet 서비스 연결 이름 목록입니다. 이 조직/컬렉션 피드의 경우 이 필드를 비워 두세요. 빌드의 자격 증명이 자동으로 사용됩니다.",
-  "loc.input.label.forceReinstallCredentialProvider": "자격 증명 공급자를 이미 설치한 경우에만 다시 설치합니다.",
-  "loc.input.help.forceReinstallCredentialProvider": "자격 증명 공급자가 사용자 프로필에 이미 설치되어 있는 경우 작업에서 제공하는 자격 증명 공급자로 덮어쓸지 여부를 결정합니다. 이는 자격 증명 공급자를 업그레이드하거나 잠재적으로 다운그레이드할 수 있습니다."
+  "loc.friendlyName": "NuGet authenticate",
+  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/NuGetAuthenticateTask)",
+  "loc.description": "Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories. Requires NuGet >= 4.8.5385, dotnet >= 2.1.400, or MSBuild >= 15.8.166.59604",
+  "loc.instanceNameFormat": "NuGet Authenticate",
+  "loc.input.label.nuGetServiceConnections": "Service connection credentials for feeds outside this organization",
+  "loc.input.help.nuGetServiceConnections": "Comma-separated list of NuGet service connection names for feeds outside this organization/collection. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically.",
+  "loc.input.label.forceReinstallCredentialProvider": "Reinstall the credential provider even if already installed",
+  "loc.input.help.forceReinstallCredentialProvider": "If the credential provider is already installed in the user profile, determines if it is overwritten with the task-provided credential provider. This may upgrade (or potentially downgrade) the credential provider."
 }

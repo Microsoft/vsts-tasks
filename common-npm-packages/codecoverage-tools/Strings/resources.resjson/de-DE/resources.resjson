@@ -1,5 +1,5 @@
 {
-  "loc.messages.InvalidBuildFile": "Ungültige oder nicht unterstützte Builddatei",
-  "loc.messages.FileNotFound": "Datei oder Ordner nicht vorhanden: %s",
-  "loc.messages.FailedToAppendCC": "Codedeckungsdaten können nicht angefügt werden: %s"
+  "loc.messages.InvalidBuildFile": "Invalid or unsupported build file",
+  "loc.messages.FileNotFound": "File or folder doesn't exist: %s",
+  "loc.messages.FailedToAppendCC": "Unable to append code coverage data: %s"
 }

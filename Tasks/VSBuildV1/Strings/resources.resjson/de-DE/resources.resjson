@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Visual Studio-Build",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613727)",
+  "loc.helpMarkDown": "[Weitere Informationen zu dieser Aufgabe](https://go.microsoft.com/fwlink/?LinkID=613727)",
   "loc.description": "Erstellen Sie den Build mit MSBuild, und legen Sie die Visual Studio-Versionseigenschaft fest.",
   "loc.instanceNameFormat": "Projektmappe $(solution) erstellen",
   "loc.group.displayName.advanced": "Erweitert",
@@ -28,6 +28,8 @@
   "loc.input.help.createLogFile": "Erstellen Sie optional eine Protokolldatei (nur Windows).",
   "loc.input.label.logFileVerbosity": "Ausführlichkeit der Protokolldatei",
   "loc.input.help.logFileVerbosity": "Optionaler Ausführlichkeitsgrad der Protokolldatei.",
+  "loc.input.label.enableDefaultLogger": "Standard-Protokollierung aktivieren",
+  "loc.input.help.enableDefaultLogger": "Bei \"true\" wird die Standard-Protokollierung für MSBuild aktiviert",
   "loc.messages.MSBuildLocationDeprecated0": "Der MSBuild-Parameter für die Angabe des Orts ist veraltet. Der Wert \"{0}\" wird ignoriert.",
   "loc.messages.MSBuildVersionDeprecated0": "Der MSBuild-Versionsparameter ist veraltet. Der Wert \"{0}\" wird ignoriert.",
   "loc.messages.UnexpectedVSVersion0": "Unerwarteter Visual Studio-Version \"{0}\".",

@@ -19,6 +19,7 @@
   "loc.input.label.package": "包或文件夹",
   "loc.input.help.package": "包的文件路径或一个包含由 MSBuild 生成的应用服务内容或压缩的 zip 或 war 文件的文件夹。<br />变量([生成](https://docs.microsoft.com/vsts/pipelines/build/variables) | [发布](https://docs.microsoft.com/vsts/pipelines/release/variables#default-variables))，支持通配符。<br/>例如，$(System.DefaultWorkingDirectory)/\\*\\*/\\*.zip 或 $(System.DefaultWorkingDirectory)/\\*\\*/\\*.war。",
   "loc.input.label.runtimeStack": "运行时堆栈",
+  "loc.input.help.runtimeStack": "请查看[此文档](https://docs.microsoft.com/azure/azure-functions/functions-versions#languages)，以了解受支持的运行时版本。已启用 `DOCKER|microsoft/azure-functions-*` 等旧值，请使用下拉列表中的新值。",
   "loc.input.label.startUpCommand": "启动命令",
   "loc.input.help.startUpCommand": "输入启动命令。例如 <br/>dotnet exec filename.dll<br/>dotnet filename.dll",
   "loc.input.label.customWebConfig": "生成适用于 Python、Node.js、Go 和 Java 应用的 web.config 参数",

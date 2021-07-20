@@ -5,7 +5,7 @@
   "loc.instanceNameFormat": "[사용되지 않음] IIS 앱 배포: $(WebDeployPackage)",
   "loc.group.displayName.deployment": "배포",
   "loc.group.displayName.website": "웹 사이트",
-  "loc.group.displayName.applicationPool": "애플리케이션 풀",
+  "loc.group.displayName.applicationPool": "응용 프로그램 풀",
   "loc.group.displayName.advanced": "고급",
   "loc.input.label.EnvironmentName": "컴퓨터",
   "loc.input.help.EnvironmentName": "포트와 함께 쉼표로 구분된 컴퓨터 IP 주소 또는 FQDN 목록을 제공하세요. 포트의 기본값이 선택된 프로토콜을 기준으로 설정되었습니다. <br>예: dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.12.34:5986 <br>또는 다른 작업의 출력 변수를 제공하세요. 예: $(variableName)",

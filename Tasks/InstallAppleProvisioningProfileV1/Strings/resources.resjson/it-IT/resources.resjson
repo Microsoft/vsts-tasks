@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Installa profilo di provisioning Apple",
-  "loc.helpMarkDown": "[Altre informazioni](https://go.microsoft.com/fwlink/?LinkID=862068)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?LinkID=862068)",
   "loc.description": "Installa un profilo di provisioning Apple necessario per compilare in un computer agente macOS",
   "loc.instanceNameFormat": "Installa un profilo di provisioning Apple",
   "loc.input.label.provisioningProfileLocation": "Posizione del profilo di provisioning",
@@ -12,5 +12,6 @@
   "loc.input.label.removeProfile": "Rimuovi profilo dopo la compilazione",
   "loc.input.help.removeProfile": "Selezionare questa opzione per specificare che il profilo di provisioning deve essere rimosso dall'agente al completamento della compilazione o della versione.",
   "loc.messages.InputProvisioningProfileNotFound": "Il profilo di provisioning da installare non è stato trovato in %s. Specificare il percorso file completo di un profilo di provisioning.",
-  "loc.messages.InstallRequiresMac": "Per installare un profilo di provisioning Apple, è richiesto un agente macOS. L'installazione in Linux o Windows non è supportata da Apple."
+  "loc.messages.InstallRequiresMac": "Per installare un profilo di provisioning Apple, è richiesto un agente macOS. L'installazione in Linux o Windows non è supportata da Apple.",
+  "loc.messages.InvalidMobileProvisionFileExtension": "L'estensione del file del profilo di provisioning deve essere '.mobileprovision' o '.provisionprofile'"
 }

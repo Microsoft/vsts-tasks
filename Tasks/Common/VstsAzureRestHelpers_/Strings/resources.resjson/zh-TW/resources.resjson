@@ -1,13 +1,13 @@
 {
-  "loc.messages.AZ_UnsupportedAuthScheme0": "Azure 端點不支援驗證配置 '{0}'。",
-  "loc.messages.AZ_SpnAccessTokenFetchFailure": "無法為租用戶識別碼 {0} 擷取權杖。",
-  "loc.messages.AZ_UserAccessTokenFetchFailure": "無法為給定的使用者擷取權杖。",
-  "loc.messages.AZ_NoValidResourceIdFound": "訂用帳戶 {2} 中找不到 serverName {0}、serverType {1} 的資源。請指定正確的 serverName/serverType，並再試一次。",
-  "loc.messages.AZ_UnableToFetchLoadbalancerDetails": "無法擷取負載平衡器詳細資料",
-  "loc.messages.AZ_UnableToFetchPublicIPAddressesDetails": "無法擷取公用 IP 位址詳細資料",
-  "loc.messages.AZ_UnableToFetchNetworkInterfacesDetails": "無法擷取網路介面詳細資料",
-  "loc.messages.AZ_MsiAccessNotConfiguredProperlyFailure": "無法擷取受控服務主體的存取權杖。請設定虛擬機器的受控服務識別 (MSI) (https://aka.ms/azure-msi-docs)。狀態碼: {0}，狀態訊息: {1}",
-  "loc.messages.AZ_MsiAccessTokenFetchFailure": "無法擷取受控服務主體的存取權杖。狀態碼: {0}，狀態訊息: {1}",
-  "loc.messages.AZ_SPNCertificateAccessTokenFetchFailure": "無法使用用戶端憑證取得服務主體識別碼 {0} 的存取權杖。{1}",
-  "loc.messages.AZ_SPNCertificateAccessTokenFetchFailureTokenNull": "無法使用用戶端憑證取得服務主體識別碼 {0} 的存取權杖。tokenResult 為 null。"
+  "loc.messages.AZ_UnsupportedAuthScheme0": "Unsupported authentication scheme '{0}' for Azure endpoint.",
+  "loc.messages.AZ_SpnAccessTokenFetchFailure": "Not able to fetch token for tenant Id {0}.",
+  "loc.messages.AZ_UserAccessTokenFetchFailure": "Not able to fetch token for given User.",
+  "loc.messages.AZ_NoValidResourceIdFound": "No resource found with serverName {0}, serverType {1} in subscription {2}. Specify the correct serverName/serverType and try again.",
+  "loc.messages.AZ_UnableToFetchLoadbalancerDetails": "Unable to fetch load balancer details",
+  "loc.messages.AZ_UnableToFetchPublicIPAddressesDetails": "Unable to fetch public IP Addresses details",
+  "loc.messages.AZ_UnableToFetchNetworkInterfacesDetails": "Unable to fetch network interfaces details",
+  "loc.messages.AZ_MsiAccessNotConfiguredProperlyFailure": "Could not fetch access token for Managed Service Principal. Please configure Managed Service Identity (MSI) for virtual machine 'https://aka.ms/azure-msi-docs'. Status code: {0}, status message: {1}",
+  "loc.messages.AZ_MsiAccessTokenFetchFailure": "Could not fetch access token for Managed Service Principal. Status code: {0}, status message: {1}",
+  "loc.messages.AZ_SPNCertificateAccessTokenFetchFailure": "Failed to obtain access token using client certificate for service principal id: {0}. {1}",
+  "loc.messages.AZ_SPNCertificateAccessTokenFetchFailureTokenNull": "Failed to obtain access token using client certificate for service principal id: {0}, tokenResult is null."
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Ambiente Conda",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/pipelines-anaconda-guide)<br>[Task documentation](https://go.microsoft.com/fwlink/?linkid=873466)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://aka.ms/pipelines-anaconda-guide)<br>[Documentazione delle attività](https://go.microsoft.com/fwlink/?linkid=873466)",
   "loc.description": "Questa attività è deprecata. Usare `conda` direttamente nello script per lavorare con ambienti Anaconda.",
   "loc.instanceNameFormat": "Ambiente Conda $(environmentName)",
   "loc.input.label.createCustomEnvironment": "Crea un ambiente personalizzato",

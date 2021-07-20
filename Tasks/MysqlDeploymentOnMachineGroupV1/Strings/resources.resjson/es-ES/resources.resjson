@@ -1,10 +1,10 @@
 {
   "loc.friendlyName": "Implementación de MySQL Database",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/mysql-deployment-on-machine-group)",
+  "loc.helpMarkDown": "[Obtener más información acerca de esta tarea](https://aka.ms/mysql-deployment-on-machine-group)",
   "loc.description": "Ejecute los scripts y realice cambios en la instancia de MySQL Database.",
   "loc.instanceNameFormat": "Implementar con: $(TaskNameSelector)",
   "loc.input.label.TaskNameSelector": "Implementar MySql con",
-  "loc.input.help.TaskNameSelector": "Seleccione una de las opciones entre Archivo de script y Script en línea.",
+  "loc.input.help.TaskNameSelector": "Seleccione una de las opciones entre Archivo de script y Script alineado.",
   "loc.input.label.SqlFile": "Script de MySQL",
   "loc.input.help.SqlFile": "Ruta de acceso completa del archivo de script en el agente de automatización o en una ruta de acceso UNC accesible para el agente de automatización, como \\\\\\\\BudgetIT\\DeployBuilds\\script.sql. Además, las variables de sistema predefinidas, como $(agent.releaseDirectory), también se pueden usar aquí. Se puede usar además un archivo que contenga instrucciones SQL.",
   "loc.input.label.SqlInline": "Script de MySQL en línea",
@@ -12,7 +12,7 @@
   "loc.input.label.ServerName": "Nombre de host",
   "loc.input.help.ServerName": "Nombre del servidor de \"Database for MySQL\". Ejemplo: localhost. Cuando se conecta mediante MySQL Workbench, este es el mismo valor que se usa para \"Nombre de host\" en \"Parámetros\".",
   "loc.input.label.DatabaseName": "Nombre de la base de datos",
-  "loc.input.help.DatabaseName": "El nombre de la base de datos, si ya dispone de una, en la que se debe ejecutar el script siguiente; de lo contrario, el propio script se puede usar para crear la base de datos.",
+  "loc.input.help.DatabaseName": "El nombre de la base de datos, si ya dispone de una, en la que es necesario ejecutar el script siguiente; de lo contrario, el propio script se puede usar para crear la base de datos.",
   "loc.input.label.SqlUsername": "Nombre de usuario de MySQL",
   "loc.input.help.SqlUsername": "Cuando se conecta mediante MySQL Workbench, este es el mismo valor que se usa para \"Nombre de usuario\" en \"Parámetros\".",
   "loc.input.label.SqlPassword": "Contraseña",
@@ -31,5 +31,6 @@
   "loc.messages.CallbackCannotBeNull": "La devolución de llamada no puede ser null.",
   "loc.messages.UnableToCreateDatabaseException": "No se puede crear la base de datos.",
   "loc.messages.WindowMysqlClientMissingError": "Falta el cliente de MySQL en el equipo del agente de Windows. Instálelo ejecutando el archivo de script \"https://aka.ms/window-mysqlcli-installer\" del instalador del cliente MySQL en la máquina del agente.",
-  "loc.messages.LinuxMysqlClientMissingError": "Falta el cliente de MySQL en el equipo del agente de Linux. Instálelo ejecutando \"sudo apt-get install mysql-client\"."
+  "loc.messages.LinuxMysqlClientMissingError": "Falta el cliente de MySQL en el equipo del agente de Linux. Instálelo ejecutando \"sudo apt-get install mysql-client\".",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "No se encontró ningún paquete con el patrón especificado"
 }

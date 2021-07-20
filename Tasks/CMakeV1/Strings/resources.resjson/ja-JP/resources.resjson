@@ -1,12 +1,15 @@
 {
   "loc.friendlyName": "CMake",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613719)",
-  "loc.description": "CMake クロス プラットフォームのビルド システムを使ってビルドします",
+  "loc.description": "Build with the CMake cross-platform build system",
   "loc.instanceNameFormat": "CMake $(cmakeArgs)",
-  "loc.input.label.cwd": "作業ディレクトリ",
-  "loc.input.help.cwd": "cmake の実行時の現行の作業ディレクトリ。",
-  "loc.input.label.cmakeArgs": "引数 ",
-  "loc.input.help.cmakeArgs": "cmake に渡される引数 ",
-  "loc.messages.CMakeReturnCode": "CMake は、リターン コードを伴って終了しました: %d ",
-  "loc.messages.CMakeFailed": "CMake でエラーが発生しました: %s"
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.cwd": "Working Directory",
+  "loc.input.help.cwd": "Current working directory when cmake is run.",
+  "loc.input.label.cmakeArgs": "Arguments",
+  "loc.input.help.cmakeArgs": "Arguments passed to cmake",
+  "loc.input.label.runInsideShell": "Run cmake command inside shell",
+  "loc.input.help.runInsideShell": "CMake arguments will be handled like they would be inside of an OS specific shell. It can be used to handle environment variables inside of argument strings.",
+  "loc.messages.CMakeReturnCode": "CMake exited with return code: %d",
+  "loc.messages.CMakeFailed": "CMake failed with error: %s"
 }

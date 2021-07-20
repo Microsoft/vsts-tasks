@@ -1,9 +1,9 @@
 {
   "loc.friendlyName": "Xcode",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613730) or [see the Xcode documentation](https://developer.apple.com/xcode/)",
+  "loc.helpMarkDown": "[Weitere Informationen zu dieser Aufgabe](https://go.microsoft.com/fwlink/?LinkID=613730) oder [Xcode-Dokumentation anzeigen](https://developer.apple.com/xcode/)",
   "loc.description": "Hiermit wird ein Xcode-Arbeitsbereich unter macOS erstellt, getestet oder archiviert. Optional kann eine App paketiert werden.",
   "loc.instanceNameFormat": "Xcode $(actions)",
-  "loc.releaseNotes": "This version of the task is compatible with Xcode 8 - 11. Features that were solely to maintain compatibility with Xcode 7 have been removed. This task has better options for using Microsoft-hosted macOS agents.",
+  "loc.releaseNotes": "Diese Version der Aufgabe ist mit Xcode 8 bis 11 kompatibel. Features, die ausschließlich der Kompatibilität mit Xcode 7 dienten, wurden entfernt. Die Aufgabe umfasst verbesserte Optionen zur Verwendung von macOS-Agents, die von Microsoft gehostet werden.",
   "loc.group.displayName.sign": "Signierung und Bereitstellung",
   "loc.group.displayName.package": "Paketoptionen",
   "loc.group.displayName.devices": "Geräte und Simulatoren",
@@ -19,7 +19,7 @@
   "loc.input.label.scheme": "Schema",
   "loc.input.help.scheme": "(Optional) Geben Sie den Namen eines in Xcode definierten Schemas an. Es muss sich um ein freigegebenes Schema handeln, für das das Kontrollkästchen <strong>Freigegeben</strong> unter <strong>Verwaltete Schemas</strong> in Xcode aktiviert ist. Wenn Sie oben einen <strong>Arbeitsbereich oder Projektpfad</strong> ohne ein Schema angeben, und der Arbeitsbereich nur ein einziges freigegebenes Schema umfasst, wird dieses automatisch verwendet.",
   "loc.input.label.xcodeVersion": "Xcode-Version",
-  "loc.input.help.xcodeVersion": "Geben Sie die Zielversion von Xcode an. Wählen Sie \"Standard\" aus, um die Standardversion von Xcode auf dem Agentcomputer zu verwenden. Die Auswahl einer Versionsnummer (z. B. \"Xcode 9\") hängt davon ab, ob für den Versionsspeicherort auf dem Agentcomputer Umgebungsvariablen festgelegt werden (z. B. \"XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer\"). Wählen Sie \"Pfad angeben\" aus, um einen bestimmten Pfad zum Xcode-Entwicklerverzeichnis anzugeben.",
+  "loc.input.help.xcodeVersion": "Geben Sie die Zielversion von Xcode an. Wählen Sie \"Standard\" aus, um die Standardversion von Xcode auf dem Agentcomputer zu verwenden. Die Auswahl einer Versionsnummer (z. B. \"Xcode 9\") hängt davon ab, ob für den Versionsspeicherort auf dem Agentcomputer Umgebungsvariablen festgelegt werden (z. B. \"XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer\"). Wählen Sie \"Pfad angeben\" aus, um einen bestimmten Pfad zum Xcode-Entwicklerverzeichnis anzugeben.<br/>Hinweis: XCode 12 ist auf macOS-10.15 installiert (oder höher)",
   "loc.input.label.xcodeDeveloperDir": "Xcode-Entwicklerpfad",
   "loc.input.help.xcodeDeveloperDir": "(Optional) Geben Sie einen Pfad zu einem bestimmten Xcode-Entwicklerverzeichnis an (z. B. \"/Applications/Xcode_9.0.0.app/Contents/Developer\"). Dies ist nützlich, wenn mehrere Versionen von Xcode auf dem Agent-Computer installiert sind.",
   "loc.input.label.packageApp": "App-Paket erstellen",
@@ -64,8 +64,12 @@
   "loc.input.help.cwd": "(Optional) Geben Sie das Arbeitsverzeichnis ein, in dem der Build ausgeführt werden soll. Wenn kein Wert eingegeben wird, wird der Stamm des Repositorys verwendet.",
   "loc.input.label.useXcpretty": "xcpretty verwenden",
   "loc.input.help.useXcpretty": "Geben Sie an, ob xcpretty zum Formatieren der xcodebuild-Ausgabe verwendet werden soll. Bei Aktivierung dieser Einstellung muss xcpretty auf dem Agent-Computer installiert sein. Wenn xcpretty nicht installiert ist, wird die unformatierte xcodebuild-Ausgabe angezeigt. Auf Build-Agents, die mit Azure Pipelines gehostet werden, ist xcpretty vorinstalliert. Siehe [xcpretty](https://github.com/supermarin/xcpretty) auf GitHub.",
+  "loc.input.label.xcprettyArgs": "Xcpretty-Argumente",
+  "loc.input.help.xcprettyArgs": "Zusätzliche Argumente, die an xcpretty übergeben werden sollen.",
   "loc.input.label.publishJUnitResults": "Testergebnisse in Azure Pipelines veröffentlichen",
   "loc.input.help.publishJUnitResults": "Geben Sie an, ob JUnit-Testergebnisse in Azure Pipelines veröffentlicht werden sollen. Dies erfordert, dass xcpretty zum Generieren von JUnit-Testergebnissen aktiviert ist.",
+  "loc.input.label.testRunTitle": "Testlauftitel",
+  "loc.input.help.testRunTitle": "Der Titel des Testlaufs beim Veröffentlichen der JUnit-Testergebnisse in Azure Pipelines.",
   "loc.messages.SignIdNotFound": "Fehler bei der Suche nach der iOS-Signaturidentität. Überprüfen Sie, ob Signatur- und Bereitstellungsinformationen angegeben wurden.",
   "loc.messages.TempKeychainSetupFailed": "Fehler beim Hinzufügen der temporären Keychain zum Keychainssuchpfad.",
   "loc.messages.ProvProfileDetailsNotFound": "Fehler bei der Suche nach Details für das Bereitstellungsprofil: %s",
@@ -92,5 +96,6 @@
   "loc.messages.OutputDirectoryIgnored": "Das Ausgabeverzeichnis für die Buildausgabe (Binärdateien) wurde ignoriert. Die Angabe eines Ausgabeverzeichnisses ist nicht mit der Aktion \"%s\" kompatibel.",
   "loc.messages.NoDestinationPlatformWarning": "UI-Tests müssen über einen Simulator oder ein verbundenes Gerät ausgeführt werden. Legen Sie \"Zielplattform\" in der Xcode-Aufgabe auf einen anderen Wert als \"Standard\" fest.",
   "loc.messages.XcprettyNotInstalled": "xcpretty ist nicht auf dem Buildserver installiert. Es wird die unformatierte xcodebuild-Ausgabe angezeigt. Testergebnisse können nicht veröffentlicht werden, wenn xcpretty nicht installiert ist.",
-  "loc.messages.XcodeRequiresMac": "Für die Verwendung von Xcode ist ein macOS-Agent erforderlich. Die Builderstellung mit Xcode unter Linux oder Windows wird von Apple nicht unterstützt."
+  "loc.messages.XcodeRequiresMac": "Für die Verwendung von Xcode ist ein macOS-Agent erforderlich. Die Builderstellung mit Xcode unter Linux oder Windows wird von Apple nicht unterstützt.",
+  "loc.messages.UsingDefaultSimulator": "Standardsimulator wird verwendet: %s."
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure IoT Edge",
-  "loc.helpMarkDown": "도움말을 보려면 [문서](https://aka.ms/azure-iot-edge-ci-cd-docs)를 참조하세요.",
+  "loc.helpMarkDown": "[설명서](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-continuous-integration-continuous-deployment)에서 도움말을 참조하세요",
   "loc.description": "Azure IoT Edge 이미지를 빌드 및 배포합니다.",
   "loc.instanceNameFormat": "Azure IoT Edge - $(action)",
   "loc.group.displayName.advanced_push": "고급",
@@ -28,7 +28,7 @@
   "loc.input.label.dockerRegistryEndpoint": "Docker 레지스트리 연결",
   "loc.input.help.dockerRegistryEndpoint": "일반 **Docker 레지스트리 연결**을 선택합니다. **빌드 및 푸시**에 필요합니다.",
   "loc.input.label.azureSubscriptionEndpoint": "Azure 구독",
-  "loc.input.help.azureSubscriptionEndpoint": "Azure 구독 선택",
+  "loc.input.help.azureSubscriptionEndpoint": "Azure 구독을 선택합니다.",
   "loc.input.label.azureContainerRegistry": "Azure Container Registry",
   "loc.input.help.azureContainerRegistry": "**Azure Container Registry**를 선택합니다.",
   "loc.input.label.templateFilePath": ".template.json 파일",

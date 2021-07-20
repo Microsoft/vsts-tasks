@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "MSBuild",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613724)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=613724)",
   "loc.description": "使用 MSBuild 建置",
   "loc.instanceNameFormat": "建置方案 $(solution)",
   "loc.group.displayName.advanced": "進階",
@@ -22,7 +22,7 @@
   "loc.input.label.maximumCpuCount": "以平行方式建置",
   "loc.input.help.maximumCpuCount": "如果您的 MSBuild 目標組態與平行建置相容，您就可以選擇選取此輸入，以將 /m 參數傳遞至 MSBuild (僅限 Windows)。如果您的目標組態與平行建置不相容，選取此選項可能會導致您的組建產生檔案使用中的錯誤，或組建間歇或不一致的失敗。",
   "loc.input.label.restoreNugetPackages": "還原 NuGet 套件",
-  "loc.input.help.restoreNugetPackages": "此選項已淘汰。若要還原 NuGet 套件，請在組建前新增 [NuGet 工具安裝程式](https://docs.microsoft.com/vsts/pipelines/tasks/tool/nuget) 工作。",
+  "loc.input.help.restoreNugetPackages": "此選項已淘汰，若要還原 NuGet 套件，請先新增 [NuGet](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget) 工作再建置。",
   "loc.input.label.logProjectEvents": "記錄專案詳細資料",
   "loc.input.help.logProjectEvents": "選擇性地記錄各專案的時間軸詳細資料 (僅 Windows)。",
   "loc.input.label.createLogFile": "建立記錄檔",

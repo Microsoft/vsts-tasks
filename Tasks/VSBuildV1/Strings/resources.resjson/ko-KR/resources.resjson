@@ -28,6 +28,8 @@
   "loc.input.help.createLogFile": "선택적으로 로그 파일을 만드세요(Windows만 해당).",
   "loc.input.label.logFileVerbosity": "로그 파일의 세부 정보 표시",
   "loc.input.help.logFileVerbosity": "선택 사항으로, 로그 파일의 세부 정보 표시입니다.",
+  "loc.input.label.enableDefaultLogger": "기본 로거 사용",
+  "loc.input.help.enableDefaultLogger": "true인 경우 - msbuild용 기본 로거 사용",
   "loc.messages.MSBuildLocationDeprecated0": "MSBuild 위치 매개 변수를 사용하지 않습니다. 값 '{0}'을(를) 무시합니다.",
   "loc.messages.MSBuildVersionDeprecated0": "MSBuild 버전 매개 변수를 사용하지 않습니다. 값 '{0}'을(를) 무시합니다.",
   "loc.messages.UnexpectedVSVersion0": "예기치 않은 Visual Studio 버전 '{0}'입니다.",

@@ -14,7 +14,7 @@
   "loc.group.displayName.Advanced": "進階",
   "loc.input.label.EnableIIS": "允許 IIS",
   "loc.input.help.EnableIIS": "如果您想要在機器上安裝 IIS，請檢查此選項。",
-  "loc.input.label.IISDeploymentType": "組態類型",
+  "loc.input.label.IISDeploymentType": "設定類型",
   "loc.input.help.IISDeploymentType": "您可以建立或更新網站、應用程式、虛擬目錄及應用程式集區。",
   "loc.input.label.ActionIISWebsite": "動作",
   "loc.input.help.ActionIISWebsite": "請選取您要對 IIS 應用程式集區執行的適當動作。\n\n[建立或更新] 可建立 App 集區或更新現有的集區\n\n請個別啟動、停止或回收應用程式集區。",

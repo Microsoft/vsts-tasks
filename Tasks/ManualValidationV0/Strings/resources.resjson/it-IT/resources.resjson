@@ -1,0 +1,14 @@
+{
+  "loc.friendlyName": "Convalida manuale",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://aka.ms/manual-validation)",
+  "loc.description": "[ANTEPRIMA] Sospende l'esecuzione di una pipeline in attesa dell'interazione manuale. Funziona solo con pipeline YAML.",
+  "loc.instanceNameFormat": "Convalida manuale",
+  "loc.input.label.validators": "Invia notifica agli utenti",
+  "loc.input.help.validators": "Consente di inviare un messaggio di posta elettronica relativo a una convalida manuale in sospeso a utenti o gruppi specifici. Solo gli utenti con l'autorizzazione per compilazione coda possono intervenire su una convalida manuale.",
+  "loc.input.label.instructions": "Istruzioni",
+  "loc.input.help.instructions": "Queste istruzioni verranno visualizzate agli utenti per consentire loro di riprendere o rifiutare la convalida manuale. Usando queste istruzioni l'utente potrà prendere una decisione basata su informazioni aggiornate in merito a questa convalida manuale.",
+  "loc.input.label.onTimeout": "In caso di timeout",
+  "loc.input.label.onTimeoutReject": "Rifiuta",
+  "loc.input.label.onTimeoutResume": "Riprendi",
+  "loc.input.help.onTimeout": "Rifiuta o riprende automaticamente questa convalida manuale dopo che è rimasta in sospeso per il timeout specificato o per 30 giorni, a seconda di quale sia la data più vicina."
+}

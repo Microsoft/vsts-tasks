@@ -1,14 +1,14 @@
 {
-  "loc.friendlyName": "Publier les résultats de la couverture du code",
+  "loc.friendlyName": "Publish code coverage results",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=626485)",
   "loc.description": "Publish any of the code coverage results from a build",
-  "loc.instanceNameFormat": "Publier les résultats de la couverture du code",
+  "loc.instanceNameFormat": "Publish code coverage results",
   "loc.input.label.summaryFileLocation": "Path to summary files",
   "loc.input.help.summaryFileLocation": "Paths to summary files containing code coverage statistics, such as line, method, and class coverage. Multiple summary files will be merged into a single report. Supports multiple lines of minimatch patterns. [More information](https://aka.ms/minimatchexamples)",
-  "loc.input.label.pathToSources": "Chemin des fichiers sources",
-  "loc.input.help.pathToSources": "Le chemin des fichiers sources est obligatoire quand les rapports XML de couverture ne contiennent pas le chemin absolu des fichiers sources. Par exemple, les rapports JaCoCo n'utilisent pas de chemins absolus, et durant la publication de la couverture JaCoCo pour les applications Java, le modèle est similaire à '$(System.DefaultWorkingDirectory)/MyApp/src/main/java/'.<br />Cette entrée est également nécessaire si les tests sont exécutés dans un conteneur Docker. Cette entrée doit pointer vers le chemin absolu des fichiers sources sur l'hôte. Exemple : '$(System.DefaultWorkingDirectory)/MyApp/'",
+  "loc.input.label.pathToSources": "Path to Source files",
+  "loc.input.help.pathToSources": "Path to source files is required when coverage XML reports do not contain absolute path to source files. For e.g., JaCoCo reports do not use absolute paths and when publishing JaCoCo coverage for Java apps, the pattern would be similar to `$(System.DefaultWorkingDirectory)/MyApp/src/main/java/`.<br />This input is also needed if tests are run in a docker container. This input should point to absolute path to source files on the host. For e.g., `$(System.DefaultWorkingDirectory)/MyApp/`",
   "loc.input.label.failIfCoverageEmpty": "Fail if code coverage results are missing",
-  "loc.input.help.failIfCoverageEmpty": "Échec de la tâche si la couverture du code ne produit aucun résultat à publier.",
-  "loc.messages.FoundNMatchesForPattern": "%s résultat(s) correspondant au modèle %s",
-  "loc.messages.NoCodeCoverage": "Il n'existe aucun résultat de couverture du code à publier."
+  "loc.input.help.failIfCoverageEmpty": "Fail the task if code coverage did not produce any results to publish.",
+  "loc.messages.FoundNMatchesForPattern": "Found %s result(s) matching pattern: %s",
+  "loc.messages.NoCodeCoverage": "No code coverage results were found to publish."
 }

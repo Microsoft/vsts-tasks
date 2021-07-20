@@ -22,7 +22,7 @@
   "loc.input.label.maximumCpuCount": "병렬 빌드",
   "loc.input.help.maximumCpuCount": "MSBuild 대상 구성이 병렬 빌드 작업과 호환되는 경우 선택적으로 이 입력을 선택하여 /m 스위치를 MSBuild로 전달할 수 있습니다(Windows만 해당). 대상 구성이 병렬 빌드 작업과 호환되지 않는 경우 이 옵션을 선택하면 빌드에서 파일 사용 중 오류 또는 일시적이거나 일관되지 않은 빌드 오류가 발생할 수 있습니다.",
   "loc.input.label.restoreNugetPackages": "NuGet 패키지 복원",
-  "loc.input.help.restoreNugetPackages": "이 옵션은 사용되지 않습니다. NuGet 패키지를 복원하려면 빌드 앞에 [NuGet 도구 설치 관리자](https://docs.microsoft.com/vsts/pipelines/tasks/tool/nuget) 작업을 추가하세요.",
+  "loc.input.help.restoreNugetPackages": "이 옵션은 사용되지 않습니다. NuGet 패키지를 복원하려면 빌드 앞에 [NuGet](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget) 작업을 추가하세요.",
   "loc.input.label.logProjectEvents": "프로젝트 정보 기록",
   "loc.input.help.logProjectEvents": "원하는 경우 각 프로젝트의 타임라인 세부 정보를 기록합니다(Windows만 해당).",
   "loc.input.label.createLogFile": "로그 파일 만들기",

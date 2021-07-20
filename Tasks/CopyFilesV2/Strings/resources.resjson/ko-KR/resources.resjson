@@ -19,6 +19,8 @@
   "loc.input.help.flattenFolders": "폴더 구조를 평면화하고 모든 파일을 지정된 대상 폴더에 복사합니다.",
   "loc.input.label.preserveTimestamp": "대상 타임스탬프 유지",
   "loc.input.help.preserveTimestamp": "원본 소스 파일을 사용하여 대상 파일 타임스탬프를 유지합니다.",
+  "loc.input.label.retryCount": "파일 복사 재시도 횟수",
+  "loc.input.help.retryCount": "파일을 복사하려면 재시도 횟수를 지정합니다. 원격 호스트의 UNC 대상 경로와 같은 간헐적인 문제를 해결하는 데 도움이 될 수 있습니다.",
   "loc.messages.FoundNFiles": "%d개 파일을 찾았습니다.",
   "loc.messages.CleaningTargetFolder": "대상 폴더 정리: %s",
   "loc.messages.FileAlreadyExistAt": "%s 파일이 %s에 이미 있습니다.",

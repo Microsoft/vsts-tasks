@@ -1,10 +1,10 @@
 {
-  "loc.friendlyName": "NuGet 身份验证",
-  "loc.helpMarkDown": "[详细了解此任务](https://aka.ms/NuGetAuthenticateTask)",
-  "loc.description": "配置 NuGet 工具以使用 Azure Artifacts 和其他 NuGet 存储库进行身份验证。要求 NuGet >= 4.8.5385、dotnet >= 2.1.400 或 MSBuild >= 15.8.166.59604",
-  "loc.instanceNameFormat": "NuGet 身份验证",
-  "loc.input.label.nuGetServiceConnections": "此组织外部源的服务连接凭据",
-  "loc.input.help.nuGetServiceConnections": "此组织/集合外部源的 NuGet 服务连接名称的逗号分隔列表。对于此组织/集合中的源，请将此项留空；将自动使用内部版本的凭据。",
-  "loc.input.label.forceReinstallCredentialProvider": "重新安装凭据提供程序(即使已安装)",
-  "loc.input.help.forceReinstallCredentialProvider": "如果已在用户配置文件中安装凭据提供程序，请确定它是否被任务提供的凭据提供程序覆盖。这可能会升级(或可能降级)凭据提供程序。"
+  "loc.friendlyName": "NuGet authenticate",
+  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/NuGetAuthenticateTask)",
+  "loc.description": "Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories. Requires NuGet >= 4.8.5385, dotnet >= 2.1.400, or MSBuild >= 15.8.166.59604",
+  "loc.instanceNameFormat": "NuGet Authenticate",
+  "loc.input.label.nuGetServiceConnections": "Service connection credentials for feeds outside this organization",
+  "loc.input.help.nuGetServiceConnections": "Comma-separated list of NuGet service connection names for feeds outside this organization/collection. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically.",
+  "loc.input.label.forceReinstallCredentialProvider": "Reinstall the credential provider even if already installed",
+  "loc.input.help.forceReinstallCredentialProvider": "If the credential provider is already installed in the user profile, determines if it is overwritten with the task-provided credential provider. This may upgrade (or potentially downgrade) the credential provider."
 }

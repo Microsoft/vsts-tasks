@@ -4,7 +4,7 @@
   "loc.description": "Consente di connettere o disconnettere l'interfaccia di rete di una macchina virtuale di Azure al/dal pool di indirizzi back-end di un servizio di bilanciamento del carico",
   "loc.instanceNameFormat": "Bilanciamento del carico di rete di Azure: $(LoadBalancer) - $(Action)",
   "loc.input.label.ConnectedServiceName": "Sottoscrizione di Azure",
-  "loc.input.help.ConnectedServiceName": "Consente di selezionare la sottoscrizione di Azure Resource Manager per la distribuzione.",
+  "loc.input.help.ConnectedServiceName": "Selezionare la sottoscrizione di Azure Resource Manager per la distribuzione.",
   "loc.input.label.ResourceGroupName": "Gruppo di risorse",
   "loc.input.help.ResourceGroupName": "Consente di selezionare il nome del gruppo di risorse.",
   "loc.input.label.LoadBalancer": "Nome del servizio di bilanciamento del carico",

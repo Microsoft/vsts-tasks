@@ -1,14 +1,14 @@
 {
-  "loc.messages.CreatedBlobForItem": "項目 {0} の BLOB が作成されました。BLOB URI: {1}",
-  "loc.messages.CreatedContainer": "コンテナー {0} が作成されました。",
-  "loc.messages.ErrorInReadStream": "ストリームの読み取りエラー: {0}",
-  "loc.messages.ErrorInWriteStream": "ストリームの書き込みエラー: {0}",
-  "loc.messages.FailedToCreateBlob": "BLOB {0} を作成できませんでした。エラー: {1}",
-  "loc.messages.FailedToCreateContainer": "コンテナー {0} を作成できませんでした。エラー: {1}",
-  "loc.messages.FailedToListItemInsideContainer": "コンテナー {0} 内の項目を一覧表示できませんでした。エラー: {1}",
-  "loc.messages.SuccessFullyFetchedItemList": "アイテムの一覧が正常にフェッチされました",
-  "loc.messages.UnableToFetchItem": "アイテムをフェッチできませんでした: {0}。エラー: {1}",
-  "loc.messages.UploadingItem": "{0} をアップロードしています。",
-  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "継続トークンが存在します。残りのファイルの一覧をフェッチしようとしています。",
-  "loc.messages.GetArtifactItemsNotSupported": "成果物項目の取得はサポートされていません。無効なコード パスです"
+  "loc.messages.CreatedBlobForItem": "Created blob for item {0}. Blob uri: {1}",
+  "loc.messages.CreatedContainer": "Created container {0}.",
+  "loc.messages.ErrorInReadStream": "Error in Read stream: {0}",
+  "loc.messages.ErrorInWriteStream": "Error in write stream: {0}",
+  "loc.messages.FailedToCreateBlob": "Failed to create blob {0}. Error: {1}",
+  "loc.messages.FailedToCreateContainer": "Failed to create container {0}. Error: {1}",
+  "loc.messages.FailedToListItemInsideContainer": "Failed to list items inside container: {0}. Error: {1}",
+  "loc.messages.SuccessFullyFetchedItemList": "Successfully fetcted list of items",
+  "loc.messages.UnableToFetchItem": "Unable to fetch item: {0}. Error: {1}",
+  "loc.messages.UploadingItem": "Uploading {0}.",
+  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "Continuation token exists, trying to fetch the list of remaining files.",
+  "loc.messages.GetArtifactItemsNotSupported": "Get artifact items not supported, invalid code path"
 }

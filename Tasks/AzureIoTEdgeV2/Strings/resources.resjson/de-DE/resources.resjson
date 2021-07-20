@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure IoT Edge",
-  "loc.helpMarkDown": "Hilfe erhalten Sie in der [Dokumentation](https://aka.ms/azure-iot-edge-ci-cd-docs).",
+  "loc.helpMarkDown": "Besuchen Sie die [Dokumentation] (https://docs.microsoft.com/en-us/azure/iot-edge/how-to-continuous-integration-continuous-deployment), um Hilfe zu erhalten",
   "loc.description": "Azure IoT Edge-Image erstellen und bereitstellen",
   "loc.instanceNameFormat": "Azure IoT Edge – $(action)",
   "loc.group.displayName.advanced_push": "Erweitert",
@@ -37,10 +37,10 @@
   "loc.input.help.defaultPlatform": "In Ihrer **.template.json** müssen Sie keine Modulplattform angeben. Für diese Module wird die **Standardplattform** verwendet.",
   "loc.input.label.fillRegistryCredential": "Registrierungsanmeldeinformationen zum Bereitstellungsmanifest hinzufügen",
   "loc.input.help.fillRegistryCredential": "Fügen Sie Registrierungsanmeldeinformationen hinzu, um mithilfe von Push Docker-Images in das Bereitstellungsmanifest zu übertragen.",
-  "loc.input.label.deploymentManifestOutputPath": "Output path",
-  "loc.input.help.deploymentManifestOutputPath": "The output path of generated deployment manifest",
-  "loc.input.label.validateGeneratedDeploymentManifest": "Validate the schema of generated deployment manifest",
-  "loc.input.help.validateGeneratedDeploymentManifest": "Fail this step if the generated deployment manifest does not pass schema validation. You can search `Azure IoT Edge deployment` in [JSON Schema Store](http://schemastore.org/json/) to find latest schema.",
+  "loc.input.label.deploymentManifestOutputPath": "Ausgabepfad",
+  "loc.input.help.deploymentManifestOutputPath": "Der Ausgabepfad des generierten Bereitstellungsmanifests.",
+  "loc.input.label.validateGeneratedDeploymentManifest": "Schema des generierten Bereitstellungsmanifests validieren",
+  "loc.input.help.validateGeneratedDeploymentManifest": "Schritt als fehlerhaft markieren, wenn das generierte Bereitstellungsmanifest nicht die Schemavalidierung besteht. Sie können im [JSON Schema Store](http://schemastore.org/json/) nach \"Azure IoT Edge-Bereitstellung\" suchen, um das aktuelle Schema zu finden.",
   "loc.input.label.bypassModules": "Module für Umgehung",
   "loc.input.help.bypassModules": "Wählen Sie die Module aus, die Sie **NICHT** zum Erstellen (oder zur Übertragung mithilfe von Push) in der .template.json-Datei benötigen, geben Sie Modulnamen an, und trennen Sie diese durch Kommas.\n Beispiel: Wenn Sie über 2 Module **SampleModule1,SampleModule2** in Ihrer .template.json-Datei verfügen und nur **SampleModule1\" erstellen oder mithilfe von Push übertragen möchten, dann legen Sie die zu umgehenden Module auf **SampleModule2** fest. Lassen Sie diese Einstellung leer, wenn Sie alle Module in der .template.json-Datei erstellen möchten.",
   "loc.messages.BuildingModules": "Modulimages werden erstellt...",
@@ -61,7 +61,7 @@
   "loc.messages.DependencyInstallSuccess": "%s wurde mit folgender Version erstellt: %s",
   "loc.messages.DependencyInstallFail": "Fehler bei der %s-Installation, siehe ausführliche Fehlerinformationen im Debugmodus.",
   "loc.messages.TemplateFileInvalid": "Der Pfad der Vorlagendatei ist ungültig: %s",
-  "loc.messages.InvalidContainerRegistry": "Failed to fetch container registry authentication token, please check you container registry setting in build task. The username for container registry is %s",
+  "loc.messages.InvalidContainerRegistry": "Fehler beim Abrufen des Authentifizierungstokens für die Containerregistrierung. Überprüfen Sie die Einstellung für die Containerregistrierung in der Buildaufgabe. Der Benutzername für die Containerregistrierung lautet \"%s\".",
   "loc.messages.DeploymentFileNotFound": "Die Bereitstellungsdatei wurde nicht gefunden. Stellen Sie sicher, dass der Pfad der Bereitstellungsdatei ordnungsgemäß in der Aufgabe festgelegt ist.",
   "loc.messages.ValidDeploymentFileNotFound": "Es wurde keine gültige Bereitstellungsdatei gefunden. Stellen Sie sicher, dass der Pfad der Bereitstellungsdatei ordnungsgemäß in der Aufgabe festgelegt ist.",
   "loc.messages.AzureSdkNotFound": "Azure SDK nicht gefunden.",
@@ -71,6 +71,6 @@
   "loc.messages.CheckModuleImageExistenceError": "\"%s\" ist nicht vorhanden, oder die Anmeldeinformationen sind nicht ordnungsgemäß festgelegt. Fehler: %s",
   "loc.messages.StartGenerateDeploymentManifest": "Generieren des Bereitstellungsmanifests starten...",
   "loc.messages.FinishGenerateDeploymentManifest": "Der Generierungsvorgang für das Bereitstellungsmanifest wurde abgeschlossen.",
-  "loc.messages.LoginRegistrySucess": "Successfully logged in to registry %s",
-  "loc.messages.SkipSettingEnvironmentVariableForSecret": "Environment variable %s already exist. Skip setting environment varialbe for secret: %s."
+  "loc.messages.LoginRegistrySucess": "Die Anmeldung bei Registrierung \"%s\" war erfolgreich.",
+  "loc.messages.SkipSettingEnvironmentVariableForSecret": "Die Umgebungsvariable \"%s\" ist bereits vorhanden. Die Festlegung der Umgebungsvariable für Geheimnis wird übersprungen: %s."
 }

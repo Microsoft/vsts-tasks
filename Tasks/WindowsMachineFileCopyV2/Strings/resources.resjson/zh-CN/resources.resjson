@@ -10,7 +10,7 @@
   "loc.input.label.MachineNames": "计算机",
   "loc.input.help.MachineNames": "提供以逗号分隔的计算机 IP 地址或 FQDN 列表。<br>例如: dbserver.fabrikam.com,192.168.12.34 <br>或者提供其他任务的输出变量。例如: $(variableName)",
   "loc.input.label.AdminUserName": "管理员登录名",
-  "loc.input.help.AdminUserName": "目标计算机的管理员登录名。",
+  "loc.input.help.AdminUserName": "针对目标计算机的管理员登录。",
   "loc.input.label.AdminPassword": "密码",
   "loc.input.help.AdminPassword": "目标计算机的管理员登录密码。<br>可接受生成或发布管道中定义为 \"$(passwordVariable)\" 的变量。<br>可将变量标记为“机密”来进行保护。",
   "loc.input.label.TargetPath": "目标文件夹",

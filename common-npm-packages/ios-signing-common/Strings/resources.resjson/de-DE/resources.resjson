@@ -1,7 +1,7 @@
 {
-  "loc.messages.SignIdNotFound": "Fehler beim Suchen nach der iOS-Signaturidentität. Überprüfen Sie die angegebenen Signatur- und Bereitstellungsinformationen.",
-  "loc.messages.TempKeychainSetupFailed": "Fehler beim Hinzufügen der temporären Keychain zum Keychainssuchpfad.",
-  "loc.messages.ProvProfileDetailsNotFound": "Fehler beim Suchen nach den Details für das Bereitstellungsprofil: %s",
-  "loc.messages.ProvProfileUUIDNotFound": "Fehler beim Suchen nach dem Bereitstellungsprofil-UUID für das Bereitstellungsprofil: %s",
-  "loc.messages.ProvProfileNameNotFound": "Der Bereitstellungsprofilname für das Bereitstellungsprofil wurde nicht gefunden: %s"
+  "loc.messages.SignIdNotFound": "Failed to find iOS signing identity. Verify the signing and provisioning information provided.",
+  "loc.messages.TempKeychainSetupFailed": "Failed to add the temporary keychain to the keychains search path.",
+  "loc.messages.ProvProfileDetailsNotFound": "Failed to find the details for provisioning profile: %s",
+  "loc.messages.ProvProfileUUIDNotFound": "Failed to find provisioning profile UUID for provisioning profile: %s",
+  "loc.messages.ProvProfileNameNotFound": "Failed to find provisioning profile name for provisioning profile: %s"
 }

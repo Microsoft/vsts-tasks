@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "命令列",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613735)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=613735)",
   "loc.description": "在 Linux 和 macOS 上使用 Bash; 在 Windows 上使用 cmd.exe 來執行命令列指令碼",
   "loc.instanceNameFormat": "命令列指令碼",
   "loc.releaseNotes": "指令碼工作一致性。新增了多行支援。",

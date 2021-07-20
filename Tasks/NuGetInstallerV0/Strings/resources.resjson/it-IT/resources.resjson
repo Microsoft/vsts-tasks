@@ -1,7 +1,7 @@
 {
   "loc.friendlyName": "Programma di installazione NuGet",
-  "loc.helpMarkDown": "[Altre informazioni](https://go.microsoft.com/fwlink/?LinkID=613747)",
-  "loc.description": "Consente di installare o ripristinare i pacchetti NuGet mancanti",
+  "loc.helpMarkDown": "[Altre informazioni](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget)",
+  "loc.description": "Consente di installare o ripristinare i pacchetti NuGet mancanti. Per le funzionalità più recenti, usare l'attività NuGetAuthenticate@0.",
   "loc.instanceNameFormat": "NuGet $(restoreMode) $(solution)",
   "loc.group.displayName.advanced": "Avanzate",
   "loc.input.label.solution": "Percorso della soluzione o di packages.config",

@@ -1,11 +1,11 @@
 {
-  "loc.messages.MSB_Build0": "ビルド: {0}",
-  "loc.messages.MSB_BuildToolNotFound": "MSBuild または xbuild(Mono) が Mac/Linux エージェント上に見つかりませんでした。",
-  "loc.messages.MSB_DetectedNuGetExtensionsLoaderPath0": "NuGet 拡張機能のローダー パスが検出されました。環境変数 NUGET_EXTENSIONS_PATH が '{0}' に設定されています。",
-  "loc.messages.MSB_MSBuild15NotFoundionArchitecture0": "MSBuild バージョン '15.0' がアーキテクチャ '{0}' にありません。アーキテクチャの入力値が正しいことを確認し、Visual Studio 2017 がインストールされていることを確認してください。MSBuild バージョン '15.0' は、Visual Studio 2017 のインストール時にインストールされます。",
-  "loc.messages.MSB_MSBuildNotFound": "MSBuild が見つかりませんでした。msbuild.exe の場所を指定するか、Visual Studio をインストールしてください。MSBuild は Visual Studio のインストール時にインストールされます。",
-  "loc.messages.MSB_MSBuildNotFoundVersion0Architecture1": "バージョン '{0}' およびアーキテクチャ '{1}' の MSBuild が見つかりませんでした。バージョン/アーキテクチャの別の組み合わせを試し、場所を指定し、適切なバージョンの Visual Studio をインストールしてください。MSBuild は Visual Studio のインストール時にインストールされます。",
-  "loc.messages.MSB_RestoreNuGetPackagesDeprecated": "'NuGet パッケージの復元' オプションは非推奨になりました。ビルド内の NuGet パッケージを復元するには、NuGet Tool インストーラーのタスクをビルド定義に追加します。",
-  "loc.messages.MSB_SolutionNotFoundUsingSearchPattern0": "検索パターン '{0}' を使ってソリューションが見つかりませんでした。",
-  "loc.messages.MSB_UnableToFindMSBuildVersion0Architecture1FallbackVersion2": "アーキテクチャ '{1}' の MSBuild バージョン '{0}' が見つかりません。バージョン '{2}' にフォールバックします。"
+  "loc.messages.MSB_Build0": "Build {0}",
+  "loc.messages.MSB_BuildToolNotFound": "MSBuild or xbuild(Mono) were not found on the Mac/Linux agent.",
+  "loc.messages.MSB_DetectedNuGetExtensionsLoaderPath0": "Detected NuGet extensions loader path. Environment variable NUGET_EXTENSIONS_PATH is set to '{0}'.",
+  "loc.messages.MSB_MSBuild15NotFoundionArchitecture0": "MSBuild version '15.0' was not found for architecture '{0}'. Verify the architecture input value is correct and verify Visual Studio 2017 is installed. MSBuild version '15.0' is included when Visual Studio 2017 is installed.",
+  "loc.messages.MSB_MSBuildNotFound": "MSBuild was not found. Try specifying the location to msbuild.exe or install Visual Studio. MSBuild is included when Visual Studio is installed.",
+  "loc.messages.MSB_MSBuildNotFoundVersion0Architecture1": "MSBuild was not found for version '{0}' and architecture '{1}'. Try a different version/architecture combination, specify a location, or install the appropriate version of Visual Studio. MSBuild is included when Visual Studio is installed.",
+  "loc.messages.MSB_RestoreNuGetPackagesDeprecated": "The 'Restore NuGet Packages' option is deprecated. To restore NuGet packages in your build, add a NuGet Tool Installer task to your build definition.",
+  "loc.messages.MSB_SolutionNotFoundUsingSearchPattern0": "Solution not found using search pattern '{0}'.",
+  "loc.messages.MSB_UnableToFindMSBuildVersion0Architecture1FallbackVersion2": "Unable to find MSBuild version '{0}' for architecture '{1}'. Falling back to version '{2}'."
 }

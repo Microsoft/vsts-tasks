@@ -1,11 +1,11 @@
 {
-  "loc.messages.MSB_Build0": "Compilación {0}",
-  "loc.messages.MSB_BuildToolNotFound": "No se encontró MSBuild o xbuild (Mono) en el agente para Mac o Linux.",
-  "loc.messages.MSB_DetectedNuGetExtensionsLoaderPath0": "Se detectó la ruta de acceso del cargador de extensiones de NuGet. La variable de entorno NUGET_EXTENSIONS_PATH está establecida en '{0}'.",
-  "loc.messages.MSB_MSBuild15NotFoundionArchitecture0": "No se encontró la versión de MSBuild \"15.0\" para la arquitectura \"{0}\". Compruebe que el valor de entrada de la arquitectura es correcto y compruebe que Visual Studio 2017 está instalado. La versión de MSBuild \"15.0\" se incluyó con la instalación de Visual Studio 2017.",
-  "loc.messages.MSB_MSBuildNotFound": "No se encontró MSBuild. Pruebe a especificar la ubicación de msbuild.exe o instale Visual Studio. MSBuild se incluyó con la instalación de Visual Studio.",
-  "loc.messages.MSB_MSBuildNotFoundVersion0Architecture1": "No se encontró MSBuild para la versión \"{0}\" y la arquitectura \"{1}\". Pruebe una combinación diferente de versión/arquitectura, especifique una ubicación o instale la versión adecuada de Visual Studio. MSBuild se incluyó con la instalación de Visual Studio.",
-  "loc.messages.MSB_RestoreNuGetPackagesDeprecated": "La opción \"Restaurar paquetes de NuGet\" está en desuso. Para restaurar paquetes de NuGet en la compilación, agregue una tarea del instalador de la herramienta NuGet a la definición de compilación.",
-  "loc.messages.MSB_SolutionNotFoundUsingSearchPattern0": "No se encontró la solución con el patrón de búsqueda '{0}'.",
-  "loc.messages.MSB_UnableToFindMSBuildVersion0Architecture1FallbackVersion2": "No se encuentra la versión de MSBuild \"{0}\" para la arquitectura \"{1}\". Revirtiendo a la versión \"{2}\"."
+  "loc.messages.MSB_Build0": "Build {0}",
+  "loc.messages.MSB_BuildToolNotFound": "MSBuild or xbuild(Mono) were not found on the Mac/Linux agent.",
+  "loc.messages.MSB_DetectedNuGetExtensionsLoaderPath0": "Detected NuGet extensions loader path. Environment variable NUGET_EXTENSIONS_PATH is set to '{0}'.",
+  "loc.messages.MSB_MSBuild15NotFoundionArchitecture0": "MSBuild version '15.0' was not found for architecture '{0}'. Verify the architecture input value is correct and verify Visual Studio 2017 is installed. MSBuild version '15.0' is included when Visual Studio 2017 is installed.",
+  "loc.messages.MSB_MSBuildNotFound": "MSBuild was not found. Try specifying the location to msbuild.exe or install Visual Studio. MSBuild is included when Visual Studio is installed.",
+  "loc.messages.MSB_MSBuildNotFoundVersion0Architecture1": "MSBuild was not found for version '{0}' and architecture '{1}'. Try a different version/architecture combination, specify a location, or install the appropriate version of Visual Studio. MSBuild is included when Visual Studio is installed.",
+  "loc.messages.MSB_RestoreNuGetPackagesDeprecated": "The 'Restore NuGet Packages' option is deprecated. To restore NuGet packages in your build, add a NuGet Tool Installer task to your build definition.",
+  "loc.messages.MSB_SolutionNotFoundUsingSearchPattern0": "Solution not found using search pattern '{0}'.",
+  "loc.messages.MSB_UnableToFindMSBuildVersion0Architecture1FallbackVersion2": "Unable to find MSBuild version '{0}' for architecture '{1}'. Falling back to version '{2}'."
 }

@@ -7,6 +7,6 @@
   "loc.input.help.opaVersion": "Specify the version of open policy agent to install",
   "loc.messages.DownloadOpaFailedFromLocation": "Failed to download opa from location %s. Error %s",
   "loc.messages.OpaLatestNotKnown": "Cannot get the latest OpenPolicyAgent info from %s. Error %s. Using default OpenPolicyAgent version %s.",
-  "loc.messages.NotAValidSemverVersion": "未以正確的格式指定版本。例如: 1.8.2、v1.8.2、2.8.2、v2.8.2。",
+  "loc.messages.NotAValidSemverVersion": "Version not specified in correct format. E.g: 1.8.2, v1.8.2, 2.8.2, v2.8.2.",
   "loc.messages.VerifyOpaInstallation": "Verifying opa installation..."
 }

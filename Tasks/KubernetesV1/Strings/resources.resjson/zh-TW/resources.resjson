@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Kubectl",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=851275) or [see the Kubernetes documentation](https://kubernetes.io/docs/home/)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?linkid=851275)或[參閱 Kubernetes 文件](https://kubernetes.io/docs/home/)",
   "loc.description": "透過執行 kubectl 命令，在 Azure Container Service 中部署、設定和升級 Kubernetes 叢集",
   "loc.instanceNameFormat": "kubectl $(command)",
   "loc.releaseNotes": "1.0 版的新功能:<br/>&nbsp;新增服務連線類型輸入，讓 Azure AKS 叢集的選取更簡單。<br/>&nbsp;將輸出變數輸入取代為我們在所有工作中新增的輸出變數區段。",
@@ -16,7 +16,7 @@
   "loc.input.help.kubernetesServiceEndpoint": "選取 Kubernetes 服務連線。",
   "loc.input.label.azureSubscriptionEndpoint": "Azure 訂用帳戶",
   "loc.input.help.azureSubscriptionEndpoint": "請選取包含 Azure Container Registry 的 Azure Resource Manager 訂用帳戶。注意: 若要設定新的服務連線，請從清單中選取 Azure 訂用帳戶，然後按一下 [授權]。若未列出您的訂用帳戶，或您要使用現有服務主體，可使用 [新增] 或 [管理] 按鈕來設定 Azure 服務連線。",
-  "loc.input.label.azureResourceGroup": "資源群組",
+  "loc.input.label.azureResourceGroup": "Resource group",
   "loc.input.help.azureResourceGroup": "請選取 Azure 資源群組。",
   "loc.input.label.kubernetesCluster": "Kubernetes 叢集",
   "loc.input.help.kubernetesCluster": "請選取 Azure 受控叢集。",
@@ -30,7 +30,7 @@
   "loc.input.help.useConfigurationFile": "透過 kubectl 命令使用 Kubernetes 設定。可提供內嵌指令碼、檔案名稱、目錄或 Kubernetes 設定檔的 URL。",
   "loc.input.label.configurationType": "組態類型",
   "loc.input.help.configurationType": "kubectl 命令的 Kubernetes 設定類型。可為檔案路徑或內嵌指令碼。",
-  "loc.input.label.configuration": "檔案路徑",
+  "loc.input.label.configuration": "File path",
   "loc.input.help.configuration": "搭配命令使用的 kubernetes 組態檔之檔案名稱、目錄或 URL。",
   "loc.input.label.inline": "內嵌設定",
   "loc.input.help.inline": "kubectl 命令的內嵌部署設定",
@@ -101,8 +101,8 @@
   "loc.messages.ToolRunnerExecCallSucceeded": "Toolrunner exec() 方法對 kubectl 命令成功傳回。",
   "loc.messages.WritingDockerConfigToTempFile": "正在將 Docker 設定寫入暫存檔案。檔案路徑: %s，Docker 設定: %s",
   "loc.messages.ExpiredServicePrincipal": "無法擷取 Azure 的存取權杖。請驗證使用的服務主體是否有效且未過期。",
-  "loc.messages.UnableToFetchKubectlVersion": "Could not fetch Kubectl version. Please make sure that the Kubernetes server is up and running.",
-  "loc.messages.KubectlClientVersion": "Kubectl Client Version",
-  "loc.messages.KubectlServerVersion": "Kubectl Server Version",
-  "loc.messages.KubectlServerVerisonNotFound": "Could not find kubectl server version"
+  "loc.messages.UnableToFetchKubectlVersion": "無法擷取 Kubectl 版本。請確定 Kubernetes 伺服器已啟動並執行。",
+  "loc.messages.KubectlClientVersion": "Kubectl 用戶端版本",
+  "loc.messages.KubectlServerVersion": "Kubectl 伺服器版本",
+  "loc.messages.KubectlServerVerisonNotFound": "找不到 kubectl 伺服器版本"
 }

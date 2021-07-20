@@ -4,15 +4,15 @@
   "loc.description": "运行脚本并对 MySQL 数据库做出更改",
   "loc.instanceNameFormat": "使用 $(TaskNameSelector)部署",
   "loc.input.label.TaskNameSelector": "用其部署 MySql",
-  "loc.input.help.TaskNameSelector": "从“脚本文件”和“内联脚本”中选择一个选项。",
+  "loc.input.help.TaskNameSelector": "选择“脚本文件”与“内联脚本”中的一个选项。",
   "loc.input.label.SqlFile": "MySQL 脚本",
   "loc.input.help.SqlFile": "自动化代理上的或可访问自动化代理的 UNC 路径上的脚本文件的完整路径，如 \\\\\\\\\\\\\\\\BudgetIT\\\\DeployBuilds\\\\script.sql。此外，还可在此处使用预定义的系统变量 ，如 $(agent.releaseDirectory)。可在此处使用包含 SQL 语句的文件。",
   "loc.input.label.SqlInline": "内联 MySQL 脚本",
-  "loc.input.help.SqlInline": "输入要在上文所选的数据库上执行的 MySQL 脚本。",
+  "loc.input.help.SqlInline": "输入要在上方所选的数据库上执行的 MySQL 脚本。",
   "loc.input.label.ServerName": "主机名",
   "loc.input.help.ServerName": "\"Database for MySQL\" 的服务器名称，例如 localhost。使用 MySQL 工作台进行连接时，该值与“参数”中的“主机名”所用的值相同",
   "loc.input.label.DatabaseName": "数据库名",
-  "loc.input.help.DatabaseName": "数据库的名称。如果已有数据库，则需要在该数据库上运行以下脚本，否则可使用脚本本身创建数据库。",
+  "loc.input.help.DatabaseName": "数据库的名称。如果已有数据库，则需要在该数据库上运行以下脚本。否则，可使用脚本本身创建数据库。",
   "loc.input.label.SqlUsername": "Mysql 用户名",
   "loc.input.help.SqlUsername": "使用 MySQL 工作台进行连接时，该值与“参数”中的“用户名”所用的值相同。",
   "loc.input.label.SqlPassword": "密码",
@@ -31,5 +31,6 @@
   "loc.messages.CallbackCannotBeNull": "回调不能为空。",
   "loc.messages.UnableToCreateDatabaseException": "无法创建数据库。",
   "loc.messages.WindowMysqlClientMissingError": "Windows 代理计算机上缺少 MySQL 客户端。请通过运行代理计算机上的 MySQL 客户端安装程序 \"https://aka.ms/window-mysqlcli-installer\" 脚本文件来安装它。",
-  "loc.messages.LinuxMysqlClientMissingError": "Linux 代理计算机上缺少 MySQL 客户端。请通过运行 \"sudo apt-get install mysql-client\" 来安装它。"
+  "loc.messages.LinuxMysqlClientMissingError": "Linux 代理计算机上缺少 MySQL 客户端。请通过运行 \"sudo apt-get install mysql-client\" 来安装它。",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "使用指定模式未找到任何包"
 }

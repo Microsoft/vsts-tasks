@@ -7,7 +7,7 @@
   "loc.input.help.version": "要使用的版本的版本规范。示例: 10.x、10.15.1、>=10.15.0",
   "loc.input.label.checkLatest": "检查是否有最新版本",
   "loc.input.help.checkLatest": "始终联机检查是否有满足版本规范的最新可用版本。这通常无法实现，除非有特定的解决方案可以始终获取最新版本。这样会在可能没有必要的情况下，特别是在使用托管生成池时产生下载费用。",
-  "loc.input.label.force32bit": "在x64代理上使用32位版本",
-  "loc.input.help.force32bit": "将安装 x86 版本的节点，而不考虑代理的 CPU 体系结构。",
+  "loc.input.label.force32bit": "在 x64 代理上使用 32 位版本",
+  "loc.input.help.force32bit": "安装 x86 版本的 Node，不考虑代理的 CPU 体系结构。",
   "loc.messages.ToolFailed": "节点安装失败: %s"
 }

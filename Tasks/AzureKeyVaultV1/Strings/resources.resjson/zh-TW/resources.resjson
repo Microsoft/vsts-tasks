@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure Key Vault",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=848891)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?linkid=848891)",
   "loc.description": "下載 Azure Key Vault 祕密",
   "loc.instanceNameFormat": "Azure Key Vault: $(KeyVaultName)",
   "loc.releaseNotes": "適用於跨平台代理程式 (Linux、macOS 或 Windows)",
@@ -10,6 +10,8 @@
   "loc.input.help.KeyVaultName": "提供現有金鑰保存庫的名稱",
   "loc.input.label.SecretsFilter": "祕密篩選",
   "loc.input.help.SecretsFilter": "逗點分隔的祕密名稱清單，或保留 * 從選取的金鑰保存庫下載所有祕密。",
+  "loc.input.label.RunAsPreJob": "讓整個作業都能使用這些祕密",
+  "loc.input.help.RunAsPreJob": "請在開始執行作業前執行此工作。公開作業中所有工作的祕密，而不僅限於跟在此工作後的工作。",
   "loc.messages.ClientIdCannotBeEmpty": "clientId 不得為空字串。",
   "loc.messages.DomainCannotBeEmpty": "domain 不得為空字串。",
   "loc.messages.SecretCannotBeEmpty": "secret 不得為空字串。",
