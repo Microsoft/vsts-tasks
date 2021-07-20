@@ -12,6 +12,7 @@
   "loc.messages.Info_SavingTempConfig": "正在將 NuGet.config 儲存至暫存組態檔。",
   "loc.messages.Info_UsingToolPath": "使用工具路徑: %s",
   "loc.messages.Info_UsingVersion": "使用版本: %s",
+  "loc.messages.Info_BasicCredRestriction": "此工作現在會將 NuGet 設定為只使用基本配置傳送這些認證。\n大多數使用者不會受此變更影響。如果都是 Windows 網域認證，\n且最近皆已停止運作，\n請嘗試將組建變數 %s 設為值 '%s' (不加引號)。",
   "loc.messages.NGCommon_AddingSources": "正在設定 NuGet.config 中的認證",
   "loc.messages.NGCommon_AreaNotFoundInSps": "找不到 '%s' [%s] 區域。包含該區域的服務可能無法在您的地區使用。",
   "loc.messages.NGCommon_DetectedNuGetExtensionsPath": "偵測到 NuGet 擴充功能載入器路徑 (NUGET_EXTENSIONS_PATH 環境變數): %s",
@@ -24,6 +25,6 @@
   "loc.messages.NGCommon_SpsNotFound": "找不到 '%s' [%s] 區域。您的 Team Foundation Server 安裝可能發生問題。",
   "loc.messages.NGCommon_UnabletoDetectNuGetVersion": "選取了不明的 NuGet 版本。",
   "loc.messages.NGCommon_UnableToFindTool": "找不到工具 %s",
-  "loc.messages.Warning_SessionCreationFailed": "無法建立來源工作階段: %s",
+  "loc.messages.Warning_SessionCreationFailed": "無法建立來源工作階段。",
   "loc.messages.Warning_UpdatingNuGetVersion": "正在將 NuGet.exe 的版本更新為 %s (原始為 %s) 。當 NuGet 更新為新版本時，可能會發生行為變更或重大變更。如果這不是您想要的行為，請取消核取工作中的 [檢查最新版本] 選項。"
 }

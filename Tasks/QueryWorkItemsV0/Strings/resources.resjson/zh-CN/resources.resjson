@@ -1,13 +1,13 @@
 {
-  "loc.friendlyName": "查询工作项",
-  "loc.helpMarkDown": "[详细信息](https://go.microsoft.com/fwlink/?linkid=870238)",
-  "loc.description": "执行工作项查询并检查返回的项的数目",
-  "loc.instanceNameFormat": "查询工作项",
-  "loc.group.displayName.advanced": "高级",
-  "loc.input.label.queryId": "查询",
-  "loc.input.help.queryId": "选择要执行的已保存工作项查询。",
-  "loc.input.label.maxThreshold": "阈值上限",
-  "loc.input.help.maxThreshold": "查询中匹配工作项的最大数目。",
-  "loc.input.label.minThreshold": "阈值下限",
-  "loc.input.help.minThreshold": "查询中匹配工作项的最小数目。"
+  "loc.friendlyName": "Query work items",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870238)",
+  "loc.description": "Execute a work item query and check the number of items returned",
+  "loc.instanceNameFormat": "Query Work Items",
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.queryId": "Query",
+  "loc.input.help.queryId": "Select a saved work item query to execute.",
+  "loc.input.label.maxThreshold": "Upper threshold",
+  "loc.input.help.maxThreshold": "The maximum number of matching workitems from the query.",
+  "loc.input.label.minThreshold": "Lower threshold",
+  "loc.input.help.minThreshold": "The minimum number of matching workitems from the query."
 }

@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "앱 검토",
-  "loc.helpMarkDown": "[이 작업에 대한 자세한 정보](https://go.microsoft.com/fwlink/?LinkID=613735)",
-  "loc.description": "배포 단계 공급자에서 이 작업을 사용하여 리소스를 동적으로 만듭니다.",
-  "loc.instanceNameFormat": "-$(resourceName)을(를) 사용하여 동적 리소스를 만들었습니다.",
-  "loc.releaseNotes": "배포 단계 공급자에서 이 작업을 사용하여 리소스를 동적으로 만듭니다.",
-  "loc.input.label.resourceName": "리소스 이름",
-  "loc.input.help.resourceName": "리소스 종류 정보에 사용되는 환경의 기존 리소스 이름입니다.",
-  "loc.input.label.baseEnvironmentName": "환경 이름",
-  "loc.input.label.reviewResourceName": "리소스 이름 검토",
-  "loc.messages.CreatedDynamicResource": "동적 리소스는 %s을(를) 사용하여 만듭니다."
+  "loc.friendlyName": "Review App",
+  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613735)",
+  "loc.description": "Use this task under deploy phase provider to create a resource dynamically",
+  "loc.instanceNameFormat": "Dynamic Resource created using - $(resourceName)",
+  "loc.releaseNotes": "Use this task under deploy phase provider to create a resource dynamically",
+  "loc.input.label.resourceName": "Resource name",
+  "loc.input.help.resourceName": "Name of an existing resource in the environment which will be used for resource type information",
+  "loc.input.label.baseEnvironmentName": "Environment name",
+  "loc.input.label.reviewResourceName": "Review Resource Name",
+  "loc.messages.CreatedDynamicResource": "A dynamic resource is created using %s"
 }

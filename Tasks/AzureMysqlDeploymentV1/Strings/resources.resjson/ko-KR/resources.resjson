@@ -11,13 +11,13 @@
   "loc.input.label.ServerName": "호스트 이름",
   "loc.input.help.ServerName": "'Azure Database for MySQL'의 서버 이름입니다. 예: fabrikam.mysql.database.azure.com. MySQL Workbench를 사용하여 연결하는 경우 '매개 변수'의 'Hostname'에 사용되는 값과 같습니다.",
   "loc.input.label.DatabaseName": "데이터베이스 이름",
-  "loc.input.help.DatabaseName": "아래 스크립트를 실행해야 하는 데이터베이스의 이름입니다(이미 있는 경우). 데이터베이스가 없는 경우 스크립트 자체를 사용하여 데이터베이스를 만들 수 있습니다.",
+  "loc.input.help.DatabaseName": "아래 스크립트를 실행해야 하는 데이터베이스 이름입니다(이미 있는 경우). 데이터베이스가 없는 경우 스크립트 자체를 사용하여 데이터베이스를 만들 수 있습니다.",
   "loc.input.label.SqlUsername": "서버 관리자 로그인",
   "loc.input.help.SqlUsername": "Azure Database for MySQL 서버는 네이티브 MySQL 인증을 지원합니다. 서버 관리자 로그인으로 서버에 연결하고 인증할 수 있습니다. 예: bbo1@fabrikam. MySQL Workbench를 사용하여 연결하는 경우 '매개 변수'의 'Username'에 사용되는 값과 같습니다.",
   "loc.input.label.SqlPassword": "암호",
   "loc.input.help.SqlPassword": "Azure Database for MySQL의 관리자 암호입니다. 암호가 기억나지 않는 경우 [Azure Portal](https://docs.microsoft.com/en-us/azure/mysql/howto-create-manage-server-portal)에서 암호를 변경할 수 있습니다.<br>파이프라인에서 정의된 변수일 수 있습니다. 예: $(password).<br>변수 형식을 '비밀'로 표시하여 보호할 수도 있습니다.",
-  "loc.input.label.TaskNameSelector": "형식",
-  "loc.input.help.TaskNameSelector": "[스크립트 파일]과 [인라인 스크립트] 사이에 있는 옵션 중 하나를 선택합니다.",
+  "loc.input.label.TaskNameSelector": "유형",
+  "loc.input.help.TaskNameSelector": "스크립트 파일과 인라인 스크립트 옵션 중 하나를 선택합니다.",
   "loc.input.label.SqlFile": "MySQL 스크립트",
   "loc.input.help.SqlFile": "자동화 에이전트 또는 자동화 에이전트가 액세스할 수 있는 UNC 경로에 있는 스크립트 파일의 전체 경로입니다(예: \\\\\\\\BudgetIT\\DeployBuilds\\script.sql). $(agent.releaseDirectory) 등의 미리 정의된 시스템 변수를 여기서 사용할 수도 있습니다. SQL 문이 포함된 파일을 여기서 사용할 수 있습니다.",
   "loc.input.label.SqlInline": "인라인 MySQL 스크립트",
@@ -63,5 +63,6 @@
   "loc.messages.CouldNotFetchAccessTokenforMSIDueToMSINotConfiguredProperlyStatusCode": "관리 서비스 주체의 액세스 토큰을 검색할 수 없습니다. 가상 머신의 MSI(관리 서비스 ID)를 구성하세요. 'https://aka.ms/azure-msi-docs'를 참조하세요. 만든 MSI ID에 역할을 할당하세요. 'https://aka.ms/assign-role-msi'를 참조하세요. 상태 코드: %s. 상태 메시지: %s",
   "loc.messages.CouldNotFetchAccessTokenforMSIStatusCode": "관리 서비스 주체의 액세스 토큰을 검색할 수 없습니다. 상태 코드: %s. 상태 메시지: %s",
   "loc.messages.NotAbleToCreateFirewallRule": "Azure MySQL 서버에 방화벽 규칙을 추가하는 중 오류가 발생했습니다. 오류: %s",
-  "loc.messages.ExpiredServicePrincipal": "Azure의 액세스 토큰을 페치할 수 없습니다. 사용한 서비스 주체가 유효하고 만료되지 않았는지 확인하세요."
+  "loc.messages.ExpiredServicePrincipal": "Azure의 액세스 토큰을 페치할 수 없습니다. 사용한 서비스 주체가 유효하고 만료되지 않았는지 확인하세요.",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "지정된 패턴의 패키지를 찾을 수 없습니다"
 }

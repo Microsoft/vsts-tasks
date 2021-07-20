@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "複製檔案",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708389)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=708389)",
   "loc.description": "使用模式比對檔案路徑 (非資料夾路徑) 從來源資料夾將檔案複製到目標資料夾",
   "loc.instanceNameFormat": "將檔案複製到: $(TargetFolder)",
   "loc.releaseNotes": "符合模式一致性。",
@@ -19,6 +19,10 @@
   "loc.input.help.flattenFolders": "壓平合併資料夾結構並將所有檔案複製到指定的目標資料夾。",
   "loc.input.label.preserveTimestamp": "保留目標時間戳記",
   "loc.input.help.preserveTimestamp": "正在使用原始來源檔案，保留目標檔案時間戳記。",
+  "loc.input.label.retryCount": "要複製檔案的重試計數",
+  "loc.input.help.retryCount": "指定要複製檔案的重試計數。這可能有助於解決間歇性問題，例如在遠端主機上使用 UNC 目標路徑。",
+  "loc.input.label.ignoreMakeDirErrors": "在建立目標資料夾期間，略過錯誤。",
+  "loc.input.help.ignoreMakeDirErrors": "在建立目標資料夾期間，略過錯誤。這可能有助於避免多個代理程式與一個目標資料夾平行執行工作的問題。",
   "loc.messages.FoundNFiles": "找到 %d 個檔案",
   "loc.messages.CleaningTargetFolder": "正在刪除目標資料夾: %s",
   "loc.messages.FileAlreadyExistAt": "檔案 %s 已存在於 %s 上",

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Conda 環境",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/pipelines-anaconda-guide)<br>[Task documentation](https://go.microsoft.com/fwlink/?linkid=873466)",
+  "loc.helpMarkDown": "[深入了解此工作](https://aka.ms/pipelines-anaconda-guide)<br>[工作文件](https://go.microsoft.com/fwlink/?linkid=873466)",
   "loc.description": "這項工作已淘汰。請直接在指令碼中使用 `conda` 來使用 Anaconda 環境。",
   "loc.instanceNameFormat": "Conda 環境 $(environmentName)",
   "loc.input.label.createCustomEnvironment": "建立自訂環境",

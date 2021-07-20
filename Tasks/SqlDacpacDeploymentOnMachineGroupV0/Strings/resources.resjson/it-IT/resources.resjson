@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Distribuzione database di SQL Server",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/sqldacpacmachinegroupreadme)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://aka.ms/sqldacpacmachinegroupreadme)",
   "loc.description": "Consente di eseguire la distribuzione di un database di SQL Server con il pacchetto di applicazione livello dati o script SQL",
   "loc.instanceNameFormat": "Distribuisci tramite: $(TaskType)",
   "loc.input.label.TaskType": "Distribuisci SQL tramite",

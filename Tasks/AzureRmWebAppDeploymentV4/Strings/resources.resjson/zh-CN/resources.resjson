@@ -39,7 +39,7 @@
   "loc.input.label.RuntimeStack": "运行时堆栈",
   "loc.input.help.RuntimeStack": "选择框架和版本。",
   "loc.input.label.RuntimeStackFunction": "运行时堆栈",
-  "loc.input.help.RuntimeStackFunction": "选择框架和版本。",
+  "loc.input.help.RuntimeStackFunction": "选择框架和版本。请查看[此文档](https://docs.microsoft.com/azure/azure-functions/functions-versions#languages)，了解受支持的运行时版本。\"DOCKER|microsoft/azure-functions-*\" 等旧值已被弃用，请使用下拉列表中的新值。",
   "loc.input.label.StartupCommand": "启动命令",
   "loc.input.help.StartupCommand": "输入启动命令。例如 <br/>dotnet exec filename.dll<br/>dotnet filename.dll",
   "loc.input.label.ScriptType": "部署脚本类型",

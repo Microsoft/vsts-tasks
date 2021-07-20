@@ -1,5 +1,5 @@
 {
-  "loc.friendlyName": "下載封裝",
+  "loc.friendlyName": "下載套件",
   "loc.helpMarkDown": "需要安裝 Azure Artifacts 延伸模組",
   "loc.description": "從 Azure Artifacts 的套件管理摘要中下載套件",
   "loc.instanceNameFormat": "下載套件 $(definition)",
@@ -12,7 +12,7 @@
   "loc.input.label.definition": "套件",
   "loc.input.help.definition": "如果在清單中找不到套件，您可以提供套件識別碼，使用 [這裡](https://go.microsoft.com/fwlink/?linkid=2086778) 的指示即可找到該套件識別碼。",
   "loc.input.label.version": "版本",
-  "loc.input.help.version": "套件的版本",
+  "loc.input.help.version": "套件的版本。在執行階段使用 `latest` 下載套件的最新版本。",
   "loc.input.label.files": "檔案",
   "loc.input.help.files": "指定要使用 [檔案比對模式](https://go.microsoft.com/fwlink/?linkid=2086953) 下載的檔案。",
   "loc.input.label.extract": "將套件內容解壓縮",
@@ -33,6 +33,6 @@
   "loc.messages.Error_UnexpectedErrorArtifactToolDownload": "嘗試下載套件時發生未預期的錯誤。結束代碼(%s) 與錯誤(%s)",
   "loc.messages.Info_ResolvedToolFromCache": "已從工具快取中解析: %s",
   "loc.messages.Info_DownloadingArtifactTool": "正在從 %s 下載成品工具",
-  "loc.messages.Info_Downloading": "Downloading package: %s, version: %s using feed id: %s, project: %s",
+  "loc.messages.Info_Downloading": "正在使用摘要識別碼: %s、專案: %s 下載套件: %s、版本: %s",
   "loc.messages.Info_UsingArtifactToolDownload": "使用成品工具來下載套件"
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "NuGet 还原",
-  "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?LinkID=613747)或[参阅 NuGet 文档](https://docs.microsoft.com/nuget/)",
+  "loc.helpMarkDown": "[详细了解此任务](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget)或[参阅 NuGet 文档](https://docs.microsoft.com/nuget/)",
   "loc.description": "还原 NuGet 包以准备 Visual Studio 生成步骤。",
   "loc.instanceNameFormat": "NuGet restore $(solution)",
   "loc.group.displayName.advanced": "高级",
@@ -18,8 +18,8 @@
   "loc.input.help.noCache": "等效于 -NoCache NuGet.exe 命令行参数",
   "loc.input.label.packagesDirectory": "目标目录",
   "loc.input.help.packagesDirectory": "等效于 -PackagesDirectory NuGet.exe 命令行参数",
-  "loc.input.label.verbosity": "详细程度",
-  "loc.input.help.verbosity": "NuGet 的详细程度",
+  "loc.input.label.verbosity": "详细信息",
+  "loc.input.help.verbosity": "NuGet 的详细级别",
   "loc.messages.Warning_NoConfigForNoCredentialProvider": "若要连接到此生成代理上 Azure Pipelines/TFS 项目集合托管的 NuGet 源，请编辑生成定义，选择更高版本的 nuget，或指定包含要用的包源的 NuGet.config 的路径。",
   "loc.messages.Warning_ConflictingNuGetPreference": "选择了 NuGet 3.3，但提供的是自定义 NuGet 路径。自定义路径将成为首选。要解决此警告，请编辑生成任务，在“高级”下选择“自定义”作为 NuGet 版本。",
   "loc.messages.PackagesInstalledSuccessfully": "包还原成功",

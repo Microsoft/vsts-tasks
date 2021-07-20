@@ -2,7 +2,7 @@
   "loc.friendlyName": "Comprobar el cumplimiento de Azure Policy",
   "loc.helpMarkDown": "",
   "loc.description": "Evaluación de seguridad y cumplimiento para Azure Policy",
-  "loc.instanceNameFormat": "Comprobar cumplimiento de directivas",
+  "loc.instanceNameFormat": "Comprobar el cumplimiento de directivas",
   "loc.input.label.ConnectedServiceName": "Suscripción a Azure",
   "loc.input.help.ConnectedServiceName": "Seleccione la suscripción de Azure Resource Manager para aplicar las directivas.",
   "loc.input.label.ResourceGroupName": "Grupo de recursos",

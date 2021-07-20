@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Ruby バージョンの使用",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=2005989) or [see the Ruby documentation](https://www.ruby-lang.org/)",
+  "loc.helpMarkDown": "[このタスクの詳細を表示](https://go.microsoft.com/fwlink/?linkid=2005989)、または [Ruby のドキュメントを参照](https://www.ruby-lang.org/)",
   "loc.description": "ツール キャッシュから Ruby の指定されたバージョンを使用し、必要に応じて PATH に追加します",
   "loc.instanceNameFormat": "Ruby $(versionSpec) を使用する",
   "loc.input.label.versionSpec": "バージョンの仕様",
@@ -11,5 +11,6 @@
   "loc.messages.PlatformNotRecognized": "プラットフォームが認識されません",
   "loc.messages.ToolNotFoundMicrosoftHosted": "これが Microsoft によってホストされているエージェントの場合、このイメージが %s の side-by-side バージョンを %s でサポートしているかをご確認ください。",
   "loc.messages.ToolNotFoundSelfHosted": "これがセルフホストテッド エージェントの場合、side-by-side の %s バージョンを %s で構成する方法をご確認ください。",
-  "loc.messages.VersionNotFound": "バージョン仕様 %s (アーキテクチャ %s) が Agent.ToolsDirectory 内のどのバージョンにも一致しませんでした。"
+  "loc.messages.VersionNotFound": "バージョン仕様 %s (アーキテクチャ %s) が Agent.ToolsDirectory 内のどのバージョンにも一致しませんでした。",
+  "loc.messages.ExactVersionNotRecommended": "Microsoft によってホストされているエージェントでは、正確なバージョンを指定することはお勧めできません。ホストされているエージェントでは、Ruby のパッチ バージョンが予告なしに新しいものに置き換えられることがあり、ビルドが予期せずに機能しなくなります。メジャーのみ、またはメジャーとマイナー バージョンを指定することをお勧めします (例: `2` または `2.4`)"
 }

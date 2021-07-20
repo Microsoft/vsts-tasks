@@ -1,7 +1,7 @@
 {
   "loc.friendlyName": "Azure App Service 管理",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=831573)",
-  "loc.description": "Start, stop, restart, slot swap, slot delete, install site extensions or enable continuous monitoring for an Azure App Service",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?linkid=831573)",
+  "loc.description": "啟動、停止、重新啟動、交換位置、刪除位置、安裝網站延伸模組或啟用 Azure App Service 的持續監視",
   "loc.instanceNameFormat": "$(Action): $(WebAppName)",
   "loc.group.displayName.AdvancedSettings": "進階設定",
   "loc.input.label.ConnectedServiceName": "Azure 訂用帳戶",
@@ -105,7 +105,7 @@
   "loc.messages.AppServiceState": "App Service 的狀態為 '%s'。",
   "loc.messages.InvalidMonitorAppState": "為監視應用程式狀態提供的狀態 '%s' 無效",
   "loc.messages.FailedToGetAppServicePublishingProfile": "無法擷取 App Service '%s' 發佈設定檔。錯誤: %s",
-  "loc.messages.FailedToGetAppServicePublishingProfileSlot": "無法擷取 App Service '%s-%s' 發佈設定檔。錯誤: %s",
+  "loc.messages.FailedToGetAppServicePublishingProfileSlot": "無法擷取 App Service '%s-%s' 發行設定檔。錯誤: %s",
   "loc.messages.FailedToSwapAppServiceSlotWithProduction": "無法交換 App Service '%s' 位置 - 'production' 和 '%s'。錯誤: %s",
   "loc.messages.FailedToSwapAppServiceSlotSlots": "無法交換 App Service '%s' 位置 - '%s' 和 '%s'。錯誤: %s",
   "loc.messages.SwappingAppServiceSlotWithProduction": "正在交換 App Service '%s' 位置 - 'production' 和 '%s'",
@@ -113,7 +113,7 @@
   "loc.messages.SwappedAppServiceSlotWithProduction": "已交換 App Service '%s' 位置 - 'production' 和 '%s'",
   "loc.messages.SwappedAppServiceSlotSlots": "已交換 App Service '%s' 位置 - '%s' 和 '%s'",
   "loc.messages.FailedToGetAppServicePublishingCredentials": "無法擷取 App Service '%s' 發佈認證。錯誤: %s",
-  "loc.messages.FailedToGetAppServicePublishingCredentialsSlot": "無法擷取 App Service '%s-%s' 發佈認證。錯誤: %s",
+  "loc.messages.FailedToGetAppServicePublishingCredentialsSlot": "無法擷取 App Service '%s-%s' 發行認證。錯誤: %s",
   "loc.messages.WarmingUpSlots": "正在準備交換位置",
   "loc.messages.DeploymentIDCannotBeNull": "部署識別碼不可為 null 或空白。",
   "loc.messages.DeploymentDataEntityCannotBeNull": "部署資料實體不可為 null 或未定義。",
@@ -172,6 +172,6 @@
   "loc.messages.CouldNotFetchAccessTokenforMSIStatusCode": "無法擷取受控服務主體的存取權杖。狀態碼: %s，狀態訊息: %s",
   "loc.messages.ASE_SSLIssueRecommendation": "若要在 App Service 中使用憑證，則憑證必須是由信任憑證授權單位簽署的憑證。若您的 Web 應用程式顯示憑證驗證錯誤，有可能您是使用自我簽署的憑證。若要解決這些錯誤，您必須在建置或發行管線中將名為 `VSTS_ARM_REST_IGNORE_SSL_ERRORS` 的變數值設為 `true`。",
   "loc.messages.ExpiredServicePrincipal": "無法擷取 Azure 的存取權杖。請驗證使用的服務主體是否有效且未過期。",
-  "loc.messages.SwapWithPreviewNotsupported": "Swap with preview isn't supported for Linux webapps and Container webapps.",
-  "loc.messages.InvalidActionForPublishProfileEndpoint": "Invalid Action selected to use with publish profile endpoint!. Supported actions are 'Start/Stop all continuous webjobs' & 'Install Extensions'"
+  "loc.messages.SwapWithPreviewNotsupported": "Linux Web 應用程式和容器 Web 應用程式不支援交換並預覽。",
+  "loc.messages.InvalidActionForPublishProfileEndpoint": "選取要搭配發行設定檔端點使用的動作無效! 支援的動作為「啟動/停止所有連續 Web 工作」以及「安裝延伸模組」"
 }

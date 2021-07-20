@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Editore PyPI",
+  "loc.friendlyName": "PyPI publisher",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=875289)",
-  "loc.description": "Consente di creare e caricare un pacchetto sdist o wheel in un indice compatibile con PyPI usando Twine",
-  "loc.instanceNameFormat": "Crea pacchetto e pubblica in PyPI",
-  "loc.input.label.serviceEndpoint": "Connessione al servizio PyPI",
-  "loc.input.help.serviceEndpoint": "Connessione al servizio generica per il collegamento all'indice dei pacchetti.",
-  "loc.input.label.wd": "Directory del pacchetto Python",
-  "loc.input.help.wd": "Directory del pacchetto Python da creare e pubblicare, in cui è presente setup.py.",
-  "loc.input.label.wheel": "Pubblica anche un pacchetto wheel",
-  "loc.input.help.wheel": "Consente di scegliere se creare e pubblicare un pacchetto wheel universale (indipendente dalla piattaforma) in aggiunta a un pacchetto sdist. [Altre informazioni](https://packaging.python.org/tutorials/distributing-packages/#wheels)."
+  "loc.description": "Create and upload an sdist or wheel to a PyPI-compatible index using Twine",
+  "loc.instanceNameFormat": "Package and publish to PyPI",
+  "loc.input.label.serviceEndpoint": "PyPI service connection",
+  "loc.input.help.serviceEndpoint": "A generic service connection for connecting to the package index.",
+  "loc.input.label.wd": "Python package directory",
+  "loc.input.help.wd": "The directory of the Python package to be created and published, where setup.py is present.",
+  "loc.input.label.wheel": "Also publish a wheel",
+  "loc.input.help.wheel": "Select whether to create and publish a universal wheel package (platform independent) in addition to an sdist package. [More information](https://packaging.python.org/tutorials/distributing-packages/#wheels)."
 }

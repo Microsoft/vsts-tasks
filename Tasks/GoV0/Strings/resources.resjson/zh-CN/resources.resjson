@@ -1,16 +1,16 @@
 {
   "loc.friendlyName": "Go",
-  "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?linkid=867582)",
-  "loc.description": "获取、生成或测试 Go 应用程序，或者运行自定义 Go 命令",
+  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=867582)",
+  "loc.description": "Get, build, or test a Go application, or run a custom Go command",
   "loc.instanceNameFormat": "go $(command)",
-  "loc.group.displayName.advanced": "高级",
-  "loc.input.label.command": "命令",
-  "loc.input.help.command": "选择运行 Go 命令。选择“自定义”以使用此处未列出的命令。",
-  "loc.input.label.customCommand": "自定义命令",
-  "loc.input.help.customCommand": "要执行的自定义 Go 命令。例如，若要执行 \"go version\"，请输入 \"version\"。",
-  "loc.input.label.arguments": "参数",
-  "loc.input.help.arguments": "所选命令的可选参数。例如，\"go build\" 命令的生成时间参数。",
-  "loc.input.label.workingDirectory": "工作目录",
-  "loc.input.help.workingDirectory": "命令在其中运行的工作目录。为空时，使用存储库的根(用于生成)或项目(用于发布)，这是 \"$(System.DefaultWorkingDirectory)\" 的值。",
-  "loc.messages.TaskFailedWithError": "Go 任务失败，发生错误: %s"
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.command": "Command",
+  "loc.input.help.command": "Select a Go command to run. Select 'Custom' to use a command not listed here.",
+  "loc.input.label.customCommand": "Custom command",
+  "loc.input.help.customCommand": "A custom Go command to execute. For example, to execute 'go version', enter 'version'.",
+  "loc.input.label.arguments": "Arguments",
+  "loc.input.help.arguments": "Optional arguments to the selected command. For example, build-time arguments for the 'go build' command.",
+  "loc.input.label.workingDirectory": "Working directory",
+  "loc.input.help.workingDirectory": "The working directory where the command will run. When empty, the root of the repository (for builds) or artifacts (for releases) is used, which is the value of '$(System.DefaultWorkingDirectory)'.",
+  "loc.messages.TaskFailedWithError": "The Go task failed with an error: %s"
 }

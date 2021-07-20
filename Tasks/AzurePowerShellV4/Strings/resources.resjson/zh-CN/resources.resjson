@@ -20,6 +20,8 @@
   "loc.input.help.errorActionPreference": "选择执行脚本的 ErrorActionPreference 变量的值。",
   "loc.input.label.FailOnStandardError": "因标准错误失败",
   "loc.input.help.FailOnStandardError": "如果为 true，当有错误被写入错误管道或有数据被写入标准错误流时，此任务将失败。",
+  "loc.input.label.RestrictContextToCurrentTask": "将上下文的范围限于当前任务",
+  "loc.input.help.RestrictContextToCurrentTask": "如果为 true，此任务会将上下文的范围仅限于当前任务，并且在使用专用代理时，管道中的其他任务将无法使用该上下文。",
   "loc.input.label.TargetAzurePs": "Azure PowerShell 版本",
   "loc.input.help.TargetAzurePs": "对于托管代理，受支持的 Azure PowerShell 版本为: 1.0.0、1.6.0、2.3.2、2.6.0、3.1.0 (托管的 VS2017 队列)。\n若要选择代理上的最新可用版本，请选择“已安装的最新版本”。\n\n对于专用代理，可以使用“指定版本”指定 Azure PowerShell 的首选版本",
   "loc.input.label.CustomTargetAzurePs": "首选 Azure PowerShell 版本",

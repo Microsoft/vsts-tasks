@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Esegui query su avvisi di Monitoraggio di Azure classico",
-  "loc.helpMarkDown": "[Altre informazioni](https://go.microsoft.com/fwlink/?linkid=870240)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?linkid=870240)",
   "loc.description": "Consente di osservare le regole di Monitoraggio di Azure classico configurate per gli avvisi attivi",
   "loc.instanceNameFormat": "Esegui query su avvisi di Monitoraggio di Azure",
   "loc.input.label.connectedServiceNameARM": "Sottoscrizione di Azure",
@@ -9,7 +9,7 @@
   "loc.input.help.ResourceGroupName": "Consente di specificare il nome di un gruppo di risorse di cui eseguire il monitoraggio.",
   "loc.input.label.ResourceType": "Tipo di risorsa",
   "loc.input.help.ResourceType": "Consente di selezionare il tipo di risorsa di Azure di cui eseguire il monitoraggio.",
-  "loc.input.label.resourceName": "Nome risorsa",
+  "loc.input.label.resourceName": "Nome della risorsa",
   "loc.input.help.resourceName": "Consente di selezionare il nome della risorsa di Azure di cui eseguire il monitoraggio.",
   "loc.input.label.alertRules": "Regole di avviso",
   "loc.input.help.alertRules": "Elenco delle regole di avviso di Azure di cui eseguire il monitoraggio."

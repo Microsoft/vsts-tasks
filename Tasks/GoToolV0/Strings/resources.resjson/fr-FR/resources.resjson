@@ -1,15 +1,15 @@
 {
-  "loc.friendlyName": "Programme d'installation de l'outil Go",
+  "loc.friendlyName": "Go tool installer",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=867581) or [see the Go documentation](https://golang.org/doc/)",
-  "loc.description": "Rechercher dans le cache ou télécharger une version spécifique de Go, et l'ajouter à PATH",
-  "loc.instanceNameFormat": "Utiliser Go $(version)",
-  "loc.group.displayName.advanced": "Avancé",
+  "loc.description": "Find in cache or download a specific version of Go and add it to the PATH",
+  "loc.instanceNameFormat": "Use Go $(version)",
+  "loc.group.displayName.advanced": "Advanced",
   "loc.input.label.version": "Version",
-  "loc.input.help.version": "Version de Go à télécharger (si nécessaire) et à utiliser. Exemple : 1.9.3",
+  "loc.input.help.version": "The Go version to download (if necessary) and use. Example: 1.9.3",
   "loc.input.label.goPath": "GOPATH",
-  "loc.input.help.goPath": "Valeur personnalisée de la variable d'environnement GOPATH.",
+  "loc.input.help.goPath": "A custom value for the GOPATH environment variable.",
   "loc.input.label.goBin": "GOBIN",
-  "loc.input.help.goBin": "Valeur personnalisée de la variable d'environnement GOBIN.",
-  "loc.messages.FailedToDownload": "Échec du téléchargement de Go version %s. Vérifiez que la version est valide et résolvez les autres problèmes. Erreur : %s",
-  "loc.messages.TempDirNotSet": "La variable d'environnement 'Agent.TempDirectory' doit être définie."
+  "loc.input.help.goBin": "A custom value for the GOBIN environment variable.",
+  "loc.messages.FailedToDownload": "Failed to download Go version %s. Verify that the version is valid and resolve any other issues. Error: %s",
+  "loc.messages.TempDirNotSet": "The 'Agent.TempDirectory' environment variable was expected to be set."
 }

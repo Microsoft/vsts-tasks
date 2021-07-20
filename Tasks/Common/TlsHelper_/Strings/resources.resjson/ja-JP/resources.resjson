@@ -1,5 +1,5 @@
 {
-  "loc.messages.UnsupportedTLSError": "マシンで TLS 1.2 プロトコル以上を使用していることを確認します。お使いのマシンで TLS を有効にする方法について詳しくは、https://aka.ms/enableTlsv2 をご確認ください。",
-  "loc.messages.TLS12AddedInSession": "セッションで TLS 1.2 を追加しました。",
-  "loc.messages.UnableToAddTls12InSession": "現在のセッションで TLS 1.2 を追加できませんでした。エラー: '{0}'"
+  "loc.messages.UnsupportedTLSError": "Make sure the machine is using TLS 1.2 protocol or higher. Check https://aka.ms/enableTlsv2 for more information on how to enable TLS in your machine.",
+  "loc.messages.TLS12AddedInSession": "Added TLS 1.2 in session.",
+  "loc.messages.UnableToAddTls12InSession": "Failed to add TLS 1.2 in current session. Error: '{0}'"
 }

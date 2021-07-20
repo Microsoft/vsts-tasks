@@ -1,10 +1,10 @@
 {
   "loc.friendlyName": "MySQL Database bereitstellen",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/mysql-deployment-on-machine-group)",
+  "loc.helpMarkDown": "[Weitere Informationen zu dieser Aufgabe](https://aka.ms/mysql-deployment-on-machine-group)",
   "loc.description": "Hiermit werden Skripts ausgeführt und Änderungen an einer MySQL Database-Instanz vorgenommen.",
   "loc.instanceNameFormat": "Bereitstellen mit: $(TaskNameSelector)",
   "loc.input.label.TaskNameSelector": "MySQL bereitstellen mit",
-  "loc.input.help.TaskNameSelector": "Wählen Sie eine der Optionen zwischen Skriptdatei und Inlineskript aus.",
+  "loc.input.help.TaskNameSelector": "Treffen Sie eine Auswahl zwischen \"Skriptdatei\" und \"Inlineskript\".",
   "loc.input.label.SqlFile": "MySQL-Skript",
   "loc.input.help.SqlFile": "Der vollständige Pfad der Skriptdatei für den Automations-Agent oder ein UNC-Pfad, auf den der Automations-Agent zugreifen kann, z. B. \\\\\\\\\\\\\\\\BudgetIT\\\\DeployBuilds\\\\script.sql. Hier können auch vordefinierte Systemvariablen wie $(agent.releaseDirectory) verwendet werden. Eine Datei mit SQL-Anweisungen kann hier ebenfalls verwendet werden.",
   "loc.input.label.SqlInline": "MySQL-Inlineskript",
@@ -12,7 +12,7 @@
   "loc.input.label.ServerName": "Hostname",
   "loc.input.help.ServerName": "Der Servername von \"Datenbank für MySQL\". Beispiel: localhost. Beim Herstellen einer Verbindung mit MySQL Workbench ist dies der gleiche Wert, der unter \"Parameter\" für \"Hostname\" verwendet wird.",
   "loc.input.label.DatabaseName": "Datenbankname",
-  "loc.input.help.DatabaseName": "Der Name der Datenbank (wenn bereits vorhanden), für die das Skript unten ausgeführt werden muss. Andernfalls kann das Skript selbst zum Erstellen der Datenbank verwendet werden.",
+  "loc.input.help.DatabaseName": "Der Name der Datenbank (falls bereits vorhanden), für die das unten aufgeführte Skript ausgeführt werden soll. Andernfalls kann das Skript selbst zum Erstellen der Datenbank verwendet werden.",
   "loc.input.label.SqlUsername": "MySQL-Benutzername",
   "loc.input.help.SqlUsername": "Beim Herstellen einer Verbindung mit MySQL Workbench ist dies der gleiche Wert, der unter \"Parameter\" für \"Benutzername\" verwendet wird.",
   "loc.input.label.SqlPassword": "Kennwort",
@@ -31,5 +31,6 @@
   "loc.messages.CallbackCannotBeNull": "Der Rückruf darf nicht NULL sein.",
   "loc.messages.UnableToCreateDatabaseException": "Die Datenbank kann nicht erstellt werden.",
   "loc.messages.WindowMysqlClientMissingError": "Der MySQL-Client ist auf dem Windows-Agent-Computer nicht vorhanden. Installieren Sie ihn durch Ausführen der Skriptdatei \"https://aka.ms/window-mysqlcli-installer\" des MySQL-Clientinstallers auf dem Agent-Computer.",
-  "loc.messages.LinuxMysqlClientMissingError": "Der MySQL-Client fehlt auf dem Linux-Agent-Computer. Installieren Sie ihn durch Ausführen von \"sudo apt-get install mysql-client\"."
+  "loc.messages.LinuxMysqlClientMissingError": "Der MySQL-Client fehlt auf dem Linux-Agent-Computer. Installieren Sie ihn durch Ausführen von \"sudo apt-get install mysql-client\".",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "Keine Paketdatei mit dem angegebenen Muster gefunden."
 }

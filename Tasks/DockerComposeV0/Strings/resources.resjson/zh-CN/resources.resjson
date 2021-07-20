@@ -68,6 +68,8 @@
   "loc.input.help.requireAdditionalDockerComposeFiles": "不存在其他 Docker Compose 文件时发生错误。这会替代如果文件不存在则忽略该文件的默认行为。",
   "loc.input.label.cwd": "工作目录",
   "loc.input.help.cwd": "Docker Compose 命令的工作目录。",
+  "loc.input.label.dockerComposePath": "Docker Compose 可执行文件路径",
+  "loc.input.help.dockerComposePath": "如果提供了路径，则将使用此 docker-compose 可执行文件",
   "loc.messages.ConnectingToDockerHost": "已设置 DOCKER_HOST 变量。Docker 将尝试连接到 Docker 主机: %s",
   "loc.messages.ContainerPatternFound": "Docker Compose 文件路径参数中找到的模式",
   "loc.messages.ContainerPatternNotFound": "Docker Compose 文件路径参数中未找到任何模式",

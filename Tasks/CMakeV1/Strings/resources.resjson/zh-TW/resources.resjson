@@ -1,12 +1,15 @@
 {
   "loc.friendlyName": "CMake",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613719)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=613719)",
   "loc.description": "使用 CMake 跨平台建置系統建置",
   "loc.instanceNameFormat": "CMake $(cmakeArgs)",
+  "loc.group.displayName.advanced": "進階",
   "loc.input.label.cwd": "工作目錄",
   "loc.input.help.cwd": "執行 cmake 時的目前工作目錄。",
   "loc.input.label.cmakeArgs": "引數",
   "loc.input.help.cmakeArgs": "傳遞至 cmake 的引數",
+  "loc.input.label.runInsideShell": "在殼層內執行 cmake 命令",
+  "loc.input.help.runInsideShell": "CMake 引數的處理方式就和在 OS 特定殼層內一樣。可用以處理引數字串內部的環境變數。",
   "loc.messages.CMakeReturnCode": "CMake 已結束，傳回碼為: %d",
   "loc.messages.CMakeFailed": "CMake 失敗，錯誤為: %s"
 }

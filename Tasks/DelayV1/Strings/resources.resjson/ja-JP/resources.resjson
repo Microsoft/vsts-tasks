@@ -1,8 +1,8 @@
 {
-  "loc.friendlyName": "遅延",
-  "loc.helpMarkDown": "[詳細](https://go.microsoft.com/fwlink/?linkid=870239)",
-  "loc.description": "ワークフローの今後の実行を、一定時間遅延します",
-  "loc.instanceNameFormat": "$(delayForMinutes) 分の遅延",
-  "loc.input.label.delayForMinutes": "遅延時間 (分)",
-  "loc.input.help.delayForMinutes": "ワークフローの実行を、指定した分数遅延します。値 0 は、ワークフローの実行が遅延なしで開始されることを意味します。"
+  "loc.friendlyName": "Delay",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870239)",
+  "loc.description": "Delay further execution of a workflow by a fixed time",
+  "loc.instanceNameFormat": "Delay by $(delayForMinutes) minutes",
+  "loc.input.label.delayForMinutes": "Delay Time (minutes)",
+  "loc.input.help.delayForMinutes": "Delay the execution of the workflow by specified time in minutes. 0 value means that workflow execution will start without delay."
 }

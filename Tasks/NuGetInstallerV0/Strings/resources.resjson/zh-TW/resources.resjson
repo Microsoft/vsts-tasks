@@ -1,7 +1,7 @@
 {
   "loc.friendlyName": "NuGet 安裝程式",
-  "loc.helpMarkDown": "[詳細資訊](https://go.microsoft.com/fwlink/?LinkID=613747)",
-  "loc.description": "安裝或還原遺漏的 NuGet 封裝",
+  "loc.helpMarkDown": "[詳細資訊](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget)",
+  "loc.description": "安裝或還原遺失的 NuGet 套件。使用 NuGetAuthenticate@0 工作取得最新功能。",
   "loc.instanceNameFormat": "NuGet $(restoreMode) $(solution)",
   "loc.group.displayName.advanced": "進階",
   "loc.input.label.solution": "解決方案或 packages.config 的路徑",

@@ -1,8 +1,8 @@
 {
-  "loc.friendlyName": "Ritardo",
-  "loc.helpMarkDown": "[Altre informazioni](https://go.microsoft.com/fwlink/?linkid=870239)",
-  "loc.description": "Ritarda ulteriormente l'esecuzione di un flusso di lavoro in base a un periodo di tempo fisso",
-  "loc.instanceNameFormat": "Ritarda di $(delayForMinutes) minuti",
-  "loc.input.label.delayForMinutes": "Ritardo (minuti)",
-  "loc.input.help.delayForMinutes": "Ritarda l'esecuzione del flusso di lavoro in base al tempo specificato in minuti. Il valore 0 indica che l'esecuzione del flusso di lavoro inizierà senza alcun ritardo."
+  "loc.friendlyName": "Delay",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870239)",
+  "loc.description": "Delay further execution of a workflow by a fixed time",
+  "loc.instanceNameFormat": "Delay by $(delayForMinutes) minutes",
+  "loc.input.label.delayForMinutes": "Delay Time (minutes)",
+  "loc.input.help.delayForMinutes": "Delay the execution of the workflow by specified time in minutes. 0 value means that workflow execution will start without delay."
 }

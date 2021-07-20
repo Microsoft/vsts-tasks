@@ -1,13 +1,13 @@
 {
-  "loc.messages.AZ_UnsupportedAuthScheme0": "Схема аутентификации \"{0}\" не поддерживается для конечной точки Azure.",
-  "loc.messages.AZ_SpnAccessTokenFetchFailure": "Не удается получить токен для клиента с идентификатором {0}.",
-  "loc.messages.AZ_UserAccessTokenFetchFailure": "Не удается получить токен для указанного пользователя.",
-  "loc.messages.AZ_NoValidResourceIdFound": "В подписке {2} не найдено ни одного ресурса для названия сервера (serverName) {0} и типа сервера (serverType) {1}. Укажите правильные название и тип сервера и повторите попытку.",
-  "loc.messages.AZ_UnableToFetchLoadbalancerDetails": "Не удалось получить сведения о балансировщике нагрузки",
-  "loc.messages.AZ_UnableToFetchPublicIPAddressesDetails": "Не удалось получить сведения об общедоступных IP-адресах",
-  "loc.messages.AZ_UnableToFetchNetworkInterfacesDetails": "Не удалось получить сведения о сетевых интерфейсах",
-  "loc.messages.AZ_MsiAccessNotConfiguredProperlyFailure": "Не удалось получить маркер доступа для управляемого субъекта-службы. Настройте управляемое удостоверение службы (MSI) для виртуальной машины \"https://aka.ms/azure-msi-docs\". Код состояния: {0}, сообщения о состоянии: {1}.",
-  "loc.messages.AZ_MsiAccessTokenFetchFailure": "Не удалось получить маркер доступа для управляемого субъекта-службы. Код состояния: {0}, сообщение о состоянии: {1}.",
-  "loc.messages.AZ_SPNCertificateAccessTokenFetchFailure": "Не удалось получить маркер доступа с помощью сертификата клиента для субъекта-службы с идентификатором {0}. {1}",
-  "loc.messages.AZ_SPNCertificateAccessTokenFetchFailureTokenNull": "Не удалось получить маркер доступа с помощью сертификата клиента для субъекта-службы с идентификатором {0}, tokenResult имеет значение NULL."
+  "loc.messages.AZ_UnsupportedAuthScheme0": "Unsupported authentication scheme '{0}' for Azure endpoint.",
+  "loc.messages.AZ_SpnAccessTokenFetchFailure": "Not able to fetch token for tenant Id {0}.",
+  "loc.messages.AZ_UserAccessTokenFetchFailure": "Not able to fetch token for given User.",
+  "loc.messages.AZ_NoValidResourceIdFound": "No resource found with serverName {0}, serverType {1} in subscription {2}. Specify the correct serverName/serverType and try again.",
+  "loc.messages.AZ_UnableToFetchLoadbalancerDetails": "Unable to fetch load balancer details",
+  "loc.messages.AZ_UnableToFetchPublicIPAddressesDetails": "Unable to fetch public IP Addresses details",
+  "loc.messages.AZ_UnableToFetchNetworkInterfacesDetails": "Unable to fetch network interfaces details",
+  "loc.messages.AZ_MsiAccessNotConfiguredProperlyFailure": "Could not fetch access token for Managed Service Principal. Please configure Managed Service Identity (MSI) for virtual machine 'https://aka.ms/azure-msi-docs'. Status code: {0}, status message: {1}",
+  "loc.messages.AZ_MsiAccessTokenFetchFailure": "Could not fetch access token for Managed Service Principal. Status code: {0}, status message: {1}",
+  "loc.messages.AZ_SPNCertificateAccessTokenFetchFailure": "Failed to obtain access token using client certificate for service principal id: {0}. {1}",
+  "loc.messages.AZ_SPNCertificateAccessTokenFetchFailureTokenNull": "Failed to obtain access token using client certificate for service principal id: {0}, tokenResult is null."
 }

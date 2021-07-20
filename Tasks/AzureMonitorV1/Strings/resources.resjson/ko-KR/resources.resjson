@@ -9,7 +9,7 @@
   "loc.input.help.connectedServiceNameARM": "모니터링할 Azure Resource Manager 구독을 선택합니다.",
   "loc.input.label.ResourceGroupName": "리소스 그룹",
   "loc.input.help.ResourceGroupName": "모니터링할 리소스 그룹의 이름을 제공합니다.",
-  "loc.input.label.filterType": "필터 형식",
+  "loc.input.label.filterType": "필터 유형",
   "loc.input.help.filterType": "특정 리소스 또는 경고 규칙으로 필터링합니다. 기본값은 없음입니다.",
   "loc.input.label.resource": "리소스",
   "loc.input.help.resource": "모니터링할 Azure 리소스를 선택합니다.",

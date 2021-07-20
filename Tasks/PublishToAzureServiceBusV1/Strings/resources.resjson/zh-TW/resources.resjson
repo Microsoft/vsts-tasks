@@ -1,8 +1,8 @@
 {
-  "loc.friendlyName": "發佈到 Azure 服務匯流排",
+  "loc.friendlyName": "發行到 Azure 服務匯流排",
   "loc.helpMarkDown": "[詳細資訊](https://go.microsoft.com/fwlink/?linkid=870237)",
   "loc.description": "使用服務連線傳送訊息到 Azure 服務匯流排 (不需要代理程式)",
-  "loc.instanceNameFormat": "發佈到 Azure 服務匯流排",
+  "loc.instanceNameFormat": "發行到 Azure 服務匯流排",
   "loc.group.displayName.advancedProperties": "進階",
   "loc.input.label.connectedServiceName": "Azure 服務匯流排服務連線",
   "loc.input.help.connectedServiceName": "請選取 Azure 服務匯流排服務連線。",

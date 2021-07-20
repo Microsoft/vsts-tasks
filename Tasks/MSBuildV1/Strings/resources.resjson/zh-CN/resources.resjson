@@ -22,7 +22,7 @@
   "loc.input.label.maximumCpuCount": "并行生成",
   "loc.input.help.maximumCpuCount": "如果 MSBuild 目标配置与并行生成兼容，可以选择此输入，将 /m 开关传递给 MSBuild (仅限 Windows)。如果目标配置与并行生成不兼容，选中此选项可能会导致你的生成出现“文件正在使用”错误，或出现间歇性或不一致的生成错误。",
   "loc.input.label.restoreNugetPackages": "还原 NuGet 包",
-  "loc.input.help.restoreNugetPackages": "已弃用此选项。若要恢复 NuGet 包，请在生成之前添加[NuGet 工具安装程序](https://docs.microsoft.com/vsts/pipelines/tasks/tool/nuget)任务。",
+  "loc.input.help.restoreNugetPackages": "已弃用此选项。若要恢复 NuGet 包，请在生成之前添加[NuGet](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget)任务。",
   "loc.input.label.logProjectEvents": "记录项目详情",
   "loc.input.help.logProjectEvents": "可以选择记录每个项目的时间线详细信息(仅 Windows)。",
   "loc.input.label.createLogFile": "创建日志文件",

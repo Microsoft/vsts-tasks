@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure Database for MySQL のデプロイ",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/mysqlazuredeployreadme)",
+  "loc.helpMarkDown": "[このタスクの詳細を表示](https://aka.ms/mysqlazuredeployreadme)",
   "loc.description": "スクリプトを実行し、Azure Database for MySQL に変更を加えます",
   "loc.instanceNameFormat": "Azure MySQL を実行します : $(TaskNameSelector)",
   "loc.group.displayName.target": "DB の詳細",
@@ -11,17 +11,17 @@
   "loc.input.label.ServerName": "ホスト名",
   "loc.input.help.ServerName": "'Azure Database for MySQL' のサーバー名です。例: fabrikam.mysql.database.azure.com。MySQL Workbench を使用して接続する場合、これは 'パラメーター' 内の 'ホスト名' に使用する値と同じです",
   "loc.input.label.DatabaseName": "データベース名　",
-  "loc.input.help.DatabaseName": "データベースが既に存在する場合は、下のスクリプトを実行する必要のあるデータベースの名前。それ以外の場合は、下のスクリプト自体を使用してデータベースを作成できます。",
+  "loc.input.help.DatabaseName": "以下のスクリプトを実行する必要のあるデータベースが既にある場合は、その名前。それ以外の場合は、スクリプト自体を使用してデータベースを作成できます。",
   "loc.input.label.SqlUsername": "サーバー管理者ログイン",
   "loc.input.help.SqlUsername": "MySQL サーバー用の Azure データベースは、MySQL のネイティブ認証をサポートします。サーバーの管理者ログインを使ってサーバーに接続し、認証できます。例: bbo1@fabrikam。MySQL Workbench を使用して接続する場合、これは 'パラメーター' 内の 'ユーザー名' で使用されるものと同じ値になります。",
   "loc.input.label.SqlPassword": "パスワード",
   "loc.input.help.SqlPassword": "Azure Database for MySQL の管理者パスワードです。パスワードを忘れた場合は、[Azure portal](https://docs.microsoft.com/ja-jp/azure/mysql/howto-create-manage-server-portal) でパスワードを変更できます。<br>これは、パイプラインで定義した変数にすることができます。例: $(password)。<br>また、変数の型を 'シークレット' とマークしてセキュリティで保護することもできます。",
   "loc.input.label.TaskNameSelector": "種類",
-  "loc.input.help.TaskNameSelector": "スクリプト ファイルとインライン スクリプトのいずれか 1 つのオプションを選択してください。",
+  "loc.input.help.TaskNameSelector": "スクリプト ファイルまたはインライン スクリプトのいずれかのオプションを選択します。",
   "loc.input.label.SqlFile": "MySQL スクリプト",
   "loc.input.help.SqlFile": "自動化エージェント上のスクリプト ファイルの完全なパス、または \\\\\\\\BudgetIT\\DeployBuilds\\script.sql などの自動化エージェントにアクセス可能な UNC パス。また、$(agent.releaseDirectory) などの定義済みのシステム変数をここで使用するとこもできます。SQL ステートメントを含むファイルは、ここで使用できます。",
   "loc.input.label.SqlInline": "インライン MySQL スクリプト",
-  "loc.input.help.SqlInline": "MySQL スクリプトを入力し、上で選択したデータベースで実行します。",
+  "loc.input.help.SqlInline": "上で選択したデータベースに対して実行する MySQL スクリプトを入力します。",
   "loc.input.label.SqlAdditionalArguments": "追加の MySQL 引数",
   "loc.input.help.SqlAdditionalArguments": "MySQL の簡単な SQL シェルでサポートされている追加オプション。これらのオプションは、指定されたファイルを MySQL 用の Azure データベースに対して実行するときに適用されます。<br>例: 既定のタブ区切り出力形式を HTML 形式に、あるいは XML 形式にさえ変更できます。メモリが不十分なために大きな結果セットで問題が生じる場合、--quick オプションを使用できます。",
   "loc.input.label.IpDetectionMethod": "次を使用して、ファイアウォール ルールを指定します",
@@ -63,5 +63,6 @@
   "loc.messages.CouldNotFetchAccessTokenforMSIDueToMSINotConfiguredProperlyStatusCode": "マネージド サービス プリンシパルのためのアクセス トークンを取得できませんでした。仮想マシンに対してマネージド サービス ID (MSI) を構成してください。'https://aka.ms/azure-msi-docs' をご覧ください。作成された MSI ID にロールを割り当ててください。'https://aka.ms/assign-role-msi' をご覧ください。状態コード: %s。状態メッセージ: %s",
   "loc.messages.CouldNotFetchAccessTokenforMSIStatusCode": "マネージド サービス プリンシパルのアクセス トークンを取得できませんでした。状態コード: %s。状態メッセージ: %s",
   "loc.messages.NotAbleToCreateFirewallRule": "ファイアウォール規則を Azure MySql サーバーに追加する際にエラーが発生しました。エラー: %s",
-  "loc.messages.ExpiredServicePrincipal": "Azure のアクセス トークンをフェッチできませんでした。使用されているサービス プリンシパルが有効であり、有効期限が切れていないことをご確認ください。"
+  "loc.messages.ExpiredServicePrincipal": "Azure のアクセス トークンをフェッチできませんでした。使用されているサービス プリンシパルが有効であり、有効期限が切れていないことを確認してください。",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "指定したパターンのパッケージが見つかりませんでした"
 }

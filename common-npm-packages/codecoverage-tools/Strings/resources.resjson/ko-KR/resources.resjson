@@ -1,5 +1,5 @@
 {
-  "loc.messages.InvalidBuildFile": "잘못되거나 지원되지 않는 빌드 파일입니다.",
-  "loc.messages.FileNotFound": "파일 또는 폴더가 없음: %s",
-  "loc.messages.FailedToAppendCC": "코드 검사 데이터를 추가할 수 없음: %s"
+  "loc.messages.InvalidBuildFile": "Invalid or unsupported build file",
+  "loc.messages.FileNotFound": "File or folder doesn't exist: %s",
+  "loc.messages.FailedToAppendCC": "Unable to append code coverage data: %s"
 }

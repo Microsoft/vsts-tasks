@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "NuGet Restore",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613747) or [see the NuGet documentation](https://docs.microsoft.com/nuget/)",
+  "loc.helpMarkDown": "[深入了解此工作](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget)或[參閱 NuGet 文件](https://docs.microsoft.com/nuget/)",
   "loc.description": "還原 NuGet 套件以準備進行 Visual Studio 建置步驟。",
   "loc.instanceNameFormat": "NuGet 還原 $(solution)",
   "loc.group.displayName.advanced": "進階",
@@ -18,8 +18,8 @@
   "loc.input.help.noCache": "相當於 -NoCache NuGet.exe 命令列引數",
   "loc.input.label.packagesDirectory": "目的地路徑",
   "loc.input.help.packagesDirectory": "相當於 -PackagesDirectory NuGet.exe 命令列引數",
-  "loc.input.label.verbosity": "詳細程度",
-  "loc.input.help.verbosity": "NuGet 的詳細程度層級",
+  "loc.input.label.verbosity": "詳細資訊",
+  "loc.input.help.verbosity": "NuGet 的詳細資訊層級",
   "loc.messages.Warning_NoConfigForNoCredentialProvider": "若要連線到託管於此組建代理程式上 Azure Pipelines/TFS 專案集合中的 NuGet 摘要，請編輯您的組建定義以選擇較高版本的 NuGet，或指定含有所要使用套件來源的 NuGet.config 路徑。",
   "loc.messages.Warning_ConflictingNuGetPreference": "選取了 NuGet 3.3，但提供的是自訂 NuGet 路徑。慣用自訂路徑。若要解決此警告，請編輯您的組建工作，然後選取 [進階] 下 NuGet 版本的 [自訂]。",
   "loc.messages.PackagesInstalledSuccessfully": "已成功還原套件",

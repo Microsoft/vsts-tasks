@@ -1,15 +1,15 @@
 {
-  "loc.messages.AZ_AzureRMProfileModuleNotFound": "找不到 \"AzureRM.Profile\" 模块。\"AzureRM\" 模块可能未完整安装。从提升的会话运行以下 PowerShell 命令可能解决该问题: Import-Module AzureRM；Install-AzureRM",
-  "loc.messages.AZ_CertificateAuthNotSupported": "不支持基于证书的身份验证。找不到 Azure PowerShell 模块。",
-  "loc.messages.AZ_CredentialsError": "用于部署的 Azure 凭据有错。",
-  "loc.messages.AZ_ModuleNotFound": "找不到版本为 {0} 的模块 {1}。如果最近安装了该模块，请在重启 Azure 管道任务代理后重试。",
-  "loc.messages.AZ_RequiresMinVersion0": "未安装 Azure PowerShell 模块的最低必需版本({0})。",
-  "loc.messages.AZ_ServicePrincipalError": "用于部署的服务主体有错。",
-  "loc.messages.AZ_ServicePrincipalAuthNotSupportedAzureVersion0": "Azure 模块的版本“{0}”不支持服务主体身份验证。",
-  "loc.messages.AZ_UnsupportedAuthScheme0": "Azure 终结点不支持授权方案“{0}”。",
-  "loc.messages.AZ_AvailableModules": "可用 {0} 模块的列表:",
-  "loc.messages.AZ_InvalidARMEndpoint": "指定的 AzureRM 终结点无效。",
-  "loc.messages.AZ_MsiAccessNotConfiguredProperlyFailure": "无法提取托管标识的访问令牌。请为虚拟机配置托管标识 \"https://aka.ms/azure-msi-docs\"。状态代码:“{0}”，错误消息: {1}",
-  "loc.messages.AZ_MsiAccessTokenFetchFailure": "无法提取托管标识的访问令牌。状态代码:“{0}”，错误消息: {1}",
-  "loc.messages.AZ_MsiFailure": "无法提取托管标识的访问令牌。{0}"
+  "loc.messages.AZ_AzureRMProfileModuleNotFound": "Module 'AzureRM.Profile' not found. The 'AzureRM' module may not be fully installed. Running the  following PowerShell commands from an elevated session may resolve the issue: Import-Module AzureRM ; Install-AzureRM",
+  "loc.messages.AZ_CertificateAuthNotSupported": "Certificate based authentication is not supported. Azure PowerShell module is not found.",
+  "loc.messages.AZ_CredentialsError": "There was an error with the Azure credentials used for the deployment.",
+  "loc.messages.AZ_ModuleNotFound": "Could not find the modules: '{1}' with Version: '{0}'. If the module was recently installed, retry after restarting the Azure Pipelines task agent.",
+  "loc.messages.AZ_RequiresMinVersion0": "The required minimum version ({0}) of the Azure PowerShell module is not installed.",
+  "loc.messages.AZ_ServicePrincipalError": "There was an error with the service principal used for the deployment.",
+  "loc.messages.AZ_ServicePrincipalAuthNotSupportedAzureVersion0": "Service principal authentication is not supported in version '{0}' of the Azure module.",
+  "loc.messages.AZ_UnsupportedAuthScheme0": "Unsupported authentication scheme '{0}' for Azure endpoint.",
+  "loc.messages.AZ_AvailableModules": "The list of available {0} modules:",
+  "loc.messages.AZ_InvalidARMEndpoint": "Specified AzureRM endpoint is invalid.",
+  "loc.messages.AZ_MsiAccessNotConfiguredProperlyFailure": "Could not fetch access token for Managed Identity. Please configure Managed Identity for virtual machine 'https://aka.ms/azure-msi-docs'. Status code: '{0}', Error message: {1}",
+  "loc.messages.AZ_MsiAccessTokenFetchFailure": "Could not fetch access token for Managed Identity. Status code: '{0}', Error message: {1}",
+  "loc.messages.AZ_MsiFailure": "Could not fetch access token for Managed Identity. {0}"
 }

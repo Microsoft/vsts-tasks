@@ -1,14 +1,14 @@
 {
-  "loc.friendlyName": "发布代码覆盖率结果",
-  "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?LinkID=626485)",
-  "loc.description": "发布来自内部版本的任何代码覆盖率结果",
-  "loc.instanceNameFormat": "发布代码覆盖率结果",
-  "loc.input.label.summaryFileLocation": "摘要文件的路径",
-  "loc.input.help.summaryFileLocation": "摘要文件的路径，该文件包含代码覆盖率统计信息，如行、方法和类覆盖率。多个摘要文件将合并到一个报表中。支持多行的最小匹配模式。[详细信息](https://aka.ms/minimatchexamples)",
-  "loc.input.label.pathToSources": "源文件的路径",
-  "loc.input.help.pathToSources": "当覆盖率 XML 报表不包含源文件的绝对路径时，需要源文件的路径。例如，JaCoCo 报表不使用绝对路径，当发布 Java 应用的 JaCoCo 覆盖率时，模式将与 `$(System.DefaultWorkingDirectory)/MyApp/src/main/java/` 类似。<br />如果在 docker 容器中运行测试，则也需要此输入。此输入应指向主机上源文件的绝对路径。例如 `$(System.DefaultWorkingDirectory)/MyApp/`",
-  "loc.input.label.failIfCoverageEmpty": "如果缺少代码覆盖率结果则失败",
-  "loc.input.help.failIfCoverageEmpty": "如果代码覆盖率未产生任何可发布的结果，任务将失败。",
-  "loc.messages.FoundNMatchesForPattern": "找到 %s 个结果匹配模式: %s",
-  "loc.messages.NoCodeCoverage": "未找到可发布的代码覆盖率结果。"
+  "loc.friendlyName": "Publish code coverage results",
+  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=626485)",
+  "loc.description": "Publish any of the code coverage results from a build",
+  "loc.instanceNameFormat": "Publish code coverage results",
+  "loc.input.label.summaryFileLocation": "Path to summary files",
+  "loc.input.help.summaryFileLocation": "Paths to summary files containing code coverage statistics, such as line, method, and class coverage. Multiple summary files will be merged into a single report. Supports multiple lines of minimatch patterns. [More information](https://aka.ms/minimatchexamples)",
+  "loc.input.label.pathToSources": "Path to Source files",
+  "loc.input.help.pathToSources": "Path to source files is required when coverage XML reports do not contain absolute path to source files. For e.g., JaCoCo reports do not use absolute paths and when publishing JaCoCo coverage for Java apps, the pattern would be similar to `$(System.DefaultWorkingDirectory)/MyApp/src/main/java/`.<br />This input is also needed if tests are run in a docker container. This input should point to absolute path to source files on the host. For e.g., `$(System.DefaultWorkingDirectory)/MyApp/`",
+  "loc.input.label.failIfCoverageEmpty": "Fail if code coverage results are missing",
+  "loc.input.help.failIfCoverageEmpty": "Fail the task if code coverage did not produce any results to publish.",
+  "loc.messages.FoundNMatchesForPattern": "Found %s result(s) matching pattern: %s",
+  "loc.messages.NoCodeCoverage": "No code coverage results were found to publish."
 }

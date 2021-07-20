@@ -1,11 +1,11 @@
 {
   "loc.friendlyName": "バッチ スクリプト",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613733).\n\nPlease note: this task is not compatible with Windows containers. If you need to run a batch script on a Windows container, use the [CmdLine task](https://go.microsoft.com/fwlink/?LinkID=613735) instead.",
+  "loc.helpMarkDown": "[このタスクの詳細を表示](https://go.microsoft.com/fwlink/?LinkID=613733)。\n\n注意: このタスクは Windows コンテナーと互換性がありません。Windows コンテナーでバッチ スクリプトを実行する必要がある場合は、代わりに [CmdLine タスク](https://go.microsoft.com/fwlink/?LinkID=613735) をご使用ください。",
   "loc.description": "Windows コマンドまたはバッチ スクリプトを実行し、必要に応じて環境を変更できるようにします",
   "loc.instanceNameFormat": "スクリプト $(filename) の実行",
   "loc.group.displayName.advanced": "詳細設定",
   "loc.input.label.filename": "パス",
-  "loc.input.help.filename": "実行するコマンドレットまたはバッチ スクリプトのパス。完全修飾パスか、既定の作業ディレクトリを基準にした相対パスのいずれかです。",
+  "loc.input.help.filename": "実行する cmd または bat スクリプトのパス。完全修飾パスであるか、または既定の作業ディレクトリへの相対パスである必要があります (作業ディレクトリは、このタスクに対して指定できる ' workingFolder ' とは異なる場合があります)。",
   "loc.input.label.arguments": "引数",
   "loc.input.help.arguments": "コマンドレットまたはバッチ スクリプトに渡される引数",
   "loc.input.label.modifyEnvironment": "環境の変更",

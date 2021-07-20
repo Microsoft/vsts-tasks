@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "使用 Ruby 版本",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=2005989) or [see the Ruby documentation](https://www.ruby-lang.org/)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?linkid=2005989)或[參閱 Ruby 文件](https://www.ruby-lang.org/)",
   "loc.description": "從工具快取使用指定的 Ruby 版本，可將其新增至 PATH。",
   "loc.instanceNameFormat": "使用 Ruby $(versionSpec)",
   "loc.input.label.versionSpec": "版本規格",
@@ -11,5 +11,6 @@
   "loc.messages.PlatformNotRecognized": "無法辨識平台",
   "loc.messages.ToolNotFoundMicrosoftHosted": "如果這是 Microsoft 裝載的代理程式，請確認此映像支援並存版本 %s (位於 %s)。",
   "loc.messages.ToolNotFoundSelfHosted": "如果這是自我裝載式代理程式，請於以下位置了解如何設定並存 %s 版本: %s。",
-  "loc.messages.VersionNotFound": "架構 %s 的版本規格 %s 不符合 Agent.ToolsDirectory 中的任何版本。"
+  "loc.messages.VersionNotFound": "架構 %s 的版本規格 %s 不符合 Agent.ToolsDirectory 中的任何版本。",
+  "loc.messages.ExactVersionNotRecommended": "不建議在 Microsoft 裝載的代理程式上指定確切的版本。您可以在不另行通知的情況下，由裝載的代理程式上的新版 Ruby 取代修補程式版本，這會造成未預期的失敗。建議只指定主要或主要和次要版本 (例如: '2' 或 '2.4')"
 }

@@ -31,6 +31,12 @@
   "loc.input.help.downloadPath": "Путь для скачивания артефактов на компьютере агента",
   "loc.input.label.parallelizationLimit": "Предел параллелизма",
   "loc.input.help.parallelizationLimit": "Число одновременно скачиваемых файлов",
+  "loc.input.label.checkDownloadedFiles": "Проверить загруженные файлы",
+  "loc.input.help.checkDownloadedFiles": "Если этот флажок установлен, задача сборки проверит, чтобы все файлы были полностью загружены.",
+  "loc.input.label.retryDownloadCount": "Число повторных попыток",
+  "loc.input.help.retryDownloadCount": "Необязательное число повторных попыток загрузки артефактов сборки в случае сбоя загрузки.",
+  "loc.input.label.extractTars": "Извлечь все файлы, хранящихся в TAR-архивах",
+  "loc.input.help.extractTars": "Включите этот параметр, чтобы извлечь все загруженные файлы с расширением .tar. Это удобно, так как файлы артефактов необходимо упаковать в TAR-архив, чтобы сохранить разрешения для UNIX-файлов. При включении параметра \"StoreAsTar\" в задаче PublishBuildArtifacts артефакты будут автоматически сохранены как TAR-файлы.",
   "loc.messages.DownloadArtifacts": "Скачивается артефакт %s из: %s",
   "loc.messages.DownloadingArtifactsForBuild": "Скачиваются артефакты для сборки: %s",
   "loc.messages.LinkedArtifactCount": "Число связанных артефактов: %s",
@@ -51,5 +57,11 @@
   "loc.messages.DownloadingContainerResource": "Скачиваются элементы из ресурса-контейнера %s",
   "loc.messages.DefinitionNameMatchFound": "Имя определения %s разрешено в идентификатор %d",
   "loc.messages.InvalidBuildDefinitionName": "Имя определения %s не соответствует допустимому определению",
-  "loc.messages.UnresolvedDefinitionId": "Не удалось разрешить идентификатор определения сборки"
+  "loc.messages.UnresolvedDefinitionId": "Не удалось разрешить идентификатор определения сборки",
+  "loc.messages.BeginArtifactItemsIntegrityCheck": "Запуск проверки целостности элементов артефактов",
+  "loc.messages.CorruptedArtifactItemsList": "Следующие элементы не прошли проверку целостности:",
+  "loc.messages.IntegrityCheckNotPassed": "Проверка целостности элементов артефактов не пройдена",
+  "loc.messages.IntegrityCheckPassed": "Проверка целостности элементов артефактов завершена",
+  "loc.messages.TarExtractionNotSupportedInWindows": "Извлечение из TAR-архива не поддерживается в Windows",
+  "loc.messages.NoTarsFound": "TAR-архивы для извлечения не найдены"
 }

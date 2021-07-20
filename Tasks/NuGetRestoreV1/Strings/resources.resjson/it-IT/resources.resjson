@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Ripristino NuGet",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613747) or [see the NuGet documentation](https://docs.microsoft.com/nuget/)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget). In alternativa, [vedere la documentazione di NuGet](https://docs.microsoft.com/nuget/)",
   "loc.description": "Consente di ripristinare i pacchetti NuGet durante la preparazione di un passaggio di compilazione di Visual Studio.",
   "loc.instanceNameFormat": "NuGet restore $(solution)",
   "loc.group.displayName.advanced": "Avanzate",

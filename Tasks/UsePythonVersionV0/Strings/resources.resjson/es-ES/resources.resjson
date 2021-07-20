@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Usar versión de Python",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=871498) or [see the Python documentation](https://www.python.org/doc/)",
+  "loc.helpMarkDown": "[Obtener más información acerca de esta tarea](https://go.microsoft.com/fwlink/?linkid=871498) o [consultar la documentación de Python](https://www.python.org/doc/)",
   "loc.description": "Usa la versión de Python especificada de la memoria caché de herramientas y, opcionalmente, la agrega a PATH.",
   "loc.instanceNameFormat": "Usar Python $(versionSpec)",
   "loc.group.displayName.advanced": "Avanzado",
@@ -16,5 +16,6 @@
   "loc.messages.PyPyNotFound": "No se encuentra ninguna instalación de PyPy%d en Agent.ToolsDirectory.",
   "loc.messages.ToolNotFoundMicrosoftHosted": "Si es un agente hospedado por Microsoft, compruebe que la imagen admite versiones en paralelo de %s en %s.",
   "loc.messages.ToolNotFoundSelfHosted": "Si es un agente autohospedado, vea cómo configurar las versiones de %s en paralelo en %s.",
-  "loc.messages.VersionNotFound": "La especificación de versión %s para la arquitectura %s no coincide con ninguna versión de Agent.ToolsDirectory."
+  "loc.messages.VersionNotFound": "La especificación de versión %s para la arquitectura %s no coincide con ninguna versión de Agent.ToolsDirectory.",
+  "loc.messages.ExactVersionNotRecommended": "No se recomienda especificar una versión exacta en los agentes hospedados por Microsoft. Las versiones de revisión de Python pueden reemplazarse por nuevas en los agentes hospedados sin previo aviso, lo que causará que las compilaciones dejen de funcionar inesperadamente. Se recomienda especificar solo la versión principal, o bien las versiones principal y secundaria (ejemplo: \"3\" o \"3.6\")."
 }

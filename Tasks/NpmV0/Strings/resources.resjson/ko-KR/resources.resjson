@@ -1,7 +1,7 @@
 {
   "loc.friendlyName": "npm",
-  "loc.helpMarkDown": "[자세한 정보](https://go.microsoft.com/fwlink/?LinkID=613746)",
-  "loc.description": "npm 명령을 실행합니다.",
+  "loc.helpMarkDown": "[이 작업에 대한 자세한 정보](https://go.microsoft.com/fwlink/?LinkID=613746)",
+  "loc.description": "npm 명령을 실행합니다. 최신 기능에 NpmAuthenticate@0 작업을 사용합니다.",
   "loc.instanceNameFormat": "npm $(command)",
   "loc.input.label.cwd": "작업 폴더",
   "loc.input.help.cwd": "npm 명령이 실행되는 작업 디렉터리입니다. 기본값은 리포 루트입니다.",

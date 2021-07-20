@@ -10,6 +10,8 @@
   "loc.input.help.KeyVaultName": "기존 Key Vault 이름 지정",
   "loc.input.label.SecretsFilter": "비밀 필터",
   "loc.input.help.SecretsFilter": "쉼표로 구분된 비밀 이름의 목록입니다. 또는 선택한 키 자격 증명 모음에서 모든 비밀을 다운로드하려면 *를 그대로 둡니다.",
+  "loc.input.label.RunAsPreJob": "전체 작업에서 비밀을 사용할 수 있도록 설정",
+  "loc.input.help.RunAsPreJob": "작업(job) 실행이 시작되기 전에 작업(task)을 실행합니다. 이 작업(job)을 따르는 작업(task)뿐 아니라 작업(job)의 모든 작업(task)에 비밀을 노출합니다.",
   "loc.messages.ClientIdCannotBeEmpty": "clientId는 비어 있지 않은 문자열이어야 합니다.",
   "loc.messages.DomainCannotBeEmpty": "domain은 비어 있지 않은 문자열이어야 합니다.",
   "loc.messages.SecretCannotBeEmpty": "secret은 비어 있지 않은 문자열이어야 합니다.",

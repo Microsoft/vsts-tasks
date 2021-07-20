@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Bash",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613738) or [see the Bash documentation](https://www.gnu.org/software/bash/manual/)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?linkid=2132213)或[參閱 Bash 文件](https://www.gnu.org/software/bash/manual/)",
   "loc.description": "在 macOS、Linux 或 Windows 執行 Bash 指令碼",
   "loc.instanceNameFormat": "Bash 指令碼",
   "loc.releaseNotes": "指令碼工作一致性。新增了多行支援，並新增 Windows 的支援。",

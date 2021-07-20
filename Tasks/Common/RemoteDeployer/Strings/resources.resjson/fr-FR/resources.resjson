@@ -1,12 +1,12 @@
 {
-  "loc.messages.RemoteDeployer_ConnectedMachines": "PSSession créé pour les machines : '{0}'",
-  "loc.messages.RemoteDeployer_NotConnectedMachines": "Impossible de créer PSSession pour la machine : '{0}:{1}'",
-  "loc.messages.RemoteDeployer_ScriptJobFailed": "Échec de l'exécution du travail de script distant. ComputerName : '{0}'. Message : '{1}'",
-  "loc.messages.RemoteDeployer_NonZeroExitCode": "Code de sortie différent de zéro : '{1}' pour ComputerName : '{0}'",
-  "loc.messages.RemoteDeployer_ScriptExecutionSucceeded": "Exécution du script réussie pour ComputerName : '{0}'",
-  "loc.messages.RemoteDeployer_UnknownStatus": "État d'exécution du travail de script distant inconnu : '{0}'",
-  "loc.messages.RemoteDeployer_UnableToGetRemoteJobResults": "Impossible d'obtenir les résultats du travail de script distant",
-  "loc.messages.PS_TM_UnableToCreatePSSession": "Impossible de créer pssession. Erreur : '{0}'",
-  "loc.messages.RemoteDeployer_JobResultEvaluationFailure": "Échec d'au moins un travail distant. Pour plus d'informations, consultez les journaux. Code(s) d'erreur : '{0}'",
-  "loc.messages.RemoteDeployer_UnableToUploadTargetMachineLogs": "Impossible de charger les fichiers journaux de la machine cible. SourceFolder : '{0}'. Erreur : '{1}'"
+  "loc.messages.RemoteDeployer_ConnectedMachines": "PSSession created for Machines:'{0}'",
+  "loc.messages.RemoteDeployer_NotConnectedMachines": "PSSession could not be created for Machine:'{0}:{1}'",
+  "loc.messages.RemoteDeployer_ScriptJobFailed": "Execution of remote script job failed. ComputerName: '{0}', Message: '{1}'",
+  "loc.messages.RemoteDeployer_NonZeroExitCode": "Non-Zero exit code: '{1}' for ComputerName: '{0}'",
+  "loc.messages.RemoteDeployer_ScriptExecutionSucceeded": "Script execution succeeded for ComputerName: '{0}'",
+  "loc.messages.RemoteDeployer_UnknownStatus": "Unknown remote script job execution status: '{0}'",
+  "loc.messages.RemoteDeployer_UnableToGetRemoteJobResults": "Unable to get remote script job results",
+  "loc.messages.PS_TM_UnableToCreatePSSession": "Unable to create pssession. Error: '{0}'",
+  "loc.messages.RemoteDeployer_JobResultEvaluationFailure": "Atleast one remote job failed. Consult logs for more details. ErrorCodes(s): '{0}'",
+  "loc.messages.RemoteDeployer_UnableToUploadTargetMachineLogs": "Unable to upload target machine logs files. SourceFolder: '{0}'. Error: '{1}'"
 }

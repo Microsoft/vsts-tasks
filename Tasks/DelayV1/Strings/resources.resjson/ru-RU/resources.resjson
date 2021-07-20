@@ -1,8 +1,8 @@
 {
-  "loc.friendlyName": "Задержка",
-  "loc.helpMarkDown": "[Дополнительные сведения](https://go.microsoft.com/fwlink/?linkid=870239)",
-  "loc.description": "Отложить дальнейшее выполнение рабочего процесса на фиксированное время",
-  "loc.instanceNameFormat": "Задержка на $(delayForMinutes) мин",
-  "loc.input.label.delayForMinutes": "Время задержки (в минутах)",
-  "loc.input.help.delayForMinutes": "Задержка выполнения рабочего процесса на указанное время в минутах. При значении 0 выполнение рабочего процесса начнется без задержки."
+  "loc.friendlyName": "Delay",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870239)",
+  "loc.description": "Delay further execution of a workflow by a fixed time",
+  "loc.instanceNameFormat": "Delay by $(delayForMinutes) minutes",
+  "loc.input.label.delayForMinutes": "Delay Time (minutes)",
+  "loc.input.help.delayForMinutes": "Delay the execution of the workflow by specified time in minutes. 0 value means that workflow execution will start without delay."
 }

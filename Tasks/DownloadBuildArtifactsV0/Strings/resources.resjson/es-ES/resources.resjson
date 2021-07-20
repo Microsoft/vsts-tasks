@@ -31,6 +31,12 @@
   "loc.input.help.downloadPath": "Ruta de acceso en la máquina del agente donde se descargarán los artefactos",
   "loc.input.label.parallelizationLimit": "Límite de paralelización",
   "loc.input.help.parallelizationLimit": "Número de archivos para descargar simultáneamente",
+  "loc.input.label.checkDownloadedFiles": "Comprobar los archivos descargados",
+  "loc.input.help.checkDownloadedFiles": "Si se activa, esta tarea de compilación comprobará que todos los archivos están completamente descargados.",
+  "loc.input.label.retryDownloadCount": "Número de reintentos",
+  "loc.input.help.retryDownloadCount": "Número opcional de veces para reintentar la descarga de un artefacto de compilación si la descarga falla.",
+  "loc.input.label.extractTars": "Extraer todos los archivos almacenados en archivos tar",
+  "loc.input.help.extractTars": "Habilite esta opción para extraer todos los archivos descargados que tengan la extensión. tar. Esto es útil porque necesita empaquetar los archivos de artefacto en tar si quiere conservar los permisos de archivo de Unix. Al habilitar la opción \"StoreAsTar\" en la tarea PublishBuildArtifacts los artefactos se almacenarán como archivos .tar automáticamente.",
   "loc.messages.DownloadArtifacts": "Descargando el artefacto %s desde: %s",
   "loc.messages.DownloadingArtifactsForBuild": "Descargando artefactos para la compilación: %s",
   "loc.messages.LinkedArtifactCount": "Número de artefactos vinculados: %s",
@@ -51,5 +57,11 @@
   "loc.messages.DownloadingContainerResource": "Descargando elementos del recurso de contenedor %s",
   "loc.messages.DefinitionNameMatchFound": "Nombre de definición %s resuelto con id. %d",
   "loc.messages.InvalidBuildDefinitionName": "El nombre de definición %s no se corresponde con una definición válida",
-  "loc.messages.UnresolvedDefinitionId": "No se pudo resolver el id. de la definición de compilación"
+  "loc.messages.UnresolvedDefinitionId": "No se pudo resolver el id. de la definición de compilación",
+  "loc.messages.BeginArtifactItemsIntegrityCheck": "Iniciando la comprobación de integridad de los elementos del artefacto",
+  "loc.messages.CorruptedArtifactItemsList": "Los siguientes elementos no han pasado la comprobación de integridad:",
+  "loc.messages.IntegrityCheckNotPassed": "Se ha producido un error al comprobar la integridad de los elementos del artefacto",
+  "loc.messages.IntegrityCheckPassed": "La comprobación de integridad de elementos de artefacto finalizó correctamente",
+  "loc.messages.TarExtractionNotSupportedInWindows": "La extracción de tar no es compatible con Windows",
+  "loc.messages.NoTarsFound": "No se encontraron archivos tar para extraer"
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Pubblica artefatti della compilazione",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708390)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?LinkID=708390)",
   "loc.description": "Consente di pubblicare artefatti della compilazione in Azure Pipelines o in una condivisione file di Windows",
   "loc.instanceNameFormat": "Pubblica artefatto: $(ArtifactName)",
   "loc.group.displayName.advanced": "Avanzate",
@@ -16,10 +16,13 @@
   "loc.input.help.Parallel": "Consente di scegliere se copiare i file in parallelo usando più thread per una maggiore velocità effettiva potenziale. Se questa impostazione non è abilitata, verrà usato un solo thread.",
   "loc.input.label.ParallelCount": "Conteggio parallelo",
   "loc.input.help.ParallelCount": "Consente di immettere il grado di parallelismo o il numero di thread usati per eseguire la copia. Il valore deve essere almeno 1 e non superare 128.",
-  "loc.input.label.FileCopyOptions": "File copy options",
-  "loc.input.help.FileCopyOptions": "Pass additional options to the Robocopy command.",
+  "loc.input.label.FileCopyOptions": "Opzioni di copia file",
+  "loc.input.help.FileCopyOptions": "Passa opzioni aggiuntive al comando Robocopy.",
+  "loc.input.label.StoreAsTar": "Aggiungere l'artefatto a un archivio tar prima del caricamento",
+  "loc.input.help.StoreAsTar": "Aggiungere tutti i file dal percorso di pubblicazione a un archivio tar prima del caricamento. Ciò consente di mantenere le autorizzazioni file UNIX. Usare l'opzione 'extractTars' dell'attività DownloadBuildArtifacts per estrarre automaticamente gli elementi scaricati.",
   "loc.messages.ErrorFileShareLinux": "La pubblicazione di artefatti da un agente Linux o macOS in una condivisione file non è supportata. Modificare il tipo di artefatto in `Azure Pipelines` oppure usare un agente Windows.",
   "loc.messages.ErrorHostTypeNotSupported": "Per pubblicare gli artefatti in Azure Pipelines, questa attività deve essere eseguita in una compilazione.",
-  "loc.messages.PublishBuildArtifactsFailed": "La pubblicazione degli artefatti della compilazione non è riuscita. Errore: %s",
-  "loc.messages.UnexpectedParallelCount": "Conteggio parallelo '%s' non supportato. Immettere un numero compreso tra 1 e 128."
+  "loc.messages.PublishBuildArtifactsFailed": "La pubblicazione degli artefatti di compilazione non è riuscita. Errore: %s",
+  "loc.messages.UnexpectedParallelCount": "Conteggio parallelo '%s' non supportato. Immettere un numero compreso tra 1 e 128.",
+  "loc.messages.TarExtractionNotSupportedInWindows": "L'estrazione di tar non è supportata in Windows"
 }

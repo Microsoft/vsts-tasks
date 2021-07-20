@@ -5,7 +5,7 @@
   "loc.instanceNameFormat": "运行脚本 $(filename)",
   "loc.group.displayName.advanced": "高级",
   "loc.input.label.filename": "路径",
-  "loc.input.help.filename": "要执行的 cmd 或 bat 脚本的路径。应是完全限定的路径或相对于默认工作目录。",
+  "loc.input.help.filename": "要执行的 cmd 或批处理脚本的路径。应具有完全限定的路径或相对于默认工作目录(请注意，工作目录可能与为任务指定的 “workingFolder” 不同)。",
   "loc.input.label.arguments": "参数",
   "loc.input.help.arguments": "传递给 cmd 或 bat 脚本的参数",
   "loc.input.label.modifyEnvironment": "修改环境",

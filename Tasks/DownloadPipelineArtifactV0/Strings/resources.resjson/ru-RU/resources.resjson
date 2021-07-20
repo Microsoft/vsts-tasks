@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Скачать артефакт конвейера",
-  "loc.helpMarkDown": "Скачайте именованный артефакт из конвейера в локальную папку.",
-  "loc.description": "Скачивает артефакт, связанный с конвейером",
-  "loc.instanceNameFormat": "Скачать артефакт конвейера",
-  "loc.input.label.pipelineId": "Конвейер, из которого необходимо скачать артефакт",
-  "loc.input.help.pipelineId": "Конвейер, из которого необходимо скачать артефакт. Если оставить это поле пустым, артефакт будет скачан из текущего конвейера.",
-  "loc.input.label.artifactName": "Имя скачиваемого артефакта.",
-  "loc.input.help.artifactName": "Имя артефакта для скачивания. Это должен быть артефакт конвейера.",
-  "loc.input.label.targetPath": "Путь для скачивания",
-  "loc.input.help.targetPath": "Путь к папке, в которую необходимо скачать артефакт. Это может быть полный путь или путь относительно корня репозитория. Подстановочные знаки не поддерживаются. [Переменные](https://go.microsoft.com/fwlink/?LinkID=550988) поддерживаются. Если папка не существует, она будет создана."
+  "loc.friendlyName": "Download pipeline artifact",
+  "loc.helpMarkDown": "Download named artifact from a pipeline to a local path.",
+  "loc.description": "Downloads an artifact associated with a pipeline",
+  "loc.instanceNameFormat": "Download Pipeline Artifact",
+  "loc.input.label.pipelineId": "The specific pipeline to download from",
+  "loc.input.help.pipelineId": "The pipeline to download from. Target the current pipeline if left blank.",
+  "loc.input.label.artifactName": "The name of artifact to download.",
+  "loc.input.help.artifactName": "The name of artifact to download. The artifact must be a pipeline artifact.",
+  "loc.input.label.targetPath": "Path to download to",
+  "loc.input.help.targetPath": "The folder path to download the artifact to. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported. If the folder doesn't exist it will be created."
 }

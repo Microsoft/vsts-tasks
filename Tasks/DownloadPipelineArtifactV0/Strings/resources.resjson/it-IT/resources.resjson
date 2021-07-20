@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Scarica artefatto della pipeline",
-  "loc.helpMarkDown": "Scarica l'artefatto denominato da una pipeline a un percorso locale.",
-  "loc.description": "Scarica un artefatto associato a una pipeline",
-  "loc.instanceNameFormat": "Scarica l'artefatto della pipeline",
-  "loc.input.label.pipelineId": "Pipeline specifica da cui eseguire il download",
-  "loc.input.help.pipelineId": "Pipeline da cui eseguire il download. Se viene lasciato vuoto, come destinazione viene usata la pipeline corrente.",
-  "loc.input.label.artifactName": "Nome dell'artefatto da scaricare.",
-  "loc.input.help.artifactName": "Nome dell'artefatto da scaricare. Deve essere un artefatto della pipeline.",
-  "loc.input.label.targetPath": "Percorso in cui eseguire il download",
-  "loc.input.help.targetPath": "Percorso della cartella in cui scaricare l'artefatto. Può essere un percorso completo o relativo alla radice del repository. I caratteri jolly non sono supportati. Le [variabili](https://go.microsoft.com/fwlink/?LinkID=550988) sono supportate. Se la cartella non esiste, verrà creata."
+  "loc.friendlyName": "Download pipeline artifact",
+  "loc.helpMarkDown": "Download named artifact from a pipeline to a local path.",
+  "loc.description": "Downloads an artifact associated with a pipeline",
+  "loc.instanceNameFormat": "Download Pipeline Artifact",
+  "loc.input.label.pipelineId": "The specific pipeline to download from",
+  "loc.input.help.pipelineId": "The pipeline to download from. Target the current pipeline if left blank.",
+  "loc.input.label.artifactName": "The name of artifact to download.",
+  "loc.input.help.artifactName": "The name of artifact to download. The artifact must be a pipeline artifact.",
+  "loc.input.label.targetPath": "Path to download to",
+  "loc.input.help.targetPath": "The folder path to download the artifact to. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported. If the folder doesn't exist it will be created."
 }

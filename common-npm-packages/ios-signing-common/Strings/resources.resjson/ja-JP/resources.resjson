@@ -1,7 +1,7 @@
 {
-  "loc.messages.SignIdNotFound": "iOS 署名 ID が見つかりませんでした。指定された署名とプロビジョニングの情報をご確認ください。",
-  "loc.messages.TempKeychainSetupFailed": "一時キーチェーンをキーチェーン検索パスに追加できませんでした。",
-  "loc.messages.ProvProfileDetailsNotFound": "プロビジョニング プロファイルの詳細が見つかりませんでした: %s",
-  "loc.messages.ProvProfileUUIDNotFound": "プロビジョニング プロファイルのプロビジョニング プロファイル UUID が見つかりませんでした: %s",
-  "loc.messages.ProvProfileNameNotFound": "プロビジョニング プロファイルのプロビジョニング プロファイル名が見つかりませんでした: %s"
+  "loc.messages.SignIdNotFound": "Failed to find iOS signing identity. Verify the signing and provisioning information provided.",
+  "loc.messages.TempKeychainSetupFailed": "Failed to add the temporary keychain to the keychains search path.",
+  "loc.messages.ProvProfileDetailsNotFound": "Failed to find the details for provisioning profile: %s",
+  "loc.messages.ProvProfileUUIDNotFound": "Failed to find provisioning profile UUID for provisioning profile: %s",
+  "loc.messages.ProvProfileNameNotFound": "Failed to find provisioning profile name for provisioning profile: %s"
 }

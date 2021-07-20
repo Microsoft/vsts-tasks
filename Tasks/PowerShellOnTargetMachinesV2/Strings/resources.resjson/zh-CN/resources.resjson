@@ -15,7 +15,7 @@
   "loc.input.label.Protocol": "协议",
   "loc.input.help.Protocol": "选择用于为计算机连接 WinRM 服务的协议。默认为 HTTPS。",
   "loc.input.label.TestCertificate": "测试证书",
-  "loc.input.help.TestCertificate": "选择跳过验证计算机的证书是否真正由受信任的证书颁发机构签署的选项。WinRM HTTPS 协议需要该参数。",
+  "loc.input.help.TestCertificate": "选择该选项以跳过由受信任的证书颁发机构验证计算机证书的真伪。WinRM HTTPS 协议需要此参数。",
   "loc.input.label.ScriptPath": "PowerShell 脚本",
   "loc.input.help.ScriptPath": "目标计算机上或 UNC 路径上 PowerShell 脚本的位置，如 C:\\BudgetIT\\Web\\Deploy\\Website.ps1",
   "loc.input.label.ScriptArguments": "脚本参数",

@@ -1,10 +1,12 @@
 {
   "loc.friendlyName": "Scarica file protetto",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=862069)",
-  "loc.description": "Download a secure file to the agent machine",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?LinkID=862069)",
+  "loc.description": "Scarica un file protetto nel computer agente",
   "loc.instanceNameFormat": "Scarica file protetto",
   "loc.input.label.secureFile": "File protetto",
-  "loc.input.help.secureFile": "The file name or GUID of the secure file to download to the agent machine. The file will be deleted after the pipeline runs.",
-  "loc.input.label.retryCount": "Retry Count",
-  "loc.input.help.retryCount": "Optional number of times to retry downloading a secure file if the download fails."
+  "loc.input.help.secureFile": "Nome o GUID del file protetto da scaricare nel computer agente. Il file verrà eliminato al termine dell'esecuzione della pipeline.",
+  "loc.input.label.retryCount": "Numero di tentativi",
+  "loc.input.help.retryCount": "Numero facoltativo di tentativi di download di un file protetto se il download non riesce.",
+  "loc.input.label.socketTimeout": "Timeout socket",
+  "loc.input.help.socketTimeout": "Timeout facoltativo in ms per un socket associato alla richiesta di download del file protetto."
 }

@@ -1,3 +1,3 @@
 {
-  "loc.messages.TokenUnavailable": "Impossible de récupérer les informations d'identification de jeton pour la création de package TFS/Azure Pipelines."
+  "loc.messages.TokenUnavailable": "Could not retrieve token credentials for TFS/Azure Pipelines packaging."
 }

@@ -1,18 +1,18 @@
 {
   "loc.friendlyName": "MySQL 資料庫部署",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/mysql-deployment-on-machine-group)",
+  "loc.helpMarkDown": "[深入了解此工作](https://aka.ms/mysql-deployment-on-machine-group)",
   "loc.description": "執行指令碼，以及對 MySQL 資料庫進行變更",
   "loc.instanceNameFormat": "部署工具: $(TaskNameSelector)",
   "loc.input.label.TaskNameSelector": "MySql 部署工具",
-  "loc.input.help.TaskNameSelector": "請在指令檔與內嵌指令碼選項中擇一。",
+  "loc.input.help.TaskNameSelector": "在 [指令檔] 和 [內嵌指令碼] 兩個選項中擇一選取。",
   "loc.input.label.SqlFile": "MySQL 指令碼",
   "loc.input.help.SqlFile": "自動化代理程式或自動化代理程式可存取之 UNC 路徑上的指令檔完整路徑，例如 \\\\\\\\BudgetIT\\DeployBuilds\\script.sql。此外，$(agent.releaseDirectory) 等預先定義的系統變數，以及包含 SQL 陳述式的檔案也可在此使用。",
   "loc.input.label.SqlInline": "內嵌 MySQL 指令碼",
-  "loc.input.help.SqlInline": "輸入要在上方所選資料庫執行的 MySQL 指令碼。",
+  "loc.input.help.SqlInline": "輸入要對以上所選資料庫執行的 MySQL 指令碼。",
   "loc.input.label.ServerName": "主機名稱",
   "loc.input.help.ServerName": "「MySQL 的資料庫」的伺服器名稱。範例: localhost。當您使用 MySQL Workbench 進行連線時，其會與為 'Parameters' 中 'Hostname' 使用的值相同",
   "loc.input.label.DatabaseName": "資料庫名稱",
-  "loc.input.help.DatabaseName": "資料庫的名稱，如果您已經有一個名稱，則必須在其上執行以下指令碼，此外指令碼本身也可用於建立資料庫。",
+  "loc.input.help.DatabaseName": "下列指令碼必須執行對象的資料庫名稱 (如已有資料庫); 若無，則指令碼本身可用以建立資料庫。",
   "loc.input.label.SqlUsername": "Mysql 使用者名稱",
   "loc.input.help.SqlUsername": "當您使用 MySQL Workbench 進行連線時，其會與為 'Parameters' 中 'Username' 使用的值相同",
   "loc.input.label.SqlPassword": "密碼",
@@ -31,5 +31,6 @@
   "loc.messages.CallbackCannotBeNull": "回呼不得為 null。",
   "loc.messages.UnableToCreateDatabaseException": "無法建立資料庫。",
   "loc.messages.WindowMysqlClientMissingError": "Windows 代理程式機器上缺少 MySQL 用戶端。請在代理程式機器上執行 MySQL 用戶端安裝程式 'https://aka.ms/window-mysqlcli-installer' 指令檔來加以安裝。",
-  "loc.messages.LinuxMysqlClientMissingError": "Linux 代理程式機器上缺少 MySQL 用戶端。請執行 'sudo apt-get install mysql-client' 加以安裝。"
+  "loc.messages.LinuxMysqlClientMissingError": "Linux 代理程式機器上缺少 MySQL 用戶端。請執行 'sudo apt-get install mysql-client' 加以安裝。",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "找不到具指定模式的套件"
 }

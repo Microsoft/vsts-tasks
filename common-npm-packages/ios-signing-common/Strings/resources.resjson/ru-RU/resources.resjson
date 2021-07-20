@@ -1,7 +1,7 @@
 {
-  "loc.messages.SignIdNotFound": "Не удалось найти удостоверение подписывания iOS. Убедитесь, что указаны необходимые данные для подписывания и подготовки.",
-  "loc.messages.TempKeychainSetupFailed": "Не удалось добавить временную цепочку ключей в путь поиска цепочек ключей.",
-  "loc.messages.ProvProfileDetailsNotFound": "Не удалось найти данные для профиля подготовки: %s.",
-  "loc.messages.ProvProfileUUIDNotFound": "Не удалось найти UUID профиля подготовки: %s.",
-  "loc.messages.ProvProfileNameNotFound": "Не удалось найти имя профиля подготовки для профиля подготовки: %s."
+  "loc.messages.SignIdNotFound": "Failed to find iOS signing identity. Verify the signing and provisioning information provided.",
+  "loc.messages.TempKeychainSetupFailed": "Failed to add the temporary keychain to the keychains search path.",
+  "loc.messages.ProvProfileDetailsNotFound": "Failed to find the details for provisioning profile: %s",
+  "loc.messages.ProvProfileUUIDNotFound": "Failed to find provisioning profile UUID for provisioning profile: %s",
+  "loc.messages.ProvProfileNameNotFound": "Failed to find provisioning profile name for provisioning profile: %s"
 }

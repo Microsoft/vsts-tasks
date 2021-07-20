@@ -9,6 +9,8 @@
   "loc.group.displayName.advanced": "高级选项",
   "loc.input.label.containerregistrytype": "容器注册表类型",
   "loc.input.help.containerregistrytype": "选择“Azure 容器注册表”，可使用 Azure 服务连接来连接它。选择“容器注册表”可连接到 Docker Hub 或任何其他私有容器注册表。",
+  "loc.input.label.addBaseImageData": "将基本映像元数据添加到映像",
+  "loc.input.help.addBaseImageData": "默认情况下，将添加基本映像数据(如基本映像名称和摘要)，这有助于提升可跟踪性。可以使用此输入选择退出此默认行为。",
   "loc.input.label.dockerRegistryEndpoint": "Docker 注册表服务连接",
   "loc.input.help.dockerRegistryEndpoint": "选择 Docker 注册表服务连接。这对于需要执行注册表身份验证的命令是必需的。",
   "loc.input.label.azureSubscriptionEndpoint": "Azure 订阅",

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Helm 工具安裝程式",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=851275)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?linkid=851275)",
   "loc.description": "在代理程式機器上安裝 Helm",
   "loc.instanceNameFormat": "安裝 Helm $(helmVersionToInstall)",
   "loc.input.label.helmVersionToInstall": "Helm 版本規格",

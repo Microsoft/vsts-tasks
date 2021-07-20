@@ -1,11 +1,11 @@
 {
   "loc.friendlyName": "Пакетный скрипт",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613733).\n\nPlease note: this task is not compatible with Windows containers. If you need to run a batch script on a Windows container, use the [CmdLine task](https://go.microsoft.com/fwlink/?LinkID=613735) instead.",
+  "loc.helpMarkDown": "[См. дополнительные сведения об этой задаче](https://go.microsoft.com/fwlink/?LinkID=613733).\n\nОбратите внимание: эта задача несовместима с контейнерами Windows. Если необходимо запустить пакетный сценарий в контейнере Windows, используйте вместо этого [задачу CmdLine](https://go.microsoft.com/fwlink/?LinkID=613735).",
   "loc.description": "Выполнение пакетного скрипта или команды Windows и при необходимости предоставление разрешения на изменение среды",
   "loc.instanceNameFormat": "Выполнить сценарий $(filename)",
   "loc.group.displayName.advanced": "Дополнительно",
   "loc.input.label.filename": "Путь",
-  "loc.input.help.filename": "Путь к выполняемому сценарию CMD или BAT. Это должен быть полный путь или путь относительно рабочей папки по умолчанию.",
+  "loc.input.help.filename": "Путь к скрипту cmd или bat для выполнения. Должен быть полным путем или путем относительно рабочей папки по умолчанию (обратите внимание, что рабочая папка может иметь значение, отличное от \"workingFolder\", которое может быть указано для этой задачи).",
   "loc.input.label.arguments": "Аргументы",
   "loc.input.help.arguments": "Аргументы, передаваемые в сценарий CMD или BAT",
   "loc.input.label.modifyEnvironment": "Изменить среду",

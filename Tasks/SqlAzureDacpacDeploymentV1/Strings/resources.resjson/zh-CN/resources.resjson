@@ -12,7 +12,7 @@
   "loc.input.label.ConnectedServiceNameARM": "Azure 订阅",
   "loc.input.help.ConnectedServiceNameARM": "部署 SQL 文件的目标 Azure 资源管理器订阅",
   "loc.input.label.AuthenticationType": "身份验证类型",
-  "loc.input.help.AuthenticationType": "指定用于连接到 Azure SQL Server 数据库的选项。选项可提供 Azure SQL Server 数据库详细信息、SQL Server 连接字符串、AAD 身份验证密码或集成。对于 SQL Server 身份验证，请使用 SQL Server 的用户凭据，对于 AD 身份验证，请使用配置为 SQL Server 的 AD 用户的凭据。",
+  "loc.input.help.AuthenticationType": "指定用于连接到 Azure SQL Server 数据库的选项。选项可提供 Azure SQL Server 数据库详细信息、SQL Server 连接字符串、AAD 身份验证密码或者集成或使用服务主体。对于 SQL Server 身份验证，请使用 SQL Server 的用户凭据，对于 AD 身份验证，请使用配置为 SQL Server 的 AD 用户的凭据。",
   "loc.input.label.ServerName": "Azure SQL Server",
   "loc.input.help.ServerName": "Azure SQL Server 名称，如 FabrikamSQL.database.windows.net,1433 或 FabrikamSQL.database.windows.net。",
   "loc.input.label.DatabaseName": "数据库",
@@ -57,8 +57,8 @@
   "loc.messages.SAD_InvalidServerAddress": "提及的 IP 地址不是有效的 IPv4 地址，或者 SQL 数据库服务器“{0}”不存在。",
   "loc.messages.SAD_ServerNotFound": "找不到 SQL 数据库服务器“{0}”。",
   "loc.messages.SAD_InvalidIPv4Address": "提及的 IP 地址不是有效的 IPv4 地址。",
-  "loc.messages.SAD_FoundMoreFiles": "使用搜索模式 {0} 找到多个要部署的文件。可能只有一个。",
-  "loc.messages.SAD_NoFilesMatch": "使用搜索模式 {0} 未找到要部署的文件",
+  "loc.messages.SAD_FoundMoreFiles": "使用搜索模式“{0}”找到了多个要部署的文件。只能有一个要部署的文件。",
+  "loc.messages.SAD_NoFilesMatch": "使用搜索模式“{0}”没有找到要部署的文件",
   "loc.messages.SAD_InvalidDacpacFile": "提供的 DACPAC 文件无效:“{0}”",
   "loc.messages.SAD_InvalidAuthenticationInputs": "身份验证输入无效。无法检测身份验证类型。",
   "loc.messages.SAD_InvalidSqlFile": "提供的 SQL 文件无效:“{0}”",
@@ -77,5 +77,6 @@
   "loc.messages.SAD_BacpacFilePath": "BACPAC 文件路径:",
   "loc.messages.SAD_PublishProfilePath": "发布配置文件路径:",
   "loc.messages.SAD_DriftReportWarning": "生成数据库的偏移报告时，请确保数据库注册为数据层应用程序。",
-  "loc.messages.SAD_InvokeSQLCmdNotSupportingConnectionString": "导入的 Invoke-Sqlcmd 不支持 connectionString。请安装 SQLServer PS 模块。"
+  "loc.messages.SAD_InvokeSQLCmdNotSupportingConnectionString": "导入的 Invoke-Sqlcmd 不支持 connectionString。请安装 SQLServer PS 模块。",
+  "loc.messages.SAD_NoServerSpecified": "未指定服务器。请指定源服务器或目标服务器。"
 }

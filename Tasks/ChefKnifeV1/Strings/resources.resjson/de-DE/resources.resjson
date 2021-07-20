@@ -1,12 +1,12 @@
 {
   "loc.friendlyName": "Chef Knife",
   "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/chef-knife-readme)",
-  "loc.description": "Hiermit werden Skripts mit Knife-Befehlen auf Ihrer Chef-Arbeitsstation ausgeführt.",
-  "loc.instanceNameFormat": "Chef Knife-Skript: $(ScriptPath)",
-  "loc.input.label.ConnectedServiceName": "Chef-Abonnements",
-  "loc.input.help.ConnectedServiceName": "Vor der Ausführung von Knife-Befehlen zu konfigurierendes Chef-Abonnement",
-  "loc.input.label.ScriptPath": "Skriptpfad",
-  "loc.input.help.ScriptPath": "Der Pfad des Skripts. Es muss sich um den vollqualifizierten Pfad oder einen Pfad relativ zum Standardarbeitsverzeichnis handeln.",
-  "loc.input.label.ScriptArguments": "Skriptargumente",
-  "loc.input.help.ScriptArguments": "Zusätzliche Parameter, die an Skript übergeben werden sollen. Entweder Ordnungszahl- oder benannte Parameter."
+  "loc.description": "Run scripts with Knife commands on your Chef workstation",
+  "loc.instanceNameFormat": "Chef Knife script: $(ScriptPath)",
+  "loc.input.label.ConnectedServiceName": "Chef Subscription",
+  "loc.input.help.ConnectedServiceName": "Chef subscription to configure before running knife commands",
+  "loc.input.label.ScriptPath": "Script Path",
+  "loc.input.help.ScriptPath": "Path of the script. Should be fully qualified path or relative to the default working directory.",
+  "loc.input.label.ScriptArguments": "Script Arguments",
+  "loc.input.help.ScriptArguments": "Additional parameters to pass to Script.  Can be either ordinal or named parameters."
 }

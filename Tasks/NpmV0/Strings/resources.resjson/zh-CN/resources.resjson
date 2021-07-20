@@ -1,7 +1,7 @@
 {
   "loc.friendlyName": "npm",
-  "loc.helpMarkDown": "[详细信息](https://go.microsoft.com/fwlink/?LinkID=613746)",
-  "loc.description": "运行 npm 命令",
+  "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?LinkID=613746)",
+  "loc.description": "运行 npm 命令。请执行 NpmAuthenticate@0 任务来获取最新功能。",
   "loc.instanceNameFormat": "npm $(command)",
   "loc.input.label.cwd": "工作文件夹",
   "loc.input.help.cwd": "运行 npm 命令的工作目录。默认为存储库的根路径。",

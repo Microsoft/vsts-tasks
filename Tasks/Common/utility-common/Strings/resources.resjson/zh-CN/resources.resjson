@@ -1,3 +1,3 @@
 {
-  "loc.messages.TokenUnavailable": "检索不到 TFS/Azure 管道打包的令牌凭据。"
+  "loc.messages.TokenUnavailable": "Could not retrieve token credentials for TFS/Azure Pipelines packaging."
 }

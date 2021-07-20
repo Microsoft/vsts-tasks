@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Déploiement de base de données MySQL",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/mysql-deployment-on-machine-group)",
+  "loc.helpMarkDown": "[En savoir plus sur cette tâche](https://aka.ms/mysql-deployment-on-machine-group)",
   "loc.description": "Exécuter des scripts et apporter des changements à une base de données MySQL",
   "loc.instanceNameFormat": "Déployer avec : $(TaskNameSelector)",
   "loc.input.label.TaskNameSelector": "Déployer MySql avec",
@@ -31,5 +31,6 @@
   "loc.messages.CallbackCannotBeNull": "Le rappel ne doit pas avoir une valeur null.",
   "loc.messages.UnableToCreateDatabaseException": "Impossible de créer la base de données.",
   "loc.messages.WindowMysqlClientMissingError": "Le client MySQL est manquant sur la machine de l'agent Windows. Installez-le en exécutant le fichier de script 'https://aka.ms/window-mysqlcli-installer' du programme d'installation du client MySQL sur la machine d'agent.",
-  "loc.messages.LinuxMysqlClientMissingError": "Le client MySQL est manquant sur la machine de l'agent Linux. Installez-le en exécutant 'sudo apt-get install mysql-client'."
+  "loc.messages.LinuxMysqlClientMissingError": "Le client MySQL est manquant sur la machine de l'agent Linux. Installez-le en exécutant 'sudo apt-get install mysql-client'.",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "Package introuvable avec le modèle spécifié"
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Python-Version verwenden",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=871498) or [see the Python documentation](https://www.python.org/doc/)",
+  "loc.helpMarkDown": "[Weitere Informationen zu dieser Aufgabe](https://go.microsoft.com/fwlink/?linkid=871498) oder [Python-Dokumentation anzeigen](https://www.python.org/doc/)",
   "loc.description": "Hiermit wird die angegebene Version von Python aus dem Toolcache abgerufen und optional zu PATH hinzugefügt.",
   "loc.instanceNameFormat": "Python $(versionSpec) verwenden",
   "loc.group.displayName.advanced": "Erweitert",
@@ -16,5 +16,6 @@
   "loc.messages.PyPyNotFound": "In Agent.ToolsDirectory wurde keine Installation von PyPy%d gefunden.",
   "loc.messages.ToolNotFoundMicrosoftHosted": "Wenn es sich um einen von Microsoft gehosteten Agent handelt, überprüfen Sie unter %s, ob dieses Image parallele Versionen von %s unterstützt.",
   "loc.messages.ToolNotFoundSelfHosted": "Wenn es sich um einen selbstgehosteten Agent handelt, finden Sie unter %s Informationen zum Konfigurieren paralleler Versionen von %s.",
-  "loc.messages.VersionNotFound": "Die Versionsangabe %s für die Architektur \"%s\" entsprach keiner Version in \"Agent.ToolsDirectory\"."
+  "loc.messages.VersionNotFound": "Die Versionsangabe %s für die Architektur \"%s\" entsprach keiner Version in \"Agent.ToolsDirectory\".",
+  "loc.messages.ExactVersionNotRecommended": "Für von Microsoft gehostete Agents sollte keine genaue Version angegeben werden. Die Patchversionen von Python können auf gehosteten Agents ohne vorherige Ankündigung durch neue ersetzt werden, sodass bei Builds unerwartete Fehler auftreten. Es wird empfohlen, nur die Haupt- oder die Haupt- und die Nebenversion anzugeben (Beispiel: \"3\" oder \"3.6\")."
 }

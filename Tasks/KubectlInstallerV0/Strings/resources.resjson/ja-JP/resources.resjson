@@ -1,10 +1,10 @@
 {
-  "loc.friendlyName": "Kubectl ツール インストーラー",
+  "loc.friendlyName": "Kubectl tool installer",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=851275) or [see the Kubernetes documentation](https://kubernetes.io/docs/home/)",
-  "loc.description": "エージェント マシンに Kubectl をインストールします",
-  "loc.instanceNameFormat": "Kubectl $(kubectlVersion) のインストール",
-  "loc.input.label.kubectlVersion": "Kubectl バージョンの仕様",
-  "loc.input.help.kubectlVersion": "インストールする Kubectl のバージョンを指定します",
-  "loc.messages.NotAValidSemverVersion": "バージョンが正しい形式で指定されていません。例: 1.8.2、v1.8.2、2.8.2、v2.8.2。",
-  "loc.messages.VerifyKubectlInstallation": "Kubectl のインストールを確認しています..."
+  "loc.description": "Install Kubectl on agent machine",
+  "loc.instanceNameFormat": "Install Kubectl $(kubectlVersion)",
+  "loc.input.label.kubectlVersion": "Kubectl Version Spec",
+  "loc.input.help.kubectlVersion": "Specify the version of Kubectl to install",
+  "loc.messages.NotAValidSemverVersion": "Version not specified in correct format. E.g: 1.8.2, v1.8.2, 2.8.2, v2.8.2.",
+  "loc.messages.VerifyKubectlInstallation": "Verifying kubectl installation..."
 }

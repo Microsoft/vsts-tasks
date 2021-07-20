@@ -31,6 +31,12 @@
   "loc.input.help.downloadPath": "Der Pfad auf dem Agent-Computer, in den die Artefakte heruntergeladen werden",
   "loc.input.label.parallelizationLimit": "Parallelisierungslimit",
   "loc.input.help.parallelizationLimit": "Anzahl von Dateien, die gleichzeitig heruntergeladen werden sollen",
+  "loc.input.label.checkDownloadedFiles": "Heruntergeladene Dateien überprüfen",
+  "loc.input.help.checkDownloadedFiles": "Wenn diese Option aktiviert ist, wird durch diesen Buildvorgang geprüft, ob alle Dateien vollständig heruntergeladen wurden.",
+  "loc.input.label.retryDownloadCount": "Anzahl der Wiederholungen",
+  "loc.input.help.retryDownloadCount": "Optionale Anzahl von Wiederholungsversuchen zum Herunterladen eines Buildartefakts, wenn der Download nicht erfolgreich ist.",
+  "loc.input.label.extractTars": "Alle Dateien extrahieren, die in Tar-Archiven gespeichert sind",
+  "loc.input.help.extractTars": "Aktivieren Sie diese Option, um alle heruntergeladenen Dateien mit der Erweiterung \".tar\" zu extrahieren. Dies ist hilfreich, da Sie Ihre Artefaktdateien in Tar packen müssen, wenn Sie die Zugriffsberechtigungen beibehalten möchten. Durch Aktivieren der Option \"StoreAsTar\" in der Aufgabe \"PublishBuildArtartefakte\" werden Artefakte automatisch als Tar-Dateien gespeichert.",
   "loc.messages.DownloadArtifacts": "Artefakt \"%s\" wird von %s heruntergeladen.",
   "loc.messages.DownloadingArtifactsForBuild": "Für den Build \"%s\" werden Artefakte heruntergeladen.",
   "loc.messages.LinkedArtifactCount": "Anzahl verknüpfter Artefakte: %s",
@@ -51,5 +57,11 @@
   "loc.messages.DownloadingContainerResource": "Elemente aus Containerressource \"%s\" werden heruntergeladen.",
   "loc.messages.DefinitionNameMatchFound": "Der Definitionsname \"%s\" wurde in die ID %s aufgelöst.",
   "loc.messages.InvalidBuildDefinitionName": "Der Definitionsname \"%s\" entsprach keiner gültigen Definition.",
-  "loc.messages.UnresolvedDefinitionId": "Builddefinitions-ID konnte nicht aufgelöst werden."
+  "loc.messages.UnresolvedDefinitionId": "Builddefinitions-ID konnte nicht aufgelöst werden.",
+  "loc.messages.BeginArtifactItemsIntegrityCheck": "Integritätsprüfung für Artefaktelement wird gestartet",
+  "loc.messages.CorruptedArtifactItemsList": "Bei den folgenden Elementen wird die Integritätsprüfung nicht bestanden:",
+  "loc.messages.IntegrityCheckNotPassed": "Fehler beim Überprüfen der Artefaktelement-Integrität",
+  "loc.messages.IntegrityCheckPassed": "Die Integritätsüberprüfung der Artefaktelement wurde erfolgreich abgeschlossen.",
+  "loc.messages.TarExtractionNotSupportedInWindows": "Die Tar-Extraktion wird unter Windows nicht unterstützt",
+  "loc.messages.NoTarsFound": "Es wurden keine Tar-Archive zum Extrahieren gefunden."
 }

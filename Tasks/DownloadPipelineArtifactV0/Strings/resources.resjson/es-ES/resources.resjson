@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Descargar el artefacto de canalización",
-  "loc.helpMarkDown": "Descargue el artefacto con nombre desde una canalización a una ruta de acceso local.",
-  "loc.description": "Descarga un artefacto asociado a una canalización.",
-  "loc.instanceNameFormat": "Descargar el artefacto de canalización",
-  "loc.input.label.pipelineId": "La canalización específica desde la que se va a descargar",
-  "loc.input.help.pipelineId": "La canalización desde la que desea descargar. Si se deja en blanco, se selecciona la canalización actual.",
-  "loc.input.label.artifactName": "Nombre del artefacto que se va a descargar.",
-  "loc.input.help.artifactName": "Nombre del artefacto que desea descargar. El artefacto debe ser un artefacto de canalización.",
-  "loc.input.label.targetPath": "Ruta de acceso de descarga a",
-  "loc.input.help.targetPath": "La ruta de acceso de la carpeta en la que descargar el artefacto. Puede ser una ruta de acceso completa o una ruta de acceso relativa a la raíz del repositorio. No se admiten caracteres comodín. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) son compatibles. Si no existe, la carpeta se creará."
+  "loc.friendlyName": "Download pipeline artifact",
+  "loc.helpMarkDown": "Download named artifact from a pipeline to a local path.",
+  "loc.description": "Downloads an artifact associated with a pipeline",
+  "loc.instanceNameFormat": "Download Pipeline Artifact",
+  "loc.input.label.pipelineId": "The specific pipeline to download from",
+  "loc.input.help.pipelineId": "The pipeline to download from. Target the current pipeline if left blank.",
+  "loc.input.label.artifactName": "The name of artifact to download.",
+  "loc.input.help.artifactName": "The name of artifact to download. The artifact must be a pipeline artifact.",
+  "loc.input.label.targetPath": "Path to download to",
+  "loc.input.help.targetPath": "The folder path to download the artifact to. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported. If the folder doesn't exist it will be created."
 }

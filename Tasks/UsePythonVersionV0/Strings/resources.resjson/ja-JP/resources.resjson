@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Python バージョンの使用",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=871498) or [see the Python documentation](https://www.python.org/doc/)",
+  "loc.helpMarkDown": "[このタスクの詳細を表示](https://go.microsoft.com/fwlink/?linkid=871498)、または [Python のドキュメントを参照](https://www.python.org/doc/)",
   "loc.description": "ツール キャッシュから Python の指定されたバージョンを使用し、必要に応じて PATH に追加します",
   "loc.instanceNameFormat": "Python $(versionSpec) を使用する",
   "loc.group.displayName.advanced": "詳細設定",
@@ -16,5 +16,6 @@
   "loc.messages.PyPyNotFound": "Agent.ToolsDirectory に PyPy%d のインストールが見つかりませんでした。",
   "loc.messages.ToolNotFoundMicrosoftHosted": "これが Microsoft によってホストされているエージェントの場合、このイメージが %s の side-by-side バージョンを %s でサポートしているかをご確認ください。",
   "loc.messages.ToolNotFoundSelfHosted": "これがセルフホストテッド エージェントの場合、side-by-side の %s バージョンを %s で構成する方法をご確認ください。",
-  "loc.messages.VersionNotFound": "バージョン仕様 %s (アーキテクチャ %s) が Agent.ToolsDirectory 内のどのバージョンにも一致しませんでした。"
+  "loc.messages.VersionNotFound": "バージョン仕様 %s (アーキテクチャ %s) が Agent.ToolsDirectory 内のどのバージョンにも一致しませんでした。",
+  "loc.messages.ExactVersionNotRecommended": "Microsoft によってホストされているエージェントでは、正確なバージョンを指定することはお勧めできません。ホストされているエージェントでは、Python のパッチ バージョンが予告なしに新しいものに置き換えられることがあり、ビルドが予期せずに機能しなくなります。メジャーのみ、またはメジャーとマイナー バージョンを指定することをお勧めします (例: `3` または `3.6`)"
 }

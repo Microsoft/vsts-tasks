@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Utiliser la version de Python",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=871498) or [see the Python documentation](https://www.python.org/doc/)",
+  "loc.helpMarkDown": "[En savoir plus sur cette tâche](https://go.microsoft.com/fwlink/?linkid=871498) ou [consulter la documentation de Python](https://www.python.org/doc/)",
   "loc.description": "Utiliser la version spécifiée de Python à partir du cache d'outils, en l'ajoutant éventuellement à PATH",
   "loc.instanceNameFormat": "Utiliser Python $(versionSpec)",
   "loc.group.displayName.advanced": "Avancé",
@@ -16,5 +16,6 @@
   "loc.messages.PyPyNotFound": "Installation de PyPy%d introuvable dans Agent.ToolsDirectory.",
   "loc.messages.ToolNotFoundMicrosoftHosted": "S'il s'agit d'un agent hébergé par Microsoft, vérifiez que cette image prend en charge les versions côte à côte de %s sur %s.",
   "loc.messages.ToolNotFoundSelfHosted": "S'il s'agit d'un agent autohébergé, consultez les informations relatives à la configuration des versions côte à côte de %s sur %s.",
-  "loc.messages.VersionNotFound": "La spécification de version %s pour l'architecture %s ne correspond à aucune version dans Agent.ToolsDirectory."
+  "loc.messages.VersionNotFound": "La spécification de version %s pour l'architecture %s ne correspond à aucune version dans Agent.ToolsDirectory.",
+  "loc.messages.ExactVersionNotRecommended": "La spécification d’une version exacte n’est pas recommandée sur les agents hébergés par Microsoft. Les versions de patch de Python peuvent être remplacées sans avertissement par de nouvelles versions sur des agents hébergés, ce qui entraîne l’échec inattendu des builds. Il est recommandé de spécifier la version majeure uniquement ou la version majeure et mineure (exemple : « 3 » ou « 3.6 »)"
 }

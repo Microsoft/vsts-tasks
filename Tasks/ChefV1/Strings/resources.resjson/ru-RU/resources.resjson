@@ -1,14 +1,14 @@
 {
   "loc.friendlyName": "Chef",
   "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/chef-readme)",
-  "loc.description": "Развертывание в средах Chef путем изменения атрибутов среды",
-  "loc.instanceNameFormat": "Выполните развертывание в Сhef, изменив атрибуты среды для подписки Chef $(ChefServer)",
-  "loc.input.label.connectedServiceName": "Подключение к службе Chef",
-  "loc.input.help.connectedServiceName": "Имя подключения к службе в подписке Chef.",
-  "loc.input.label.Environment": "Среда",
-  "loc.input.help.Environment": "Имя среды Chef, используемой для развертывания. Атрибуты этой среды будут изменены.",
-  "loc.input.label.Attributes": "Атрибуты среды",
-  "loc.input.help.Attributes": "Укажите значения обновляемых атрибутов листового узла. Пример: { \"default_attributes.connectionString\" : \"$(connectionString)\", \"override_attributes.buildLocation\" : \"https://sample.blob.core.windows.net/build\" }. Если листовой узел не существует, задача завершится сбоем.",
-  "loc.input.label.chefWaitTime": "Время ожидания",
-  "loc.input.help.chefWaitTime": "Период ожидания завершения задачи (в минутах). Значение по умолчанию: 30 минут"
+  "loc.description": "Deploy to Chef environments by editing environment attributes",
+  "loc.instanceNameFormat": "Deploy to chef by editing environment attributes of Chef subscription $(ChefServer)",
+  "loc.input.label.connectedServiceName": "Chef Service Connection",
+  "loc.input.help.connectedServiceName": "Name of the Chef subscription service connection.",
+  "loc.input.label.Environment": "Environment",
+  "loc.input.help.Environment": "Name of the Chef Environment to be used for Deployment. The attributes of that environment will be edited.",
+  "loc.input.label.Attributes": "Environment Attributes",
+  "loc.input.help.Attributes": "Specify the value of the leaf node attribute(s) to be updated. Example. { \"default_attributes.connectionString\" : \"$(connectionString)\", \"override_attributes.buildLocation\" : \"https://sample.blob.core.windows.net/build\" }. Task fails if the leaf node does not exist.",
+  "loc.input.label.chefWaitTime": "Wait Time",
+  "loc.input.help.chefWaitTime": "The amount of time (in minutes) to wait for this task to complete. Default value: 30 minutes"
 }

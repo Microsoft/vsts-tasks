@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Копировать файлы",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708389)",
+  "loc.helpMarkDown": "[См. дополнительные сведения об этой задаче](https://go.microsoft.com/fwlink/?LinkID=708389)",
   "loc.description": "Копировать файлы из исходной папки в целевую с использованием шаблонов, соответствующих путям файлов (не путям к папкам)",
   "loc.instanceNameFormat": "Копировать файлы в: $(TargetFolder)",
   "loc.releaseNotes": "Согласованность шаблонов соответствия.",
@@ -19,6 +19,10 @@
   "loc.input.help.flattenFolders": "Выполнение сведения структуры папок и копирование всех файлов в указанную целевую папку.",
   "loc.input.label.preserveTimestamp": "Сохранить целевую метку времени",
   "loc.input.help.preserveTimestamp": "Используя оригинальный исходный файл, сохраните метку времени целевого файла.",
+  "loc.input.label.retryCount": "Число повторных попыток копировать файл",
+  "loc.input.help.retryCount": "Укажите число повторных попыток копировать файл. Это может помочь в устранении временных проблем, например с целевыми UNC-путями на удаленном узле.",
+  "loc.input.label.ignoreMakeDirErrors": "Игнорировать ошибки при создании целевой папки.",
+  "loc.input.help.ignoreMakeDirErrors": "Игнорируйте ошибки, возникающие при создании целевой папки. Это может позволить избежать проблем с параллельным выполнением задачи несколькими агентами с одной целевой папкой.",
   "loc.messages.FoundNFiles": "найдено файлов: %d",
   "loc.messages.CleaningTargetFolder": "Очистка целевого каталога: %s",
   "loc.messages.FileAlreadyExistAt": "Файл \"%s\" уже существует в \"%s\"",

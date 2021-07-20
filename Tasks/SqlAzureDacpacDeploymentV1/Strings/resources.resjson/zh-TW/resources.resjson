@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure SQL Database 部署",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/sqlazuredeployreadme)",
+  "loc.helpMarkDown": "[深入了解此工作](https://aka.ms/sqlazuredeployreadme)",
   "loc.description": "使用 DACPAC 部署 Azure SQL 資料庫，或使用 SQLCMD 執行指令碼",
   "loc.instanceNameFormat": "Azure SQL $(TaskNameSelector)",
   "loc.group.displayName.target": "SQL Database",
@@ -12,7 +12,7 @@
   "loc.input.label.ConnectedServiceNameARM": "Azure 訂用帳戶",
   "loc.input.help.ConnectedServiceNameARM": "用於部署 SQL 檔案的目標 Azure Resource Manager 訂用帳戶",
   "loc.input.label.AuthenticationType": "驗證類型",
-  "loc.input.help.AuthenticationType": "請指定選項以連線至 Azure SQL Server 資料庫。選項提供的內容可為 Azure SQL Server 資料庫詳細資料、SQL Server 連接字串、AAD 驗證密碼或已整合。若為 SQL 伺服器驗證，請使用 SQL 伺服器的使用者認證，若為 AD 驗證，請使用為 SQL 伺服器設定的 AD 使用者認證。",
+  "loc.input.help.AuthenticationType": "指定連線至 Azure SQL Server Database 的選項。這些選項會提供 Azure SQL Server Database 詳細資料、SQL Server 連接字串、AAD 驗證密碼，或前述各項的整合，或者使用服務主體。SQL 伺服器驗證請使用 SQL 伺服器的使用者認證，AD 驗證請使用為 SQL 伺服器設定的 AD 使用者認證。",
   "loc.input.label.ServerName": "Azure SQL Server",
   "loc.input.help.ServerName": "Azure SQL Server 名稱，例如 Fabrikam.database.windows.net,1433 或 Fabrikam.database.windows.net。",
   "loc.input.label.DatabaseName": "資料庫",
@@ -39,9 +39,9 @@
   "loc.input.label.SqlInline": "內嵌 SQL 指令碼",
   "loc.input.help.SqlInline": "輸入要在上方所選 Database 執行的 SQL 指令碼。",
   "loc.input.label.PublishProfile": "發佈設定檔",
-  "loc.input.help.PublishProfile": "發佈設定檔可提供對建立或升級 Azure SQL Database 的微調控制。請在自動化代理程式或在 UNC 共用上指定發佈設定檔 XML 檔的路徑。也可在此使用預先定義的系統變數，例如 $(agent.buildDirectory) 或 $(agent.releaseDirectory)。",
+  "loc.input.help.PublishProfile": "發行設定檔可提供對建立或升級 Azure SQL Database 的微調控制。請在自動化代理程式或在 UNC 共用上指定發行設定檔 XML 檔的路徑。也可在此使用預先定義的系統變數，例如 $(agent.buildDirectory) 或 $(agent.releaseDirectory)。",
   "loc.input.label.AdditionalArguments": "其他 SqlPackage.exe 引數",
-  "loc.input.help.AdditionalArguments": "其他會在部署 Azure SQL Database 時套用的 SqlPackage.exe 引數，假如選取了 DACPAC 選項，會像 /p:IgnoreAnsiNulls=True /p:IgnoreComments=True。這些引數會覆寫發佈設定檔 XML 檔案 (若有提供) 中的設定。",
+  "loc.input.help.AdditionalArguments": "其他會在部署 Azure SQL Database 時套用的 SqlPackage.exe 引數，假如選取了 DACPAC 選項，會像 /p:IgnoreAnsiNulls=True /p:IgnoreComments=True。這些引數會覆寫發行發行設定檔 XML 檔案 (若有提供) 中的設定。",
   "loc.input.label.SqlAdditionalArguments": "其他 Invoke-Sqlcmd 引數",
   "loc.input.help.SqlAdditionalArguments": "在 Azure SQL Database 上執行指定 SQL 查詢時要套用的其他 Invoke-Sqlcmd 引數，例如 -ConnectionTimeout 100 -OutputSqlErrors。",
   "loc.input.label.InlineAdditionalArguments": "其他 Invoke-Sqlcmd 引數",
@@ -77,5 +77,6 @@
   "loc.messages.SAD_BacpacFilePath": "BACPAC 檔案路徑:",
   "loc.messages.SAD_PublishProfilePath": "發佈設定檔路徑:",
   "loc.messages.SAD_DriftReportWarning": "在產生資料庫的漂移報告時，請確認資料庫已註冊為資料層應用程式。",
-  "loc.messages.SAD_InvokeSQLCmdNotSupportingConnectionString": "匯入的 Invoke-Sqlcmd 不支援 connectionString。請安裝 SQLServer PS 模組。"
+  "loc.messages.SAD_InvokeSQLCmdNotSupportingConnectionString": "匯入的 Invoke-Sqlcmd 不支援 connectionString。請安裝 SQLServer PS 模組。",
+  "loc.messages.SAD_NoServerSpecified": "未指定伺服器。請指定來源或目標伺服器。"
 }

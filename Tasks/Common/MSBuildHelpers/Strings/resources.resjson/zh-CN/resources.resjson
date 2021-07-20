@@ -1,11 +1,11 @@
 {
-  "loc.messages.MSB_Build0": "生成 {0}",
-  "loc.messages.MSB_BuildToolNotFound": "Mac/Linux 代理上找不到 MSBuild 或 xbuild(Mono)。",
-  "loc.messages.MSB_DetectedNuGetExtensionsLoaderPath0": "已检测到 NuGet 扩展加载程序路径。将环境变量 NUGET_EXTENSIONS_PATH 设置为“{0}”。",
-  "loc.messages.MSB_MSBuild15NotFoundionArchitecture0": "找不到适用于体系结构“{0}”的 MSBuild 版本 \"15.0\"。请验证体系结构输入值正确，且已安装 Visual Studio 2017。安装 Visual Studio 2017 时 MSBuild 版本 \"15.0\" 也包括在内。",
-  "loc.messages.MSB_MSBuildNotFound": "找不到 MSBuild。尝试指定 msbuild.exe 的位置或安装 Visual Studio。安装 Visual Studio 时 MSBuild 也包括在内。",
-  "loc.messages.MSB_MSBuildNotFoundVersion0Architecture1": "找不到适用于体系结构“{1}”的 MSBuild 版本“{0}”。请尝试其他版本/体系结构组合，指定一个位置或安装合适版本的 Visual Studio。安装 Visual Studio 时 MSBuild 也包括在内。",
-  "loc.messages.MSB_RestoreNuGetPackagesDeprecated": "“还原 NuGet 包”选项已弃用。若要在生成中还原 NuGet 包，请将 NuGet 工具安装程序任务添加到生成定义中。",
-  "loc.messages.MSB_SolutionNotFoundUsingSearchPattern0": "使用搜索模式“{0}”找不到解决方案。",
-  "loc.messages.MSB_UnableToFindMSBuildVersion0Architecture1FallbackVersion2": "找不到适用于体系结构“{1}”的 MSBuild 版本“{0}”。正在回退到版本“{2}”。"
+  "loc.messages.MSB_Build0": "Build {0}",
+  "loc.messages.MSB_BuildToolNotFound": "MSBuild or xbuild(Mono) were not found on the Mac/Linux agent.",
+  "loc.messages.MSB_DetectedNuGetExtensionsLoaderPath0": "Detected NuGet extensions loader path. Environment variable NUGET_EXTENSIONS_PATH is set to '{0}'.",
+  "loc.messages.MSB_MSBuild15NotFoundionArchitecture0": "MSBuild version '15.0' was not found for architecture '{0}'. Verify the architecture input value is correct and verify Visual Studio 2017 is installed. MSBuild version '15.0' is included when Visual Studio 2017 is installed.",
+  "loc.messages.MSB_MSBuildNotFound": "MSBuild was not found. Try specifying the location to msbuild.exe or install Visual Studio. MSBuild is included when Visual Studio is installed.",
+  "loc.messages.MSB_MSBuildNotFoundVersion0Architecture1": "MSBuild was not found for version '{0}' and architecture '{1}'. Try a different version/architecture combination, specify a location, or install the appropriate version of Visual Studio. MSBuild is included when Visual Studio is installed.",
+  "loc.messages.MSB_RestoreNuGetPackagesDeprecated": "The 'Restore NuGet Packages' option is deprecated. To restore NuGet packages in your build, add a NuGet Tool Installer task to your build definition.",
+  "loc.messages.MSB_SolutionNotFoundUsingSearchPattern0": "Solution not found using search pattern '{0}'.",
+  "loc.messages.MSB_UnableToFindMSBuildVersion0Architecture1FallbackVersion2": "Unable to find MSBuild version '{0}' for architecture '{1}'. Falling back to version '{2}'."
 }

@@ -6,5 +6,7 @@
   "loc.input.label.secureFile": "보안 파일",
   "loc.input.help.secureFile": "에이전트 컴퓨터에 다운로드할 보안 파일의 파일 이름 또는 GUID입니다. 파이프라인을 실행하면 파일이 삭제됩니다.",
   "loc.input.label.retryCount": "재시도 횟수",
-  "loc.input.help.retryCount": "다운로드가 실패할 경우 보안 파일 다운로드를 다시 시도하는 선택적 횟수입니다."
+  "loc.input.help.retryCount": "다운로드가 실패할 경우 보안 파일 다운로드를 다시 시도하는 선택적 횟수입니다.",
+  "loc.input.label.socketTimeout": "소켓 시간 제한",
+  "loc.input.help.socketTimeout": "보안 파일 요청 다운로드와 연결된 소켓에 대한 선택적 시간 제한(ms)입니다."
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Distribuzione database MySQL",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/mysql-deployment-on-machine-group)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://aka.ms/mysql-deployment-on-machine-group)",
   "loc.description": "Consente di eseguire gli script e di apportare modifiche a un'istanza di MySQL",
   "loc.instanceNameFormat": "Distribuisci tramite: $(TaskNameSelector)",
   "loc.input.label.TaskNameSelector": "Distribuisci MySQL tramite",
@@ -31,5 +31,6 @@
   "loc.messages.CallbackCannotBeNull": "Il callback non può essere Null.",
   "loc.messages.UnableToCreateDatabaseException": "Non è possibile creare il database.",
   "loc.messages.WindowMysqlClientMissingError": "Il client MySQL non è presente nel computer agente Windows. Per installarlo, eseguire il file di script 'https://aka.ms/window-mysqlcli-installer' del programma di installazione del client MySQL nel computer agente.",
-  "loc.messages.LinuxMysqlClientMissingError": "Il client MySQL non è presente nel computer agente Linux. Per installarlo, eseguire 'sudo apt-get install mysql-client'."
+  "loc.messages.LinuxMysqlClientMissingError": "Il client MySQL non è presente nel computer agente Linux. Per installarlo, eseguire 'sudo apt-get install mysql-client'.",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "Non è stato trovato alcun pacchetto con il criterio specificato"
 }

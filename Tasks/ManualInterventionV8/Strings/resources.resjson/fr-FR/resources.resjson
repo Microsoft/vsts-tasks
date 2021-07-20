@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Intervention manuelle",
-  "loc.helpMarkDown": "[Plus d'informations](https://go.microsoft.com/fwlink/?linkid=870234)",
-  "loc.description": "Suspendre le déploiement et attendre une intervention manuelle",
-  "loc.instanceNameFormat": "Intervention manuelle",
+  "loc.friendlyName": "Manual intervention",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870234)",
+  "loc.description": "Pause deployment and wait for manual intervention",
+  "loc.instanceNameFormat": "Manual Intervention",
   "loc.input.label.instructions": "Instructions",
-  "loc.input.help.instructions": "Ces instructions sont montrées à l'utilisateur pour lui permettre de reprendre ou de rejeter l'intervention manuelle. En fonction de ces instructions, l'utilisateur prend une décision en connaissance de cause sur l'intervention manuelle.",
-  "loc.input.label.emailRecipients": "Notifier les utilisateurs",
-  "loc.input.help.emailRecipients": "Envoyez un e-mail relatif à une intervention manuelle en attente à des utilisateurs (ou groupes) spécifiques. Seuls les utilisateurs dotés d'une autorisation de déploiement peuvent agir sur une intervention manuelle.",
-  "loc.input.label.onTimeout": "Au délai d'expiration",
-  "loc.input.help.onTimeout": "Rejetez ou reprenez cette intervention manuelle automatiquement après la fin du délai d'expiration spécifié ou après 60 jours, selon la valeur la plus proche."
+  "loc.input.help.instructions": "These instructions will be shown to the user for resuming or rejecting the manual intervention. Based on these instructions the user will take an informed decision about this manual intervention.",
+  "loc.input.label.emailRecipients": "Notify users",
+  "loc.input.help.emailRecipients": "Send a manual intervention pending email to specific users (or groups). Only users with manage deployment permission can act on a manual intervention.",
+  "loc.input.label.onTimeout": "On timeout",
+  "loc.input.help.onTimeout": "Reject or resume this manual intervention automatically after it is pending for the specified timeout or 60 days, whichever is earlier."
 }

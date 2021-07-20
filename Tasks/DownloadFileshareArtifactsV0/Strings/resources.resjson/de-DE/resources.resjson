@@ -4,7 +4,7 @@
   "loc.description": "Hiermit werden Artefakte aus einer Dateifreigabe wie z. B. \"\\\\Freigabe\\Drop\" heruntergeladen.",
   "loc.instanceNameFormat": "Artefakte aus einer Dateifreigabe herunterladen",
   "loc.group.displayName.advanced": "Erweitert",
-  "loc.input.label.filesharePath": "Dateifreigabepfad",
+  "loc.input.label.filesharePath": "Pfad zur Dateifreigabe",
   "loc.input.help.filesharePath": "Pfad der Dateifreigabe, z. B. \"\\\\Server\\Ordner\"",
   "loc.input.label.artifactName": "Artefaktname",
   "loc.input.help.artifactName": "Der Name des Artefakts, das heruntergeladen werden soll, z. B. \"drop\".",

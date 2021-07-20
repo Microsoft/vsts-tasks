@@ -1,7 +1,7 @@
 {
-  "loc.messages.SignIdNotFound": "iOS 서명 ID를 찾지 못했습니다. 제공된 서명 및 프로비전 정보를 확인하세요.",
-  "loc.messages.TempKeychainSetupFailed": "키 집합 검색 경로에 임시 키 집합을 추가하지 못했습니다.",
-  "loc.messages.ProvProfileDetailsNotFound": "프로비전 프로필 %s의 세부 정보를 찾지 못했습니다.",
-  "loc.messages.ProvProfileUUIDNotFound": "프로비전 프로필 %s의 프로비전 프로필 UUID를 찾지 못했습니다.",
-  "loc.messages.ProvProfileNameNotFound": "프로비저닝 프로필 %s의 프로비저닝 프로필 이름을 찾지 못했습니다."
+  "loc.messages.SignIdNotFound": "Failed to find iOS signing identity. Verify the signing and provisioning information provided.",
+  "loc.messages.TempKeychainSetupFailed": "Failed to add the temporary keychain to the keychains search path.",
+  "loc.messages.ProvProfileDetailsNotFound": "Failed to find the details for provisioning profile: %s",
+  "loc.messages.ProvProfileUUIDNotFound": "Failed to find provisioning profile UUID for provisioning profile: %s",
+  "loc.messages.ProvProfileNameNotFound": "Failed to find provisioning profile name for provisioning profile: %s"
 }

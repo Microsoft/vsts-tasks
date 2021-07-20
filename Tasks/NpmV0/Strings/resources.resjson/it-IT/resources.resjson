@@ -1,7 +1,7 @@
 {
   "loc.friendlyName": "npm",
-  "loc.helpMarkDown": "[Altre informazioni](https://go.microsoft.com/fwlink/?LinkID=613746)",
-  "loc.description": "Esegue un comando npm",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?LinkID=613746)",
+  "loc.description": "Consente di eseguire un comando npm. Per le funzionalità più recenti, usare l'attività NpmAuthenticate@0.",
   "loc.instanceNameFormat": "npm $(command)",
   "loc.input.label.cwd": "cartella di lavoro",
   "loc.input.help.cwd": "Directory di lavoro in cui viene eseguito il comando npm. Per impostazione predefinita, corrisponde alla radice del repository.",

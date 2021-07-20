@@ -18,8 +18,11 @@
   "loc.input.help.ParallelCount": "输入执行复制的并行度或所使用的线程数。该值必须至少为 1 且不能大于 128。",
   "loc.input.label.FileCopyOptions": "文件复制选项",
   "loc.input.help.FileCopyOptions": "将附加选项传递给 Robocopy 命令。",
+  "loc.input.label.StoreAsTar": "上传之前存档",
+  "loc.input.help.StoreAsTar": "上传前将发布路径中的所有文件添加到存档。此操作将允许保留 UNIX 文件权限。使用 DownloadBuildArtifacts 任务的 `extractTars` 选项以自动提取已下载的项目。",
   "loc.messages.ErrorFileShareLinux": "不支持将项目从 Linux 或 macOS 代理发布到文件共享。请将项目类型更改为 `Azure Pipelines` 或使用 Windows 代理。",
   "loc.messages.ErrorHostTypeNotSupported": "此任务必须在生成中运行，以将项目发布到 Azure Pipelines。",
-  "loc.messages.PublishBuildArtifactsFailed": "生成工件发布失败，出现错误: %s",
-  "loc.messages.UnexpectedParallelCount": "并行计数“%s”不受支持。输入介于 1 到 128 之间的数字。"
+  "loc.messages.PublishBuildArtifactsFailed": "发布生成项目失败，出现错误: %s",
+  "loc.messages.UnexpectedParallelCount": "并行计数“%s”不受支持。输入介于 1 到 128 之间的数字。",
+  "loc.messages.TarExtractionNotSupportedInWindows": "Windows 不支持存档提取"
 }

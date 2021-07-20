@@ -1,4 +1,6 @@
 {
+  "loc.messages.SearchingRegistryKeys": "正在搜尋 JDK %s 的登錄機碼",
+  "loc.messages.RegistryKeysFound": "找到的登錄機碼數目: %s",
   "loc.messages.LocateJVMBasedOnVersionAndArch": "為 Java %s %s 找出 JAVA_HOME 的位置",
   "loc.messages.UnsupportedJdkWarning": "JDK 9 與 JDK 10 已失去支援。請在您的專案和管線中切換至較新版本。正在嘗試以 JDK 11 進行建置...",
   "loc.messages.FailedToLocateSpecifiedJVM": "找不到指定的 JDK 版本。請確定代理程式已安裝指定的 JDK 版本，且環境變數 '%s' 存在並設定為對應 JDK 的位置，或使用 [Java Tool Installer](https://docs.microsoft.com/en-us/vsts/build-release/tasks/tool/java-tool-installer) (Java 工具安裝程式) 工作安裝所需的 JDK。"

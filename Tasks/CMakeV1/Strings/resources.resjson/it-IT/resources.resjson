@@ -1,12 +1,15 @@
 {
   "loc.friendlyName": "CMake",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613719)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?LinkID=613719)",
   "loc.description": "Consente di compilare con il sistema di compilazione multipiattaforma CMake",
   "loc.instanceNameFormat": "CMake $(cmakeArgs)",
+  "loc.group.displayName.advanced": "Avanzate",
   "loc.input.label.cwd": "Directory di lavoro",
   "loc.input.help.cwd": "Directory di lavoro corrente durante l'esecuzione di cmake.",
   "loc.input.label.cmakeArgs": "Argomenti",
   "loc.input.help.cmakeArgs": "Argomenti passati a cmake",
+  "loc.input.label.runInsideShell": "Esegui il comando CMake all'interno della shell",
+  "loc.input.help.runInsideShell": "Gli argomenti di CMake verranno gestiti come se fossero all'interno di una shell specifica del sistema operativo. Può essere usato per gestire variabili di ambiente all'interno di stringhe di argomento.",
   "loc.messages.CMakeReturnCode": "CMake terminato. Codice restituito: %d",
   "loc.messages.CMakeFailed": "CMake non riuscito. Errore: %s"
 }
