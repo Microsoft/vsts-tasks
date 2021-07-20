@@ -7,14 +7,17 @@ import { useRubyVersion, getPlatform } from './userubyversion';
     try {
         task.setResourcePath(path.join(__dirname, 'task.json'));
         const versionSpec = task.getInput('versionSpec', true) || '';
+        const suppressExactVersionWarning = task.getBoolInput('suppressExactVersionWarning', false);
         const addToPath = task.getBoolInput('addToPath', true);
         await useRubyVersion({
             versionSpec,
+            suppressExactVersionWarning,
             addToPath
         }, getPlatform());
         task.setResult(task.TaskResult.Succeeded, '');
         telemetry.emitTelemetry('TaskHub', 'UseRubyVersionV0', {
             versionSpec,
+            suppressExactVersionWarning,
             addToPath
         });
     } catch (error) {

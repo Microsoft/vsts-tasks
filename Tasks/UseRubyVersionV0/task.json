@@ -14,7 +14,7 @@
     "version": {
         "Major": 0,
         "Minor": 188,
-        "Patch": 0
+        "Patch": 1
     },
     "demands": [],
     "minimumAgentVersion": "2.182.1",
@@ -27,6 +27,14 @@
             "required": true,
             "defaultValue": ">= 2.4",
             "helpMarkDown": "Version range or exact version of a Ruby version to use."
+        },
+        {
+            "name": "suppressExactVersionWarning",
+            "type": "boolean",
+            "label": "ms-resource:loc.input.label.suppressExactVersionWarning",
+            "required": false,
+            "defaultValue": "false",
+            "helpMarkDown": "ms-resource:loc.input.help.suppressExactVersionWarning"
         },
         {
             "name": "addToPath",

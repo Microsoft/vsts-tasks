@@ -12,6 +12,7 @@ import { desugarDevVersion, pythonVersionToSemantic, isExactVersion } from './ve
 
 interface TaskParameters {
     versionSpec: string,
+    suppressExactVersionWarning: boolean,
     addToPath: boolean,
     architecture: string
 }
@@ -90,7 +91,7 @@ async function useCpythonVersion(parameters: Readonly<TaskParameters>, platform:
     const semanticVersionSpec = pythonVersionToSemantic(desugaredVersionSpec);
     task.debug(`Semantic version spec of ${parameters.versionSpec} is ${semanticVersionSpec}`);
 
-    if (isExactVersion(semanticVersionSpec)) {
+    if (!parameters.suppressExactVersionWarning && isExactVersion(semanticVersionSpec)) {
         task.warning(task.loc('ExactVersionNotRecommended'));
     }
 

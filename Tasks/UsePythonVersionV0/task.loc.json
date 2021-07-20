@@ -15,7 +15,7 @@
   "version": {
     "Major": 0,
     "Minor": 188,
-    "Patch": 0
+    "Patch": 1
   },
   "demands": [],
   "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
@@ -34,6 +34,14 @@
       "required": true,
       "defaultValue": "3.x",
       "helpMarkDown": "ms-resource:loc.input.help.versionSpec"
+    },
+    {
+      "name": "suppressExactVersionWarning",
+      "type": "boolean",
+      "label": "ms-resource:loc.input.label.suppressExactVersionWarning",
+      "required": false,
+      "defaultValue": "false",
+      "helpMarkDown": "ms-resource:loc.input.help.suppressExactVersionWarning"
     },
     {
       "name": "addToPath",

@@ -8,10 +8,12 @@ import { usePythonVersion } from './usepythonversion';
     try {
         task.setResourcePath(path.join(__dirname, 'task.json'));
         const versionSpec = task.getInput('versionSpec', true);
+        const suppressExactVersionWarning = task.getBoolInput('suppressExactVersionWarning', false);
         const addToPath = task.getBoolInput('addToPath', true);
         const architecture = task.getInput('architecture', true);
         await usePythonVersion({
             versionSpec,
+            suppressExactVersionWarning,
             addToPath,
             architecture
         },
@@ -19,6 +21,7 @@ import { usePythonVersion } from './usepythonversion';
         task.setResult(task.TaskResult.Succeeded, "");
         telemetry.emitTelemetry('TaskHub', 'UsePythonVersionV0', {
             versionSpec,
+            suppressExactVersionWarning,
             addToPath,
             architecture
         });
