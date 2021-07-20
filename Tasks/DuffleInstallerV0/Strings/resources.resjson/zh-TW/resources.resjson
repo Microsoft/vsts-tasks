@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Duffle 工具安裝程式",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=851275)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?linkid=851275)",
   "loc.description": "安裝指定的 Duffle 版本來安裝及管理 CNAB 套件組合",
   "loc.instanceNameFormat": "安裝 Duffle $(version)",
   "loc.input.label.version": "版本",

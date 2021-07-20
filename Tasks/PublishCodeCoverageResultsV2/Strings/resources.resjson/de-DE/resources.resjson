@@ -1,14 +1,14 @@
 {
-  "loc.friendlyName": "Code Coverage-Ergebnisse veröffentlichen",
+  "loc.friendlyName": "Publish code coverage results",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=626485)",
   "loc.description": "Publish any of the code coverage results from a build",
-  "loc.instanceNameFormat": "Code Coverage-Ergebnisse veröffentlichen",
+  "loc.instanceNameFormat": "Publish code coverage results",
   "loc.input.label.summaryFileLocation": "Path to summary files",
   "loc.input.help.summaryFileLocation": "Paths to summary files containing code coverage statistics, such as line, method, and class coverage. Multiple summary files will be merged into a single report. Supports multiple lines of minimatch patterns. [More information](https://aka.ms/minimatchexamples)",
-  "loc.input.label.pathToSources": "Pfad zu Quelldateien",
-  "loc.input.help.pathToSources": "Der Pfad zu den Quelldateien ist erforderlich, wenn Coverage-XML-Berichte keinen absoluten Pfad zu den Quelldateien enthalten. Beispielsweise verwenden JaCoCo-Berichte keine absoluten Pfade, und beim Veröffentlichen der JaCoCo-Coveragedaten für Java-Apps würde das Muster in etwa folgendermaßen lauten: \"$(System.DefaultWorkingDirectory)/MyApp/src/main/java/\". <br />diese Eingabe ist auch erforderlich, wenn Tests in einem Docker-Container ausgeführt werden. Diese Eingabe muss auf den absoluten Pfad zu den Quelldateien auf dem Host zeigen. Beispiel: \"$(System.DefaultWorkingDirectory)/MyApp/\"",
+  "loc.input.label.pathToSources": "Path to Source files",
+  "loc.input.help.pathToSources": "Path to source files is required when coverage XML reports do not contain absolute path to source files. For e.g., JaCoCo reports do not use absolute paths and when publishing JaCoCo coverage for Java apps, the pattern would be similar to `$(System.DefaultWorkingDirectory)/MyApp/src/main/java/`.<br />This input is also needed if tests are run in a docker container. This input should point to absolute path to source files on the host. For e.g., `$(System.DefaultWorkingDirectory)/MyApp/`",
   "loc.input.label.failIfCoverageEmpty": "Fail if code coverage results are missing",
-  "loc.input.help.failIfCoverageEmpty": "Fehlschlagen der Aufgabe festlegen, wenn die Code Coverage keine Ergebnisse zum Veröffentlichen ergeben hat.",
-  "loc.messages.FoundNMatchesForPattern": "%s Ergebnis(se) gefunden, die dem Muster: %s entsprechen",
-  "loc.messages.NoCodeCoverage": "Keine Code Coverage-Ergebnisse zum Veröffentlichen gefunden."
+  "loc.input.help.failIfCoverageEmpty": "Fail the task if code coverage did not produce any results to publish.",
+  "loc.messages.FoundNMatchesForPattern": "Found %s result(s) matching pattern: %s",
+  "loc.messages.NoCodeCoverage": "No code coverage results were found to publish."
 }

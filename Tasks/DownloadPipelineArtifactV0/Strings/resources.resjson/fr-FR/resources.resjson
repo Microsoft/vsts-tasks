@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Télécharger un artefact de pipeline",
-  "loc.helpMarkDown": "Téléchargez l'artefact nommé d'un pipeline vers un chemin local.",
-  "loc.description": "Télécharge un artefact associé à un pipeline",
-  "loc.instanceNameFormat": "Télécharger un artefact de pipeline",
-  "loc.input.label.pipelineId": "Pipeline spécifique à partir duquel le téléchargement doit être effectué.",
-  "loc.input.help.pipelineId": "Pipeline à télécharger. Si vous n'indiquez rien, le pipeline actuel est ciblé.",
-  "loc.input.label.artifactName": "Nom de l'artefact à télécharger.",
-  "loc.input.help.artifactName": "Nom de l'artefact à télécharger. L'artefact doit être un artefact de pipeline.",
-  "loc.input.label.targetPath": "Chemin de destination du téléchargement",
-  "loc.input.help.targetPath": "Chemin du dossier dans lequel télécharger l'artefact. Il peut s'agir d'un chemin complet ou d'un chemin relatif à la racine du dépôt. Les caractères génériques ne sont pas pris en charge. Les [variables](https://go.microsoft.com/fwlink/?LinkID=550988) sont prises en charge. Si le dossier n'existe pas, il est créé."
+  "loc.friendlyName": "Download pipeline artifact",
+  "loc.helpMarkDown": "Download named artifact from a pipeline to a local path.",
+  "loc.description": "Downloads an artifact associated with a pipeline",
+  "loc.instanceNameFormat": "Download Pipeline Artifact",
+  "loc.input.label.pipelineId": "The specific pipeline to download from",
+  "loc.input.help.pipelineId": "The pipeline to download from. Target the current pipeline if left blank.",
+  "loc.input.label.artifactName": "The name of artifact to download.",
+  "loc.input.help.artifactName": "The name of artifact to download. The artifact must be a pipeline artifact.",
+  "loc.input.label.targetPath": "Path to download to",
+  "loc.input.help.targetPath": "The folder path to download the artifact to. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported. If the folder doesn't exist it will be created."
 }

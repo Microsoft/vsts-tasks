@@ -1,11 +1,11 @@
 {
   "loc.friendlyName": "Script batch",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613733).\n\nPlease note: this task is not compatible with Windows containers. If you need to run a batch script on a Windows container, use the [CmdLine task](https://go.microsoft.com/fwlink/?LinkID=613735) instead.",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?LinkID=613733).\n\nNota: questa attività non è compatibile con i contenitori Windows. Se è necessario eseguire uno script batch su un contenitore Windows, usare l'[attività Riga di comando](https://go.microsoft.com/fwlink/?LinkID=613735).",
   "loc.description": "Consente di eseguire uno script batch o un comando di Windows e, facoltativamente, di modificare l'ambiente",
   "loc.instanceNameFormat": "Esegui script $(filename)",
   "loc.group.displayName.advanced": "Avanzate",
   "loc.input.label.filename": "Percorso",
-  "loc.input.help.filename": "Percorso dello script cmd o bat da eseguire. Deve essere un percorso completo o relativo rispetto alla directory di lavoro predefinita.",
+  "loc.input.help.filename": "Percorso dello script cmd o bat da eseguire. Deve essere un percorso completo o relativo alla directory di lavoro predefinita (la directory di lavoro potrebbe essere diversa dalla 'cartella di lavoro' che è possibile specificare per questa attività).",
   "loc.input.label.arguments": "Argomenti",
   "loc.input.help.arguments": "Argomenti passati allo script cmd o bat",
   "loc.input.label.modifyEnvironment": "Modifica ambiente",

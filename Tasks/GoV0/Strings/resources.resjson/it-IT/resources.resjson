@@ -1,16 +1,16 @@
 {
   "loc.friendlyName": "Go",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=867582)",
-  "loc.description": "Consente di scaricare, compilare o testare un'applicazione Go oppure di eseguire un comando Go personalizzato",
+  "loc.description": "Get, build, or test a Go application, or run a custom Go command",
   "loc.instanceNameFormat": "go $(command)",
-  "loc.group.displayName.advanced": "Avanzate",
-  "loc.input.label.command": "Comando",
-  "loc.input.help.command": "Consente di selezionare un comando Go da eseguire. Selezionare 'Personalizzato' per usare un comando non incluso in questo elenco.",
-  "loc.input.label.customCommand": "Comando personalizzato",
-  "loc.input.help.customCommand": "Comando Go personalizzato da eseguire. Ad esempio per eseguire 'go version', immettere 'version'.",
-  "loc.input.label.arguments": "Argomenti",
-  "loc.input.help.arguments": "Argomenti facoltativi del comando selezionato, ad esempio gli argomenti della fase di compilazione per il comando 'go build'.",
-  "loc.input.label.workingDirectory": "Directory di lavoro",
-  "loc.input.help.workingDirectory": "Directory di lavoro in cui verrà eseguito il comando. Se non si specifica un valore, vengono usati usata la radice del repository (per le compilazioni) o gli artefatti (per le versioni), ovvero il valore di '$(System.DefaultWorkingDirectory)'.",
-  "loc.messages.TaskFailedWithError": "L'attività Go non è riuscita. Errore: %s"
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.command": "Command",
+  "loc.input.help.command": "Select a Go command to run. Select 'Custom' to use a command not listed here.",
+  "loc.input.label.customCommand": "Custom command",
+  "loc.input.help.customCommand": "A custom Go command to execute. For example, to execute 'go version', enter 'version'.",
+  "loc.input.label.arguments": "Arguments",
+  "loc.input.help.arguments": "Optional arguments to the selected command. For example, build-time arguments for the 'go build' command.",
+  "loc.input.label.workingDirectory": "Working directory",
+  "loc.input.help.workingDirectory": "The working directory where the command will run. When empty, the root of the repository (for builds) or artifacts (for releases) is used, which is the value of '$(System.DefaultWorkingDirectory)'.",
+  "loc.messages.TaskFailedWithError": "The Go task failed with an error: %s"
 }

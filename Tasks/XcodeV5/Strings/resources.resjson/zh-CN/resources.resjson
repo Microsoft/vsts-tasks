@@ -3,7 +3,7 @@
   "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?LinkID=613730)或[参阅 Xcode 文档](https://developer.apple.com/xcode/)",
   "loc.description": "在 macOS 上生成、测试或存档 Xcode 工作区。可选择性地打包应用。",
   "loc.instanceNameFormat": "Xcode $(actions)",
-  "loc.releaseNotes": "This version of the task is compatible with Xcode 8 - 11. Features that were solely to maintain compatibility with Xcode 7 have been removed. This task has better options for using Microsoft-hosted macOS agents.",
+  "loc.releaseNotes": "此任务版本与 Xcode 8-11 兼容。已删除仅与 Xcode 7 保持兼容的功能。此任务可通过更好的选项来使用 Microsoft 托管的 macOS 代理。",
   "loc.group.displayName.sign": "签名和预配",
   "loc.group.displayName.package": "包选项",
   "loc.group.displayName.devices": "设备和模拟器",
@@ -19,7 +19,7 @@
   "loc.input.label.scheme": "方案",
   "loc.input.help.scheme": "(可选)输入 Xcode 中定义的方案名称。它必须是共享方案，其“共享”<strong></strong>复选框已在 Xcode 中的“托管方案”<strong></strong>下启用。如果在上面指定“工作区或项目路径”<strong></strong>但未指定方案，并且工作区具有一个共享方案，则它将自动使用。",
   "loc.input.label.xcodeVersion": "Xcode 版本",
-  "loc.input.help.xcodeVersion": "指定 Xcode 的目标版本。选择“默认”可在代理计算机上使用默认版本的 Xcode。选择版本号(例如 \"Xcode 9\")依赖于代理计算机上为版本位置(例如 \"XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer\")设置的环境变量。选择“指定路径”可提供到 Xcode 开发人员目录的特定路径。",
+  "loc.input.help.xcodeVersion": "指定 Xcode 的目标版本。选择“默认”以在代理计算机上使用默认版本的 Xcode。选择版本号(如 “Xcode 9”)依赖于在代理计算机上为版本位置(e.g. `XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer`)设置的环境变量。选择 `Specify path`，以提供 Xcode 开发人员目录的特定路径。<br/>注意: XCode 12 安装在 macOS-10.15(或更高版本)上",
   "loc.input.label.xcodeDeveloperDir": "Xcode 开发人员路径",
   "loc.input.help.xcodeDeveloperDir": "(可选)输入到特定 Xcode 开发人员目录的路径(例如 \"/Applications/Xcode_9.0.0.app/Contents/Developer\")。在代理计算机上安装多个版本的 Xcode 时，这非常有用。",
   "loc.input.label.packageApp": "创建应用包",
@@ -64,8 +64,12 @@
   "loc.input.help.cwd": "(可选)输入要在其中运行生成的工作目录。如果未输入任何值，将使用存储库的根。",
   "loc.input.label.useXcpretty": "使用 xcpretty",
   "loc.input.help.useXcpretty": "指定是否使用 xcpretty 来设置 xcodebuild 输出的格式。启用此选项需要在代理计算机上安装 xcpretty。如果未安装 xcpretty，将显示原始 xcodebuild 输出。xcpretty 预安装在 Azure Pipelines 托管的生成代理上。请参阅 GitHub 上的 [xcpretty](https://github.com/supermarin/xcpretty)。",
+  "loc.input.label.xcprettyArgs": "Xcpretty 参数",
+  "loc.input.help.xcprettyArgs": "要传递给 xcpretty 的其他参数。",
   "loc.input.label.publishJUnitResults": "将测试结果发布到 Azure Pipelines",
   "loc.input.help.publishJUnitResults": "指定是否将 JUnit 测试结果发布到 Azure Pipelines。这要求启用 xcpretty 以生成 JUnit 测试结果。",
+  "loc.input.label.testRunTitle": "测试运行标题",
+  "loc.input.help.testRunTitle": "将 JUnit 测试结果发布到 Azure 管道时测试运行的标题。",
   "loc.messages.SignIdNotFound": "未能找到 iOS 签名标识。请确认已提供了签名和预配信息。",
   "loc.messages.TempKeychainSetupFailed": "未能将临时密钥链添加到密钥链搜索路径。",
   "loc.messages.ProvProfileDetailsNotFound": "未能找到预配配置文件 %s 的详细信息",
@@ -92,5 +96,6 @@
   "loc.messages.OutputDirectoryIgnored": "已忽略生成输出(二进制文件)的输出目录。指定输出目录与“%s”操作不兼容。",
   "loc.messages.NoDestinationPlatformWarning": "必须对模拟器或连接的设备运行 UI 测试。在 Xcode 任务中。将“目标平台”设置为不同于“默认值”的值。",
   "loc.messages.XcprettyNotInstalled": "生成服务器上未安装 xcpretty。将显示 xcodebuild 原始输出。如果未安装 xcpretty，发布测试结果将失败。",
-  "loc.messages.XcodeRequiresMac": "使用 Xcode 需要 macOS 代理。Apple 不支持在 Linux 或 Windows 上通过 Xcode 进行生成。"
+  "loc.messages.XcodeRequiresMac": "使用 Xcode 需要 macOS 代理。Apple 不支持在 Linux 或 Windows 上通过 Xcode 进行生成。",
+  "loc.messages.UsingDefaultSimulator": "使用默认模拟器: %s。"
 }

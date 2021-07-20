@@ -28,7 +28,7 @@
   "loc.input.help.command": "실행할 kubectl 명령을 선택하거나 지정합니다.",
   "loc.input.label.useConfigurationFile": "구성 사용",
   "loc.input.help.useConfigurationFile": "kubectl 명령에 Kubernetes 구성을 사용합니다. Kubernetes 구성 파일의 인라인 스크립트, 파일 이름, 디렉터리 또는 URL을 지정할 수 있습니다.",
-  "loc.input.label.configurationType": "구성 형식",
+  "loc.input.label.configurationType": "구성 유형",
   "loc.input.help.configurationType": "kubectl 명령에 대한 Kubernetes 구성 유형입니다. 파일 경로 또는 인라인 스크립트일 수 있습니다.",
   "loc.input.label.configuration": "파일 경로",
   "loc.input.help.configuration": "명령과 함께 사용할 Kubernetes 구성에 대한 파일 이름, 디렉터리 또는 URL입니다.",

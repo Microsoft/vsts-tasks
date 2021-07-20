@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Copier des fichiers",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708389)",
+  "loc.helpMarkDown": "[En savoir plus sur cette tâche](https://go.microsoft.com/fwlink/?LinkID=708389)",
   "loc.description": "Copier les fichiers d'un dossier source vers un dossier cible à l'aide de modèles correspondant à des chemins de fichiers (et non des chemins de dossiers)",
   "loc.instanceNameFormat": "Copier les fichiers vers : $(TargetFolder)",
   "loc.releaseNotes": "Cohérence du modèle de correspondance.",
@@ -19,6 +19,10 @@
   "loc.input.help.flattenFolders": "Aplatit la structure des dossiers et copie tous les fichiers dans le dossier cible spécifié.",
   "loc.input.label.preserveTimestamp": "Conserver l'horodatage cible",
   "loc.input.help.preserveTimestamp": "À l'aide du fichier source d'origine, conservez l'horodatage du fichier cible.",
+  "loc.input.label.retryCount": "Recommencer le nombre de tentatives pour copier le fichier",
+  "loc.input.help.retryCount": "Spécifiez le nombre d’tentatives pour copier le fichier. Il peut être utile de résoudre les problèmes intermittents par exemple, avec les chemins d’accès cibles UNC sur un hôte distant.",
+  "loc.input.label.ignoreMakeDirErrors": "Ignorer les erreurs lors de la création d’un dossier cible.",
+  "loc.input.help.ignoreMakeDirErrors": "Ignore les erreurs survenues lors de la création d’un dossier cible. Cela peut être utile pour éviter les problèmes avec l’exécution en parallèle de tâches par plusieurs agents avec un dossier cible.",
   "loc.messages.FoundNFiles": "%d fichiers trouvés",
   "loc.messages.CleaningTargetFolder": "Nettoyage du dossier cible : %s",
   "loc.messages.FileAlreadyExistAt": "Le fichier %s existe déjà sur %s",

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Publicar artefactos de compilación",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708390)",
+  "loc.helpMarkDown": "[Obtener más información acerca de esta tarea](https://go.microsoft.com/fwlink/?LinkID=708390)",
   "loc.description": "Publica los artefactos de compilación en Azure Pipelines o en un recurso compartido de archivos de Windows.",
   "loc.instanceNameFormat": "Publicar artefacto: $(ArtifactName)",
   "loc.group.displayName.advanced": "Avanzado",
@@ -16,10 +16,13 @@
   "loc.input.help.Parallel": "Seleccione si quiere copiar los archivos en paralelo con varios subprocesos para obtener un mayor rendimiento potencial. Si esta configuración no está habilitada, se usará un subproceso.",
   "loc.input.label.ParallelCount": "Recuento de elementos en paralelo",
   "loc.input.help.ParallelCount": "Especifique el grado de paralelismo o el número de subprocesos usados para realizar la copia. Debe ser un valor entre 1 y 128.",
-  "loc.input.label.FileCopyOptions": "File copy options",
-  "loc.input.help.FileCopyOptions": "Pass additional options to the Robocopy command.",
+  "loc.input.label.FileCopyOptions": "Opciones de copia de archivos",
+  "loc.input.help.FileCopyOptions": "Pase opciones adicionales al comando Robocopy.",
+  "loc.input.label.StoreAsTar": "Agregue el artefacto a un archivo tar antes de cargarlo",
+  "loc.input.help.StoreAsTar": "Agregue todos los archivos de la ruta de publicación a un archivo tar antes de cargarlo. Esto permite conservar los permisos de los archivos UNIX. Utilice la opción `extractTars` de la tarea DownloadBuildArtifacts para extraer los elementos descargados automáticamente.",
   "loc.messages.ErrorFileShareLinux": "No se admite la publicación de artefactos de un agente de Linux o macOS en un recurso compartido de archivos. Cambie el tipo de artefacto a \"Azure Pipelines\" o use un agente de Windows.",
   "loc.messages.ErrorHostTypeNotSupported": "Esta tarea debe ejecutarse en una compilación para publicar artefactos en Azure Pipelines.",
   "loc.messages.PublishBuildArtifactsFailed": "Error al publicar artefactos de compilación: %s",
-  "loc.messages.UnexpectedParallelCount": "Recuento de elementos \"%s\" en paralelo no admitido. Especifique un número entre 1 y 128."
+  "loc.messages.UnexpectedParallelCount": "Recuento de elementos \"%s\" en paralelo no admitido. Especifique un número entre 1 y 128.",
+  "loc.messages.TarExtractionNotSupportedInWindows": "La extracción de tar no es compatible con Windows"
 }

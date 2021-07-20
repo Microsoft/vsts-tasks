@@ -11,5 +11,6 @@
   "loc.messages.PlatformNotRecognized": "无法识别的平台",
   "loc.messages.ToolNotFoundMicrosoftHosted": "如果这是 Microsoft 托管的代理，请检查此映像是否支持 %s 并行版本(位于 %s)。",
   "loc.messages.ToolNotFoundSelfHosted": "如果这是自托管代理，请查看如何配置 %s 并行版本(位于 %s)。",
-  "loc.messages.VersionNotFound": "版本规范 %s（针对体系结构 %s)与 Agent.ToolsDirectory 中的任何版本均不匹配。"
+  "loc.messages.VersionNotFound": "版本规范 %s(针对体系结构 %s)与 Agent.ToolsDirectory 中的任何版本均不匹配.",
+  "loc.messages.ExactVersionNotRecommended": "不建议在 Microsoft 托管代理上指定确切版本。在托管代理上无需通知即可将 Ruby 补丁版本替换为新版本，这将导致内部版本出现意外失败。建议仅指定主要版本或主要版本和次要版本(例如: “2” 或 “2.4”)"
 }

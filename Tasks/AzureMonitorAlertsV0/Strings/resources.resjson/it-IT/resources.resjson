@@ -1,7 +1,7 @@
 {
-  "loc.friendlyName": "Azure Monitor alerts (Deprecated)",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=859947)",
-  "loc.description": "Configure alerts on available metrics for an Azure resource (Deprecated)",
+  "loc.friendlyName": "Avvisi di Monitoraggio di Azure (deprecata)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?linkid=859947)",
+  "loc.description": "Consente di configurare avvisi sulle metriche disponibili per una risorsa di Azure (deprecata)",
   "loc.instanceNameFormat": "Configura avvisi di Azure: $(ResourceName)",
   "loc.group.displayName.NotifyViaEmail": "Notifica tramite posta elettronica",
   "loc.input.label.ConnectedServiceName": "Sottoscrizione di Azure",
@@ -10,7 +10,7 @@
   "loc.input.help.ResourceGroupName": "Consente di selezionare il gruppo di risorse di Azure contenente la risorsa di Azure in cui configurare un avviso.",
   "loc.input.label.ResourceType": "Tipo di risorsa",
   "loc.input.help.ResourceType": "Consente di selezionare il tipo di risorsa di Azure.",
-  "loc.input.label.ResourceName": "Nome risorsa",
+  "loc.input.label.ResourceName": "Nome della risorsa",
   "loc.input.help.ResourceName": "Consente di selezionare il nome della risorsa di Azure in cui configurare un avviso.",
   "loc.input.label.AlertRules": "Regole di avviso",
   "loc.input.help.AlertRules": "Elenco degli avvisi di Monitoraggio di Azure configurati per la risorsa di Azure selezionata. \n\nPer aggiungere o modificare gli avvisi, fare clic sul pulsante […].",
@@ -30,5 +30,5 @@
   "loc.messages.FailedToGetAzureMetricAlerts": "Non è stato possibile ottenere la regola di avviso di Application Insights: %s. Errore: %s",
   "loc.messages.FailedToUpdateAzureMetricAlerts": "Non è stato possibile aggiornare la risorsa '%s' della regola di avviso delle metriche di Azure. Errore: %s",
   "loc.messages.ExpiredServicePrincipal": "Non è stato possibile recuperare il token di accesso per Azure. Verificare che l'entità servizio usata sia valida e non sia scaduta.",
-  "loc.messages.DeprecatedTask": "As part of classic alerts retirement, we are deprecating the Azure Monitor Alerts task which is currently based on classic alerts API. Please use the Azure CLI task to manage new alerts. Refer this: https://aka.ms/deprecateazuremonitoralertstask"
+  "loc.messages.DeprecatedTask": "Come parte del processo di ritiro degli avvisi classici, l'attività Avvisi di Monitoraggio di Azure attualmente basata sull'API degli avvisi classici verrà deprecata. Per gestire i nuovi avvisi, usare l'attività Interfaccia della riga di comando di Azure. Vedere: https://aka.ms/deprecateazuremonitoralertstask"
 }

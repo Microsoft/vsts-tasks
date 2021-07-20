@@ -14,5 +14,6 @@
   "loc.messages.Info_SettingsXmlRead": "Adding authentication to settings file %s.",
   "loc.messages.Info_CreatingSettingsXml": "Creating new settings.xml at path %s.",
   "loc.messages.Info_WritingToSettingsXml": "Writing new settings.xml with added authentication.",
-  "loc.messages.Error_InvalidServiceConnection": "The service connection for %s is invalid."
+  "loc.messages.Error_InvalidServiceConnection": "The service connection for %s is invalid.",
+  "loc.messages.Error_FailedCleanupM2": "Failed to delete credentials from the user settings.xml file: %s"
 }

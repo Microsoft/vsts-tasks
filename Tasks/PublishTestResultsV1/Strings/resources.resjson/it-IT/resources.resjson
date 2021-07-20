@@ -1,8 +1,8 @@
 {
   "loc.friendlyName": "Pubblica risultati dei test",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613742)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?LinkID=613742)",
   "loc.description": "Pubblica i risultati dei test in Azure Pipelines",
-  "loc.instanceNameFormat": "Pubblica risultati dei test $(testResultsFiles)",
+  "loc.instanceNameFormat": "Pubblica risultati del test $(testResultsFiles)",
   "loc.group.displayName.advanced": "Avanzate",
   "loc.input.label.testRunner": "Formato dei risultati test",
   "loc.input.help.testRunner": "Formato dei file dei risultati del test generati con il test runner scelto, ad esempio JUnit, VSTest, XUnit V2 e NUnit.",

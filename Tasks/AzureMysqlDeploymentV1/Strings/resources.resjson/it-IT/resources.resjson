@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Distribuzione di Database di Azure per MySQL",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/mysqlazuredeployreadme)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://aka.ms/mysqlazuredeployreadme)",
   "loc.description": "Consente di eseguire gli script e di apportare modifiche all'istanza di Database di Azure per MySQL",
   "loc.instanceNameFormat": "Esegui attività MySQL di Azure: $(TaskNameSelector)",
   "loc.group.displayName.target": "Dettagli del database",
@@ -63,5 +63,6 @@
   "loc.messages.CouldNotFetchAccessTokenforMSIDueToMSINotConfiguredProperlyStatusCode": "Non è stato possibile recuperare un token di accesso per l'entità servizio gestita. Configurare l'identità del servizio gestita per la macchina virtuale. Vedere 'https://aka.ms/azure-msi-docs'. Assegnare il ruolo all'identità del servizio gestita creata. Vedere 'https://aka.ms/assign-role-msi'. Codice di stato: %s. Messaggio di stato: %s",
   "loc.messages.CouldNotFetchAccessTokenforMSIStatusCode": "Non è stato possibile recuperare un token di accesso per l'entità servizio gestita. Codice di stato: %s. Messaggio di stato: %s",
   "loc.messages.NotAbleToCreateFirewallRule": "Si è verificato un errore durante l'aggiunta della regola del firewall al server MySQL di Azure. Errore: %s",
-  "loc.messages.ExpiredServicePrincipal": "Non è stato possibile recuperare il token di accesso per Azure. Verificare che l'entità servizio usata sia valida e non sia scaduta."
+  "loc.messages.ExpiredServicePrincipal": "Non è stato possibile recuperare il token di accesso per Azure. Verificare che l'entità servizio usata sia valida e non sia scaduta.",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "Non è stato trovato alcun pacchetto con il criterio specificato"
 }

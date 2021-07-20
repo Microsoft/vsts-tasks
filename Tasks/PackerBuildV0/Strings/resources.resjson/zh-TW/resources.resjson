@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "建置機器映像",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=845329)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?linkid=845329)",
   "loc.description": "使用 Packer 建置機器映像，其可用於 Azure 虛擬機器擴展集部署",
   "loc.instanceNameFormat": "建置不可變的映像",
   "loc.releaseNotes": "- 使用跨平台代理程式 (Linux、macOS 或 Windows)\n- 支援為 Windows 及 Linux 建置映像。這些映像可用於部署 Azure 虛擬機器擴展集。",
@@ -39,7 +39,7 @@
   "loc.input.help.additionalBuilderParameters": "在自動產生的 Packer 範本模式中，工作會使用 Azure 產生器建立 Packer 範本。此產生器可用以產生電腦映像。您可以將金鑰新增至 Azure 產生器中，以自訂產生的 Packer 範本。例如，若目前使用 CentOS 基底映像，且您需要有 tty 才可執行 sudo，在此情況下請設定 ssh_tty=true。<br/>若要檢視/編輯方格中的其他參數，請按一下文字方塊旁的 [...]。",
   "loc.input.label.skipTempFileCleanupDuringVMDeprovision": "在取消佈建期間跳過清除暫存檔案",
   "loc.input.help.skipTempFileCleanupDuringVMDeprovision": "在取消佈建 VM 期間，跳過清除已上傳至 VM 之暫存檔案。請參閱 [這裡](https://www.packer.io/docs/builders/azure.html#skip_clean)",
-  "loc.input.label.imageUri": "影像 URL",
+  "loc.input.label.imageUri": "映像 URL",
   "loc.input.help.imageUri": "請提供輸出變數的名稱; 該輸出變數將用於存放所產生的機器映像 URL。",
   "loc.messages.OSTypeNotSupported": "此 OS 類型無法建立映像: %s。請使用 Windows 或 Linux。",
   "loc.messages.CopyTemplateToTempFailed": "無法將內建範本從來源 %s 複製到暫存位置 %s",

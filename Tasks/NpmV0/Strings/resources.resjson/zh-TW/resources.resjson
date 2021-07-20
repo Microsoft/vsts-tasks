@@ -1,7 +1,7 @@
 {
   "loc.friendlyName": "npm",
-  "loc.helpMarkDown": "[詳細資訊](https://go.microsoft.com/fwlink/?LinkID=613746)",
-  "loc.description": "執行 npm 命令",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=613746)",
+  "loc.description": "執行 npm 命令。使用 NpmAuthenticate@0 工作取得最新功能。",
   "loc.instanceNameFormat": "npm $(command)",
   "loc.input.label.cwd": "工作資料夾",
   "loc.input.help.cwd": "npm 命令執行所在的工作目錄。預設為存放庫的根。",

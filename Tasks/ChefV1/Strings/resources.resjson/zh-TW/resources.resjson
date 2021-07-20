@@ -1,14 +1,14 @@
 {
   "loc.friendlyName": "Chef",
   "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/chef-readme)",
-  "loc.description": "編輯環境屬性，以部署至 Chef 環境",
-  "loc.instanceNameFormat": "編輯 Chef 訂用帳戶的環境屬性以部署至 Chef $(ChefServer)",
-  "loc.input.label.connectedServiceName": "Chef 服務連線",
-  "loc.input.help.connectedServiceName": "Chef 訂用帳戶服務連線的名稱。",
-  "loc.input.label.Environment": "環境",
-  "loc.input.help.Environment": "用於部署的 Chef 環境名稱。將會編輯該環境的屬性。",
-  "loc.input.label.Attributes": "環境屬性",
-  "loc.input.help.Attributes": "指定要更新之分葉節點屬性的值。範例。{ \"default_attributes.connectionString\" : \"$(connectionString)\", \"override_attributes.buildLocation\" : \"https://sample.blob.core.windows.net/build\" }。若分葉節點不存在則工作會失敗。",
-  "loc.input.label.chefWaitTime": "等候時間",
-  "loc.input.help.chefWaitTime": "等候工作完成所需的時間 (以秒為單位)。預設值: 30 分鐘"
+  "loc.description": "Deploy to Chef environments by editing environment attributes",
+  "loc.instanceNameFormat": "Deploy to chef by editing environment attributes of Chef subscription $(ChefServer)",
+  "loc.input.label.connectedServiceName": "Chef Service Connection",
+  "loc.input.help.connectedServiceName": "Name of the Chef subscription service connection.",
+  "loc.input.label.Environment": "Environment",
+  "loc.input.help.Environment": "Name of the Chef Environment to be used for Deployment. The attributes of that environment will be edited.",
+  "loc.input.label.Attributes": "Environment Attributes",
+  "loc.input.help.Attributes": "Specify the value of the leaf node attribute(s) to be updated. Example. { \"default_attributes.connectionString\" : \"$(connectionString)\", \"override_attributes.buildLocation\" : \"https://sample.blob.core.windows.net/build\" }. Task fails if the leaf node does not exist.",
+  "loc.input.label.chefWaitTime": "Wait Time",
+  "loc.input.help.chefWaitTime": "The amount of time (in minutes) to wait for this task to complete. Default value: 30 minutes"
 }

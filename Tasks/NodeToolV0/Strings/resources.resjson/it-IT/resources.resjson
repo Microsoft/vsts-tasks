@@ -1,13 +1,13 @@
 {
   "loc.friendlyName": "Programma di installazione strumento Node.js",
-  "loc.helpMarkDown": "[Learn more about this task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/node-js) or [see the Node documentation](https://nodejs.org/docs/latest/api/documentation.html)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/node-js). In alternativa [vedere la documentazione di Node](https://nodejs.org/docs/latest/api/documentation.html)",
   "loc.description": "Trova o scarica e memorizza nella cache l'identificatore di versione specificato di Node.js lo aggiunge a PATH.",
   "loc.instanceNameFormat": "Usa Node $(versionSpec)",
   "loc.input.label.versionSpec": "Identificatore di versione",
   "loc.input.help.versionSpec": "Identificatore della versione da scaricare, ad esempio: 6.x, 4.x, 6.10.0, >=6.10.0",
   "loc.input.label.checkLatest": "Controlla disponibilità di versioni più recenti",
   "loc.input.help.checkLatest": "Verifica sempre online se è disponibile una versione più recente che soddisfi l'identificatore di versione. Il valore di questa opzione è in genere false a meno che non sia stato predisposto uno scenario specifico per scaricare sempre la versione più recente. Questa opzione può comportare costi di download potenzialmente non necessari, in particolare con il pool di compilazione ospitato.",
-  "loc.input.label.force32bit": "Usa versione a 32 bit su agenti x64",
-  "loc.input.help.force32bit": "Verrà installata la versione x86 di Node indipendentemente dall'architettura della CPU dell'agente.",
+  "loc.input.label.force32bit": "Usa la versione a 32 bit in agenti x64",
+  "loc.input.help.force32bit": "Installa la versione x86 di Node indipendentemente dall'architettura della CPU dell'agente.",
   "loc.messages.ToolFailed": "L'installazione dello strumento non è riuscita: %s"
 }

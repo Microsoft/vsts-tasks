@@ -2,7 +2,7 @@
   "loc.friendlyName": "Проверить соответствие Политики Azure",
   "loc.helpMarkDown": "",
   "loc.description": "Оценка безопасности и соответствия для Политики Azure",
-  "loc.instanceNameFormat": "Проверить соответствие политикам",
+  "loc.instanceNameFormat": "Проверка соответствия политики",
   "loc.input.label.ConnectedServiceName": "Подписка Azure",
   "loc.input.help.ConnectedServiceName": "Выберите подписку Azure Resource Manager, к которой необходимо применить политики.",
   "loc.input.label.ResourceGroupName": "Группа ресурсов",

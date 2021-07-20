@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Dateien kopieren",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708389)",
+  "loc.helpMarkDown": "[Weitere Informationen zu dieser Aufgabe](https://go.microsoft.com/fwlink/?LinkID=708389)",
   "loc.description": "Hiermit werden Dateien unter Verwendung von Mustern zum Abgleich von Dateipfaden (nicht von Ordnerpfaden) aus einem Quellordner in einen Zielordner kopiert.",
   "loc.instanceNameFormat": "Dateien kopieren in: $(TargetFolder)",
   "loc.releaseNotes": "Übereinstimmungsmusterkonsistenz.",
@@ -19,6 +19,10 @@
   "loc.input.help.flattenFolders": "Vereinfachen Sie die Ordnerstruktur, und kopieren Sie alle Dateien in den angegebenen Zielordner.",
   "loc.input.label.preserveTimestamp": "Zielzeitstempel beibehalten",
   "loc.input.help.preserveTimestamp": "Behalten Sie unter Verwendung der ursprüngliche Quelldatei den Zeitstempel der Zieldatei bei.",
+  "loc.input.label.retryCount": "Wiederholungsanzahl zum Kopieren der Datei",
+  "loc.input.help.retryCount": "Geben Sie die Wiederholungsanzahl an, um die Datei zu kopieren. Dies kann helfen, zeitweilige Probleme zu lösen, z. B. mit UNC-Zielpfaden auf einem Remote-Host.",
+  "loc.input.label.ignoreMakeDirErrors": "Ignorieren Sie Fehler beim Erstellen des Zielordners.",
+  "loc.input.help.ignoreMakeDirErrors": "Ignorieren Sie beim Erstellen des Zielordners auftretende Fehler. Dies kann hilfreich sein, um Probleme bei der gleichzeitigen Ausführung einer Aufgabe durch mehrere Agents mit einem Zielordner zu vermeiden.",
   "loc.messages.FoundNFiles": "%d Dateien wurden gefunden.",
   "loc.messages.CleaningTargetFolder": "Bereinigen des Zielordners: %s",
   "loc.messages.FileAlreadyExistAt": "Die Datei \"%s\" ist bereits unter \"%s\" vorhanden.",

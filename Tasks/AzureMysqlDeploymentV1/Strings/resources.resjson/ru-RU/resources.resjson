@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Развертывание базы данных Azure для MySQL",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/mysqlazuredeployreadme)",
+  "loc.helpMarkDown": "[См. дополнительные сведения об этой задаче](https://aka.ms/mysqlazuredeployreadme)",
   "loc.description": "Выполняйте скрипты и вносите изменения в базу данных Azure для MySQL",
   "loc.instanceNameFormat": "Выполнить Azure MySQL: $(TaskNameSelector)",
   "loc.group.displayName.target": "Сведения о базе данных",
@@ -11,17 +11,17 @@
   "loc.input.label.ServerName": "Имя узла",
   "loc.input.help.ServerName": "Имя сервера \"База данных Azure для MySQL\". Пример: fabrikam.mysql.database.azure.com. При подключении с помощью MySQL Workbench это то же значение, которое используется как \"Имя узла\" в разделе \"Параметры\"",
   "loc.input.label.DatabaseName": "Имя базы данных",
-  "loc.input.help.DatabaseName": "Имя базы данных (при наличии), в которой требуется выполнить указанный ниже сценарий; в противном случае сам сценарий можно использовать для создания базы данных.",
+  "loc.input.help.DatabaseName": "Имя базы данных (при наличии), в которой требуется выполнить указанный ниже скрипт. В противном случае сам скрипт можно использовать для создания базы данных.",
   "loc.input.label.SqlUsername": "Имя для входа администратора сервера",
   "loc.input.help.SqlUsername": "База данных Azure для сервера MySQL поддерживает собственную проверку подлинности MySQL. Вы можете подключиться и выполнить проверку подлинности на сервере, используя имя для входа администратора этого сервера. Пример: bbo1@fabrikam. При подключении с помощью MySQL Workbench это то же значение, которое используется как \"Имя пользователя\" в разделе \"Параметры\".",
   "loc.input.label.SqlPassword": "Пароль",
   "loc.input.help.SqlPassword": "Пароль администратора для Базы данных Azure для MySQL. Если вы забыли пароль, его можно сменить на [портале Azure](https://docs.microsoft.com/ru-ru/azure/mysql/howto-create-manage-server-portal).<br>Это может быть переменная, определенная в конвейере. Пример: $(password).<br>Кроме того, тип переменной можно пометить как secret, чтобы защитить ее.",
   "loc.input.label.TaskNameSelector": "Тип",
-  "loc.input.help.TaskNameSelector": "Выберите один из вариантов между файлом сценария и встроенным сценарием.",
+  "loc.input.help.TaskNameSelector": "Выберите один из вариантов: \"Файл скрипта\" или \"Встроенный скрипт\".",
   "loc.input.label.SqlFile": "Скрипт MySQL",
   "loc.input.help.SqlFile": "Полный путь к файлу скрипта на компьютере агента автоматизации или UNC-путь, доступный для агента автоматизации, например \\\\\\\\BudgetIT\\DeployBuilds\\script.sql. Кроме того, здесь можно использовать предопределенные системные переменные, например $(agent.releaseDirectory). Здесь можно использовать файл, содержащий инструкции SQL.​",
   "loc.input.label.SqlInline": "Встроенный скрипт MySQL",
-  "loc.input.help.SqlInline": "Введите сценарий MySQL для выполнения в базе данных, выбранной выше.",
+  "loc.input.help.SqlInline": "Введите скрипт MySQL для выполнения в базе данных, выбранной выше.",
   "loc.input.label.SqlAdditionalArguments": "Дополнительные аргументы MySQL",
   "loc.input.help.SqlAdditionalArguments": "Дополнительные параметры, поддерживаемые простой оболочкой SQL для MySQL. Эти параметры будут применяться при выполнении данного файла в Базе данных Azure для MySQL.​<br>Пример: вы можете изменить формат вывода на формат по умолчанию с разделением знаками табуляции, на формат HTML или даже XML. Если в случае с большими результирующими наборами возникают проблемы из-за нехватки памяти, используйте параметр --quick.​",
   "loc.input.label.IpDetectionMethod": "Указать правила брандмауэра с помощью",
@@ -63,5 +63,6 @@
   "loc.messages.CouldNotFetchAccessTokenforMSIDueToMSINotConfiguredProperlyStatusCode": "Не удалось получить маркер доступа для управляемого субъекта-службы. Настройте Управляемое удостоверение службы (MSI) для виртуальной машины. См. страницу https://aka.ms/azure-msi-docs. Назначьте роль созданному удостоверению MSI. См. страницу https://aka.ms/assign-role-msi. Код состояния: %s. Сообщение о состоянии: %s",
   "loc.messages.CouldNotFetchAccessTokenforMSIStatusCode": "Не удалось получить маркер доступа для управляемого субъекта-службы. Код состояния: %s. Сообщение о состоянии: %s",
   "loc.messages.NotAbleToCreateFirewallRule": "Сбой при добавлении правила брандмауэра на сервере MySQL Azure. Ошибка: %s",
-  "loc.messages.ExpiredServicePrincipal": "Не удалось получить маркер доступа для Azure. Убедитесь, что используемый субъект-служба является допустимым, а срок его действия не истек."
+  "loc.messages.ExpiredServicePrincipal": "Не удалось получить маркер доступа для Azure. Убедитесь, что используемый субъект-служба является допустимым, а срок его действия не истек.",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "Пакет с указанным шаблоном не найден"
 }

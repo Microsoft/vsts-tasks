@@ -1,8 +1,8 @@
 {
-  "loc.friendlyName": "延遲",
-  "loc.helpMarkDown": "[詳細資訊](https://go.microsoft.com/fwlink/?linkid=870239)",
-  "loc.description": "以固定時間延遲工作流程的進一步執行",
-  "loc.instanceNameFormat": "延遲 $(delayForMinutes) 分鐘",
-  "loc.input.label.delayForMinutes": "延遲時間 (分鐘)",
-  "loc.input.help.delayForMinutes": "以指定的時間 (分鐘) 延遲工作流程的執行。0 值代表工作流程執行會在沒有延遲的狀況下開始。"
+  "loc.friendlyName": "Delay",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870239)",
+  "loc.description": "Delay further execution of a workflow by a fixed time",
+  "loc.instanceNameFormat": "Delay by $(delayForMinutes) minutes",
+  "loc.input.label.delayForMinutes": "Delay Time (minutes)",
+  "loc.input.help.delayForMinutes": "Delay the execution of the workflow by specified time in minutes. 0 value means that workflow execution will start without delay."
 }

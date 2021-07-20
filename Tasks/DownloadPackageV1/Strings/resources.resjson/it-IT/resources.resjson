@@ -12,7 +12,7 @@
   "loc.input.label.definition": "Pacchetto",
   "loc.input.help.definition": "Se il pacchetto non è presente nell'elenco, è possibile specificare l'ID pacchetto, che è possibile trovare seguendo le istruzioni disponibili [qui](https://go.microsoft.com/fwlink/?linkid=2086778).",
   "loc.input.label.version": "Versione",
-  "loc.input.help.version": "Versione del pacchetto",
+  "loc.input.help.version": "Versione del pacchetto. Usare `latest` per scaricare la versione più recente del pacchetto in fase di esecuzione.",
   "loc.input.label.files": "File",
   "loc.input.help.files": "Specificare i file da scaricare con i [criteri di corrispondenza minima dei file](https://go.microsoft.com/fwlink/?linkid=2086953).",
   "loc.input.label.extract": "Estrai contenuto del pacchetto",
@@ -33,6 +33,6 @@
   "loc.messages.Error_UnexpectedErrorArtifactToolDownload": "Si è verificato un errore imprevisto durante il tentativo di scaricare il pacchetto. Codice di uscita: %s. Errore:%s",
   "loc.messages.Info_ResolvedToolFromCache": "Risoluzione dalla cache dello strumento: %s",
   "loc.messages.Info_DownloadingArtifactTool": "Download dello strumento dell'artefatto da %s",
-  "loc.messages.Info_Downloading": "Downloading package: %s, version: %s using feed id: %s, project: %s",
+  "loc.messages.Info_Downloading": "Download del pacchetto %s versione %s con ID feed %s e progetto %s",
   "loc.messages.Info_UsingArtifactToolDownload": "Uso dello strumento dell'artefatto per scaricare il pacchetto"
 }

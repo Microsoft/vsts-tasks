@@ -18,7 +18,7 @@
   "loc.input.help.imageName": "특정 레지스트리 또는 네임스페이스의 전역적으로 고유한 최상위 도메인 이름입니다.<br/> 참고: 정규화된 이미지 이름은 '<b>`<레지스트리 또는 네임스페이스`></b>/`<리포지토리`>:`<태그`>' 형식입니다. 예: '<b>myregistry.azurecr.io</b>/nginx:latest'",
   "loc.input.label.containerCommand": "시작 명령 ",
   "loc.input.help.containerCommand": "시작 명령을 입력합니다. 예: <br/>dotnet exec filename.dll<br/>dotnet filename.dll",
-  "loc.input.label.appSettings": "응용 프로그램 설정",
+  "loc.input.label.appSettings": "앱 설정",
   "loc.input.help.appSettings": "구문 -key 값 다음에 오는 웹앱 응용 프로그램 설정을 편집합니다. 공백이 포함되는 값은 큰따옴표로 묶어야 합니다.<br /> <b>예</b> : -Port 5000 -RequestTimeout 5000 <br /> -WEBSITE_TIME_ZONE \"Eastern Standard Time\"",
   "loc.input.label.configurationStrings": "구성 설정",
   "loc.input.help.configurationStrings": "구문 -key 값 다음에 오는 웹앱 구성 설정을 편집합니다. 공백이 포함되는 값은 큰따옴표로 묶어야 합니다.<br /> 예 : -phpVersion 5.6 -linuxFxVersion: node|6.11",

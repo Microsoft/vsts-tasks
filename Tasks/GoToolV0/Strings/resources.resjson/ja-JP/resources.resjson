@@ -1,15 +1,15 @@
 {
-  "loc.friendlyName": "Go ツール インストーラー",
+  "loc.friendlyName": "Go tool installer",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=867581) or [see the Go documentation](https://golang.org/doc/)",
-  "loc.description": "Go の特定のバージョンをキャッシュ内で検索するかダウンロードして、PATH に追加します",
-  "loc.instanceNameFormat": "Go $(version) の使用",
-  "loc.group.displayName.advanced": "詳細設定",
-  "loc.input.label.version": "バージョン",
-  "loc.input.help.version": "ダウンロード (必要な場合) して使用する Go のバージョンです。例: 1.9.3",
+  "loc.description": "Find in cache or download a specific version of Go and add it to the PATH",
+  "loc.instanceNameFormat": "Use Go $(version)",
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.version": "Version",
+  "loc.input.help.version": "The Go version to download (if necessary) and use. Example: 1.9.3",
   "loc.input.label.goPath": "GOPATH",
-  "loc.input.help.goPath": "GOPATH 環境変数のカスタム値です。",
+  "loc.input.help.goPath": "A custom value for the GOPATH environment variable.",
   "loc.input.label.goBin": "GOBIN",
-  "loc.input.help.goBin": "GOBIN 環境変数のカスタム値です。",
-  "loc.messages.FailedToDownload": "バージョン %s の Go をダウンロードできませんでした。このバージョンが有効であることを確認し、その他の問題を解決します。エラー: %s",
-  "loc.messages.TempDirNotSet": "'Agent.TempDirectory' 環境変数を設定することが必要です。"
+  "loc.input.help.goBin": "A custom value for the GOBIN environment variable.",
+  "loc.messages.FailedToDownload": "Failed to download Go version %s. Verify that the version is valid and resolve any other issues. Error: %s",
+  "loc.messages.TempDirNotSet": "The 'Agent.TempDirectory' environment variable was expected to be set."
 }

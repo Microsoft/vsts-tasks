@@ -1,8 +1,8 @@
 {
-  "loc.friendlyName": "지연",
-  "loc.helpMarkDown": "[자세한 정보](https://go.microsoft.com/fwlink/?linkid=870239)",
-  "loc.description": "정해진 시간만큼 워크플로 추가 실행을 지연합니다.",
-  "loc.instanceNameFormat": "$(delayForMinutes)분 지연",
-  "loc.input.label.delayForMinutes": "지연 시간(분)",
-  "loc.input.help.delayForMinutes": "지정된 시간(분)만큼 워크플로 실행을 지연합니다. 값이 0이면 워크플로 실행이 지연 없이 시작됩니다."
+  "loc.friendlyName": "Delay",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870239)",
+  "loc.description": "Delay further execution of a workflow by a fixed time",
+  "loc.instanceNameFormat": "Delay by $(delayForMinutes) minutes",
+  "loc.input.label.delayForMinutes": "Delay Time (minutes)",
+  "loc.input.help.delayForMinutes": "Delay the execution of the workflow by specified time in minutes. 0 value means that workflow execution will start without delay."
 }

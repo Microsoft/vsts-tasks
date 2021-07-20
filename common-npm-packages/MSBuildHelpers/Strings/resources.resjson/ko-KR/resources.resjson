@@ -1,11 +1,11 @@
 {
-  "loc.messages.MSB_Build0": "빌드 {0}",
-  "loc.messages.MSB_BuildToolNotFound": "Mac/Linux 에이전트에서 MSBuild 또는 xbuild(Mono)를 찾을 수 없습니다.",
-  "loc.messages.MSB_DetectedNuGetExtensionsLoaderPath0": "NuGet 확장 로드 경로가 검색되었습니다. 환경 변수 NUGET_EXTENSIONS_PATH는 '{0}'(으)로 설정되어 있습니다.",
-  "loc.messages.MSB_MSBuild15NotFoundionArchitecture0": "아키텍처 '{0}'에 대해 MSBuild 버전 '15.0'을 찾을 수 없습니다. 아키텍처 입력 값이 올바른지 확인하고 Visual Studio 2017이 설치되어 있는지 확인하세요. Visual Studio 2017을 설치할 때 MSBuild 버전 '15.0'이 포함됩니다.",
-  "loc.messages.MSB_MSBuildNotFound": "MSBuild를 찾을 수 없습니다. msbuild.exe에 대한 위치를 지정하거나 Visual Studio를 설치하세요. Visual Studio를 설치할 때 MSBuild가 포함됩니다.",
-  "loc.messages.MSB_MSBuildNotFoundVersion0Architecture1": "버전 '{0}' 및 아키텍처 '{1}'에 대해 MSBuild를 찾을 수 없습니다. 다른 버전/아키텍처 조합을 시도해 보거나, 위치를 지정하거나, 적합한 버전의 Visual Studio를 설치해 보세요. Visual Studio를 설치할 때 MSBuild가 포함됩니다.",
-  "loc.messages.MSB_RestoreNuGetPackagesDeprecated": "'NuGet 패키지 복원' 옵션은 사용되지 않습니다. 빌드에서 NuGet 패키지를 복원하려면 빌드 정의에 NuGet 도구 설치 관리자 작업을 추가하세요.",
-  "loc.messages.MSB_SolutionNotFoundUsingSearchPattern0": "검색 패턴 '{0}'을(를) 사용하여 솔루션을 찾을 수 없습니다.",
-  "loc.messages.MSB_UnableToFindMSBuildVersion0Architecture1FallbackVersion2": "아키텍처 '{1}'에 대해 MSBuild 버전 '{0}'을(를) 찾을 수 없습니다. '{2}' 버전을 대신 사용합니다."
+  "loc.messages.MSB_Build0": "Build {0}",
+  "loc.messages.MSB_BuildToolNotFound": "MSBuild or xbuild(Mono) were not found on the Mac/Linux agent.",
+  "loc.messages.MSB_DetectedNuGetExtensionsLoaderPath0": "Detected NuGet extensions loader path. Environment variable NUGET_EXTENSIONS_PATH is set to '{0}'.",
+  "loc.messages.MSB_MSBuild15NotFoundionArchitecture0": "MSBuild version '15.0' was not found for architecture '{0}'. Verify the architecture input value is correct and verify Visual Studio 2017 is installed. MSBuild version '15.0' is included when Visual Studio 2017 is installed.",
+  "loc.messages.MSB_MSBuildNotFound": "MSBuild was not found. Try specifying the location to msbuild.exe or install Visual Studio. MSBuild is included when Visual Studio is installed.",
+  "loc.messages.MSB_MSBuildNotFoundVersion0Architecture1": "MSBuild was not found for version '{0}' and architecture '{1}'. Try a different version/architecture combination, specify a location, or install the appropriate version of Visual Studio. MSBuild is included when Visual Studio is installed.",
+  "loc.messages.MSB_RestoreNuGetPackagesDeprecated": "The 'Restore NuGet Packages' option is deprecated. To restore NuGet packages in your build, add a NuGet Tool Installer task to your build definition.",
+  "loc.messages.MSB_SolutionNotFoundUsingSearchPattern0": "Solution not found using search pattern '{0}'.",
+  "loc.messages.MSB_UnableToFindMSBuildVersion0Architecture1FallbackVersion2": "Unable to find MSBuild version '{0}' for architecture '{1}'. Falling back to version '{2}'."
 }

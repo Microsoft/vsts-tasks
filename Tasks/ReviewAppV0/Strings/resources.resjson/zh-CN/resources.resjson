@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "查看应用",
-  "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?LinkID=613735)",
-  "loc.description": "在部署阶段提供程序下使用此任务，以动态创建资源",
-  "loc.instanceNameFormat": "使用 - $(resourceName) 创建的动态资源",
-  "loc.releaseNotes": "在部署阶段提供程序下使用此任务，以动态创建资源",
-  "loc.input.label.resourceName": "资源名称",
-  "loc.input.help.resourceName": "环境中现有资源的名称，将用于资源类型信息",
-  "loc.input.label.baseEnvironmentName": "环境名称",
-  "loc.input.label.reviewResourceName": "查看资源名称",
-  "loc.messages.CreatedDynamicResource": "使用 %s 创建了动态资源"
+  "loc.friendlyName": "Review App",
+  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613735)",
+  "loc.description": "Use this task under deploy phase provider to create a resource dynamically",
+  "loc.instanceNameFormat": "Dynamic Resource created using - $(resourceName)",
+  "loc.releaseNotes": "Use this task under deploy phase provider to create a resource dynamically",
+  "loc.input.label.resourceName": "Resource name",
+  "loc.input.help.resourceName": "Name of an existing resource in the environment which will be used for resource type information",
+  "loc.input.label.baseEnvironmentName": "Environment name",
+  "loc.input.label.reviewResourceName": "Review Resource Name",
+  "loc.messages.CreatedDynamicResource": "A dynamic resource is created using %s"
 }

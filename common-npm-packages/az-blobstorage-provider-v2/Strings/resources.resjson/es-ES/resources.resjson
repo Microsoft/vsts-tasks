@@ -1,14 +1,14 @@
 {
-  "loc.messages.CreatedBlobForItem": "Se creó el blob para el elemento {0}. URI del blob: {1}",
-  "loc.messages.CreatedContainer": "Se creó el contenedor {0}.",
-  "loc.messages.ErrorInReadStream": "Error en la secuencia de lectura: {0}",
-  "loc.messages.ErrorInWriteStream": "Error en la secuencia de escritura: {0}",
-  "loc.messages.FailedToCreateBlob": "No se pudo crear el blob {0}. Error: {1}",
-  "loc.messages.FailedToCreateContainer": "No se pudo crear el contenedor {0}. Error: {1}",
-  "loc.messages.FailedToListItemInsideContainer": "No se pudieron enumerar los elementos incluidos en el contenedor: {0}. Error: {1}",
-  "loc.messages.SuccessFullyFetchedItemList": "La lista de elementos se capturó correctamente.",
-  "loc.messages.UnableToFetchItem": "No se puede capturar el elemento: {0}. Error: {1}",
-  "loc.messages.UploadingItem": "Cargando {0}.",
-  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "El token de continuación existe. Intentando capturar la lista de archivos restantes.",
-  "loc.messages.GetArtifactItemsNotSupported": "No se admite la obtención de elementos de artefacto. La ruta de acceso del código no es válida."
+  "loc.messages.CreatedBlobForItem": "Created blob for item {0}. Blob uri: {1}",
+  "loc.messages.CreatedContainer": "Created container {0}.",
+  "loc.messages.ErrorInReadStream": "Error in Read stream: {0}",
+  "loc.messages.ErrorInWriteStream": "Error in write stream: {0}",
+  "loc.messages.FailedToCreateBlob": "Failed to create blob {0}. Error: {1}",
+  "loc.messages.FailedToCreateContainer": "Failed to create container {0}. Error: {1}",
+  "loc.messages.FailedToListItemInsideContainer": "Failed to list items inside container: {0}. Error: {1}",
+  "loc.messages.SuccessFullyFetchedItemList": "Successfully fetcted list of items",
+  "loc.messages.UnableToFetchItem": "Unable to fetch item: {0}. Error: {1}",
+  "loc.messages.UploadingItem": "Uploading {0}.",
+  "loc.messages.ContinuationTokenExistsFetchingRemainingFiles": "Continuation token exists, trying to fetch the list of remaining files.",
+  "loc.messages.GetArtifactItemsNotSupported": "Get artifact items not supported, invalid code path"
 }

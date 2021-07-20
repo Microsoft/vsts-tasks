@@ -1,14 +1,14 @@
 {
-  "loc.friendlyName": "缓存(Beta)",
-  "loc.helpMarkDown": "通过在管道运行之间缓存文件(如依赖项)来提高生成性能。",
-  "loc.description": "在两次运行之间缓存文件",
+  "loc.friendlyName": "Cache (Beta)",
+  "loc.helpMarkDown": "Improve build performance by caching files, like dependencies, between pipeline runs.",
+  "loc.description": "Cache files between runs",
   "loc.instanceNameFormat": "CacheBeta",
-  "loc.input.label.key": "密钥",
-  "loc.input.help.key": "缓存的密钥(唯一标识符)。这应该是可使用 \"|\" 进行分段的字符串。文件路径可以是绝对路径，也可以是相对于 $(System.DefaultWorkingDirectory) 的路径。",
-  "loc.input.label.path": "路径",
-  "loc.input.help.path": "要缓存的文件夹的路径。可以是完全限定的路径，也可以是相对于 $(System.DefaultWorkingDirectory) 的路径。不支持通配符。支持[变量](https://go.microsoft.com/fwlink/?LinkID=550988)。",
-  "loc.input.label.cacheHitVar": "缓存命中变量",
-  "loc.input.help.cacheHitVar": "要在还原缓存(即缓存命中)时设置为 \"true\"、在其他情况下设置为 \"false\" 的变量。",
-  "loc.input.label.restoreKeys": "其他还原键前缀",
-  "loc.input.help.restoreKeys": "主键缺失时使用的其他还原键前缀。这可以是以换行符分隔的键前缀列表。"
+  "loc.input.label.key": "Key",
+  "loc.input.help.key": "Key (unique identifier) for the cache. This should be a string that can be segmented using '|'. File paths can be absolute or relative to $(System.DefaultWorkingDirectory).",
+  "loc.input.label.path": "Path",
+  "loc.input.help.path": "Path of the folder to cache. Can be fully-qualified or relative to $(System.DefaultWorkingDirectory). Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported.",
+  "loc.input.label.cacheHitVar": "Cache hit variable",
+  "loc.input.help.cacheHitVar": "Variable to set to 'true' when the cache is restored (i.e. a cache hit), otherwise set to 'false'.",
+  "loc.input.label.restoreKeys": "Additional restore key prefixes",
+  "loc.input.help.restoreKeys": "Additional restore key prefixes that are used if the primary key misses. This can be a newline-delimited list of key prefixes."
 }

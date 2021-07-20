@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Использовать версию Ruby",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=2005989) or [see the Ruby documentation](https://www.ruby-lang.org/)",
+  "loc.helpMarkDown": "[См. дополнительные сведения об этой задаче](https://go.microsoft.com/fwlink/?linkid=2005989) или [документацию по Ruby](https://www.ruby-lang.org/)",
   "loc.description": "Использовать указанную версию Ruby из кэша инструментов, при необходимости добавив ее в переменную PATH",
   "loc.instanceNameFormat": "Использовать Ruby $(versionSpec)",
   "loc.input.label.versionSpec": "Спецификатор версии",
@@ -11,5 +11,6 @@
   "loc.messages.PlatformNotRecognized": "Платформа не распознана",
   "loc.messages.ToolNotFoundMicrosoftHosted": "Если это агент, размещенный на сервере Майкрософт, убедитесь, что этот образ поддерживает параллельные версии %s в %s.",
   "loc.messages.ToolNotFoundSelfHosted": "Если это локальный агент, ознакомьтесь со сведениями о настройке параллельных версий %s в %s.",
-  "loc.messages.VersionNotFound": "Спецификация версии %s для архитектуры %s не соответствует ни одной версии в Agent.ToolsDirectory."
+  "loc.messages.VersionNotFound": "Спецификация версии %s для архитектуры %s не соответствует ни одной версии в Agent.ToolsDirectory.",
+  "loc.messages.ExactVersionNotRecommended": "Не рекомендуется указывать точную версию для агентов, размещенных в корпорации Майкрософт. Версии исправлений Ruby могут быть заменены новой версией на размещенных агентах без уведомления, что может привести к неожиданным ошибкам сборок. Рекомендуется указывать только основную версию или основную и дополнительную версии (например, \"2\" или \"2.4\")."
 }

@@ -1,11 +1,11 @@
 {
   "loc.friendlyName": "Batchskript",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613733).\n\nPlease note: this task is not compatible with Windows containers. If you need to run a batch script on a Windows container, use the [CmdLine task](https://go.microsoft.com/fwlink/?LinkID=613735) instead.",
+  "loc.helpMarkDown": "[Weitere Informationen zu dieser Aufgabe](https://go.microsoft.com/fwlink/?LinkID=613733).\n\nHinweis: Diese Aufgabe ist nicht mit Windows-Containern kompatibel. Wenn Sie ein Batchskript für einen Windows-Container ausführen müssen, verwenden Sie stattdessen die [CmdLine-Aufgabe](https://go.microsoft.com/fwlink/?LinkID=613735).",
   "loc.description": "Hiermit wird ein Windows-Befehl oder ein Batchskript ausgeführt und optional eine Änderung der Umgebung zugelassen.",
   "loc.instanceNameFormat": "Skript $(filename) ausführen",
   "loc.group.displayName.advanced": "Erweitert",
   "loc.input.label.filename": "Pfad",
-  "loc.input.help.filename": "Pfad des auszuführenden CMD- oder BAT-Skripts. Es muss sich um den vollqualifizierten Pfad oder einen Pfad relativ zum Standardarbeitsverzeichnis handeln.",
+  "loc.input.help.filename": "Der Pfad des auszuführenden cmd- oder bat-Skripts. Sollte ein vollqualifizierter Pfad oder relativ zum Standard-Arbeitsverzeichnis sein (bitte beachten Sie, dass das Arbeitsverzeichnis von “workingFolder” abweichen kann, das für diese Aufgabe angegeben werden kann)",
   "loc.input.label.arguments": "Argumente",
   "loc.input.help.arguments": "An das cmd- oder bat-Skript übergebene Argumente",
   "loc.input.label.modifyEnvironment": "Umgebung ändern",

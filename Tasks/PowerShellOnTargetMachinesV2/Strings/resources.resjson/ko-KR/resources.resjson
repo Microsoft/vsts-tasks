@@ -31,10 +31,10 @@
   "loc.input.label.MachineNames": "필터 조건",
   "loc.input.help.MachineNames": "이 입력은 컴퓨터 그룹 또는 출력 변수에만 유효하며 컴퓨터의 단순 목록에는 아직 지원되지 않습니다. dbserver.fabrikam.com, webserver.fabrikam.com, 192.168.12.34 등과 같은 컴퓨터나 Role:DB; OS:Win8.1 등과 같은 태그 목록을 지정하세요 여러 태그를 지정하는 경우 지정된 태그가 포함된 모든 컴퓨터에서 작업이 실행됩니다. 기본값은 모든 컴퓨터에서 실행하는 것입니다.",
   "loc.messages.PS_TM_NoMachineExistsUnderEnvironment0ForDeployment": "배포를 위한 '{0}' 환경에 컴퓨터가 없음",
-  "loc.messages.PS_TM_DeploymentStartedForMachine0": "다음 컴퓨터에 대해 배포 시작됨: '{0}'",
+  "loc.messages.PS_TM_DeploymentStartedForMachine0": "다음 컴퓨터에 대한 배포 시작됨: '{0}'",
   "loc.messages.PS_TM_DeploymentStatusForMachine01": "'{0}' 컴퓨터의 배포 상태: '{1}'",
-  "loc.messages.PS_TM_DeploymentFailedOnMachine0WithFollowingMessage1": "'{0}' 컴퓨터에 배포하지 못했습니다. 메시지: '{1}'",
+  "loc.messages.PS_TM_DeploymentFailedOnMachine0WithFollowingMessage1": "'{0}' 컴퓨터에서 배포하지 못했습니다. 메시지: '{1}'",
   "loc.messages.PS_TM_ResourceDoesnotHaveWinRMServiceConfigured": "'{0}' 리소스에 WinRM 서비스가 구성되어 있지 않습니다. Azure VM 리소스에 대해 WinRM 서비스를 구성하세요. 자세한 내용은 '{1}'을(를) 참조하세요.",
-  "loc.messages.PS_TM_0PortWasNotProvidedForResource1": "'{1}' 리소스에 {0} 포트가 제공되지 않음",
-  "loc.messages.PS_TM_DeploymentOnOneOrMoreMachinesFailed": "하나 이상의 컴퓨터에 배포하지 못했습니다."
+  "loc.messages.PS_TM_0PortWasNotProvidedForResource1": "리소스 '{1}'에 {0} 포트가 제공되지 않았습니다.",
+  "loc.messages.PS_TM_DeploymentOnOneOrMoreMachinesFailed": "하나 이상의 컴퓨터에서 배포에 실패했습니다."
 }

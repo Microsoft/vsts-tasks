@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Open Policy Agent 설치 관리자",
-  "loc.helpMarkDown": "[이 작업에 대한 자세한 정보](https://go.microsoft.com/fwlink/?linkid=851275)",
-  "loc.description": "에이전트 컴퓨터에 Open Policy Agent 설치",
-  "loc.instanceNameFormat": "opa $(opaVersion) 설치",
-  "loc.input.label.opaVersion": "OPA 버전 사양",
-  "loc.input.help.opaVersion": "설치할 Open Policy Agent 버전 지정",
-  "loc.messages.DownloadOpaFailedFromLocation": "%s 위치에서 opa를 다운로드하지 못했습니다. 오류 %s",
-  "loc.messages.OpaLatestNotKnown": "%s에서 최신 OpenPolicyAgent 정보를 가져올 수 없습니다. 오류 %s. 기본 OpenPolicyAgent 버전 %s을(를) 사용합니다.",
-  "loc.messages.NotAValidSemverVersion": "버전이 올바른 형식으로 지정되지 않았습니다(예: 1.8.2, v1.8.2, 2.8.2, v2.8.2).",
-  "loc.messages.VerifyOpaInstallation": "opa 설치를 확인하는 중..."
+  "loc.friendlyName": "Open Policy Agent Installer",
+  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=851275)",
+  "loc.description": "Install Open Policy Agent on agent machine",
+  "loc.instanceNameFormat": "Install opa $(opaVersion)",
+  "loc.input.label.opaVersion": "OPA Version Spec",
+  "loc.input.help.opaVersion": "Specify the version of open policy agent to install",
+  "loc.messages.DownloadOpaFailedFromLocation": "Failed to download opa from location %s. Error %s",
+  "loc.messages.OpaLatestNotKnown": "Cannot get the latest OpenPolicyAgent info from %s. Error %s. Using default OpenPolicyAgent version %s.",
+  "loc.messages.NotAValidSemverVersion": "Version not specified in correct format. E.g: 1.8.2, v1.8.2, 2.8.2, v2.8.2.",
+  "loc.messages.VerifyOpaInstallation": "Verifying opa installation..."
 }

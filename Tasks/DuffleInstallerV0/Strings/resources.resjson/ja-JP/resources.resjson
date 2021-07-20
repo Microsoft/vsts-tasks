@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Duffle ツール インストーラー",
+  "loc.friendlyName": "Duffle tool installer",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=851275)",
-  "loc.description": "指定されたバージョンの Duffle をインストールし、CNAB バンドルをインストールおよび管理します",
-  "loc.instanceNameFormat": "Duffle $(version) のインストール",
-  "loc.input.label.version": "バージョン",
-  "loc.input.help.version": "インストールする Duffle のバージョンを指定します。",
-  "loc.input.label.checkLatestVersion": "最新バージョンのチェック",
-  "loc.input.help.checkLatestVersion": "バージョン仕様を満たす利用可能な最新バージョン (stable.txt) を常にオンラインで確認します。これは false にするのが一般的ですが、常に最新版を取得する特定のシナリオの場合は例外です。これにより、実際には必要でない場合にもダウンロードのコストが発生することになります (ホストされたビルド プールの場合は特にそう言えます)。",
-  "loc.messages.DownloadDuffleFailed": "バージョン %s の Duffle クライアントをダウンロードできません。バージョンが正しいか確認してください。https://github.com/deislabs/duffle/releases",
-  "loc.messages.DownloadStableVersionFailed": "%s から Duffle の安定したバージョンのファイルをダウンロードできません。%s にフォールバックしています"
+  "loc.description": "Install a specified version of Duffle for installing and managing CNAB bundles",
+  "loc.instanceNameFormat": "Install Duffle $(version)",
+  "loc.input.label.version": "Version",
+  "loc.input.help.version": "Specify the version of Duffle to install.",
+  "loc.input.label.checkLatestVersion": "Check for latest version",
+  "loc.input.help.checkLatestVersion": "Always checks online for the latest available version (stable.txt) that satisfies the version spec. This is typically false unless you have a specific scenario to always get latest. This will cause it to incur download costs when potentially not necessary, especially with the hosted build pool.",
+  "loc.messages.DownloadDuffleFailed": "Can not download the Duffle client of version %s. Check if the version is correct https://github.com/deislabs/duffle/releases",
+  "loc.messages.DownloadStableVersionFailed": "Can not download Duffle stable version file from %s. Falling back to %s"
 }

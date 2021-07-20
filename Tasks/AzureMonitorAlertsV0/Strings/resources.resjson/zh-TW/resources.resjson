@@ -1,7 +1,7 @@
 {
-  "loc.friendlyName": "Azure Monitor alerts (Deprecated)",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=859947)",
-  "loc.description": "Configure alerts on available metrics for an Azure resource (Deprecated)",
+  "loc.friendlyName": "Azure 監視器警示 (已淘汰)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?linkid=859947)",
+  "loc.description": "對 Azure 資源的可用計量設定警示 (已淘汰)",
   "loc.instanceNameFormat": "設定 Azure 警示: $(ResourceName)",
   "loc.group.displayName.NotifyViaEmail": "透過電子郵件通知",
   "loc.input.label.ConnectedServiceName": "Azure 訂用帳戶",
@@ -30,5 +30,5 @@
   "loc.messages.FailedToGetAzureMetricAlerts": "無法取得 Application Insights 警示規則: %s。錯誤: %s",
   "loc.messages.FailedToUpdateAzureMetricAlerts": "無法更新 Azure 度量警示規則 '%s' 資源。錯誤: %s",
   "loc.messages.ExpiredServicePrincipal": "無法擷取 Azure 的存取權杖。請驗證使用的服務主體是否有效且未過期。",
-  "loc.messages.DeprecatedTask": "As part of classic alerts retirement, we are deprecating the Azure Monitor Alerts task which is currently based on classic alerts API. Please use the Azure CLI task to manage new alerts. Refer this: https://aka.ms/deprecateazuremonitoralertstask"
+  "loc.messages.DeprecatedTask": "在淘汰傳統警示時，我們會淘汰目前以傳統警示 API 執行的 Azure 監視器警示工作。請使用 Azure CLI 工作管理新的警示。請參閱: https://aka.ms/deprecateazuremonitoralertstask"
 }

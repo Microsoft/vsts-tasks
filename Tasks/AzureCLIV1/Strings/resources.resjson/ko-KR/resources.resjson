@@ -16,7 +16,7 @@
   "loc.input.label.args": "인수",
   "loc.input.help.args": "스크립트에 전달되는 인수",
   "loc.input.label.addSpnToEnvironment": "스크립트의 서비스 주체 정보 액세스",
-  "loc.input.help.addSpnToEnvironment": "선택한 Azure 엔드포인트의 서비스 주체 ID 및 키를 스크립트의 실행 환경에 추가합니다. 스크립트에 `$servicePrincipalId`, `$servicePrincipalKey` 및 `$tenantId` 변수를 사용할 수 있습니다.\n\nAzure 엔드포인트에 서비스 주체 인증 체계가 있는 경우에만 적용됩니다.",
+  "loc.input.help.addSpnToEnvironment": "선택한 Azure 엔드포인트의 서비스 주체 ID 및 키를 스크립트의 실행 환경에 추가합니다. 스크립트에 '$servicePrincipalId', '$servicePrincipalKey' 및 '$tenantId' 변수를 사용할 수 있습니다.\n\nAzure 엔드포인트에 서비스 주체 인증 체계가 있는 경우에만 적용됩니다.",
   "loc.input.label.useGlobalConfig": "전역 Azure CLI 구성 사용",
   "loc.input.help.useGlobalConfig": "false이면, 이 작업은 고유한 별도 [Azure CLI 구성 디렉터리](https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-file)를 사용합니다. *병렬* 릴리스에서 Azure CLI 작업을 실행하는 데 사용할 수 있습니다.",
   "loc.input.label.cwd": "작업 디렉터리",

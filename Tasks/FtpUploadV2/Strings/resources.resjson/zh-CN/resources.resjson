@@ -36,6 +36,7 @@
   "loc.messages.Disconnected": "已断开连接",
   "loc.messages.DisconnectHost": "正在断开与 %s 的连接 ",
   "loc.messages.FTPConnected": "已连接: %s",
+  "loc.messages.InvalidFTPOptions": "阅读 FTP 选项时出现错误: %s",
   "loc.messages.FTPNoHostSpecified": "FTP 服务器 URL 必需包括主机名",
   "loc.messages.FTPNoProtocolSpecified": "FTP 服务器 URL 必需以 ftp:// 或 ftps:// 开头",
   "loc.messages.NoFilesFound": "找不到任何要上传的文件",

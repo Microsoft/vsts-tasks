@@ -1,10 +1,10 @@
 {
-  "loc.friendlyName": "Publier un artefact de pipeline",
-  "loc.helpMarkDown": "Publiez un répertoire ou un fichier local en tant qu'artefact nommé pour le pipeline actuel.",
-  "loc.description": "Publier un répertoire ou un fichier local en tant qu'artefact nommé pour le pipeline actuel",
-  "loc.instanceNameFormat": "Publier l'artefact de pipeline",
-  "loc.input.label.artifactName": "Nom de cet artefact",
-  "loc.input.help.artifactName": "Nom de cet artefact.",
-  "loc.input.label.targetPath": "Chemin de publication",
-  "loc.input.help.targetPath": "Chemin de dossier ou de fichier à publier. Il peut s'agir d'un chemin complet ou d'un chemin relatif à la racine du dépôt. Les caractères génériques ne sont pas pris en charge. Les [variables](https://go.microsoft.com/fwlink/?LinkID=550988) sont prises en charge."
+  "loc.friendlyName": "Publish pipeline artifact",
+  "loc.helpMarkDown": "Publish a local directory or file as a named artifact for the current pipeline.",
+  "loc.description": "Publish a local directory or file as a named artifact for the current pipeline",
+  "loc.instanceNameFormat": "Publish Pipeline Artifact",
+  "loc.input.label.artifactName": "The name of this artifact",
+  "loc.input.help.artifactName": "The name of this artifact.",
+  "loc.input.label.targetPath": "Path to publish",
+  "loc.input.help.targetPath": "The folder or file path to publish. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported."
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Utiliser la version de Ruby",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=2005989) or [see the Ruby documentation](https://www.ruby-lang.org/)",
+  "loc.helpMarkDown": "[En savoir plus sur cette tâche](https://go.microsoft.com/fwlink/?linkid=2005989) ou [consulter la documentation de Ruby](https://www.ruby-lang.org/)",
   "loc.description": "Utiliser la version spécifiée de Ruby à partir du cache d'outils, en l'ajoutant éventuellement à PATH",
   "loc.instanceNameFormat": "Utiliser Ruby $(versionSpec)",
   "loc.input.label.versionSpec": "Spécification de version",
@@ -11,5 +11,6 @@
   "loc.messages.PlatformNotRecognized": "Plateforme non reconnue",
   "loc.messages.ToolNotFoundMicrosoftHosted": "S'il s'agit d'un agent hébergé par Microsoft, vérifiez que cette image prend en charge les versions côte à côte de %s sur %s.",
   "loc.messages.ToolNotFoundSelfHosted": "S'il s'agit d'un agent autohébergé, consultez les informations relatives à la configuration des versions côte à côte de %s sur %s.",
-  "loc.messages.VersionNotFound": "La spécification de version %s pour l'architecture %s ne correspond à aucune version dans Agent.ToolsDirectory."
+  "loc.messages.VersionNotFound": "La spécification de version %s pour l'architecture %s ne correspond à aucune version dans Agent.ToolsDirectory.",
+  "loc.messages.ExactVersionNotRecommended": "La spécification d’une version exacte n’est pas recommandée sur les agents hébergés par Microsoft. Les versions du patch de Ruby peuvent être remplacées sans avertissement par de nouvelles versions sur des agents hébergés, ce qui entraîne l’échec inattendu des builds. Il est recommandé de spécifier la version majeure uniquement ou la version majeure et mineure (exemple : « 2 » ou « 2.4 »)"
 }

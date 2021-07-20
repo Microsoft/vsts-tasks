@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Bash",
-  "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?LinkID=613738)或[参阅 Bash 文档](https://www.gnu.org/software/bash/manual/)",
+  "loc.helpMarkDown": "[详细了解此任务](https://go.microsoft.com/fwlink/?linkid=2132213)或[查看 Bash 文档](https://www.gnu.org/software/bash/manual/)",
   "loc.description": "在 MacOS、 Linux 或 Windows 上运行 Bash 脚本",
   "loc.instanceNameFormat": "Bash 脚本",
   "loc.releaseNotes": "脚本任务一致性。添加了对多个行的支持并添加了对 Windows 的支持。",

@@ -12,6 +12,7 @@
   "loc.messages.Info_SavingTempConfig": "Salvataggio di NuGet.config in un file di configurazione temporaneo.",
   "loc.messages.Info_UsingToolPath": "Uso del percorso dello strumento: %s",
   "loc.messages.Info_UsingVersion": "Uso della versione: %s",
+  "loc.messages.Info_BasicCredRestriction": "Questa attività configura ora NuGet per l'invio di queste credenziali usando solo\nlo schema di base. La maggior parte degli utenti non sarà interessata da questa\nmodifica. Se si tratta di credenziali di dominio Windows e di recente hanno smesso di funzionare,\nprovare a impostare la variabile di compilazione %s sul valore '%s' (senza virgolette).",
   "loc.messages.NGCommon_AddingSources": "Impostazione delle credenziali in NuGet.config",
   "loc.messages.NGCommon_AreaNotFoundInSps": "L'area '%s' [%s] non è stata trovata. Il servizio che contiene tale area potrebbe non essere disponibile nell'area geografica corrente.",
   "loc.messages.NGCommon_DetectedNuGetExtensionsPath": "Il percorso del caricatore delle estensioni NuGet è stato rilevato (variabile di ambiente NUGET_EXTENSIONS_PATH): %s",
@@ -24,6 +25,6 @@
   "loc.messages.NGCommon_SpsNotFound": "L'area '%s' [%s] non è stata trovata. Potrebbe essersi verificato un problema con l'installazione di Team Foundation Server.",
   "loc.messages.NGCommon_UnabletoDetectNuGetVersion": "È stata selezionata una versione di NuGet sconosciuta.",
   "loc.messages.NGCommon_UnableToFindTool": "Lo strumento %s non è stato trovato",
-  "loc.messages.Warning_SessionCreationFailed": "Non è stato possibile creare la sessione di provenienza: %s",
+  "loc.messages.Warning_SessionCreationFailed": "Non è stato possibile creare la sessione di provenienza.",
   "loc.messages.Warning_UpdatingNuGetVersion": "Aggiornamento della versione di NuGet.exe a %s da %s. In seguito all'aggiornamento di NuGet a una nuova versione è possibile riscontrare modifiche al comportamento o modifiche di rilievo. Per evitare queste modifiche, deselezionare l'opzione 'Controlla disponibilità di versioni più recenti' nell'attività."
 }

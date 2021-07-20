@@ -1,14 +1,14 @@
 {
   "loc.friendlyName": "Chef",
-  "loc.helpMarkDown": "[이 작업에 대한 자세한 정보](https://aka.ms/chef-readme)",
-  "loc.description": "환경 특성을 편집하여 Chef 환경에 배포",
-  "loc.instanceNameFormat": "Chef 구독 $(ChefServer)의 환경 특성을 편집하여 chef에 배포",
-  "loc.input.label.connectedServiceName": "Chef 서비스 연결",
-  "loc.input.help.connectedServiceName": "Chef 구독 서비스 연결의 이름입니다.",
-  "loc.input.label.Environment": "환경",
-  "loc.input.help.Environment": "배포에 사용할 Chef 환경의 이름입니다. 해당 환경의 특성은 편집됩니다.",
-  "loc.input.label.Attributes": "환경 특성",
-  "loc.input.help.Attributes": "업데이트할 리프 노드 특성을 지정하세요. 예. { \"default_attributes.connectionString\" : \"$(connectionString)\", \"override_attributes.buildLocation\" : \"https://sample.blob.core.windows.net/build\" }. 리프 노드가 존재하지 않을 경우 작업이 실패합니다.",
-  "loc.input.label.chefWaitTime": "대기 시간",
-  "loc.input.help.chefWaitTime": "이 작업을 완료할 때까지 대기하는 시간(분)입니다. 기본값: 30분"
+  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/chef-readme)",
+  "loc.description": "Deploy to Chef environments by editing environment attributes",
+  "loc.instanceNameFormat": "Deploy to chef by editing environment attributes of Chef subscription $(ChefServer)",
+  "loc.input.label.connectedServiceName": "Chef Service Connection",
+  "loc.input.help.connectedServiceName": "Name of the Chef subscription service connection.",
+  "loc.input.label.Environment": "Environment",
+  "loc.input.help.Environment": "Name of the Chef Environment to be used for Deployment. The attributes of that environment will be edited.",
+  "loc.input.label.Attributes": "Environment Attributes",
+  "loc.input.help.Attributes": "Specify the value of the leaf node attribute(s) to be updated. Example. { \"default_attributes.connectionString\" : \"$(connectionString)\", \"override_attributes.buildLocation\" : \"https://sample.blob.core.windows.net/build\" }. Task fails if the leaf node does not exist.",
+  "loc.input.label.chefWaitTime": "Wait Time",
+  "loc.input.help.chefWaitTime": "The amount of time (in minutes) to wait for this task to complete. Default value: 30 minutes"
 }

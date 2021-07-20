@@ -1,18 +1,18 @@
 {
   "loc.friendlyName": "MySQL データベースの配置",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/mysql-deployment-on-machine-group)",
+  "loc.helpMarkDown": "[このタスクの詳細を表示](https://aka.ms/mysql-deployment-on-machine-group)",
   "loc.description": "スクリプトを実行して MySQL データベースに変更を加えます",
   "loc.instanceNameFormat": "次を使用して配置します。$(TaskNameSelector)",
   "loc.input.label.TaskNameSelector": "次を使用して MySql を配置する",
-  "loc.input.help.TaskNameSelector": "スクリプト ファイルとインライン スクリプトのいずれか 1 つのオプションを選択してください。",
+  "loc.input.help.TaskNameSelector": "スクリプト ファイルまたはインライン スクリプトのいずれかのオプションを選択します。",
   "loc.input.label.SqlFile": "MySQL スクリプト",
   "loc.input.help.SqlFile": "自動化エージェント上のスクリプト ファイルの完全なパス、または \\\\\\\\BudgetIT\\DeployBuilds\\script.sql などの自動化エージェントにアクセス可能な UNC パス。また、$(agent.releaseDirectory) などの定義済みのシステム変数をここで使用するとこもできます。SQL ステートメントを含むファイルは、ここで使用できます。",
   "loc.input.label.SqlInline": "インライン MySQL スクリプト",
-  "loc.input.help.SqlInline": "MySQL スクリプトを入力し、上で選択したデータベースで実行します。",
+  "loc.input.help.SqlInline": "上で選択したデータベースに対して実行する MySQL スクリプトを入力します。",
   "loc.input.label.ServerName": "ホスト名",
   "loc.input.help.ServerName": "'Database for MySQL' のサーバー名です。例: localhost。MySQL Workbench を使用して接続する場合、これは 'パラメーター' 内の 'ホスト名' に使用する値と同じです",
   "loc.input.label.DatabaseName": "データベース名　",
-  "loc.input.help.DatabaseName": "データベースが既に存在する場合は、下のスクリプトを実行する必要のあるデータベースの名前。それ以外の場合は、下のスクリプト自体を使用してデータベースを作成できます。",
+  "loc.input.help.DatabaseName": "以下のスクリプトを実行する必要のあるデータベースが既にある場合は、その名前。それ以外の場合は、スクリプト自体を使用してデータベースを作成できます。",
   "loc.input.label.SqlUsername": "MySQL のユーザー名",
   "loc.input.help.SqlUsername": "MySQL Workbench を使用して接続する場合、これは 'パラメーター' 内の 'ユーザー名' に使用する値と同じです",
   "loc.input.label.SqlPassword": "パスワード",
@@ -31,5 +31,6 @@
   "loc.messages.CallbackCannotBeNull": "コールバックを null にすることはできません。",
   "loc.messages.UnableToCreateDatabaseException": "データベースを作成できません。",
   "loc.messages.WindowMysqlClientMissingError": "MySQL クライアントが Windows エージェント マシンにありません。エージェント マシンで MySQL クライアント インストーラー 'https://aka.ms/window-mysqlcli-installer' スクリプト ファイルを実行して、そのクライアントをインストールしてください。",
-  "loc.messages.LinuxMysqlClientMissingError": "MySQL クライアントが Linux エージェント マシンにありません。'sudo apt-get install mysql-client' を実行して、そのクライアントをインストールしてください。"
+  "loc.messages.LinuxMysqlClientMissingError": "MySQL クライアントが Linux エージェント マシンにありません。'sudo apt-get install mysql-client' を実行して、そのクライアントをインストールしてください。",
+  "loc.messages.Nopackagefoundwithspecifiedpattern": "指定したパターンのパッケージが見つかりませんでした"
 }

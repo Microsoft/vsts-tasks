@@ -1,13 +1,13 @@
 {
-  "loc.friendlyName": "Installer für Node. js-Tools",
+  "loc.friendlyName": "Node.js tool installer",
   "loc.helpMarkDown": "[Learn more about this task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/node-js) or [see the Node documentation](https://nodejs.org/docs/latest/api/documentation.html)",
-  "loc.description": "Hiermit wird die angegebene Versionsspezifikation von Node.js ermittelt oder heruntergeladen, zwischengespeichert und zu PATH hinzugefügt.",
-  "loc.instanceNameFormat": "Node $(versionSpec) verwenden",
-  "loc.input.label.versionSpec": "Versionsangabe",
-  "loc.input.help.versionSpec": "Versionsangabe der abzurufenden Version. Beispiele: 6.x, 4.x, 6.10.0, >=6.10.0",
-  "loc.input.label.checkLatest": "Auf aktuelle Version überprüfen",
-  "loc.input.help.checkLatest": "Sucht online immer nach der letzten verfügbaren Version, die die Versionsangabe erfüllt. Dies ist in der Regel \"false\", sofern Sie nicht über ein spezifisches Szenario verfügen, bei dem Sie immer die aktuelle Version abrufen. Dadurch entstehen Downloadkosten, die unter Umständen nicht erforderlich sind, insbesondere beim gehosteten Buildpool.",
-  "loc.input.label.force32bit": "Verwenden der 32-Bit-Version auf x64-Agenten",
-  "loc.input.help.force32bit": "Installiert die x86-Version von Node unabhängig von der CPU-Architektur des Agenten.",
-  "loc.messages.ToolFailed": "Fehler bei der Toolinstallation: %s"
+  "loc.description": "Finds or downloads and caches the specified version spec of Node.js and adds it to the PATH",
+  "loc.instanceNameFormat": "Use Node $(versionSpec)",
+  "loc.input.label.versionSpec": "Version Spec",
+  "loc.input.help.versionSpec": "Version Spec of version to get.  Examples: 6.x, 4.x, 6.10.0, >=6.10.0",
+  "loc.input.label.checkLatest": "Check for Latest Version",
+  "loc.input.help.checkLatest": "Always checks online for the latest available version that satisfies the version spec. This is typically false unless you have a specific scenario to always get latest. This will cause it to incur download costs when potentially not necessary, especially with the hosted build pool.",
+  "loc.input.label.force32bit": "Use 32 bit version on x64 agents",
+  "loc.input.help.force32bit": "Installs the x86 version of Node regardless of the CPU architecture of the agent.",
+  "loc.messages.ToolFailed": "Tool install failed: %s"
 }

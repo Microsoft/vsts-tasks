@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "ファイルのコピー",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708389)",
+  "loc.helpMarkDown": "[このタスクの詳細を表示](https://go.microsoft.com/fwlink/?LinkID=708389)",
   "loc.description": "パターン マッチングのファイル パス (フォルダー パスではない) を使用して、ソース フォルダーからターゲット フォルダーにファイルをコピーします",
   "loc.instanceNameFormat": "ファイルのコピー先: $(TargetFolder)",
   "loc.releaseNotes": "パターンの整合性を一致させます。",
@@ -19,6 +19,10 @@
   "loc.input.help.flattenFolders": "フォルダー構造をフラットにして、すべてのファイルを指定のターゲット フォルダーにコピーします。",
   "loc.input.label.preserveTimestamp": "ターゲットのタイムスタンプの保持",
   "loc.input.help.preserveTimestamp": "元のソース ファイルを使用して、ターゲット ファイルのタイムスタンプを保持します。",
+  "loc.input.label.retryCount": "ファイル コピーの再試行回数",
+  "loc.input.help.retryCount": "ファイルをコピーする再試行回数を指定します。リモート ホスト上の UNC ターゲット パスなど、断続的な問題を解決するのに役立つ可能性があります。",
+  "loc.input.label.ignoreMakeDirErrors": "ターゲット フォルダーの作成中に発生したエラーを無視します。",
+  "loc.input.help.ignoreMakeDirErrors": "ターゲット フォルダーの作成中に発生するエラーを無視します。これは、1 つのターゲット フォルダーで複数のエージェントによるタスクの並列実行に関する問題を回避するために役立ちます。",
   "loc.messages.FoundNFiles": "%d 件のファイルが見つかりました",
   "loc.messages.CleaningTargetFolder": "ターゲット フォルダーをクリーンアップ中: %s",
   "loc.messages.FileAlreadyExistAt": "ファイル %s は %s に既に存在しています",

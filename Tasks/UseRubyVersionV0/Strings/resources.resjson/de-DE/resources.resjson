@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Ruby-Version verwenden",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=2005989) or [see the Ruby documentation](https://www.ruby-lang.org/)",
+  "loc.helpMarkDown": "[Weitere Informationen zu dieser Aufgabe](https://go.microsoft.com/fwlink/?linkid=2005989) oder [Ruby-Dokumentation anzeigen](https://www.ruby-lang.org/)",
   "loc.description": "Hiermit wird die angegebene Ruby-Version aus dem Toolcache abgerufen und optional zu PATH hinzugefügt.",
   "loc.instanceNameFormat": "Ruby $(versionSpec) verwenden",
   "loc.input.label.versionSpec": "Versionsangabe",
@@ -11,5 +11,6 @@
   "loc.messages.PlatformNotRecognized": "Plattform nicht erkannt.",
   "loc.messages.ToolNotFoundMicrosoftHosted": "Wenn es sich um einen von Microsoft gehosteten Agent handelt, überprüfen Sie unter %s, ob dieses Image parallele Versionen von %s unterstützt.",
   "loc.messages.ToolNotFoundSelfHosted": "Wenn es sich um einen selbstgehosteten Agent handelt, finden Sie unter %s Informationen zum Konfigurieren paralleler Versionen von %s.",
-  "loc.messages.VersionNotFound": "Die Versionsangabe %s für die Architektur \"%s\" entsprach keiner Version in \"Agent.ToolsDirectory\"."
+  "loc.messages.VersionNotFound": "Die Versionsangabe %s für die Architektur \"%s\" entsprach keiner Version in \"Agent.ToolsDirectory\".",
+  "loc.messages.ExactVersionNotRecommended": "Für von Microsoft gehostete Agents sollte keine genaue Version angegeben werden. Die Patchversionen von Ruby können auf gehosteten Agents ohne vorherige Ankündigung durch neue ersetzt werden, sodass bei Builds unerwartete Fehler auftreten. Es wird empfohlen, nur die Haupt- oder die Haupt- und die Nebenversion anzugeben (Beispiel: \"2\" oder \"2.4\")."
 }

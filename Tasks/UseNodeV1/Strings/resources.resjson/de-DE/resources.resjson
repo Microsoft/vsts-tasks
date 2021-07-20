@@ -7,7 +7,7 @@
   "loc.input.help.version": "Angabe der zu verwendenden Version. Beispiele: 10.x, 10.15.1, >=10.15.0",
   "loc.input.label.checkLatest": "Auf aktuelle Version überprüfen",
   "loc.input.help.checkLatest": "Sucht online immer nach der letzten verfügbaren Version, die die Versionsangabe erfüllt. Dies ist in der Regel \"false\", sofern Sie nicht über ein spezifisches Szenario verfügen, bei dem Sie immer die aktuelle Version abrufen. Dadurch entstehen Downloadkosten, die unter Umständen nicht erforderlich sind, insbesondere beim gehosteten Buildpool.",
-  "loc.input.label.force32bit": "Verwenden der 32-Bit-Version auf x64-Agenten",
-  "loc.input.help.force32bit": "Installiert die x86-Version von Node unabhängig von der CPU-Architektur des Agenten.",
+  "loc.input.label.force32bit": "32-Bit-Version für x64-Agents verwenden",
+  "loc.input.help.force32bit": "Installiert die x86-Version von Node unabhängig von der CPU-Architektur des Agents.",
   "loc.messages.ToolFailed": "Fehler bei der Knoteninstallation: %s"
 }

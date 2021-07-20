@@ -1,0 +1,14 @@
+{
+  "loc.friendlyName": "手動驗證",
+  "loc.helpMarkDown": "[深入了解此工作](https://aka.ms/manual-validation)",
+  "loc.description": "[預覽] 暫停管線執行以待手動互動。僅適用於 YAML 管線。",
+  "loc.instanceNameFormat": "手動驗證",
+  "loc.input.label.validators": "通知使用者",
+  "loc.input.help.validators": "將手動驗證暫止電子郵件傳送給特定使用者 (或群組)。只有具有佇列組建權限的使用者，才能對手動驗證採取行動。",
+  "loc.input.label.instructions": "指示",
+  "loc.input.help.instructions": "使用者會看到這些指示，以繼續或拒絕手動驗證。使用者將會根據這些指示，對此手動驗證做出經旁徵博引的決定。",
+  "loc.input.label.onTimeout": "逾時時",
+  "loc.input.label.onTimeoutReject": "拒絕",
+  "loc.input.label.onTimeoutResume": "繼續",
+  "loc.input.help.onTimeout": "當手動驗證暫止時間超過指定的逾時或 30 天時 (以先達到的時間為準)，自動拒絕或繼續此手動驗證。"
+}

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure PowerShell",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613749)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?LinkID=613749)",
   "loc.description": "Consente di eseguire uno script PowerShell in un ambiente Azure",
   "loc.instanceNameFormat": "Script Azure PowerShell: $(ScriptType)",
   "loc.releaseNotes": "Aggiunta del supporto per Interrompi in caso di STDERR e ErrorActionPreference",
@@ -23,7 +23,7 @@
   "loc.input.label.FailOnStandardError": "Interrompi in caso di errore standard",
   "loc.input.help.FailOnStandardError": "Se il valore è true, questa attività non riuscirà nel caso in cui vengano scritti errori nella pipeline degli errori oppure se vengono scritti dati nel flusso STDERR.",
   "loc.input.label.TargetAzurePs": "Versione di Azure PowerShell",
-  "loc.input.help.TargetAzurePs": "In caso di agenti ospitati le versioni supportate di Azure PowerShell sono: 2.1.0, 3.8.0, 4.2.1, 5.1.1 e 6.7.0(Hosted VS2017 Queue), 3.6.0(Hosted Queue).\nPer selezionare l'ultima versione disponibile per l'agente ospitato, selezionare \"Ultima versione installata\".\n\nPer gli agenti privati è possibile specificare la versione preferita di Azure PowerShell usando \"Specifica versione\"",
+  "loc.input.help.TargetAzurePs": "In caso di agenti ospitati le versioni supportate di Azure PowerShell sono: 2.1.0, 3.8.0, 4.2.1, 5.1.1 e 6.7.0(Hosted VS2017 Queue).\nPer selezionare l'ultima versione disponibile per l'agente ospitato, selezionare \"Ultima versione installata\".\n\nPer gli agenti privati è possibile specificare la versione preferita di Azure PowerShell usando \"Specifica versione\"",
   "loc.input.label.CustomTargetAzurePs": "Versione preferita di Azure PowerShell",
   "loc.input.help.CustomTargetAzurePs": "La versione preferita di Azure PowerShell deve essere una versione semantica valida, ad esempio 1.2.3. Espressioni regolari come 2.\\*,2.3.\\* non sono supportate. Il pool Hosted VS2017 supporta attualmente le versioni 2.1.0, 3.8.0, 4.2.1 e 5.1.1 del modulo di Azure e le versioni 2.1.0, 3.8.0, 4.2.1, 5.1.1, 6.7.0 del modulo AzureRM",
   "loc.messages.InvalidScriptArguments0": "Gli argomenti '{0}' dello script non sono validi. Le interruzioni di riga non sono consentite.",

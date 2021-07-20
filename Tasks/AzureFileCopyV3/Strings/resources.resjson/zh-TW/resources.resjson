@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure 檔案複製",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/azurefilecopyreadme)",
+  "loc.helpMarkDown": "[深入了解此工作](https://aka.ms/azurefilecopyreadme)",
   "loc.description": "將檔案複製到 Azure Blob 儲存體或虛擬機器",
   "loc.instanceNameFormat": "$(Destination) 檔案複製",
   "loc.releaseNotes": "3.0 版中的新功能: <br/>&nbsp;&nbsp; 支援 Az 模組並停止支援 Azure 傳統服務端點。",

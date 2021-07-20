@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Pipelineartefakt herunterladen",
-  "loc.helpMarkDown": "Laden Sie ein benanntes Artefakt aus einer Pipeline in einen lokalen Pfad herunter.",
-  "loc.description": "Hiermit wird ein Artefakt heruntergeladen, das einer Pipeline zugeordnet ist.",
-  "loc.instanceNameFormat": "Pipelineartefakt herunterladen",
-  "loc.input.label.pipelineId": "Die Pipeline, die als Downloadquelle verwendet werden soll",
-  "loc.input.help.pipelineId": "Die Pipeline, aus der der Download erfolgen soll. Sofern nicht angegeben, wird die aktuelle Pipeline verwendet.",
-  "loc.input.label.artifactName": "Der Name des Artefakts, das heruntergeladen werden soll.",
-  "loc.input.help.artifactName": "Der Name des Artefakts, das heruntergeladen werden soll. Es muss sich um ein Pipelineartefakt handeln.",
-  "loc.input.label.targetPath": "Pfad, der als Downloadziel verwendet werden soll",
-  "loc.input.help.targetPath": "Der Ordnerpfad, in den das Artefakt heruntergeladen werden soll. Es kann sich um einen vollqualifizierten Pfad oder um einen Pfad relativ zum Stamm des Repositorys handeln. Platzhalter werden nicht unterstützt, [Variablen](https://go.microsoft.com/fwlink/?LinkID=550988) werden unterstützt. Ist der Ordner nicht vorhanden, wird er erstellt."
+  "loc.friendlyName": "Download pipeline artifact",
+  "loc.helpMarkDown": "Download named artifact from a pipeline to a local path.",
+  "loc.description": "Downloads an artifact associated with a pipeline",
+  "loc.instanceNameFormat": "Download Pipeline Artifact",
+  "loc.input.label.pipelineId": "The specific pipeline to download from",
+  "loc.input.help.pipelineId": "The pipeline to download from. Target the current pipeline if left blank.",
+  "loc.input.label.artifactName": "The name of artifact to download.",
+  "loc.input.help.artifactName": "The name of artifact to download. The artifact must be a pipeline artifact.",
+  "loc.input.label.targetPath": "Path to download to",
+  "loc.input.help.targetPath": "The folder path to download the artifact to. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported. If the folder doesn't exist it will be created."
 }

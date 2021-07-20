@@ -12,6 +12,7 @@
   "loc.messages.Info_SavingTempConfig": "正在将 NuGet.config 保存到临时配置文件。",
   "loc.messages.Info_UsingToolPath": "使用工具路径: %s",
   "loc.messages.Info_UsingVersion": "使用的版本: %s",
+  "loc.messages.Info_BasicCredRestriction": "此任务现在将 NuGet 配置为仅使用基本方案发送这些\n凭据。此更改不会影响大多数用户。如果这些是 Windows 域\n凭据并且最近已失效，请尝试将生成\n变量 %s 设置为值“%s”(不含引号)。",
   "loc.messages.NGCommon_AddingSources": "设置 NuGet.config 中的凭据",
   "loc.messages.NGCommon_AreaNotFoundInSps": "无法定位“%s”[%s] 区域。你所在的地区可能无法使用包含该区域的服务。",
   "loc.messages.NGCommon_DetectedNuGetExtensionsPath": "已检测到 NuGet 扩展加载程序路径(NUGET_EXTENSIONS_PATH 环境变量): %s",
@@ -24,6 +25,6 @@
   "loc.messages.NGCommon_SpsNotFound": "无法找到“%s”[%s] 区域。Team Foundation Server 安装可能存在问题。",
   "loc.messages.NGCommon_UnabletoDetectNuGetVersion": "选择了未知的 NuGet 版本。",
   "loc.messages.NGCommon_UnableToFindTool": "无法找到工具 %s",
-  "loc.messages.Warning_SessionCreationFailed": "无法创建出处会话: %s",
+  "loc.messages.Warning_SessionCreationFailed": "无法创建出处会话。",
   "loc.messages.Warning_UpdatingNuGetVersion": "正在将 NuGet.exe 版本更新到 %s (从 %s)。NuGet 更新到新版本时可能出现行为更改或重大更改。如果不希望发生这种情况，请在任务中取消选中“检查最新版本”选项。"
 }

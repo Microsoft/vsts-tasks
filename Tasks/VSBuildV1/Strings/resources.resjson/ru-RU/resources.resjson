@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Сборка Visual Studio",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613727)",
+  "loc.helpMarkDown": "[См. дополнительные сведения об этой задаче](https://go.microsoft.com/fwlink/?LinkID=613727)",
   "loc.description": "Сборка с помощью MSBuild и задание свойства версии Visual Studio",
   "loc.instanceNameFormat": "Сборка решения $(solution)",
   "loc.group.displayName.advanced": "Дополнительно",
@@ -28,6 +28,8 @@
   "loc.input.help.createLogFile": "При необходимости создайте файл журнала (только в Windows).",
   "loc.input.label.logFileVerbosity": "Детализация файла журнала",
   "loc.input.help.logFileVerbosity": "Необязательный параметр детализации файла журнала.",
+  "loc.input.label.enableDefaultLogger": "Включить средство ведения журнала по умолчанию",
+  "loc.input.help.enableDefaultLogger": "Если значение true, средство ведения журнала по умолчанию включается для MSBuild",
   "loc.messages.MSBuildLocationDeprecated0": "Параметр расположения MSBuild устарел. Выполняется пропуск значения \"{0}\"",
   "loc.messages.MSBuildVersionDeprecated0": "Параметр версии MSBuild устарел. Выполняется пропуск значения \"{0}\".",
   "loc.messages.UnexpectedVSVersion0": "Непредвиденная версия Visual Studio \"{0}\".",

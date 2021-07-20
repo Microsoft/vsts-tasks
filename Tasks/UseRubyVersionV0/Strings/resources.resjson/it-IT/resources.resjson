@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Usa versione di Ruby",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=2005989) or [see the Ruby documentation](https://www.ruby-lang.org/)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?linkid=2005989). In alternativa [vedere la documentazione di Ruby](https://www.ruby-lang.org/)",
   "loc.description": "Consente di usare la versione specificata di Ruby dalla cache dello strumento e facoltativamente di aggiungerla a PATH",
   "loc.instanceNameFormat": "Usa Ruby $(versionSpec)",
   "loc.input.label.versionSpec": "Identificatore di versione",
@@ -11,5 +11,6 @@
   "loc.messages.PlatformNotRecognized": "Piattaforma non riconosciuta",
   "loc.messages.ToolNotFoundMicrosoftHosted": "Se si tratta di un agente ospitato da Microsoft, verificare che l'immagine supporti le versioni side-by-side di %s in %s.",
   "loc.messages.ToolNotFoundSelfHosted": "Se si tratta di un agente self-hosted, vedere come configurare le versioni side-by-side di %s in %s.",
-  "loc.messages.VersionNotFound": "L'identificatore di versione %s per l'architettura %s non corrisponde ad alcuna versione in Agent.ToolsDirectory."
+  "loc.messages.VersionNotFound": "L'identificatore di versione %s per l'architettura %s non corrisponde ad alcuna versione in Agent.ToolsDirectory.",
+  "loc.messages.ExactVersionNotRecommended": "È consigliabile non specificare la versione esatta negli agenti ospitati da Microsoft. Le versioni patch di Ruby possono essere sostituite senza preavviso da nuovi agenti ospitati e questo causerà un errore imprevisto delle compilazioni. È opportuno specificare solo la versione principale oppure le versioni principale e secondaria, ad esempio `2` o `2.4`"
 }

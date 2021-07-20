@@ -34,7 +34,7 @@
   "loc.input.label.releaseNotesFile": "发行说明文件",
   "loc.input.help.releaseNotesFile": "选择包含此版本的发行说明的 UTF-8 编码文本文件。",
   "loc.input.label.isMandatory": "要求用户更新到此版本",
-  "loc.input.help.isMandatory": "需要 App Center 分发 SDK 才能强制更新。系统会自动提示测试者进行更新。",
+  "loc.input.help.isMandatory": "需要 App Center 分发 SDK 才能命令进行更新。系统会自动提示测试者进行更新。",
   "loc.input.label.destinationType": "发布目标",
   "loc.input.help.destinationType": "每个发布都将分发到组或存储区。",
   "loc.input.label.destinationGroupIds": "目标 ID",

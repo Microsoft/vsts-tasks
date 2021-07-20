@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Buildartefakte veröffentlichen",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708390)",
+  "loc.helpMarkDown": "[Weitere Informationen zu dieser Aufgabe](https://go.microsoft.com/fwlink/?LinkID=708390)",
   "loc.description": "Hiermit werden Buildartefakte in Azure Pipelines oder einer Dateifreigabe veröffentlicht.",
   "loc.instanceNameFormat": "Artefakt veröffentlichen: $(ArtifactName)",
   "loc.group.displayName.advanced": "Erweitert",
@@ -16,10 +16,13 @@
   "loc.input.help.Parallel": "Wählen Sie aus, ob Dateien mithilfe mehrerer Threads parallel kopiert werden sollen, um einen höheren Durchsatz zu erzielen. Wenn diese Einstellung nicht aktiviert ist, wird nur ein Thread verwendet.",
   "loc.input.label.ParallelCount": "Parallele Anzahl",
   "loc.input.help.ParallelCount": "Geben Sie den Parallelitätsgrad oder die Anzahl von Threads zum Durchführen des Kopiervorgangs ein. Der Wert muss mindestens 1 lauten und darf nicht größer sein als 128.",
-  "loc.input.label.FileCopyOptions": "File copy options",
-  "loc.input.help.FileCopyOptions": "Pass additional options to the Robocopy command.",
+  "loc.input.label.FileCopyOptions": "Optionen für das Kopieren von Dateien",
+  "loc.input.help.FileCopyOptions": "Übergeben Sie zusätzliche Optionen an den Robocopy-Befehl.",
+  "loc.input.label.StoreAsTar": "Artefakt vor dem Hochladen mit Tar packen",
+  "loc.input.help.StoreAsTar": "Fügen Sie vor dem Hochladen alle Dateien aus dem Veröffentlichungspfad zu einem Tar-Archiv hinzu. Dadurch können Sie die Berechtigungen für die UNIX-Datei beibehalten. Verwenden Sie die Option \"extractTars\" der Aufgabe \"DownloadBuildArtifacts\", um die heruntergeladenen Elemente automatisch zu extrahieren.",
   "loc.messages.ErrorFileShareLinux": "Das Veröffentlichen von Artefakten von einem Linux- oder macOS-Agent in einer Dateifreigabe wird nicht unterstützt. Ändern Sie den Artefakttyp in \"Azure Pipelines\", oder verwenden Sie einen Windows-Agent.",
   "loc.messages.ErrorHostTypeNotSupported": "Diese Aufgabe muss in einem Build ausgeführt werden, um Artefakte in Azure Pipelines zu veröffentlichen.",
   "loc.messages.PublishBuildArtifactsFailed": "Fehler beim Veröffentlichen von Buildartefakten: %s",
-  "loc.messages.UnexpectedParallelCount": "Nicht unterstützte parallele Anzahl \"%s\". Geben Sie eine Zahl zwischen 1 und 128 ein."
+  "loc.messages.UnexpectedParallelCount": "Nicht unterstützte parallele Anzahl \"%s\". Geben Sie eine Zahl zwischen 1 und 128 ein.",
+  "loc.messages.TarExtractionNotSupportedInWindows": "Die Tar-Extraktion wird unter Windows nicht unterstützt"
 }

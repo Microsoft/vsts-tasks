@@ -1,13 +1,13 @@
 {
-  "loc.messages.Updatemachinetoenablesecuretlsprotocol": "请确保计算机使用的是 TLS 1.2 协议或更高版本。请访问 https://aka.ms/enableTlsv2 获取有关如何在计算机中启用 TLS 的详细信息。",
-  "loc.messages.JarPathNotPresent": "Java jar 路径不存在",
-  "loc.messages.JSONvariablesubstitutionappliedsuccessfully": "JSON 变量替换已成功应用。",
-  "loc.messages.XMLvariablesubstitutionappliedsuccessfully": "已成功应用 XML 变量替换。",
-  "loc.messages.XDTTransformationsappliedsuccessfully": "XML 转换已成功应用",
-  "loc.messages.CannotPerformXdtTransformationOnNonWindowsPlatform": "无法在非 Windows 平台上执行 XML 转换。",
-  "loc.messages.XdtTransformationErrorWhileTransforming": "转换 %s (通过使用 %s)时出现 XML 转换错误。",
-  "loc.messages.JSONParseError": "无法分析 JSON 文件: %s。错误: %s",
-  "loc.messages.NOJSONfilematchedwithspecificpattern": "没有与特定模式 %s 匹配的 JSON 文件。",
-  "loc.messages.FailedToApplyTransformation": "无法对给定的包应用转换。请验证以下各项。",
-  "loc.messages.MissingArgumentsforXMLTransformation": "参数不完整或缺失。格式应为 -transform <transform file> -xml <source file> -result <destinamtion file>。转换文件和源文件为必需的输入。"
+  "loc.messages.Updatemachinetoenablesecuretlsprotocol": "Make sure the machine is using TLS 1.2 protocol or higher. Check https://aka.ms/enableTlsv2 for more information on how to enable TLS in your machine.",
+  "loc.messages.JarPathNotPresent": "Java jar path is not present",
+  "loc.messages.JSONvariablesubstitutionappliedsuccessfully": "JSON variable substitution applied successfully.",
+  "loc.messages.XMLvariablesubstitutionappliedsuccessfully": "XML variable substitution applied successfully.",
+  "loc.messages.XDTTransformationsappliedsuccessfully": "XML Transformations applied successfully",
+  "loc.messages.CannotPerformXdtTransformationOnNonWindowsPlatform": "Cannot perform XML transformations on a non-Windows platform.",
+  "loc.messages.XdtTransformationErrorWhileTransforming": "XML transformation error while transforming %s using %s.",
+  "loc.messages.JSONParseError": "Unable to parse JSON file: %s. Error: %s",
+  "loc.messages.NOJSONfilematchedwithspecificpattern": "NO JSON file matched with specific pattern: %s.",
+  "loc.messages.FailedToApplyTransformation": "Unable to apply transformation for the given package. Verify the following.",
+  "loc.messages.MissingArgumentsforXMLTransformation": "Incomplete or missing arguments. Expected format -transform <transform file> -xml <source file> -result <destinamtion file>. Transformation and source file are mandatory inputs."
 }

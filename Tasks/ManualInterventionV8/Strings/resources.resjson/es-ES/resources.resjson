@@ -1,12 +1,12 @@
 {
-  "loc.friendlyName": "Intervención manual",
-  "loc.helpMarkDown": "[Más información](https://go.microsoft.com/fwlink/?linkid=870234)",
-  "loc.description": "Pause la implementación y espere la intervención manual.",
-  "loc.instanceNameFormat": "Intervención manual",
-  "loc.input.label.instructions": "Instrucciones",
-  "loc.input.help.instructions": "Estas instrucciones se mostrarán al usuario para reanudar o rechazar la intervención manual. En función de ellas, el usuario tomará una decisión informada sobre esta intervención manual.",
-  "loc.input.label.emailRecipients": "Notificar a los usuarios",
-  "loc.input.help.emailRecipients": "Envíe un correo electrónico de intervención manual pendiente a usuarios (o grupos) específicos. Solo los usuarios con permiso para administrar implementación pueden realizar una intervención manual.",
-  "loc.input.label.onTimeout": "Al agotarse el tiempo de espera",
-  "loc.input.help.onTimeout": "Rechaza o reanuda automáticamente esta intervención manual después de estar pendiente durante el tiempo de espera especificado o 60 días, el que ocurra antes."
+  "loc.friendlyName": "Manual intervention",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870234)",
+  "loc.description": "Pause deployment and wait for manual intervention",
+  "loc.instanceNameFormat": "Manual Intervention",
+  "loc.input.label.instructions": "Instructions",
+  "loc.input.help.instructions": "These instructions will be shown to the user for resuming or rejecting the manual intervention. Based on these instructions the user will take an informed decision about this manual intervention.",
+  "loc.input.label.emailRecipients": "Notify users",
+  "loc.input.help.emailRecipients": "Send a manual intervention pending email to specific users (or groups). Only users with manage deployment permission can act on a manual intervention.",
+  "loc.input.label.onTimeout": "On timeout",
+  "loc.input.help.onTimeout": "Reject or resume this manual intervention automatically after it is pending for the specified timeout or 60 days, whichever is earlier."
 }

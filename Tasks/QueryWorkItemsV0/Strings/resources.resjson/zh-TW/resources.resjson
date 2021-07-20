@@ -1,13 +1,13 @@
 {
-  "loc.friendlyName": "查詢工作項目",
-  "loc.helpMarkDown": "[詳細資訊](https://go.microsoft.com/fwlink/?linkid=870238)",
-  "loc.description": "執行工作項目查詢，並檢查傳回的項目數",
-  "loc.instanceNameFormat": "查詢工作項目",
-  "loc.group.displayName.advanced": "進階",
-  "loc.input.label.queryId": "查詢",
-  "loc.input.help.queryId": "選取要執行的已儲存工作項目查詢。",
-  "loc.input.label.maxThreshold": "閾值上限",
-  "loc.input.help.maxThreshold": "來自查詢的相符工作項目最大數目。",
-  "loc.input.label.minThreshold": "閾值下限",
-  "loc.input.help.minThreshold": "來自查詢的相符工作項目最小數目。"
+  "loc.friendlyName": "Query work items",
+  "loc.helpMarkDown": "[More Information](https://go.microsoft.com/fwlink/?linkid=870238)",
+  "loc.description": "Execute a work item query and check the number of items returned",
+  "loc.instanceNameFormat": "Query Work Items",
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.queryId": "Query",
+  "loc.input.help.queryId": "Select a saved work item query to execute.",
+  "loc.input.label.maxThreshold": "Upper threshold",
+  "loc.input.help.maxThreshold": "The maximum number of matching workitems from the query.",
+  "loc.input.label.minThreshold": "Lower threshold",
+  "loc.input.help.minThreshold": "The minimum number of matching workitems from the query."
 }

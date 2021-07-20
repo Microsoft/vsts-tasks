@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Публикация артефактов сборки",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708390)",
+  "loc.helpMarkDown": "[См. дополнительные сведения об этой задаче](https://go.microsoft.com/fwlink/?LinkID=708390)",
   "loc.description": "Публикация артефактов сборки в Azure Pipelines или общей папке",
   "loc.instanceNameFormat": "Опубликовать артефакт: $(ArtifactName)",
   "loc.group.displayName.advanced": "Дополнительно",
@@ -16,10 +16,13 @@
   "loc.input.help.Parallel": "Выберите, следует ли копировать файлы параллельно с использованием нескольких потоков для возможного повышения пропускной способности. Если этот параметр не установлен, используется один поток.",
   "loc.input.label.ParallelCount": "Счетчик параллелизма",
   "loc.input.help.ParallelCount": "Введите степень параллелизма (число потоков, используемых для копирования). Допустимые значения: от 1 до 128 включительно.",
-  "loc.input.label.FileCopyOptions": "File copy options",
-  "loc.input.help.FileCopyOptions": "Pass additional options to the Robocopy command.",
+  "loc.input.label.FileCopyOptions": "Параметры копирования файлов",
+  "loc.input.help.FileCopyOptions": "Передайте дополнительные параметры команде Robocopy.",
+  "loc.input.label.StoreAsTar": "Поместите артефакт в TAR-архив перед отправкой",
+  "loc.input.help.StoreAsTar": "Добавьте все файлы из пути публикации в TAR-архив перед отправкой. Это позволяет сохранить разрешения для UNIX-файлов. Используйте параметр \"extractTars\" задачи DownloadBuildArtifacts, чтобы извлечь загруженные элементы автоматически.",
   "loc.messages.ErrorFileShareLinux": "Публикация артефактов из агента Linux или macOS в общей папке не поддерживается. Измените тип артефакта на \"Azure Pipelines\" или используйте агент Windows.",
   "loc.messages.ErrorHostTypeNotSupported": "Эта задача должна выполняться в сборке для публикации артефактов в Azure Pipelines.",
   "loc.messages.PublishBuildArtifactsFailed": "Сбой публикации артефактов сборки с ошибкой: %s",
-  "loc.messages.UnexpectedParallelCount": "Неподдерживаемое значение счетчика параллелизма \"%s\". Введите число от 1 до 128."
+  "loc.messages.UnexpectedParallelCount": "Неподдерживаемое значение счетчика параллелизма \"%s\". Введите число от 1 до 128.",
+  "loc.messages.TarExtractionNotSupportedInWindows": "Извлечение из TAR-архива не поддерживается в Windows"
 }

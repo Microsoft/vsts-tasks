@@ -11,5 +11,6 @@
   "loc.messages.PlatformNotRecognized": "플랫폼을 인식할 수 없습니다.",
   "loc.messages.ToolNotFoundMicrosoftHosted": "Microsoft 호스팅 에이전트인 경우 이 이미지가 병렬 %s 버전을 %s에서 지원하는지 확인하세요.",
   "loc.messages.ToolNotFoundSelfHosted": "자체 호스팅 에이전트인 경우 병렬 %s 버전을 %s에서 구성하는 방법을 참조하세요.",
-  "loc.messages.VersionNotFound": "버전 사양 %s(%s 아키텍처)과(와) 일치하는 버전이 Agent.ToolsDirectory에 없습니다."
+  "loc.messages.VersionNotFound": "버전 사양 %s(%s 아키텍처)과(와) 일치하는 버전이 Agent.ToolsDirectory에 없습니다.",
+  "loc.messages.ExactVersionNotRecommended": "Microsoft 호스팅 에이전트에서는 정확한 버전을 지정하지 않는 것이 좋습니다. Ruby의 패치 버전은 알림 없이 호스트된 에이전트의 새 버전으로 대체될 수 있으며 이로 인해 빌드가 예기치 않게 실패합니다. 주 버전만 또는 주 버전과 부 버전만 지정하는 것이 좋습니다(예: '2' 또는 '2.4')."
 }

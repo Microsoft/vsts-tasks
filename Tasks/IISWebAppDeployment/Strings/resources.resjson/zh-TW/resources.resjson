@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "[已淘汰] IIS Web 應用程式部署",
-  "loc.helpMarkDown": "[Learn more about this task](https://aka.ms/iiswebappdeploydeprecatedreadme)",
+  "loc.helpMarkDown": "[深入了解此工作](https://aka.ms/iiswebappdeploydeprecatedreadme)",
   "loc.description": "使用 MSDeploy 進行部署，再建立/更新網站和應用程式集區",
   "loc.instanceNameFormat": "[已取代] 部署 IIS 應用程式: $(WebDeployPackage)",
   "loc.group.displayName.deployment": "部署",

@@ -1,16 +1,16 @@
 {
   "loc.friendlyName": "CocoaPods",
   "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613745)",
-  "loc.description": "安裝 Swift 和 Objective-C Cocoa 專案的 CocoaPods 相依性",
-  "loc.instanceNameFormat": "pod 安裝",
-  "loc.group.displayName.advanced": "進階",
-  "loc.input.label.cwd": "工作目錄",
-  "loc.input.help.cwd": "請指定要在其中執行此工作的工作目錄。若為空白，則會使用存放庫目錄。",
-  "loc.input.label.forceRepoUpdate": "強制執行 repo update",
-  "loc.input.help.forceRepoUpdate": "選取此選項會在安裝前強制執行 'pod repo update'。",
-  "loc.input.label.projectDirectory": "專案目錄",
-  "loc.input.help.projectDirectory": "您可以視情況選擇指定專案目錄的根目錄路徑。如果保留空白，就會使用 Podfile 中指定的專案。如果未指定任何專案，則會搜尋 Xcode 專案。如果找到多個 Xcode 專案，將會發生錯誤。",
-  "loc.messages.PodReturnCode": "'pod' 命令結束，傳回碼為: %d",
-  "loc.messages.PodFailed": "'pod' 命令失敗，發生錯誤: %s",
-  "loc.messages.CocoaPodsNotFound": "找不到 'pod' 命令。請在代理程式電腦上安裝 CocoaPods (https://cocoapods.org/)。"
+  "loc.description": "Install CocoaPods dependencies for Swift and Objective-C Cocoa projects",
+  "loc.instanceNameFormat": "pod install",
+  "loc.group.displayName.advanced": "Advanced",
+  "loc.input.label.cwd": "Working directory",
+  "loc.input.help.cwd": "Specify the working directory in which to execute this task. If left empty, the repository directory will be used.",
+  "loc.input.label.forceRepoUpdate": "Force repo update",
+  "loc.input.help.forceRepoUpdate": "Selecting this option will force running 'pod repo update' before install.",
+  "loc.input.label.projectDirectory": "Project directory",
+  "loc.input.help.projectDirectory": "Optionally specify the path to the root of the project directory. If left empty, the project specified in the Podfile will be used. If no project is specified, then a search for an Xcode project will be made. If more than one Xcode project is found, an error will occur.",
+  "loc.messages.PodReturnCode": "The 'pod' command exited with return code: %d",
+  "loc.messages.PodFailed": "The 'pod' command failed with error: %s",
+  "loc.messages.CocoaPodsNotFound": "The 'pod' command was not found. Please install CocoaPods on the agent machine (https://cocoapods.org/)."
 }

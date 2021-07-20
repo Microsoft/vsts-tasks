@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Copiar archivos",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=708389)",
+  "loc.helpMarkDown": "[Obtener más información acerca de esta tarea](https://go.microsoft.com/fwlink/?LinkID=708389)",
   "loc.description": "Copia archivos de una carpeta de origen a una carpeta de destino mediante patrones que coinciden con las rutas de acceso de los archivos (no con las rutas de carpeta).",
   "loc.instanceNameFormat": "Copiar archivos a: $(TargetFolder)",
   "loc.releaseNotes": "Coherencia de los patrones de coincidencia.",
@@ -19,6 +19,10 @@
   "loc.input.help.flattenFolders": "Acople la estructura de carpeta y copie todos los archivos en la carpeta de destino especificada.",
   "loc.input.label.preserveTimestamp": "Conservar la marca de tiempo de destino",
   "loc.input.help.preserveTimestamp": "Al usar el archivo de código fuente original, conserve la marca de tiempo del archivo de destino.",
+  "loc.input.label.retryCount": "Número de reintentos para copiar el archivo",
+  "loc.input.help.retryCount": "Especifique el número de reintentos para copiar el archivo. Puede que ayude a resolver problemas intermitentes, por ejemplo, con rutas de acceso de destino UNC en un host remoto.",
+  "loc.input.label.ignoreMakeDirErrors": "Omitir errores durante la creación de la carpeta de destino.",
+  "loc.input.help.ignoreMakeDirErrors": "Omite los errores que se producen durante la creación de la carpeta de destino. Esto puede ser útil para evitar problemas con la ejecución simultánea de tareas por parte de diversos agentes con una carpeta de destino.",
   "loc.messages.FoundNFiles": "se encontraron %d archivos",
   "loc.messages.CleaningTargetFolder": "Limpiando carpeta de destino: %s",
   "loc.messages.FileAlreadyExistAt": "El archivo %s ya existe en %s",

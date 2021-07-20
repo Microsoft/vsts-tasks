@@ -1,5 +1,5 @@
 {
-  "loc.friendlyName": "发布管道元数据",
-  "loc.description": "将管道元数据发布到证据存储区",
-  "loc.instanceNameFormat": "正在将管道 $(System.DefinitionName) 的元数据发布到证据存储区"
+  "loc.friendlyName": "Publish Pipeline Metadata",
+  "loc.description": "Publish Pipeline Metadata to Evidence store",
+  "loc.instanceNameFormat": "Publishing Metadata for pipeline $(System.DefinitionName) to Evidence store"
 }

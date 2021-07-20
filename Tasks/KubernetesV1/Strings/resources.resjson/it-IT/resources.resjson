@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Kubectl",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?linkid=851275) or [see the Kubernetes documentation](https://kubernetes.io/docs/home/)",
+  "loc.helpMarkDown": "[Altre informazioni su questa attività](https://go.microsoft.com/fwlink/?linkid=851275). In alternativa, [vedere la documentazione di Kubernetes](https://kubernetes.io/docs/home/)",
   "loc.description": "Consente di distribuire, configurare e aggiornare un cluster Kubernetes nel servizio contenitore di Azure eseguendo i comandi kubectl",
   "loc.instanceNameFormat": "kubectl $(command)",
   "loc.releaseNotes": "Novità della versione 1.0:<br/>&nbsp;Aggiunta del nuovo tipo di connessione al servizio per semplificare la selezione del cluster del servizio Azure Kubernetes.<br/>&nbsp;Sostituzione dell'input delle variabili di output con la sezione delle variabili di output aggiunte in tutte le attività.",
@@ -72,7 +72,7 @@
   "loc.input.help.specifyLocation": "Percorso completo del file kubectl.exe",
   "loc.input.label.cwd": "Directory di lavoro",
   "loc.input.help.cwd": "Directory di lavoro per il comando di kubectl.",
-  "loc.input.label.outputFormat": "Formato output",
+  "loc.input.label.outputFormat": "Formato di output",
   "loc.input.help.outputFormat": "Formato dell'output.",
   "loc.messages.CantDownloadAccessProfile": "Non è possibile scaricare il profilo di accesso o il file di configurazione kube per il cluster %s. Motivo: %s.",
   "loc.messages.DownloadingClient": "Download del client Kubernetes.",
@@ -101,8 +101,8 @@
   "loc.messages.ToolRunnerExecCallSucceeded": "Il metodo Toolrunner exec() è stato completato correttamente per il comando kubectl.",
   "loc.messages.WritingDockerConfigToTempFile": "Scrittura della configurazione di Docker nel file temporaneo. Percorso del file: %s. Configurazione di Docker: %s",
   "loc.messages.ExpiredServicePrincipal": "Non è stato possibile recuperare il token di accesso per Azure. Verificare che l'entità servizio usata sia valida e non sia scaduta.",
-  "loc.messages.UnableToFetchKubectlVersion": "Could not fetch Kubectl version. Please make sure that the Kubernetes server is up and running.",
-  "loc.messages.KubectlClientVersion": "Kubectl Client Version",
-  "loc.messages.KubectlServerVersion": "Kubectl Server Version",
-  "loc.messages.KubectlServerVerisonNotFound": "Could not find kubectl server version"
+  "loc.messages.UnableToFetchKubectlVersion": "Non è stato possibile recuperare la versione di kubectl. Assicurarsi che il server Kubernetes sia operativo.",
+  "loc.messages.KubectlClientVersion": "Versione del client kubectl",
+  "loc.messages.KubectlServerVersion": "Versione del server kubectl",
+  "loc.messages.KubectlServerVerisonNotFound": "Non è stato possibile trovare la versione del server kubectl"
 }

@@ -1,6 +1,6 @@
 {
   "loc.friendlyName": "Azure PowerShell",
-  "loc.helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613749)",
+  "loc.helpMarkDown": "[深入了解此工作](https://go.microsoft.com/fwlink/?LinkID=613749)",
   "loc.description": "在 Azure 環境中執行 PowerShell 指令碼",
   "loc.instanceNameFormat": "Azure PowerShell 指令碼: $(ScriptType)",
   "loc.releaseNotes": "新增了 [發生標準錯誤時失敗] 和 ErrorActionPreference 的支援",
@@ -23,7 +23,7 @@
   "loc.input.label.FailOnStandardError": "發生標準錯誤的失敗",
   "loc.input.help.FailOnStandardError": "若此項為 true，如果在錯誤管線中寫入任何錯誤，或在標準錯誤資料流中寫入任何資料，此工作就會失敗。",
   "loc.input.label.TargetAzurePs": "Azure PowerShell 版本",
-  "loc.input.help.TargetAzurePs": "若為裝載的代理程式，支援的 Azure PowerShell 版本會是: 2.1.0、3.8.0、4.2.1、5.1.1 及 6.7.0 (裝載的 VS2017 佇列)、3.6.0 (裝載的佇列)。\n若要挑選代理程式上可用的最新版本，請選取 [最新的安裝版本]。\n\n若為私人代理程式，您可以使用 [指定版本] 指定慣用的 Azure PowerShell 版本",
+  "loc.input.help.TargetAzurePs": "若為裝載的代理程式，則支援的 Azure PowerShell 版本為: 2.1.0、3.8.0、4.2.1、5.1.1 和 6.7.0 (裝載的 VS2017 佇列)。\n若要挑選代理程式上可用的最新版本，請選取 [安裝的最新版本]。\n\n若為私人代理程式，您可以使用 [指定版本] 指定慣用的 Azure PowerShell 版本",
   "loc.input.label.CustomTargetAzurePs": "慣用的 Azure PowerShell 版本",
   "loc.input.help.CustomTargetAzurePs": "慣用的 Azure PowerShell 版本必須是適當的語意版本，例如 1.2.3。不支援 2.\\*、2.3.\\* 這樣的 Regex。裝載的 VS2017 集區目前支援 Azure 模組版本: 2.1.0、3.8.0、4.2.1、5.1.1 及 AzureRM 模組版本: 2.1.0、3.8.0、4.2.1、5.1.1、6.7.0",
   "loc.messages.InvalidScriptArguments0": "指令碼引數 '{0}' 無效。不允許分行符號。",

@@ -36,6 +36,7 @@
   "loc.messages.Disconnected": "연결 끊김",
   "loc.messages.DisconnectHost": "%s에서 연결을 끊는 중입니다.",
   "loc.messages.FTPConnected": "%s이(가) 연결되었습니다.",
+  "loc.messages.InvalidFTPOptions": "FTP 옵션을 읽는 동안 오류가 발생했습니다. %s",
   "loc.messages.FTPNoHostSpecified": "FTP 서버 URL은 호스트 이름을 포함해야 합니다.",
   "loc.messages.FTPNoProtocolSpecified": "FTP 서버 URL은 ftp:// 또는 ftps://로 시작해야 합니다.",
   "loc.messages.NoFilesFound": "언로드할 파일을 찾을 수 없습니다.",
