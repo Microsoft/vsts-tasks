@@ -17,7 +17,7 @@ In case you are using http request executions in your task, then you should prov
 
 #### Understand the model difference between gate and server task:
 
-Server task can be used to do 2 kinds of activities:
+Server tasks can be used to do 2 kinds of activities:
 
 - Create a new resource on an external system.
 - Query an external system.

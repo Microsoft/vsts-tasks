@@ -25,10 +25,10 @@ export class DeploymentFactory {
                 return new PublishProfileWebAppDeploymentProvider(this._taskParams);
             case Constant.ConnectionType.AzureRM:
                 if(this._taskParams.isLinuxApp) {
-                    tl.debug("Depolyment started for linux app service");
+                    tl.debug("Deployment started for linux app service");
                     return await this._getLinuxDeploymentProvider();
                 } else {
-                    tl.debug("Depolyment started for windows app service");
+                    tl.debug("Deployment started for windows app service");
                     return await this._getWindowsDeploymentProvider()
                 }
             default:

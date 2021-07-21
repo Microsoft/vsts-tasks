@@ -18,14 +18,14 @@ export class DeploymentFactory {
 
     public async GetDeploymentProvider(): Promise<IWebAppDeploymentProvider> {
         if(this._taskParams.isLinuxApp) {
-            tl.debug("Depolyment started for linux app service");
+            tl.debug("Deployment started for linux app service");
             if(this._taskParams.isConsumption) {
                 return new ConsumptionWebAppDeploymentProvider(this._taskParams);
             } else {
                 return new BuiltInLinuxWebAppDeploymentProvider(this._taskParams);
             }        
         } else {
-            tl.debug("Depolyment started for windows app service");
+            tl.debug("Deployment started for windows app service");
             return await this._getWindowsDeploymentProvider()
         }
     }

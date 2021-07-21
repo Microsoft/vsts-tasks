@@ -145,7 +145,7 @@
             }
         },
         {
-            "target": "rlotName",
+            "target": "slotName",
             "endpointId": "$(azureSubscription)",
             "dataSourceName": "AzureRMWebAppSlotsId",
             "parameters": {
