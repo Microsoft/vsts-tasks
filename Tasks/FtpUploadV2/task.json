@@ -18,8 +18,8 @@
     "demands": [],
     "version": {
         "Major": 2,
-        "Minor": 186,
-        "Patch": 1
+        "Minor": 187,
+        "Patch": 0
     },
     "minimumAgentVersion": "2.182.1",
     "instanceNameFormat": "FTP Upload: $(rootFolder)",
