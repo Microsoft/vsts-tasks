@@ -18,6 +18,6 @@
   "homepage": "https://github.com/Microsoft/azure-pipelines-tasks#readme",
   "dependencies": {
     "globule": "^1.0.0",
-    "vsts-task-lib": "0.7.4"
+    "azure-pipelines-task-lib": "^2.9.3"
   }
 }
