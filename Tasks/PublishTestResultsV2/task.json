@@ -82,6 +82,14 @@
             "helpMarkDown": "Fail the task if there are any test failures. Check this option to fail the task if test failures are detected in the result files."
         },
         {
+            "name": "failTaskOnMissingResultsFile",
+            "type": "boolean",
+            "label": "Fail if no result files are found",
+            "defaultValue": false,
+            "required": false,
+            "helpMarkDown": "Fail the task if no result files are found."
+        },
+        {
             "name": "testRunTitle",
             "type": "string",
             "label": "Test run title",

@@ -82,6 +82,14 @@
       "helpMarkDown": "ms-resource:loc.input.help.failTaskOnFailedTests"
     },
     {
+      "name": "failTaskOnMissingResultsFile",
+      "type": "boolean",
+      "label": "ms-resource:loc.input.label.failTaskOnMissingResultsFile",
+      "defaultValue": false,
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.failTaskOnMissingResultsFile"
+    },
+    {
       "name": "testRunTitle",
       "type": "string",
       "label": "ms-resource:loc.input.label.testRunTitle",
