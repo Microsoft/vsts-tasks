@@ -48,7 +48,18 @@ try {
     # Generate the script contents.
     Write-Host (Get-VstsLocString -Key 'GeneratingScript')
     $contents = @()
+
+    # Explicitly set the default output stream preferences, rather then relying on PowerShell's defaults.
+    if ($env:system_debug -eq "true") {
+        $contents += "`$VerbosePreference = 'Continue'"
+    }
+    else {
+        $contents += "`$VerbosePreference = 'SilentlyContinue'"
+    }
+    $contents += "`$InformationPreference = 'Continue'"
+    $contents += "`$WarningPreference = 'Continue'"
     $contents += "`$ErrorActionPreference = '$input_errorActionPreference'"
+
     # Change default error view to normal view. We need this for error handling since we pipe stdout and stderr to the same stream
     # and we rely on PowerShell piping back NormalView error records (required because PowerShell Core changed the default to ConciseView)
     $contents += "`$ErrorView = 'NormalView'"

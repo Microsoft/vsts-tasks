@@ -46,7 +46,17 @@ async function run() {
         // Generate the script contents.
         console.log(tl.loc('GeneratingScript'));
         let contents: string[] = [];
+
+        // Explicitly set the default output stream preferences, rather then relying on PowerShell's defaults.
+        if ((process.env['SYSTEM_DEBUG'] || "").toLowerCase() === "true") {
+            contents.push(`$VerbosePreference = 'Continue'`);
+        } else {
+            contents.push(`$VerbosePreference = 'SilentlyContinue'`);
+        }
+        contents.push(`$InformationPreference = 'Continue'`);
+        contents.push(`$WarningPreference = 'Continue'`);
         contents.push(`$ErrorActionPreference = '${input_errorActionPreference}'`);
+
         let script = '';
         if (input_targetType.toUpperCase() == 'FILEPATH') {
             script = `. '${input_filePath.replace(/'/g, "''")}' ${input_arguments}`.trim();

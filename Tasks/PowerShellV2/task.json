@@ -18,7 +18,7 @@
     "version": {
         "Major": 2,
         "Minor": 190,
-        "Patch": 0
+        "Patch": 1
     },
     "releaseNotes": "Script task consistency. Added support for macOS and Linux.",
     "minimumAgentVersion": "2.115.0",
