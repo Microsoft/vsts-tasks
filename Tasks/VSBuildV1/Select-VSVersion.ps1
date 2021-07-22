@@ -5,7 +5,7 @@ function Select-VSVersion {
     Trace-VstsEnteringInvocation $MyInvocation
     try {
         $specificVersion = $PreferredVersion -and $PreferredVersion -ne 'latest'
-        $versions = '16.0', '15.0', '14.0', '12.0', '11.0', '10.0' | Where-Object { $_ -ne $PreferredVersion }
+        $versions = '17.0', '16.0', '15.0', '14.0', '12.0', '11.0', '10.0' | Where-Object { $_ -ne $PreferredVersion }
 
         # Look for a specific version of Visual Studio.
         if ($specificVersion) {
