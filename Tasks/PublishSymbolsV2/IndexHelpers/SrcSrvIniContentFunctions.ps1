@@ -82,8 +82,18 @@ function New-TfsGitSrcSrvIniContent {
         # Make the sources root path end with a trailing slash.
         $sourcesRootPath = $provider.SourcesRootPath.TrimEnd('\')
         $sourcesRootPath = "$sourcesRootPath\"
+        $isMultiRepoCheckout = !(Test-Path "${sourcesRootPath}.git")
         foreach ($sourceFilePath in $SourceFilePaths) {
             [string]$relativeSourceFilePath = $sourceFilePath.Substring($sourcesRootPath.Length)
+            if ($isMultiRepoCheckout) {
+                $i = $relativeSourceFilePath.IndexOf('\')
+                if ($i -gt 0) {
+                    $repoName = $relativeSourceFilePath.Substring(0, $i)
+                    if (Test-Path "${sourcesRootPath}$repoName\.git") {
+                        $relativeSourceFilePath = $relativeSourceFilePath.Substring($i + 1)
+                    }
+                }
+            }
             $relativeSourceFilePath = $relativeSourceFilePath.Replace('\', '/')
             $relativeSourceFilePath = "/$relativeSourceFilePath"
             "$sourceFilePath*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*$relativeSourceFilePath*TFS_APPLY_FILTERS"
